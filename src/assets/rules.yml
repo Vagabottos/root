@@ -1,0 +1,183 @@
+
+- name: Golden Rules
+  color: "#000000"
+  children:
+    - name: Rules Conflicts
+      children: 
+        - name: Precedence.
+          text: If text on a card conflicts with text in the rules reference, the card takes precedence. If text in the learn-to-play guide conflicts with text in the rules reference, the rules reference takes precedence.
+        - name: Use of "Cannot."
+          text: Any rule that uses the term “cannot” is absolute. It cannot be overridden by another rule unless explicitly instructed.
+        - name: Simultaneous Effects.
+          text: If two game effects occur simultaneously, the player taking the current turn chooses their order, unless otherwise noted.
+
+    - name: Public and Private Information
+      children:
+        - name: Hands.
+          text: Players may only reveal cards in their hand if explicitly instructed, but the number of cards in their hand is public information. `faction:riverfolk`
+        - name: Discard.
+          text: The discard pile can be searched at any time.
+    
+    - name: Game Structure
+      pretext: "Each player’s turn consists of three phases: Birdsong, Daylight, and Evening. After a player completes all three phases, the next clockwise player begins their turn. Play continues until one player has won the game (`rule:3.1`)."
+
+- name: Key Terms and Concepts
+  color: "#000000"
+  children:
+    - name: Cards
+      pretext: "Each card has a **suit**: bird, fox ,rabbit, or mouse. Most cards also have an effect you can craft (`rule:4.1`)."
+      children:
+        - name: Birds Are Wild.
+          text: You can always treat a bird card as a card of another suit, even if you must spend, take, or give multiple cards of the same suit. `faction:cult`
+          subchildren:
+            - name: Forced Effects.
+              text: When you are prompted to discard or give away fox, rabbit, or mouse cards, you must treat your bird cards as the prompted suit.
+            - name: Reverse Substitution.
+              text: If you are prompted to spend, discard, take, or give a bird card, you cannot substitute a card of another suit.
+
+        - name: Draw from Shared Deck.
+          text: Whenever you are prompted to **draw** a card, take it from the shared deck. If the deck is empty, shuffle the discard pile to form a new deck.
+        - name: Spend and Discard to Shared Pile.
+          text: Whenever you are prompted to **discard** or **spend** a card, place it in the shared discard pile unless it is a dominance card (`rule:3.3`). `faction:cult`
+        - name: Ambush Cards.
+          text: "There are five **ambush cards**: one mouse, one rabbit, one fox, and two birds. You may spend an ambush card for its suit, but it does not have a crafted effect. You may also play one in battle to deal hits (`rule:4.3.1`)."
+        - name: Dominance Cards.
+          text: There are four **dominance cards** matching the four suits. You may spend a dominance card for its suit, but it cannot be crafted. You may also play one to permanently change your victory condition (`rule:3.3`).
+
+    - name: Clearings and Paths
+      pretext: The map of the Woodland is composed of many **clearings** and **paths**.
+      children:
+        - name: Adjacency.
+          text: A clearing is adjacent to all other clearings linked to it by a path.
+        - name: Suit.
+          text: Every clearing has a **suit** of mouse, rabbit, or fox.
+        - name: Slots
+          text: Each clearing has a number of **slots**, shown as white boxes. Whenever you place a building, it fills an open slot. You cannot place a building in a clearing with no open slots.
+        - name: Ruins
+          text: Slots marked with a small "R" begin the game filled with **ruins**. Ruins can only be removed by the Vagabond's Explore action (`rule:9.5.3`).
+    
+    - name: Rivers
+      pretext: Many clearings are linked by **rivers**, which act as paths only for the Riverfolk Company. Rivers do not divide clearings or forests. `faction:riverfolk`
+      
+    - name: Forests
+      pretext: Areas on the map enclosed by paths and clearings are called **forests**.
+      children:
+        - name: Adjacency.
+          text: A forest is adjacent to all clearings that touch it without crossing a path, and it is adjacent to all forests that are separated by only one path.
+      
+    - name: Pieces
+      pretext: Each faction has a set of **pieces** listed on the back of its faction board. Pieces are limited by the contents of the game. If you are prompted to place, take, or remove a piece but you cannot, you must place, take, or remove the maximum number possible.
+      children:
+        - name: Warriors.
+          text: If you are prompted to place a warrior, take it from your supply. If one of your warriors is removed, return it to your supply. `faction:marquise` `faction:cult`
+        - name: Buildings.
+          text: If you are prompted to place a building, take the leftmost building from its track on your faction board. If one of your buildings is removed, return it to the rightmost empty space of its track.
+        - name: Tokens.
+          text: If you are prompted to place a token, take the leftmost token from its track, if any, or take it from your supply. If one of your tokens is removed, return it to the rightmost empty space of its track, if any, or to your supply. `faction:marquise` `faction:riverfolk`
+        - name: The Vagabond Pawn.
+          text: The Vagabond Pawn cannot be removed from the map.
+        - name: Items.
+          text: If you are prompted to take an item, take it from the shared supply on the map and place it in the Crafted Items box on your faction board. If you are prompted to remove an item, return it to the box. `faction:vagabond`
+
+    - name: Play Area
+      pretext: Your **play area** is the area around your faction board.
+
+    - name: Enemy
+      pretext: An **enemy** is any faction not in a coalition with you (`rule:9.2.8`).
+
+    - name: Ruler
+      pretext: The **ruler** of a clearing is the player with the most total warriors and buildings in that clearing. _(Tokens and pawns do not contribute to rule.)_ If there is a tie between players in a clearing, no one there is the ruler. `faction:eyrie` `faction:vagabond` `faction:cult`
+
+- name: Victory
+  color: "#000000"
+  children:
+    - name: How to Win
+      pretext: The first player to reach 30 victory points immediately wins the game. If multiple players reach 30 or more victory points simultaneously, the player taking the current turn wins.
+
+    - name: Scoring Victory Points
+      pretext: Each faction has a unique way to score victory points, but any faction can score victory points as follows.
+      children:
+        - name: Removing Buildings and Tokens.
+          text: Whenever you remove an enemy’s building or token, you score one victory point.
+        - name: Crafting Items.
+          text: Whenever you craft an item (`rule:4.1`), you score the victory points listed on the card. `faction:eyrie`
+
+    - name: Dominance Cards
+      pretext: The deck holds four dominance cards, which can be played to win the game without reaching 30 victory points.
+      children:
+        - name: Activating.
+          text: During your Daylight, if you have at least 10 victory points, you may **activate** a dominance card by placing it in your play area. Remove your score marker from the score track. You can no longer score victory points. `faction:vagabond`
+          subchildren:
+            - name: Mouse, Rabbit, or Fox Dominance.
+              text: You win the game immediately if you rule three clearings of the suit matching the activated dominance card at the start of your Birdsong.
+            - name: Bird Dominance
+              text: You win the game immediately if you rule two clearings in opposite corners at the start of your Birdsong.
+        - name: Activated Cards
+          text: An activated dominance card does not count against your hand limit, and it cannot be removed from play. You cannot replace an activated dominance card with a different one.
+        - name: Spending for Suit.
+          text: A dominance card can be spent for its suit. However, when it would be placed in the discard pile, instead place it near the map to show it is **available** to be taken. `faction:cult`
+        - name: Taking Available Cards.
+          text: During your Daylight, you can take an available dominance card into your hand by spending a card of matching suit.
+
+- name: Key Actions
+  color: "#000000"
+  children:
+    - name: Craft
+      pretext: You can **craft** most cards from your hand to gain an immediate or persistent effect.
+      children:
+        - name: Cost.
+          text: To **craft** a card, you must **activate** crafting pieces of the suits listed in the card’s bottom-left corner. The suit of a crafting piece matches its clearing. Each crafting piece may be activated only once per turn. A three-color question mark denotes a crafting piece of any suit. `faction:vagabond` `faction:riverfolk`
+        - name: Immediate Effects.
+          text: When you craft an immediate effect, resolve its effect and then discard the card. If it shows an item, take the matching item from the supply and place it in the Crafted Items box on your faction board. If the card lists an item not in the supply, the card cannot be crafted. `faction:eyrie` `faction:vagabond`
+        - name: Persistent Effects.
+          text: When you craft a persistent effect, place it in your play area. You may use the effect as described on the card.
+        - name: No Duplicates.
+          text: You cannot craft a persistent effect if you have an identical persistent effect in your play area.
+  
+    - name: Move
+      pretext: When you **move**, you may take any number of your warriors or your pawn from one clearing and move them to one adjacent clearing.
+      children:
+        - name: You Must Rule.
+          text: To take a move, you must rule the origin clearing, destination clearing, or both. `faction:vagabond` `faction:riverfolk`
+        - name: No Movement Limits.
+          text: A given piece can be moved any number of times per turn. If you are prompted to take multiple moves, you may move the same or separate groups of warriors.
+
+    - name: Battle
+      pretext: When you **battle**, choose a clearing where you have warriors or your pawn as the **clearing of battle**. You are the **attacker**. Choose another player in the clearing of battle to be the **defender**.
+      children:
+        - name: "Step 1: Defender May Ambush."
+          text: The defender may play one ambush card matching the clearing of battle. If the ambush is not foiled, the defender deals two hits immediately. Then, the defender discards the ambush card. If no attacking warriors remain, end the battle immediately.
+          subchildren:
+            - name: Foil Ambush.
+              text: After the defender plays an ambush card, the attacker may cancel its effect by also playing an ambush card matching the clearing of the battle. (The defender still _discards_ their ambush card.)
+        - name: "Step 2: Roll Dice and Add Extra Hits."
+          text: Roll both dice. The attacker will deal hits equal to the higher roll, and the defender will deal hits equal to the lower roll. If the rolls are equal, attacker and defender will deal the same number of hits. _(The use of “will” here reflects that hits are not dealt until step 3.)_ `faction:woodland`
+          subchildren:
+            - name: Maximum Rolled Hits.
+              text: The maximum hits you can deal from rolling equals the number of your warriors in the clearing of battle, whether you are the attacker or defender. `faction:vagabond`
+            - name: Extra Hits.
+              text: After counting hits from rolling, the attacker and defender can add **extra hits** by using special abilities or other effects in their play areas. Extra hits are not limited by the number of warriors in the clearing of battle.
+            - name: Defenseless.
+              text: If the defender has no warriors in the clearing of battle, the attacker will deal an extra hit. `faction:vagabond`
+        - name: "Step 3: Deal Hits."
+          text: Attacker and defender deal hits simultaneously. Each hit you deal removes one piece. The player taking hits chooses which of their pieces are removed from the clearing of battle, but must choose to remove all their warriors there before they choose to remove any of their buildings or tokens there in any order. (You score one victory point per enemy building or token removed.)
+
+- name: Setup
+  color: "#000000"
+  children:
+    - name: Standard Setup Procedure
+      children:
+        - name: "Step 1: Assign Factions and Starting Player."
+          text: Assign one faction to each player using any method. The viable factions at each player count are listed in the learning-to-play guide (page 22). Determine the starting player and seating order randomly. Each player takes their chosen faction board and all pieces, as listed on the back of the faction board.
+        - name: "Step 2: Place Score Markers."
+          text: Each player places their score marker on “0” on the score track.
+        - name: "Step 3: Draw Starting Hands."
+          text: If you are playing with two players, remove all four dominance cards from the deck. Shuffle the deck. Each player draws three cards.
+        - name: "Step 4: Place Ruins."
+          text: Place a ruin in each slot on the map marked with an "R" _(four in total)_.
+        - name: "Step 5: Form Item Supply."
+          text: "Place these items on the matching spaces of the item supply near the top of the map: 2 `item:boot`, 2 `item:sack`, 1 `item:crossbow`, 1 `item:hammer`, 2 `item:sword`, 2 `item:tea`, 2 `item:coin`."
+        - name: "Step 6: Gather Other Pieces."
+          text: Hand out the 16 faction overview cards as desired, and place the two custom dice near the map.
+        - name: "Step 7: Set Up Factions."
+          text: In setup order (A, B, C, etc.), each player follows their faction’s setup instructions, listed in their rules section and on the back of their faction board.

@@ -9,3 +9,91 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+
+// plain
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("/assets/fonts/LibreBaskerville-Regular.eot");
+  src: url("/assets/fonts/LibreBaskerville-Regular.eot?#iefix") format('embedded-opentype'),
+       url("/assets/fonts/LibreBaskerville-Regular.woff2") format('woff2'),
+       url("/assets/fonts/LibreBaskerville-Regular.woff") format('woff'),
+       url("/assets/fonts/LibreBaskerville-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* italic */
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("/assets/fonts/LibreBaskerville-Italic.eot");
+  src: url("/assets/fonts/LibreBaskerville-Italic.eot?#iefix") format('embedded-opentype'),
+       url("/assets/fonts/LibreBaskerville-Italic.woff2") format('woff2'),
+       url("/assets/fonts/LibreBaskerville-Italic.woff") format('woff'),
+       url("/assets/fonts/LibreBaskerville-Italic.ttf") format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* bold */
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("/assets/fonts/LibreBaskerville-Bold.eot");
+  src: url("/assets/fonts/LibreBaskerville-Bold.eot?#iefix") format('embedded-opentype'),
+       url("/assets/fonts/LibreBaskerville-Bold.woff2") format('woff2'),
+       url("/assets/fonts/LibreBaskerville-Bold.woff") format('woff'),
+       url("/assets/fonts/LibreBaskerville-Bold.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+ion-toolbar {
+  --background: url("/assets/background.png") repeat;
+}
+
+ion-content {
+  --background: url("/assets/background.png") repeat;
+}
+
+ion-list {
+  background: transparent !important;
+}
+
+* {
+  font-family: "Libre Baskerville", serif;
+}
+
+.inline-icon {
+  max-height: 16px;
+  max-width: 16px;
+}
+
+.romanized-list {
+  list-style-position: outside;
+  list-style-type: none;
+
+  li {
+    position: relative;
+
+    counter-increment: romanizedsub;
+  }
+
+  li::before {
+    content: counters(romanizedsub, "", upper-roman);
+
+    position: absolute;
+    left: -40px;
+    top: 3px;
+
+    font-size: 12px;
+  }
+}
+
+.emph {
+  font-variant: small-caps;
+}
+
+.error {
+  color: #f00;
+  font-weight: bold;
+}

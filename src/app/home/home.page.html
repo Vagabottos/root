@@ -1,14 +1,59 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>
-      Ionic Blank
+      <span class="title-container">
+        <span class="title-text">The Law Of</span>
+        <img class="title-logo" src="assets/logo.png" />
+      </span> 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content class="ion-padding">
+  <div *ngFor="let rule of rules" class="rule-container major" [style.border-color]="rule.color">
+
+    <!-- no text or pretext at this level -->
+
+    <div class="rule major" [id]="rulesService.slugTitle(rule.index, rule.name)">
+      <span class="index major">{{ rule.index }}</span> {{ rule.name }}
+    </div>
+
+    <div *ngFor="let childRule of rule.children" class="rule-container minor">
+
+      <!-- no text at this level -->
+
+      <div class="rule minor" [id]="rulesService.slugTitle(childRule.index, childRule.name)">
+        <span class="index minor">{{ childRule.index }}</span> {{ childRule.name }}
+      </div>
+
+      <div class="pretext" [innerHTML]="childRule.pretext"></div>
+
+      <div *ngFor="let grandchildRule of childRule.children" class="rule-container child">
+    
+        <!-- no pretext at this level -->
+  
+        <div class="rule child" [id]="rulesService.slugTitle(grandchildRule.index, grandchildRule.name)">
+          <span class="index child">{{ grandchildRule.index }}</span> 
+          <span class="desc child">
+            <span class="name child">{{ grandchildRule.name }}</span>
+            <span class="text child" [innerHTML]="grandchildRule.text"></span>
+
+            <!-- please never go deeper -->
+            <ol class="romanized-list list" *ngIf="grandchildRule.subchildren">
+              <li *ngFor="let descRule of grandchildRule.subchildren">
+                <span class="name child">{{ descRule.name }}</span>
+                <span class="text child" [innerHTML]="descRule.text"></span>
+              </li>
+            </ol>
+          </span>
+        </div>
+  
+      </div>
+
+    </div>
+
   </div>
 </ion-content>

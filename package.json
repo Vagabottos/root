@@ -1,15 +1,17 @@
 {
   "name": "root",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "description": "A companion rules app for Root: a Game of Woodland Right and Might",
+  "version": "3.0.0",
+  "author": "Kyle Kemp <kyle@seiyria.com>",
+  "homepage": "https://root.seiyria.com",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve -o",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepare": "node scripts/prepare"
   },
   "private": true,
   "dependencies": {
@@ -25,7 +27,9 @@
     "@ionic-native/status-bar": "^5.0.0",
     "@ionic/angular": "^4.1.0",
     "core-js": "^2.5.4",
+    "marked": "^0.6.2",
     "rxjs": "~6.4.0",
+    "slugify": "^1.3.4",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.29"
   },
@@ -39,12 +43,13 @@
     "@angular/compiler-cli": "~7.2.2",
     "@angular/language-service": "~7.2.2",
     "@ionic/angular-toolkit": "~1.4.0",
-    "@types/node": "~10.14.2",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~10.14.2",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
+    "js-yaml": "^3.13.1",
     "karma": "~3.1.4",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",
@@ -54,6 +59,5 @@
     "ts-node": "~8.0.0",
     "tslint": "~5.16.0",
     "typescript": "~3.1.6"
-  },
-  "description": "An Ionic project"
+  }
 }
