@@ -9,6 +9,14 @@
         <img class="title-logo" src="assets/logo.png" />
       </span> 
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="openFAQ()">
+        <ion-icon name="help-circle"></ion-icon>
+      </ion-button>
+      <ion-button (click)="toggleSearch()">
+        <ion-icon name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -19,6 +27,14 @@
       <ion-icon name="arrow-round-up"></ion-icon>
     </ion-fab-button>
   </ion-fab>
+
+  <ion-searchbar *ngIf="showSearch" 
+                 color="primary"
+                 showCancelButton="true"
+                 (ionCancel)="setSearchValue(null)"
+                 (ionClear)="setSearchValue(null)"
+                 (ionChange)="setSearchValue($event.detail.value)"
+                 placeholder="Search Rules"></ion-searchbar>
 
   <div id="top"></div>
 
@@ -48,7 +64,7 @@
           <span class="index child">{{ grandchildRule.index }}</span> 
           <span class="desc child">
             <span class="name child">{{ grandchildRule.name }}</span>
-            <span class="text child" [innerHTML]="grandchildRule.text"></span>
+            <span class="text child" [innerHTML]="grandchildRule.text | highlight:searchTerm"></span>
 
             <!-- please never go deeper -->
             <ol class="romanized-list list" *ngIf="grandchildRule.subchildren">

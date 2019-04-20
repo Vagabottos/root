@@ -12,6 +12,11 @@ import { Subject } from 'rxjs';
 })
 export class RulesService {
 
+  private indexRuleHash = {};
+  public get indexesToRules() {
+    return this.indexRuleHash;
+  }
+
   private navigate: Subject<string> = new Subject<string>();
   public get navigate$() {
     return this.navigate;
@@ -106,26 +111,31 @@ export class RulesService {
       rule.text = format(rule.text);
       rule.pretext = format(rule.pretext);
       rule.index = `${majorRuleIndex + 1}.`;
+      this.indexRuleHash[rule.index] = this.slugTitle(rule.index, rule.name);
 
       (rule.children || []).forEach((childRule, minorRuleIndex) => {
         childRule.text = format(childRule.text);
         childRule.pretext = format(childRule.pretext);
         childRule.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1]);
+        this.indexRuleHash[childRule.index] = this.slugTitle(childRule.index, childRule.name);
 
         (childRule.children || []).forEach((grandchildRule, revRuleIndex) => {
           grandchildRule.text = format(grandchildRule.text);
           grandchildRule.pretext = format(grandchildRule.pretext);
           grandchildRule.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1]);
+          this.indexRuleHash[grandchildRule.index] = this.slugTitle(grandchildRule.index, grandchildRule.name);
 
           (grandchildRule.subchildren || []).forEach((descendantNode, descRuleIndex) => {
             descendantNode.text = format(descendantNode.text);
             descendantNode.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1, descRuleIndex + 1]);
+            this.indexRuleHash[descendantNode.index] = this.slugTitle(descendantNode.index, descendantNode.name);
 
             (descendantNode.subchildren || []).forEach((descDescendantNode, descDescRuleIndex) => {
               descDescendantNode.text = format(descDescendantNode.text);
               descDescendantNode.index = buildIndex(
                 [majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1, descRuleIndex + 1, descDescRuleIndex + 1]
               );
+              this.indexRuleHash[descDescendantNode.index] = this.slugTitle(descDescendantNode.index, descDescendantNode.name);
             });
           });
         });

@@ -1,8 +1,9 @@
 import { Component, OnInit, ViewChild, AfterContentInit, OnDestroy, HostListener } from '@angular/core';
 
 import { RulesService } from '../rules.service';
-import { IonContent } from '@ionic/angular';
+import { IonContent, ModalController } from '@ionic/angular';
 import { Subscription } from 'rxjs';
+import { FAQModalPage } from '../faqmodal/faqmodal.page';
 
 @Component({
   selector: 'app-home',
@@ -15,10 +16,12 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
   public contentEl: IonContent;
 
   public showScrollUp: boolean;
+  public showSearch: boolean;
+  public searchTerm: string;
 
   private nav$: Subscription;
 
-  constructor(public rulesService: RulesService) {}
+  constructor(private modalCtrl: ModalController, public rulesService: RulesService) {}
 
   ngOnInit() {
     this.nav$ = this.rulesService.navigate$.subscribe(id => this.scrollToEl(id, 'start'));
@@ -33,6 +36,32 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
 
   ngOnDestroy() {
     this.nav$.unsubscribe();
+  }
+
+  public toggleSearch() {
+    this.showSearch = !this.showSearch;
+
+    if (!this.showSearch) {
+      this.setSearchValue(null);
+    }
+  }
+
+  public setSearchValue(str: string) {
+    this.searchTerm = str;
+  }
+
+  public async openFAQ() {
+    const modal = await this.modalCtrl.create({
+      component: FAQModalPage
+    });
+
+    modal.onDidDismiss().then(({ data }) => {
+      if (!data) { return; }
+
+      this.scrollToEl(this.rulesService.indexesToRules[data]);
+    });
+
+    await modal.present();
   }
 
   public scroll($event) {

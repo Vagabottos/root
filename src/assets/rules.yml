@@ -25,7 +25,7 @@
   color: "#000000"
   children:
     - name: Cards
-      pretext: "Each card has a **suit**: bird, fox ,rabbit, or mouse. Most cards also have an effect you can craft (`rule:4.1`)."
+      pretext: "Each card has a **suit**: bird, fox, rabbit, or mouse. Most cards also have an effect you can craft (`rule:4.1`)."
       children:
         - name: Birds Are Wild.
           text: You can always treat a bird card as a card of another suit, even if you must spend, take, or give multiple cards of the same suit. `faction:cult`

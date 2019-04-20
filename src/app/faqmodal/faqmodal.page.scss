@@ -1,0 +1,28 @@
+
+.question-category {
+  margin-bottom: 20px;
+
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.category-title {
+  margin-left: -10px;
+  padding-left: 10px;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  padding-bottom: 5px;
+}
+
+.question {
+  margin-bottom: 10px;
+}
+
+.divider-row hr {
+  opacity: 0.7;
+}

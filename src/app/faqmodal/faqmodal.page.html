@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Frequently Asked Questions</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        Close
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div class="question-category" *ngFor="let faqCat of faq" [style.border-color]="faqCat.color">
+    <h2 class="category-title" [style.border-color]="faqCat.color">{{ faqCat.category }}</h2>
+
+    <div *ngFor="let question of faqCat.questions" class="question">
+      <ion-row class="question-row">
+        <ion-col size="1">Q:</ion-col>
+        <ion-col>{{ question.q }}</ion-col>
+      </ion-row>
+
+      <ion-row class="answer-row">
+        <ion-col size="1">A:</ion-col>
+        <ion-col>{{ question.a }}</ion-col>
+      </ion-row>
+
+      <ion-row class="law-row">
+        <ion-col class="ion-text-right">
+          <ion-button *ngFor="let law of question.laws" color="primary" size="small" (click)="dismiss(law)">
+            Law {{ law }}
+          </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="divider-row">
+        <ion-col>
+          <hr [style.background-color]="faqCat.color">
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  
+</ion-content>
