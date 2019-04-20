@@ -45,7 +45,9 @@
     <!-- no text or pretext at this level -->
 
     <div class="rule major" [id]="rulesService.indexesToRules[rule.index]">
-      <span class="index major">{{ rule.index }}</span> <span [innerHTML]="rule.name | highlight:searchTerm"></span>
+      <span class="index major">{{ rule.index }}</span> 
+      <a [innerHTML]="rule.name | highlight:searchTerm"
+         [href]="'#' + rulesService.indexesToRules[rule.index]"></a>
     </div>
 
     <div *ngFor="let childRule of rule.children" class="rule-container minor">
@@ -53,7 +55,9 @@
       <!-- no text at this level -->
 
       <div class="rule minor" [id]="rulesService.indexesToRules[childRule.index]">
-        <span class="index minor">{{ childRule.index }}</span> <span [innerHTML]="childRule.name | highlight:searchTerm"></span>
+        <span class="index minor">{{ childRule.index }}</span> 
+        <a [innerHTML]="childRule.name | highlight:searchTerm" 
+           [href]="'#' + rulesService.indexesToRules[childRule.index]"></a>
       </div>
 
       <div class="pretext" [innerHTML]="childRule.pretext | highlight:searchTerm"></div>
@@ -65,19 +69,24 @@
         <div class="rule child" [id]="rulesService.indexesToRules[grandchildRule.index]">
           <span class="index child">{{ grandchildRule.index }}</span> 
           <span class="desc child">
-            <span class="name child" [innerHTML]="grandchildRule.name | highlight:searchTerm"></span>
+            <a class="name child" [innerHTML]="grandchildRule.name | highlight:searchTerm"
+                                  [href]="'#' + rulesService.indexesToRules[grandchildRule.index]"></a>
             <span class="text child" [innerHTML]="grandchildRule.text | highlight:searchTerm"></span>
 
             <!-- please never go deeper -->
             <ol class="romanized-list list" *ngIf="grandchildRule.subchildren">
               <li *ngFor="let descRule of grandchildRule.subchildren">
-                <span class="name child" [id]="rulesService.indexesToRules[descRule.index]" [innerHTML]="descRule.name | highlight:searchTerm"></span>
+                <a class="name child"    [id]="rulesService.indexesToRules[descRule.index]" 
+                                         [innerHTML]="descRule.name | highlight:searchTerm"
+                                         [href]="'#' + rulesService.indexesToRules[descRule.index]"></a>
                 <span class="text child" [innerHTML]="descRule.text | highlight:searchTerm"></span>
 
                 <!-- I said please :( -->
                 <ol class="alphabeta-list list sublist" *ngIf="descRule.subchildren">
                   <li *ngFor="let descDescRule of descRule.subchildren">
-                    <span class="name child" [id]="rulesService.indexesToRules[descDescRule.index]" [innerHTML]="descDescRule.name | highlight:searchTerm">{{ descDescRule.name }}</span>
+                    <a class="name child"    [id]="rulesService.indexesToRules[descDescRule.index]" 
+                                             [innerHTML]="descDescRule.name | highlight:searchTerm"
+                                             [href]="'#' + rulesService.indexesToRules[descDescRule.index]">{{ descDescRule.name }}</a>
                     <span class="text child" [innerHTML]="descDescRule.text | highlight:searchTerm"></span>
                   </li>
                 </ol>

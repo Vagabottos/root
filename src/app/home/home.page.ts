@@ -80,6 +80,10 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
       behavior: 'smooth',
       block
     });
+
+    setTimeout(() => {
+      window.location.hash = `#${id}`;
+    }, 500);
   }
 
   @HostListener('document:click', ['$event'])
