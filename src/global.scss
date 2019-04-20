@@ -89,6 +89,31 @@ ion-list {
   }
 }
 
+.alphabeta-list {
+  list-style-position: outside;
+  list-style-type: none;
+
+  li {
+    position: relative;
+
+    counter-increment: alphabetasub;
+  }
+
+  li::before {
+    content: counters(alphabetasub, "", upper-alpha);
+
+    position: absolute;
+    left: -40px;
+    top: 3px;
+
+    font-size: 10px;
+  }
+}
+
+.sublist {
+  margin-top: 10px;
+}
+
 .emph {
   font-variant: small-caps;
 }

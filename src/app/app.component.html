@@ -10,7 +10,8 @@
       <ion-content>
         <ion-list lines="none">
           <ion-item color="transparent"
-                    [style.border-left]="'3px solid ' + ruleHead.color" 
+                    [style.border-left]="'5px solid ' + ruleHead.color" 
+                    [style.border-bottom]="'1px solid ' + ruleHead.color" 
                     *ngFor="let ruleHead of rulesService.rules">{{ ruleHead.name }}</ion-item>
         </ion-list>
       </ion-content>

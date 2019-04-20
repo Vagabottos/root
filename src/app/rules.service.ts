@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import * as marked from 'marked';
+import { convert as toRoman } from 'roman-numeral';
 import slugify from 'slugify';
 
 import * as rules from '../assets/rules.json';
@@ -27,16 +28,38 @@ export class RulesService {
         const [type, subtype] = text.split(':');
 
         if (type === 'rule') {
-          const [major, minor, child] = subtype.split('.');
+          const [major, minor, child, desc, descDesc] = subtype.split('.');
           let chosenNode = null;
+          let chosenString = '';
 
-          if (major) { chosenNode = allRules[(+major) - 1]; }
-          if (minor && chosenNode) { chosenNode = chosenNode.children[(+minor) - 1]; }
-          if (child && chosenNode) { chosenNode = chosenNode.children[(+child) - 1]; }
+          if (major) {
+            chosenString += major;
+            chosenNode = allRules[(+major) - 1];
+          }
+
+          if (minor && chosenNode) {
+            chosenString += `.${minor}`;
+            chosenNode = chosenNode.children[(+minor) - 1];
+          }
+
+          if (child && chosenNode) {
+            chosenString += `.${child}`;
+            chosenNode = chosenNode.children[(+child) - 1];
+          }
+
+          if (desc && chosenNode)  {
+            chosenString += `.${toRoman(desc)}`;
+            chosenNode = chosenNode.subchildren[(+desc) - 1];
+          }
+
+          if (descDesc && chosenNode)  {
+            chosenString += `${String.fromCharCode((+descDesc) + 97)}`;
+            chosenNode = chosenNode.subchildren[(+descDesc) - 1];
+          }
 
           if (!chosenNode) { return `<span class="error">Not Found: ${subtype}</span>`; }
 
-          return `<a href="#${this.slugTitle(subtype, chosenNode.name)}">${subtype}</a>`;
+          return `<a href="#${this.slugTitle(subtype, chosenNode.name)}">${chosenString}</a>`;
         }
 
         return `<img src="assets/inicon/${type}-${subtype}.png" class="inline-icon" />`;
@@ -77,8 +100,14 @@ export class RulesService {
           grandchildRule.pretext = format(grandchildRule.pretext);
           grandchildRule.index = `${majorRuleIndex + 1}.${minorRuleIndex + 1}.${revRuleIndex + 1}`;
 
-          (grandchildRule.subchildren || []).forEach(descendantNode => {
+          (grandchildRule.subchildren || []).forEach((descendantNode, descRuleIndex) => {
             descendantNode.text = format(descendantNode.text);
+            descendantNode.index = `${majorRuleIndex + 1}.${minorRuleIndex + 1}.${revRuleIndex + 1}.${descRuleIndex + 1}`;
+
+            (descendantNode.subchildren || []).forEach((descDescendantNode, descDescRuleIndex) => {
+              descDescendantNode.text = format(descDescendantNode.text);
+              descDescendantNode.index = `${majorRuleIndex + 1}.${minorRuleIndex + 1}.${revRuleIndex + 1}.${descRuleIndex + 1}.${descDescRuleIndex + 1}`;
+            });
           });
         });
       });

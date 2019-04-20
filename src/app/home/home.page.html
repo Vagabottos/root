@@ -12,7 +12,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding" scrollEvents="true" (ionScroll)="scroll($event)">
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="showScrollUp">
+    <ion-fab-button size="small" color="primary" translucent="true" (click)="scrollToEl('#top')">
+      <ion-icon name="arrow-round-up"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <div id="top"></div>
+
   <div *ngFor="let rule of rules" class="rule-container major" [style.border-color]="rule.color">
 
     <!-- no text or pretext at this level -->
@@ -44,8 +53,16 @@
             <!-- please never go deeper -->
             <ol class="romanized-list list" *ngIf="grandchildRule.subchildren">
               <li *ngFor="let descRule of grandchildRule.subchildren">
-                <span class="name child">{{ descRule.name }}</span>
+                <span class="name child" [id]="rulesService.slugTitle(descRule.index, descRule.name)">{{ descRule.name }}</span>
                 <span class="text child" [innerHTML]="descRule.text"></span>
+
+                <!-- I said please :( -->
+                <ol class="alphabeta-list list sublist" *ngIf="descRule.subchildren">
+                  <li *ngFor="let descDescRule of descRule.subchildren">
+                    <span class="name child">{{ descDescRule.name }}</span>
+                    <span class="text child" [innerHTML]="descDescRule.text"></span>
+                  </li>
+                </ol>
               </li>
             </ol>
           </span>
