@@ -6,9 +6,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class HighlightPipe implements PipeTransform {
 
   transform(value: any, args: any): any {
-    if (!args) {return value; }
-    const re = new RegExp(args, 'gi');
-    return value.replace(re, '<mark>' + args + '</mark>');
+    if (!args || !value) { return value; }
+    const re = new RegExp(`<img.*?>|(${args})`, 'gi');
+    return value.replace(re, (img, match) => {
+      if (!match) { return img; }
+      return '<mark>' + match + '</mark>';
+    });
   }
 
 }

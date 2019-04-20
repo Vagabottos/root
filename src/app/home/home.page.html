@@ -3,18 +3,28 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
+
+    <ion-title *ngIf="!showSearch">
       <span class="title-container">
         <span class="title-text">The Law Of</span>
         <img class="title-logo" src="assets/logo.png" />
       </span> 
     </ion-title>
+
+    <ion-searchbar *ngIf="showSearch" 
+                   color="primary"
+                   showCancelButton="true"
+                   (ionCancel)="setSearchValue(null)"
+                   (ionClear)="setSearchValue(null)"
+                   (ionChange)="setSearchValue($event.detail.value)"
+                   placeholder="Search Rules"></ion-searchbar>
+
     <ion-buttons slot="end">
+        <ion-button (click)="toggleSearch()">
+          <ion-icon name="search"></ion-icon>
+        </ion-button>
       <ion-button (click)="openFAQ()">
         <ion-icon name="help-circle"></ion-icon>
-      </ion-button>
-      <ion-button (click)="toggleSearch()">
-        <ion-icon name="search"></ion-icon>
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -28,14 +38,6 @@
     </ion-fab-button>
   </ion-fab>
 
-  <ion-searchbar *ngIf="showSearch" 
-                 color="primary"
-                 showCancelButton="true"
-                 (ionCancel)="setSearchValue(null)"
-                 (ionClear)="setSearchValue(null)"
-                 (ionChange)="setSearchValue($event.detail.value)"
-                 placeholder="Search Rules"></ion-searchbar>
-
   <div id="top"></div>
 
   <div *ngFor="let rule of rulesService.rules" class="rule-container major" [style.border-color]="rule.color">
@@ -43,7 +45,7 @@
     <!-- no text or pretext at this level -->
 
     <div class="rule major" [id]="rulesService.indexesToRules[rule.index]">
-      <span class="index major">{{ rule.index }}</span> {{ rule.name }}
+      <span class="index major">{{ rule.index }}</span> <span [innerHTML]="rule.name | highlight:searchTerm"></span>
     </div>
 
     <div *ngFor="let childRule of rule.children" class="rule-container minor">
@@ -51,7 +53,7 @@
       <!-- no text at this level -->
 
       <div class="rule minor" [id]="rulesService.indexesToRules[childRule.index]">
-        <span class="index minor">{{ childRule.index }}</span> {{ childRule.name }}
+        <span class="index minor">{{ childRule.index }}</span> <span [innerHTML]="childRule.name | highlight:searchTerm"></span>
       </div>
 
       <div class="pretext" [innerHTML]="childRule.pretext | highlight:searchTerm"></div>
@@ -63,19 +65,19 @@
         <div class="rule child" [id]="rulesService.indexesToRules[grandchildRule.index]">
           <span class="index child">{{ grandchildRule.index }}</span> 
           <span class="desc child">
-            <span class="name child">{{ grandchildRule.name }}</span>
+            <span class="name child" [innerHTML]="grandchildRule.name | highlight:searchTerm"></span>
             <span class="text child" [innerHTML]="grandchildRule.text | highlight:searchTerm"></span>
 
             <!-- please never go deeper -->
             <ol class="romanized-list list" *ngIf="grandchildRule.subchildren">
               <li *ngFor="let descRule of grandchildRule.subchildren">
-                <span class="name child" [id]="rulesService.indexesToRules[descRule.index]">{{ descRule.name }}</span>
+                <span class="name child" [id]="rulesService.indexesToRules[descRule.index]" [innerHTML]="descRule.name | highlight:searchTerm"></span>
                 <span class="text child" [innerHTML]="descRule.text | highlight:searchTerm"></span>
 
                 <!-- I said please :( -->
                 <ol class="alphabeta-list list sublist" *ngIf="descRule.subchildren">
                   <li *ngFor="let descDescRule of descRule.subchildren">
-                    <span class="name child" [id]="rulesService.indexesToRules[descDescRule.index]">{{ descDescRule.name }}</span>
+                    <span class="name child" [id]="rulesService.indexesToRules[descDescRule.index]" [innerHTML]="descDescRule.name | highlight:searchTerm">{{ descDescRule.name }}</span>
                     <span class="text child" [innerHTML]="descDescRule.text | highlight:searchTerm"></span>
                   </li>
                 </ol>

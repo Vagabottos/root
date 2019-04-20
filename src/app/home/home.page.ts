@@ -48,6 +48,8 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
 
   public setSearchValue(str: string) {
     this.searchTerm = str;
+
+    if (str === null) { this.showSearch = false; }
   }
 
   public async openFAQ() {
