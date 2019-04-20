@@ -1,0 +1,27 @@
+
+
+@media print {
+  .menu-pane-visible, ion-toolbar, ion-fab, ion-modal {
+    display: none !important;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  ion-content {
+    --background: none;
+    --offset-bottom: none !important;
+  }
+
+  html, body, app-root, ion-app, ion-split-pane, ion-router-outlet, .ion-page, ion-content {
+    contain: none;
+    position: relative;
+    height: auto;
+    overflow: visible;
+  }
+
+  .rule-container.child {
+    break-inside: avoid;
+  }
+}

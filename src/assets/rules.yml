@@ -424,7 +424,7 @@
   color: "#6d6e70"
   children:
     - name: Overview
-      pretext: The Vagabond plays all sides of the conflict while going on quests to increase his renown throughout the wood. Each time the Vagabond improves his **relationship** with another faction, or removes a warrior belonging to a faction hostile toward him, he scores victory points. He can also complete **quests* to score victory points. To move and act effectively the Vagabond must manage his pack of **items**, expanding his selection by exploring the forest ruins and providing aid to other factions.
+      pretext: The Vagabond plays all sides of the conflict while going on quests to increase his renown throughout the wood. Each time the Vagabond improves his **relationship** with another faction, or removes a warrior belonging to a faction hostile toward him, he scores victory points. He can also complete **quests** to score victory points. To move and act effectively the Vagabond must manage his pack of **items**, expanding his selection by exploring the forest ruins and providing aid to other factions.
     
     - name: Faction Rules and Abilities
       children:
