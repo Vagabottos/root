@@ -1,7 +1,11 @@
 {
     "name": "Root: Woodland Companion",
     "short_name": "Root: TWC",
-    "start_url": "index.html",
+    "theme_color": "#bc4424",
+    "background_color": "#bc4424",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
     "icons": [
         {
             "src": "android-chrome-192x192.png",
@@ -13,8 +17,5 @@
             "sizes": "512x512",
             "type": "image/png"
         }
-    ],
-    "theme_color": "#bc4424",
-    "background_color": "#bc4424",
-    "display": "standalone"
+    ]
 }

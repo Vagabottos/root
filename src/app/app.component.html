@@ -9,10 +9,12 @@
 
       <ion-content>
         <ion-list lines="none">
-          <ion-item color="transparent"
-                    [style.border-left]="'5px solid ' + ruleHead.color" 
-                    [style.border-bottom]="'1px solid ' + ruleHead.color" 
-                    *ngFor="let ruleHead of rulesService.rules">{{ ruleHead.name }}</ion-item>
+          <ion-menu-toggle *ngFor="let ruleHead of rulesService.rules" autoHide="false">
+            <ion-item color="transparent"
+                      (click)="rulesService.navigate$.next(rulesService.slugTitle(ruleHead.index, ruleHead.name))"
+                      [style.border-left]="'5px solid ' + ruleHead.color" 
+                      [style.border-bottom]="'1px solid ' + ruleHead.color">{{ ruleHead.name }}</ion-item>
+          </ion-menu-toggle>
         </ion-list>
       </ion-content>
     </ion-menu>

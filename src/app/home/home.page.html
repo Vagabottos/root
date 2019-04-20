@@ -22,7 +22,7 @@
 
   <div id="top"></div>
 
-  <div *ngFor="let rule of rules" class="rule-container major" [style.border-color]="rule.color">
+  <div *ngFor="let rule of rulesService.rules" class="rule-container major" [style.border-color]="rule.color">
 
     <!-- no text or pretext at this level -->
 

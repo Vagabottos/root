@@ -5,14 +5,29 @@ import { convert as toRoman } from 'roman-numeral';
 import slugify from 'slugify';
 
 import * as rules from '../assets/rules.json';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RulesService {
 
+  private navigate: Subject<string> = new Subject<string>();
+  public get navigate$() {
+    return this.navigate;
+  }
+
+  private formattedRules: any;
   public get rules() {
+    return this.formattedRules;
+  }
+
+  public get baseRules() {
     return (rules as any).default || rules;
+  }
+
+  constructor() {
+    this.formattedRules = this.getFormattedRules();
   }
 
   public slugTitle(index: string, title: string): string {
@@ -76,8 +91,8 @@ export class RulesService {
     return renderer;
   }
 
-  public getFormattedRules() {
-    const baseRules = JSON.parse(JSON.stringify(this.rules));
+  private getFormattedRules() {
+    const baseRules = JSON.parse(JSON.stringify(this.baseRules));
     const renderer = this.getCustomRenderer(baseRules);
 
     const format = (str: string) => {
