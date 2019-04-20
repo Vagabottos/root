@@ -85,6 +85,8 @@ export class RulesService {
       return marked(str, { renderer });
     };
 
+    const buildIndex = (arr: string[]) => arr.join('.');
+
     baseRules.forEach((rule, majorRuleIndex) => {
       rule.text = format(rule.text);
       rule.pretext = format(rule.pretext);
@@ -93,20 +95,22 @@ export class RulesService {
       (rule.children || []).forEach((childRule, minorRuleIndex) => {
         childRule.text = format(childRule.text);
         childRule.pretext = format(childRule.pretext);
-        childRule.index = `${majorRuleIndex + 1}.${minorRuleIndex + 1}`;
+        childRule.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1]);
 
         (childRule.children || []).forEach((grandchildRule, revRuleIndex) => {
           grandchildRule.text = format(grandchildRule.text);
           grandchildRule.pretext = format(grandchildRule.pretext);
-          grandchildRule.index = `${majorRuleIndex + 1}.${minorRuleIndex + 1}.${revRuleIndex + 1}`;
+          grandchildRule.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1]);
 
           (grandchildRule.subchildren || []).forEach((descendantNode, descRuleIndex) => {
             descendantNode.text = format(descendantNode.text);
-            descendantNode.index = `${majorRuleIndex + 1}.${minorRuleIndex + 1}.${revRuleIndex + 1}.${descRuleIndex + 1}`;
+            descendantNode.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1, descRuleIndex + 1]);
 
             (descendantNode.subchildren || []).forEach((descDescendantNode, descDescRuleIndex) => {
               descDescendantNode.text = format(descDescendantNode.text);
-              descDescendantNode.index = `${majorRuleIndex + 1}.${minorRuleIndex + 1}.${revRuleIndex + 1}.${descRuleIndex + 1}.${descDescRuleIndex + 1}`;
+              descDescendantNode.index = buildIndex(
+                [majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1, descRuleIndex + 1, descDescRuleIndex + 1]
+              );
             });
           });
         });

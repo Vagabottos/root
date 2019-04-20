@@ -7,11 +7,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
-    "build": "npm run lint && ng build --prod",
+    "build": "npm run lint && npm run prepare && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "prepare": "node scripts/prepare",
-    "postinstall": "npm run prepare"
+    "prepare": "node scripts/prepare"
   },
   "private": true,
   "dependencies": {
