@@ -51,9 +51,9 @@
           text: A clearing is adjacent to all other clearings linked to it by a path.
         - name: Suit.
           text: Every clearing has a **suit** of mouse, rabbit, or fox.
-        - name: Slots
+        - name: Slots.
           text: Each clearing has a number of **slots**, shown as white boxes. Whenever you place a building, it fills an open slot. You cannot place a building in a clearing with no open slots.
-        - name: Ruins
+        - name: Ruins.
           text: Slots marked with a small "R" begin the game filled with **ruins**. Ruins can only be removed by the Vagabond's Explore action (`rule:9.5.3`).
     
     - name: Rivers
@@ -110,9 +110,9 @@
           subchildren:
             - name: Mouse, Rabbit, or Fox Dominance.
               text: You win the game immediately if you rule three clearings of the suit matching the activated dominance card at the start of your Birdsong.
-            - name: Bird Dominance
+            - name: Bird Dominance.
               text: You win the game immediately if you rule two clearings in opposite corners at the start of your Birdsong.
-        - name: Activated Cards
+        - name: Activated Cards.
           text: An activated dominance card does not count against your hand limit, and it cannot be removed from play. You cannot replace an activated dominance card with a different one.
         - name: Spending for Suit.
           text: A dominance card can be spent for its suit. However, when it would be placed in the discard pile, instead place it near the map to show it is **available** to be taken. `faction:cult:10.4.2`
