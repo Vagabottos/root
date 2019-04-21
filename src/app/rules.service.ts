@@ -84,7 +84,7 @@ export class RulesService {
 
           if (!chosenNode) { return `<span class="error">Not Found: ${subtype}</span>`; }
 
-          return `<a href="#${this.slugTitle(subtype, chosenNode.name)}">${chosenString}</a>`;
+          return `<a href="#${this.slugTitle(subtype, chosenNode.name)}" class="rule-link">${chosenString}</a>`;
         }
 
         if (type === 'faction') {
