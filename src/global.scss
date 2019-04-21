@@ -77,6 +77,10 @@ ion-item {
   list-style-position: outside;
   list-style-type: none;
 
+  @media (max-width: 576px) {
+    padding-left: 20px;
+  }
+
   li {
     position: relative;
 
@@ -91,12 +95,20 @@ ion-item {
     top: 3px;
 
     font-size: 12px;
+
+    @media (max-width: 576px) {
+      left: -20px;
+    }
   }
 }
 
 .alphabeta-list {
   list-style-position: outside;
   list-style-type: none;
+
+  @media (max-width: 576px) {
+    padding-left: 20px;
+  }
 
   li {
     position: relative;
@@ -112,6 +124,10 @@ ion-item {
     top: 3px;
 
     font-size: 10px;
+
+    @media (max-width: 576px) {
+      left: -20px;
+    }
   }
 }
 

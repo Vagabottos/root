@@ -1,4 +1,10 @@
 
+ion-content.ion-padding {
+  @media (max-width: 576px) {
+    --ion-padding: 4px;
+  }
+}
+
 .title-container {
   display: inline-flex;
   align-items: center;
@@ -24,6 +30,10 @@
     padding-bottom: 5px;
   
     margin-bottom: 20px;
+
+    @media (max-width: 576px) {
+      padding-left: 10px;
+    }
   }
 
   &.minor:not(:last-child) {
@@ -36,9 +46,14 @@
 }
 
 .rule {
+
   &.major {
     font-size: 36px;
     font-weight: bold;
+
+    @media (max-width: 576px) {
+      font-size: 18px;
+    }
   }
 
   &.minor {
@@ -46,7 +61,12 @@
     font-variant: small-caps;
     font-weight: bold;
 
+    margin-top: 10px;
     margin-bottom: 10px;
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
   }
 
   &.child {
@@ -54,21 +74,38 @@
 
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 576px) {
+      flex-wrap: wrap;
+    }
   }
 }
 
 .index {
   &.major {
     margin-right: 10px;
+
+    @media (max-width: 576px) {
+      margin-right: 5px;
+    }
   }
 
   &.minor {
     margin-right: 20px;
+
+    @media (max-width: 576px) {
+      margin-right: 5px;
+    }
   }
 
   &.child {
     margin-right: 20px;
     min-width: 45px;
+
+    @media (max-width: 576px) {
+      margin-right: 0;
+      min-width: 30px;
+    }
   }
 }
 
@@ -78,7 +115,7 @@
 
 .desc.child .name {
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .list {
