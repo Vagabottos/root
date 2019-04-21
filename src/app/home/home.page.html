@@ -46,7 +46,7 @@
 
     <div class="rule major" [id]="rulesService.indexesToRules[rule.index]">
       <span class="index major">{{ rule.index }}</span> 
-      <a [innerHTML]="rule.name | highlight:searchTerm"
+      <a [innerHTML]="rule.name | highlight:searchTerm:rule.index"
          [href]="'#' + rulesService.indexesToRules[rule.index]"></a>
     </div>
 
