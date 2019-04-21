@@ -123,13 +123,3 @@ ion-content.ion-padding {
     margin-bottom: 10px;
   }
 }
-
-a {
-  text-decoration: none;
-  color: #000;
-
-  &:hover {
-    text-decoration: underline;
-    color: var(--ion-color-primary);
-  }
-}
