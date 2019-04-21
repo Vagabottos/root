@@ -6,7 +6,7 @@
   "homepage": "https://root.seiyria.com",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o",
+    "start": "ng serve -o --host=0.0.0.0",
     "build": "npm run lint && npm run prepare && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",

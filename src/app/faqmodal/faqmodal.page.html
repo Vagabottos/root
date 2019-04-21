@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Frequently Asked Questions</ion-title>
+    <ion-title>
+      <span class="ion-hide-sm-down">Frequently Asked Questions</span>
+      <span class="ion-hide-sm-up">FAQ</span>
+    </ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="dismiss()">
         Close
@@ -16,12 +19,12 @@
 
     <div *ngFor="let question of faqCat.questions" class="question">
       <ion-row class="question-row">
-        <ion-col size="1">Q:</ion-col>
+        <ion-col size="1" class="lead">Q</ion-col>
         <ion-col>{{ question.q }}</ion-col>
       </ion-row>
 
       <ion-row class="answer-row">
-        <ion-col size="1">A:</ion-col>
+        <ion-col size="1" class="lead">A</ion-col>
         <ion-col>{{ question.a }}</ion-col>
       </ion-row>
 
