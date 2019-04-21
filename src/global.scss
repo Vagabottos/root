@@ -60,8 +60,12 @@ ion-list {
   background: transparent !important;
 }
 
-ion-item {
+ion-item, a[href], img[href] {
   cursor: pointer;
+}
+
+a[href] > img {
+  pointer-events: none;
 }
 
 * {

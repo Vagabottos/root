@@ -32,6 +32,11 @@ export class RulesService {
   }
 
   constructor() {
+
+    // the formatter needs this to have run once
+    // and this needs the formatter to run correctly
+    // bad solution: we just run it twice.
+    this.formattedRules = this.getFormattedRules();
     this.formattedRules = this.getFormattedRules();
   }
 
@@ -45,7 +50,7 @@ export class RulesService {
     // custom inline image formatter
     renderer.codespan = (text: string) => {
       if (text.includes(':')) {
-        const [type, subtype] = text.split(':');
+        const [type, subtype, extra] = text.split(':');
 
         if (type === 'rule') {
           const [major, minor, child, desc, descDesc] = subtype.split('.');
@@ -67,12 +72,12 @@ export class RulesService {
             chosenNode = chosenNode.children[(+child) - 1];
           }
 
-          if (desc && chosenNode)  {
+          if (desc && chosenNode) {
             chosenString += `.${toRoman(desc)}`;
             chosenNode = chosenNode.subchildren[(+desc) - 1];
           }
 
-          if (descDesc && chosenNode)  {
+          if (descDesc && chosenNode) {
             chosenString += `${String.fromCharCode((+descDesc) + 97)}`;
             chosenNode = chosenNode.subchildren[(+descDesc) - 1];
           }
@@ -80,6 +85,14 @@ export class RulesService {
           if (!chosenNode) { return `<span class="error">Not Found: ${subtype}</span>`; }
 
           return `<a href="#${this.slugTitle(subtype, chosenNode.name)}">${chosenString}</a>`;
+        }
+
+        if (type === 'faction') {
+          return `
+            <a href="#${this.indexRuleHash[extra]}">
+              <img src="assets/inicon/${type}-${subtype}.png" class="inline-icon" />
+            </a>
+          `;
         }
 
         return `<img src="assets/inicon/${type}-${subtype}.png" class="inline-icon" />`;

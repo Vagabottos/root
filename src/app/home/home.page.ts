@@ -88,11 +88,11 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
 
   @HostListener('document:click', ['$event'])
   public clickScreen($event) {
-    if (!$event.target || !$event.target.hash) { return; }
+     if (!$event.target || !$event.target.hash) { return; }
 
-    $event.preventDefault();
-    $event.stopPropagation();
+     $event.preventDefault();
+     $event.stopPropagation();
 
-    this.scrollToEl($event.target.hash, 'start');
+     this.scrollToEl($event.target.hash, 'start');
   }
 }

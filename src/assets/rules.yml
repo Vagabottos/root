@@ -14,7 +14,7 @@
     - name: Public and Private Information
       children:
         - name: Hands.
-          text: Players may only reveal cards in their hand if explicitly instructed, but the number of cards in their hand is public information. `faction:riverfolk`
+          text: Players may only reveal cards in their hand if explicitly instructed, but the number of cards in their hand is public information. `faction:riverfolk:11.2.3`
         - name: Discard.
           text: The discard pile can be searched at any time.
     
@@ -28,7 +28,7 @@
       pretext: "Each card has a **suit**: bird, fox, rabbit, or mouse. Most cards also have an effect you can craft (`rule:4.1`)."
       children:
         - name: Birds Are Wild.
-          text: You can always treat a bird card as a card of another suit, even if you must spend, take, or give multiple cards of the same suit. `faction:cult`
+          text: You can always treat a bird card as a card of another suit, even if you must spend, take, or give multiple cards of the same suit. `faction:cult:10.2.2`
           subchildren:
             - name: Forced Effects.
               text: When you are prompted to discard or give away fox, rabbit, or mouse cards, you must treat your bird cards as the prompted suit.
@@ -38,7 +38,7 @@
         - name: Draw from Shared Deck.
           text: Whenever you are prompted to **draw** a card, take it from the shared deck. If the deck is empty, shuffle the discard pile to form a new deck.
         - name: Spend and Discard to Shared Pile.
-          text: Whenever you are prompted to **discard** or **spend** a card, place it in the shared discard pile unless it is a dominance card (`rule:3.3`). `faction:cult`
+          text: Whenever you are prompted to **discard** or **spend** a card, place it in the shared discard pile unless it is a dominance card (`rule:3.3`). `faction:cult:10.2.6`
         - name: Ambush Cards.
           text: "There are five **ambush cards**: one mouse, one rabbit, one fox, and two birds. You may spend an ambush card for its suit, but it does not have a crafted effect. You may also play one in battle to deal hits (`rule:4.3.1`)."
         - name: Dominance Cards.
@@ -57,7 +57,7 @@
           text: Slots marked with a small "R" begin the game filled with **ruins**. Ruins can only be removed by the Vagabond's Explore action (`rule:9.5.3`).
     
     - name: Rivers
-      pretext: Many clearings are linked by **rivers**, which act as paths only for the Riverfolk Company. Rivers do not divide clearings or forests. `faction:riverfolk`
+      pretext: Many clearings are linked by **rivers**, which act as paths only for the Riverfolk Company. Rivers do not divide clearings or forests. `faction:riverfolk:11.2.2`
       
     - name: Forests
       pretext: Areas on the map enclosed by paths and clearings are called **forests**.
@@ -69,15 +69,15 @@
       pretext: Each faction has a set of **pieces** listed on the back of its faction board. Pieces are limited by the contents of the game. If you are prompted to place, take, or remove a piece but you cannot, you must place, take, or remove the maximum number possible.
       children:
         - name: Warriors.
-          text: If you are prompted to place a warrior, take it from your supply. If one of your warriors is removed, return it to your supply. `faction:marquise` `faction:cult`
+          text: If you are prompted to place a warrior, take it from your supply. If one of your warriors is removed, return it to your supply. `faction:marquise:6.2.3` `faction:cult:10.2.3`
         - name: Buildings.
           text: If you are prompted to place a building, take the leftmost building from its track on your faction board. If one of your buildings is removed, return it to the rightmost empty space of its track.
         - name: Tokens.
-          text: If you are prompted to place a token, take the leftmost token from its track, if any, or take it from your supply. If one of your tokens is removed, return it to the rightmost empty space of its track, if any, or to your supply. `faction:marquise` `faction:riverfolk`
+          text: If you are prompted to place a token, take the leftmost token from its track, if any, or take it from your supply. If one of your tokens is removed, return it to the rightmost empty space of its track, if any, or to your supply. `faction:marquise:6.2.2` `faction:riverfolk:11.2.5.1`
         - name: The Vagabond Pawn.
           text: The Vagabond Pawn cannot be removed from the map.
         - name: Items.
-          text: If you are prompted to take an item, take it from the shared supply on the map and place it in the Crafted Items box on your faction board. If you are prompted to remove an item, return it to the box. `faction:vagabond`
+          text: If you are prompted to take an item, take it from the shared supply on the map and place it in the Crafted Items box on your faction board. If you are prompted to remove an item, return it to the box. `faction:vagabond:9.6.4`
 
     - name: Play Area
       pretext: Your **play area** is the area around your faction board.
@@ -86,7 +86,7 @@
       pretext: An **enemy** is any faction not in a coalition with you (`rule:9.2.8`).
 
     - name: Ruler
-      pretext: The **ruler** of a clearing is the player with the most total warriors and buildings in that clearing. _(Tokens and pawns do not contribute to rule.)_ If there is a tie between players in a clearing, no one there is the ruler. `faction:eyrie` `faction:vagabond` `faction:cult`
+      pretext: The **ruler** of a clearing is the player with the most total warriors and buildings in that clearing. _(Tokens and pawns do not contribute to rule.)_ If there is a tie between players in a clearing, no one there is the ruler. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
 
 - name: Victory
   color: "#000000"
@@ -100,13 +100,13 @@
         - name: Removing Buildings and Tokens.
           text: Whenever you remove an enemy's building or token, you score one victory point.
         - name: Crafting Items.
-          text: Whenever you craft an item (`rule:4.1`), you score the victory points listed on the card. `faction:eyrie`
+          text: Whenever you craft an item (`rule:4.1`), you score the victory points listed on the card. `faction:eyrie:7.2.3`
 
     - name: Dominance Cards
       pretext: The deck holds four dominance cards, which can be played to win the game without reaching 30 victory points.
       children:
         - name: Activating.
-          text: During your Daylight, if you have at least 10 victory points, you may **activate** a dominance card by placing it in your play area. Remove your score marker from the score track. You can no longer score victory points. `faction:vagabond`
+          text: During your Daylight, if you have at least 10 victory points, you may **activate** a dominance card by placing it in your play area. Remove your score marker from the score track. You can no longer score victory points. `faction:vagabond:9.2.8`
           subchildren:
             - name: Mouse, Rabbit, or Fox Dominance.
               text: You win the game immediately if you rule three clearings of the suit matching the activated dominance card at the start of your Birdsong.
@@ -115,7 +115,7 @@
         - name: Activated Cards
           text: An activated dominance card does not count against your hand limit, and it cannot be removed from play. You cannot replace an activated dominance card with a different one.
         - name: Spending for Suit.
-          text: A dominance card can be spent for its suit. However, when it would be placed in the discard pile, instead place it near the map to show it is **available** to be taken. `faction:cult`
+          text: A dominance card can be spent for its suit. However, when it would be placed in the discard pile, instead place it near the map to show it is **available** to be taken. `faction:cult:10.4.2`
         - name: Taking Available Cards.
           text: During your Daylight, you can take an available dominance card into your hand by spending a card of matching suit.
 
@@ -126,9 +126,9 @@
       pretext: You can **craft** most cards from your hand to gain an immediate or persistent effect.
       children:
         - name: Cost.
-          text: To **craft** a card, you must **activate** crafting pieces of the suits listed in the card's bottom-left corner. The suit of a crafting piece matches its clearing. Each crafting piece may be activated only once per turn. A three-color question mark denotes a crafting piece of any suit. `faction:vagabond` `faction:riverfolk`
+          text: To **craft** a card, you must **activate** crafting pieces of the suits listed in the card's bottom-left corner. The suit of a crafting piece matches its clearing. Each crafting piece may be activated only once per turn. A three-color question mark denotes a crafting piece of any suit. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1`
         - name: Immediate Effects.
-          text: When you craft an immediate effect, resolve its effect and then discard the card. If it shows an item, take the matching item from the supply and place it in the Crafted Items box on your faction board. If the card lists an item not in the supply, the card cannot be crafted. `faction:eyrie` `faction:vagabond`
+          text: When you craft an immediate effect, resolve its effect and then discard the card. If it shows an item, take the matching item from the supply and place it in the Crafted Items box on your faction board. If the card lists an item not in the supply, the card cannot be crafted. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8`
         - name: Persistent Effects.
           text: When you craft a persistent effect, place it in your play area. You may use the effect as described on the card.
         - name: No Duplicates.
@@ -138,7 +138,7 @@
       pretext: When you **move**, you may take any number of your warriors or your pawn from one clearing and move them to one adjacent clearing.
       children:
         - name: You Must Rule.
-          text: To take a move, you must rule the origin clearing, destination clearing, or both. `faction:vagabond` `faction:riverfolk`
+          text: To take a move, you must rule the origin clearing, destination clearing, or both. `faction:vagabond:9.2.3` `faction:riverfolk:11.2.2`
         - name: No Movement Limits.
           text: A given piece can be moved any number of times per turn. If you are prompted to take multiple moves, you may move the same or separate groups of warriors.
 
@@ -151,14 +151,14 @@
             - name: Foil Ambush.
               text: After the defender plays an ambush card, the attacker may cancel its effect by also playing an ambush card matching the clearing of the battle. (The defender still _discards_ their ambush card.)
         - name: "Step 2: Roll Dice and Add Extra Hits."
-          text: Roll both dice. The attacker will deal hits equal to the higher roll, and the defender will deal hits equal to the lower roll. If the rolls are equal, attacker and defender will deal the same number of hits. _(The use of "will" here reflects that hits are not dealt until step 3.)_ `faction:woodland`
+          text: Roll both dice. The attacker will deal hits equal to the higher roll, and the defender will deal hits equal to the lower roll. If the rolls are equal, attacker and defender will deal the same number of hits. _(The use of "will" here reflects that hits are not dealt until step 3.)_ `faction:woodland:8.2.2`
           subchildren:
             - name: Maximum Rolled Hits.
-              text: The maximum hits you can deal from rolling equals the number of your warriors in the clearing of battle, whether you are the attacker or defender. `faction:vagabond`
+              text: The maximum hits you can deal from rolling equals the number of your warriors in the clearing of battle, whether you are the attacker or defender. `faction:vagabond:9.2.6`
             - name: Extra Hits.
               text: After counting hits from rolling, the attacker and defender can add **extra hits** by using special abilities or other effects in their play areas. Extra hits are not limited by the number of warriors in the clearing of battle.
             - name: Defenseless.
-              text: If the defender has no warriors in the clearing of battle, the attacker will deal an extra hit. `faction:vagabond`
+              text: If the defender has no warriors in the clearing of battle, the attacker will deal an extra hit. `faction:vagabond:9.2.4`
         - name: "Step 3: Deal Hits."
           text: Attacker and defender deal hits simultaneously. Each hit you deal removes one piece. The player taking hits chooses which of their pieces are removed from the clearing of battle, but must choose to remove all their warriors there before they choose to remove any of their buildings or tokens there in any order. (You score one victory point per enemy building or token removed.)
 
@@ -248,7 +248,7 @@
         - name: Crafting.
           text: The Eyrie craft before resolving the Decree during Daylight by activating roosts.
         - name: Lords of the Forest.
-          text: The Eyrie rule a clearing when tied for most combined warriors and buildings there. They do not rule empty clearings. `faction:cult`
+          text: The Eyrie rule a clearing when tied for most combined warriors and buildings there. They do not rule empty clearings. `faction:cult:10.2.4`
         - name: Disdain for Trade.
           text: Whenever the Eyrie craft an item, they ignore the listed victory points and instead score only one victory point.
 
