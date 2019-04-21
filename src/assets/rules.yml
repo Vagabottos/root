@@ -184,6 +184,7 @@
 
 - name: Marquise de Cat
   color: "#e07a37"
+  icon: marquise
   children:
     - name: Overview
       pretext: The Marquise de Cat occupies the Woodland and wants to turn it into an industrial and military powerhouse. Each time the Marquise builds one of her **buildings**—a workshop, sawmill, or recruiter—she scores victory points. The more of the same building she has on the map, the more points she scores. However, to fuel ongoing construction, the Marquise must maintain and protect a strong, interconnected economy of **wood**.
@@ -239,6 +240,7 @@
 
 - name: Eyrie Dynasties
   color: "#416eb0"
+  icon: eyrie
   children:
     - name: Overview
       pretext: The Eyrie Dynasties wish to restore their once-dignified kind to their former glory in the Woodland by retaking control of the forest clearings. During their Evening, the Eyrie score victory points based on the number of **roosts** on the map. The greater their presence in the Woodland, the greater their gains. However, the Eyrie are bound by their **decree**, an ever-increasing set of mandated actions promised by their **leader**. Each turn, they must take all of the actions on their Decree, or else fall into **turmoil**.
@@ -329,6 +331,7 @@
 
 - name: Woodland Alliance
   color: "#68b653"
+  icon: woodland
   children:
     - name: Overview
       pretext: The Woodland Alliance works to gain the **sympathy** of the various creatures of the Woodland who are dissatisfied with their present condition. Each time the Alliance places a sympathy token, they may score victory points. The more sympathy on the map they have, the more victory points they score. Gaining the sympathy of the people requires **supporters**. These supporters can also be put toward violent ends, inciting outright rebellion across the forest. When a revolt erupts, the Alliance will establish a **base**. Bases allow the Alliance to train officers, increasing their military flexibility.
@@ -422,6 +425,7 @@
 
 - name: Vagabond
   color: "#6d6e70"
+  icon: vagabond
   children:
     - name: Overview
       pretext: The Vagabond plays all sides of the conflict while going on quests to increase his renown throughout the wood. Each time the Vagabond improves his **relationship** with another faction, or removes a warrior belonging to a faction hostile toward him, he scores victory points. He can also complete **quests** to score victory points. To move and act effectively the Vagabond must manage his pack of **items**, expanding his selection by exploring the forest ruins and providing aid to other factions.
@@ -573,6 +577,7 @@
 
 - name: Lizard Cult
   color: "#fcf065"
+  icon: cult
   children:
     - name: Overview
       pretext: Catering to those creatures who have been discarded by the other factions, the Lizard Cult seeks to overwhelm its foes through sheer force of will. The Cult relies on word of mouth and beak to spread its gospel, and new enclaves can spring up anywhere on the map. Where the Cult rule clearings, they can build gardens, which will further radicalize the animals that live there. While other factions spend cards to achieve their aims, the Cult acts chiefly by revealing cards and gradually drafting the ideal set of followers. Unless used for scoring, these cards are not spent and are returned to the Cult’s hand during Evening. However, this gentler approach makes movement and combat operations difficult, so these actions can only be undertaken by the most radicalized members of the Cult.
@@ -644,6 +649,7 @@
 
 - name: Riverfolk Company
   color: "#5bc3bd"
+  icon: riverfolk
   children:
     - name: Overview
       pretext: When news arrived that the Woodland on the shore of the great lake was descending into all-out war, the Riverfolk Company quickly dispatched its officers to set up shop. As other factions purchase services, the Riverfolk will be able to further entrench their commercial interests by building trade posts across the forest. The construction of these posts is a viable way to score victory points, but so too is the raw accumulation of wealth. However, a big treasury makes for an easy target, and so the Riverfolk must balance protecting their growing treasury with expanding of their operations into the more dangerous clearings of the forest.

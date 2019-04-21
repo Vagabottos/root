@@ -16,7 +16,10 @@
             <ion-item color="transparent"
                       (click)="rulesService.navigate$.next(rulesService.indexesToRules[ruleHead.index])"
                       [style.border-left]="'5px solid ' + ruleHead.color" 
-                      [style.border-bottom]="'1px solid ' + ruleHead.color">{{ ruleHead.name }}</ion-item>
+                      [style.border-bottom]="'1px solid ' + ruleHead.color">
+                      {{ ruleHead.name }}
+                      <img *ngIf="ruleHead.icon" class="inline-icon ion-margin-start" [src]="'assets/inicon/faction-' + ruleHead.icon + '.png'" />
+            </ion-item>
           </ion-menu-toggle>
         </ion-list>
       </ion-content>
