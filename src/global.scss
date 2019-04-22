@@ -48,16 +48,17 @@
   font-style: normal;
 }
 
-ion-toolbar {
+ion-toolbar, ion-content{
   --background: url("/assets/background.png") repeat;
 }
 
-ion-content {
-  --background: url("/assets/background.png") repeat;
+ion-router-outlet {
+  background: url("/assets/background.png") repeat;
 }
 
 ion-list {
   background: transparent !important;
+  padding-top: 0 !important;
 }
 
 ion-item, a[href], img[href] {
@@ -153,7 +154,7 @@ mark {
   color: #fff;
 }
 
-a {
+a:not(.rule-link) {
   text-decoration: none;
   color: #000;
 
