@@ -14,6 +14,7 @@
     <ion-searchbar *ngIf="showSearch" 
                    color="primary"
                    showCancelButton="true"
+                   debounce="300"
                    (ionCancel)="setSearchValue(null)"
                    (ionClear)="setSearchValue(null)"
                    (ionChange)="setSearchValue($event.detail.value)"
@@ -40,7 +41,10 @@
 
   <div id="top"></div>
 
-  <div *ngFor="let rule of rulesService.rules" class="rule-container major" [style.border-color]="rule.color">
+  <div *ngFor="let rule of rulesService.rules; let majorIndex = index" 
+        class="rule-container major" 
+        [style.border-color]="rule.color"
+        [class.ion-hide]="!isVisible([majorIndex + 1])">
 
     <!-- no text or pretext at this level -->
 
@@ -50,44 +54,50 @@
          [href]="'#' + rulesService.indexesToRules[rule.index]"></a>
     </div>
 
-    <div *ngFor="let childRule of rule.children" class="rule-container minor">
+    <div *ngFor="let childRule of rule.children; let minorIndex = index" 
+          class="rule-container minor"
+          [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1])">
 
       <!-- no text at this level -->
 
       <div class="rule minor" [id]="rulesService.indexesToRules[childRule.index]">
         <span class="index minor">{{ childRule.index }}</span> 
-        <a [innerHTML]="childRule.name | highlight:searchTerm" 
+        <a [innerHTML]="childRule.name | highlight:searchTerm:childRule.index" 
            [href]="'#' + rulesService.indexesToRules[childRule.index]"></a>
       </div>
 
-      <div class="pretext" [innerHTML]="childRule.pretext | highlight:searchTerm"></div>
+      <div class="pretext" [innerHTML]="childRule.pretext | highlight:searchTerm:childRule.index"></div>
 
-      <div *ngFor="let grandchildRule of childRule.children" class="rule-container child">
+      <div *ngFor="let grandchildRule of childRule.children; let childIndex = index" 
+            class="rule-container child"
+            [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1])">
     
         <!-- no pretext at this level -->
   
         <div class="rule child" [id]="rulesService.indexesToRules[grandchildRule.index]">
           <span class="index child">{{ grandchildRule.index }}</span> 
           <span class="desc child">
-            <a class="name child" [innerHTML]="grandchildRule.name | highlight:searchTerm"
+            <a class="name child" [innerHTML]="grandchildRule.name | highlight:searchTerm:grandchildRule.index"
                                   [href]="'#' + rulesService.indexesToRules[grandchildRule.index]"></a>
-            <span class="text child" [innerHTML]="grandchildRule.text | highlight:searchTerm"></span>
+            <span class="text child" [innerHTML]="grandchildRule.text | highlight:searchTerm:grandchildRule.index"></span>
 
             <!-- please never go deeper -->
             <ol class="romanized-list list" *ngIf="grandchildRule.subchildren">
-              <li *ngFor="let descRule of grandchildRule.subchildren">
+              <li *ngFor="let descRule of grandchildRule.subchildren; let descIndex = index"
+                  [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1, descIndex + 1])">
                 <a class="name child"    [id]="rulesService.indexesToRules[descRule.index]" 
-                                         [innerHTML]="descRule.name | highlight:searchTerm"
+                                         [innerHTML]="descRule.name | highlight:searchTerm:descRule.index"
                                          [href]="'#' + rulesService.indexesToRules[descRule.index]"></a>
-                <span class="text child" [innerHTML]="descRule.text | highlight:searchTerm"></span>
+                <span class="text child" [innerHTML]="descRule.text | highlight:searchTerm:descRule.index"></span>
 
                 <!-- I said please :( -->
                 <ol class="alphabeta-list list sublist" *ngIf="descRule.subchildren">
-                  <li *ngFor="let descDescRule of descRule.subchildren">
+                  <li *ngFor="let descDescRule of descRule.subchildren; let descDescIndex = index"
+                      [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1, descIndex + 1, descDescIndex + 1])">
                     <a class="name child"    [id]="rulesService.indexesToRules[descDescRule.index]" 
-                                             [innerHTML]="descDescRule.name | highlight:searchTerm"
+                                             [innerHTML]="descDescRule.name | highlight:searchTerm:descDescRule.index"
                                              [href]="'#' + rulesService.indexesToRules[descDescRule.index]">{{ descDescRule.name }}</a>
-                    <span class="text child" [innerHTML]="descDescRule.text | highlight:searchTerm"></span>
+                    <span class="text child" [innerHTML]="descDescRule.text | highlight:searchTerm:descDescRule.index"></span>
                   </li>
                 </ol>
               </li>

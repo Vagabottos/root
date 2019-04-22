@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, AfterContentInit, OnDestroy, HostListener } from '@angular/core';
 
+import { get } from 'lodash';
+
 import { RulesService } from '../rules.service';
 import { IonContent, ModalController } from '@ionic/angular';
 import { Subscription } from 'rxjs';
@@ -48,6 +50,7 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
 
   public setSearchValue(str: string) {
     this.searchTerm = str;
+    this.rulesService.resetVisibility();
 
     if (str === null) { this.showSearch = false; }
   }
@@ -64,6 +67,11 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
     });
 
     await modal.present();
+  }
+
+  public isVisible(index: string[]): boolean {
+    if(!this.searchTerm) { return true; }
+    return get(this.rulesService.indexVisibilityHash, [...index, 'visible'], false);
   }
 
   public scroll($event) {

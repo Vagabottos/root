@@ -12,6 +12,8 @@ import { Subject } from 'rxjs';
 })
 export class RulesService {
 
+  public indexVisibilityHash = {};
+
   private indexRuleHash = {};
   public get indexesToRules() {
     return this.indexRuleHash;
@@ -156,5 +158,26 @@ export class RulesService {
     });
 
     return baseRules;
+  }
+
+  public resetVisibility() {
+    this.indexVisibilityHash = {};
+  }
+
+  public setVisibility(index: string) {
+    if (index.endsWith('.')) { index = index.substring(0, index.length - 1); }
+    const allEntries = index.split('.');
+
+    // take care of the first entry
+    this.indexVisibilityHash[allEntries[0]] = this.indexVisibilityHash[allEntries[0]] || { visible: true };
+    let curObj = this.indexVisibilityHash[allEntries[0]];
+
+    allEntries.shift();
+
+    // iteratively do the rest
+    allEntries.forEach(idx => {
+      curObj[idx] = curObj[idx] || { visible: true };
+      curObj = curObj[idx];
+    });
   }
 }
