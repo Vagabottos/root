@@ -48,12 +48,12 @@
   font-style: normal;
 }
 
-ion-toolbar {
+ion-toolbar, ion-content{
   --background: url("/assets/background.png") repeat;
 }
 
-ion-content {
-  --background: url("/assets/background.png") repeat;
+ion-router-outlet {
+  background: url("/assets/background.png") repeat;
 }
 
 ion-list {
