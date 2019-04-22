@@ -70,7 +70,7 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
   }
 
   public isVisible(index: string[]): boolean {
-    if(!this.searchTerm) { return true; }
+    if (!this.searchTerm) { return true; }
     return get(this.rulesService.indexVisibilityHash, [...index, 'visible'], false);
   }
 
