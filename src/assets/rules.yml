@@ -17,6 +17,13 @@
           text: Players may only reveal cards in their hand if explicitly instructed, but the number of cards in their hand is public information. `faction:riverfolk:11.2.3`
         - name: Discard.
           text: The discard pile can be searched at any time.
+          
+    - name: Negotiation and Deals
+      children:
+        - name: Agreements.
+          text: Players are free to discuss the game during play, but agreements between players are non-binding.
+        - name: Cards
+          text: Players may only give cards to each other if explicitly instructed.
     
     - name: Game Structure
       pretext: "Each player's turn consists of three phases: Birdsong, Daylight, and Evening. After a player completes all three phases, the next clockwise player begins their turn. Play continues until one player has won the game (`rule:3.1`)."
