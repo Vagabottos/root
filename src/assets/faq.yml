@@ -140,7 +140,7 @@
       laws:
         - "9.8.1"
    
-- name: Lizard Cult
+- category: Lizard Cult
   color: "#fcf065"
   questions:
     - q: When the Lizard Cult is in play, how does the discard pile change?
