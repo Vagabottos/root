@@ -18,9 +18,14 @@
         - "4.3.1"
 
     - q: Do the Favor... cards really remove all enemy pieces from those clearings?
-      a: Yes. Every single one—except the Vagabond, of course. What a sneaky guy.
+      a: Yes. Every single one—except the Vagabond, of course. What a sneaky guy. However, Ruins and the items beneath them are not removed! Lucky Vagabond.
       laws: 
         - "2.1"
+
+    - q: Do the Favor... cards score victory points?
+      a: Yes. Every token and building removed scores one point.
+      laws: 
+        - "3.2.1"
 
     - q: How do I get rid of enemy tokens, like sympathy tokens?
       a: You battle them, like any other piece. You can also remove them with Favor cards. 
@@ -45,6 +50,15 @@
       laws:
         - "4.1.1"
 
+    - q: Are Ruins placed even if there is no Vagabond in the game?
+      a: Yes. Ruins are always placed on the board.
+      laws:
+        - "2.2.4"
+
+    # https://boardgamegeek.com/article/29867471#29867471
+    - q: What effects trigger in what order when multiple pieces are removed simultaneously?
+      a: The initiator/attacker gets priority on effects, so their effects are resolved immediately. All others are secondary.
+
 - category: Marquise de Cat
   color: "#e07a37"
   questions:
@@ -58,6 +72,11 @@
       laws:
         - "4.2"
         - "6.2.2"
+
+    - q: How do the Marquise build using their supply chain?
+      a: They must control the clearing the wood is in, the clearing they want to build in, and each clearing on the route from the wood to the destination.
+      laws:
+        - "6.5.4.2"
 
 - category: Eyrie Dynasties
   color: "#416eb0"
@@ -115,7 +134,20 @@
       laws:
         - "8.2.6"
         - "9.2.9"
-      
+
+    - q: What happens if I find a second, duplicate Ruin item in a game with a second Vagabond?
+      a: You cannot take it, and you have consumed a Torch in the process. You can only have one of each R item at most.
+      laws:
+        - "9.8.1"
+   
+- name: Lizard Cult
+  color: "#fcf065"
+  questions:
+    - q: When the Lizard Cult is in play, how does the discard pile change?
+      a: Each player discards all normally-discarded cards to the Lost Souls pile.
+      laws:
+        - "10.2.6"
+
 - category: Riverfolk Company
   color: "#5bc3bd"
   questions:
