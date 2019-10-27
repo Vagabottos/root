@@ -457,7 +457,7 @@
             - name: Moving Items.
               text: The Vagabond can freely move face-up, undamaged `item:tea`, `item:coin`, and `item:sack` between their tracks and the Satchel.
         - name: Maximum Rolled Hits.
-          text: In battle, the Vagabond’s maximum rolled hits (`rule:4.3.2.1`) equals his undamaged `item:sword`, face up or face down, in his Satchel.
+          text: In battle, the Vagabond's maximum rolled hits (`rule:4.3.2.1`) equals his undamaged `item:sword`, face up or face down, in his Satchel.
         - name: Taking Hits.
           text: Whenever the Vagabond takes a hit (`rule:4.3.3`), he must damage one undamaged item, moving it to his Damaged box. If no undamaged items remain to damage, the Vagabond ignores any remaining hits.
         - name: Dominance Cards and Coalitions.
@@ -473,7 +473,7 @@
                 - name: Effect.
                   text: Advance that faction's relationship marker one space right on the track. Score the victory points listed in the new space.
             - name: Allied Status.
-              text: If a faction’s relationship marker reaches the final space on the Allied track, you are now trusted by the warriors of that faction. This faction is now **Allied**.
+              text: If a faction's relationship marker reaches the final space on the Allied track, you are now trusted by the warriors of that faction. This faction is now **Allied**.
               subchildren:
                 - name: Aiding Ally.
                   text: Each time you Aid an Allied faction, score two victory points.
