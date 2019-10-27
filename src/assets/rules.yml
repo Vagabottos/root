@@ -52,7 +52,7 @@
           text: There are four **dominance cards** matching the four suits. You may spend a dominance card for its suit, but it cannot be crafted. You may also play one to permanently change your victory condition (`rule:3.3`).
 
     - name: Clearings and Paths
-      pretext: The map of the Woodland is composed of many **clearings** and **paths**.
+      pretext: The map of the Woodland is composed of many **clearings** linked by **paths**.
       children:
         - name: Adjacency.
           text: A clearing is adjacent to all other clearings linked to it by a path.
@@ -64,7 +64,7 @@
           text: Slots marked with a small "R" begin the game filled with **ruins**. Ruins can only be removed by the Vagabond's Explore action (`rule:9.5.3`).
     
     - name: Rivers
-      pretext: Many clearings are linked by **rivers**, which act as paths only for the Riverfolk Company. Rivers do not divide clearings or forests. `faction:riverfolk:11.2.2`
+      pretext: Many clearings are linked by **rivers**, which act as paths for only the Riverfolk Company. Rivers do not divide clearings or forests. `faction:riverfolk:11.2.2`
       
     - name: Forests
       pretext: Areas on the map enclosed by paths and clearings are called **forests**.
@@ -82,7 +82,7 @@
         - name: Tokens.
           text: If you are prompted to place a token, take the leftmost token from its track, if any, or take it from your supply. If one of your tokens is removed, return it to the rightmost empty space of its track, if any, or to your supply. `faction:marquise:6.2.2` `faction:riverfolk:11.2.5.1`
         - name: The Vagabond Pawn.
-          text: The Vagabond Pawn cannot be removed from the map.
+          text: The Vagabond pawn cannot be removed from the map.
         - name: Items.
           text: If you are prompted to take an item, take it from the shared supply on the map and place it in the Crafted Items box on your faction board. If you are prompted to remove an item, return it to the box. `faction:vagabond:9.6.4`
 
@@ -90,7 +90,7 @@
       pretext: Your **play area** is the area around your faction board.
 
     - name: Enemy
-      pretext: An **enemy** is any faction not in a coalition with you (`rule:9.2.8`).
+      pretext: An **enemy** is any other faction not in a coalition with you (`rule:9.2.8`).
 
     - name: Ruler
       pretext: The **ruler** of a clearing is the player with the most total warriors and buildings in that clearing. _(Tokens and pawns do not contribute to rule.)_ If there is a tie between players in a clearing, no one there is the ruler. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
@@ -229,7 +229,7 @@
         - name: March.
           text: Take two moves.
         - name: Recruit.
-          text: Place one warrior at each recruiter. You may only take this action once per turn.
+          text: Place one warrior at each recruiter. You may take this action only once per turn.
         - name: Build.
           text: Place a building.
           subchildren:
@@ -250,7 +250,7 @@
   icon: eyrie
   children:
     - name: Overview
-      pretext: The Eyrie Dynasties wish to restore their once-dignified kind to their former glory in the Woodland by retaking control of the forest clearings. During their Evening, the Eyrie score victory points based on the number of **roosts** on the map. The greater their presence in the Woodland, the greater their gains. However, the Eyrie are bound by their **decree**, an ever-increasing set of mandated actions promised by their **leader**. Each turn, they must take all of the actions on their Decree, or else fall into **turmoil**.
+      pretext: The Eyrie Dynasties wish to restore their once- dignified kind to their former glory in the Woodland by retaking control of the forest clearings. During their Evening, the Eyrie score victory points based on the number of **roosts** on the map. The greater their presence in the Woodland, the greater their gains. However, the Eyrie are bound by their **Decree**, an ever-increasing set of mandated actions promised by their **leader**. Each turn, they must take all of the actions on their Decree, or else fall into **turmoil**.
 
     - name: Faction Rules and Abilities
       children:
@@ -347,7 +347,7 @@
       children:
         - name: Crafting.
           text: The Alliance crafts during Daylight by activating sympathy tokens.
-        - name: Guerrila War.
+        - name: Guerrilla War.
           text: As defender in battle, the Alliance will deal hits equal to the higher roll, and the attacker will deal hits equal to the lower roll.
         - name: The Supporters Stack.
           text: To take various actions, the Alliance spends supporters, which are cards on their Supporters stack. Supporters can only be spent for their suit and do not count against the Alliance's hand size. Supporters are face down, but the Alliance may inspect them at any time.
@@ -575,7 +575,7 @@
     - name: Playing with Two Vagabonds
       subtext: If you have The Riverfolk Expansion, you can play a game with two Vagabonds by following these rules.
       children:
-        - name: Add Extra Item To Ruins.
+        - name: Add Extra Item to Ruins.
           text: During setup, use both sets of "R" items and place two "R" items in each ruin slot. When a Vagabond explores a ruin with two items, he may look at them and take one of his choice. (By taking two Explore actions, he could take both items from one ruin.) He cannot take an "R" item that matches an "R" item already on his faction board. If he explores but does not take an item, he does not score a victory point, but the torch is still exhausted.
         - name: Randomize Setup Order.
           text: Randomly determine which Vagabond sets up first.
@@ -587,7 +587,7 @@
   icon: cult
   children:
     - name: Overview
-      pretext: Catering to those creatures who have been discarded by the other factions, the Lizard Cult seeks to overwhelm its foes through sheer force of will. The Cult relies on word of mouth and beak to spread its gospel, and new enclaves can spring up anywhere on the map. Where the Cult rule clearings, they can build gardens, which will further radicalize the animals that live there. While other factions spend cards to achieve their aims, the Cult acts chiefly by revealing cards and gradually drafting the ideal set of followers. Unless used for scoring, these cards are not spent and are returned to the Cult’s hand during Evening. However, this gentler approach makes movement and combat operations difficult, so these actions can only be undertaken by the most radicalized members of the Cult.
+      pretext: Catering to those creatures who have been discarded by the other factions, the Lizard Cult seeks to overwhelm its foes through sheer force of will. The Cult relies on word of mouth and beak to spread its gospel, and new enclaves can spring up anywhere on the map. Where the Cult rule clearings, they can build gardens, which will further radicalize the animals that live there. While other factions spend cards to achieve their aims, the Cult acts chiefly by revealing cards and gradually drafting the ideal set of followers. Unless used for scoring, these cards are not spent and are returned to the Cult's hand during Evening. However, this gentler approach makes movement and combat operations difficult, so these actions can only be undertaken by the most radicalized members of the Cult.
 
     - name: Faction Rules and Abilities
       children:
@@ -596,7 +596,7 @@
         - name: Hatred of Birds.
           text: Bird cards are not wild for Cult rituals.
         - name: Revenge.
-          text: Whenever a Cult warrior is removed while defending in battle, it is placed in the Acolytes box instead of the Cult’s supply.
+          text: Whenever a Cult warrior is removed while defending in battle, it is placed in the Acolytes box instead of the Cult's supply.
         - name: Pilgrims.
           text: The Cult rules any clearings where they have any gardens. This overrides the Eyrie's Lords of the Forest (`rule:7.2.2`).
         - name: Fear of the Faithful.
@@ -609,7 +609,7 @@
         - name: "Step 1: Gather Warriors."
           text: Form a supply of 25 warriors near you.
         - name: "Step 2: Place Warriors."
-          text: In the corner clearing opposite from the Marquise’s keep or Eyrie’s starting roost, place 4 warriors and 1 garden matching the clearing; if both the Marquise and Eyrie are in play, choose one of the two other corners. Then place one warrior in each adjacent clearing.
+          text: In the corner clearing opposite from the Marquise's keep or Eyrie's starting roost, place 4 warriors and 1 garden matching the clearing; if both the Marquise and Eyrie are in play, choose one of the two other corners. Then place one warrior in each adjacent clearing.
         - name: "Step 3: Choose Outcast."
           text: Place the outcast marker on any suit space in the Outcast box. The suit of this space is called the **Outcast**.
         - name: "Step 4: Fill Gardens Tracks."
@@ -680,7 +680,7 @@
           text: At the start of another player's Birdsong, that player may buy Riverfolk services.
           subchildren:
             - name: Cost.
-              text: The buyer must place warriors from their supply into the Riverfolk's Payments box equal in number to the cost of that service listed on the Riverfolk’s Services track.
+              text: The buyer must place warriors from their supply into the Riverfolk's Payments box equal in number to the cost of that service listed on the Riverfolk's Services track.
             - name: Number of Services.
               text: Each turn, a player may buy one service plus one per clearing with a trade post where that player has any pieces.
             - name: Vagabond Funds.

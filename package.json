@@ -10,7 +10,8 @@
     "build": "npm run lint && npm run prepare && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "prepare": "node scripts/prepare"
+    "prepare": "node scripts/prepare",
+    "validaterules": "node scripts/compare-rules"
   },
   "private": true,
   "dependencies": {
@@ -61,6 +62,7 @@
     "protractor": "~5.4.0",
     "ts-node": "~8.0.0",
     "tslint": "~5.16.0",
-    "typescript": "~3.1.6"
+    "typescript": "~3.1.6",
+    "x-ray": "^2.3.4"
   }
 }
