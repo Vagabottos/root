@@ -14,3 +14,7 @@ Here are where those files are located:
 
 * [The Rules](https://github.com/seiyria/root/blob/master/src/assets/rules.yml)
 * [The FAQ](https://github.com/seiyria/root/blob/master/src/assets/faq.yml)
+
+## Want to Contribute to the Discord Bot?
+
+You can find the Discord bot [over here](https://github.com/seiyria/rootbot).
