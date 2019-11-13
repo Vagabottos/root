@@ -43,7 +43,9 @@ export class RulesService {
   }
 
   public slugTitle(index: string, title: string): string {
-    return `${index}-${slugify(title.toLowerCase())}`;
+    const baseString = `${index}-${slugify(title.toLowerCase())}`.split('"').join('');
+    if (baseString.match(/^.+(\.)$/)) { return baseString.substring(0, baseString.length - 1); }
+    return baseString;
   }
 
   private getCustomRenderer(allRules: any[]): marked.Renderer {
@@ -86,6 +88,7 @@ export class RulesService {
 
           if (!chosenNode) { return `<span class="error">Not Found: ${subtype}</span>`; }
 
+          console.log(this.slugTitle(subtype, chosenNode.name));
           return `<a href="#${this.slugTitle(subtype, chosenNode.name)}" class="rule-link">${chosenString}</a>`;
         }
 
