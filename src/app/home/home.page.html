@@ -50,7 +50,7 @@
 
     <div class="rule major" [id]="rulesService.indexesToRules[rule.index]">
       <span class="index major">{{ rule.index }}</span> 
-      <a [innerHTML]="rule.name | highlight:searchTerm:rule.index"
+      <a [innerHTML]="rule.formattedName | highlight:searchTerm:rule.index"
          [href]="'#' + rulesService.indexesToRules[rule.index]"></a>
     </div>
 
@@ -62,7 +62,7 @@
 
       <div class="rule minor" [id]="rulesService.indexesToRules[childRule.index]">
         <span class="index minor">{{ childRule.index }}</span> 
-        <a [innerHTML]="childRule.name | highlight:searchTerm:childRule.index" 
+        <a [innerHTML]="childRule.formattedName | highlight:searchTerm:childRule.index" 
            [href]="'#' + rulesService.indexesToRules[childRule.index]"></a>
       </div>
 
@@ -77,7 +77,7 @@
         <div class="rule child" [id]="rulesService.indexesToRules[grandchildRule.index]">
           <span class="index child">{{ grandchildRule.index }}</span> 
           <span class="desc child">
-            <a class="name child" [innerHTML]="grandchildRule.name | highlight:searchTerm:grandchildRule.index"
+            <a class="name child" [innerHTML]="grandchildRule.formattedName | highlight:searchTerm:grandchildRule.index"
                                   [href]="'#' + rulesService.indexesToRules[grandchildRule.index]"></a>
             <span class="text child" [innerHTML]="grandchildRule.text | highlight:searchTerm:grandchildRule.index"></span>
 
@@ -86,7 +86,7 @@
               <li *ngFor="let descRule of grandchildRule.subchildren; let descIndex = index"
                   [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1, descIndex + 1])">
                 <a class="name child"    [id]="rulesService.indexesToRules[descRule.index]" 
-                                         [innerHTML]="descRule.name | highlight:searchTerm:descRule.index"
+                                         [innerHTML]="descRule.formattedName | highlight:searchTerm:descRule.index"
                                          [href]="'#' + rulesService.indexesToRules[descRule.index]"></a>
                 <span class="text child" [innerHTML]="descRule.text | highlight:searchTerm:descRule.index"></span>
 
@@ -95,8 +95,8 @@
                   <li *ngFor="let descDescRule of descRule.subchildren; let descDescIndex = index"
                       [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1, descIndex + 1, descDescIndex + 1])">
                     <a class="name child"    [id]="rulesService.indexesToRules[descDescRule.index]" 
-                                             [innerHTML]="descDescRule.name | highlight:searchTerm:descDescRule.index"
-                                             [href]="'#' + rulesService.indexesToRules[descDescRule.index]">{{ descDescRule.name }}</a>
+                                             [innerHTML]="descDescRule.formattedName | highlight:searchTerm:descDescRule.index"
+                                             [href]="'#' + rulesService.indexesToRules[descDescRule.index]"></a>
                     <span class="text child" [innerHTML]="descDescRule.text | highlight:searchTerm:descDescRule.index"></span>
                   </li>
                 </ol>

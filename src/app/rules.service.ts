@@ -88,7 +88,6 @@ export class RulesService {
 
           if (!chosenNode) { return `<span class="error">Not Found: ${subtype}</span>`; }
 
-          console.log(this.slugTitle(subtype, chosenNode.name));
           return `<a href="#${this.slugTitle(subtype, chosenNode.name)}" class="rule-link">${chosenString}</a>`;
         }
 
@@ -126,34 +125,49 @@ export class RulesService {
     const buildIndex = (arr: string[]) => arr.join('.');
 
     baseRules.forEach((rule, majorRuleIndex) => {
+      rule.formattedName = format(rule.name);
       rule.text = format(rule.text);
       rule.pretext = format(rule.pretext);
       rule.index = `${majorRuleIndex + 1}.`;
-      this.indexRuleHash[rule.index] = this.slugTitle(rule.index, rule.name);
+      this.indexRuleHash[rule.index] = this.slugTitle(rule.index, 
+        rule.plainName || rule.name
+      );
 
       (rule.children || []).forEach((childRule, minorRuleIndex) => {
+        childRule.formattedName = format(childRule.name);
         childRule.text = format(childRule.text);
         childRule.pretext = format(childRule.pretext);
         childRule.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1]);
-        this.indexRuleHash[childRule.index] = this.slugTitle(childRule.index, childRule.name);
+        this.indexRuleHash[childRule.index] = this.slugTitle(
+          childRule.index, childRule.plainName || childRule.name
+        );
 
         (childRule.children || []).forEach((grandchildRule, revRuleIndex) => {
+          grandchildRule.formattedName = format(grandchildRule.name);
           grandchildRule.text = format(grandchildRule.text);
           grandchildRule.pretext = format(grandchildRule.pretext);
           grandchildRule.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1]);
-          this.indexRuleHash[grandchildRule.index] = this.slugTitle(grandchildRule.index, grandchildRule.name);
+          this.indexRuleHash[grandchildRule.index] = this.slugTitle(
+            grandchildRule.index, grandchildRule.plainName || grandchildRule.name
+          );
 
           (grandchildRule.subchildren || []).forEach((descendantNode, descRuleIndex) => {
+            descendantNode.formattedName = format(descendantNode.name);
             descendantNode.text = format(descendantNode.text);
             descendantNode.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1, descRuleIndex + 1]);
-            this.indexRuleHash[descendantNode.index] = this.slugTitle(descendantNode.index, descendantNode.name);
+            this.indexRuleHash[descendantNode.index] = this.slugTitle(descendantNode.index, 
+              descendantNode.plainName || descendantNode.name
+            );
 
             (descendantNode.subchildren || []).forEach((descDescendantNode, descDescRuleIndex) => {
+              descDescendantNode.formattedName = format(descendantNode.name);
               descDescendantNode.text = format(descDescendantNode.text);
               descDescendantNode.index = buildIndex(
                 [majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1, descRuleIndex + 1, descDescRuleIndex + 1]
               );
-              this.indexRuleHash[descDescendantNode.index] = this.slugTitle(descDescendantNode.index, descDescendantNode.name);
+              this.indexRuleHash[descDescendantNode.index] = this.slugTitle(
+                descDescendantNode.index, descDescendantNode.plainName || descDescendantNode.name
+              );
             });
           });
         });
