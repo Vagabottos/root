@@ -129,7 +129,7 @@ export class RulesService {
       rule.text = format(rule.text);
       rule.pretext = format(rule.pretext);
       rule.index = `${majorRuleIndex + 1}.`;
-      this.indexRuleHash[rule.index] = this.slugTitle(rule.index, 
+      this.indexRuleHash[rule.index] = this.slugTitle(rule.index,
         rule.plainName || rule.name
       );
 
@@ -155,7 +155,7 @@ export class RulesService {
             descendantNode.formattedName = format(descendantNode.name);
             descendantNode.text = format(descendantNode.text);
             descendantNode.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1, descRuleIndex + 1]);
-            this.indexRuleHash[descendantNode.index] = this.slugTitle(descendantNode.index, 
+            this.indexRuleHash[descendantNode.index] = this.slugTitle(descendantNode.index,
               descendantNode.plainName || descendantNode.name
             );
 
