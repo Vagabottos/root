@@ -1043,10 +1043,18 @@
             - name: "Special Action: Scorched Earth"
               text: Exhaust a `item:torch` and place it in your clearing. Remove all enemy pieces from that clearing. For the rest of the game, pieces cannot be placed in or moved into this clearing. _(You remain in this clearing. Once you move out, you cannot move back in.)_
 
-        - name: Ronin
+        - name: Adventurer
           subchildren:
             - name: Starting Items
               text: Start with `item:boot`, `item:torch`, `item:hammer`.
+
+            - name: "Special Action: Improvise"
+              text: Once per turn while taking the Quest action, you may treat one unexhausted item as any other item. When you exhaust it to complete the quest, also damage that item.
+
+        - name: Ronin
+          subchildren:
+            - name: Starting Items
+              text: Start with `item:boot`, `item:boot`, `item:torch`, `item:sword`.
 
             - name: "Special Action: Swift Strike"
               text: You may exhaust a `item:sword` to deal an extra hit in battle _(after rolling)_.
