@@ -30,6 +30,7 @@
     "@ionic/angular": "^4.1.0",
     "core-js": "^2.5.4",
     "lodash.get": "^4.4.2",
+    "lodash.shuffle": "^4.2.0",
     "marked": "^0.6.2",
     "roman-numeral": "^0.2.6",
     "rxjs": "~6.4.0",

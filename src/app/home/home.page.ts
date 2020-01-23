@@ -6,6 +6,7 @@ import { RulesService } from '../rules.service';
 import { IonContent, ModalController } from '@ionic/angular';
 import { Subscription } from 'rxjs';
 import { FAQModalPage } from '../faqmodal/faqmodal.page';
+import { ReachModalPage } from '../reachmodal/reachmodal.page';
 
 @Component({
   selector: 'app-home',
@@ -64,6 +65,14 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
       if (!data) { return; }
 
       this.scrollToEl(this.rulesService.indexesToRules[data]);
+    });
+
+    await modal.present();
+  }
+
+  public async openReach() {
+    const modal = await this.modalCtrl.create({
+      component: ReachModalPage
     });
 
     await modal.present();

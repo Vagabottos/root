@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <span class="ion-hide-sm-down">Reach Calculator</span>
+      <span class="ion-hide-sm-up">Reach</span>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        Close
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="centered">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>Faction</th>
+          <th>Reach</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let reach of reachValues" [class.chosen]="chosenFactions[reach.name]">
+          <td>
+            <ion-icon name="star" *ngIf="chosenFactions[reach.name]"></ion-icon>
+          </td>
+          <td>{{ reach.name }}</td>
+          <td>{{ reach.value }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="centered ion-margin-top">
+    <table>
+      <tbody>
+        <tr>
+          <td *ngFor="let reach of reachesForPlayer | keyvalue">
+            {{ reach.key }}
+          </td>
+        </tr>
+        <tr>
+          <td *ngFor="let reach of reachesForPlayer | keyvalue">
+            {{ reach.value }}+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="centered ion-margin-top">
+    <ion-range min="2" max="6" snaps="true" ticks="true" pin="true" [(ngModel)]="playerCount">
+      <ion-label slot="start">2p</ion-label>
+      <ion-label slot="end">6p</ion-label>
+    </ion-range>
+  </div>
+
+  <div class="centered ion-margin-top">
+    <ion-button (click)="calculate()">Calculate</ion-button>
+  </div>
+</ion-content>

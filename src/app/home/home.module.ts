@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 import { HighlightPipe } from '../highlight.pipe';
 import { FAQModalPage } from '../faqmodal/faqmodal.page';
+import { ReachModalPage } from '../reachmodal/reachmodal.page';
 
 @NgModule({
   imports: [
@@ -20,7 +21,7 @@ import { FAQModalPage } from '../faqmodal/faqmodal.page';
       }
     ])
   ],
-  declarations: [HomePage, FAQModalPage, HighlightPipe],
-  entryComponents: [FAQModalPage]
+  declarations: [HomePage, FAQModalPage, ReachModalPage, HighlightPipe],
+  entryComponents: [FAQModalPage, ReachModalPage]
 })
 export class HomePageModule {}
