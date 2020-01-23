@@ -904,7 +904,7 @@
           text: Form supplies of 15 warriors and 8 plot tokens face down.
 
         - name: "Step 2: Scatter."
-          text: Place 1 warrior of any clearing of each suit _(total of 3)_.
+          text: Place 1 warrior in any clearing of each suit _(total of 3)_.
 
     - name: Birdsong
       pretext: Your Birdsong has three steps in the following order.
