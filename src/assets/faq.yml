@@ -139,6 +139,11 @@
       a: You cannot take it, and you have consumed a Torch in the process. You can only have one of each R item at most.
       laws:
         - "9.8.1"
+        
+    - q: Can the Alliance organize to place a sympathy token in the clearing with the Marquise Keep?
+      a: That is not possible, as no pieces may be placed in the clearing with the Keep.
+      laws:
+        - "6.2.2"
    
 - category: Lizard Cult
   color: "#fcf065"
