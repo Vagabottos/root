@@ -160,7 +160,7 @@ export class RulesService {
             );
 
             (descendantNode.subchildren || []).forEach((descDescendantNode, descDescRuleIndex) => {
-              descDescendantNode.formattedName = format(descendantNode.name);
+              descDescendantNode.formattedName = format(descDescendantNode.name);
               descDescendantNode.text = format(descDescendantNode.text);
               descDescendantNode.index = buildIndex(
                 [majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1, descRuleIndex + 1, descDescRuleIndex + 1]
