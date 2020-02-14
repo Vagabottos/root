@@ -780,7 +780,7 @@
           text: Place the Burrow board near the map.
 
         - name: "Step 3: Surface."
-          text: Place 2 warriors and 1 tunnel in the corner clearing diagonally opposite from the clearing with the keep token. If the Marquise is not playing, place those pieces in the corner clearing of your choice. Place 2 warriors in each clearing adjacent to that corner clearing.
+          text: In a corner clearing that does not have the Marquise’s keep, Eyrie’s starting roost, or Cult’s starting garden, and diagonally opposite from one of those starting clearings if possible, place 2 warriors and 1 tunnel. Then place 2 warriors in each clearing adjacent to that corner clearing, except the Burrow.
 
         - name: "Step 4: Fill Building Tracks."
           text: Place 3 citadels and 3 markets on your matching Buildings spaces.
