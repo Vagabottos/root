@@ -229,7 +229,7 @@
       pretext: Place one wood token at each sawmill.
 
     - name: Daylight
-      pretext: First, you may activate workshops to craft cards from your hand. Then, you may take up to three actions in any order and combination. After taking three actions, you may take extra actions by spending one bird card per extra action.
+      pretext: First, you may activate workshops to craft cards from your hand. Then, you may take up to three actions in any order and number, and you may take extra actions by spending one bird card per extra action.
       children:
         - name: Battle.
           text: Initiate a battle.
