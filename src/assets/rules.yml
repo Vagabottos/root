@@ -53,6 +53,8 @@
           text: Whenever you are prompted to **draw** a card, take it from the shared deck. If the deck is ever empty, shuffle the discard pile immediately to form a new deck.
         - name: Spending and Discarding Cards.
           text: Whenever you are prompted to **discard** or **spend** a card, place it in the shared discard pile unless it is a dominance card (`rule:3.3`). `faction:cult:10.2.6`
+        - name: Revealing Cards.
+          text: Whenever you are prompted to **reveal** a card, place it in your play area (`rule:2.6`).
         - name: Ambush Cards.
           text: "There are five **ambush cards**: one mouse, one rabbit, one fox, and two birds. You may spend an ambush card for its suit, but it does not have a crafted effect. You may also play one in battle to deal hits (`rule:4.3.1`)."
         - name: Dominance Cards.
