@@ -85,16 +85,16 @@
       pretext: Each faction has a set of **pieces** listed on the back of its faction board. Pieces are limited by the contents of the game. If you are prompted to place, take, or remove a piece but you cannot, you must place, take, or remove the maximum number possible.
       children:
         - name: Warriors.
-          text: If you are prompted to place a warrior, take it from your supply. If one of your warriors is removed, return it to your supply. `faction:marquise:6.2.3` `faction:cult:10.2.3`
+          text: If you are prompted to place a warrior, take it from your supply. If one of your warriors is removed, return it to your supply. _(The Vagabond pawn is not a warrior and cannot be removed.)_ `faction:marquise:6.2.3` `faction:cult:10.2.3`
         - name: Buildings.
           text: If you are prompted to place a building, take the leftmost building from its track on your faction board. If one of your buildings is removed, return it to the rightmost empty space of its track.
         - name: Tokens.
           text: If you are prompted to place a token, take the leftmost token from its track, if any, or take it from your supply. If one of your tokens is removed, return it to the rightmost empty space of its track, if any, or to your supply. `faction:marquise:6.2.2` `faction:riverfolk:11.2.5.1`
-        - name: The Vagabond Pawn.
-          text: The Vagabond pawn cannot be removed from the map.
         - name: Items.
           text: If you are prompted to take an item, take it from the shared supply on the map and place it in the Crafted Items box on your faction board. If you are prompted to remove an item, remove it from the game permanently. `faction:vagabond:9.6.4`
-
+        - name: Other.
+          text: If you are prompted to use any other piece _(pawn, marker, etc.)_, follow its explicit instructions.
+        
     - name: Play Area
       pretext: Your **play area** is the area around your faction board. Cards in your play area can only be spent, discarded, or used for other purposes if explicitly instructed.
 
@@ -151,7 +151,7 @@
           text: You cannot craft a persistent effect if you have an identical persistent effect in your play area.
   
     - name: Move
-      pretext: When you **move**, you may take any number of your warriors or your pawn from one clearing and move them to one adjacent clearing.
+      pretext: When you **move**, you may take any number _(more than zero)_ of your warriors or your pawn from one clearing and move them to one adjacent clearing.
       children:
         - name: You Must Rule.
           text: To take a move, you must rule the origin clearing, destination clearing, or both. `faction:vagabond:9.2.3` `faction:riverfolk:11.2.2` `faction:corvid:13.2.3`
@@ -172,11 +172,11 @@
             - name: Maximum Rolled Hits.
               text: The maximum hits you can deal from rolling equals the number of your warriors in the clearing of battle, whether you are the attacker or defender. `faction:vagabond:9.2.6`
             - name: Extra Hits.
-              text: After counting hits from rolling, the attacker and defender can add **extra hits** by using special abilities or other effects in their play areas. Extra hits are not limited by the number of warriors in the clearing of battle.
+              text: After counting hits from rolling, the attacker and defender can add **extra hits** by using special abilities or other effects in their play areas. _(Extra hits are not limited by the number of warriors in the clearing of battle.)_
             - name: Defenseless.
               text: If the defender has no warriors in the clearing of battle, the attacker will deal an extra hit. `faction:vagabond:9.2.4`
         - name: "Step 3: Deal Hits."
-          text: Attacker and defender deal hits simultaneously. Each hit you deal removes one piece. The player taking hits chooses which of their pieces are removed from the clearing of battle, but must choose to remove all their warriors there before they choose to remove any of their buildings or tokens there in any order. (You score one victory point per enemy building or token removed.)
+          text: Attacker and defender deal hits simultaneously. Each hit you deal removes one piece. The player taking hits chooses which of their pieces are removed from the clearing of battle, but must choose to remove all their warriors there before they choose to remove any of their buildings or tokens there in any order. _(You score one victory point per enemy building or token removed.)_
 
 - name: Setup
   color: "#000000"
@@ -571,7 +571,7 @@
       subtext: If you have _The Riverfolk Expansion_, you can play a game with two Vagabonds by following these rules.
       children:
         - name: Add Extra Item to Ruins.
-          text: During setup, use both sets of "R" items and place two "R" items in each ruin slot. When a Vagabond explores a ruin with two items, he may look at them and take one of his choice. (By taking two Explore actions, he could take both items from one ruin.) He cannot take an "R" item that matches an "R" item already on his faction board. If he explores but does not take an item, he does not score a victory point, but the torch is still exhausted.
+          text: During setup, use both sets of "R" items and place two "R" items in each ruin slot. When a Vagabond explores a ruin with two items, he may look at them and take one of his choice. _(By taking two Explore actions, he could take both items from one ruin.)_ He cannot take an "R" item that matches an "R" item already on his faction board. If he explores but does not take an item, he does not score a victory point, but the torch is still exhausted.
         - name: Randomize Setup Order.
           text: Randomly determine which Vagabond sets up first.
         - name: Share Quests.
