@@ -119,7 +119,7 @@
           text: Whenever you craft an item (`rule:4.1`), you score the victory points listed on the card. `faction:eyrie:7.2.3`
 
     - name: Dominance Cards
-      pretext: The deck holds four dominance cards, which can be played to win the game without reaching 30 victory points.
+      pretext: The deck holds four dominance cards, which let you win the game without scoring 30 victory points.
       children:
         - name: Activating.
           text: During your Daylight, if you have at least 10 victory points, you may **activate** a dominance card by placing it in your play area. Remove your score marker from the score track. You can no longer score victory points. `faction:vagabond:9.2.8`
@@ -247,7 +247,7 @@
             - name: Choose Clearing and Pay Wood.
               text: Choose any clearing you rule. Remove wood tokens equal in number to the building's cost from the chosen clearing, any adjacent clearings you rule, or any clearings connected to the chosen clearing you rule through any number of clearings you rule.
             - name: Place Building and Score.
-              text: Place the chosen building on the chosen clearing, and score the victory points revealed on the space under the building removed from your faction board.
+              text: Place the chosen building on the chosen clearing, and score the victory points revealed on the space uncovered on your faction board.
         - name: Overwork.
           text: Spend a card matching the clearing of a sawmill, and place a wood token there.
 
@@ -397,7 +397,7 @@
             - name: Spend Supporters.
               text: Spend two supporters matching the suit of the chosen clearing.
             - name: Resolve Effect.
-              text: Remove all enemy pieces in the chosen clearing. Then, place the base matching the clearing there, and place warriors there equal to the number of sympathetic clearings matching the base's suit. Finally, place one warrior in the Officers box. _(Remember to score one victory point per token and building removed.)_
+              text: Remove all enemy pieces in the chosen clearing. Then, place the base matching the clearing there, and place warriors there equal to the number of sympathetic clearings matching the base's suit. Finally, place one warrior in the Officers box. This warrior is now an **officer**. _(Remember to score one victory point per token and building removed.)_
 
         - name: Spread Sympathy.
           text: Place a sympathy token, as follows. You may spread sympathy any number of times.
@@ -410,7 +410,7 @@
                 - name: Martial Law.
                   text: You must spend another matching supporter if the target clearing has at least three warriors belonging to another player.
             - name: Resolve Effect.
-              text: Place a sympathy token in the chosen clearing. Score the victory points listed on the space revealed on your faction board.
+              text: Place a sympathy token in the chosen clearing. Score the victory points listed on the space uncovered on your faction board.
 
     - name: Daylight
       pretext: You may take the following actions in any order and combination.
@@ -420,7 +420,7 @@
         - name: Mobilize.
           text: Add a card from your hand to the Supporters stack.
         - name: Train.
-          text: Spend a card whose suit matches a built base to place a warrior in the Officers box.
+          text: Spend a card whose suit matches a built base to place a warrior in the Officers box. This warrior is now an **officer**.
 
     - name: Evening
       pretext: Your Evening has two steps in the following order.
@@ -435,7 +435,7 @@
             - name: Recruit.
               text: Place a warrior in any clearing with a base.
             - name: Organize.
-              text: Remove one of your warriors from an unsympathetic clearing, place a sympathy token there, and score the victory points listed on the space revealed on your faction board.
+              text: Remove one of your warriors from an unsympathetic clearing, place a sympathy token there, and score the victory points listed on the space uncovered on your faction board.
         - name: Income.
           text: Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
@@ -451,7 +451,7 @@
         - name: Crafting.
           text: The Vagabond exhausts `item:hammer` to craft. All of his `item:hammer` match the suit of his current clearing. If the Vagabond crafts an item, he may immediately take it, face up.
         - name: Lone Wanderer.
-          text: The Vagabond pawn is not a warrior _(so he cannot rule a clearing or stop another player from ruling one)_. The Vagabond pawn cannot be removed from the map.
+          text: The Vagabond pawn is not a warrior _(so he cannot rule a clearing or stop another player from ruling one)._ The Vagabond pawn cannot be removed from the map.
           subchildren:
             - name: Full Removal.
               text: Whenever an enemy player uses an effect that says it removes all enemy pieces from a clearing _(such as Alliance revolts, Favor of the Mice cards, Conspiracy bombs)_ with the Vagabond, the Vagabond damages three items.
@@ -476,7 +476,7 @@
         - name: Dominance Cards and Coalitions.
           text: In games with four or more players, the Vagabond can activate a dominance card to form a coalition with the player with the fewest victory points other than himself, placing his score marker on the chosen player's faction board. If there is a tie for fewest, he chooses one tied player. If the chosen player wins the game, the Vagabond also wins. _(The Vagabond no longer scores victory points. He cannot form a coalition with a player who has already activated a dominance card.)_
         - name: Relationships.
-          text: Your faction board shows a Relationships chart, which has four spaces on the Allied track and one Hostile box. It holds a relationship marker from each non-Vagabond faction in play.
+          text: Your faction board shows a Relationships chart, which has four spaces on the Allied track and one Hostile box. It holds a relationship marker for each non-Vagabond player.
           subchildren:
             - name: Improving Relationships.
               text: You can improve a relationship with a non-Hostile faction by taking the Aid action.
@@ -495,9 +495,7 @@
                 - name: Attacking with Ally.
                   text: Whenever you initiate a battle, you may treat Allied warriors of one faction in the clearing of battle as your own. The maximum hits you can roll equals the number of that Ally's warriors there plus your total undamaged `item:sword`. You cannot treat Allied warriors as your own if that Ally is the defender.
                 - name: Taking Hits with Ally.
-                  text: In a battle where you treat Allied warriors as your own, you can take hits by removing Allied warriors. However, if you take more hits by removing Allied warriors than by damaging items during the same battle, that Allied faction becomes Hostile (`rule:9.2.9.3`). This rule overrides the condition for becoming Hostile in 9.2.9.III.
-                - name: Outrage with Ally.
-                  text: If you cause Outrage (`rule:8.2.6`) by moving or battling with Allied warriors, you give the matching card.
+                  text: In a battle where you treat Allied warriors as your own, you can take hits by removing Allied warriors. However, if you take more hits by removing Allied warriors than by damaging items during the same battle, that Allied player becomes Hostile (`rule:9.2.9.3`) at the end of the battle. This rule overrides the condition for becoming Hostile in 9.2.9.III.
             - name: Hostile Status.
               text: If you ever remove a warrior of a non-Hostile faction, their relationship marker immediately moves to the Hostile box. This faction is now **Hostile**.
               subchildren:
@@ -628,7 +626,7 @@
               text: Spend three acolytes to remove an enemy building from an Outcast clearing and then place a garden of matching suit there.
 
     - name: Daylight
-      pretext: You may reveal any number of cards from your hand, placing them face up in front of you, and perform one ritual per card revealed, in any order and combination as follows. _(Revealed cards cannot be used for any other purposes during Daylight.)_
+      pretext: You may reveal any number of cards from your hand, placing them face up in front of you, and perform one ritual per card revealed, in any order and number, as follows. _(Revealed cards cannot be used for any other purposes during Daylight.)_
       children:
         - name: Build.
           text: In a clearing you rule matching the revealed card, place a matching garden.
@@ -637,12 +635,12 @@
         - name: Score.
           text: Spend the same card you reveal _(placing in Lost Souls)_ to score the victory points listed above the rightmost empty Gardens space of the suit matching the revealed card. You may perform this only once per turn per suit.
         - name: Sacrifice.
-          text: Place a warrior in the Acolytes box. To perform this, you must reveal a bird card.
+          text: Place a warrior in the Acolytes box. To perform this ritual, you must reveal a bird card.
 
     - name: Evening.
       pretext: Your Evening has three steps in the following order.
       children:
-        - name: Return Cards.
+        - name: Return Revealed Cards.
           text: Return all cards that you revealed this turn to your hand.
         - name: Craft.
           text: You may craft by activating gardens matching the Outcast suit.
@@ -741,8 +739,8 @@
               text: Choose any clearing without a trade post that is ruled by any player.
             - name: Spend Funds.
               text: Spend two funds of the player who rules the chosen clearing.
-            - name: Place Trade Post, Warrior, and Score.
-              text: Place the matching trade post and one warrior in the chosen clearing. Score the victory points listed on the space revealed on your faction board.
+            - name: Place and Score.
+              text: Place the matching trade post and one warrior in the chosen clearing. Score the victory points listed on the space uncovered on your faction board.
 
     - name: Evening
       pretext: Your Evening has two steps in the following order.
@@ -1027,7 +1025,7 @@
               text: Start with `item:coin`, `item:torch`, `item:boot`.
 
             - name: "Special Action: Instigate"
-              text: Exhaust one `item:torch` to initiate a battle in your clearing. You choose the attacker and defender, you choose the order in which they each remove buildings and tokens, and you remove pieces for each. _(Score a victory point per building or token of each player removed, and per Hostile piece of either player removed.)_
+              text: Exhaust a `item:torch` to initiate a battle in your clearing. You choose the attacker and defender, you choose the order in which they each remove buildings and tokens, and you remove pieces for each. _(Score a victory point per building or token of each player removed, and per Hostile piece of either player removed.)_
 
         - name: Arbiter
           subchildren:
