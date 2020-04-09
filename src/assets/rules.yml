@@ -974,7 +974,7 @@
               text: Forests touching the lake are **coastal forests**. Each coastal forest is adjacent to its two neighboring coastal forests _(separated by one coastal clearing)_.
 
             - name: The Ferry.
-              text: Once per turn, a player taking a move from a coastal clearing with the ferry can move to another coastal clearing and draw one card. _(This follows the normal move rules.)_ The ferry cannot be battled or removed.
+              text: Once per turn, a player taking a move from a coastal clearing with the ferry can move to another coastal clearing, moving the ferry as well. _(This follows the normal move rules.)_ After taking this move, that player draws one card. The ferry cannot be battled or removed.
             
         - name: Mountain Map
           subchildren:
