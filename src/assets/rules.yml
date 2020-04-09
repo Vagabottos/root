@@ -491,7 +491,7 @@
                 - name: Aiding Ally.
                   text: Each time you Aid an Allied faction, score two victory points.
                 - name: Moving with Ally.
-                  text: Whenever you move, you may also move warriors of one Allied player from your origin to your destination.
+                  text: Whenever you move to a clearing, you may also move warriors of one Allied player from your origin clearing to your destination clearing.
                 - name: Attacking with Ally.
                   text: Whenever you initiate a battle, you may treat Allied warriors of one faction in the clearing of battle as your own. The maximum hits you can roll equals the number of that Ally's warriors there plus your total undamaged `item:sword`. You cannot treat Allied warriors as your own if that Ally is the defender.
                 - name: Taking Hits with Ally.
@@ -529,7 +529,7 @@
         - name: Refresh.
           text: Flip two exhausted items face up for each `item:tea` face up at the start of your Birdsong. Then flip up three more exhausted items.
         - name: Slip.
-          text: You may move into an adjacent clearing or forest without exhausting any `item:boot`, even for moving into a Hostile clearing (`rule:9.2.9.3.2`). This move ignores all effects that prevent movement in or out of a clearing _(such as the Corvids' snare)_.
+          text: You may move into an adjacent clearing or forest without exhausting any `item:boot`, even for moving into a Hostile clearing (`rule:9.2.9.3.2`). This move ignores all effects that prevent movement out of a clearing _(such as the Corvids' snare)_.
 
     - name: Daylight
       pretext: You can exhaust items to take the following actions, in any order and combination. If you exhaust a `item:coin`, `item:tea`, or `item:sack` on a track, move it to the Satchel.
