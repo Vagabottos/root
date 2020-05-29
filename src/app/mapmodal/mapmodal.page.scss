@@ -12,6 +12,10 @@
     max-width: 450px;
     min-width: 450px;
     position: relative;
+
+    @media (max-width: 576px) {
+      transform: scale(0.75);
+    }
   
     // how about you don't resize these. ever.
     .map {

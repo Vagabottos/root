@@ -15,7 +15,7 @@
 <ion-content padding>
 
   <ion-row>
-    <ion-col class="button-container" size="3" *ngFor="let map of ['fall', 'winter', 'lake', 'mountain']">
+    <ion-col class="button-container" size-md="3" size-xs="6" size-sm="6" *ngFor="let map of ['fall', 'winter', 'lake', 'mountain']">
       <ion-button color="tertiary" [disabled]="activeMap === map" (click)="changeMap(map)">
         {{ map | titlecase }}
       </ion-button>
