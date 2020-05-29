@@ -8,6 +8,7 @@ import { HomePage } from './home.page';
 import { HighlightPipe } from '../highlight.pipe';
 import { FAQModalPage } from '../faqmodal/faqmodal.page';
 import { ReachModalPage } from '../reachmodal/reachmodal.page';
+import { MapModalPage } from '../mapmodal/mapmodal.page';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import { ReachModalPage } from '../reachmodal/reachmodal.page';
       }
     ])
   ],
-  declarations: [HomePage, FAQModalPage, ReachModalPage, HighlightPipe],
-  entryComponents: [FAQModalPage, ReachModalPage]
+  declarations: [HomePage, FAQModalPage, ReachModalPage, MapModalPage, HighlightPipe],
+  entryComponents: [FAQModalPage, ReachModalPage, MapModalPage]
 })
 export class HomePageModule {}

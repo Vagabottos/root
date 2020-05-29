@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <span class="ion-hide-sm-down">Map Randomizer</span>
+      <span class="ion-hide-md-up">Map</span>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        Close
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-row>
+    <ion-col class="button-container" size="3" *ngFor="let map of ['fall', 'winter', 'lake', 'mountain']">
+      <ion-button color="tertiary" [disabled]="activeMap === map" (click)="changeMap(map)">
+        {{ map | titlecase }}
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-margin-top">
+    <ion-col class="map-container">
+      <div class="relative-map-container">
+        <img class="map" [src]="'assets/bigicon/map-' + activeMap + '.png'" />
+  
+        <img class="map-pin"
+             [ngClass]="['pin' + (i + 1)]" 
+             *ngFor="let suit of suits; let i = index" 
+             [src]="'assets/bigicon/clearing-' + suit + '.png'"
+             [style.left]="mapData[activeMap].clearingPositions[i][0] + 'px'"
+             [style.top]="mapData[activeMap].clearingPositions[i][1] + 'px'" />
+
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-margin-top">
+    <ion-col class="button-container">
+      <ion-button (click)="randomize()">
+        Randomize
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

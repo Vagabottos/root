@@ -7,6 +7,7 @@ import { IonContent, ModalController } from '@ionic/angular';
 import { Subscription } from 'rxjs';
 import { FAQModalPage } from '../faqmodal/faqmodal.page';
 import { ReachModalPage } from '../reachmodal/reachmodal.page';
+import { MapModalPage } from '../mapmodal/mapmodal.page';
 
 @Component({
   selector: 'app-home',
@@ -28,6 +29,7 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
 
   ngOnInit() {
     this.nav$ = this.rulesService.navigate$.subscribe(id => this.scrollToEl(id, 'start'));
+    this.openMaps();
   }
 
   ngAfterContentInit() {
@@ -73,6 +75,14 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
   public async openReach() {
     const modal = await this.modalCtrl.create({
       component: ReachModalPage
+    });
+
+    await modal.present();
+  }
+
+  public async openMaps() {
+    const modal = await this.modalCtrl.create({
+      component: MapModalPage
     });
 
     await modal.present();

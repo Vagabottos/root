@@ -1,0 +1,28 @@
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+
+  .relative-map-container {
+    max-width: 450px;
+    min-width: 450px;
+    position: relative;
+  
+    // how about you don't resize these. ever.
+    .map {
+      min-width: 450px;
+      max-width: 450px;
+    }
+  
+    .map-pin {
+      position: absolute;
+      max-width: 74px;
+      max-height: 74px;
+    }
+  }
+}
