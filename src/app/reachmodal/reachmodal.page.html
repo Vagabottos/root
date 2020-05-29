@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>
       <span class="ion-hide-sm-down">Reach Calculator</span>
-      <span class="ion-hide-sm-up">Reach</span>
+      <span class="ion-hide-md-up">Reach</span>
     </ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="dismiss()">
@@ -13,6 +13,37 @@
 </ion-header>
 
 <ion-content padding>
+
+  <ion-row class="faction-group">
+    <ion-col size="4" 
+             class="faction-container" 
+             [class.blacklist]="factionWhiteBlacklist[faction.name] === -1"
+             [class.whitelist]="factionWhiteBlacklist[faction.name] === 1"
+             *ngFor="let faction of reachValues" 
+             (click)="toggleFaction(faction)">
+      <img class="faction-icon" [src]="'assets/bigicon/faction-' + faction.icon + '.png'" />
+
+      <div class="faction-text-container">
+
+        <ion-badge color="danger" class="text-blacklist" *ngIf="factionWhiteBlacklist[faction.name] === -1">
+          <ion-icon name="close"></ion-icon>
+        </ion-badge>
+
+        <ion-badge color="success" class="text-whitelist" *ngIf="factionWhiteBlacklist[faction.name] === 1">
+          <ion-icon name="checkmark"></ion-icon>
+        </ion-badge>
+
+        <ion-badge [color]="chosenFactions[faction.name] ? 'success' : 'primary'" class="text-name">
+          <span>
+            <ion-icon name="star" *ngIf="chosenFactions[faction.name]"></ion-icon>
+            {{ faction.shortName }}
+          </span>
+          <span>[{{ faction.value }}]</span>
+        </ion-badge>
+      </div>
+    </ion-col>
+  </ion-row>
+  <!--
   <div class="centered">
     <table>
       <thead>
@@ -34,13 +65,29 @@
       </tbody>
     </table>
   </div>
+  -->
+
+  <div class="centered ion-margin-top squish-center">
+    <ion-range min="2" max="6" snaps="true" ticks="true" pin="true" [(ngModel)]="playerCount">
+      <ion-label slot="start">2p</ion-label>
+      <ion-label slot="end">6p</ion-label>
+    </ion-range>
+  </div>
+
+  <div class="centered ion-margin-top">
+    <ion-button (click)="calculate()">Choose New Factions</ion-button>
+  </div>
+
+  <div class="centered ion-margin-top" *ngIf="unableToSelect">
+    <ion-badge color="danger">Unable to select factions; please adjust selections and try again.</ion-badge>
+  </div>
 
   <div class="centered ion-margin-top">
     <table>
       <tbody>
         <tr>
           <td *ngFor="let reach of reachesForPlayer | keyvalue">
-            {{ reach.key }}
+            {{ reach.key }}p
           </td>
         </tr>
         <tr>
@@ -50,16 +97,5 @@
         </tr>
       </tbody>
     </table>
-  </div>
-
-  <div class="centered ion-margin-top">
-    <ion-range min="2" max="6" snaps="true" ticks="true" pin="true" [(ngModel)]="playerCount">
-      <ion-label slot="start">2p</ion-label>
-      <ion-label slot="end">6p</ion-label>
-    </ion-range>
-  </div>
-
-  <div class="centered ion-margin-top">
-    <ion-button (click)="calculate()">Choose New Factions</ion-button>
   </div>
 </ion-content>

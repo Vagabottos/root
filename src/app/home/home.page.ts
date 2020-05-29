@@ -28,6 +28,7 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
 
   ngOnInit() {
     this.nav$ = this.rulesService.navigate$.subscribe(id => this.scrollToEl(id, 'start'));
+    this.openReach();
   }
 
   ngAfterContentInit() {

@@ -3,6 +3,12 @@ import { ModalController } from '@ionic/angular';
 
 import * as shuffle from 'lodash.shuffle';
 
+enum ListStatus {
+  Default = 0,
+  Whitelist = 1,
+  Blacklist = -1
+}
+
 @Component({
   selector: 'app-reachmodal',
   templateUrl: './reachmodal.page.html',
@@ -12,18 +18,22 @@ export class ReachModalPage implements OnInit {
 
   public playerCount = 4;
 
+  public unableToSelect = false;
+
+  public factionWhiteBlacklist: Record<string, ListStatus> = { };
+
   public chosenFactions = { };
 
   public reachValues = [
-    { name: 'Marquise de Cat',      value: 10 },
-    { name: 'Underground Duchy',    value: 8 },
-    { name: 'Eyrie Dynasties',      value: 7 },
-    { name: 'Vagabond (#1)',        value: 5 },
-    { name: 'Riverfolk Company',    value: 5 },
-    { name: 'Woodland Alliance',    value: 3 },
-    { name: 'Corvid Conspiracy',    value: 3 },
-    { name: 'Vagabond (#2)',        value: 2, requires: 'Vagabond (#1)' },
-    { name: 'Lizard Cult',          value: 2 },
+    { name: 'Marquise de Cat',      icon: 'marquise',   shortName: 'Marquise',    value: 10 },
+    { name: 'Underground Duchy',    icon: 'duchy',      shortName: 'Duchy',       value: 8 },
+    { name: 'Eyrie Dynasties',      icon: 'eyrie',      shortName: 'Eyrie',       value: 7 },
+    { name: 'Vagabond (#1)',        icon: 'vagabond1',  shortName: 'Vagabond #1', value: 5, disables: 'Vagabond (#2)' },
+    { name: 'Riverfolk Company',    icon: 'riverfolk',  shortName: 'Riverfolk',   value: 5 },
+    { name: 'Woodland Alliance',    icon: 'woodland',   shortName: 'Woodland',    value: 3 },
+    { name: 'Corvid Conspiracy',    icon: 'corvid',     shortName: 'Corvids',     value: 3 },
+    { name: 'Vagabond (#2)',        icon: 'vagabond2',  shortName: 'Vagabond #2', value: 2, requires: 'Vagabond (#1)' },
+    { name: 'Lizard Cult',          icon: 'cult',       shortName: 'Cult',        value: 2 },
   ];
 
   public reachesForPlayer = {
@@ -45,6 +55,9 @@ export class ReachModalPage implements OnInit {
 
   calculate() {
     this.chosenFactions = {};
+    this.unableToSelect = false;
+
+    let attempts = 0;
 
     let chosenFactions = {};
     let numFactions = 0;
@@ -55,18 +68,81 @@ export class ReachModalPage implements OnInit {
       numFactions = 0;
       score = 0;
 
-      const shuffled = shuffle(this.reachValues);
-      shuffled.slice(0, this.playerCount).forEach(({ name, value, requires }) => {
-        if (requires && !chosenFactions[requires]) { return; }
+      const addFaction = (faction) => {
+        if (faction.requires && !chosenFactions[faction.requires]) { return; }
 
-        chosenFactions[name] = true;
-        score += value;
+        chosenFactions[faction.name] = true;
+        score += faction.value;
         numFactions++;
-      });
+      };
+
+      const availableFactions = this.reachValues
+        .filter(x => this.factionWhiteBlacklist[x.name] !== ListStatus.Blacklist);
+
+      const mustFactions = availableFactions
+        .filter(x => this.factionWhiteBlacklist[x.name] === ListStatus.Whitelist);
+
+      const otherFactions = availableFactions
+        .filter(x => this.factionWhiteBlacklist[x.name] !== ListStatus.Whitelist);
+
+      if (mustFactions.length > this.playerCount) {
+        this.unableToSelect = true;
+        break;
+      }
+
+      mustFactions.forEach(faction => addFaction(faction));
+
+      const shuffled = shuffle(otherFactions);
+      shuffled.slice(0, this.playerCount - mustFactions.length).forEach((faction) => addFaction(faction));
+
+      attempts++;
+
+      if (attempts > 100) {
+        this.unableToSelect = true;
+        break;
+      }
 
     } while (numFactions !== this.playerCount || score < this.reachesForPlayer[this.playerCount]);
 
+    if (this.unableToSelect) {
+      this.unableToSelect = true;
+      return;
+    }
+
     this.chosenFactions = chosenFactions;
+  }
+
+  toggleFaction(faction) {
+    switch (this.factionWhiteBlacklist[faction.name]) {
+      case ListStatus.Blacklist: {
+        this.factionWhiteBlacklist[faction.name] = ListStatus.Default;
+        break;
+      }
+
+      case ListStatus.Default: {
+        this.factionWhiteBlacklist[faction.name] = ListStatus.Whitelist;
+        if (faction.requires) {
+          this.factionWhiteBlacklist[faction.requires] = ListStatus.Whitelist;
+        }
+        break;
+      }
+
+      case ListStatus.Whitelist: {
+        this.factionWhiteBlacklist[faction.name] = ListStatus.Blacklist;
+        if (faction.disables) {
+          this.factionWhiteBlacklist[faction.disables] = ListStatus.Blacklist;
+        }
+        break;
+      }
+
+      default: {
+        this.factionWhiteBlacklist[faction.name] = ListStatus.Whitelist;
+        if (faction.requires) {
+          this.factionWhiteBlacklist[faction.requires] = ListStatus.Whitelist;
+        }
+        break;
+      }
+    }
   }
 
 }

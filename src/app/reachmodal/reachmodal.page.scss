@@ -10,3 +10,61 @@ table {
     padding: 5px;
   }
 }
+
+.squish-center {
+  @media (min-width: 768px) {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+
+.faction-group {
+  @media (min-width: 768px) {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  
+  .faction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    margin-top: 5px;
+
+    &.blacklist {
+      opacity: 0.5;
+    }
+
+    .faction-text-container {
+      display: relative;
+
+      .text-name, .text-blacklist, .text-whitelist {
+        position: absolute;
+      }
+
+      .text-blacklist, .text-whitelist {
+        top: 0;
+        left: 5px;
+      }
+
+      .text-name {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+        height: 23px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .faction-icon {
+      max-width: 96px;
+    }
+  }
+}
