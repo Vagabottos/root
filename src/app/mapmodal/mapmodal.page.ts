@@ -97,19 +97,7 @@ export class MapModalPage implements OnInit {
   }
 
   randomize() {
-    const { clearingPositions } = this.mapData[this.activeMap];
-
-    this.suits = [];
-
-    let availableSuits = ['bunny', 'bunny', 'bunny', 'bunny', 'fox', 'fox', 'fox', 'fox', 'mouse', 'mouse', 'mouse', 'mouse'];
-
-    clearingPositions.forEach((pos, i) => {
-      availableSuits = shuffle(availableSuits);
-      const firstSuit = availableSuits[0];
-      this.suits[i] = firstSuit;
-
-      availableSuits = availableSuits.slice(1);
-    });
+    this.suits = shuffle(['bunny', 'bunny', 'bunny', 'bunny', 'fox', 'fox', 'fox', 'fox', 'mouse', 'mouse', 'mouse', 'mouse']);
   }
 
 }
