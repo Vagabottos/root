@@ -43,29 +43,6 @@
       </div>
     </ion-col>
   </ion-row>
-  <!--
-  <div class="centered">
-    <table>
-      <thead>
-        <tr>
-          <th></th>
-          <th>Faction</th>
-          <th>Reach</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr *ngFor="let reach of reachValues" [class.chosen]="chosenFactions[reach.name]">
-          <td>
-            <ion-icon name="star" *ngIf="chosenFactions[reach.name]"></ion-icon>
-          </td>
-          <td>{{ reach.name }}</td>
-          <td>{{ reach.value }}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  -->
 
   <div class="centered ion-margin-top squish-center">
     <ion-range min="2" max="6" snaps="true" ticks="true" pin="true" [(ngModel)]="playerCount">
