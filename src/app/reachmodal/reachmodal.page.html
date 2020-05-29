@@ -38,7 +38,10 @@
             <ion-icon name="star" *ngIf="chosenFactions[faction.name]"></ion-icon>
             {{ faction.shortName }}
           </span>
-          <span>[{{ faction.value }}]</span>
+        </ion-badge>
+
+        <ion-badge color="tertiary" class="text-reach">
+          {{ faction.value }}
         </ion-badge>
       </div>
     </ion-col>

@@ -40,8 +40,13 @@ table {
     .faction-text-container {
       display: relative;
 
-      .text-name, .text-blacklist, .text-whitelist {
+      .text-name, .text-blacklist, .text-whitelist, .text-reach {
         position: absolute;
+      }
+
+      .text-reach {
+        top: 0;
+        right: 5px;
       }
 
       .text-blacklist, .text-whitelist {
@@ -60,6 +65,10 @@ table {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 576px) {
+          font-size: 75%;
+        }
       }
     }
 
