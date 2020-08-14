@@ -82,7 +82,7 @@ export class RulesService {
           }
 
           if (descDesc && chosenNode) {
-            chosenString += `${String.fromCharCode((+descDesc) + 97)}`;
+            chosenString += `${String.fromCharCode((+descDesc) + 96)}`;
             chosenNode = chosenNode.subchildren[(+descDesc) - 1];
           }
 
