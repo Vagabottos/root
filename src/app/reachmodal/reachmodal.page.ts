@@ -142,6 +142,13 @@ export class ReachModalPage implements OnInit {
     let numFactions = 0;
     let score = 0;
 
+    const valueSumLowestFactions = (factions: Record<string, number>) => {
+      const values = Object.values(factions);
+      return sort(values)
+        .slice(0, values.length - 1)
+        .reduce((prev, cur) => prev + cur, 0);
+    };
+
     do {
       chosenFactions = {};
       numFactions = 0;
@@ -168,7 +175,7 @@ export class ReachModalPage implements OnInit {
         break;
       }
 
-    } while (numFactions !== this.playerCount + 1 || score < 17);
+    } while (numFactions !== this.playerCount + 1 || valueSumLowestFactions(chosenFactions) < 17);
 
     if (this.unableToSelect) {
       this.unableToSelect = true;
@@ -186,6 +193,8 @@ export class ReachModalPage implements OnInit {
     this.factionWhiteBlacklist = {};
     this.chosenFactions = {};
     this.unableToSelect = false;
+
+    this.playerCount = 4;
   }
 
   toggleFaction(faction) {
