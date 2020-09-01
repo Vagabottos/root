@@ -177,7 +177,7 @@ export class ReachModalPage implements OnInit {
 
     this.chosenFactions = chosenFactions;
 
-    this.draftOrder = shuffle(Array(this.playerCount).fill(null).map((n, i) => i));
+    this.draftOrder = shuffle(Array(this.playerCount).fill(null).map((n, i) => String.fromCharCode(65 + i)));
   }
 
   changeRandomType(mode: RandomMode) {
