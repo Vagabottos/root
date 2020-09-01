@@ -5,6 +5,12 @@
       <span class="ion-hide-md-up">Reach</span>
     </ion-title>
     <ion-buttons slot="end">
+      <ion-button color="primary" 
+                  [fill]="mode === button.mode ? 'outline' : 'clear'" 
+                  *ngFor="let button of modeButtons"
+                  (click)="mode = button.mode">
+        <ion-icon slot="icon-only" [name]="button.icon"></ion-icon>
+      </ion-button>
       <ion-button (click)="dismiss()">
         Close
       </ion-button>
@@ -14,68 +20,151 @@
 
 <ion-content padding>
 
-  <ion-row class="faction-group">
-    <ion-col size="4" 
-             class="faction-container" 
-             [class.blacklist]="factionWhiteBlacklist[faction.name] === -1"
-             [class.whitelist]="factionWhiteBlacklist[faction.name] === 1"
-             *ngFor="let faction of reachValues" 
-             (click)="toggleFaction(faction)">
-      <img class="faction-icon" [src]="'assets/bigicon/faction-' + faction.icon + '.png'" />
+  <ng-container *ngIf="mode === 'random'">
+    <ion-row class="faction-group">
+      <ion-col size="4" 
+              class="faction-container" 
+              [class.blacklist]="factionWhiteBlacklist[faction.name] === -1"
+              [class.whitelist]="factionWhiteBlacklist[faction.name] === 1"
+              *ngFor="let faction of reachValues" 
+              (click)="toggleFaction(faction)">
+        <img class="faction-icon" [src]="'assets/bigicon/faction-' + faction.icon + '.png'" />
 
-      <div class="faction-text-container">
+        <div class="faction-text-container">
 
-        <ion-badge color="danger" class="text-blacklist" *ngIf="factionWhiteBlacklist[faction.name] === -1">
-          <ion-icon name="close"></ion-icon>
-        </ion-badge>
+          <ion-badge color="danger" class="text-blacklist" *ngIf="factionWhiteBlacklist[faction.name] === -1">
+            <ion-icon name="close"></ion-icon>
+          </ion-badge>
 
-        <ion-badge color="success" class="text-whitelist" *ngIf="factionWhiteBlacklist[faction.name] === 1">
-          <ion-icon name="checkmark"></ion-icon>
-        </ion-badge>
+          <ion-badge color="success" class="text-whitelist" *ngIf="factionWhiteBlacklist[faction.name] === 1">
+            <ion-icon name="checkmark"></ion-icon>
+          </ion-badge>
 
-        <ion-badge [color]="chosenFactions[faction.name] ? 'success' : 'primary'" class="text-name">
-          <span>
-            <ion-icon name="star" *ngIf="chosenFactions[faction.name]"></ion-icon>
-            {{ faction.shortName }}
-          </span>
-        </ion-badge>
+          <ion-badge [color]="chosenFactions[faction.name] ? 'success' : 'primary'" class="text-name">
+            <span>
+              <ion-icon name="star" *ngIf="chosenFactions[faction.name]"></ion-icon>
+              {{ faction.shortName }}
+            </span>
+          </ion-badge>
 
-        <ion-badge color="tertiary" class="text-reach">
-          {{ faction.value }}
-        </ion-badge>
-      </div>
-    </ion-col>
-  </ion-row>
+          <ion-badge color="tertiary" class="text-reach">
+            {{ faction.value }}
+          </ion-badge>
+        </div>
+      </ion-col>
+    </ion-row>
 
-  <div class="centered ion-margin-top squish-center">
-    <ion-range min="2" max="6" snaps="true" ticks="true" pin="true" [(ngModel)]="playerCount">
-      <ion-label slot="start">2p</ion-label>
-      <ion-label slot="end">6p</ion-label>
-    </ion-range>
-  </div>
+    <div class="centered ion-margin-top squish-center">
+      <ion-range min="2" max="6" snaps="true" ticks="true" pin="true" [(ngModel)]="playerCount">
+        <ion-label slot="start">2p</ion-label>
+        <ion-label slot="end">6p</ion-label>
+      </ion-range>
+    </div>
 
-  <div class="centered ion-margin-top">
-    <ion-button (click)="calculate()">Choose New Factions</ion-button>
-  </div>
+    <div class="centered ion-margin-top">
+      <ion-button (click)="calculateForRandom()">Choose New Factions</ion-button>
+    </div>
 
-  <div class="centered ion-margin-top" *ngIf="unableToSelect">
-    <ion-badge color="danger">Unable to select factions; please adjust selections and try again.</ion-badge>
-  </div>
+    <div class="centered ion-margin-top" *ngIf="unableToSelect">
+      <ion-badge color="danger">Unable to select factions; please adjust selections and try again.</ion-badge>
+    </div>
 
-  <div class="centered ion-margin-top">
-    <table>
-      <tbody>
-        <tr>
-          <td *ngFor="let reach of reachesForPlayer | keyvalue">
-            {{ reach.key }}p
-          </td>
-        </tr>
-        <tr>
-          <td *ngFor="let reach of reachesForPlayer | keyvalue">
-            {{ reach.value }}+
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="centered ion-margin-top">
+      <table>
+        <tbody>
+          <tr>
+            <td *ngFor="let reach of reachesForPlayer | keyvalue">
+              {{ reach.key }}p
+            </td>
+          </tr>
+          <tr>
+            <td *ngFor="let reach of reachesForPlayer | keyvalue">
+              {{ reach.value }}+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  </ng-container>
+
+  <ng-container *ngIf="mode === 'draft+1'">
+    <div class="centered ion-margin-top squish-center">
+      <ion-range min="2" max="6" snaps="true" ticks="true" pin="true" [(ngModel)]="playerCount">
+        <ion-label slot="start">2p</ion-label>
+        <ion-label slot="end">6p</ion-label>
+      </ion-range>
+    </div>
+
+    <div class="centered ion-margin-top">
+      <ion-button (click)="calculateForDraft()">Draft +1</ion-button>
+    </div>
+
+    <div class="centered ion-margin-top" *ngIf="unableToSelect">
+      <ion-badge color="danger">Unable to select factions; please adjust selections and try again.</ion-badge>
+    </div>
+
+    <ion-row class="ion-margin-top" *ngIf="!unableToSelect && chosenFactionsOrdered.length > 0">
+
+      <ion-col size="12" size-md="4" class="centered has-header">
+        <h2 class="ion-text-center">Factions</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Faction</th>
+              <th>Reach</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let faction of chosenFactionsOrdered">
+              <td>
+                {{ faction }}
+              </td>
+
+              <td>
+                {{ chosenFactions[faction] }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-col>
+
+      <ion-col size="12" size-md="8" class="centered has-header">
+        <h2 class="ion-text-center">Turn/Draft Order</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Draft</th>
+              <th>Player</th>
+              <th>Picks</th>
+              <th>Turn</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let order of draftOrder; let i = index">
+              <td>
+                {{ i + 1 }}
+              </td>
+
+              <td>
+                Player {{ order + 1 }}
+              </td>
+
+              <td>
+                <span *ngIf="i === 0">Map</span>
+                <span *ngIf="i === 1">Deck</span>
+              </td>
+
+              <td>
+                {{ draftOrder.length - i }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </ion-col>
+      
+    </ion-row>
+  </ng-container>
 </ion-content>

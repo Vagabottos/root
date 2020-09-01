@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 
 import * as shuffle from 'lodash.shuffle';
+import * as sort from 'lodash.sortby';
 
 enum ListStatus {
   Default = 0,
@@ -9,12 +10,20 @@ enum ListStatus {
   Blacklist = -1
 }
 
+type RandomMode = 'random' | 'draft+1';
+
 @Component({
   selector: 'app-reachmodal',
   templateUrl: './reachmodal.page.html',
   styleUrls: ['./reachmodal.page.scss'],
 })
 export class ReachModalPage implements OnInit {
+
+  public mode: RandomMode = 'random';
+  public readonly modeButtons: Array<{ mode: RandomMode, icon: string }> = [
+    { mode: 'random', icon: 'options' },
+    { mode: 'draft+1', icon: 'person-add' }
+  ];
 
   public playerCount = 4;
 
@@ -24,7 +33,9 @@ export class ReachModalPage implements OnInit {
 
   public chosenFactions = { };
 
-  public reachValues = [
+  public draftOrder = [ ];
+
+  public readonly reachValues = [
     { name: 'Marquise de Cat',      icon: 'marquise',   shortName: 'Marquise',    value: 10 },
     { name: 'Underground Duchy',    icon: 'duchy',      shortName: 'Duchy',       value: 8 },
     { name: 'Eyrie Dynasties',      icon: 'eyrie',      shortName: 'Eyrie',       value: 7 },
@@ -36,13 +47,21 @@ export class ReachModalPage implements OnInit {
     { name: 'Lizard Cult',          icon: 'cult',       shortName: 'Cult',        value: 2 },
   ];
 
-  public reachesForPlayer = {
+  public readonly reachesForPlayer = {
     2: 17,
     3: 18,
     4: 21,
     5: 25,
     6: 28
   };
+
+  public get chosenFactionsOrdered() {
+    return sort(Object.keys(this.chosenFactions), f => -this.chosenFactions[f]);
+  }
+
+  public get draftOrderReversed() {
+    return this.draftOrder.reverse();
+  }
 
   constructor(private modalCtrl: ModalController) { }
 
@@ -53,7 +72,7 @@ export class ReachModalPage implements OnInit {
   ngOnInit() {
   }
 
-  calculate() {
+  calculateForRandom() {
     this.chosenFactions = {};
     this.unableToSelect = false;
 
@@ -71,7 +90,7 @@ export class ReachModalPage implements OnInit {
       const addFaction = (faction) => {
         if (faction.requires && !chosenFactions[faction.requires]) { return; }
 
-        chosenFactions[faction.name] = true;
+        chosenFactions[faction.name] = faction.value;
         score += faction.value;
         numFactions++;
       };
@@ -110,6 +129,63 @@ export class ReachModalPage implements OnInit {
     }
 
     this.chosenFactions = chosenFactions;
+  }
+
+
+  calculateForDraft() {
+    this.chosenFactions = {};
+    this.unableToSelect = false;
+
+    let attempts = 0;
+
+    let chosenFactions = {};
+    let numFactions = 0;
+    let score = 0;
+
+    do {
+      chosenFactions = {};
+      numFactions = 0;
+      score = 0;
+
+      const addFaction = (faction) => {
+        if (faction.requires && !chosenFactions[faction.requires]) { return; }
+
+        chosenFactions[faction.name] = faction.value;
+        score += faction.value;
+        numFactions++;
+      };
+
+      const availableFactions = this.reachValues
+        .filter(x => this.factionWhiteBlacklist[x.name] !== ListStatus.Blacklist);
+
+      const shuffled = shuffle(availableFactions);
+      shuffled.slice(0, this.playerCount + 1).forEach((faction) => addFaction(faction));
+
+      attempts++;
+
+      if (attempts > 100) {
+        this.unableToSelect = true;
+        break;
+      }
+
+    } while (numFactions !== this.playerCount + 1 || score < 17);
+
+    if (this.unableToSelect) {
+      this.unableToSelect = true;
+      return;
+    }
+
+    this.chosenFactions = chosenFactions;
+
+    this.draftOrder = shuffle(Array(this.playerCount).fill(null).map((n, i) => i));
+  }
+
+  changeRandomType(mode: RandomMode) {
+    this.mode = mode;
+
+    this.factionWhiteBlacklist = {};
+    this.chosenFactions = {};
+    this.unableToSelect = false;
   }
 
   toggleFaction(faction) {

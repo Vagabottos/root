@@ -77,3 +77,8 @@ table {
     }
   }
 }
+
+.has-header {
+  flex-direction: column;
+  justify-content: start;
+}
