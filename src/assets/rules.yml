@@ -162,7 +162,7 @@
       pretext: When you **battle**, choose a clearing where you have warriors or your pawn as the **clearing of battle**. You are the **attacker**. Choose another player in the clearing of battle to be the **defender**.
       children:
         - name: "Step 1: Defender May Ambush."
-          text: The defender may play one ambush card matching the clearing of battle. If the ambush is not foiled, the defender deals two hits immediately. Then, the defender discards the ambush card. If no attacking warriors remain, end the battle immediately.
+          text: The defender may play one ambush card matching the clearing of battle. If the ambush is not foiled, the defender deals two hits immediately. Then, the defender discards the ambush card. If no attacking warriors or pawns remain, end the battle immediately.
           subchildren:
             - name: Foil Ambush.
               text: After the defender plays an ambush card, the attacker may cancel its effect by also playing an ambush card matching the clearing of the battle. (The defender still _discards_ their ambush card.)
