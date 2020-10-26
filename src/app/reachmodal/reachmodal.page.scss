@@ -35,6 +35,10 @@ table {
 
     &.blacklist {
       opacity: 0.5;
+
+      img {
+        filter: brightness(0%);
+      }
     }
 
     .faction-text-container {
@@ -42,16 +46,22 @@ table {
 
       .text-name, .text-blacklist, .text-whitelist, .text-reach {
         position: absolute;
+        font-size: 0.9rem;
       }
 
       .text-reach {
-        top: 0;
+        bottom: 22px;
         right: 5px;
+        width: 30px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
       }
 
       .text-blacklist, .text-whitelist {
         top: 0;
         left: 5px;
+        font-size: 1.5rem;
+        padding-bottom: 0;
       }
 
       .text-name {
@@ -62,9 +72,24 @@ table {
         margin-right: 5px;
         height: 23px;
 
+        border-top-right-radius: 0;
+
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .name-container {
+          width: 100%;
+
+          .star-icon {
+            float: right;
+            visibility: hidden;
+
+            &.visible {
+              visibility: visible;
+            }
+          }
+        }
 
         @media (max-width: 576px) {
           font-size: 75%;

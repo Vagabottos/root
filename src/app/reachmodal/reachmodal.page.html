@@ -40,14 +40,14 @@
             <ion-icon name="checkmark"></ion-icon>
           </ion-badge>
 
-          <ion-badge [color]="chosenFactions[faction.name] ? 'success' : 'primary'" class="text-name">
-            <span>
-              <ion-icon name="star" *ngIf="chosenFactions[faction.name]"></ion-icon>
+          <ion-badge [color]="chosenFactions[faction.name] ? 'tertiary' : 'primary'" class="text-name">
+            <span class="name-container">
               {{ faction.shortName }}
+              <ion-icon class="star-icon" name="star" [class.visible]="chosenFactions[faction.name]"></ion-icon>
             </span>
           </ion-badge>
 
-          <ion-badge color="tertiary" class="text-reach">
+          <ion-badge [color]="chosenFactions[faction.name] ? 'tertiary' : 'primary'" class="text-reach">
             {{ faction.value }}
           </ion-badge>
         </div>
