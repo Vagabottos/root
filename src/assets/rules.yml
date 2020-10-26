@@ -10,7 +10,7 @@
           plainName: Use of Cannot.
           text: The term **cannot** is absolute. It cannot be overridden unless explicitly instructed.
         - name: Simultaneous Effects.
-          text: If two game effects occur simultaneously, the player taking the current turn chooses their order, unless otherwise noted.
+          text: If two game effects occur simultaneously, the player taking the current turn chooses their order, unless explicitly instructed.
         - name: Use of **Treat**.
           plainName: Use of Treat.
           text: If you are prompted to **treat** one thing as another, the former takes on all the properties of the latter. _(For example, if you caused Outrage while treating yourself as another player, the other player would give the card.)_
@@ -18,14 +18,14 @@
     - name: Public and Private Information
       children:
         - name: Hands.
-          text: Players may only reveal cards in their hand if explicitly instructed, but the number of cards in their hand is public information. `faction:riverfolk:11.2.3`
+          text: Players may only show or reveal cards in their hand if explicitly instructed, but the number of cards in their hand is public information. `faction:riverfolk:11.2.3`
         - name: Discard.
-          text: The discard pile can be searched at any time.
+          text: The discard pile can be searched and inspected at any time.
           
     - name: Negotiation and Deals
       children:
         - name: Agreements.
-          text: Players may discuss the game during play and make agreements, but they are non-binding.
+          text: Players may discuss the game and make agreements, but they are non-binding.
         - name: Cards
           text: Players may only give cards to each other if explicitly instructed.
     
@@ -42,7 +42,7 @@
       pretext: "Each card has a **suit**: bird, fox, rabbit, or mouse. Most cards also have an effect you can craft (`rule:4.1`)."
       children:
         - name: Birds Are Wild.
-          text: You can always treat a bird card as a card of another suit, even if you must spend, take, or give multiple cards of the same suit. `faction:cult:10.2.2`
+          text: You can treat any bird card as a card of another suit, even if you must spend, take, or give multiple cards of the same suit. `faction:cult:10.2.2`
           subchildren:
             - name: Forced Effects.
               text: If you are prompted to discard or give a fox, rabbit, or mouse card, you must treat your bird cards as the prompted suit.
@@ -68,7 +68,7 @@
         - name: Suit.
           text: Every clearing has a **suit** of mouse, rabbit, or fox.
         - name: Slots.
-          text: Each clearing has a number of **slots**, shown as white boxes. Whenever you place a building, it fills an open slot. You cannot place a building in a clearing with no open slots.
+          text: Each clearing has a number of **slots** _(white boxes)_. Whenever you place a building, it fills an open slot. You cannot place a building in a clearing with no open slots.
         - name: Ruins.
           text: Slots marked with a small "R" begin the game filled with **ruins**. Ruins can only be removed by the Vagabond's Explore action (`rule:9.5.3`).
     
@@ -99,7 +99,7 @@
       pretext: Your **play area** is the area around your faction board. Cards in your play area can only be spent, discarded, or used for other purposes if explicitly instructed.
 
     - name: Enemy
-      pretext: An **enemy** is any other faction not in a coalition with you (`rule:9.2.8`).
+      pretext: An **enemy** is any other player who you are not in a coalition with (`rule:9.2.8`).
 
     - name: Ruler
       pretext: The **ruler** of a clearing is the player with the most total warriors and buildings in that clearing. _(Tokens and pawns do not contribute to rule.)_ If there is a tie between players in a clearing, no one there is the ruler. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
@@ -119,10 +119,10 @@
           text: Whenever you craft an item (`rule:4.1`), you score the victory points listed on the card. `faction:eyrie:7.2.3`
 
     - name: Dominance Cards
-      pretext: The deck holds four dominance cards, which let you win the game without scoring 30 victory points.
+      pretext: The deck has four dominance cards, which let you win the game without scoring 30 victory points.
       children:
         - name: Activating.
-          text: During your Daylight, if you have at least 10 victory points, you may **activate** a dominance card by placing it in your play area. Remove your score marker from the score track. You can no longer score victory points. `faction:vagabond:9.2.8`
+          text: During your Daylight, if you have at least 10 victory points, you may **activate** a dominance card in your hand by placing it in your play area. Remove your score marker from the score track. You can no longer score victory points. `faction:vagabond:9.2.8`
           subchildren:
             - name: Mouse, Rabbit, or Fox Dominance.
               text: You win the game immediately if you rule three clearings of the suit matching the activated dominance card at the start of your Birdsong.
@@ -165,7 +165,7 @@
           text: The defender may play one ambush card matching the clearing of battle. If the ambush is not foiled, the defender deals two hits immediately. Then, the defender discards the ambush card. If no attacking warriors or pawns remain, end the battle immediately.
           subchildren:
             - name: Foil Ambush.
-              text: After the defender plays an ambush card, the attacker may cancel its effect by also playing an ambush card matching the clearing of the battle. (The defender still _discards_ their ambush card.)
+              text: After the defender plays an ambush card, the attacker may cancel its effect by also playing an ambush card matching the clearing of the battle. _(The defender still discards their ambush card.)_
         - name: "Step 2: Roll Dice and Add Extra Hits."
           text: Roll both dice. The attacker will deal hits equal to the higher roll, and the defender will deal hits equal to the lower roll. If the rolls are equal, attacker and defender will deal the same number of hits. _(The use of "will" here reflects that hits are not dealt until step 3.)_ `faction:woodland:8.2.2`
           subchildren:
@@ -184,7 +184,7 @@
     - name: Standard Setup Procedure
       children:
         - name: "Step 1: Assign Factions and Starting Player."
-          text: Assign one faction to each player using any method. The viable factions at each player count are listed in the learning-to-play guide (page 22). Determine the starting player and seating order randomly. Each player takes their chosen faction board and all pieces, as listed on the back of the faction board.
+          text: Assign one faction to each player using any method. The viable factions at each player count are listed in Player Combinations (Appendix A). Determine the starting player and seating order randomly. Each player takes their chosen faction board and all pieces, as listed on the back of the faction board.
         - name: "Step 2: Place Score Markers."
           text: Each player places their score marker on "0" on the score track.
         - name: "Step 3: Draw Starting Hands."
@@ -228,10 +228,10 @@
           text: Place your remaining 5 sawmills, 5 workshops, and 5 recruiters on your matching Buildings tracks, from right to left. _(This fills every space except the leftmost space of each track.)_
 
     - name: Birdsong
-      pretext: Place one wood token at each sawmill.
+      pretext: Place wood tokens in each clearing with any number of sawmills, one wood per sawmill there.
 
     - name: Daylight
-      pretext: First, you may activate workshops to craft cards from your hand. Then, you may take up to three actions in any order and number, and you may take extra actions by spending one bird card per extra action.
+      pretext: First, you may activate workshops to craft cards from your hand. Then, you may take up to three actions -- plus one action per bird card you spend _(not as part of an action)_ -- in any order and number.
       children:
         - name: Battle.
           text: Initiate a battle.
@@ -247,7 +247,7 @@
             - name: Choose Clearing and Pay Wood.
               text: Choose any clearing you rule. Remove wood tokens equal in number to the building's cost from the chosen clearing, any adjacent clearings you rule, or any clearings connected to the chosen clearing you rule through any number of clearings you rule.
             - name: Place Building and Score.
-              text: Place the chosen building on the chosen clearing, and score the victory points revealed on the space uncovered on your faction board.
+              text: Place the chosen building on the chosen clearing, and score the victory points listed on the space uncovered on your faction board.
         - name: Overwork.
           text: Spend a card matching the clearing of a sawmill, and place a wood token there.
 
@@ -277,7 +277,7 @@
         - name: "Step 2: Place Roost and Starting Warriors."
           text: Place 1 roost and 6 warriors in the corner clearing diagonally opposite from the clearing with the keep token. If the Marquise is not playing, place those pieces in the corner clearing of your choice.
         - name: "Step 3: Choose Leader."
-          text: Choose 1 of the 4 Eyrie leader cards and place it in your Leader Card slot. Stack the remaining leaders face up near you.
+          text: Choose 1 of the 4 Eyrie leader cards and place it in your Leader Card slot. Gather the remaining leaders face up near you.
         - name: "Step 4: Tuck Viziers."
           text: Tuck your 2 Loyal Vizier cards, showing their suit, into the Decree columns above your faction board as listed on your leader.
         - name: "Step 5: Fill Roosts Track."
@@ -535,9 +535,9 @@
       pretext: You can exhaust items to take the following actions, in any order and combination. If you exhaust a `item:coin`, `item:tea`, or `item:sack` on a track, move it to the Satchel.
       children:
         - name: Move.
-          text: Exhaust one `item:boot` to move, plus one `item:boot` if the destination clearing has any Hostile warriors. You may move with Allied warriors (`rule:9.2.9.2.2`). You cannot move into a forest. If in a forest, you may only move into an adjacent clearing.
+          text: Exhaust one `item:boot` to move, plus one `item:boot` if the destination clearing has any Hostile warriors. You cannot move into a forest. If in a forest, you may only move into an adjacent clearing.
         - name: Battle.
-          text: Exhaust one `item:sword` to initiate a battle. You may battle with Allied warriors (`rule:9.2.9.2.3`). (Check your relationship with the defender.)
+          text: Exhaust one `item:sword` to initiate a battle. _(Check your relationship with the defender.)_
         - name: Explore.
           text: Exhaust one `item:torch` to take one item under a ruin in your clearing, reveal it, and place it face up in your Satchel or on its matching track. Then, you score one victory point. If you remove the last item from a ruin, remove the ruin.
         - name: Aid.
@@ -547,7 +547,7 @@
         - name: Strike.
           text: Exhaust one `item:crossbow` to remove a warrior from your clearing. If a player has no warriors there, you may instead remove one building or token of that player. (Check your relationship with that player.)
         - name: Repair.
-          text: Exhaust one `item:hammer` to move one damaged item to the Satchel (if `item:boot`, `item:hammer`, `item:sword`, `item:crossbow`, or `item:torch`) or to its matching track (if face up `item:coin`, `item:tea`, `item:sack`), keeping the item on its current side.
+          text: Exhaust one `item:hammer` to move one damaged item to the Satchel or to its matching track (if face up `item:coin`, `item:tea`, `item:sack`), keeping the item on its current side.
         - name: Craft.
           text: Play a card from your hand, and exhaust the `item:hammer` of listed suit to craft it. All of your `item:hammer` match the suit of your clearing. If a card requires multiple of one suit to craft, you must exhaust the listed number of `item:hammer`. If you craft an item, you may place it face up in your Satchel or on the matching track.
         - name: Special Action.
@@ -626,7 +626,7 @@
               text: Spend three acolytes to remove an enemy building from an Outcast clearing and then place a garden of matching suit there.
 
     - name: Daylight
-      pretext: You may reveal any number of cards from your hand, placing them face up in front of you, and perform one ritual per card revealed, in any order and number, as follows. _(Revealed cards cannot be used for any other purposes during Daylight.)_
+      pretext: You may reveal any number of cards from your hand _(into your play area)_, pand perform one ritual per card re- vealed, in any order and number, as follows. _(Revealed cards cannot be used for any other purposes during Daylight.)_
       children:
         - name: Build.
           text: In a clearing you rule matching the revealed card, place a matching garden.
@@ -652,7 +652,7 @@
   icon: riverfolk
   children:
     - name: Overview
-      pretext: When news arrived that the Woodland on the shore of the great lake was descending into all-out war, the Riverfolk Company quickly dispatched its officers to set up shop. As other factions purchase their services, the Riverfolk can further entrench their commercial interested by building **trade posts** along the river, scoring victory points. So too can they score points by raw accumulation of **funds**, but a big treasury makes for an easy target, so the Riverfolk must take care in expanding their operations across the dangerous forest.
+      pretext: When news arrived that the Woodland on the shore of the great lake was descending into all-out war, the Riverfolk Company quickly dispatched its officers to set up shop. As other factions purchase their services, the Riverfolk can further entrench their commercial interests by establishing **trade** posts along the river, scoring victory points. So too can they score points by raw accumulation of **funds**, but a big treasury makes for an easy target, so the Riverfolk must take care in expanding their operations across the dangerous forest.
 
     - name: Faction Rules and Abilities
       children:
@@ -974,7 +974,7 @@
               text: Forests touching the lake are **coastal forests**. Each coastal forest is adjacent to its two neighboring coastal forests _(separated by one coastal clearing)_.
 
             - name: The Ferry.
-              text: Once per turn, a player taking a move from a coastal clearing with the ferry can move to another coastal clearing, moving the ferry as well. _(This follows the normal move rules.)_ After taking this move, that player draws one card. The ferry cannot be battled or removed.
+              text: Once per turn, a player taking a move from the coastal clearing with the ferry can move to another coastal clearing, moving the ferry as well. _(This follows the normal move rules.)_ After taking this move, that player draws one card. The ferry cannot be battled or removed.
             
         - name: Mountain Map
           subchildren:
