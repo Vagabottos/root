@@ -883,7 +883,7 @@
 
         - name: Plot Tokens.
           text: The Corvids have eight infiltration tokens, two of each type.
-          children:
+          subchildren:
             - name: Token Facing.
               text: While in the Corvids' supply, plot tokens are face down _(feather)_. While on the map, a plot token can be face up _(unique icon)_ or face down. The Corvids can inspect any facedown plot token at any time.
             - name: Placement Limits.
