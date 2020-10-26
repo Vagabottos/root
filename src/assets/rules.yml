@@ -364,7 +364,7 @@
             - name: Capacity.
               text: If the Alliance has no bases on the map, the Supporters stack can only hold up to five cards. If the Alliance would gain a supporter but the stack cannot hold it, that card is discarded. If any bases are on the map, the Supporters stack can hold unlimited cards.
         - name: Removing Bases.
-          text: Whenever a base is removed, the Alliance must discard all supporters of matching suit _(including birds)_, and remove half of their officers, rounded up. If the Alliance has no more bases on the map and has more than five supporters, they must discard down to five supporters.
+          text: Whenever a base is removed, the Alliance must discard all supporters matching the suit of the base _(including birds)_, and remove half of their officers, rounded up. If the Alliance has no more bases on the map and has more than five supporters, they must discard down to five supporters.
         - name: Sympathy Tokens.
           text: The Alliance has 10 sympathy tokens.
           subchildren:
@@ -413,7 +413,7 @@
               text: Place a sympathy token in the chosen clearing. Score the victory points listed on the space uncovered on your faction board.
 
     - name: Daylight
-      pretext: You may take the following actions in any order and combination.
+      pretext: You may take the following actions in any order and number.
       children:
         - name: Craft.
           text: You may activate sympathy tokens to craft a card from your hand.
@@ -426,7 +426,7 @@
       pretext: Your Evening has two steps in the following order.
       children:
         - name: Military Operations.
-          text: You may take actions, as follows, up to your number of officers, in any order and combination.
+          text: You may take actions, as follows, up to your number of officers, in any order and number.
           subchildren:
             - name: Move.
               text: Take one move.
@@ -461,7 +461,7 @@
         - name: Defenseless.
           text: In battle, the Vagabond is defenseless (`rule:4.3.2.3`) if he has no undamaged `item:sword`.
         - name: Items.
-          text: The Vagabond's capabilities depend on the items he acquires. Items on the Vagabond's faction board can be face up or face down. The Vagabond **exhausts** undamaged items, flipping them face down, to take many actions.
+          text: The Vagabond's capabilities depend on the items he acquires. Items on the Vagabond's faction board can be face up or face down. The Vagabond **exhausts** face-up undamaged items, flipping them face down, to take many actions.
           subchildren:
             - name: Item Tracks.
               text: When gained, `item:tea`, `item:coin`, and `item:sack` are placed face up on their matching tracks. Each track can only hold three matching items.
@@ -479,34 +479,34 @@
           text: Your faction board shows a Relationships chart, which has four spaces on the Allied track and one Hostile box. It holds a relationship marker for each non-Vagabond player.
           subchildren:
             - name: Improving Relationships.
-              text: You can improve a relationship with a non-Hostile faction by taking the Aid action.
+              text: You can improve a relationship with a non-Hostile player by taking the Aid action.
               subchildren:
                 - name: Cost.
-                  text: Aid a non-Hostile faction the number of times listed between their current Allied space and their next Allied space during the same turn. _(A given Aid action counts toward only one improvement in relationship.)_
+                  text: Aid a non-Hostile player the number of times listed between their current Allied space and their next Allied space during the same turn. _(A given Aid action counts toward only one improvement in relationship.)_
                 - name: Effect.
                   text: Advance that faction's relationship marker one space right on the track. Score the victory points listed in the new space.
             - name: Allied Status.
-              text: If a faction's relationship marker reaches the final space on the Allied track, you are now **allied** with the player shown by that relationship marker. _(Their warriors trust you!)_
+              text: If a relationship marker reaches the final space on the Allied track, you are now **allied** with the player shown by that relationship marker. _(Their warriors trust you!)_
               subchildren:
                 - name: Aiding Ally.
-                  text: Each time you Aid an Allied faction, score two victory points.
+                  text: Each time you Aid an Allied player, score two victory points.
                 - name: Moving with Ally.
                   text: Whenever you move to a clearing, you may also move warriors of one Allied player from your origin clearing to your destination clearing.
                 - name: Attacking with Ally.
-                  text: Whenever you initiate a battle, you may treat Allied warriors of one faction in the clearing of battle as your own. The maximum hits you can roll equals the number of that Ally's warriors there plus your total undamaged `item:sword`. You cannot treat Allied warriors as your own if that Ally is the defender.
+                  text: Whenever you initiate a battle, you may treat Allied warriors of one player in the clearing of battle as your own. The maximum hits you can roll equals the number of that Ally's warriors there plus your total undamaged `item:sword`. You cannot treat Allied warriors as your own if that Ally is the defender.
                 - name: Taking Hits with Ally.
                   text: In a battle where you treat Allied warriors as your own, you can take hits by removing Allied warriors. However, if you take more hits by removing Allied warriors than by damaging items during the same battle, that Allied player becomes Hostile (`rule:9.2.9.3`) at the end of the battle. This rule overrides the condition for becoming Hostile in 9.2.9.III.
             - name: Hostile Status.
-              text: If you ever remove a warrior of a non-Hostile faction, their relationship marker immediately moves to the Hostile box. This faction is now **Hostile**.
+              text: If you ever remove a warrior of a non-Hostile player, their relationship marker immediately moves to the Hostile box. This faction is now **Hostile**.
               subchildren:
                 - name: Infamy.
-                  text: Whenever you remove a piece of a Hostile faction in battle during your turn, score one victory point. _(Add this to points scored for enemy buildings and tokens. Do not score a point for removing the warrior that made the faction Hostile.)_
+                  text: Whenever you remove a piece of a Hostile player in battle during your turn, score one victory point. _(Add this to points scored for enemy buildings and tokens. Do not score a point for removing the warrior that made the player Hostile.)_
                 - name: Moving into Hostile Clearings.
-                  text: You must exhaust an extra `item:boot` to move into a clearing with any warriors of any Hostile factions.
-                - name: Aiding Hostile Factions.
-                  text: You cannot move a relationship marker out of the Hostile box by using Aid, but you can still Aid a Hostile faction to take crafted items.
-                - name: Coalition with Hostile Faction.
-                  text: You can form a coalition (`rule:9.2.8`) with a Hostile faction. If you do, move their relationship marker to the Indifferent space.
+                  text: You must exhaust an extra `item:boot` to move into a clearing with any warriors of any Hostile players.
+                - name: Aiding Hostile Players.
+                  text: You cannot move a relationship marker out of the Hostile box by using Aid, but you can still Aid a Hostile player to take crafted items.
+                - name: Coalition with Hostile Player.
+                  text: You can form a coalition (`rule:9.2.8`) with a Hostile player. If you do, move their relationship marker to the Indifferent space.
 
     - name: Faction Setup
       children:
@@ -532,7 +532,7 @@
           text: You may move into an adjacent clearing or forest without exhausting any `item:boot`, even for moving into a Hostile clearing (`rule:9.2.9.3.2`). This move ignores all effects that prevent movement out of a clearing _(such as the Corvids' snare)_.
 
     - name: Daylight
-      pretext: You can exhaust items to take the following actions, in any order and combination. If you exhaust a `item:coin`, `item:tea`, or `item:sack` on a track, move it to the Satchel.
+      pretext: You can exhaust items to take the following actions, in any order and number. If you exhaust a `item:coin`, `item:tea`, or `item:sack` on a track, move it to the Satchel.
       children:
         - name: Move.
           text: Exhaust one `item:boot` to move, plus one `item:boot` if the destination clearing has any Hostile warriors. You cannot move into a forest. If in a forest, you may only move into an adjacent clearing.
@@ -541,11 +541,11 @@
         - name: Explore.
           text: Exhaust one `item:torch` to take one item under a ruin in your clearing, reveal it, and place it face up in your Satchel or on its matching track. Then, you score one victory point. If you remove the last item from a ruin, remove the ruin.
         - name: Aid.
-          text: Exhaust any one item, and give one of your cards matching your clearing to any player with any pieces there _(even Hostile)_. Then, you may take one item, if any, from that player's Crafted Items box, and place it face up in your Satchel or on its matching track. (Check your relationship with that player.)
+          text: Exhaust any one item, and give one of your cards matching your clearing to any player with at least one piece there _(even Hostile)_. Then, you may take one item, if any, from that player's Crafted Items box, and place it face up in your Satchel or on its matching track. _(Check your relationship with that player.)_
         - name: Quest.
           text: Choose a quest whose suit matches your clearing, and exhaust the two items listed on the quest to complete it. Place the quest in your play area, and then draw a new quest and place it near the map. You may score one victory point per quest of matching suit you have completed, including this one, or draw two cards from the deck.
         - name: Strike.
-          text: Exhaust one `item:crossbow` to remove a warrior from your clearing. If a player has no warriors there, you may instead remove one building or token of that player. (Check your relationship with that player.)
+          text: Exhaust one `item:crossbow` to remove a warrior from your clearing. If a player has no warriors there, you may instead remove one building or token of that player. _(Check your relationship with that player.)_
         - name: Repair.
           text: Exhaust one `item:hammer` to move one damaged item to the Satchel or to its matching track (if face up `item:coin`, `item:tea`, `item:sack`), keeping the item on its current side.
         - name: Craft.
@@ -602,7 +602,7 @@
         - name: "Step 1: Gather Warriors."
           text: Form a supply of 25 warriors.
         - name: "Step 2: Place Warriors."
-          text: In the corner clearing opposite from the Marquise's keep or Eyrie's starting roost, place 4 warriors and 1 garden matching the clearing; if both the Marquise and Eyrie are in play, choose one of the two other corners. Then place one warrior in each adjacent clearing.
+          text: In the corner clearing diagonally opposite from the Marquise's keep or Eyrie's starting roost, place 4 warriors and 1 garden matching the clearing; if both the Marquise and Eyrie are in play, choose one of the two other corners. Then place one warrior in each adjacent clearing.
         - name: "Step 3: Choose Outcast."
           text: Place the outcast marker on any suit space in the Outcast box. The suit of this space is called the **Outcast**.
         - name: "Step 4: Fill Gardens Tracks."
@@ -626,7 +626,7 @@
               text: Spend three acolytes to remove an enemy building from an Outcast clearing and then place a garden of matching suit there.
 
     - name: Daylight
-      pretext: You may reveal any number of cards from your hand _(into your play area)_, pand perform one ritual per card re- vealed, in any order and number, as follows. _(Revealed cards cannot be used for any other purposes during Daylight.)_
+      pretext: You may reveal any number of cards from your hand _(into your play area)_, and perform one ritual per card revealed, in any order and number, as follows. _(Revealed cards cannot be used for any other purposes during Daylight.)_
       children:
         - name: Build.
           text: In a clearing you rule matching the revealed card, place a matching garden.
@@ -659,13 +659,13 @@
         - name: Crafting.
           text: The Riverfolk craft during Daylight by committing funds to empty spaces on the Trade Posts tracks. _(They have no crafting pieces.)_
         - name: Swimmers.
-          text: The Riverfolk treat rivers as paths and may move along rivers regardless of who rules their origin or destination clearing. (They can still move using paths.)
+          text: The Riverfolk treat rivers as paths and may move along rivers regardless of who rules their origin or destination clearing. _(They can still move using paths.)_
         - name: Public Hand.
           text: The Riverfolk place their hand face up above their faction board. If another player would take a random card from the Riverfolk's hand, the cards are flipped face down, shuffled, drawn from, and then flipped face up.
         - name: Funds.
           text: "To take many actions, the Riverfolk commit and spend **funds**: warriors in their Funds box."
         - name: Trade Posts.
-          text: The Riverfolk score victory points when they build trade posts.
+          text: The Riverfolk score victory points when they place trade posts.
           subchildren:
             - name: Trade Disruption.
               text: Whenever a trade post is removed, the Riverfolk remove half of their funds, rounded up, and remove the trade post from the game permanently.
@@ -702,9 +702,9 @@
         - name: "Step 3: Fill Trade Posts Tracks."
           text: Place the 9 trade posts on the matching spaces of your Trade Posts tracks.
         - name: "Step 4: Gain Starting Funds."
-          text: Place 3 warriors in the Payments box.
+          text: Place 3 warriors in your Payments box.
         - name: "Step 5: Set Starting Prices."
-          text: Place 1 service marker on one space of each Services track.
+          text: Place 1 service marker on any space of each of your Services track.
 
     - name: Birdsong
       pretext: Your Birdsong has three steps in the following order.
@@ -717,7 +717,7 @@
           text: Move all warriors on your faction board to the Funds box.
 
     - name: Daylight
-      pretext: You can commit and spend funds to take actions, as follows, in any order and combination. When you commit a fund, move the warrior to the Committed box. When you spend a fund, return the warrior to its owner's supply. 
+      pretext: You can commit and spend funds to take actions, as follows, in any order and number. When you commit a fund, move the warrior to the Committed box. When you spend a fund, return the warrior to its owner's supply. 
       children:
         - name: Move.
           text: Commit one fund to take a move.
@@ -780,7 +780,7 @@
           text: Place the Burrow board near the map.
 
         - name: "Step 3: Surface."
-          text: In a corner clearing that does not have the Marquise’s keep, Eyrie’s starting roost, or Cult’s starting garden, and diagonally opposite from one of those starting clearings if possible, place 2 warriors and 1 tunnel. Then place 2 warriors in each clearing adjacent to that corner clearing, except the Burrow.
+          text: Place 2 warriors and 1 tunnel in a corner clearing that does not have the Marquise's keep, Eyrie's starting roost, or Cult's starting garden, and diagonally opposite from one of those starting clearings if possible. Then place 2 warriors in each clearing adjacent to that corner clearing, except the Burrow.
 
         - name: "Step 4: Fill Building Tracks."
           text: Place 3 citadels and 3 markets on your matching Buildings spaces.
@@ -846,7 +846,7 @@
               text: Score one victory point per citadel on the map.
 
         - name: Sway.
-          text: Once per turn, you may sway a minister, as follows.
+          text: You may sway one minister, as follows.
           subchildren:
             - name: Choose Minister.
               text: Choose a minister card in your Unswayed Ministers pile. You must have a crown on your faction board matching the rank _(squire, noble, lord)_ of that minister.
@@ -1025,7 +1025,7 @@
               text: Start with `item:coin`, `item:torch`, `item:boot`.
 
             - name: "Special Action: Instigate"
-              text: Exhaust a `item:torch` to initiate a battle in your clearing. You choose the attacker and defender, you choose the order in which they each remove buildings and tokens, and you remove pieces for each. _(Score a victory point per building or token of each player removed, and per Hostile piece of either player removed.)_
+              text: Exhaust a `item:torch` to initiate a battle in your clearing. You choose the attacker and defender, you choose the order in which they each remove buildings and tokens, and you remove pieces for each. _(Score a victory point per building or token of either player removed, and per Hostile piece of either player removed.)_
 
         - name: Arbiter
           subchildren:
