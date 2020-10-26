@@ -4,6 +4,9 @@
   "version": "3.0.0",
   "author": "Kyle Kemp <kyle@seiyria.com>",
   "homepage": "https://root.seiyria.com",
+  "engines": {
+    "node": "10.0.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o --host=0.0.0.0",
