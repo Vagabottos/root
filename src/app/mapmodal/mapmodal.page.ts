@@ -14,6 +14,67 @@ export class MapModalPage implements OnInit {
 
   public activeMap = '';
 
+  public balancedError = false;
+
+  public clearingAdjacency = {
+    fall: {
+      1:  { 5: true, 9: true, 10: true },
+      2:  { 5: true, 6: true, 10: true },
+      3:  { 6: true, 7: true, 11: true },
+      4:  { 8: true, 9: true },
+      5:  { 1: true, 2: true },
+      6:  { 2: true, 3: true },
+      7:  { 3: true, 8: true, 12: true },
+      8:  { 4: true, 7: true },
+      9:  { 1: true, 4: true, 12: true },
+      10: { 1: true, 2: true, 12: true },
+      11: { 3: true, 6: true, 12: true },
+      12: { 4: true, 7: true, 9: true, 10: true, 11: true }
+    },
+    winter: {
+      1:  { 5: true, 10: true, 11: true },
+      2:  { 6: true, 7: true, 12: true  },
+      3:  { 7: true, 8: true, 12: true },
+      4:  { 9: true, 10: true, 11: true },
+      5:  { 1: true, 6: true },
+      6:  { 2: true, 5: true },
+      7:  { 2: true, 3: true },
+      8:  { 3: true, 9: true, 12: true },
+      9:  { 4: true, 8: true, 11: true },
+      10: { 1: true, 4: true },
+      11: { 1: true, 4: true, 9: true },
+      12: { 2: true, 3: true, 8: true }
+    },
+    lake: {
+      1:  { 5: true, 9: true },
+      2:  { 7: true, 8: true, 10: true },
+      3:  { 8: true, 9: true, 12: true },
+      4:  { 5: true, 6: true, 11: true },
+      5:  { 1: true, 4: true, 11: true },
+      6:  { 4: true, 7: true, 11: true },
+      7:  { 2: true, 6: true, 10: true, 11: true },
+      8:  { 2: true, 3: true, 10: true },
+      9:  { 1: true, 3: true, 12: true },
+      10: { 2: true, 7: true, 8: true },
+      11: { 5: true, 6: true, 7: true },
+      12: { 3: true, 9: true }
+    },
+    mountain: {
+      1:  { 8: true, 9: true },
+      2:  { 5: true, 6: true, 11: true },
+      3:  { 6: true, 7: true, 11: true },
+      4:  { 8: true, 12: true },
+      5:  { 2: true, 9: true, 10: true, 11: true },
+      6:  { 2: true, 3: true, 11: true },
+      7:  { 3: true, 12: true },
+      8:  { 1: true, 4: true, 9: true },
+      9:  { 1: true, 5: true, 8: true, 10: true, 12: true },
+      10: { 5: true, 9: true, 11: true, 12: true },
+      11: { 2: true, 3: true, 5: true, 6: true, 10: true, 12: true },
+      12: { 4: true, 7: true, 9: true, 10: true, 11: true  }
+    }
+  };
+
   public mapData = {
     fall: {
       clearingPositions: [
@@ -93,11 +154,35 @@ export class MapModalPage implements OnInit {
   }
 
   ngOnInit() {
-    this.changeMap('mountain');
+    this.changeMap('fall');
   }
 
   randomize() {
     this.suits = shuffle(['bunny', 'bunny', 'bunny', 'bunny', 'fox', 'fox', 'fox', 'fox', 'mouse', 'mouse', 'mouse', 'mouse']);
+  }
+
+  balanced() {
+    this.balancedError = false;
+
+    let isValid = true;
+    let attempts = 0;
+
+    const mapAdjacency = this.clearingAdjacency[this.activeMap];
+
+    do {
+      isValid = true;
+      this.randomize();
+
+      this.suits.forEach((suit, index) => {
+        Object.keys(mapAdjacency[index + 1]).forEach(checkIndex => {
+          if (this.suits[(+checkIndex) - 1] !== suit) { return; }
+          isValid = false;
+        });
+      });
+    } while (!isValid && attempts++ < 5000);
+
+    if (!isValid) { this.balancedError = true; }
+
   }
 
 }

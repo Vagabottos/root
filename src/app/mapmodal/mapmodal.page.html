@@ -43,6 +43,15 @@
       <ion-button (click)="randomize()">
         Randomize
       </ion-button>
+      <ion-button (click)="balanced()">
+        Balanced
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-margin-top error-row">
+    <ion-col class="ion-text-center">
+      <span *ngIf="balancedError">Attempted to find a balanced layout; but could not. Try again! It might work this time.</span>
     </ion-col>
   </ion-row>
 
