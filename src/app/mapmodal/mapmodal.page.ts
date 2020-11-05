@@ -158,6 +158,7 @@ export class MapModalPage implements OnInit {
   }
 
   randomize() {
+    this.balancedError = false;
     this.suits = shuffle(['bunny', 'bunny', 'bunny', 'bunny', 'fox', 'fox', 'fox', 'fox', 'mouse', 'mouse', 'mouse', 'mouse']);
   }
 
