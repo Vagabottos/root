@@ -436,7 +436,7 @@
               text: Place a warrior in any clearing with a base.
             - name: Organize.
               text: Remove one of your warriors from an unsympathetic clearing, place a sympathy token there, and score the victory points listed on the space uncovered on your faction board.
-        - name: Income.
+        - name: Draw and Discard.
           text: Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
 - name: Vagabond
