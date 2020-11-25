@@ -130,8 +130,8 @@
               text: You win the game immediately if you rule two clearings in opposite corners at the start of your Birdsong.
         - name: Activated Cards.
           text: An activated dominance card does not count against your hand limit, and it cannot be removed from play. You cannot replace an activated dominance card with a different one.
-        - name: Spending for Suit.
-          text: A dominance card can be spent for its suit. However, when it would be placed in the discard pile, instead place it near the map to show it is **available** to be taken. `faction:cult:10.4.2`
+        - name: Using Dominance Cards.
+          text: A dominance card can be spent for its suit. Anytime a dominance card would be placed in the discard pile, instead place it near the map to show it is **available** to be taken. `faction:cult:10.4.2`
         - name: Taking Available Cards.
           text: During your Daylight, you can take an available dominance card into your hand by spending a card of matching suit.
 
