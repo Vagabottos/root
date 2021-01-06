@@ -144,6 +144,12 @@
           </thead>
 
           <tbody>
+            <tr>
+              <td colspan="5" class="ion-text-center">
+                <em>Choose Map, then choose Deck. Pick 3 cards and return the rest to the deck.</em>
+              </td>
+            </tr>
+            
             <tr *ngFor="let order of draftOrder; let i = index">
               <td>
                 {{ i + 1 }}
@@ -164,12 +170,6 @@
 
               <td>
                 {{ draftOrder.length - i }}
-              </td>
-            </tr>
-
-            <tr>
-              <td colspan="5" class="ion-text-center">
-                <em>Pick 3 cards and return the rest to the deck.</em>
               </td>
             </tr>
           </tbody>
