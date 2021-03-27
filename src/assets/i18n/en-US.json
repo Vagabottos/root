@@ -1,0 +1,94 @@
+{
+  "App": {
+    "NavTitle": "Rules & Factions (5th Ed.)",
+    "NavTitleShort": "Rules (5th Ed.)",
+    "RootPrefix": "The Law Of",
+    "SearchPlaceholder": "Search Rules",
+    "Titles": {
+      "Search": "Search Rules",
+      "FAQ": "Frequently Asked Questions",
+      "Reach": "Reach Calculator and +1 Draft Tool",
+      "Map": "Map Generator"
+    }
+  },
+  "Modal": {
+    "FAQ": {
+      "Title": "Frequently Asked Questions",
+      "TitleShort": "FAQ",
+      "CloseButton": "Close",
+      "Law": "Law",
+      "Q": "Q",
+      "A": "A"
+    },
+    "Reach": {
+      "Title": "Reach Calculator",
+      "TitleShort": "Reach",
+      "CloseButton": "Close",
+      "Choose": "Choose New Factions",
+      "DraftPlusOne": "Draft +1",
+      "Error": "Unable to select factions; please adjust selections and try again.",
+      "Factions": {
+        "Marquise de Cat": "Marquise de Cat",
+        "Underground Duchy": "Underground Duchy",
+        "Eyrie Dynasties": "Eyrie Dynasties",
+        "Vagabond (#1)": "Vagabond (#1)",
+        "Riverfolk Company": "Riverfolk Company",
+        "Woodland Alliance": "Woodland Alliance",
+        "Corvid Conspiracy": "Corvid Conspiracy",
+        "Vagabond (#2)": "Vagabond (#2)",
+        "Lizard Cult": "Lizard Cult"
+      },
+      "FactionsShort": {
+        "Marquise": "Marquise",
+        "Duchy": "Duchy",
+        "Eyrie": "Eyrie",
+        "Vagabond #1": "Vagabond #1",
+        "Riverfolk": "Riverfolk",
+        "Woodland": "Woodland",
+        "Corvids": "Corvids",
+        "Vagabond #2": "Vagabond #2",
+        "Cult": "Lizards"
+      },
+      "Draft": {
+        "Players": {
+          "Player A": "Player A",
+          "Player B": "Player B",
+          "Player C": "Player C",
+          "Player D": "Player D",
+          "Player E": "Player E",
+          "Player F": "Player F"
+        },
+        "Headers": {
+          "Factions": "Factions",
+          "TurnDraftOrder": "Turn/Draft Order",
+          "Faction": "Faction",
+          "Reach": "Reach",
+          "Draft": "Draft",
+          "Player": "Player",
+          "Cards": "Cards",
+          "Picks": "Picks",
+          "Turn": "Turn"
+        },
+        "Text": {
+          "Deck": "Deck",
+          "Map": "Map",
+          "Choose": "Choose Map, then choose Deck. Pick 3 cards and return the rest to the deck."
+        }
+      }
+    },
+    "Maps": {
+      "Title": "Map Randomizer",
+      "TitleShort": "Map",
+      "CloseButton": "Close",
+      "MapNames": {
+        "fall": "Fall",
+        "winter": "Winter",
+        "lake": "Lake",
+        "mountain": "Mountain"
+      },
+      "Randomize": "Randomize",
+      "Balanced": "Balanced",
+      "Error": "Attempted to find a balanced layout; but could not. Try again! It might work this time."
+    }
+  }
+}

@@ -6,7 +6,7 @@
 
     <ion-title *ngIf="!showSearch">
       <span class="title-container">
-        <span class="title-text ion-hide-sm-down">The Law Of</span>
+        <span class="title-text ion-hide-sm-down">{{ 'App.RootPrefix' | translate }}</span>
         <img class="title-logo" src="assets/logo.png" />
       </span> 
     </ion-title>
@@ -18,19 +18,19 @@
                    (ionCancel)="setSearchValue(null)"
                    (ionClear)="setSearchValue(null)"
                    (ionChange)="setSearchValue($event.detail.value)"
-                   placeholder="Search Rules"></ion-searchbar>
+                   [placeholder]="'App.SearchPlaceholder' | translate"></ion-searchbar>
 
     <ion-buttons slot="end">
-      <ion-button (click)="toggleSearch()" title="Search Rules">
+      <ion-button (click)="toggleSearch()" [title]="'App.Titles.Search' | translate">
         <ion-icon name="search"></ion-icon>
       </ion-button>
-      <ion-button (click)="openFAQ()" title="Frequently Asked Questions">
+      <ion-button (click)="openFAQ()" [title]="'App.Titles.FAQ' | translate">
         <ion-icon name="help-circle"></ion-icon>
       </ion-button>
-      <ion-button (click)="openReach()" title="Reach Calculator and +1 Draft Tool">
+      <ion-button (click)="openReach()" [title]="'App.Titles.Reach' | translate">
         <ion-icon name="calculator"></ion-icon>
       </ion-button>
-      <ion-button (click)="openMaps()" title="Map Generator">
+      <ion-button (click)="openMaps()" [title]="'App.Titles.Map' | translate">
         <ion-icon name="map"></ion-icon>
       </ion-button>
     </ion-buttons>

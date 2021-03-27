@@ -4,8 +4,12 @@ import * as marked from 'marked';
 import { convert as toRoman } from 'roman-numeral';
 import slugify from 'slugify';
 
-import * as rules from '../assets/rules.json';
+import * as enUSRules from '../assets/i18n/rules/en-US.json';
 import { Subject } from 'rxjs';
+
+const rules = {
+  'en-US': (enUSRules as any).default || enUSRules
+};
 
 @Injectable({
   providedIn: 'root'
@@ -30,10 +34,14 @@ export class RulesService {
   }
 
   public get baseRules() {
-    return (rules as any).default || rules;
+    return rules[localStorage.getItem('language') || 'en-US'] || enUSRules;
   }
 
   constructor() {
+    this.loadRules();
+  }
+
+  public loadRules() {
 
     // the formatter needs this to have run once
     // and this needs the formatter to run correctly

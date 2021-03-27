@@ -1,8 +1,8 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      <span class="ion-hide-sm-down">Reach Calculator</span>
-      <span class="ion-hide-md-up">Reach</span>
+      <span class="ion-hide-sm-down">{{ 'Modal.Reach.Title' | translate }}</span>
+      <span class="ion-hide-md-up">{{ 'Modal.Reach.TitleShort' | translate }}</span>
     </ion-title>
     <ion-buttons slot="end">
       <ion-button color="primary" 
@@ -12,7 +12,7 @@
         <ion-icon slot="icon-only" [name]="button.icon"></ion-icon>
       </ion-button>
       <ion-button (click)="dismiss()">
-        Close
+        {{ 'Modal.Reach.CloseButton' | translate }}
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -42,7 +42,7 @@
 
           <ion-badge [color]="chosenFactions[faction.name] ? 'tertiary' : 'primary'" class="text-name">
             <span class="name-container">
-              {{ faction.shortName }}
+              {{ 'Modal.Reach.FactionsShort.' + faction.shortName | translate }}
               <ion-icon class="star-icon" name="star" [class.visible]="chosenFactions[faction.name]"></ion-icon>
             </span>
           </ion-badge>
@@ -62,11 +62,11 @@
     </div>
 
     <div class="centered ion-margin-top">
-      <ion-button (click)="calculateForRandom()">Choose New Factions</ion-button>
+      <ion-button (click)="calculateForRandom()">{{ 'Modal.Reach.Choose' | translate }}</ion-button>
     </div>
 
     <div class="centered ion-margin-top" *ngIf="unableToSelect">
-      <ion-badge color="danger">Unable to select factions; please adjust selections and try again.</ion-badge>
+      <ion-badge color="danger">{{ 'Modal.Reach.Error' | translate }}</ion-badge>
     </div>
 
     <div class="centered ion-margin-top">
@@ -97,29 +97,29 @@
     </div>
 
     <div class="centered ion-margin-top">
-      <ion-button (click)="calculateForDraft()">Draft +1</ion-button>
+      <ion-button (click)="calculateForDraft()">{{ 'Modal.Reach.DraftPlusOne' | translate }}</ion-button>
     </div>
 
     <div class="centered ion-margin-top" *ngIf="unableToSelect">
-      <ion-badge color="danger">Unable to select factions; please adjust selections and try again.</ion-badge>
+      <ion-badge color="danger">{{ 'Modal.Reach.Error' | translate }}</ion-badge>
     </div>
 
     <ion-row class="ion-margin-top" *ngIf="!unableToSelect && chosenFactionsOrdered.length > 0">
 
       <ion-col size="12" size-md="4" class="centered has-header">
-        <h2 class="ion-text-center">Factions</h2>
+        <h2 class="ion-text-center">{{ 'Modal.Reach.Draft.Headers.Factions' | translate }}</h2>
         <table>
           <thead>
             <tr>
-              <th>Faction</th>
-              <th>Reach</th>
+              <th>{{ 'Modal.Reach.Draft.Headers.Faction' | translate }}</th>
+              <th>{{ 'Modal.Reach.Draft.Headers.Reach' | translate }}</th>
             </tr>
           </thead>
 
           <tbody>
             <tr *ngFor="let faction of chosenFactionsOrdered">
               <td>
-                {{ faction }}
+                {{ 'Modal.Reach.Factions.' + faction | translate }}
               </td>
 
               <td>
@@ -131,22 +131,22 @@
       </ion-col>
 
       <ion-col size="12" size-md="8" class="centered has-header">
-        <h2 class="ion-text-center">Turn/Draft Order</h2>
+        <h2 class="ion-text-center">{{ 'Modal.Reach.Draft.Headers.TurnDraftOrder' | translate }}</h2>
         <table>
           <thead>
             <tr>
-              <th>Draft</th>
-              <th>Player</th>
-              <th>Cards</th>
-              <th>Picks</th>
-              <th>Turn</th>
+              <th>{{ 'Modal.Reach.Draft.Headers.Draft' | translate }}</th>
+              <th>{{ 'Modal.Reach.Draft.Headers.Player' | translate }}</th>
+              <th>{{ 'Modal.Reach.Draft.Headers.Cards' | translate }}</th>
+              <th>{{ 'Modal.Reach.Draft.Headers.Picks' | translate }}</th>
+              <th>{{ 'Modal.Reach.Draft.Headers.Turn' | translate }}</th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
               <td colspan="5" class="ion-text-center">
-                <em>Choose Map, then choose Deck. Pick 3 cards and return the rest to the deck.</em>
+                <em>{{ 'Modal.Reach.Draft.Text.Choose' | translate }}</em>
               </td>
             </tr>
             
@@ -156,7 +156,7 @@
               </td>
 
               <td>
-                Player {{ order }}
+                {{ 'Modal.Reach.Draft.Players.Player ' + order | translate }}
               </td>
 
               <td>
@@ -164,8 +164,8 @@
               </td>
 
               <td>
-                <span *ngIf="i === draftOrder.length - 1">Map</span>
-                <span *ngIf="i === draftOrder.length - 2">Deck</span>
+                <span *ngIf="i === draftOrder.length - 1">{{ 'Modal.Reach.Draft.Text.Map' | translate }}</span>
+                <span *ngIf="i === draftOrder.length - 2">{{ 'Modal.Reach.Draft.Text.Deck' | translate }}</span>
               </td>
 
               <td>

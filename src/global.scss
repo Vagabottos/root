@@ -48,7 +48,7 @@
   font-style: normal;
 }
 
-ion-toolbar, ion-content{
+ion-toolbar, ion-content, ion-router-outlet, .popover-content, .alert-wrapper, .show-modal {
   --background: url("/assets/background.png") repeat;
 }
 
@@ -57,6 +57,7 @@ ion-router-outlet {
 }
 
 ion-list {
+  --ion-item-background: url("/assets/background.png") repeat;
   background: transparent !important;
   padding-top: 0 !important;
 }
@@ -169,4 +170,21 @@ a:not(.rule-link) {
     --height: 80%;
     --width: 80%;
   }
+}
+
+.language {
+
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+
+  ion-label {
+    display: none;
+  }
+
+  ion-select {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 32px;
+  }
+
 }
