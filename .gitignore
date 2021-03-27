@@ -35,3 +35,6 @@ UserInterfaceState.xcuserstate
 
 src/assets/rules.json
 src/assets/faq.json
+
+src/assets/i18n/faq/*.json
+src/assets/i18n/rules/*.json
