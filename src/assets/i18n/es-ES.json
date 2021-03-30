@@ -1,0 +1,94 @@
+{
+  "App": {
+    "NavTitle": "Reglas y Facciones (5ª Ed.USA)",
+    "NavTitleShort": "Reglas (5ª Ed.USA)",
+    "RootPrefix": "La ley de",
+    "SearchPlaceholder": "Buscar reglas",
+    "Titles": {
+      "Search": "Buscar reglas",
+      "FAQ": "Preguntas Frecuentes",
+      "Reach": "Calculadora de Alcance y Selección de Facciones",
+      "Map": "Generador de Mapa"
+    }
+  },
+  "Modal": {
+    "FAQ": {
+      "Title": "Preguntas Frecuentes",
+      "TitleShort": "FAQ",
+      "CloseButton": "Cerrar",
+      "Law": "Ley",
+      "Q": "P",
+      "A": "R"
+    },
+    "Reach": {
+      "Title": "Calculadora de Alcance",
+      "TitleShort": "Alcance",
+      "CloseButton": "Cerrar",
+      "Choose": "Elegir nuevas Facciones",
+      "DraftPlusOne": "Draft +1",
+      "Error": "Unable to select factions; please adjust selections and try again.",
+      "Factions": {
+        "Marquise de Cat": "El Marquesado",
+        "Underground Duchy": "El Ducado Subterráneo",
+        "Eyrie Dynasties": "El Nido de Águilas",
+        "Vagabond (#1)": "Vagabundo (#1)",
+        "Riverfolk Company": "La Compañía del Río",
+        "Woodland Alliance": "La Alianza",
+        "Corvid Conspiracy": "La Conspiración Córvida",
+        "Vagabond (#2)": "Vagabundo (#2)",
+        "Lizard Cult": "El Culto Reptiliano"
+      },
+      "FactionsShort": {
+        "Marquise": "El Marquesado",
+        "Duchy": "El Ducado",
+        "Eyrie": "El Nido",
+        "Vagabond #1": "Vagabundo #1",
+        "Riverfolk": "La Compañía",
+        "Woodland": "La Alianza",
+        "Corvids": "La Conspiración",
+        "Vagabond #2": "Vagabundo #2",
+        "Cult": "El Culto"
+      },
+      "Draft": {
+        "Players": {
+          "Player A": "Jugador A",
+          "Player B": "Jugador B",
+          "Player C": "Jugador C",
+          "Player D": "Jugador D",
+          "Player E": "Jugador E",
+          "Player F": "Jugador F"
+        },
+        "Headers": {
+          "Factions": "Facciones",
+          "TurnDraftOrder": "Orden de Turno/Selección",
+          "Faction": "Facción",
+          "Reach": "Alcance",
+          "Draft": "Draft",
+          "Player": "Jugador",
+          "Cards": "Cartas",
+          "Picks": "Elige",
+          "Turn": "Orden de Turno"
+        },
+        "Text": {
+          "Deck": "Mazo",
+          "Map": "Mapa",
+          "Choose": "Elige mapa; después, elige mazo. Elige 3 cartas y devuelve el resto al mazo."
+        }
+      }
+    },
+    "Maps": {
+      "Title": "Generador de Mapa",
+      "TitleShort": "Mapa",
+      "CloseButton": "Cerrar",
+      "MapNames": {
+        "fall": "Otoño",
+        "winter": "Invierno",
+        "lake": "Lago",
+        "mountain": "Montaña"
+      },
+      "Randomize": "Aleatorio",
+      "Balanced": "Equilibrado",
+      "Error": "Se ha intentado crear una distribución equilibrada, pero no ha sido posible. ¡Vuelve a intentarlo! Puede que esta vez funcione."
+    }
+  }
+}

@@ -43,12 +43,12 @@
           <ion-badge [color]="chosenFactions[faction.name] ? 'tertiary' : 'primary'" class="text-name">
             <span class="name-container">
               {{ 'Modal.Reach.FactionsShort.' + faction.shortName | translate }}
-              <ion-icon class="star-icon" name="star" [class.visible]="chosenFactions[faction.name]"></ion-icon>
             </span>
           </ion-badge>
 
           <ion-badge [color]="chosenFactions[faction.name] ? 'tertiary' : 'primary'" class="text-reach">
             {{ faction.value }}
+            <ion-icon class="star-icon" name="star" [class.visible]="chosenFactions[faction.name]"></ion-icon>
           </ion-badge>
         </div>
       </ion-col>

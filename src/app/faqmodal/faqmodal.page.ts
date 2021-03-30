@@ -5,7 +5,8 @@ import { ModalController } from '@ionic/angular';
 import * as enUSFAQ from '../../assets/i18n/faq/en-US.json';
 
 const faq = {
-  'en-US': (enUSFAQ as any).default || enUSFAQ
+  'en-US': (enUSFAQ as any).default || enUSFAQ,
+  'es-ES': (enUSFAQ as any).default || enUSFAQ
 };
 
 @Component({

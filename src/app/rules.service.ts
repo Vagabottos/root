@@ -4,11 +4,13 @@ import * as marked from 'marked';
 import { convert as toRoman } from 'roman-numeral';
 import slugify from 'slugify';
 
-import * as enUSRules from '../assets/i18n/rules/en-US.json';
 import { Subject } from 'rxjs';
 
+import * as enUSRules from '../assets/i18n/rules/en-US.json';
+
 const rules = {
-  'en-US': (enUSRules as any).default || enUSRules
+  'en-US': (enUSRules as any).default || enUSRules,
+  'es-ES': (enUSRules as any).default || enUSRules,
 };
 
 @Injectable({
