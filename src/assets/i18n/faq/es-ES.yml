@@ -1,0 +1,168 @@
+
+- category: General
+  color: "#000000"
+  questions:
+    - q: ¿Qué piezas son Edificios?¿Cuáles son Fichas?
+      a: Las piezas de cartón cuadradas que encajan en las casillas de los claros y no representan objetos son Edificios, mientras que las piezas redondas son Fichas. En el libreto de _Aprende a jugar_ y la cara trasera de cada tablero de facción se detallan los fichas y edificios.
+      laws: 
+        - "2.5"
+    
+    - q: ¿Se pierden puntos al perder un edificio propio?
+      a: No.
+      laws: 
+        - "2.5.2"
+
+    - q: ¿Se pueden jugar varias cartas de emboscada en una batalla?
+      a: No. Solo se puede jugar una por batalla.
+      laws: 
+        - "4.3.1"
+
+    - q: Las cartas de Favor... ¿de verdad eliminan TODAS las piezas enemigas de esos claros?
+      a: ¡Sí! Toda pieza presente -excepto el peón del Vagabundo, claro-. Menudo espabilado. No obstante, ten en cuenta que las Ruinas y los objetos que haya bajo ellas no se retiran. ¡Mejor aún para el Vagabundo!
+      laws: 
+        - "2.1"
+
+    - q: Las cartas de Favor... ¿aportan puntos de victoria?
+      a: Sí, en caso de eliminar edificios o fichas, ya que obtienes 1 PV por cada pieza de estos tipos que elimines.
+      laws: 
+        - "3.2.1"
+
+    - q: ¿Cómo elimino fichas enemigas, como las fichas de Simpatía?
+      a: Debes batallar contra ellas, como si fuesen cualquier otra pieza. También puedes retirarlas por efecto de las cartas de Favor. 
+      laws:
+        - "2.1"
+        - "2.5"
+        - "4.3"
+    
+    - q: ¿Colocar piezas en claros afines (donde hay una ficha de Simpatía) activa la habilidad de Indignación de la Alianza?
+      a: No. La Indignación se activa cuando mueves guerreros a ese claro y cuando retiras la ficha de Simpatía.! 
+      laws:
+        - "8.2.6"
+        - "8.2.5"
+
+    - q: ¿Dónde se deben colocar las fichas y los edificios al ser retirados?
+      a: En general, las fichas y edificios de una facción vuelven al tablero o la reserva del jugador que controla dicha facción. Ello se explica con más detalle en el punto 2.5.
+      laws:
+        - "2.5"
+
+    - q: ¿Qué significa "activar" una pieza para fabricar?¿Debo hacer algo con la pieza?
+      a: No. Activarla solo implica que tienes la pieza necesaria y deseas usarla para fabricar. No debes retirar la pieza ni hacer nada especial salvo que se indique lo contrario; tan sólo señala la(s) pieza(s) correspondiente(s) e indica que la estás utilizando para fabricar la carta. Recuerda que cada pieza de fabricación solo puede ser activada una sola vez por turno.
+      laws:
+        - "4.1.1"
+
+    - q: ¿Se deben colocar las Ruinas sobre el mapa aunque no haya Vagabundo presente en la partida?
+      a: Sí. Las Ruinas siempre deben colocarse durante la preparación.
+      laws:
+        - "2.2.4"
+
+    # https://boardgamegeek.com/article/29867471#29867471
+    - q: ¿Qué efectos se activan en qué orden en caso de retirar varias piezas se retiran a la vez?
+      a: El instigador/atacante tiene prioridad en los efectos, así que sus efectos deben resolverse primero. El resto de efectos son secundarios.
+
+- category: El Marquesado
+  color: "#e07a37"
+  questions:
+    - q: ¿Qué ocurre si retiran todas mis piezas del mapa?
+      a: Desgraciadamente, quedas eliminad@ de la partida. Por suerte, la partida habrá terminado o estará a punto de terminar si eso llegase a ocurrir.
+      laws:
+        - "6."
+
+    - q: ¿Pueden otras personas mover piezas al claro de mi Fortaleza?
+      a: Sí. Las reglas especifican que solo el marquesado puede "Colocar" piezas. "Colocar y "Mover" son términos diferentes.
+      laws:
+        - "4.2"
+        - "6.2.2"
+
+    - q: ¿Cómo hace uso el Marquesado de su red de recursos para construir?
+      a: El Marquesado debe controlar el claro o claros en que esté la madera necesaria, el claro en el que quiere contruir y cualquier claro en la ruta por la que debe "pasar" la madera (la madera nunca se mueve físicamente, solo se gasta al construir).
+      laws:
+        - "6.5.4.2"
+
+- category: El Nido de Águilas
+  color: "#416eb0"
+  questions:
+    - q: ¿Entro en Caos si una de mis columnas está vacía?
+      a: No. Entras en Caos si en tu decreto hay una carta cuya acción no puedas cumplir.
+      laws:
+        - "7.7"
+
+    - q: ¿Entro en Caos también en caso de que pueda realizar algunas acciones de una columna pero no todas?
+      a: Sí. En el momento en que no puedas completar una carta, caes en Caos.
+      laws:
+        - "7.7"
+
+    - q: ¿Puedo mover Guerreros de 1 en 1 desde un mismo claro para cumplir las acciones de Mover de mi Decreto? ¿Puedo mover un Guerrero de ida y vuelta, si con ello cumplo las cartas?
+      a: ¡Sí! Puedes hacer este tipo de movimientos para cumplir con las cartas del Decreto. Recuerda seguir correctamente las reglas de movimiento. 
+      laws:
+        - "7.5.2"
+    
+    - q: ¿Cómo funciona la habilidad del líder Déspota?¿No se obtiene ya un 1 PV por retirar un edificio o ficha?
+      a: En efecto, obtienes 1 PV por cada edificio o ficha como de normal. La habilidad del Déspota otorga 1 PV en cada acción en que retires fichas; no 1 PV por cada ficha.
+      laws:
+        - "7.8.4"
+
+- category: La Alianza
+  color: "#68b653"
+  questions:
+    - q: ¿Puedo hacer una Revuelta con una base en un claro cuyo tipo de base ya haya construido?
+      a: No. La acción de Revuelta especifica que debes elegir un claro afín de un palo cuya base no esté ya construida.
+      laws:
+        - "8.4.1"
+
+    - q: ¿Puedo hacer una Revuelta en el claro en que esté situada la ficha de la Fortaleza del Marquesado?
+      a: No. Para iniciar la Revuelta necesitarías haber colocado una ficha de Simpatía primero, lo cual no es posible por la habilidad especial de la ficha de la Fortaleza.
+      laws:
+        - "6.2.2"
+        - "8.4.1"
+
+- category: Vagabundo
+  color: "#6d6e70"
+  questions:
+    - q: ¿Puedo fabricar cartas cuyo requisito especifique varios palos?
+      a: "No. Todos tus martillos corresponden al claro actual, así que solo puedes fabricar cartas de un palo. Pero hay buenas noticias para ti: ¡las cartas de varios palos son inútiles para el vagabundo!"
+      laws:
+        - "9.2.1"
+
+    - q: ¿Activo la habilidad de Indignación de la Alianza al moverme a un claro afín?
+      a: No. Además de ser un Vagabundo amigable, tu pieza es un Peón, no un Guerrero, por lo que no te es aplicable dicho efecto.  
+      laws:
+        - "8.2.6"
+        - "9.2.2"
+
+    - q: ¿En caso de mover Guerreros aliados de la Alianza a un claro a un claro afín, se activa la Indignación?
+      a: ¡Sí! ¿De qué va ese rollo de un Vagabundo liderando a guerreros de la Alianza?
+      laws:
+        - "8.2.6"
+        - "9.2.9"
+
+    - q: ¿Qué ocurre si encuentro un objeto duplicado en unas Ruinas en una partida en que hay dos Vagabundos?
+      a: Si encuentras un objeto que ya tienes, entonces no puedes cogerlo, y además habrás consumido una Antorcha en el proceso. Solo puedes tener un objeto de las ruinas (R) de cada tipo.
+      laws:
+        - "9.8.1"
+        
+    - q: ¿Puede la Alianza usar la acción de Organizar para colocar una ficha de Simpatía en el claro que contiene la ficha de la Fortaleza del Marquesado?
+      a: That is not possible, as no pieces may be placed in the clearing with the Keep.
+      laws:
+        - "6.2.2"
+   
+- category: El Culto Reptiliano
+  color: "#fcf065"
+  questions:
+    - q: Cuando el Culto Reptiliano está presente en la partida, ¿cómo cambia el funcionamiento de la pila de descartes?
+      a: Simplemente, cada jugador descarta sus cartas sobre la pila de Almas Perdidas, como si esta fuese la pila de descarte.
+      laws:
+        - "10.2.6"
+
+- category: La Compañía del Río
+  color: "#5bc3bd"
+  questions:
+    - q: ¿Cuando contrato mercenarios de la Compañía del Río, puedo iniciar una batalla con ellos aunque no tenga piezas propias en el claro de la batalla?
+      a: ¡Pues sí, así que adelante con ello! Además, si no posees guerreros propios en dicha batalla, no debes repartir las bajas. 
+      laws:
+        - "11.2.7"
+    
+    - q: ¿Puedo exportar una carta si el objeto de esta no está en la reserva no está en la reserva o si ya poseo el efecto permanente de esta carta (por ser duplicado)?
+      a: No. Debes poder fabricar la carta como requisito antes de poder exportarla. En dichos casos no sería posible exportar las cartas.
+      laws:
+        - "11.5.3"
+
