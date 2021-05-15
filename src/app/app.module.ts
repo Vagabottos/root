@@ -18,7 +18,7 @@ import { FormsModule } from '@angular/forms';
 import * as enUS from '../assets/i18n/en-US.json';
 import * as esES from '../assets/i18n/es-ES.json';
 
-const langs = { 
+const langs = {
   'en-US': (enUS as any).default || enUS,
   'es-ES': (esES as any).default || esES,
 };
@@ -38,7 +38,7 @@ export class JSONLoader implements TranslateLoader {
     IonicModule.forRoot(),
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    
+
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

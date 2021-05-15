@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -10,8 +10,8 @@ import { RulesService } from './rules.service';
   selector: 'app-root',
   templateUrl: 'app.component.html'
 })
-export class AppComponent {
-  
+export class AppComponent implements OnInit {
+
   public language: string;
 
   constructor(

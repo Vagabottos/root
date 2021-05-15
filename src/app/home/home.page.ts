@@ -26,7 +26,7 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
   private nav$: Subscription;
 
   constructor(
-    private modalCtrl: ModalController, 
+    private modalCtrl: ModalController,
     public rulesService: RulesService
   ) {}
 
