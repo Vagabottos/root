@@ -25,7 +25,10 @@ export class HomePage implements OnInit, AfterContentInit, OnDestroy {
 
   private nav$: Subscription;
 
-  constructor(private modalCtrl: ModalController, public rulesService: RulesService) {}
+  constructor(
+    private modalCtrl: ModalController,
+    public rulesService: RulesService
+  ) {}
 
   ngOnInit() {
     this.nav$ = this.rulesService.navigate$.subscribe(id => this.scrollToEl(id, 'start'));

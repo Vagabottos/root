@@ -1,12 +1,12 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      <span class="ion-hide-sm-down">Map Randomizer</span>
-      <span class="ion-hide-md-up">Map</span>
+      <span class="ion-hide-sm-down">{{ 'Modal.Maps.Title' | translate }}</span>
+      <span class="ion-hide-md-up">{{ 'Modal.Maps.TitleShort' | translate }}</span>
     </ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="dismiss()">
-        Close
+        {{ 'Modal.Maps.CloseButton' | translate }}
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -17,7 +17,7 @@
   <ion-row>
     <ion-col class="button-container" size-md="3" size-xs="6" size-sm="6" *ngFor="let map of ['fall', 'winter', 'lake', 'mountain']">
       <ion-button color="tertiary" [disabled]="activeMap === map" (click)="changeMap(map)">
-        {{ map | titlecase }}
+        {{ ('Modal.Maps.MapNames.' + map) | translate }}
       </ion-button>
     </ion-col>
   </ion-row>
@@ -41,17 +41,17 @@
   <ion-row class="ion-margin-top">
     <ion-col class="button-container">
       <ion-button (click)="randomize()">
-        Randomize
+        {{ 'Modal.Maps.Randomize' | translate }}
       </ion-button>
       <ion-button (click)="balanced()">
-        Balanced
+        {{ 'Modal.Maps.Balanced' | translate }}
       </ion-button>
     </ion-col>
   </ion-row>
 
   <ion-row class="ion-margin-top error-row">
     <ion-col class="ion-text-center">
-      <span *ngIf="balancedError">Attempted to find a balanced layout; but could not. Try again! It might work this time.</span>
+      <span *ngIf="balancedError">{{ 'Modal.Maps.Error' | translate }}</span>
     </ion-col>
   </ion-row>
 

@@ -1,12 +1,12 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      <span class="ion-hide-sm-down">Frequently Asked Questions</span>
-      <span class="ion-hide-md-up">FAQ</span>
+      <span class="ion-hide-sm-down">{{ 'Modal.FAQ.Title' | translate }}</span>
+      <span class="ion-hide-md-up">{{ 'Modal.FAQ.TitleShort' | translate }}</span>
     </ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="dismiss()">
-        Close
+        {{ 'Modal.FAQ.CloseButton' | translate }}
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -19,19 +19,19 @@
 
     <div *ngFor="let question of faqCat.questions" class="question">
       <ion-row class="question-row">
-        <ion-col size="1" class="lead">Q</ion-col>
+        <ion-col size="1" class="lead">{{ 'Modal.FAQ.Q' | translate }}</ion-col>
         <ion-col>{{ question.q }}</ion-col>
       </ion-row>
 
       <ion-row class="answer-row">
-        <ion-col size="1" class="lead">A</ion-col>
+        <ion-col size="1" class="lead">{{ 'Modal.FAQ.A' | translate }}</ion-col>
         <ion-col>{{ question.a }}</ion-col>
       </ion-row>
 
       <ion-row class="law-row">
         <ion-col class="ion-text-right">
           <ion-button *ngFor="let law of question.laws" color="primary" size="small" (click)="dismiss(law)">
-            Law {{ law }}
+            {{ 'Modal.FAQ.Law' | translate }} {{ law }}
           </ion-button>
         </ion-col>
       </ion-row>

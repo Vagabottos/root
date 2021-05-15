@@ -35,7 +35,7 @@
         - "4.3"
     
     - q: Does placing a piece in a sympathetic clearing trigger Outrage?
-      a: Nope! You have to move in warriors or battle the sympathy to trigger it.
+      a: Nope! You have to move in warriors or remove the sympathy to trigger it.
       laws:
         - "8.2.6"
         - "8.2.5"

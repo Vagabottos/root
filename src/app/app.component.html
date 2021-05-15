@@ -4,8 +4,8 @@
       <ion-header>
         <ion-toolbar>
           <ion-title>
-            <span class="ion-hide-sm-down">Rules & Factions (5th Ed.)</span>
-            <span class="ion-hide-md-up">Rules (5th Ed.)</span>
+            <span class="ion-hide-sm-down">{{ 'App.NavTitle' | translate }}</span>
+            <span class="ion-hide-md-up">{{ 'App.NavTitleShort' | translate }}</span>
           </ion-title>
         </ion-toolbar>
       </ion-header>
@@ -21,6 +21,14 @@
                       <img *ngIf="ruleHead.icon" class="inline-icon ion-margin-start" [src]="'assets/inicon/faction-' + ruleHead.icon + '.png'" />
             </ion-item>
           </ion-menu-toggle>
+
+          <ion-item class="language">
+            <ion-label>Language</ion-label>
+            <ion-select placeholder="Select Language" (ionChange)="languageChange()" [(ngModel)]="language">
+              <ion-select-option value="en-US">English</ion-select-option>
+              <ion-select-option value="es-ES">Español</ion-select-option>
+            </ion-select>
+          </ion-item>
         </ion-list>
       </ion-content>
     </ion-menu>

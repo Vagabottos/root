@@ -9,12 +9,14 @@ import { HighlightPipe } from '../highlight.pipe';
 import { FAQModalPage } from '../faqmodal/faqmodal.page';
 import { ReachModalPage } from '../reachmodal/reachmodal.page';
 import { MapModalPage } from '../mapmodal/mapmodal.page';
+import { SharedModule } from '../shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    SharedModule,
     RouterModule.forChild([
       {
         path: '',

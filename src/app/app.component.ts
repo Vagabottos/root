@@ -1,9 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SwUpdate } from '@angular/service-worker';
-
-import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { TranslateService } from '@ngx-translate/core';
 
 import { interval } from 'rxjs';
 
@@ -13,11 +10,12 @@ import { RulesService } from './rules.service';
   selector: 'app-root',
   templateUrl: 'app.component.html'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  public language: string;
+
   constructor(
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar,
+    private translateService: TranslateService,
     private updates: SwUpdate,
 
     public rulesService: RulesService
@@ -25,12 +23,32 @@ export class AppComponent {
     this.initializeApp();
   }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
+  ngOnInit() {
+    this.language = localStorage.getItem('language');
+    if (!this.language) {
+      const baseLang = navigator.language || 'en-US';
+      if (baseLang.split('-')[0] === 'fr') {
+        this.language = 'fr-FR';
+      } else {
+        this.language = 'en-US';
+      }
+    }
 
+    this.updateTranslate();
+  }
+
+  public languageChange() {
+    localStorage.setItem('language', this.language);
+
+    this.updateTranslate();
+  }
+
+  private updateTranslate() {
+    this.translateService.use(this.language);
+    this.rulesService.loadRules();
+  }
+
+  initializeApp() {
     this.watchAppChanges();
   }
 

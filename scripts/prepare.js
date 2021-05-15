@@ -2,12 +2,22 @@
 const yaml = require('js-yaml');
 const fs = require('fs');
 
-const file = fs.readFileSync('src/assets/rules.yml', 'UTF-8');
-const json = yaml.safeLoad(file);
+const ruleFiles = fs.readdirSync('src/assets/i18n/rules');
+ruleFiles.forEach(file => {
 
-fs.writeFileSync('src/assets/rules.json', JSON.stringify(json));
+  const fileL = fs.readFileSync(`src/assets/i18n/rules/${file}`, 'UTF-8');
+  const json = yaml.safeLoad(fileL);
+  
+  fs.writeFileSync(`src/assets/i18n/rules/${file.split('.')[0]}.json`, JSON.stringify(json));
 
-const faqFile = fs.readFileSync('src/assets/faq.yml', 'UTF-8');
-const faqJson = yaml.safeLoad(faqFile);
+});
 
-fs.writeFileSync('src/assets/faq.json', JSON.stringify(faqJson));
+const faqFiles = fs.readdirSync('src/assets/i18n/faq');
+faqFiles.forEach(file => {
+
+  const fileL = fs.readFileSync(`src/assets/i18n/faq/${file}`, 'UTF-8');
+  const json = yaml.safeLoad(fileL);
+  
+  fs.writeFileSync(`src/assets/i18n/faq/${file.split('.')[0]}.json`, JSON.stringify(json));
+
+});
