@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.language = localStorage.getItem('lang');
+    this.language = localStorage.getItem('language');
     if (!this.language) {
       const baseLang = navigator.language || 'en-US';
       if (baseLang.split('-')[0] === 'fr') {
@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
   }
 
   public languageChange() {
-    localStorage.setItem('lang', this.language);
+    localStorage.setItem('language', this.language);
 
     this.updateTranslate();
   }

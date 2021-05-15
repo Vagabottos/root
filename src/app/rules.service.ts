@@ -7,10 +7,11 @@ import slugify from 'slugify';
 import { Subject } from 'rxjs';
 
 import * as enUSRules from '../assets/i18n/rules/en-US.json';
+import * as esESRules from '../assets/i18n/rules/es-ES.json';
 
 const rules = {
   'en-US': (enUSRules as any).default || enUSRules,
-  'es-ES': (enUSRules as any).default || enUSRules,
+  'es-ES': (esESRules as any).default || esESRules,
 };
 
 @Injectable({
