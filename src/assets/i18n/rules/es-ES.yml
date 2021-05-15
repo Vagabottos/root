@@ -441,7 +441,7 @@
 
 - name: Vagabundo
   color: "#6d6e70"
-  : vagabond
+  icon: vagabond
   children:
     - name: Resumen
       pretext: El Vagabundo juega con todos los bandos de este conflicto, mientras lleva a cabo sus propias misiones para aumentar su reputación. Cada vez que el Vagabundo mejora su  **relación** con otra facción o retira un guerrero de una facción Hostil, obtiene puntos de victoria. También puede obtener puntos de victoria completando sus **misiones**. Para moverse y realizar acciones, el Vagabundo deberá gestionar adecuadamente sus  **objetos**, procurando expandir su equipamiento mediante la exploración de las ruinas del bosque y ayudando a otras facciones.
@@ -518,7 +518,7 @@
           text: Baraja tu mazo de misiones, roba 3 cartas de misión y colócalas bocarriba en tu área de juego.
         - name: "Paso 4: Preparar Ruinas."
           text: Coge las 4 piezas de las Ruinas del mapa, y los 4 objetos marcados con una "R" (`item:sack`, `item:boot`, `item:hammer`, y `item:sword`). Coloca 1 de estos objetos bajo cada Ruina al azar, y después mezcla los cuatro montones formados. Después, coloca, al azar, cada Ruina con su ficha de objeto debajo sobre las correspondientes casillas del mapa.
-        - name: "Paso 5: Objetos iniciales ("S")."
+        - name: "Paso 5: Objetos iniciales (\"S\")."
           text: Coge los objetos que indica tu carta personaje de la reserva de objetos marcados con una "S" _(este conjunto de objetos solo se utiliza durante la preparación)_. Coloca cualquier `item:tea`, `item:coin`, y`item:sack` indicado bocarriba sobre su correspondiente contador de tu tablero. Coloca el resto de objetos bocarriba en tu Bolsa. Finalmente, devuelve el resto de objetos marcados con una "S" a la caja.
         - name: "Paso 6: Relaciones."
           text: Coge los marcadores de relación correspondientes a cada facción que no sea el Vagabundo y y colócalos sobre la casilla "Indiferente" de la tabla de Relaciones.
