@@ -502,7 +502,7 @@
                 - name: Infamia.
                   text: Cada vez que retires una pieza de una facción Hostil en batalla durante tu turno, obtienes un punto de victoria. _(Ello se suma a los puntos obtenidos por retirar fichas y edificios enemigos. No obtienes un punto por retirar el guerrero que causa que dicha facción se vuelva Hostil)_
                 - name: Mover a un claro Hostil.
-                  text: Debes agotar una `item:boot` extra para mover a un claro que contenga guerreros de cualquier facción Hostil _(excepto si lo haces al infiltrarte durante tu Alba).
+                  text: Debes agotar una `item:boot` extra para mover a un claro que contenga guerreros de cualquier facción Hostil _(excepto si lo haces al **infiltrarte** durante tu Alba)_.
                 - name: Ayudar a una facción Hostil.
                   text: No puedes mejorar tu relación con una facción Hostil mediante la acción de Ayuda, pero sí es posible ayudar a una facción Hostil para coger sus objetos fabricados.
                 - name: Coalición con una facción Hostil.
@@ -537,7 +537,7 @@
         - name: Mover.
           text: Agota una `item:boot` para realizar un movimiento, más una adicional si el claro de destino tiene guerreros de alguna facción Hostil. No es posible mover a un bosque _(esto solo es posible durante el movimiento de infiltración de tu Alba)_. Si estás en un bosque, solo puedes mover a un claro adyacente.
         - name: Batallar.
-          text: Agota una `item:sword` to initiate a battle. _(Comprueba tu luego relación con el defensor, ya que se volverá Hostil si no lo era ya)_
+          text: Agota una `item:sword` para iniciar una batalla. _(Comprueba tu luego relación con el defensor, ya que se volverá Hostil si no lo era ya)_
         - name: Explorar.
           text: Agota una `item:torch` para extraer un objeto de una ruina del claro actual, revelándolo y colocándolo en tu Bolsa o sobre su contador, según corresponda. Después, suma 1 punto de victoria. Si al hacer esto retiras el último objeto de una ruina, retira la ruina del claro.
         - name: Ayudar.
@@ -545,7 +545,7 @@
         - name: Misión.
           text: Elige una misión del palo correspondiente al claro en el que estés, y agota los dos objetos indicados en la carta para completarla. Coloca dicha misión completada en tu área de juego y luego revela una nueva carta de misión, colocándola junto al mapa. Suma 1 punto de victoria por cada misión de dicho palo que hayas completado, contando con la que acabas de completar, o bien roba dos cartas del mazo.
         - name: Disparar.
-          text: Agota una `item:crossbow` para retirar un guerrero situado en tu claro actual. Si un jugador no tiene guerreros en este claro, puedes retirar en su lugar una ficha o edificio de dicho jugador. _(Luego, comprueba si se modifica tu relación con dicha facción)_
+          text: Agota una `item:crossbow` para retirar un guerrero situado en tu claro actual. Si un jugador no tiene guerreros en este claro, puedes retirar en su lugar una ficha o edificio de dicho jugador. _(Luego, comprueba si se modifica tu relación con dicha facción. Ten en cuenta que esta acción no cuenta como batalla, por lo que no se obtienen puntos por Infamia al retirar piezas de un jugador Hostil.)_
         - name: Repair.
           text: Agota un `item:hammer` para trasladar un objeto dañado a tu Hatillo o a su correspondiente contador _(en caso de tratarse de `item:coin`, `item:tea`, `item:sack` bocarriba, no agotados)_, manteniendo el objeto en su estado de uso actual.
         - name: Fabricar.
