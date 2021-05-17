@@ -25,12 +25,12 @@
     - name: Negociación y Pactos
       children:
         - name: Acuerdos.
-          text: Los jugadores pueden negociar en la partida y hacer pactos y acuerdos, pero estos nunca son vinculantes. _(Los acuerdos son estratégicos. No se puede alterar el estado de los componentes.)
+          text: Los jugadores pueden negociar en la partida y hacer pactos y acuerdos, pero estos nunca son vinculantes. _(Los acuerdos son estratégicos. No se puede alterar el estado de los componentes.)_
         - name: Dar cartas.
           text: Solo es posible dar (o recibir) cartas a otros jugadores si una regla o efecto lo indica explícitamente.
     
-    - name: Jugadores y Facciones and Factions
-      pretext: "A fin de facilitar la lectura, en la Ley se refiere habitualmente a los jugadores de la partida, no a las Facciones. Sin embargo, los efectos del juego, _(como habilidades y efectos permanentes)_ son propiedades de las Facciones, no de los jugadores. En caso de controlar piezas de una facción que no controles, debes seguir las reglas de dicha facción salvo que se indique explícitamente otra regla."
+    - name: Jugadores y Facciones
+      pretext: "A fin de facilitar la lectura, en la Ley se refiere habitualmente a los jugadores de la partida, no a las Facciones. Sin embargo, los efectos del juego _(como habilidades y efectos permanentes)_ son propiedades de las Facciones, no de los jugadores. En caso de controlar piezas de una facción que no controles, debes seguir las reglas de dicha facción salvo que se indique explícitamente otra regla."
     
     - name: Estructura de juego y turno
       pretext: "El turno de cada jugador se divide en tres fases con un orden fijo: Alba, Día y Noche. Después de completar cada fase, la persona situada a la izquierda _(siguiendo el sentido horario)_ comienza su turno. El juego continúa hasta que un jugador haya ganado(`rule:3.1`)."
@@ -39,10 +39,10 @@
   color: "#000000"
   children:
     - name: Cartas del mazo común.
-      pretext: "Cada carta del mazo común tiene un **palo**: ave, zorro, conejo o ratón _(muchos efectos de las Facciones exigen que gastes cartas según su palo). Además, la mayoría tiene un efecto que puedes obtener si **fabricas** dicha carta (`rule:4.1`)."
+      pretext: "Cada carta del mazo común tiene un **palo**: ave, zorro, conejo o ratón. Muchos efectos de las Facciones exigen que gastes cartas según su palo. Además, la mayoría tiene un efecto que puedes obtener si **fabricas** dicha carta (`rule:4.1`)."
       children:
         - name: Las aves son comodín.
-          text: Puedes utilizar siempre una carta del palo de ave como si fuese una carta de otro palo (zorro, conejo o ratón), incluso si debes gastar, tomar o dar múltiples cartas del mismo palo. `faction:cult:10.2.2`
+          text: Puedes utilizar siempre una carta del palo de ave como si fuese una carta de otro palo _(zorro, conejo o ratón)_, incluso si debes gastar, tomar o dar múltiples cartas del mismo palo. `faction:cult:10.2.2`
           subchildren:
             - name: Efectos obligatorios.
               text: Si un efecto te exige que descartes una carta de zorro, conejo o ratón, debes tratar tus cartas como si fueran del palo que se pide.
@@ -54,38 +54,38 @@
         - name: Gastar y descartar cartas.
           text: Cuando se te indique que **descartes** o **gastes** una carta, colócala en la pila de descarte, excepto si es una carta de Dominancia (`rule:3.3`). `faction:cult:10.2.6`
         - name: Revelar cartas.
-          text: Cuando se te indique que **reveles** una carta, colócala en tu **área de juego** (`rule:2.6`). _Evita que esta se mezcle con otras vinculadas a efectos de tu facción._
+          text: Cuando se te indique que **reveles** una carta, colócala en tu **área de juego** (`rule:2.6`). _(Evita que esta se mezcle con otras vinculadas a efectos de tu facción.)_
         - name: Cartas de Emboscada.
-          text: "En el mazo hay 5 **cartas de emboscada**: 1 ratón, 1 conejo, 1 zorro y 2 de ave. Puedes gastar estas cartas por su palo, pero no pueden ser fabricadas. Puedes jugar 1 de estas cartas por batalla para infligir golpes (`rule:4.3.1`)."
+          text: "En el mazo hay 5 **cartas de emboscada**: 1 ratón, 1 conejo, 1 zorro y 2 de ave. Puedes gastar estas cartas por su palo, pero no pueden ser fabricadas. Puedes jugar 1 de estas cartas por batalla para infligir impactos (`rule:4.3.1`)."
         - name: Cartas de Dominancia.
           text: Hay 4 **cartas de dominancia**, una por cada uno de los cuatro palos. Puedes gastar estas cartas de Dominancia por su palo, pero no puedes fabricarlas. En la partida, puedes jugar una de estas cartas para cambiar de forma permanente tu condición de victoria (`rule:3.3`).
 
     - name: Claros y Caminos
-      pretext: El mapa del bosque está compuestos de una serie de **claros** que conectan por **caminos**.
+      pretext: El mapa del bosque está compuestos de una serie de **claros** que conectados por **caminos**.
       children:
         - name: Adyacencia.
           text: Un claro es adyacente a todos los claros conectados al mismo por 1 camino. `faction:duchy:12.2.2`
         - name: Palo del claro.
-          text: Cada claro tiene un **palo** asociado (ratón, conejo o zorro). _Además del icono, el color de los árboles indica el palo del claro._
+          text: Cada claro tiene un **palo** asociado _(ratón, conejo o zorro)_. _)Además del icono, el color de los árboles indica el palo del claro.)_
         - name: Espacios de construcción.
-          text: Cada claro tiene un número de **espacios de construcción** _(casillas blancas)_. Cuando construyas un edificio, debes colocarlo sobre una casilla vacía. No puedes colocar un edificio _(y por tanto, no puedes construir) en un claro si no hay casillas vacías.
+          text: Cada claro tiene un número de **espacios de construcción** _(casillas blancas)_. Cuando construyas un edificio, debes colocarlo sobre una casilla vacía. No puedes colocar un edificio _(y por tanto, no puedes construir)_ en un claro si no hay casillas vacías.
         - name: Ruinas.
-          text: Las casillas marcadas con una "R" comienzan el juego cubiertas por **ruinas**. Las ruinas solo pueden ser retiradas con la acción de Explorar del Vagabundo (`rule:9.5.3`).
+          text: Las casillas marcadas con una "R" comienzan el juego cubiertas por **ruinas**. Las ruinas solo pueden ser retiradas mediante la acción de Explorar del Vagabundo (`rule:9.5.3`).
     
     - name: Ríos
-      pretext: Muchos claros están conectados por **ríos**. Los ríos no son caminos, pero pueden ser tratados como caminos si una norma lo indica explícitamente can be treated as paths if explicitly instructed `faction:riverfolk:11.2.2`. Los ríos no dividen claros ni bosques.
+      pretext: Muchos claros están conectados por **ríos**. Los ríos no son caminos, pero pueden ser tratados como caminos si una norma lo indica explícitamente `faction:riverfolk:11.2.2`. Los ríos no dividen claros ni bosques.
       
     - name: Bosques
-      pretext: Las áreas del mapa contenidas entre los caminos y los claros se denominan bosques **bosques**.
+      pretext: Las áreas del mapa contenidas entre los caminos y los claros se denominan **bosques**.
       children:
         - name: Adyacencia.
-          text: Un bosque es adyacente a todos los claros en los que toca sin ser atravesado por un camino, y es adyacente a los otros bosques de los que está separado por un solo camino.
+          text: Un bosque es adyacente a todos los claros que toca sin ser atravesado por un camino, y es adyacente a los otros bosques de los que está separado por un solo camino.
       
     - name: Piezas
-      pretext: Cada facción posee un conjunto específico de **piezas**, que aparecen detalladas en el reverso de su tablero de facción.ts faction board. Las piezas están limitadas a los componentes que incluye el juego; si se te indica que coloques, tomes o retires una pieza pero no es posible por no haber suficientes, entonces debes colocar, tomar o retirar la máxima cantidad posible.
+      pretext: Cada facción posee un conjunto específico de **piezas**, que aparecen detalladas en el reverso de su tablero de facción. Las piezas están limitadas a los componentes que incluye el juego; si se te indica que coloques, tomes o retires una pieza pero no es posible por no haber suficientes, entonces debes colocar, tomar o retirar la máxima cantidad posible.
       children:
         - name: Guerreros.
-          text: Si se te indica que coloques un guerrero, cógelo de tu reserva. Si uno de tus guerreros es retirado, devuélvelo a tu reserva. _(El peón del Vagabundo no es un guerrero, y no puede ser retirado)_ `faction:marquise:6.2.3` `faction:cult:10.2.3`
+          text: Si se te indica que coloques un guerrero, cógelo de tu reserva. Si uno de tus guerreros es retirado, devuélvelo a tu reserva. `faction:marquise:6.2.3` `faction:cult:10.2.3` _(El peón del Vagabundo no es un guerrero, y no puede ser retirado.)_
         - name: Edificios.
           text: Si se te indica que coloques un edificio, toma el edificio situado más a la izquierda de su correspondiente contador en tu tablero de facción. Si uno de tus edificios es retirado, devuélvelo a la casilla vacía más a la derecha posible de su respectivo contador.
         - name: Fichas.
@@ -96,13 +96,13 @@
           text: Si se te indica que utilices cualquier otra pieza específica _(peón, marcador, etc.)_, sigue las instrucciones que se indiquen.
         
     - name: Área de juego
-      pretext: Tu **área de juego** es el espacio que hay alrededor de tu tablero de facción, donde debes colocar tu reserva, además de las cartas y/o piezas que indiquen las mecánicas de tu facción. Las cartas de tu área de juego solo pueden ser gastadas, descartadas o utilizadas de acuerdo con lo que estas indiquen o las reglas de tu facción;
+      pretext: Tu **área de juego** es el espacio que hay alrededor de tu tablero de facción, donde debes colocar tu reserva, además de las cartas y/o piezas que indiquen las mecánicas de tu facción. Las cartas de tu área de juego solo pueden ser gastadas, descartadas o utilizadas de acuerdo con lo que estas indiquen o las reglas de tu facción.
 
     - name: Enemigo
       pretext: Un **enemigo** es cualquier jugador con el que no formes coalición (`rule:9.2.8`).
 
     - name: Gobernador
-      pretext: El **gobernador** de un claro es la persona con la suma total más alta de guerreros y edificios en dicho claro _(las fichas y peones no computan a efectos de gobernanza)_. En caso de empate entre varias personas, nadie es considerado gobernador. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`    _Gobernar es imporante ya que afecta directamente a la capacidad de mover y construir de varias facciones_
+      pretext: El **gobernador** de un claro es la persona con la suma total más alta de guerreros y edificios en dicho claro _(las fichas y peones no computan a efectos de gobernar)_. En caso de empate entre varias personas, nadie es considerado gobernador. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`   (_Gobernar es imporante ya que afecta directamente a la capacidad de mover y construir de varias facciones_)
 
 - name: Victoria
   color: "#000000"
@@ -127,7 +127,7 @@
             - name: Dominancia de Ratón, Conejo o Zorro.
               text: Ganas la partida inmediatamente si, al inicio de tu Alba, gobiernas los tres claros del palo correspondiente a la carta de Dominancia.
             - name: Dominancia de Ave.
-              text: Ganas la partida inmediatamente si, al inicio de tu Alba, gobiernas dos claros de esquinas opuestas del tablero. _(solo hay 4 esquinas; no valen todos los claros opuestos de los bordes)_.
+              text: Ganas la partida inmediatamente si, al inicio de tu Alba, gobiernas dos claros de esquinas opuestas del tablero. _(Solo hay 4 esquinas; no valen todos los claros opuestos de los bordes)_.
         - name: Cartas de Dominancia activadas.
           text: Una carta de Dominancia activada no cuenta a efectos de tu límite de cartas en mano ni puede ser retirada de la partida. Tampoco se puede sustituir una la carta de Dominancia activada por otra diferente.
         - name: Gastar por el palo.
@@ -167,16 +167,16 @@
             - name: Truncar emboscada.
               text: Después de que el defensor juegue una carta de emboscada, el atacante puede responder jugando también una carta de emboscada del palo correspondiente al del claro de la batalla para cancelar su emboscada. _(El defensor debe descartar igualmente su carta de emboscada)_
         - name: "Paso 2: Lanzar dados y sumar impactos adicionales."
-          text: Lanza ambos dados. El atacante puede causar tantos impactos como marque el valor más alto, y el defensor puede causar tantos impactos como marque el valor más bajo. Si ambos dados marcan el mismo resultado, tanto atacante como defensor pueden infligir los mismos impactos. _(decimos "pueden" porque los impactos no se aplican hasta el paso 3)_ `faction:woodland:8.2.2`
+          text: Lanza ambos dados. El atacante puede causar tantos impactos como marque el valor más alto, y el defensor puede causar tantos impactos como marque el valor más bajo. Si ambos dados marcan el mismo resultado, tanto atacante como defensor pueden infligir los mismos impactos `faction:woodland:8.2.2`. _(Decimos "pueden" porque los impactos no se aplican hasta el paso 3.)_ 
           subchildren:
             - name: Impactos máximos por dado.
               text: El número de impactos máximos por tirada de dados que un jugador infligir está limitado por el número de guerreros presentes en el claro de la batalla, tanto si eres el atacante como el defensor. `faction:vagabond:9.2.6`
             - name: Impactos adicionales.
-              text: Después de obtener el resultado del dado, tanto atacante como defensor pueden añadir **impactos adicionales** por medio de habilidades especiales u otros efectos que tengan en su área de juego. _(Los impactos adicionales no están limitados por el número de guerreros en el claro de la batalla)_
+              text: Después de obtener el resultado del dado, tanto atacante como defensor pueden añadir **impactos adicionales** por medio de habilidades especiales u otros efectos que tengan en su área de juego. _(Los impactos adicionales no están limitados por el número de guerreros en el claro de la batalla.)_
             - name: Indefenso.
               text: Si el defensor no tiene guerreros en el claro de la batalla, el atacante infligirá un impacto adicional. `faction:vagabond:9.2.4`
         - name: "Paso 3: Infligir impactos."
-          text: El atacante y el defensor se infligen impactos simultáneamente. Cada impacto causado obliga a retirar una pieza. El jugador que recibe impactos debe elegir qué piezas retira del claro de la batalla, pero está obligado a retirar siempre primero todos sus guerreros antes que retirar edificios o fichas; en dicho caso, el jugador elegirá en qué orden retira estas piezas _(Obtienes 1 punto de victoria por edificio o ficha enemiga que retires)_
+          text: El atacante y el defensor se infligen impactos simultáneamente. Cada impacto causado obliga a retirar una pieza. El jugador que recibe impactos debe elegir qué piezas retira del claro de la batalla, pero está obligado a retirar siempre primero todos sus guerreros antes que retirar edificios o fichas; en dicho caso, el jugador elegirá en qué orden retira estas piezas. _(Recuerda: obtienes 1 punto de victoria por edificio o ficha enemiga que retires.)_
 
 - name: Preparación
   color: "#000000"
@@ -184,7 +184,7 @@
     - name: Preparación estándar
       children:
         - name: "Paso 1: Asignar facciones y jugador inicial"
-          text: Asigna una facción a cada jugador empleando el método que prefieras. Las combinaciones de facciones viables según el número de jugadores se describen en el el apartado "Combinaciones de facciones" (Apéndice A). Determina el jugador inicial al azar y el orden de turno según cómo estéis sentados. Cada jugador coge el tablero y las piezas de su facción según indica el reverso del tablero de tu facción.
+          text: Asigna una facción a cada jugador empleando el método que prefieras. Las combinaciones de facciones viables según el número de jugadores se describen en el el apartado "Combinaciones de facciones" (Apéndice A del Reglamento; en esta web puedes utilizar la herramienta de la calculadora). Determina el jugador inicial al azar y el orden de turno según cómo estéis sentados. Cada jugador coge el tablero y las piezas de su facción según indica el reverso del tablero de tu facción.
         - name: "Paso 2: Colocar marcadores de puntuación."
           text: Cada jugador coloca su contador de puntuación sobre el "0" del contador del tablero.
         - name: "Paso 3: Mano inicial."
@@ -196,7 +196,7 @@
         - name: "Paso 6: Preparar el resto de elementos."
           text: Reparte las cartas de resumen de las facciones a petición, y coloca los 2 dados de batalla junto al mapa.
         - name: "Paso 7: Preparación individual."
-          text: Por orden de preparación (A, B, C, etc.) cada jugador sigue los pasos de preparación de su tablero de facción, descritos tanto en las reglas como en el reverso de su tablero de facción. _(el orden se verá alterado si jugáis con reglas de preparación avanzada)_
+          text: Por orden de preparación (A, B, C, etc.) cada jugador sigue los pasos de preparación de su tablero de facción, descritos tanto en las reglas como en el reverso de su tablero de facción. _(El orden se verá alterado si jugáis con reglas de preparación avanzada.)_
 
 - name: El Marquesado
   color: "#e07a37"
@@ -368,12 +368,12 @@
         - name: Fichas de Simpatía.
           text: La Alianza tiene 10 fichas de simpatía.
           subchildren:
-            - name: Límite de colocacións.
+            - name: Límite de colocación.
               text: Cada claro solo puede contener 1 ficha de simpatía.
             - name: Términos clave asociados.
               text: Un **claro afín** es cualquier claro con una ficha de simpatía. Un claro **no afín** es cualquier claro sin ficha de simpatía.
         - name: Indignación.
-          text: Cuando cualquier otro jugador retire una ficha de simpatía de un claro afín o mueve guerreros a un claro afín, debe añadir una carta del palo correspondiente a tu pila de simpatizantes. sympathy token or moves any guerreros into a sympathetic clearing, they must add one card matching the affected clearing from their hand to the Supporters stack. If they have no matching cards _(including no birds)_, they must show their hand to the Alliance, and then the Alliance draws a card from the deck and adds it to the Supporters stack.
+          text: Cuando cualquier otro jugador retire una ficha de simpatía de un claro afín o mueve guerreros a un claro afín, debe añadir una carta del palo correspondiente a tu pila de Simpatizantes. Si dicho jugador no tuviese cartas de dicho palo _(ni tampoco de ave)_uding no birds)_ debe mostrar su mano a la Alianza,y después la Alianza debe robar 1 carta del mazo y añadirla a su pila de Simpatizantes.
 
     - name: Preparación Individual
       children:
@@ -408,7 +408,7 @@
               text: Gasta simpatizantes del palo correspondiente a dicho claro. La cantidad de simpatizantes que debes gastar aparece indicada encima de la ficha, en el contador.
               subchildren:
                 - name: Ley Marcial.
-                  text: Debes gastar un simpatizante adicional si en el claro elegido hay algún jugador con tres guerreros o más.
+                  text: Debes gastar un simpatizante adicional si en el claro elegido hay algún jugador con 3 guerreros o más.
             - name: Resolución.
               text: Coloca la ficha de Simpatía sobre el claro elegido y suma los puntos de victoria indicados sobre el espacio que ocupaba la ficha en el contador.
 
