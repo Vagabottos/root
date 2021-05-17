@@ -868,7 +868,7 @@
           text: Puedes fabricar activando ciudadelas y mercados. _(A efectos de fabricar, estas piezas son idénticas)_
 
         - name: Robar y descartar.
-          text: Draw one card, plus one card per card draw icon showing. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
+          text: Roba 1 carta, más 1 carta por cada icono de robar revelado en tu tablero. Después, si tienes más de 5 cartas en tu mano, descarta cartas a tu elección hasta tener solo 5.
 
 - name: La Conspiración de los Córvidos
   color: "#925da5"
@@ -947,7 +947,7 @@
           text: Mientras una ficha de Trampa esté bocarriba, los enemigos no pueden colocar ni mover piezas desde o hacia este claro.
         - name: Extorsión.
           text: Al voltear una ficha de Extorsión, quita una carta al azar de la mano de cada jugador que tenga al menos una pieza en dicho claro. Por cada ficha de Extorsión que haya bocarriba, robarás una carta extra en tu Noche.
-        - name: Raid.
+        - name: Asalto.
           text: Cuando una ficha de Asalto sea retirada _(independientemente de si estaba bocarriba o bocabajo)_, coloca un guerrero en cada claro adyacente al claro en que estaba situada la ficha de Asalto _(ignora este efecto si a ficha fue retirada por Exposición)_
 
 - name: Variantes y Vagabundos extra
