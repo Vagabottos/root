@@ -6,14 +6,14 @@
       children: 
         - name: Precedencia.
           text: Si el texto de una carta entra en conflicto con el texto de las referencias de las reglas, la carta tiene precedencia. Si el texto de la guía "Aprende a jugar" entra en conflicto con el texto de la Ley de Root, el texto la Ley tiene preferencia. Si debes seguir las reglas generales y las de una facción, debes seguir ambas siempre si es posible; si no, las Reglas de Facción tienen preferencia. _(Algunas modifican específicamente las reglas generales)_
-        - name: Uso de **No se puede**.
+        - name: Uso de **no se puede**.
           plainName: Uso de No se puede.
           text: Cualquier regla que diga **No se puede** es absoluta. No puede ser alterada a menos que se especifique explícitamente.
         - name: Efectos Simultáneos.
           text: Si dos efectos del juego ocurren simultáneamente, el jugador que está jugando el turno actual elige en qué orden ocurren, a menos que se especifique explícitamente.
-        - name: Uso de **TRATAR COMO**.
-          plainName: Uso de Tratar Como.
-          text: Si un regla indica que **TRATES** cualquier cosa *COMO* si fuese otra, ese elemento a takes on all the properties of the latter. _(For example, if you caused Outrage while treating yourself as another player, the other player would give the card.)_
+        - name: Uso de **tratar como**.
+          plainName: Uso de tratar Como.
+          text: Si un regla indica que **trates** cualquier cosa *como* si fuese otra, ese elemento asume las propiedades del otro. _(Por ejemplo, si causas Indignación como si fueses otro jugador, el otro jugador debería entregar la carta.)_
 
     - name: Información Pública y Privada.
       children:
@@ -50,15 +50,15 @@
               text: Si un efecto te exige que gastes, descartes, cojas o des una carta de ave específicamente, no es posible sustituir dicha carta por una de otro palo.
 
         - name: Robar cartas.
-          text: Cuando se te indique que **ROBES** una carta, coge la carta superior del mazo común. Si no quedan cartas en el mazo, baraja la pila de descartes para formar un nuevo mazo.
+          text: Cuando se te indique que **robes** una carta, coge la carta superior del mazo común. Si no quedan cartas en el mazo, baraja la pila de descartes para formar un nuevo mazo.
         - name: Gastar y descartar cartas.
-          text: Cuando se te indique que **DESCARTES** o **GASTES** una carta, colócala en la pila de descarte, excepto si es una carta de Dominancia (`rule:3.3`). `faction:cult:10.2.6`
+          text: Cuando se te indique que **descartes** o **gastes** una carta, colócala en la pila de descarte, excepto si es una carta de Dominancia (`rule:3.3`). `faction:cult:10.2.6`
         - name: Revelar cartas.
-          text: Cuando se te indique que **REVELES** una carta, colócala en tu **área de juego** (`rule:2.6`). _Evita que esta se mezcle con otras vinculadas a efectos de tu facción._
+          text: Cuando se te indique que **reveles** una carta, colócala en tu **área de juego** (`rule:2.6`). _Evita que esta se mezcle con otras vinculadas a efectos de tu facción._
         - name: Cartas de Emboscada.
-          text: "En el mazo hay 5 **cartas de Emboscada**: 1 ratón, 1 conejo, 1 zorro y 2 de ave. Puedes gastar estas cartas por su palo, pero no pueden ser fabricadas. Puedes jugar 1 de estas cartas por batalla para infligir golpes (`rule:4.3.1`)."
+          text: "En el mazo hay 5 **cartas de emboscada**: 1 ratón, 1 conejo, 1 zorro y 2 de ave. Puedes gastar estas cartas por su palo, pero no pueden ser fabricadas. Puedes jugar 1 de estas cartas por batalla para infligir golpes (`rule:4.3.1`)."
         - name: Cartas de Dominancia.
-          text: Hay 4 **cartas de Dominancia**, una por cada uno de los cuatro palos. Puedes gastar estas cartas de Dominancia por su palo, pero no puedes fabricarlas. En la partida, puedes jugar una de estas cartas para cambiar de forma permanente tu condición de victoria (`rule:3.3`).
+          text: Hay 4 **cartas de dominancia**, una por cada uno de los cuatro palos. Puedes gastar estas cartas de Dominancia por su palo, pero no puedes fabricarlas. En la partida, puedes jugar una de estas cartas para cambiar de forma permanente tu condición de victoria (`rule:3.3`).
 
     - name: Claros y Caminos
       pretext: El mapa del bosque está compuestos de una serie de **claros** que conectan por **caminos**.
@@ -88,11 +88,11 @@
           text: Si se te indica que coloques un guerrero, cógelo de tu reserva. Si uno de tus guerreros es retirado, devuélvelo a tu reserva. _(El peón del Vagabundo no es un guerrero, y no puede ser retirado)_ `faction:marquise:6.2.3` `faction:cult:10.2.3`
         - name: Edificios.
           text: Si se te indica que coloques un edificio, toma el edificio situado más a la izquierda de su correspondiente contador en tu tablero de facción. Si uno de tus edificios es retirado, devuélvelo a la casilla vacía más a la derecha posible de su respectivo contador.
-        - name: Tokens.
+        - name: Fichas.
           text: Si se te indica que coloques una ficha, toma la ficha situada más a la izquierda de su correspondiente contador en tu tablero, si lo hay, o cógela de tu reserva. Si una de tus fichas es retirada, devuélvelo a la casilla vacía más a la derecha posible de su respectivo contador, si lo hay, o devuélvela a tu reserva en caso contrario. `faction:marquise:6.2.2` `faction:riverfolk:11.2.5.1`
-        - name: Items.
+        - name: Objetos.
           text: Si se te indica que tomes un objeto, cógelo de la reserva general del tablero y colócalo en la zona de objetos fabricados de tu tablero de facción. Si se te indica que retires un objeto, descártalo del juego de forma permanente. `faction:vagabond:9.6.4`
-        - name: Other.
+        - name: Otros.
           text: Si se te indica que utilices cualquier otra pieza específica _(peón, marcador, etc.)_, sigue las instrucciones que se indiquen.
         
     - name: Área de juego
@@ -135,7 +135,7 @@
         - name: Reclamar una carta de Dominancia disponible.
           text: Durante tu Día, puedes **reclamar** una carta de Dominancia a tu mano gastando para ello una carta del mismo palo.
 
-- name: Key Actions
+- name: Acciones Clave
   color: "#000000"
   children:
     - name: Fabricar
@@ -198,7 +198,7 @@
         - name: "Paso 7: Preparación individual."
           text: Por orden de preparación (A, B, C, etc.) cada jugador sigue los pasos de preparación de su tablero de facción, descritos tanto en las reglas como en el reverso de su tablero de facción. _(el orden se verá alterado si jugáis con reglas de preparación avanzada)_
 
-- name: Marquise de Cat
+- name: El Marquesado
   color: "#e07a37"
   icon: marquise
   children:
@@ -870,7 +870,7 @@
         - name: Robar y descartar.
           text: Draw one card, plus one card per card draw icon showing. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
-- name: Corvid Conspiracy
+- name: La Conspiración de los Córvidos
   color: "#925da5"
   icon: corvid
   children:
