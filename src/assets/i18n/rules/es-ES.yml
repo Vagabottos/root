@@ -176,7 +176,7 @@
             - name: Indefenso.
               text: Si el defensor no tiene guerreros en el claro de la batalla, el atacante infligirá un impacto adicional. `faction:vagabond:9.2.4`
         - name: "Paso 3: Infligir impactos."
-          text: El atacante y el defensor se infligen impactos simultáneamente. Cada impacto causado obliga a retirar una pieza. El jugador que recibe impactos debe elegir qué piezas retira del claro de la batalla, pero está obligado a retirar siempre primero todos sus guerreros antes que retirar edificios o fichas; en dicho caso, el jugador elegirá en qué orden retira estas piezas. _(Recuerda: obtienes 1 punto de victoria por edificio o ficha enemiga que retires.)_
+          text: "El atacante y el defensor se infligen impactos simultáneamente. Cada impacto causado obliga a retirar una pieza. El jugador que recibe impactos debe elegir qué piezas retira del claro de la batalla, pero está obligado a retirar siempre primero todos sus guerreros antes que retirar edificios o fichas; en dicho caso, el jugador elegirá en qué orden retira estas piezas. _(Recuerda: obtienes 1 punto de victoria por edificio o ficha enemiga que retires.)_"
 
 - name: Preparación
   color: "#000000"
