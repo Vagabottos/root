@@ -373,7 +373,7 @@
             - name: Términos clave asociados.
               text: Un **claro afín** es cualquier claro con una ficha de simpatía. Un claro **no afín** es cualquier claro sin ficha de simpatía.
         - name: Indignación.
-          text: Cuando cualquier otro jugador retire una ficha de simpatía de un claro afín o mueve guerreros a un claro afín, debe añadir una carta del palo correspondiente a tu pila de Simpatizantes. Si dicho jugador no tuviese cartas de dicho palo _(ni tampoco de ave)_uding no birds)_ debe mostrar su mano a la Alianza,y después la Alianza debe robar 1 carta del mazo y añadirla a su pila de Simpatizantes.
+          text: Cuando cualquier otro jugador retire una ficha de simpatía de un claro afín o mueve guerreros a un claro afín, debe añadir una carta del palo correspondiente a tu pila de Simpatizantes. Si dicho jugador no tuviese cartas de dicho palo _(ni tampoco de ave)_ debe mostrar su mano a la Alianza, y después la Alianza debe robar 1 carta del mazo y añadirla a su pila de Simpatizantes.
 
     - name: Preparación Individual
       children:
@@ -929,7 +929,7 @@
         - name: Batallar.
           text: Inicia una batalla.
         - name: Truco.
-          text: Intercambia dos fichas de conspiración que estén sobre el mapa _(es posible realizar un intercambio "falso" y dejar las fichas como estaban). Ambas fichas deben estar o bocarriba o bocabajo.
+          text: Intercambia dos fichas de conspiración que estén sobre el mapa _(es posible realizar un intercambio "falso" y dejar las fichas como estaban)_. Ambas fichas deben estar o bocarriba o bocabajo.
 
     - name: Noche
       pretext: Tu Noche tiene 2 pasos en el siguiente orden.
@@ -963,7 +963,7 @@
         - name: Mapa del Lago
           subchildren:
             - name: Cambios en la preparación.
-              text: Coloca la pieza de la Barcaza en el claro de la esquina que es un claro costero, situado sobre la parte final del contador de puntos _(el claro inferior derecho si miras al tablero con el contador de puntos frente a ti).
+              text: Coloca la pieza de la Barcaza en el claro de la esquina que es un claro costero, situado sobre la parte final del contador de puntos _(el claro inferior derecho si miras al tablero con el contador de puntos frente a ti)_.
 
             - name: El Lago.
               text: "**El lago** está situado en el centro del mapa. El lago se trata como si hubiese ríos que conectan todos los claros costeros entre sí."
