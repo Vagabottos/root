@@ -10,7 +10,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o --host=0.0.0.0",
-    "build": "npm run lint && npm run prepare && ng build --prod",
+    "build": "npm run lint && npm run prepare && ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint",
     "prepare": "node scripts/prepare",
@@ -18,13 +18,13 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^11.2.14",
-    "@angular/core": "^11.2.14",
-    "@angular/forms": "^11.2.14",
-    "@angular/platform-browser": "^11.2.14",
-    "@angular/platform-browser-dynamic": "^11.2.14",
-    "@angular/router": "^11.2.14",
-    "@angular/service-worker": "^11.2.14",
+    "@angular/common": "^12.2.12",
+    "@angular/core": "^12.2.12",
+    "@angular/forms": "^12.2.12",
+    "@angular/platform-browser": "^12.2.12",
+    "@angular/platform-browser-dynamic": "^12.2.12",
+    "@angular/router": "^12.2.12",
+    "@angular/service-worker": "^12.2.12",
     "@ionic-native/core": "^5.0.0",
     "@ionic-native/splash-screen": "^5.0.0",
     "@ionic-native/status-bar": "^5.0.0",
@@ -39,23 +39,23 @@
     "rxjs": "~6.6.7",
     "slugify": "^1.3.4",
     "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/architect": "~0.1102.15",
-    "@angular-devkit/build-angular": "~0.1102.15",
-    "@angular-devkit/core": "~11.2.15",
-    "@angular-devkit/schematics": "~11.2.15",
-    "@angular/cli": "~11.2.15",
-    "@angular/compiler": "~11.2.14",
-    "@angular/compiler-cli": "~11.2.14",
-    "@angular/language-service": "~11.2.14",
+    "@angular-devkit/architect": "~0.1202.12",
+    "@angular-devkit/build-angular": "~12.2.12",
+    "@angular-devkit/core": "~12.2.12",
+    "@angular-devkit/schematics": "~12.2.12",
+    "@angular/cli": "~12.2.12",
+    "@angular/compiler": "~12.2.12",
+    "@angular/compiler-cli": "~12.2.12",
+    "@angular/language-service": "~12.2.12",
     "@ionic/angular-toolkit": "^5.0.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "js-yaml": "^3.13.1",
     "ts-node": "~8.0.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.8"
+    "typescript": "~4.3.5"
   }
 }
