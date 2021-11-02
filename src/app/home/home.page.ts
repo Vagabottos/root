@@ -16,7 +16,7 @@ import { MapModalPage } from '../mapmodal/mapmodal.page';
 })
 export class HomePage implements OnInit, AfterContentInit, OnDestroy {
 
-  @ViewChild(IonContent)
+  @ViewChild(IonContent, { static: true })
   public contentEl: IonContent;
 
   public showScrollUp: boolean;
