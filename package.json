@@ -5,7 +5,7 @@
   "author": "Kyle Kemp <kyle@seiyria.com>",
   "homepage": "https://root.seiyria.com",
   "engines": {
-    "node": "10.0.0"
+    "node": "16.0.0"
   },
   "scripts": {
     "ng": "ng",
@@ -46,7 +46,7 @@
     "@angular-devkit/build-angular": "~12.2.12",
     "@angular-devkit/core": "~12.2.12",
     "@angular-devkit/schematics": "~12.2.12",
-    "@angular/cli": "~12.2.12",
+    "@angular/cli": "^12.2.12",
     "@angular/compiler": "~12.2.12",
     "@angular/compiler-cli": "~12.2.12",
     "@angular/language-service": "~12.2.12",
