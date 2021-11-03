@@ -1,7 +1,7 @@
 {
   "name": "root",
   "description": "A companion rules app for Root: a Game of Woodland Right and Might",
-  "version": "3.0.0",
+  "version": "6.0.0",
   "author": "Kyle Kemp <kyle@seiyria.com>",
   "homepage": "https://root.seiyria.com",
   "engines": {
