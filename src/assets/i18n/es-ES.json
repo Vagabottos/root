@@ -78,6 +78,62 @@
           "Map": "Mapa",
           "Choose": "Elige mapa; después, elige mazo. Elige 3 cartas y devuelve el resto al mazo."
         }
+      },
+      "Adset": {
+        "Random": "Random",
+        "Random1": "Random (1)",
+        "Random2": "Random (2)",
+        "Generate": "Generate",
+        "Waiting": "Waiting for random generation...",
+        "Players": "Players",
+        "Choices": {
+          "Map": "Map Choice",
+          "Deck": "Deck Choice",
+          "Players": "Player Count",
+          "Landmarks": "Landmarks",
+          "Hirelings": "Valid Hirelings",
+          "RemindDrawFive": "Reminder: Deal 5 cards to each player."
+        },
+        "Deck": {
+          "Standard": "Standard Deck",
+          "EP": "Exiles & Partisans"
+        },
+        "Landmarks": {
+          "ElderTreetop": "Elder Treetop",
+          "LostCity": "Lost City",
+          "BlackMarket": "Black Market",
+          "LegendaryForge": "Legendary Forge",
+          "TheFerry": "The Ferry",
+          "TheTower": "The Tower"
+        },
+        "Hirelings": {
+          "Spring Uprising (R)": "Spring Uprising (R)",
+          "Forest Patrol (R)": "Forest Patrol (R)",
+          "Last Dynasty (R)": "Last Dynasty (R)",
+          "The Outcast (R)": "The Outcast (R)",
+          "Woodland Band (R)": "Woodland Band (R)",
+          "Furious Protector (R)": "Furious Protector (R)",
+          "Highway Bandits (R)": "Highway Bandits (R)",
+          "Riverfolk Flotilla (R)": "Riverfolk Flotilla (R)",
+          "Warm Sun Prophets (R)": "Warm Sun Prophets (R)",
+          "Sunward Expedition (R)": "Sunward Expedition (R)",
+          "Corvid Spies (R)": "Corvid Spies (R)",
+          "Flame Bearers (R)": "Flame Bearers (R)",
+          "Vault Keepers (R)": "Vault Keepers (R)",
+          "Rabbit Scouts (D)": "Rabbit Scouts (D)",
+          "Feline Physicians (D)": "Feline Physicians (D)",
+          "Bluebird Nobles (D)": "Bluebird Nobles (D)",
+          "The Brigand (D)": "The Brigand (D)",
+          "Traveling Band (D)": "Traveling Band (D)",
+          "Stoic Protector (D)": "Stoic Protector (D)",
+          "Bandit Guild (D)": "Bandit Guild (D)",
+          "Otter Divers (D)": "Otter Divers (D)",
+          "Lizard Envoys (D)": "Lizard Envoys (D)",
+          "Mole Artisans (D)": "Mole Artisans (D)",
+          "Raven Guards (D)": "Raven Guards (D)",
+          "Rat Ravagers (D)": "Rat Ravagers (D)",
+          "Badger Bodyguards (D)": "Badger Bodyguards (D)"
+        }
       }
     },
     "Maps": {
