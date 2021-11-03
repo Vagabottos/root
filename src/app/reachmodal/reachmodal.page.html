@@ -370,13 +370,25 @@
       </ion-row>
 
       <ion-row class="choice-row ion-margin-top">
-        <ion-col *ngFor="let faction of adsetGenerated.factions" class="ion-text-center" [class.red]="faction.red">
-          <div>{{ faction.name }}</div>
-          <div *ngIf="faction.hide">
-            <strong>Locked</strong> 
+
+        <ion-col class="faction-container"
+                *ngFor="let faction of adsetGenerated.factions">
+
+          <img class="faction-icon" [src]="'assets/bigicon/faction-' + faction.icon + '.png'" />
+
+          <div class="faction-text-container">
+            <ion-badge class="text-name">
+              <span class="name-container">
+                {{ faction.name }}
+              </span>
+            </ion-badge>
+
+            <ion-badge class="text-locked" color="dark" *ngIf="faction.hide">
+              Locked
+            </ion-badge>
           </div>
-          
         </ion-col>
+
       </ion-row>
     </div>
   </ng-container>

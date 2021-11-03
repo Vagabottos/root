@@ -23,87 +23,98 @@ table {
     padding-left: 20%;
     padding-right: 20%;
   }
+}
+
   
-  .faction-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.faction-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    margin-top: 5px;
+  margin-top: 5px;
 
-    &.blacklist {
-      opacity: 0.5;
+  &.blacklist {
+    opacity: 0.5;
 
-      img {
-        filter: brightness(0%);
+    img {
+      filter: brightness(0%);
+    }
+  }
+
+  .faction-text-container {
+    display: relative;
+
+    .text-name, .text-blacklist, .text-whitelist, .text-reach, .text-locked {
+      position: absolute;
+      font-size: 0.9rem;
+    }
+
+    .text-reach {
+      bottom: 22px;
+      right: 5px;
+      width: 40px;
+      text-align: left;
+      padding-left: 5px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .text-locked {
+      bottom: 22px;
+      right: 5px;
+      width: 80px;
+      text-align: left;
+      padding-left: 5px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .text-blacklist, .text-whitelist {
+      top: 0;
+      left: 5px;
+      font-size: 1.5rem;
+      padding-bottom: 0;
+    }
+
+    .text-name {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-left: 5px;
+      margin-right: 5px;
+      height: 23px;
+
+      border-top-right-radius: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .name-container {
+        width: 100%;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 75%;
       }
     }
 
-    .faction-text-container {
-      display: relative;
+    .star-icon {
+      position: absolute;
+      right: 5px;
+      top: 2px;
+      visibility: hidden;
 
-      .text-name, .text-blacklist, .text-whitelist, .text-reach {
-        position: absolute;
-        font-size: 0.9rem;
-      }
-
-      .text-reach {
-        bottom: 22px;
-        right: 5px;
-        width: 40px;
-        text-align: left;
-        padding-left: 5px;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-      }
-
-      .text-blacklist, .text-whitelist {
-        top: 0;
-        left: 5px;
-        font-size: 1.5rem;
-        padding-bottom: 0;
-      }
-
-      .text-name {
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin-left: 5px;
-        margin-right: 5px;
-        height: 23px;
-
-        border-top-right-radius: 0;
-
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .name-container {
-          width: 100%;
-        }
-
-        @media (max-width: 576px) {
-          font-size: 75%;
-        }
-      }
-
-      .star-icon {
-        position: absolute;
-        right: 5px;
-        top: 2px;
-        visibility: hidden;
-
-        &.visible {
-          visibility: visible;
-        }
+      &.visible {
+        visibility: visible;
       }
     }
+  }
 
-    .faction-icon {
-      max-width: 96px;
-    }
+  .faction-icon {
+    max-width: 96px;
   }
 }
 
