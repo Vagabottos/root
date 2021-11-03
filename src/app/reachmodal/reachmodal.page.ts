@@ -397,7 +397,13 @@ export class ReachModalPage implements OnInit {
         return chosenVagabond;
       };
 
-      f[f.hide.includes('(#') ? 'hide' : 'name'] = `Vagabond (${getVagabond()})`;
+      if(f.hide.includes('(#')) {
+        f.hide = `Vagabond (${getVagabond()})`;
+      }
+
+      if(f.name.includes('(#')) {
+        f.name = `Vagabond (${getVagabond()})`;
+      }
     });
 
     this.adsetGenerated.factions = chosenFactions;
