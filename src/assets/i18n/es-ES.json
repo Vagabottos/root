@@ -29,6 +29,8 @@
       "Error": "Unable to select factions; please adjust selections and try again.",
       "Factions": {
         "Marquise de Cat": "El Marquesado",
+        "Lord of the Hundreds": "Lord of the Hundreds",
+        "Keepers in Iron": "Keepers in Iron",
         "Underground Duchy": "El Ducado Subterráneo",
         "Eyrie Dynasties": "El Nido de Águilas",
         "Vagabond (#1)": "Vagabundo (#1)",
@@ -40,6 +42,8 @@
       },
       "FactionsShort": {
         "Marquise": "El Marquesado",
+        "Hundreds": "Hundreds",
+        "Keepers": "Keepers",
         "Duchy": "El Ducado",
         "Eyrie": "El Nido",
         "Vagabond #1": "Vagabundo #1",
