@@ -575,7 +575,7 @@
         - name: Share Quests.
           text: Either Vagabond may complete any of the three face-up quests. Do not add extra quest cards during setup.
         - name: Taking Items from Ruins.
-          text: When a Vagabond explores a ruin with two items, or the Hundreds raze a ruin (`rule:15.4.1`) with two items, that player may look at those items and take one of their choice. _(By taking two Explore actions, the Vagabond could take both items from one ruin.)_ A player cannot take an "R" item if they have the same type of "R" item on their faction board. _(If the Vagabond explores but does not take an item, he does not score a victory point, but the F is still exhausted.)_
+          text: When a Vagabond explores a ruin with two items, or the Hundreds raze a ruin (`rule:14.4.1`) with two items, that player may look at those items and take one of their choice. _(By taking two Explore actions, the Vagabond could take both items from one ruin.)_ A player cannot take an "R" item if they have the same type of "R" item on their faction board. _(If the Vagabond explores but does not take an item, he does not score a victory point, but the F is still exhausted.)_
 
 - name: Lizard Cult
   color: "#fcf065"
