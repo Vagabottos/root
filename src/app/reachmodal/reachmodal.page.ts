@@ -391,21 +391,15 @@ export class ReachModalPage implements OnInit {
 
     const firstFaction = shuffle(validFactions).filter(x => x.red)[0];
     const chosenFactions = [firstFaction].concat(shuffle(validFactions).filter(x => x !== firstFaction).slice(0, numPlayers));
-    const potentialFinalFactions = validFactions.filter(x => !chosenFactions.find(f => f.name === x.name));
 
     if (!chosenFactions[chosenFactions.length - 1].red) {
-      const hideFaction = chosenFactions[chosenFactions.length - 1];
-
-      chosenFactions[chosenFactions.length - 1] = shuffle(potentialFinalFactions)[0];
-      chosenFactions[chosenFactions.length - 1].hide = hideFaction.name;
+      chosenFactions[chosenFactions.length - 1].hide = true;
     }
 
     const vagabonds = {};
 
     chosenFactions.forEach(f => {
-      f.hide = f.hide || '';
-
-      if (!f.name.includes('(#') && !f.hide.includes('(#')) { return; }
+      if (!f.name.includes('(#')) { return; }
 
       const getVagabond = () => {
         let chosenVagabond;
@@ -419,13 +413,7 @@ export class ReachModalPage implements OnInit {
         return chosenVagabond;
       };
 
-      if (f.hide.includes('(#')) {
-        f.hide = `Vagabond (${getVagabond()})`;
-      }
-
-      if (f.name.includes('(#')) {
-        f.name = `Vagabond (${getVagabond()})`;
-      }
+      f.name = `Vagabond (${getVagabond()})`;
     });
 
     this.adsetGenerated.factions = chosenFactions;

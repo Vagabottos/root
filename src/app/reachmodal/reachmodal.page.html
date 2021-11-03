@@ -373,8 +373,7 @@
         <ion-col *ngFor="let faction of adsetGenerated.factions" class="ion-text-center" [class.red]="faction.red">
           <div>{{ faction.name }}</div>
           <div *ngIf="faction.hide">
-            <strong>Hiding</strong> 
-            <div>{{ faction.hide }}</div>
+            <strong>Locked</strong> 
           </div>
           
         </ion-col>
