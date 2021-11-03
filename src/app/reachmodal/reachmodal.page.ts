@@ -301,19 +301,19 @@ export class ReachModalPage implements OnInit {
 
   validateADSETLandmarkChoices() {
     setTimeout(() => {
-      if(this.adsetSettings.landmarks.includes('random: 2')) {
+      if (this.adsetSettings.landmarks.includes('random: 2')) {
         this.adsetSettings.landmarks = ['random: 2'];
       }
-  
-      if(this.adsetSettings.landmarks.includes('random: 1')) {
+
+      if (this.adsetSettings.landmarks.includes('random: 1')) {
         this.adsetSettings.landmarks = ['random: 1'];
       }
-  
-      if(this.adsetSettings.landmarks.length > 2) {
+
+      if (this.adsetSettings.landmarks.length > 2) {
         this.adsetSettings.landmarks = this.adsetSettings.landmarks.slice(0, 2);
       }
-  
-      if(this.adsetSettings.landmarks.length === 0) {
+
+      if (this.adsetSettings.landmarks.length === 0) {
         this.adsetSettings.landmarks.push('random: 2');
       }
     }, 0);
@@ -321,28 +321,28 @@ export class ReachModalPage implements OnInit {
 
   validateADSETHirelingChoices() {
     setTimeout(() => {
-      if(this.adsetSettings.validHirelings.length < 3) {
+      if (this.adsetSettings.validHirelings.length < 3) {
         this.adsetSettings.validHirelings = this.reachValues.map(x => x.name).sort();
       }
     }, 0);
   }
 
   calculateForADSET() {
-    if(this.adsetSettings.deck === 'random') {
+    if (this.adsetSettings.deck === 'random') {
       this.adsetGenerated.deck = shuffle(this.decks)[0];
     } else {
       this.adsetGenerated.deck = this.adsetSettings.deck;
     }
 
-    if(this.adsetSettings.map === 'random') {
+    if (this.adsetSettings.map === 'random') {
       this.adsetGenerated.map = shuffle(this.mapNames)[0];
     } else {
       this.adsetGenerated.map = this.adsetSettings.map;
     }
 
-    if(this.adsetSettings.landmarks.includes('random: 2')) {
+    if (this.adsetSettings.landmarks.includes('random: 2')) {
       this.adsetGenerated.landmarks = shuffle(this.landmarks).slice(0, 2);
-    } else if(this.adsetSettings.landmarks.includes('random: 1')) {
+    } else if (this.adsetSettings.landmarks.includes('random: 1')) {
       this.adsetGenerated.landmarks = shuffle(this.landmarks).slice(0, 1);
     } else {
       this.adsetGenerated.landmarks = this.adsetSettings.landmarks;
@@ -350,17 +350,17 @@ export class ReachModalPage implements OnInit {
 
     const numPlayers = this.adsetSettings.playerCount;
     const validHirelings = shuffle(this.adsetSettings.validHirelings).slice(0, 3);
-    
+
     this.adsetGenerated.hirelings[0] = validHirelings[0].split('/')[numPlayers >= 3 ? 1 : 0].trim();
     this.adsetGenerated.hirelings[1] = validHirelings[1].split('/')[numPlayers >= 4 ? 1 : 0].trim();
     this.adsetGenerated.hirelings[2] = validHirelings[2].split('/')[numPlayers >= 5 ? 1 : 0].trim();
-    
+
     const ignoreFactions = {};
     this.adsetGenerated.hirelings.forEach(h => {
       const split = h.split('(')[0].trim();
 
       const foundRef = this.hirelings.find(x => x.r === split || x.d === split);
-      if(foundRef) {
+      if (foundRef) {
         ignoreFactions[foundRef.baseFaction] = true;
       }
     });
@@ -371,7 +371,7 @@ export class ReachModalPage implements OnInit {
     const chosenFactions = [firstFaction].concat(shuffle(validFactions).filter(x => x !== firstFaction).slice(0, numPlayers));
     const potentialFinalFactions = validFactions.filter(x => !chosenFactions.find(f => f.name === x.name));
 
-    if(!chosenFactions[chosenFactions.length - 1].red) {
+    if (!chosenFactions[chosenFactions.length - 1].red) {
       const hideFaction = chosenFactions[chosenFactions.length - 1];
 
       chosenFactions[chosenFactions.length - 1] = shuffle(potentialFinalFactions)[0];
@@ -383,25 +383,25 @@ export class ReachModalPage implements OnInit {
     chosenFactions.forEach(f => {
       f.hide = f.hide || '';
 
-      if(!f.name.includes('(#') && !f.hide.includes('(#')) return;
+      if (!f.name.includes('(#') && !f.hide.includes('(#')) { return; }
 
       const getVagabond = () => {
         let chosenVagabond;
-  
+
         do {
           chosenVagabond = shuffle(this.vagabonds)[0];
-        } while(vagabonds[chosenVagabond]);
-  
+        } while (vagabonds[chosenVagabond]);
+
         vagabonds[chosenVagabond] = true;
 
         return chosenVagabond;
       };
 
-      if(f.hide.includes('(#')) {
+      if (f.hide.includes('(#')) {
         f.hide = `Vagabond (${getVagabond()})`;
       }
 
-      if(f.name.includes('(#')) {
+      if (f.name.includes('(#')) {
         f.name = `Vagabond (${getVagabond()})`;
       }
     });
