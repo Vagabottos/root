@@ -29,6 +29,8 @@
       "Error": "Unable to select factions; please adjust selections and try again.",
       "Factions": {
         "Marquise de Cat": "Marquise de Cat",
+        "Lord of the Hundreds": "Lord of the Hundreds",
+        "Keepers in Iron": "Keepers in Iron",
         "Underground Duchy": "Underground Duchy",
         "Eyrie Dynasties": "Eyrie Dynasties",
         "Vagabond (#1)": "Vagabond (#1)",
@@ -40,6 +42,8 @@
       },
       "FactionsShort": {
         "Marquise": "Marquise",
+        "Hundreds": "Hundreds",
+        "Keepers": "Keepers",
         "Duchy": "Duchy",
         "Eyrie": "Eyrie",
         "Vagabond #1": "Vagabond #1",

@@ -37,6 +37,8 @@ export class ReachModalPage implements OnInit {
 
   public readonly reachValues = [
     { name: 'Marquise de Cat',      icon: 'marquise',   shortName: 'Marquise',    value: 10 },
+    { name: 'Lord of the Hundreds', icon: 'warlord',    shortName: 'Hundreds',    value: 9 },
+    { name: 'Keepers in Iron',      icon: 'keepers',    shortName: 'Keepers',     value: 8 },
     { name: 'Underground Duchy',    icon: 'duchy',      shortName: 'Duchy',       value: 8 },
     { name: 'Eyrie Dynasties',      icon: 'eyrie',      shortName: 'Eyrie',       value: 7 },
     { name: 'Vagabond (#1)',        icon: 'vagabond1',  shortName: 'Vagabond #1', value: 5, disables: 'Vagabond (#2)' },

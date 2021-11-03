@@ -22,7 +22,8 @@
 
   <ng-container *ngIf="mode === 'random'">
     <ion-row class="faction-group">
-      <ion-col size="4" 
+      <ion-col size="3" 
+              size-xs="4"
               class="faction-container" 
               [class.blacklist]="factionWhiteBlacklist[faction.name] === -1"
               [class.whitelist]="factionWhiteBlacklist[faction.name] === 1"
