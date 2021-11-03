@@ -78,6 +78,32 @@
           "Map": "Map",
           "Choose": "Choose Map, then choose Deck. Pick 3 cards and return the rest to the deck."
         }
+      },
+      "Adset": {
+        "Random": "Random",
+        "Random1": "Random (1)",
+        "Random2": "Random (2)",
+        "Waiting": "Waiting for random generation...",
+        "Players": "Players",
+        "Choices": {
+          "Map": "Map Choice",
+          "Deck": "Deck Choice",
+          "Players": "Player Count",
+          "Landmarks": "Landmarks",
+          "Hirelings": "Valid Hirelings"
+        },
+        "Deck": {
+          "Standard": "Standard Deck",
+          "EP": "Exiles & Partisans"
+        },
+        "Landmarks": {
+          "ElderTreetop": "Elder Treetop",
+          "LostCity": "Lost City",
+          "BlackMarket": "Black Market",
+          "LegendaryForge": "Legendary Forge",
+          "TheFerry": "The Ferry",
+          "TheTower": "The Tower"
+        }
       }
     },
     "Maps": {

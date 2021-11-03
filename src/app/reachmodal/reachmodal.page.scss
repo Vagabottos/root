@@ -111,3 +111,30 @@ table {
   flex-direction: column;
   justify-content: start;
 }
+
+.adset-settings {
+  flex-direction: column;
+
+  .choice-row {
+    flex: 0.75;
+  }
+
+  .choice-header {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .choice-result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .waiting {
+      font-style: italic;
+    }
+
+    .final {
+      font-weight: bold;
+    }
+  }
+}

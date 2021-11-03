@@ -10,7 +10,7 @@ enum ListStatus {
   Blacklist = -1
 }
 
-type RandomMode = 'random' | 'draft+1';
+type RandomMode = 'random' | 'draft+1' | 'adset';
 
 @Component({
   selector: 'app-reachmodal',
@@ -19,10 +19,11 @@ type RandomMode = 'random' | 'draft+1';
 })
 export class ReachModalPage implements OnInit {
 
-  public mode: RandomMode = 'random';
+  public mode: RandomMode = 'adset';
   public readonly modeButtons: Array<{ mode: RandomMode, icon: string }> = [
-    { mode: 'random', icon: 'options' },
-    { mode: 'draft+1', icon: 'person-add' }
+    { mode: 'random',  icon: 'sync-outline' },
+    { mode: 'draft+1', icon: 'person-add' },
+    { mode: 'adset',   icon: 'options' }
   ];
 
   public playerCount = 4;
@@ -55,6 +56,22 @@ export class ReachModalPage implements OnInit {
     4: 21,
     5: 25,
     6: 28
+  };
+
+  public adsetSettings = {
+    map: 'random',
+    deck: 'random',
+    playerCount: 4,
+    landmarks: ['random: 2'],
+    validHirelings: this.reachValues.map(x => x.name)
+  };
+
+  public adsetGenerated = {
+    map: '',
+    deck: '',
+    landmarks: [],
+    hirelings: [],
+    factions: []
   };
 
   public get chosenFactionsOrdered() {
@@ -132,7 +149,6 @@ export class ReachModalPage implements OnInit {
 
     this.chosenFactions = chosenFactions;
   }
-
 
   calculateForDraft() {
     this.chosenFactions = {};
@@ -230,6 +246,10 @@ export class ReachModalPage implements OnInit {
         break;
       }
     }
+  }
+
+  validateADSETLandmarkChoices() {
+
   }
 
 }
