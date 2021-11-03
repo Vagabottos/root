@@ -1,9 +1,26 @@
 
+- category: The Law
+  color: "#000000"
+  questions:
+    - q: I'd like to do something, and the rules don't say that I can't do it. Can I do it?
+      a: Within the confines of the action, yes! The game will often surprise you with outlandish, unexpected situations, and that's part of the fun, but this doesn't mean you can flip the table.
+
+    - q: Can another player not consent to an action?
+      a: No actions require consent. Just do the thing.
+
+    - q: It seems like something should happen, but the rule doesn't tell me to do that thing. What do I do?
+      a: Follow the literal word of the Law, not your instinct, even if a similar rule exists. 
+
+    - q: A rule uses a specific term or action. Does it also include another, closely related term or action?
+      a: Nope! Assume we mean only the original term and not any related terms. For example, the terms move and place are different, which is an important distinction in rules such as The Keep.
+      laws:
+        - "6.2.2"
+
 - category: General
   color: "#000000"
   questions:
     - q: Which pieces are buildings? Which are tokens?
-      a: Broadly, square cardboard pieces that go in slots are buildings, while circular cardboard pieces are tokens. You’ll find detailed lists of buildings and tokens on the back of the learn-to-play and the backs of the faction boards.
+      a: Broadly, square cardboard pieces that go in slots are buildings, while circular cardboard pieces are tokens. You'll find detailed lists of buildings and tokens on the back of the learn-to-play and the backs of the faction boards.
       laws: 
         - "2.5"
     
@@ -63,7 +80,7 @@
   color: "#e07a37"
   questions:
     - q: What happens if all of my pieces are removed from the map?
-      a: Unfortunately, you’re out of the game. Thankfully, the game should be over at any moment if this happens.
+      a: Unfortunately, you're out of the game. Thankfully, the game should be over at any moment if this happens.
       laws:
         - "6."
 
@@ -82,17 +99,17 @@
   color: "#416eb0"
   questions:
     - q: Does Turmoil trigger if I have an empty column?
-      a: Nope! Turmoil triggers if you have a card in your Decree that you can’t complete.
+      a: Nope! Turmoil triggers if you have a card in your Decree that you can't complete.
       laws:
         - "7.7"
 
     - q: Does Turmoil trigger if I can take actions for some but not all cards in a column?
-      a: Yes! The moment you can’t complete a single card, you go into Turmoil.
+      a: Yes! The moment you can't complete a single card, you go into Turmoil.
       laws:
         - "7.7"
 
     - q: Can I move one warrior at a time from the same clearing to fulfill many Move cards in my Decree? Can I move the same warrior back and forth, given the right cards?
-      a: Yes! You can game the Decree as much as the cards allow you to. Just follow the rules for movement, and you’re good. 
+      a: Yes! You can game the Decree as much as the cards allow you to. Just follow the rules for movement, and you're good. 
       laws:
         - "7.5.2"
     
@@ -104,13 +121,13 @@
 - category: Woodland Alliance
   color: "#68b653"
   questions:
-    - q: Can I revolt with a base in a suit whose base I’ve already built?
+    - q: Can I revolt with a base in a suit whose base I've already built?
       a: Nope! The revolt action says you must choose a sympathetic clearing matching an unbuilt base.
       laws:
         - "8.4.1"
 
     - q: Can I revolt in the clearing with the keep token?
-      a: Nope! You would have to place a sympathy token first, which you can’t do because of the Marquise’s special ability The Keep.
+      a: Nope! You would have to place a sympathy token first, which you can't do because of the Marquise's special ability The Keep.
       laws:
         - "6.2.2"
         - "8.4.1"
@@ -124,7 +141,7 @@
         - "9.2.1"
 
     - q: Do I trigger the Alliance's Outrage when I move into a sympathetic clearing?
-      a: Nope! You’re a friendly Vagabond, and you have a pawn, not a warrior. 
+      a: Nope! You're a friendly Vagabond, and you have a pawn, not a warrior. 
       laws:
         - "8.2.6"
         - "9.2.2"
@@ -156,7 +173,7 @@
 - category: Riverfolk Company
   color: "#5bc3bd"
   questions:
-    - q: When I hire Riverfolk mercenaries, can I start a battle with them even if I don’t have pieces in the clearing where I'm battling?
+    - q: When I hire Riverfolk mercenaries, can I start a battle with them even if I don't have pieces in the clearing where I'm battling?
       a: Go for it! Plus, if you don't have any warriors there, there's no one to split hits with. 
       laws:
         - "11.2.7"

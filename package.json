@@ -13,6 +13,7 @@
     "build": "npm run lint && npm run prepare && ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint",
+    "watchrules": "nodemon -e .yml node scripts/prepare.js",
     "prepare": "node scripts/prepare",
     "validaterules": "node scripts/compare-rules"
   },
@@ -54,6 +55,7 @@
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
     "js-yaml": "^3.13.1",
+    "nodemon": "^2.0.14",
     "ts-node": "~8.0.0",
     "tslint": "~6.1.0",
     "typescript": "~4.3.5"

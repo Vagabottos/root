@@ -1,14 +1,17 @@
 
 - name: Golden Rules
   color: "#000000"
+  pretext: This chapter gives answers to technical, detailed questions. You do not need to read it when first learning.
   children:
     - name: Rules Conflicts
       children: 
         - name: Precedence.
-          text: If a card conflicts with the Law, follow the card. If the Learning to Play guide conflicts with the Law, follow the Law. If you follow both a general rule and a faction rule, follow both; if you cannot, follow the faction rule.
+          text: If a card conflicts with the Law, follow the card. If the Learning to Play guide conflicts with the Law, follow the Law. If you follow both a general rule and a faction rule or hireling rule, follow both; if you cannot, follow the faction rule or hireling rule.
         - name: Use of **Cannot**.
           plainName: Use of Cannot.
           text: The term **cannot** is absolute. It cannot be overridden unless explicitly instructed.
+        - name: Resolving Simultaneous Things.
+          text: If multiple effects or decisions would occur simultaneously, the player taking their turn chooses their order unless the order is explicitly defined. If an effect would remove multiple pieces simultaneously and trigger multiple effects from removing them, remove all the pieces before resolving the effects.
         - name: Simultaneous Effects.
           text: If two game effects occur simultaneously, the player taking the current turn chooses their order, unless explicitly instructed.
         - name: Use of **Treat**.
@@ -26,35 +29,45 @@
       children:
         - name: Agreements.
           text: Players may discuss the game and make agreements, but they are non-binding.
-        - name: Cards
+        - name: Cards.
           text: Players may only give cards to each other if explicitly instructed.
     
-    - name: Players and Factions
-      pretext: "For simplicity, the Law refers to players, not factions. However, game effects _(such as abilities and persistent effects)_ are properties of factions, not players. While controlling pieces of a faction they do not own, a player follows the rules of that faction unless explicitly instructed."
-    
     - name: Game Structure
-      pretext: "Each player's turn consists of three phases: Birdsong, Daylight, and Evening. After a player completes all three phases, the next clockwise player begins their turn. Play continues until one player has won the game (`rule:3.1`)."
+      children:
+        - name: Turn Structure.
+          text: > 
+            Each player's turn has three phases: Birdsong, Daylight, and Evening. Anything that says "at start of" a phase happens before everything else in the phase, and anything that says "at end of" happens after everything else in the phase but before the start of the next phase, if any. After a player ends Evening, the next clockwise player begins their turn. Play continues until one player has won the game (`rule:3.1`).
+        - name: Interrupts.
+          text: You cannot interrupt an action _(including a compound action such as the Marquise's March)_, ability _(such as the Corvids' Exposure)_, or persistent effect _(such as the Eyrie Emigre card)_ with another effect unless it explicitly allows it. _(For example, the Armorers card says it is used "In battle...")_.
+
+    - name: Pieces
+      children:
+        - name: Limits.
+          text: Pieces are limited by the contents of the game. Do not use proxy pieces if you run out.
+        - name: Starting Faction.
+          text: Each player owns the faction they choose in setup (5) and the pieces listed on the back of its faction board except for items. Generically, these are called **faction pieces** or similar. Specifically, these are called **[faction name]** pieces. _(For example, "your faction warriors" and "warriors of your faction" and "Marquise warriors" all refer to the orange wooden cat-shaped warriors.)_ 
+        - name: Piece Ownership.
+          text: The ownership of faction pieces cannot change. _(For example, the Marquise cannot use Field Hospitals on Riverfolk mercenaries or hirelings, since these are not Marquise warriors.)_
+        - name: Piece Manipulation.
+          text: Pieces are placed and removed as defined in the Glossary (`rule:16.6.19`, `rule:16.6.22`). If you are prompted to place, take, or remove pieces but you cannot do so fully, you must place, take, or remove the maximum number possible. _(This does not allow you to avoid costs or prerequisites. You just cannot do less than the most you can.)_
+        - name: Use of **Force**.
+          plainName: Use of Force.
+          text: Some effects let you **force** a player or their pieces to act. Resolve this exactly as if that player were choosing to do this, as limited by the effect. _(For example, if you force the Eyrie to move warriors, they benefit from Lords of the Forest.)_
 
 - name: Key Terms and Concepts
   color: "#000000"
+  pretext: Terms are defined strictly in the Glossary (`rule:16.6`).
   children:
     - name: Cards
-      pretext: "Each card has a **suit**: bird, fox, rabbit, or mouse. Most cards also have an effect you can craft (`rule:4.1`)."
+      pretext: "You draw cards from the top of the shared deck, and discard to a shared discard pile. If the deck is ever empty, shuffle the discard pile immediately to form a new deck. Each card has a **suit**: bird, fox, rabbit, or mouse. Most cards also have an effect you can craft (`rule:4.1`)."
       children:
         - name: Birds Are Wild.
           text: You can treat any bird card as a card of another suit, even if you must spend, take, or give multiple cards of the same suit. `faction:cult:10.2.2`
           subchildren:
             - name: Forced Effects.
-              text: If you are prompted to discard or give a fox, rabbit, or mouse card, you must treat your bird cards as the prompted suit.
+              text: If you are prompted to discard or give cards of non-bird suits, you must treat your bird cards as a prompted suit
             - name: Reverse Substitution.
               text: If you are prompted to spend, discard, take, or give a bird card, you cannot substitute a card of another suit.
-
-        - name: Drawing Cards.
-          text: Whenever you are prompted to **draw** a card, take it from the shared deck. If the deck is ever empty, shuffle the discard pile immediately to form a new deck.
-        - name: Spending and Discarding Cards.
-          text: Whenever you are prompted to **discard** or **spend** a card, place it in the shared discard pile unless it is a dominance card (`rule:3.3`). `faction:cult:10.2.6`
-        - name: Revealing Cards.
-          text: Whenever you are prompted to **reveal** a card, place it in your play area (`rule:2.6`).
         - name: Ambush Cards.
           text: "There are five **ambush cards**: one mouse, one rabbit, one fox, and two birds. You may spend an ambush card for its suit, but it does not have a crafted effect. You may also play one in battle to deal hits (`rule:4.3.1`)."
         - name: Dominance Cards.
@@ -68,41 +81,21 @@
         - name: Suit.
           text: Every clearing has a **suit** of mouse, rabbit, or fox.
         - name: Slots.
-          text: Each clearing has a number of **slots** _(white boxes)_. Whenever you place a building, it fills an open slot. You cannot place a building in a clearing with no open slots.
+          text: Each clearing has a number of **building slots** _(white boxes)_. Whenever you place a building, it fills an open slot. You cannot place a building in a clearing with no open slots.
         - name: Ruins.
-          text: Slots marked with a small "R" begin the game filled with **ruins**. Ruins can only be removed by the Vagabond's Explore action (`rule:9.5.3`).
+          text: Slots marked with a small "R" begin the game filled with **ruins**. Ruins cannot be removed unless explicitly instructed _(such as by the Vagabond's Explore action, `rule:9.5.3`)_.
     
     - name: Rivers
-      pretext: Many clearings are linked by **rivers**. By default rivers are not paths, but can be treated as paths if explicitly instructed. Rivers do not divide clearings or forests. `faction:riverfolk:11.2.2`
+      pretext: Many clearings are linked by **rivers**. _(Rivers are not paths, but can be treated as paths if explicitly instructed. Rivers do not divide clearings or forests.)_ `faction:riverfolk:11.2.2`
       
     - name: Forests
-      pretext: Areas on the map enclosed by paths and clearings are called **forests**.
+      pretext: Areas on the map enclosed by printed paths and clearings are called **forests**.
       children:
         - name: Adjacency.
-          text: A forest is adjacent to all clearings that touch it without crossing a path, and it is adjacent to all forests that are separated by only one path.
-      
-    - name: Pieces
-      pretext: Each faction has a set of **pieces** listed on the back of its faction board. Pieces are limited by the contents of the game. If you are prompted to place, take, or remove a piece but you cannot, you must place, take, or remove the maximum number possible.
-      children:
-        - name: Warriors.
-          text: If you are prompted to place a warrior, take it from your supply. If one of your warriors is removed, return it to your supply. _(The Vagabond pawn is not a warrior and cannot be removed.)_ `faction:marquise:6.2.3` `faction:cult:10.2.3`
-        - name: Buildings.
-          text: If you are prompted to place a building, take the leftmost building from its track on your faction board. If one of your buildings is removed, return it to the rightmost empty space of its track.
-        - name: Tokens.
-          text: If you are prompted to place a token, take the leftmost token from its track, if any, or take it from your supply. If one of your tokens is removed, return it to the rightmost empty space of its track, if any, or to your supply. `faction:marquise:6.2.2` `faction:riverfolk:11.2.5.1`
-        - name: Items.
-          text: If you are prompted to take an item, take it from the shared supply on the map and place it in the Crafted Items box on your faction board. If you are prompted to remove an item, remove it from the game permanently. `faction:vagabond:9.6.4`
-        - name: Other.
-          text: If you are prompted to use any other piece _(pawn, marker, etc.)_, follow its explicit instructions.
-        
-    - name: Play Area
-      pretext: Your **play area** is the area around your faction board. Cards in your play area can only be spent, discarded, or used for other purposes if explicitly instructed.
+          text: A forest is adjacent to all clearings that touch it without crossing a printed path, and it is adjacent to all forests that are separated by only one printed path.
 
-    - name: Enemy
-      pretext: An **enemy** is any other player who you are not in a coalition with (`rule:9.2.8`).
-
-    - name: Ruler
-      pretext: The **ruler** of a clearing is the player with the most total warriors and buildings in that clearing. _(Tokens and pawns do not contribute to rule.)_ If there is a tie between players in a clearing, no one there is the ruler. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
+    - name: Rule
+      pretext: A player **rules** a clearing if they have more total warriors and buildings in it than each other player. _(Tokens and pawns do not contribute to rule.)_ If there is a tie between players in a clearing, no one rules it. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
 
 - name: Victory
   color: "#000000"
@@ -130,10 +123,10 @@
               text: You win the game immediately if you rule two clearings in opposite corners at the start of your Birdsong.
         - name: Activated Cards.
           text: An activated dominance card does not count against your hand limit, and it cannot be removed from play. You cannot replace an activated dominance card with a different one.
-        - name: Spending for Suit.
-          text: A dominance card can be spent for its suit. However, when it would be placed in the discard pile, instead place it near the map to show it is **available** to be taken. `faction:cult:10.4.2`        
+        - name: Using Dominance Cards.
+          text: A dominance card can be spent for its suit. Anytime a dominance card would be placed in the discard pile, instead place it near the map to show it is **available** to be taken. `faction:cult:10.4.2`        
         - name: Taking Available Cards.
-          text: During your Daylight, you can take an available dominance card into your hand by spending a card of matching suit.
+          text: During your Daylight, you can take an available dominance card into your hand by spending a card of matching suit. You cannot treat an available bird dominance card as a non-bird suit.
 
 - name: Key Actions
   color: "#000000"
@@ -142,16 +135,16 @@
       pretext: You can **craft** most cards from your hand to gain an immediate or persistent effect.
       children:
         - name: Cost.
-          text: To craft a card, you must **activate** crafting pieces of the suits listed in the card's bottom-left corner. The suit of a crafting piece matches its clearing. Each crafting piece may be activated only once per turn. A three-color question mark denotes a crafting piece of any suit. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1`
+          text: To craft a card, you must **activate** crafting pieces of the suits listed in the card's bottom-left corner. _(A faction's crafting piece is listed in its Crafting section.)_ A crafting piece's suit matches its clearing. Each crafting piece may be activated only once per turn. A three-color question mark denotes a crafting piece of any suit. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1`
         - name: Immediate Effects.
-          text: When you craft an immediate effect, resolve its effect and then discard the card. If it shows an item, take the matching item from the supply and place it in the Crafted Items box on your faction board. If the card lists an item not in the supply, the card cannot be crafted. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8`
+          text: When you craft an immediate effect _(paper box)_, resolve its effect and then discard the card. If it shows an item, take the matching item from the item supply on the map and place it in the Crafted Items box on your faction board. If the card lists an item not in the item supply, the card cannot be crafted. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8` `faction:warlord:14.2.1`
         - name: Persistent Effects.
-          text: When you craft a persistent effect, place it in your play area. You may use the effect as described on the card.
+          text: When you craft a persistent effect _(stone box)_, place it in your play area. You may use the effect as described on the card. _(The Eyrie Emigre card in the Exiles & Partisans deck is mandatory.)_
         - name: No Duplicates.
-          text: You cannot craft a persistent effect if you have an identical persistent effect in your play area.
+          text: You cannot craft a persistent effect if you have an identical one in your play area.
   
     - name: Move
-      pretext: When you **move**, you may take any number _(more than zero)_ of your warriors or your pawn from one clearing and move them to one adjacent clearing.
+      pretext: When you **move**, you may take any number _(more than zero)_ of your warriors and pawns from one clearing and move them to one adjacent clearing.
       children:
         - name: You Must Rule.
           text: To take a move, you must rule the origin clearing, destination clearing, or both. `faction:vagabond:9.2.3` `faction:riverfolk:11.2.2` `faction:corvid:13.2.3`
@@ -159,32 +152,38 @@
           text: A given piece can be moved any number of times per turn. If you are prompted to take multiple moves, you may move the same or separate groups of warriors.
 
     - name: Battle
-      pretext: When you **battle**, choose a clearing where you have warriors or your pawn as the **clearing of battle**. You are the **attacker**. Choose another player in the clearing of battle to be the **defender**.
+      pretext: When you **battle**, choose a clearing with any number of your warriors and pawns as the **clearing of battle**. You are the **attacker**. Choose an enemy in the clearing of battle to be the **defender**.
       children:
         - name: "Step 1: Defender May Ambush."
-          text: The defender may play one ambush card matching the clearing of battle. If the ambush is not foiled, the defender deals two hits immediately. Then, the defender discards the ambush card. If no attacking warriors or pawns remain, end the battle immediately.
+          text: The defender may play one ambush card matching the clearing of battle. If so, resolve `rule:4.3.1.1`–`rule:4.3.1.2` in order.
           subchildren:
             - name: Foil Ambush.
-              text: After the defender plays an ambush card, the attacker may cancel its effect by also playing an ambush card matching the clearing of the battle. _(The defender still discards their ambush card.)_
+              text: The attacker may also play an ambush card matching the clearing of the battle. If they do, the defender discards their ambush card and skips `rule:4.2.1.2`.
+            - name: Resolve Ambush.
+              text: The defender deals two hits immediately (`rule:4.3.4`). Then, the defender discards the ambush card. If no attacking warriors or pawns remain, end the battle immediately.
         - name: "Step 2: Roll Dice and Add Extra Hits."
-          text: Roll both dice. The attacker will deal hits equal to the higher roll, and the defender will deal hits equal to the lower roll. If the rolls are equal, attacker and defender will deal the same number of hits. _(The use of "will" here reflects that hits are not dealt until step 3.)_ `faction:woodland:8.2.2`
+          text: Roll both dice. The attacker will deal hits equal to the higher roll, and the defender will deal hits equal to the lower roll. If the rolls are equal, attacker and defender will deal the same number of hits. _(The use of "will" here reflects that hits are not dealt until step 4.)_ `faction:woodland:8.2.2`
           subchildren:
             - name: Maximum Rolled Hits.
               text: The maximum hits you can deal from rolling equals the number of your warriors in the clearing of battle, whether you are the attacker or defender. `faction:vagabond:9.2.6`
+        - name: "Step 3: Use Effects."
+          text: The attacker and defender may use optional effects _(such as the Brutal Tactics card)_ that affect battle. If both want to use effects, the attacker chooses who uses them first (`rule:1.1.3`). 
+          subchildren:
             - name: Extra Hits.
-              text: After counting hits from rolling, the attacker and defender can add **extra hits** by using special abilities or other effects in their play areas. _(Extra hits are not limited by the number of warriors in the clearing of battle.)_
+              text: Many effects will deal **extra hits**, which are not limited by the number of warriors in the clearing of battle.
             - name: Defenseless.
               text: If the defender has no warriors in the clearing of battle, the attacker will deal an extra hit. `faction:vagabond:9.2.4`
-        - name: "Step 3: Deal Hits."
-          text: Attacker and defender deal hits simultaneously. Each hit you deal removes one piece. The player taking hits chooses which of their pieces are removed from the clearing of battle, but must choose to remove all their warriors there before they choose to remove any of their buildings or tokens there in any order. _(You score one victory point per enemy building or token removed.)_
+        - name: "Step 4: Deal Hits."
+          text: Each hit that a side deals removes one piece of the other side from the clearing of battle. _(You score one victory point per enemy building or token removed.)_ All of a side's warriors there must be removed before any of their buildings or tokens there can be removed. The side taking hits chooses which of their buildings and tokens are removed, and chooses the order of any effects triggered by their pieces being removed.
 
 - name: Setup
   color: "#000000"
+  pretext: If any players are new to the game, use the Standard Setup (`rule:5.1`) If everyone has played and you want more variety, use the Advanced Setup (`rule:16.1`). If you want to play with five or more factions that would start in corner clearings, you must use the Advanced Setup.
   children:
     - name: Standard Setup Procedure
       children:
         - name: "Step 1: Assign Factions and Starting Player."
-          text: Assign one faction to each player using any method. The viable factions at each player count are listed in Player Combinations (Appendix A). Determine the starting player and seating order randomly. Each player takes their chosen faction board and all pieces, as listed on the back of the faction board.
+          text: Assign one faction to each player in any way. Determine the starting player and seating order randomly. Each player takes their chosen faction board and the pieces listed on its back.
         - name: "Step 2: Place Score Markers."
           text: Each player places their score marker on "0" on the score track.
         - name: "Step 3: Draw Starting Hands."
@@ -198,6 +197,9 @@
         - name: "Step 7: Set Up Factions."
           text: In setup order (A, B, C, etc.), each player follows their faction's setup instructions, listed in their rules section and on the back of their faction board.
 
+    - name: Reach
+      pretext: To set up an interesting game, choose factions whose Reach values add up to at least the total reach recommended for your player count. _(Adventurous players are welcome to use any faction mix with 17+ Reach.)_ To see the recommended reach for your player count, tap the Calculator icon in the top right of the app.
+
 - name: Marquise de Cat
   color: "#e07a37"
   icon: marquise
@@ -210,22 +212,22 @@
         - name: Crafting.
           text: The Marquise crafts during Daylight by activating workshops.
         - name: The Keep.
-          text: Only the Marquise can place pieces in the clearing with the keep token. _(Pieces may be moved into this clearing.)_ If the keep token is removed, remove it from the game permanently.
+          text: The Marquise can place pieces in the clearing with the keep token, and other players cannot. _(Pieces may be moved into it. If the keep is removed, there is no way to place it on the map again.)_
         - name: Field Hospitals.
-          text: Whenever any number of Marquise warriors are removed from a clearing, the Marquise may spend a card matching that clearing to place those warriors in the clearing with the keep token.
+          text: Whenever any number of Marquise warriors are removed from a clearing, the Marquise may spend a card matching that clearing place those warriors in the clearing with the keep token instead of the Marquise's supply
 
     - name: Faction Setup
       children:
         - name: "Step 1: Gather Warriors and Wood."
           text: Form supplies of 25 warriors and 8 wood tokens.
         - name: "Step 2: Place Keep."
-          text: Place the keep token in the corner clearing of your choice.
+          text: Place the keep token in any corner clearing.
         - name: "Step 3: Garrison."
           text: Place a warrior in each clearing except the clearing in the diagonally opposite corner from the clearing with the keep token.
         - name: "Step 4: Place Starting Buildings."
           text: Place 1 sawmill, 1 workshop, and 1 recruiter. You may place them among the clearing with the keep token and any adjacent clearings, in any combination.
         - name: "Step 5: Fill Buildings Tracks."
-          text: Place your remaining 5 sawmills, 5 workshops, and 5 recruiters on your matching Buildings tracks, from right to left. _(This fills every space except the leftmost space of each track.)_
+          text: Place your remaining 5 sawmills, 5 workshops, and 5 recruiters on your matching Buildings tracks, from right to left. _(Leave the leftmost space of each track empty.)_
 
     - name: Birdsong
       pretext: Place wood tokens in each clearing with any number of sawmills, one wood per sawmill there.
@@ -242,12 +244,12 @@
         - name: Build.
           text: Place a building.
           subchildren:
-            - name: Choose Building.
-              text: Choose whether you want to place a sawmill, workshop, or recruiter. Find the leftmost building of that type remaining on your faction board. Note that building's cost, listed at the top of its column.
-            - name: Choose Clearing and Pay Wood.
-              text: Choose any clearing you rule. Remove wood tokens equal in number to the building's cost from the chosen clearing, any adjacent clearings you rule, or any clearings connected to the chosen clearing you rule through any number of clearings you rule.
+            - name: Choose Clearing and Building.
+              text: Choose a clearing you rule. Choose whether you want to place a sawmill, workshop, or recruiter. You will place the leftmost building of its type from your faction board. You must be able to pay its cost (`rule:6.5.4.2`) and place it (`rule:6.5.4.3`).
+            - name: Pay Cost.
+              text: Find the chosen building's cost at the top of its column. Remove wood tokens equal in number to the cost from the chosen clearing, any adjacent clearings you rule, or any clearings connected to the chosen clearing you rule through any number of clearings you rule.
             - name: Place Building and Score.
-              text: Place the chosen building on the chosen clearing, and score the victory points listed on the space uncovered on your faction board.
+              text: Place the chosen building in the chosen clearing, and score the victory points listed on the space uncovered on your faction board.
         - name: Overwork.
           text: Spend a card matching the clearing of a sawmill, and place a wood token there.
 
@@ -266,16 +268,16 @@
         - name: Crafting.
           text: The Eyrie craft before resolving the Decree during Daylight by activating roosts.
         - name: Lords of the Forest.
-          text: The Eyrie rule a clearing when tied for most combined warriors and buildings there. They do not rule empty clearings. `faction:cult:10.2.4`
+          text: The Eyrie rule a clearing when tied for most combined warriors and buildings there, and they have at least one Eyrie piece there. `faction:cult:10.2.4`
         - name: Disdain for Trade.
-          text: Whenever the Eyrie craft an item, they ignore the listed victory points and instead score only one victory point.
+          text: Whenever the Eyrie craft an item, they ignore the listed victory points and instead score only one victory point. _(They can still score extra crafting points from effects such as Master Engravers and the Legendary Forge.)_
 
     - name: Faction Setup
       children:
         - name: "Step 1: Gather Warriors."
           text: Form a supply of 20 warriors.
         - name: "Step 2: Place Roost and Starting Warriors."
-          text: Place 1 roost and 6 warriors in the corner clearing diagonally opposite from the clearing with the keep token. If the Marquise is not playing, place those pieces in the corner clearing of your choice.
+          text: Place 1 roost and 6 warriors in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing. _(This is updated from earlier printings for more flexibility.)_
         - name: "Step 3: Choose Leader."
           text: Choose 1 of the 4 Eyrie leader cards and place it in your Leader Card slot. Gather the remaining leaders face up near you.
         - name: "Step 4: Tuck Viziers."
@@ -319,7 +321,7 @@
           text: Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
     - name: Turmoil
-      pretext: If you cannot fully take an action in the Decree (`rule:7.5.2`) for any reason, you fall into turmoil, as follows.
+      pretext: If you cannot fully take an action in the Decree (`rule:7.5.2`) for any reason, you fall into turmoil, as follows. You must take the Turmoil action as follows in order.
       children:
         - name: "Step 1: Humiliate."
           text: Lose one victory point per bird card _(including Loyal Viziers)_ on the Decree.
@@ -343,7 +345,7 @@
         - name: Commander.
           text: Loyal Viziers begin on Move and Battle. In battle as attacker, you deal an extra hit.
         - name: Despot.
-          text: Loyal Viziers begin on Move and Build. Whenever you remove at least one enemy building or token in battle, you score one victory point.
+          text: Loyal Viziers begin on Move and Build. Whenever you remove at least one enemy building or token in battle, you score one extra victory point _(two in total, `rule:3.2.1`)_.
 
 - name: Woodland Alliance
   color: "#68b653"
@@ -364,7 +366,7 @@
             - name: Capacity.
               text: If the Alliance has no bases on the map, the Supporters stack can only hold up to five cards. If the Alliance would gain a supporter but the stack cannot hold it, that card is discarded. If any bases are on the map, the Supporters stack can hold unlimited cards.
         - name: Removing Bases.
-          text: Whenever a base is removed, the Alliance must discard all supporters matching the suit of the base _(including birds)_, and remove half of their officers, rounded up. If the Alliance has no more bases on the map and has more than five supporters, they must discard down to five supporters.
+          text: Whenever a base is removed, the Alliance must discard all supporters matching the printed suit of the base _(including birds)_, and remove half of their officers, rounded up. If the Alliance has no more bases on the map and has more than five supporters, they must discard down to five supporters.
         - name: Sympathy Tokens.
           text: The Alliance has 10 sympathy tokens.
           subchildren:
@@ -390,26 +392,26 @@
       pretext: Your Birdsong has two steps in the following order.
       children:
         - name: Revolt.
-          text: Remove enemy pieces and place a base and warriors, as follows. You may revolt any number of times.
+          text: Any number of times, you may take the Revolt action, as follows.
           subchildren:
-            - name: Choose Clearing.
-              text: A sympathetic clearing matching an unbuilt base _(cannot revolt if on map)_.
-            - name: Spend Supporters.
+            - name: "Step 1: Choose Clearing."
+              text: Choose a sympathetic clearing that matches a base on your faction board.
+            - name: "Step 2: Spend Supporters."
               text: Spend two supporters matching the suit of the chosen clearing.
-            - name: Resolve Effect.
-              text: Remove all enemy pieces in the chosen clearing. Then, place the base matching the clearing there, and place warriors there equal to the number of sympathetic clearings matching the base's suit. Finally, place one warrior in the Officers box. This warrior is now an **officer**. _(Remember to score one victory point per token and building removed.)_
+            - name: "Step 3: Resolve Effect."
+              text: Remove all enemy pieces from the chosen clearing. Then, place the matching base there, and place warriors there equal to the number of sympathetic clearings matching the base's printed suit. Finally, place one warrior in the Officers box. This warrior is now an **officer**. _(Remember to score one victory point per token and building removed.)_
 
         - name: Spread Sympathy.
-          text: Place a sympathy token, as follows. You may spread sympathy any number of times.
+          text: Any number of times, you may take the Spread Sympathy action, as follows.
           subchildren:
-            - name: Choose Clearing.
-              text: An unsympathetic clearing adjacent to a sympathetic clearing. If there are no sympathetic clearings, you may choose any clearing.
-            - name: Spend Supporters.
+            - name: "Step 1: Choose Clearing."
+              text: Choose an unsympathetic clearing adjacent to a sympathetic clearing. If there are no sympathetic clearings, you may choose any clearing.
+            - name: "Step 2: Spend Supporters."
               text: Spend supporters matching the suit of the chosen clearing. The number of supporters that must be spent is listed above the sympathy token.
               subchildren:
                 - name: Martial Law.
                   text: You must spend another matching supporter if the target clearing has at least three warriors belonging to another player.
-            - name: Resolve Effect.
+            - name: "Step 3: Place and Score."
               text: Place a sympathy token in the chosen clearing. Score the victory points listed on the space uncovered on your faction board.
 
     - name: Daylight
@@ -420,7 +422,7 @@
         - name: Mobilize.
           text: Add a card from your hand to the Supporters stack.
         - name: Train.
-          text: Spend a card whose suit matches a built base to place a warrior in the Officers box. This warrior is now an **officer**.
+          text: Spend a card whose suit the printed suit of a base on the map to place a warrior in the Officers box. This warrior is now an **officer**.
 
     - name: Evening
       pretext: Your Evening has two steps in the following order.
@@ -435,7 +437,7 @@
             - name: Recruit.
               text: Place a warrior in any clearing with a base.
             - name: Organize.
-              text: Remove one of your warriors from an unsympathetic clearing, place a sympathy token there, and score the victory points listed on the space uncovered on your faction board.
+              text: Remove one Alliance warrior from an unsympathetic clearing, place a sympathy token there, and score the victory points listed on the space uncovered on your faction board.
         - name: Draw and Discard.
           text: Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
@@ -459,9 +461,9 @@
         - name: Nimble.
           text: The Vagabond can move regardless of who rules his origin or destination clearing (`rule:4.2.1`).
         - name: Defenseless.
-          text: In battle, the Vagabond is defenseless (`rule:4.3.2.3`) if he has no undamaged `item:sword`.
+          text: In battle, the Vagabond is defenseless (`rule:4.3.3.2`) if he has no undamaged `item:sword`.
         - name: Items.
-          text: The Vagabond's capabilities depend on the items he acquires. Items on the Vagabond's faction board can be face up or face down. The Vagabond **exhausts** face-up undamaged items, flipping them face down, to take many actions.
+          text: The Vagabond's capabilities depend on the items he acquires. Instead of a Crafted Items box, he has a Satchel and various item tracks. Items on the Vagabond's faction board can be face up or face down. The Vagabond **exhausts** face-up undamaged items, flipping them face down, to take many actions.
           subchildren:
             - name: Item Tracks.
               text: When gained, `item:tea`, `item:coin`, and `item:sack` are placed face up on their matching tracks. Each track can only hold three matching items.
@@ -474,39 +476,39 @@
         - name: Taking Hits.
           text: Whenever the Vagabond takes a hit (`rule:4.3.3`), he must damage one undamaged item, moving it to his Damaged box. If no undamaged items remain to damage, the Vagabond ignores any remaining hits.
         - name: Dominance Cards and Coalitions.
-          text: In games with four or more players, the Vagabond can activate a dominance card to form a coalition with the player with the fewest victory points other than himself, placing his score marker on the chosen player's faction board. If there is a tie for fewest, he chooses one tied player. If the chosen player wins the game, the Vagabond also wins. _(The Vagabond no longer scores victory points. He cannot form a coalition with a player who has already activated a dominance card.)_
+          text: The Vagabond cannot activate a dominance card for its normal victory condition (`rule:3.3.1`). Instead, in games with four or more players, the Vagabond can activate a dominance card to form a coalition with another player, placing his score marker on that player's faction board. _(The Vagabond no longer scores points.)_ That player must have the fewer victory points than each other player except the Vagabond forming the coalition, and that player cannot be in a coalition. If there is a tie for fewest victory points, he chooses one tied player. If the coalitioned player wins the game, the Vagabond also wins.
         - name: Relationships.
-          text: Your faction board shows a Relationships chart, which has four spaces on the Allied track and one Hostile box. It holds a relationship marker for each non-Vagabond player.
+          text: Your faction board shows a Relationships chart, which has four spaces on the Allied track and one Hostile box. It holds a relationship marker for each non-Vagabond faction.
           subchildren:
             - name: Improving Relationships.
-              text: You can improve a relationship with a non-Hostile player by taking the Aid action.
+              text: You can improve a relationship with a non-Hostile faction by taking the Aid action.
               subchildren:
                 - name: Cost.
-                  text: Aid a non-Hostile player the number of times listed between their current Allied space and their next Allied space during the same turn. _(A given Aid action counts toward only one improvement in relationship.)_
+                  text: Aid a non-Hostile faction the number of times listed between their current Allied space and their next Allied space during the same turn. _(A given Aid action counts toward only one improvement in relationship.)_
                 - name: Effect.
                   text: Advance that faction's relationship marker one space right on the track. Score the victory points listed in the new space.
             - name: Allied Status.
-              text: If a relationship marker reaches the final space on the Allied track, you are now **allied** with the player shown by that relationship marker. _(Their warriors trust you!)_
+              text: If a relationship marker reaches the final space on the Allied track, you are now **allied** with the faction shown by that relationship marker. _(Their warriors trust you!)_
               subchildren:
                 - name: Aiding Ally.
-                  text: Each time you Aid an Allied player, score two victory points.
+                  text: Each time you Aid an Allied faction, score two victory points.
                 - name: Moving with Ally.
-                  text: Whenever you move to a clearing, you may also move warriors of one Allied player from your origin clearing to your destination clearing.
+                  text: Whenever you move to an adjacent clearing, you may also move warriors of one Allied faction from your origin clearing to your destination clearing.
                 - name: Attacking with Ally.
-                  text: Whenever you initiate a battle, you may treat Allied warriors of one player in the clearing of battle as your own. The maximum hits you can roll equals the number of that Ally's warriors there plus your total undamaged `item:sword`. You cannot treat Allied warriors as your own if that Ally is the defender.
+                  text: At the start of battle as the attacker, you may treat the warriors of one Allied faction in the clearing of battle as your own. The maximum hits you can roll equals the number of their warriors there plus your total undamaged `item:sword`. You cannot treat Allied warriors as your own when attacking the same Allied faction.
                 - name: Taking Hits with Ally.
-                  text: In a battle where you treat Allied warriors as your own, you can take hits by removing Allied warriors. However, if you take more hits by removing Allied warriors than by damaging items during the same battle, that Allied player becomes Hostile (`rule:9.2.9.3`) at the end of the battle. This rule overrides the condition for becoming Hostile in 9.2.9.III.
+                  text: In a battle where you treat Allied warriors as your own, you can take hits by removing them. However, if you take more hits by removing Allied warriors than by damaging items during the same battle, that Allied faction becomes Hostile (`rule:9.2.9.3`) at the end of the battle. This rule overrides the condition for becoming Hostile in `rule:9.2.9.3`.
             - name: Hostile Status.
-              text: If you ever remove a warrior of a non-Hostile player, their relationship marker immediately moves to the Hostile box. This faction is now **Hostile**.
+              text: If you remove a warrior of a non-Hostile faction, move their relationship marker to the Hostile box. This faction is now Hostile. Then, if this happened in battle during your turn, check for Infamy scoring (`rule:9.2.9.3.1`).
               subchildren:
                 - name: Infamy.
-                  text: Whenever you remove a piece of a Hostile player in battle during your turn, score one victory point. _(Add this to points scored for enemy buildings and tokens. Do not score a point for removing the warrior that made the player Hostile.)_
+                  text: Score one extra victory point for each piece of a Hostile faction you remove in battle during your turn, except the warrior that made the faction Hostile.  _(Add this to points scored for enemy buildings and tokens.)_
                 - name: Moving into Hostile Clearings.
-                  text: You must exhaust an extra `item:boot` to move into a clearing with any warriors of any Hostile players.
-                - name: Aiding Hostile Players.
-                  text: You cannot move a relationship marker out of the Hostile box by using Aid, but you can still Aid a Hostile player to take crafted items.
-                - name: Coalition with Hostile Player.
-                  text: You can form a coalition (`rule:9.2.8`) with a Hostile player. If you do, move their relationship marker to the Indifferent space.
+                  text: You must exhaust an extra `item:boot` to move into a clearing with any warriors of any Hostile faction.
+                - name: Aiding Hostile Factions.
+                  text: You cannot move a relationship marker out of the Hostile box by using Aid, but you can still Aid a Hostile faction to take crafted items.
+                - name: Coalition with Hostile Faction.
+                  text: You can form a coalition (`rule:9.2.8`) with a Hostile faction. If you do, move their relationship marker to the Indifferent space.
 
     - name: Faction Setup
       children:
@@ -539,13 +541,13 @@
         - name: Battle.
           text: Exhaust one `item:sword` to initiate a battle. _(Check your relationship with the defender.)_
         - name: Explore.
-          text: Exhaust one `item:torch` to take one item under a ruin in your clearing, reveal it, and place it face up in your Satchel or on its matching track. Then, you score one victory point. If you remove the last item from a ruin, remove the ruin.
+          text: Exhaust one `item:torch` to take one item under a ruin in your clearing, reveal it, and place it face up in your Satchel or on its matching track. If you take an item, score one victory point. Then, you score one victory point. If you remove the last item from a ruin, remove the ruin.
         - name: Aid.
-          text: Exhaust any one item, and give one of your cards matching your clearing to any player with at least one piece there _(even Hostile)_. Then, you may take one item, if any, from that player's Crafted Items box, and place it face up in your Satchel or on its matching track. _(Check your relationship with that player.)_
+          text: Exhaust any one item, and give one of your cards matching your clearing to any player with faction pieces there _(even Hostile)_. Then, you may take one item, if any, from that player's Crafted Items box, and place it face up in your Satchel or on its matching track. _(Check your relationship with that player's faction.)_
         - name: Quest.
           text: Choose a quest whose suit matches your clearing, and exhaust the two items listed on the quest to complete it. Place the quest in your play area, and then draw a new quest and place it near the map. You may score one victory point per quest of matching suit you have completed, including this one, or draw two cards from the deck.
         - name: Strike.
-          text: Exhaust one `item:crossbow` to remove a warrior from your clearing. If a player has no warriors there, you may instead remove one building or token of that player. _(Check your relationship with that player.)_
+          text: Exhaust one `item:crossbow` to remove an enemy warrior from your clearing. If that enemy has no warriors there, you may instead remove one of their other faction pieces there. _(Check your relationship with that player's faction.)_
         - name: Repair.
           text: Exhaust one `item:hammer` to move one damaged item to the Satchel or to its matching track (if face up `item:coin`, `item:tea`, `item:sack`), keeping the item on its current side.
         - name: Craft.
@@ -568,12 +570,12 @@
     - name: Playing with Two Vagabonds
       subtext: If you have _The Riverfolk Expansion_, you can play a game with two Vagabonds by following these rules.
       children:
-        - name: Add Extra Item to Ruins.
-          text: During setup, use both sets of "R" items and place two "R" items in each ruin slot. When a Vagabond explores a ruin with two items, he may look at them and take one of his choice. _(By taking two Explore actions, he could take both items from one ruin.)_ He cannot take an "R" item that matches an "R" item already on his faction board. If he explores but does not take an item, he does not score a victory point, but the torch is still exhausted.
-        - name: Randomize Setup Order.
-          text: Randomly determine which Vagabond sets up first.
+        - name: Setup.
+          text: During setup, use both sets of "R" items and place two random "R" items in each ruin slot. If you are using the Standard Setup (5.1), randomly determine which Vagabond sets up first. 
         - name: Share Quests.
           text: Either Vagabond may complete any of the three face-up quests. Do not add extra quest cards during setup.
+        - name: Taking Items from Ruins.
+          text: When a Vagabond explores a ruin with two items, or the Hundreds raze a ruin (`rule:15.4.1`) with two items, that player may look at those items and take one of their choice. _(By taking two Explore actions, the Vagabond could take both items from one ruin.)_ A player cannot take an "R" item if they have the same type of "R" item on their faction board. _(If the Vagabond explores but does not take an item, he does not score a victory point, but the F is still exhausted.)_
 
 - name: Lizard Cult
   color: "#fcf065"
@@ -585,7 +587,7 @@
     - name: Faction Rules and Abilities
       children:
         - name: Crafting.
-          text: The Cult crafts during Evening by activating gardens matching the Outcast suit (`rule:10.4.1`).
+          text: The Cult crafts during Evening by activating gardens whose printed suit matches the Outcast suit (`rule:10.4.1`). _(Generally this matches the clearing, except with the Lost City landmark.)_
         - name: Hatred of Birds.
           text: Bird cards are not wild for Cult rituals.
         - name: Revenge.
@@ -602,7 +604,7 @@
         - name: "Step 1: Gather Warriors."
           text: Form a supply of 25 warriors.
         - name: "Step 2: Place Warriors."
-          text: In the corner clearing diagonally opposite from the Marquise's keep or Eyrie's starting roost, place 4 warriors and 1 garden matching the clearing; if both the Marquise and Eyrie are in play, choose one of the two other corners. Then place one warrior in each adjacent clearing.
+          text: Place 4 warriors and 1 garden matching the clearing of matching printed suit in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing. Then place 1 warrior in each adjacent clearing. _(This is updated from earlier printings for more flexibility.)_
         - name: "Step 3: Choose Outcast."
           text: Place the outcast marker on any suit space in the Outcast box. The suit of this space is called the **Outcast**.
         - name: "Step 4: Fill Gardens Tracks."
@@ -616,17 +618,17 @@
         - name: Discard Lost Souls.
           text: Discard all of the cards in the Lost Souls pile to the discard pile. _(Dominance cards become available to take.)_
         - name: Perform Conspiracies.
-          text: You can spend acolytes, returning them to your supply, to perform conspiracies in clearings matching the Outcast, in any order and combination, as follows. If the Outcast is Hated, the conspiracy costs one fewer acolyte. If you perform Convert or Sanctify, you must complete the conspiracy.
+          text: You can spend acolytes, returning them to your supply, to perform conspiracies in clearings matching the Outcast, in any order and combination, as follows. If the Outcast is Hated, the conspiracy costs one fewer acolyte. If you perform Convert or Sanctify, you must complete the conspiracy. If the Outcast is Hated, the conspiracy costs one fewer acolyte.
           subchildren:
             - name: Crusade.
               text: Spend two acolytes to initiate a battle in an Outcast clearing **or** to move _(at least one warrior)_ from an Outcast clearing and then, if you wish, initiate a battle in the destination clearing.
             - name: Convert.
-              text: Spend two acolytes to remove an enemy warrior from an Outcast clearing and then place one warrior there.
+              text: Spend two acolytes to replace an enemy warrior from an Outcast clearing with a Cult warrior. _(To replace a piece, you must be able to remove the old piece and place the new piece.)_
             - name: Sanctify.
-              text: Spend three acolytes to remove an enemy building from an Outcast clearing and then place a garden of matching suit there.
+              text: Spend three acolytes to replace an enemy building from an Outcast clearing with a matching garden.
 
     - name: Daylight
-      pretext: You may reveal any number of cards from your hand _(into your play area)_, and perform one ritual per card revealed, in any order and number, as follows. _(Revealed cards cannot be used for any other purposes during Daylight.)_
+      pretext: You may reveal any number of cards and perform one ritual per card revealed, in any order and number, as follows. _(Reveal cards from your hand into your play area. They cannot be used for any other purposes during Daylight.)_
       children:
         - name: Build.
           text: In a clearing you rule matching the revealed card, place a matching garden.
@@ -643,7 +645,7 @@
         - name: Return Revealed Cards.
           text: Return all cards that you revealed this turn to your hand.
         - name: Craft.
-          text: You may craft by activating gardens matching the Outcast suit.
+          text: You may craft by activating gardens whose printed suit matches the Outcast suit.
         - name: Draw and Discard.
           text: Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
@@ -675,9 +677,9 @@
             - name: Cost.
               text: The buyer must place warriors from their supply into the Riverfolk's Payments box equal in number to the cost of that service listed on the Riverfolk's Services track.
             - name: Number of Services.
-              text: Each turn, a player may buy one service plus one per clearing with a trade post and at least one piece of that player.
+              text: Each turn, a player may buy one service plus one per clearing with a trade post and their faction pieces.
             - name: Vagabond Funds.
-              text: The Vagabond pays for services by exhausting items—for each item he exhausts to do so, the Riverfolk place one of their own warriors in the Payments box.
+              text: The Vagabond pays for services by exhausting items - for each item he exhausts to do so, the Riverfolk place one Riverfolk warrior in the Payments box.
         - name: Riverfolk Services.
           text: The Riverfolk offer three services, as follows.
           subchildren:
@@ -686,12 +688,12 @@
             - name: Riverboats.
               text: The buyer treats rivers as paths until the end of their turn.
             - name: Mercenaries.
-              text: During Daylight and Evening of this turn, the buyer treats Riverfolk warriors as their own only for rule and for battle against factions other than the Riverfolk. _(The buyer cannot move them, count them toward dominance, or remove them except by taking hits.)_
+              text: During Daylight and Evening of this turn, the buyer treats Riverfolk warriors as their own for rule and for battle against any faction except the Riverfolk. _(The buyer cannot move them, count them toward dominance, or remove them except by taking hits. They are still Riverfolk faction pieces, so they cannot be affected by abilities such as the Marquise's Field Hospitals or used in actions such as the Duchy's Sway Ministers.)_
               subchildren:
                 - name: Taking Hits.
                   text: The buyer must split hits, taking odd hits by removing owned _(not Riverfolk)_ warriors, if any, or owned buildings or tokens only if they have no warriors _(including Riverfolk)_ in the clearing of battle.
                 - name: Vagabond Mercenaries.
-                  text: The Vagabond cannot buy Riverfolk mercenaries.
+                  text: The Vagabond cannot buy Riverfolk mercenaries. _(If a buyer battles the Vagabond and a Riverfolk mercenary warrior is removed, the buyer's faction becomes Hostile, not the Riverfolk.)_
 
     - name: Faction Setup
       children:
@@ -727,7 +729,7 @@
           text: Commit funds to craft a card from your hand. Instead of moving these warriors to the Committed box, you must place them on empty spaces of the Trade Posts tracks matching the suits listed on the crafting cost.
           subchildren:
             - name: Export.
-              text: You may ignore the listed benefit of crafting a card, discarding it, to place one of your warriors in the Payments box.
+              text: You may ignore the listed benefit of crafting a card, discarding it, to place one Riverfolk warrior in the Payments box.
         - name: Draw.
           text: Commit one fund to draw a card.
         - name: Recruit.
@@ -763,7 +765,7 @@
           text: The Duchy crafts during Evening by activating citadels and markets.
 
         - name: The Burrow.
-          text: "**The Burrow** is a clearing adjacent to each clearing with a tunnel token. Only the Duchy can place pieces in or move pieces into the Burrow. The Duchy always rules the Burrow _(even with no pieces there)_."
+          text: "**The Burrow** is an unsuited clearing adjacent to each clearing with a tunnel token. Non-Duchy pieces cannot be placed in or moved into the Burrow. The Duchy always rules the Burrow _(even with no pieces there)_."
 
         - name: The Price of Failure.
           text: Whenever any number of Duchy buildings are removed, the Duchy discards a random card, returns their swayed minister card of the highest rank _(lord, then noble, then squire)_ to their Unswayed Ministers pile, and removes its crown from the game permanently. If they have multiple swayed ministers of highest rank, the Duchy chooses which to return.
@@ -780,7 +782,7 @@
           text: Place the Burrow board near the map.
 
         - name: "Step 3: Surface."
-          text: Place 2 warriors and 1 tunnel in a corner clearing that does not have the Marquise's keep, Eyrie's starting roost, or Cult's starting garden, and diagonally opposite from one of those starting clearings if possible. Then place 2 warriors in each clearing adjacent to that corner clearing, except the Burrow.
+          text: Place 2 warriors and 1 tunnel in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing.  Then place 2 warriors in each clearing adjacent to that corner clearing, except the Burrow. _(This is updated from earlier printings for more flexibility.)_
 
         - name: "Step 4: Fill Building Tracks."
           text: Place 3 citadels and 3 markets on your matching Buildings spaces.
@@ -852,7 +854,7 @@
               text: Choose a minister card in your Unswayed Ministers pile. You must have a crown on your faction board matching the rank _(squire, noble, lord)_ of that minister.
 
             - name: Reveal Cards.
-              text: Reveal the number of cards listed on the chosen minister. For each card you wish to reveal, you must have at least one piece in a clearing matching the suit of that card. Each clearing with any of your pieces only allows you to reveal one matching card.
+              text: Reveal the number of cards listed on the chosen minister. For each card you wish to reveal, you must have at least one Ducchy piece in a clearing matching the suit of that card. Each such clearing with any of your pieces only allows you to reveal one matching card.
 
             - name: Sway Minister and Score.
               text: Take the chosen minister card and place it above your faction board. Take a crown of that minister's rank from your faction board and place it on the minister card. Score the victory points listed on the space uncovered on your faction board.
@@ -893,7 +895,7 @@
           text: The Corvids can move regardless of who rules their origin or destination clearing.
 
         - name: Exposure.
-          text: Anytime on their turn, but before drawing any cards in their Evening, an enemy player with at least one piece in a clearing with a facedown plot token may show the Corvids a matching card to guess the type of plot token in that clearing. If incorrect, the Corvids say "no," and the enemy player gives that card to the Corvids. If correct, the enemy player removes the plot token _(scoring a victory point)_ and ignores its effect.
+          text: Anytime on their turn, but before drawing any cards in their Evening, an enemy player with faction pieces in a clearing with a facedown plot token may show the Corvids a matching card to guess the type of plot token in that clearing. If incorrect, the Corvids say "no," and the enemy player gives that card to the Corvids. If correct, the enemy player removes the plot token _(scoring a victory point)_ and ignores its effect.
 
         - name: Embedded Agents.
           text: As defender in battle, if the Corvids have a facedown plot token _(even defenseless)_ in the clearing of battle, they deal an extra hit.
@@ -945,27 +947,319 @@
         - name: Snare.
           text: While a snare token is face up, enemy pieces cannot be placed in or moved from its clearing.
         - name: Extortion.
-          text: Whenever an extortion token is flipped, take a random card from each player with at least one piece in its clearing. While an extortion token is face up, you draw another card in Evening.
+          text: Whenever an extortion token is flipped, take a random card from each enemy player faction pieces in its clearing. While an extortion token is face up, you draw another card in Evening.
         - name: Raid.
           text: Whenever a raid token is removed _(face up or down)_, place one warrior in each clearing adjacent to the clearing from which the raid was removed. _(Ignore this effect if the raid is removed by Exposure.)_
 
-- name: Variants & Vagabonds
+- name: Lord of the Hundreds
+  color: "#e11b3f"
+  icon: corvid
+  children:
+    - name: Overview
+      pretext: The Lord of the Hundreds suffers no fools and allows no dissent. During their Evening, they score points based on how well they **oppress** their foes. The more clearings they rule that have a Hundreds piece and no enemy pieces—no warriors, no buildings, nothing—the more points they score. To grow in power and attract warriors, the Hundreds must gain items and add them to their towering **Hoard**. Leading the Hundreds is the **warlord**, a warrior-demagogue whose fickle **mood** gives them an ability for the turn. Their warlord is obsessed with hoarding, so as the Hundreds gain more items, they will have fewer moods to choose from. Declaring themselves as the true voice of the Woodland, the Hundreds can incite **mobs**, which destroy enemy buildings and tokens, and raid ruins for items.
+
+    - name: Faction Rules and Abilities
+      children:
+        - name: Crafting.
+          text: The Hundreds craft during Daylight by activating strongholds.
+
+        - name: The Warlord.
+          text: The Hundreds have a piece called the warlord. The warlord is a warrior that cannot be removed outside of battle, moved outside of the Hundreds' turn, or placed in any way except with the Anoint action (`rule:15.4.3`).
+
+        - name: Contempt for Trade.
+          text: Whenever the Hundreds craft an item, they may take the item but score none of the listed victory points, or may remove the item permanently to score the listed victory points. _(They can still score extra crafting points from effects such as Master Engravers and the Legendary Forge.)_
+
+        - name: The Hoard.
+          text: Instead of a Crafted Items box, the Hundreds have the Hoard box. This has two tracks, Command and Prowess. The Command track can hold `item:boot`, `item:sack`, and `item:coin`. The Prowess track can hold `item:hammer`, `item:tea`, `item:sword`, and `item:crossbow`. 
+          subchildren:
+            - name: Gaining Items.
+              text: When the Hundreds gain an item, they put it in the leftmost empty Command or Prowess space based on the item type; if there is no such empty space, they must permanently remove the gained item or any item on that track, and they score one victory point.
+
+            - name: Command and Prowess.
+              text: The number of items on the Command and Prowess tracks determine their Command and Prowess, which affect various parts of their rules. With no items, they have 1 Command or Prowess; with one or two items, they have 2; with three items, they have 3; with four items, they have 4.
+
+        - name: Looters.
+          text: At the start of battle as the attacker, the Hundreds may declare that they want to loot the defender, so long as the defender has an item in their Crafted Items box. _(They cannot loot the Vagabond.)_ If they declare that they want to loot, the Hundreds deal no rolled hits. _(The defender deals rolled hits, and the Hundreds can still deal extra hits, such as from their Wrathful mood.)_ Then, at the end of that battle, if the Hundreds rule the clearing of battle, they take one item from the defender's Crafted Items box.
+
+    - name: Faction Setup
+      children:
+        - name: "Step 1: Garrison"
+          text:  Place your warlord, four warriors, and one stronghold in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing.
+
+        - name: "Step 2: Place Items"
+          text: Place the four "R" items randomly under the ruins, unless this has already been done.
+
+        - name: "Step 3: Get Stubborn"
+          text: Place your Stubborn mood card on your Mood Card slot.
+          
+    - name: Birdsong
+      pretext: Your Birdsong has four steps in the following order.
+      children:
+        - name: Raze.
+          text: In each clearing with a mob token, remove all enemy buildings and tokens, take one item from the ruin in the clearing, if any, and remove the ruin if you took its last item. After resolving all mobs, you must roll the mob die once and place a mob token in a matching clearing that has no mob token but is adjacent to a clearing with a mob token. _(If there are no such clearings, do not place a mob.)_
+
+        - name: Recruit.
+          text: Place warriors equal in number to your Prowess into the clearing with your warlord. Then, place warriors in each clearing with any strongholds, one warrior per stronghold there.
+
+        - name: Anoint.
+          text: If the warlord is not on the map, you must replace any Hundreds warrior with the warlord. If you cannot, you must place the warlord in any clearing.
+
+        - name: Choose Mood.
+          text:  You must replace the mood card in your Mood Card slot with a different mood card that does not show an item that is in your Hoard. If you are Lavish and cannot choose a new mood card, you remain Lavish.
+
+    - name: Daylight
+      pretext: Your Daylight has three steps in the following order.
+      children:
+        - name: Craft.
+          text: You may activate strongholds to craft cards.
+
+        - name: Command the Hundreds.
+          text: You may take the following actions, in any order, a number of times up to your Command.
+          subchildren:
+            - name: Move
+              text: Take a move.
+            - name: Battle.
+              text: Initiate a battle.
+            - name: Build.
+              text: Spend a card to place a stronghold in a matching clearing that you rule.
+
+        - name: Advance the Warlord.
+          text: You may take this action a number of times up to your Prowess. You may move the warlord with any Hundreds warriors, and then you may battle in the warlord's clearing.
+
+    - name: Evening
+      pretext: Your Evening has three steps in the following order.
+      children:
+        - name: Incite.
+          text: Any number of times, you may spend a card to place a mob token in a matching clearing that has no mob token but does have a Hundreds warrior _(including your warlord)_.
+        
+        - name: Oppress.
+          text: You score victory points based on the number of clearings you rule that have a Hundreds piece and no enemy pieces. For one or two clearings, score one point; for three or four clearings, score two points; for five clearings, score three points; for six or more clearings, score four points.
+
+        - name: Draw and Discard.
+          text: Draw one card. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
+
+    - name: Moods
+      children:
+        - name: Bitter (`item:hammer`).
+          text: In battle in your warlord's clearing, before the roll you may remove any number of mob tokens from your warlord's clearing and any clearings adjacent to it. Place warriors in your warlord's clearing equal to the number of mob tokens you removed.
+
+        - name: Grandiose (`item:tea`).
+          text: This turn, perform your Advance the Warlord step (`rule:14.5.3`) and your Command the Hundreds step (`rule:14.5.2`) in reverse order. _(Advance the Warlord first, then Command the Hundreds.)_
+
+        - name: Jubilant (`item:boot`).
+          text: Whenever you take the Incite action in your warlord's clearing, after placing the mob token for the action, you may—up to four times—roll the mob die and place a mob token in a matching clearing that has no mob token but is adjacent to any clearing with a mob token.
+
+        - name: Lavish (No Item). 
+          text: At the end of your Birdsong, you may remove any number of items from your Hoard permanently. For each item you remove, place two warriors into your warlord's clearing. When you are done, shift items in your Hoard to fill its tracks from left to right.
+
+        - name: Relentless (`item:sack`).
+          text: Whenever you take the Advance the Warlord action and both move and battle, you may then either move your warlord with any Hundreds warriors or battle in your warlord's clearing.
+
+        - name: Rowdy (`item:coin`).
+          text: In Evening, draw one more card. If your warlord's clearing has three or more enemy pieces (even a combination of pieces from different enemies), draw two more cards instead.
+
+        - name: Stubborn (`item:crossbow`).
+          text: In battle in your warlord's clearing, you ignore the first hit you take. _(This does not combine with other abilities that let you ignore the first hit you take.)_
+
+        - name: Wrathful (`item:sword`).
+          text: As attacker in battle in your warlord's clearing, you deal an extra hit.
+
+- name: Keepers in Iron
+  color: "#8b8d90"
+  icon: corvid
+  children:
+    - name: Overview
+      text: The Keepers in Iron are an order of devout knights, once exiled from the Woodland, who have returned to recover **relics** lost in past conflicts. Whether these relics belong to the Keepers or the Woodland, though, is another question. To accomplish their mission, they will need to delve relics out of the forests, move them to a **waystation** of the same type, and then recover them. When they recover a relic, they score points equal to the relic's value of one to three, and they also score two points each time they complete a set of the three relic types—figures, tablets, and jewelry. Over time, the Keepers will gather a **Retinue** of Woodland creatures, letting them take more actions. However, each time they delve a relic or recover one, they might lose the Retinue card they used to act, so they will need to plan ahead and take prudent risks in order to succeed.
+
+    - name: Faction Rules and Abilities
+      children:
+        - name: Relics.
+          text: You seek out twelve relic tokens of three types—figures, tablets, and jewelry. Each relic type has four tokens in total. The relic front shows only its type, and the relic back shows a value of 1, 2, 3, or 3.
+
+        - name: Waystations.
+          text: You have three waystations. Each waystation shows one relic type on its front and another relic type on its back.
+
+        - name: Crafting.
+          text: The Keepers craft during Daylight by activating waystations _(of any type)_.
+
+        - name: Devout Knights.
+          text: In battle, if the clearing of battle has at least one relic and at least one Keeper warrior, the Keepers ignore the first hit they take. _(If ambushed, ignore one hit from the ambush, but do not ignore further hits.)_ When moving, the Keepers may move one relic with each Keeper warrior that they move. _(If forced to move, the Keepers player may also move relics.)_
+
+        - name: Prized Trophies.
+          text: Whenever an enemy removes a relic, they place it in any forest face up and score an extra victory point _(for a total of two)_.
+
+    - name: Faction Setup
+      children:
+        - name: "Step 1: Place Starting Relics"
+          text: "Collect all twelve relic tokens and shuffle them face down _(without the value showing)_. Place one randomly in each forest. _(We recommend that you just slide the relics around face down, then place relics as fast as possible as a group. Otherwise, you can use this more random but fiddly method: the Keepers stack the randomized relics, then any other player cuts the stack, picks it up, and drops relics one by one from the bottom onto the forests.)_"
+          
+        - name: "Step 2: Place Warriors"
+          text: Place four warriors in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing. Then, place four warriors in a clearing on the map edge that is adjacent to the chosen clearing.
+
+        - name: "Step 3: Place Remaining Relics"
+          text: Place all remaining relics randomly, as evenly as possible, among forests not adjacent to clearings with your warriors.
+
+        - name: "Step 4: Tuck Faithful Retainers"
+          text: Tuck one Faithful Retainer card into each Retinue slot of your faction board.
+
+        - name: "Step 5: Collect Waystations"
+          text: Place your three waystation buildings on the matching Waystations spaces of your faction board.
+
+    
+    - name: Birdsong
+      text: Your Birdsong has three steps in the following order.
+      children:
+        - name: Encamp.
+          text: Once per clearing, you may replace a Keeper warrior with a waystation. If you have no warriors or waystations on the map, instead place one waystation and one warrior in any clearing on the map edge. In either case, you may place the waystation face up or face down.
+
+        - name: Decamp.
+          text: Once per clearing, you may replace a waystation with a Keeper warrior.
+
+        - name: Recruit.
+          text: Any number of times, you may spend a card to place two warriors at a matching waystation.
+
+    - name: Daylight
+      text: Your Daylight has two steps in the following order.
+      children:
+        - name: Craft.
+          text: You may activate waystations _(of any type)_ to craft cards.
+
+        - name: Act with Retinue.
+          text: Starting with the leftmost column of your Retinue and moving to the right, you may take the column's action, as follows, for each card in the column in any order.
+          subchildren:
+            - name: Move.
+              text: Take a move from a clearing whose suit matches the card suit.
+
+            - name: Battle then Delve.
+              text: Choose a clearing you rule whose suit matches the card suit and that has at least one Keeper warrior. You must initiate a battle there if any enemy pieces are there. Then, you may delve there as follows _(even if there was no enemy to battle)_.
+              subchildren:
+                - name: "Step 1: Move and Flip Relic."
+                  text: Move any relic from an adjacent forest into that clearing. Flip that relic so its value is showing if it is not
+
+                - name: "Step 2: Check for Discard."
+                  text: Count the number of clearings you rule adjacent to the forest from which you delved the relic. If you rule fewer of these clearings than the relic's value, then you must discard the Retinue card used to take this action.
+
+            - name: Move or Recover.
+              text: Choose a clearing whose suit matches the card suit. Take a move from it, or recover relics from it as follows. 
+              subchildren:
+                - name: "Step 1: Take Relic."
+                  text: Take a relic there of the same type as a waystation there. Place it in your leftmost empty Relics space of that relic type.
+
+                - name: "Step 2: Score Points."
+                  text: Score victory points equal to the relic's value, and score two victory points if you filled a Relics column.
+
+                - name: "Step 3: Check for Discard."
+                  text: Count the number of clearings you rule whose suit matches the clearing from which you are recovering the relic. If you rule fewer of these clearings than the relic's value, then you must end this Recover action and discard the Retinue card used to take this action. Otherwise, you may return to the Take Relic step or end this Recover action.
+
+    - name: Evening
+      text: Your Evening has three steps in the following order.
+      children:
+        - name: Live Off the Land.
+          text: You must remove one Keeper warrior from each clearing that has four or more Keeper warriors.
+
+        - name: Gather Retinue.
+          text: You may add any number of cards from your hand to any Retinue slots, or you may shift one card in your Retinue to a different slot. Your Retinue cannot hold more than ten cards.
+
+        - name: Draw and Discard.
+          text: Draw one card, plus one card per uncovered draw bonus _(equal to waystations on the map)_. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
+      
+
+- name: Variants, Vagabonds and Hirelings
   color: "#000000"
   children:
-    - name: Maps
+    - name: Advanced Setup
+      children:
+        - name: "Step 1: Choose and Set Up Map"
+          text: As a group, choose a map. If you choose a variant map, follow its Setup Modification section, then collect the 12 suit markers, flip them face down, and shuffle them, then place one on each clearing, covering the printed suit symbols if any. Set up the ruins (`rule:5.1.4`), item supply (`rule:5.1.5`), and dice (`rule:5.1.6`) as normal.
+
+        - name: "Step 2: Choose Deck"
+          text: As a group, you may choose to replace the entire standard deck with the Exiles and Partisans deck.
+
+        - name: "Step 3: Set Up Bots"
+          text: As a group, you may choose to play with bots, as described in the Law of Rootbotics.
+
+        - name: "Step 4: Seat Players"
+          text: Determine the seating order and the first player randomly.
+
+        - name: "Step 5: Set Up Landmarks"
+          text: As a group, you may choose to use landmarks. If so, you may ignore or override the placement of the Tower and Ferry pieces described in Variant Maps.
+          subchildren:
+            - name: "Step 1: Choose."
+              text: As a group, choose if you're playing with one or two landmarks, and remove any landmark cards you do not want to play with.
+            
+            - name: "Step 2: Deal and Collect."
+              text: Shuffle the chosen landmark cards, deal out the chosen number, and collect the landmark piece shown on each dealt card.
+
+            - name: "Step 3: Set Up."
+              text: The last player in turn order sets up one drawn landmark as described on its card. If you chose to play with two landmarks, the second-to-last player in turn order sets up the other drawn landmark as described on its card.
+
+        - name: "Step 6: Set Up Hirelings"
+          text: As a group, you may choose to use exactly three hirelings, as follows.
+          subchildren:
+            - name: "Step 1: Collect Pieces."
+              text: Shuffle all the hirelings cards. Deal out three hireling cards and return the rest to the box. Collect the pieces for the dealt hireling cards into a supply.
+            
+            - name: "Step 2: Demote."
+              text: If playing with three players, flip over one random hireling to its Demoted side _(marked with a "D")_. If playing with four players, flip over two random hirelings to their Demoted side. If playing with five or more players, flip over all three hirelings to their Demoted side.
+            
+            - name: "Step 3: Set Up Hirelings."
+              text: Starting with the last player in turn order and going counterclockwise, players set up one dealt hireling each as described on its hireling card. _(Some have no setup instructions.)_
+            
+            - name: "Step 4: Place Hireling Markers."
+              text: Place the three hireling markers—marked "4," "8," and "12"—on the "4," "8," and "12" spaces of the score track on the map.
+            
+            - name: "Step 5: Return Corresponding Factions."
+              text: A faction cannot be played if its corresponding hireling is in play _(shown by color and icon)_. Return the corresponding faction boards, pieces, and setup cards to the box.
+
+        - name: "Step 7: Draw Five Cards"
+          text: If you are playing with two players, remove all four dominance cards from the deck. Shuffle the deck. Each player draws five cards. _(Not three, as in Standard Setup! You will choose three cards to keep in step 10.)_
+
+        - name: "Step 8: Set Up Factions"
+          text: As a group, you may choose and set up factions as described in the Standard Setup (`rule:5.1`) or you may use the faction setup cards included in the Marauder Expansion, as described below.
+          subchildren:
+            - name: "Step 1: Deal Setup Cards."
+              text: Shuffle all of the militant faction setup cards _(red name with sword)_ and deal out one card to a pool in the center of the table. Shuffle the remaining militant faction setup cards together with all of the insurgent faction setup cards _(grey name with no sword)_, and deal out one faction setup card per player. _(There will be one more faction setup card than the number of players.)_
+              subchildren:
+                - name: Two Players.
+                  text: If you're playing with two players, remove all of the insurgent faction setup cards before dealing out any. _(You may keep them if you're playing with hirelings and feeling adventurous.)_
+
+                - name: Lock Last Insurgent.
+                  text: If the last faction setup card dealt out is an insurgent, turn it sideways to show that it is locked. It cannot be chosen unless at least one militant faction has been chosen. 
+
+                - name: Vagabond.
+                  text: Whenever a Vagabond faction setup card is dealt out, also deal out one random character card next to it face up. If a player chooses this Vagabond as their faction, they must use this character card.
+
+            - name: "Step 2: Choose Factions."
+              text: Starting with the last player in turn order and going counterclockwise, each player chooses one faction setup card from the pool and sets up the faction immediately _(before another player chooses)_, as described on its faction setup card.
+              subchildren:
+                - name: Homelands.
+                  text: When setting up, players might choose one or more homeland clearings. Players cannot choose homelands that enemies have chosen as their homelands or where they cannot place all the pieces listed in setup. 
+
+                - name: Homeland Adjacency.
+                  text: Some factions will prompt you to choose homelands that are not adjacent to enemy homelands, or that have two or more clearings between it and enemy homelands. If you cannot fulfill a "two or more clearings between" requirement, you may choose a homeland that is not adjacent to enemy homelands. If you cannot fulfill a "not adjacent" requirement, you may choose a homeland that is adjacent to an enemy homeland. _(Basically, think of this as "Try to set up as far away as possible.")_
+
+
+        - name: "Step 9: Place Score Markers"
+          text: Each player places their faction’s score marker on the "0" space on the score track.
+
+        - name: "Step 10: Choose Starting Hands"
+          text: Each player chooses three cards in their hand to keep and puts the other two cards face down on the shared deck. When finished, shuffle the shared deck.
+ 
+
+    - name: Variant Maps
       children:
         - name: Winter Map
           subchildren:
             - name: Raging River.
-              text: The river divides forests as if each river section linking two clearings were a path.
+              text: The river divides forests _(as printed paths do)_.
 
         - name: Lake Map
           subchildren:
             - name: Setup Modifications.
-              text: Place the ferry piece in the corner clearing that is also a coastal clearing.
+              text: Place the Ferry piece in the corner clearing that is also a coastal clearing.
 
             - name: The Lake.
-              text: "**The Lake** is in the center of the map. The lake is treated as rivers linking each coastal clearing to each other coastal clearing."
+              text: "**The Lake** is in the center of the map. The lake is treated as rivers linking each coastal clearing to each other coastal clearing. The lake divides forests."
 
             - name: Coastal Clearings.
               text: Clearings touching the lake _(not separated by a forest)_ are **coastal clearings**.
@@ -974,20 +1268,20 @@
               text: Forests touching the lake are **coastal forests**. Each coastal forest is adjacent to its two neighboring coastal forests _(separated by one coastal clearing)_.
 
             - name: The Ferry.
-              text: Once per turn, a player taking a move from the coastal clearing with the ferry can move to another coastal clearing, moving the ferry as well. _(This follows the normal move rules.)_ After taking this move, that player draws one card. The ferry cannot be battled or removed.
+              text: Once per turn, a player taking a move from the coastal clearing with the Ferry can move to another coastal clearing, moving the Ferry as well. _(This follows the normal move rules.)_ After taking this move, that player draws one card. The Ferry cannot be battled or removed.
             
         - name: Mountain Map
           subchildren:
             - name: Setup Modifications.
-              text: Place the 6 closed path markers to cover the 6 paths of darker color with excavated ground. Place the tower piece in the central clearing showing two towers.
+              text: Place the 6 closed path markers to cover the 6 paths of darker color with excavated ground. Place the Tower piece in the central clearing showing two towers.
 
             - name: Closed Paths.
-              text: A path covered with a closed path marker is a **closed path**. Clearings linked by a closed path are not adjacent. Closed paths enclose and divide forests as if they were paths _(so the Vagabond can slip across it)_.
+              text: A path covered with a closed path marker is a **closed path**. Clearings linked by a closed path are not adjacent, and pieces _(such as Highway Bandits)_ cannot be placed on closed paths. Closed paths enclose and divide forests as if they were paths _(so the Vagabond can slip across it)_.
 
             - name: Removing Closed Paths.
-              text: Once per turn in their Daylight, a player can spend a card to remove a closed path marker from the game permanently and score one victory point. To remove it, that player must have at least one piece in either clearing linked by the closed path marker.
+              text: Once per turn in their Daylight, a player can spend a card to remove a closed path marker from the game permanently and score one victory point. To remove it, that player must have any faction pieces in either clearing linked by the closed path marker.
 
-            - name: The Pass.
+            - name: The Pass and Tower.
               text: The clearing marked with the tower piece is **the pass**. At the end of a player's Evening, if that player rules the Pass, that player scores one victory point.
 
             - name: Forests.
@@ -1033,7 +1327,7 @@
               text: Start with `item:boot`, `item:torch`, `item:sword`, `item:sword`.
 
             - name: "Special Action: Protector"
-              text: Immediately before dice are rolled in a battle, the defender may enlist the Arbiter in the clearing of battle. The Arbiter scores one victory point and adds all of his undamaged `item:sword` to the maximum rolled hits of the defender. The Arbiter cannot enlist himself.
+              text: Immediately before dice are rolled in a battle, the defender may enlist the Arbiter in the clearing of battle. The Arbiter scores one victory point and adds all of his undamaged `item:sword` to the maximum rolled hits of the defender. The Arbiter cannot enlist himself or be enlisted against himself.
 
         - name: Scoundrel
           subchildren:
@@ -1041,7 +1335,7 @@
               text: Start with `item:boot`, `item:boot`, `item:torch`, `item:crossbow`.
 
             - name: "Special Action: Scorched Earth"
-              text: Exhaust a `item:torch` and place it in your clearing. Remove all enemy pieces from that clearing. For the rest of the game, pieces cannot be placed in or moved into this clearing. _(You remain in this clearing. Once you move out, you cannot move back in.)_
+              text: Exhaust a `item:torch` and place it in your clearing. Remove all enemy pieces from that clearing. Pieces cannot be placed in or moved into the clearing with the `item:torch`. _(You remain in this clearing. Once you move out, you cannot move back in. The `item:torch` cannot be removed with a "Favor of the..." card because it is not an enemy piece.)_
 
         - name: Adventurer
           subchildren:
@@ -1065,5 +1359,169 @@
               text: Start with `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
 
             - name: "Special Action: Glide"
-              text: Exhaust a `item:torch` to move to any clearing _(even Hostile)_ on the map without exhausting any `item:boot`.
+              text: Exhaust a `item:torch` to move only your Vagabond pawn _(not other pieces)_ to any clearing _(even Hostile)_ on the map without exhausting any `item:boot`.
     
+    - name: Hirelings
+      children:
+        - name: Gaining and Losing Hirelings
+          subchildren:
+            - name: Gaining from Supply.
+              text: When a player's score marker enters a space with a hireling marker, they take the hireling marker and place it below their Evening _(as a reminder)_. At the end of their turn, they take any hireling card from the supply, roll for control (`rule:1.2`), and flip over the hireling marker.
+
+            - name: Rolling for Control.
+              text: When a player gains a hireling card, they roll the control die and place control markers on the hireling card equal in number to the die roll. They count only the gold die pips if they have the most victory points or are tied for the most; they count all the die pips otherwise _(including if they have activated a dominance card)_.
+
+            - name: Gaining from Another Player.
+              text: At the end of a player's turn, they must remove one control marker from each hireling card they have. Then, they must give each hireling card they control that has no control markers, along with a hireling marker, to any other player _(even the player with the highest score)_. That player puts the hireling marker below their Evening _(as a reminder)_ and immediately rolls for control (`rule:1.2`).
+
+        - name: Abilities and Actions
+          text: Hirelings have various actions and abilities, as shown by unique icons. Actions and abilities that start with "**Controller**:" are gained by the hireling's controller.
+          subchildren:
+            - name: When-Hired Action (`hireling:whenhired`).
+              text: When they take control of the hireling, the controlling player must take this action.
+
+            - name: Ability (`hireling:ability`).
+              text: This ability is always active or it specifies when it happens.
+
+            - name: Start-of-Birdsong Action (`hireling:birdsong`).
+              text: At the start of their Birdsong, the controlling player must or may take this action, as the action describes.
+
+            - name: Once-Per-Daylight Action (`hireling:daylight`).
+              text: Once in their Daylight, the controlling player may take this action.
+
+        - name: Rules
+          subchildren:
+            - name: Rule.
+              text: A hireling's controller treats hireling pieces as their own only for rule. _(The controller can rule a clearing even with hirelings alone.)_ Uncontrolled hirelings can rule clearings as if they were players (`rule:2.5`).
+
+            - name: Enemy Status.
+              text: A hireling is an enemy to players other than its controller and players in coalition with its controller.
+
+            - name: Separate Pieces.
+              text: Hireling pieces are not the controller's faction pieces. _(So, the Duchy cannot count them as Duchy pieces to sway, the Keepers cannot remove them to encamp, etc.)_.
+
+            - name: Separate Actions.
+              text: A hireling's Move or Battle actions can only move or battle with the hireling's pieces and cannot include the controller's pieces. Hirelings cannot take actions in other ways _(such as from their controller's Move actions, False Orders, or the Vagabond's Allied Relationship)._ 
+
+            - name: Separate Effects.
+              text: Hirelings cannot use their controller's abilities, crafted persistent effects, or ambush cards. _(So, a hireling could not use Boat Builders while moving, and the Highway Bandits could not be placed on a river. A hireling's controller could not play an ambush card while battling with the hireling.)_
+
+            - name: No Scoring from Removal.
+              text: A hireling's controller does not score victory points if their hireling removes an enemy piece _(usually in battle)_. _(Players can still score points by removing hireling buildings and tokens, even when defending in battle against the hireling. Players still score as normal if the Warm Sun Prophets force that player's faction pieces to battle.)_
+
+            - name: Weird Stuff.
+              text: If you move a hireling with the Ferry, you do draw a card. If you move hireling warriors into a clearing with an Alliance sympathy token or remove Alliance sympathy by using a hireling, this does trigger Outrage. _(These effects refer to a "player moving" or "player removing.")_
+        
+    - name: Landmarks
+      children:
+        - name: General Rules
+          subchildren:
+            - name: Safety.
+              text: Landmarks cannot be battled, moved, or removed, unless noted explicitly by a landmark.
+
+            - name: Ownership.
+              text: Landmarks are not owned by any faction and are not enemy pieces.
+
+    - name: Glossary
+      children:
+        - name: Ability.
+          text: A persistent effect of a faction as listed at the top of its faction board and in its Faction Rules and Abilities section, or a persistent effect of a hireling as listed on its hireling card (`rule:16.4.2`).
+
+        - name: Adjacent.
+          text: A clearing is adjacent to all other clearings linked to it by a path. A forest is adjacent to all clearings that touch it without crossing a path, and it is adjacent to all forests that are separated by only one path, except on the lake (`rule:16.2.2`). `faction:duchy:12.2.2`
+
+        - name: Building.
+          text: A square cardboard piece owned by its faction.
+
+        - name: Cannot.
+          text: See `rule:1.1.2`.
+
+        - name: Discard.
+          text: Place the prompted card in the shared discard pile (`rule:2.1`). If it is a dominance card, place it near the map instead (`rule:3.3.3`). `faction:cult:10.4.2`
+
+        - name: Draw.
+          text: Take the top card from the shared deck (`rule:2.1`).
+
+        - name: Effect.
+          text: Anything that changes the game, including persistent effects, faction abilities, and actions.
+
+        - name: Enemy.
+          text: Any other player that you are not in a coalition with (`rule:9.2.8`), or a hireling that is in the supply or held by an enemy player.
+
+        - name: Enemy Piece.
+          text: A faction piece of an enemy player or a hireling piece of an enemy hireling, except while you're treating the piece as your own for rule _(Riverfolk mercenaries, controlled hirelings, etc.)_. _(Items cannot be enemy pieces.)_
+
+        - name: Faction Piece.
+          text: All the warriors, pawns, buildings, and tokens listed on the back of a faction board. _(Items are not faction pieces.)_ See `rule:1.5.3`.
+
+        - name: Forest.
+          text: An area on the map enclosed by paths and clearings.
+
+        - name: Force.
+          text: See `rule:1.1.5`.
+
+        - name: Item.
+          text: A square cardboard piece showing an item (`item:boot`, `item:sword`, `item:crossbow`, etc.) that is not owned by any faction.
+
+        - name: Map.
+          text: See `rule:2.2`.
+
+        - name: Map Edge.
+          text: The single closed loop of clearings and paths that define the map boundary, including closed paths on the mountain map.
+
+        - name: Path.
+          text: A white link between two clearings.
+
+        - name: Pawn.
+          text: A wooden figure owned by its faction.
+
+        - name: Piece.
+          text: Any component—building, token, warrior, pawn, item, marker, and so on.
+
+        - name: Place.
+          text: Take the prompted piece from the prompted source and put it in the prompted destination. Usually, no source is specified—in this case, take it from its supply, or take the leftmost prompted piece if it is on a track. 
+
+        - name: Play Area. 
+          text: The area around your faction board. Cards in it can only be spent, discarded, or used for other purposes if explicitly instructed.
+
+        - name: Replace.
+          text: Shorthand for **remove** then **place**. Remove the prompted piece and place the other prompted piece in location from which the first was removed. You must complete all steps of the **replace** in order to do it.
+
+        - name: Remove.
+          text: Take the prompted piece from the prompted source and return it to the prompted destination. Usually, no destination is specified— in this case, return it to its owner's supply, return it to the rightmost empty space of its track it has one, or remove it permanently otherwise. _(Items are removed permanently.)_
+
+        - name: Reveal.
+          text: Place the prompted card face up in your play area. Usually, no source is specified—in this case, take it from your hand.
+
+        - name: River.
+          text: A blue link between two clearings.
+
+        - name: Ruin.
+          text: Piece covering an "R" slot in a clearing (`rule:2.2.4`).
+
+        - name: Rule.
+          text: See `rule:2.5`.
+
+        - name: Show.
+          text: Let the prompted player see the prompted piece.
+
+        - name: Slot.
+          text: White box in a clearing (`rule:2.3.3`).
+
+        - name: Spend.
+          text: See **Discard** (`rule:16.6.5`). _(These terms are equivalent, but spend is used in contexts with choice.)_
+
+        - name: Supply.
+          text: The collection of pieces that is not on a faction board or the map. The item supply is the collection of items on the map.
+
+        - name: Swap.
+          text: Switch the locations of the two prompted pieces. _(This ignores move and place restrictions, such as the Corvids' snare and the Marquise's keep.)_
+
+        - name: Token.
+          text: A circular cardboard piece owned by its faction.
+
+        - name: Treat.
+          text: The prompted thing takes on the properties of the second prompted thing. While you treat enemy pieces as your own for rule, they are not enemy pieces, but they are still faction pieces of that enemy player. _(For example, Riverfolk warriors you've hired as mercenaries are not enemy pieces to you, but they are still Riverfolk faction pieces.)_
+
+        - name: Warrior.
+          text: A wooden figure owned by its faction. _(The Vagabond pawn is not a warrior and cannot be removed.)_

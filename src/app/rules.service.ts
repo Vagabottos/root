@@ -77,22 +77,22 @@ export class RulesService {
             chosenNode = allRules[(+major) - 1];
           }
 
-          if (minor && chosenNode) {
+          if (minor && chosenNode && chosenNode.children) {
             chosenString += `.${minor}`;
             chosenNode = chosenNode.children[(+minor) - 1];
           }
 
-          if (child && chosenNode) {
+          if (child && chosenNode && chosenNode.children) {
             chosenString += `.${child}`;
             chosenNode = chosenNode.children[(+child) - 1];
           }
 
-          if (desc && chosenNode) {
+          if (desc && chosenNode && chosenNode.subchildren) {
             chosenString += `.${toRoman(desc)}`;
             chosenNode = chosenNode.subchildren[(+desc) - 1];
           }
 
-          if (descDesc && chosenNode) {
+          if (descDesc && chosenNode && chosenNode.subchildren) {
             chosenString += `${String.fromCharCode((+descDesc) + 96)}`;
             chosenNode = chosenNode.subchildren[(+descDesc) - 1];
           }

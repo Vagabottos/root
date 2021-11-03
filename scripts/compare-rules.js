@@ -19,10 +19,10 @@ const x = xray({
 const getLivingRules = async () => {
   let res = await x('http://root.livingrules.io', '#body-container ol');
 
-  const replacers = ["’"];
+  const replacers = ["'"];
   replacers.forEach(rep => res = res.split(rep).join("'"));
 
-  const replacersD = ['"', '“', '”', '”', '“'];
+  const replacersD = ['"', '"', '"', '"', '"'];
   replacersD.forEach(rep => res = res.split(rep).join('"'));
 
   const ignoreStrings = [

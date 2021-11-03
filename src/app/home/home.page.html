@@ -52,13 +52,15 @@
         [style.border-color]="rule.color"
         [class.ion-hide]="!isVisible([majorIndex + 1])">
 
-    <!-- no text or pretext at this level -->
+    <!-- no text at this level -->
 
     <div class="rule major" [id]="rulesService.indexesToRules[rule.index]">
       <span class="index major">{{ rule.index }}</span> 
       <a [innerHTML]="rule.formattedName | highlight:searchTerm:rule.index"
          [href]="'#' + rulesService.indexesToRules[rule.index]"></a>
     </div>
+
+    <div class="pretext" [innerHTML]="rule.pretext | highlight:searchTerm:rule.index"></div>
 
     <div *ngFor="let childRule of rule.children; let minorIndex = index" 
           class="rule-container minor"
