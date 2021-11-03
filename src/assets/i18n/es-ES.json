@@ -8,7 +8,10 @@
       "Search": "Buscar reglas",
       "FAQ": "Preguntas Frecuentes",
       "Reach": "Calculadora de Alcance y Selección de Facciones",
-      "Map": "Generador de Mapa"
+      "Map": "Generador de Mapa",
+      "Random": "Random Setup",
+      "DraftPlusOne": "+1 Draft",
+      "AdSet": "Advanced Setup"
     }
   },
   "Modal": {
@@ -84,6 +87,7 @@
         "Random1": "Random (1)",
         "Random2": "Random (2)",
         "Generate": "Generate",
+        "None": "None",
         "Waiting": "Waiting for random generation...",
         "Players": "Players",
         "Choices": {

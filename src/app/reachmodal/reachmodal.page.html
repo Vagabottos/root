@@ -8,6 +8,7 @@
       <ion-button color="primary" 
                   [fill]="mode === button.mode ? 'outline' : 'clear'" 
                   *ngFor="let button of modeButtons"
+                  [title]="'App.Titles.' + button.setup | translate"
                   (click)="mode = button.mode">
         <ion-icon slot="icon-only" [name]="button.icon"></ion-icon>
       </ion-button>
@@ -291,7 +292,8 @@
             <ion-col size="6">
               <ion-list>
                 <ion-item>
-                  <ion-select multiple="true" [(ngModel)]="adsetSettings.landmarks" [interfaceOptions]="{ header: 'Choose Landmarks' }" placeholder="Choose your landmarks..." (ionChange)="validateADSETLandmarkChoices()">
+                  <ion-select multiple="true" [(ngModel)]="adsetSettings.landmarks" [interfaceOptions]="{ header: 'Choose Landmarks', subHeader: 'Choose up to 2.' }" placeholder="Choose your landmarks..." (ionChange)="validateADSETLandmarkChoices()">
+                    <ion-select-option value="none">None</ion-select-option>
                     <ion-select-option value="random: 2">{{ 'Modal.Reach.Adset.Random2' | translate }}</ion-select-option>
                     <ion-select-option value="random: 1">{{ 'Modal.Reach.Adset.Random1' | translate }}</ion-select-option>
                     <ion-select-option *ngFor="let landmark of landmarks" [value]="landmark">
@@ -308,7 +310,11 @@
               </div>
 
               <div class="final" *ngIf="adsetGenerated.landmarks.length > 0">
-                <div *ngFor="let landmark of adsetGenerated.landmarks">
+                <div *ngIf="adsetGenerated.landmarks.includes('none')">
+                  {{ 'Modal.Reach.Adset.None' | translate }}
+                </div>
+
+                <div *ngFor="let landmark of adsetGenerated.landmarks" [class.hidden]="landmark === 'none'">
                   {{ 'Modal.Reach.Adset.Landmarks.' + landmark | translate }}
                 </div>
               </div>
@@ -326,7 +332,9 @@
             <ion-col size="6">
               <ion-list>
                 <ion-item>
-                  <ion-select multiple="true" [(ngModel)]="adsetSettings.validHirelings" [interfaceOptions]="{ header: 'Choose Hirelings' }" placeholder="Choose your hirelings..." (ionChange)="validateADSETHirelingChoices()">
+                  <ion-select multiple="true" [(ngModel)]="adsetSettings.validHirelings" [interfaceOptions]="{ header: 'Choose Hirelings', subHeader: 'Choose at least 3.' }" placeholder="Choose your hirelings..." (ionChange)="validateADSETHirelingChoices()">
+                    <ion-select-option value="none">None</ion-select-option>
+
                     <ion-select-option *ngFor="let hireling of formattedHirelings" [value]="hireling">
                       {{ hireling }}
                     </ion-select-option>
@@ -341,7 +349,12 @@
               </div>
 
               <div class="final" *ngIf="adsetGenerated.hirelings.length > 0">
-                <div *ngFor="let hireling of adsetGenerated.hirelings">
+
+                <div *ngIf="adsetGenerated.hirelings.includes('none')">
+                  {{ 'Modal.Reach.Adset.None' | translate }}
+                </div>
+
+                <div *ngFor="let hireling of adsetGenerated.hirelings" [class.hidden]="hireling === 'none'">
                   {{ 'Modal.Reach.Adset.Hirelings.' + hireling | translate }}
                 </div>
               </div>

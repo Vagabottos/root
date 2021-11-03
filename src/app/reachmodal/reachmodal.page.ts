@@ -20,10 +20,10 @@ type RandomMode = 'random' | 'draft+1' | 'adset';
 export class ReachModalPage implements OnInit {
 
   public mode: RandomMode = 'adset';
-  public readonly modeButtons: Array<{ mode: RandomMode, icon: string }> = [
-    { mode: 'random',  icon: 'sync-outline' },
-    { mode: 'draft+1', icon: 'person-add' },
-    { mode: 'adset',   icon: 'options' }
+  public readonly modeButtons: Array<{ mode: RandomMode, setup: string, icon: string }> = [
+    { mode: 'random',  setup: 'Random',       icon: 'sync-outline' },
+    { mode: 'draft+1', setup: 'DraftPlusOne', icon: 'person-add' },
+    { mode: 'adset',   setup: 'AdSet',        icon: 'options' }
   ];
 
   public playerCount = 4;
@@ -301,6 +301,11 @@ export class ReachModalPage implements OnInit {
 
   validateADSETLandmarkChoices() {
     setTimeout(() => {
+      if(this.adsetSettings.landmarks.includes('none')) {
+        this.adsetSettings.landmarks = ['none'];
+        return;
+      }
+
       if (this.adsetSettings.landmarks.includes('random: 2')) {
         this.adsetSettings.landmarks = ['random: 2'];
       }
@@ -321,6 +326,12 @@ export class ReachModalPage implements OnInit {
 
   validateADSETHirelingChoices() {
     setTimeout(() => {
+
+      if(this.adsetSettings.validHirelings.includes('none')) {
+        this.adsetSettings.validHirelings = ['none'];
+        return;
+      }
+
       if (this.adsetSettings.validHirelings.length < 3) {
         this.adsetSettings.validHirelings = this.reachValues.map(x => x.name).sort();
       }
@@ -344,16 +355,23 @@ export class ReachModalPage implements OnInit {
       this.adsetGenerated.landmarks = shuffle(this.landmarks).slice(0, 2);
     } else if (this.adsetSettings.landmarks.includes('random: 1')) {
       this.adsetGenerated.landmarks = shuffle(this.landmarks).slice(0, 1);
+    } else if(this.adsetSettings.landmarks.includes('none')) {
+      this.adsetGenerated.landmarks = ['none'];
     } else {
       this.adsetGenerated.landmarks = this.adsetSettings.landmarks;
     }
 
     const numPlayers = this.adsetSettings.playerCount;
-    const validHirelings = shuffle(this.adsetSettings.validHirelings).slice(0, 3);
 
-    this.adsetGenerated.hirelings[0] = validHirelings[0].split('/')[numPlayers >= 3 ? 1 : 0].trim();
-    this.adsetGenerated.hirelings[1] = validHirelings[1].split('/')[numPlayers >= 4 ? 1 : 0].trim();
-    this.adsetGenerated.hirelings[2] = validHirelings[2].split('/')[numPlayers >= 5 ? 1 : 0].trim();
+    if(!this.adsetSettings.validHirelings.includes('none')) {
+      const validHirelings = shuffle(this.adsetSettings.validHirelings).slice(0, 3);
+  
+      this.adsetGenerated.hirelings[0] = validHirelings[0].split('/')[numPlayers >= 3 ? 1 : 0].trim();
+      this.adsetGenerated.hirelings[1] = validHirelings[1].split('/')[numPlayers >= 4 ? 1 : 0].trim();
+      this.adsetGenerated.hirelings[2] = validHirelings[2].split('/')[numPlayers >= 5 ? 1 : 0].trim();
+    } else {
+      this.adsetGenerated.hirelings = ['none'];
+    }
 
     const ignoreFactions = {};
     this.adsetGenerated.hirelings.forEach(h => {
@@ -366,7 +384,11 @@ export class ReachModalPage implements OnInit {
     });
 
     const allFactions = JSON.parse(JSON.stringify(this.reachValues));
-    const validFactions = shuffle(allFactions).filter(x => !ignoreFactions[x.name]);
+    let validFactions = shuffle(allFactions).filter(x => !ignoreFactions[x.name]);
+    if(numPlayers === 2) {
+      validFactions = validFactions.filter(x => x.red);
+    }
+
     const firstFaction = shuffle(validFactions).filter(x => x.red)[0];
     const chosenFactions = [firstFaction].concat(shuffle(validFactions).filter(x => x !== firstFaction).slice(0, numPlayers));
     const potentialFinalFactions = validFactions.filter(x => !chosenFactions.find(f => f.name === x.name));

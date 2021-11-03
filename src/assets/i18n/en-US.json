@@ -7,8 +7,11 @@
     "Titles": {
       "Search": "Search Rules",
       "FAQ": "Frequently Asked Questions",
-      "Reach": "Reach Calculator and +1 Draft Tool",
-      "Map": "Map Generator"
+      "Reach": "Setup Selection Tool",
+      "Map": "Map Generator",
+      "Random": "Random Setup",
+      "DraftPlusOne": "+1 Draft",
+      "AdSet": "Advanced Setup"
     }
   },
   "Modal": {
@@ -84,6 +87,7 @@
         "Random1": "Random (1)",
         "Random2": "Random (2)",
         "Generate": "Generate",
+        "None": "None",
         "Waiting": "Waiting for random generation...",
         "Players": "Players",
         "Choices": {
