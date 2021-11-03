@@ -953,7 +953,7 @@
 
 - name: Lord of the Hundreds
   color: "#e11b3f"
-  icon: corvid
+  icon: warlord
   children:
     - name: Overview
       pretext: The Lord of the Hundreds suffers no fools and allows no dissent. During their Evening, they score points based on how well they **oppress** their foes. The more clearings they rule that have a Hundreds piece and no enemy pieces—no warriors, no buildings, nothing—the more points they score. To grow in power and attract warriors, the Hundreds must gain items and add them to their towering **Hoard**. Leading the Hundreds is the **warlord**, a warrior-demagogue whose fickle **mood** gives them an ability for the turn. Their warlord is obsessed with hoarding, so as the Hundreds gain more items, they will have fewer moods to choose from. Declaring themselves as the true voice of the Woodland, the Hundreds can incite **mobs**, which destroy enemy buildings and tokens, and raid ruins for items.
@@ -1066,7 +1066,7 @@
 
 - name: Keepers in Iron
   color: "#8b8d90"
-  icon: corvid
+  icon: keepers
   children:
     - name: Overview
       text: The Keepers in Iron are an order of devout knights, once exiled from the Woodland, who have returned to recover **relics** lost in past conflicts. Whether these relics belong to the Keepers or the Woodland, though, is another question. To accomplish their mission, they will need to delve relics out of the forests, move them to a **waystation** of the same type, and then recover them. When they recover a relic, they score points equal to the relic's value of one to three, and they also score two points each time they complete a set of the three relic types—figures, tablets, and jewelry. Over time, the Keepers will gather a **Retinue** of Woodland creatures, letting them take more actions. However, each time they delve a relic or recover one, they might lose the Retinue card they used to act, so they will need to plan ahead and take prudent risks in order to succeed.
