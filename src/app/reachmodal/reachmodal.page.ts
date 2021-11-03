@@ -37,18 +37,69 @@ export class ReachModalPage implements OnInit {
   public draftOrder = [ ];
 
   public readonly reachValues = [
-    { name: 'Marquise de Cat',      icon: 'marquise',   shortName: 'Marquise',    value: 10 },
-    { name: 'Lord of the Hundreds', icon: 'warlord',    shortName: 'Hundreds',    value: 9 },
-    { name: 'Keepers in Iron',      icon: 'keepers',    shortName: 'Keepers',     value: 8 },
-    { name: 'Underground Duchy',    icon: 'duchy',      shortName: 'Duchy',       value: 8 },
-    { name: 'Eyrie Dynasties',      icon: 'eyrie',      shortName: 'Eyrie',       value: 7 },
-    { name: 'Vagabond (#1)',        icon: 'vagabond1',  shortName: 'Vagabond #1', value: 5, disables: 'Vagabond (#2)' },
+    { name: 'Marquise de Cat',      icon: 'marquise',   shortName: 'Marquise',    value: 10, red: true },
+    { name: 'Lord of the Hundreds', icon: 'warlord',    shortName: 'Hundreds',    value: 9,  red: true },
+    { name: 'Keepers in Iron',      icon: 'keepers',    shortName: 'Keepers',     value: 8,  red: true },
+    { name: 'Underground Duchy',    icon: 'duchy',      shortName: 'Duchy',       value: 8,  red: true },
+    { name: 'Eyrie Dynasties',      icon: 'eyrie',      shortName: 'Eyrie',       value: 7,  red: true },
+    { name: 'Vagabond (#1)',        icon: 'vagabond1',  shortName: 'Vagabond #1', value: 5,  disables: 'Vagabond (#2)' },
     { name: 'Riverfolk Company',    icon: 'riverfolk',  shortName: 'Riverfolk',   value: 5 },
     { name: 'Woodland Alliance',    icon: 'woodland',   shortName: 'Woodland',    value: 3 },
     { name: 'Corvid Conspiracy',    icon: 'corvid',     shortName: 'Corvids',     value: 3 },
-    { name: 'Vagabond (#2)',        icon: 'vagabond2',  shortName: 'Vagabond #2', value: 2, requires: 'Vagabond (#1)' },
+    { name: 'Vagabond (#2)',        icon: 'vagabond2',  shortName: 'Vagabond #2', value: 2,  requires: 'Vagabond (#1)' },
     { name: 'Lizard Cult',          icon: 'cult',       shortName: 'Cult',        value: 2 },
   ];
+
+  public readonly vagabonds = [
+    'Arbiter',
+    'Ranger',
+    'Scoundrel',
+    'Thief',
+    'Tinker',
+    'Vagrant',
+    'Adventurer',
+    'Ronin',
+    'Harrier'
+  ];
+
+  public readonly mapNames = [
+    'fall',
+    'winter',
+    'lake',
+    'mountain'
+  ];
+
+  public readonly decks = [
+    'Standard',
+    'EP'
+  ];
+
+  public readonly landmarks = [
+    'ElderTreetop',
+    'LostCity',
+    'BlackMarket',
+    'LegendaryForge',
+    'TheFerry',
+    'TheTower'
+  ];
+
+  public readonly hirelings = [
+    { r: 'Spring Uprising',     d: 'Rabbit Scouts',     baseFaction: 'Woodland Alliance' },
+    { r: 'Forest Patrol',       d: 'Feline Physicians', baseFaction: 'Marquise de Cat' },
+    { r: 'Last Dynasty',        d: 'Bluebird Nobles',   baseFaction: 'Eyrie Dynasties' },
+    { r: 'The Outcast',         d: 'The Brigand',       baseFaction: 'Vagabond (#1)' },
+    { r: 'Woodland Band',       d: 'Traveling Band',    baseFaction: '',                pink: true },
+    { r: 'Furious Protector',   d: 'Stoic Protector',   baseFaction: '',                pink: true },
+    { r: 'Highway Bandits',     d: 'Bandit Guild',      baseFaction: '',                pink: true },
+    { r: 'Riverfolk Flotilla',  d: 'Otter Divers',      baseFaction: 'Riverfolk Company' },
+    { r: 'Warm Sun Prophets',   d: 'Lizard Envoys',     baseFaction: 'Lizard Cult' },
+    { r: 'Sunward Expedition',  d: 'Mole Artisans',     baseFaction: 'Underground Duchy' },
+    { r: 'Corvid Spies',        d: 'Raven Guards',      baseFaction: 'Corvid Conspiracy' },
+    { r: 'Flame Bearers',       d: 'Rat Ravagers',      baseFaction: 'Lord of the Hundreds' },
+    { r: 'Vault Keepers',       d: 'Badger Bodyguards', baseFaction: 'Keepers in Iron' },
+  ];
+
+  public readonly formattedHirelings = this.hirelings.map(h => `${h.r} (R) / ${h.d} (D)`);
 
   public readonly reachesForPlayer = {
     2: 17,
@@ -63,7 +114,7 @@ export class ReachModalPage implements OnInit {
     deck: 'random',
     playerCount: 4,
     landmarks: ['random: 2'],
-    validHirelings: this.reachValues.map(x => x.name)
+    validHirelings: this.formattedHirelings
   };
 
   public adsetGenerated = {
@@ -249,7 +300,107 @@ export class ReachModalPage implements OnInit {
   }
 
   validateADSETLandmarkChoices() {
+    setTimeout(() => {
+      if(this.adsetSettings.landmarks.includes('random: 2')) {
+        this.adsetSettings.landmarks = ['random: 2'];
+      }
+  
+      if(this.adsetSettings.landmarks.includes('random: 1')) {
+        this.adsetSettings.landmarks = ['random: 1'];
+      }
+  
+      if(this.adsetSettings.landmarks.length > 2) {
+        this.adsetSettings.landmarks = this.adsetSettings.landmarks.slice(0, 2);
+      }
+  
+      if(this.adsetSettings.landmarks.length === 0) {
+        this.adsetSettings.landmarks.push('random: 2');
+      }
+    }, 0);
+  }
 
+  validateADSETHirelingChoices() {
+    setTimeout(() => {
+      if(this.adsetSettings.validHirelings.length < 3) {
+        this.adsetSettings.validHirelings = this.reachValues.map(x => x.name).sort();
+      }
+    }, 0);
+  }
+
+  calculateForADSET() {
+    if(this.adsetSettings.deck === 'random') {
+      this.adsetGenerated.deck = shuffle(this.decks)[0];
+    } else {
+      this.adsetGenerated.deck = this.adsetSettings.deck;
+    }
+
+    if(this.adsetSettings.map === 'random') {
+      this.adsetGenerated.map = shuffle(this.mapNames)[0];
+    } else {
+      this.adsetGenerated.map = this.adsetSettings.map;
+    }
+
+    if(this.adsetSettings.landmarks.includes('random: 2')) {
+      this.adsetGenerated.landmarks = shuffle(this.landmarks).slice(0, 2);
+    } else if(this.adsetSettings.landmarks.includes('random: 1')) {
+      this.adsetGenerated.landmarks = shuffle(this.landmarks).slice(0, 1);
+    } else {
+      this.adsetGenerated.landmarks = this.adsetSettings.landmarks;
+    }
+
+    const numPlayers = this.adsetSettings.playerCount;
+    const validHirelings = shuffle(this.adsetSettings.validHirelings).slice(0, 3);
+    
+    this.adsetGenerated.hirelings[0] = validHirelings[0].split('/')[numPlayers >= 3 ? 1 : 0].trim();
+    this.adsetGenerated.hirelings[1] = validHirelings[1].split('/')[numPlayers >= 4 ? 1 : 0].trim();
+    this.adsetGenerated.hirelings[2] = validHirelings[2].split('/')[numPlayers >= 5 ? 1 : 0].trim();
+    
+    const ignoreFactions = {};
+    this.adsetGenerated.hirelings.forEach(h => {
+      const split = h.split('(')[0].trim();
+
+      const foundRef = this.hirelings.find(x => x.r === split || x.d === split);
+      if(foundRef) {
+        ignoreFactions[foundRef.baseFaction] = true;
+      }
+    });
+
+    const allFactions = JSON.parse(JSON.stringify(this.reachValues));
+    const validFactions = shuffle(allFactions).filter(x => !ignoreFactions[x.name]);
+    const firstFaction = shuffle(validFactions).filter(x => x.red)[0];
+    const chosenFactions = [firstFaction].concat(shuffle(validFactions).filter(x => x !== firstFaction).slice(0, numPlayers));
+    const potentialFinalFactions = validFactions.filter(x => !chosenFactions.find(f => f.name === x.name));
+
+    if(!chosenFactions[chosenFactions.length - 1].red) {
+      const hideFaction = chosenFactions[chosenFactions.length - 1];
+
+      chosenFactions[chosenFactions.length - 1] = shuffle(potentialFinalFactions)[0];
+      chosenFactions[chosenFactions.length - 1].hide = hideFaction.name;
+    }
+
+    const vagabonds = {};
+
+    chosenFactions.forEach(f => {
+      f.hide = f.hide || '';
+
+      if(!f.name.includes('(#') && !f.hide.includes('(#')) return;
+
+      const getVagabond = () => {
+        let chosenVagabond;
+  
+        do {
+          chosenVagabond = shuffle(this.vagabonds)[0];
+        } while(vagabonds[chosenVagabond]);
+  
+        vagabonds[chosenVagabond] = true;
+
+        return chosenVagabond;
+      };
+
+      f[f.hide.includes('(#') ? 'hide' : 'name'] = `Vagabond (${getVagabond()})`;
+    });
+
+    this.adsetGenerated.factions = chosenFactions;
   }
 
 }

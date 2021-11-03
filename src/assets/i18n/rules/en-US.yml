@@ -1452,7 +1452,7 @@
           text: A faction piece of an enemy player or a hireling piece of an enemy hireling, except while you're treating the piece as your own for rule _(Riverfolk mercenaries, controlled hirelings, etc.)_. _(Items cannot be enemy pieces.)_
 
         - name: Faction Piece.
-          text: All the warriors, pawns, buildings, and tokens listed on the back of a faction board. _(Items are not faction pieces.)_ See `rule:1.5.3`.
+          text: All the warriors, pawns, buildings, and tokens listed on the back of a faction board. _(Items are not faction pieces.)_ See `rule:1.5.2`.
 
         - name: Forest.
           text: An area on the map enclosed by paths and clearings.

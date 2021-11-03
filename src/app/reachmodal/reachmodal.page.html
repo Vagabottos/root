@@ -183,9 +183,18 @@
   <ng-container *ngIf="mode === 'adset'">
     <div class="centered ion-margin-top adset-settings">
 
-      <!-- Map Choice -->
       <ion-row class="choice-row">
         <ion-col size="12">
+          <ion-row>
+            <ion-col size="12" class="choice-header reminder">{{ 'Modal.Reach.Adset.Choices.RemindDrawFive' | translate }}</ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="choice-row">
+
+        <!-- Map Choice -->
+        <ion-col size-md="6" size-xs="12">
           <ion-row>
             <ion-col size="12" class="choice-header">{{ 'Modal.Reach.Adset.Choices.Map' | translate }}</ion-col>
           </ion-row>
@@ -196,10 +205,9 @@
                 <ion-item>
                   <ion-select [(ngModel)]="adsetSettings.map" [interfaceOptions]="{ header: 'Choose Map' }" placeholder="Choose your map...">
                     <ion-select-option value="random">{{ 'Modal.Reach.Adset.Random' | translate }}</ion-select-option>
-                    <ion-select-option value="fall">{{ 'Modal.Maps.MapNames.fall' | translate }}</ion-select-option>
-                    <ion-select-option value="winter">{{ 'Modal.Maps.MapNames.winter' | translate }}</ion-select-option>
-                    <ion-select-option value="lake">{{ 'Modal.Maps.MapNames.lake' | translate }}</ion-select-option>
-                    <ion-select-option value="mountain">{{ 'Modal.Maps.MapNames.mountain' | translate }}</ion-select-option>
+                    <ion-select-option *ngFor="let map of mapNames" [value]="map">
+                      {{ 'Modal.Maps.MapNames.' + map | translate }}
+                    </ion-select-option>
                   </ion-select>
                 </ion-item>
               </ion-list>
@@ -216,11 +224,9 @@
             </ion-col>
           </ion-row>
         </ion-col>
-      </ion-row>
 
-      <!-- Deck Choice -->
-      <ion-row class="choice-row">
-        <ion-col size="12">
+        <!-- Deck Choice -->
+        <ion-col size-md="6" size-xs="12">
           <ion-row>
             <ion-col size="12" class="choice-header">{{ 'Modal.Reach.Adset.Choices.Deck' | translate }}</ion-col>
           </ion-row>
@@ -231,8 +237,9 @@
                 <ion-item>
                   <ion-select [(ngModel)]="adsetSettings.deck" [interfaceOptions]="{ header: 'Choose Deck' }" placeholder="Choose your deck...">
                     <ion-select-option value="random">{{ 'Modal.Reach.Adset.Random' | translate }}</ion-select-option>
-                    <ion-select-option value="Standard">{{ 'Modal.Reach.Adset.Deck.Standard' | translate }}</ion-select-option>
-                    <ion-select-option value="EP">{{ 'Modal.Reach.Adset.Deck.EP' | translate }}</ion-select-option>
+                    <ion-select-option *ngFor="let deck of decks" [value]="deck">
+                      {{ 'Modal.Reach.Adset.Deck.' + deck | translate }}
+                    </ion-select-option>
                   </ion-select>
                 </ion-item>
               </ion-list>
@@ -249,11 +256,9 @@
             </ion-col>
           </ion-row>
         </ion-col>
-      </ion-row>
 
-      <!-- Player Count Choice -->
-      <ion-row class="choice-row">
-        <ion-col size="12">
+        <!-- Player Count Choice -->
+        <ion-col size-md="6" size-xs="12">
           <ion-row>
             <ion-col size="12" class="choice-header">{{ 'Modal.Reach.Adset.Choices.Players' | translate }}</ion-col>
           </ion-row>
@@ -275,11 +280,9 @@
             </ion-col>
           </ion-row>
         </ion-col>
-      </ion-row>
 
-      <!-- Landmarks Choice -->
-      <ion-row class="choice-row">
-        <ion-col size="12">
+        <!-- Landmarks Choice -->
+        <ion-col size-md="6" size-xs="12">
           <ion-row>
             <ion-col size="12" class="choice-header">{{ 'Modal.Reach.Adset.Choices.Landmarks' | translate }}</ion-col>
           </ion-row>
@@ -291,12 +294,9 @@
                   <ion-select multiple="true" [(ngModel)]="adsetSettings.landmarks" [interfaceOptions]="{ header: 'Choose Landmarks' }" placeholder="Choose your landmarks..." (ionChange)="validateADSETLandmarkChoices()">
                     <ion-select-option value="random: 2">{{ 'Modal.Reach.Adset.Random2' | translate }}</ion-select-option>
                     <ion-select-option value="random: 1">{{ 'Modal.Reach.Adset.Random1' | translate }}</ion-select-option>
-                    <ion-select-option value="ElderTreetop">{{ 'Modal.Reach.Adset.Landmarks.ElderTreetop' | translate }}</ion-select-option>
-                    <ion-select-option value="LostCity">{{ 'Modal.Reach.Adset.Landmarks.LostCity' | translate }}</ion-select-option>
-                    <ion-select-option value="BlackMarket">{{ 'Modal.Reach.Adset.Landmarks.BlackMarket' | translate }}</ion-select-option>
-                    <ion-select-option value="LegendaryForge">{{ 'Modal.Reach.Adset.Landmarks.LegendaryForge' | translate }}</ion-select-option>
-                    <ion-select-option value="TheFerry">{{ 'Modal.Reach.Adset.Landmarks.TheFerry' | translate }}</ion-select-option>
-                    <ion-select-option value="TheTower">{{ 'Modal.Reach.Adset.Landmarks.TheTower' | translate }}</ion-select-option>
+                    <ion-select-option *ngFor="let landmark of landmarks" [value]="landmark">
+                      {{ 'Modal.Reach.Adset.Landmarks.' + landmark | translate }}
+                    </ion-select-option>
                   </ion-select>
                 </ion-item>
               </ion-list>
@@ -308,18 +308,16 @@
               </div>
 
               <div class="final" *ngIf="adsetGenerated.landmarks.length > 0">
-                <span *ngFor="let landmark of adsetGenerated.landmarks" class="ion-margin-right">
+                <div *ngFor="let landmark of adsetGenerated.landmarks">
                   {{ 'Modal.Reach.Adset.Landmarks.' + landmark | translate }}
-                </span>
+                </div>
               </div>
             </ion-col>
           </ion-row>
         </ion-col>
-      </ion-row>
 
-      <!-- Hirelings Choice -->
-      <ion-row class="choice-row">
-        <ion-col size="12">
+        <!-- Hirelings Choice -->
+        <ion-col size-md="6" size-xs="12">
           <ion-row>
             <ion-col size="12" class="choice-header">{{ 'Modal.Reach.Adset.Choices.Hirelings' | translate }}</ion-col>
           </ion-row>
@@ -328,9 +326,9 @@
             <ion-col size="6">
               <ion-list>
                 <ion-item>
-                  <ion-select multiple="true" [(ngModel)]="adsetSettings.playerCount" [interfaceOptions]="{ header: 'Choose Hirelings' }" placeholder="Choose your hirelings...">
-                    <ion-select-option *ngFor="let reachTarget of reachValues" [value]="reachTarget.name">
-                      {{ reachTarget.name }}
+                  <ion-select multiple="true" [(ngModel)]="adsetSettings.validHirelings" [interfaceOptions]="{ header: 'Choose Hirelings' }" placeholder="Choose your hirelings..." (ionChange)="validateADSETHirelingChoices()">
+                    <ion-select-option *ngFor="let hireling of formattedHirelings" [value]="hireling">
+                      {{ hireling }}
                     </ion-select-option>
                   </ion-select>
                 </ion-item>
@@ -338,30 +336,36 @@
             </ion-col>
 
             <ion-col size="6" class="choice-result">
+              <div class="waiting" *ngIf="adsetGenerated.hirelings.length === 0">
+                {{ 'Modal.Reach.Adset.Waiting' | translate }}
+              </div>
+
+              <div class="final" *ngIf="adsetGenerated.hirelings.length > 0">
+                <div *ngFor="let hireling of adsetGenerated.hirelings">
+                  {{ 'Modal.Reach.Adset.Hirelings.' + hireling | translate }}
+                </div>
+              </div>
             </ion-col>
           </ion-row>
         </ion-col>
+
+        <ion-col size-md="6" size-xs="12" class="true-center">
+          <ion-button color="primary" (click)="calculateForADSET()">
+            {{ 'Modal.Reach.Adset.Generate' | translate }}
+          </ion-button>
+        </ion-col>
       </ion-row>
 
-      <!--
-        map: random or choice
-        deck: random or choice
-        player order (# players)
-        landmarks: random or choice (multiselect, max 2, min 1)
-        hirelings: 3 random
-
-        reminders:
-        - draw 5
-        
-        faction setup: deal 1 militant, then 4 random
-          if last is insurgent, "lock" it
-          deal random vagabond with vagabond
-
-        reminders:
-        - choose factions
-        - place score markers
-        - choose starting hands
-      -->
+      <ion-row class="choice-row ion-margin-top">
+        <ion-col *ngFor="let faction of adsetGenerated.factions" class="ion-text-center" [class.red]="faction.red">
+          <div>{{ faction.name }}</div>
+          <div *ngIf="faction.hide">
+            <strong>Hiding</strong> 
+            <div>{{ faction.hide }}</div>
+          </div>
+          
+        </ion-col>
+      </ion-row>
     </div>
   </ng-container>
 </ion-content>

@@ -122,6 +122,10 @@ table {
   .choice-header {
     text-align: center;
     font-weight: bold;
+
+    &.reminder {
+      font-style: italic;
+    }
   }
 
   .choice-result {
@@ -135,6 +139,7 @@ table {
 
     .final {
       font-weight: bold;
+      font-variant: small-caps;
     }
   }
 }

@@ -190,5 +190,11 @@ a:not(.rule-link) {
 }
 
 .alert-wrapper {
-  --min-width: 400px;
+  --min-width: 500px;
+}
+
+.true-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
