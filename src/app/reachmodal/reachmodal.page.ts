@@ -99,7 +99,7 @@ export class ReachModalPage implements OnInit {
     { r: 'Vault Keepers',       d: 'Badger Bodyguards', baseFaction: 'Keepers in Iron' },
   ];
 
-  public readonly formattedHirelings = this.hirelings.map(h => `${h.r} (R) / ${h.d} (D)`).sort();;
+  public readonly formattedHirelings = this.hirelings.map(h => `${h.r} (R) / ${h.d} (D)`).sort();
   public readonly formattedFactions = this.reachValues.map(x => x.name).sort();
 
   public readonly reachesForPlayer = {
@@ -357,7 +357,7 @@ export class ReachModalPage implements OnInit {
         this.adsetSettings.validFactions = this.formattedFactions.slice(0);
       }
 
-      if(this.adsetSettings.validFactions.every(x => !this.reachValues.find(r => r.name === x).red)) {
+      if (this.adsetSettings.validFactions.every(x => !this.reachValues.find(r => r.name === x).red)) {
         this.adsetSettings.validFactions = this.formattedFactions.slice(0);
       }
     }, 0);
