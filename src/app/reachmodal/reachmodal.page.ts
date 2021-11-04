@@ -334,6 +334,11 @@ export class ReachModalPage implements OnInit {
         return;
       }
 
+      if (this.adsetSettings.validHirelings.includes('all')) {
+        this.adsetSettings.validHirelings = this.formattedHirelings.slice(0);
+        return;
+      }
+
       if (this.adsetSettings.validHirelings.length < 3) {
         this.adsetSettings.validHirelings = this.formattedHirelings.slice(0);
       }
@@ -342,6 +347,12 @@ export class ReachModalPage implements OnInit {
 
   validateADSETFactionChoices() {
     setTimeout(() => {
+
+      if (this.adsetSettings.validFactions.includes('all')) {
+        this.adsetSettings.validFactions = this.formattedFactions.slice(0);
+        return;
+      }
+
       if (this.adsetSettings.validFactions.length < this.adsetSettings.playerCount + 1) {
         this.adsetSettings.validFactions = this.formattedFactions.slice(0);
       }

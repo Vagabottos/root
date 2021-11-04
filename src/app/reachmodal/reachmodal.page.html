@@ -334,6 +334,7 @@
                 <ion-item>
                   <ion-select multiple="true" [(ngModel)]="adsetSettings.validHirelings" [interfaceOptions]="{ header: 'Choose Hirelings', subHeader: 'Choose at least 3.' }" placeholder="Choose your hirelings..." (ionChange)="validateADSETHirelingChoices()">
                     <ion-select-option value="none">None</ion-select-option>
+                    <ion-select-option value="all">All</ion-select-option>
 
                     <ion-select-option *ngFor="let hireling of formattedHirelings" [value]="hireling">
                       {{ hireling }}
@@ -373,6 +374,8 @@
               <ion-list>
                 <ion-item>
                   <ion-select multiple="true" [(ngModel)]="adsetSettings.validFactions" [interfaceOptions]="{ header: 'Choose Factions', subHeader: 'Choose at least ' + (adsetSettings.playerCount + 1) + '.' }" placeholder="Choose your factions..." (ionChange)="validateADSETFactionChoices()">
+                    <ion-select-option value="all">All</ion-select-option>
+
                     <ion-select-option *ngFor="let faction of formattedFactions" [value]="faction">
                       {{ faction }}
                     </ion-select-option>
