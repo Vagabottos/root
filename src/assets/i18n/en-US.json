@@ -96,6 +96,7 @@
           "Players": "Player Count",
           "Landmarks": "Landmarks",
           "Hirelings": "Valid Hirelings",
+          "Factions": "Valid Factions",
           "RemindDrawFive": "Reminder: Deal 5 cards to each player."
         },
         "Deck": {

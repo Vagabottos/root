@@ -99,7 +99,8 @@ export class ReachModalPage implements OnInit {
     { r: 'Vault Keepers',       d: 'Badger Bodyguards', baseFaction: 'Keepers in Iron' },
   ];
 
-  public readonly formattedHirelings = this.hirelings.map(h => `${h.r} (R) / ${h.d} (D)`);
+  public readonly formattedHirelings = this.hirelings.map(h => `${h.r} (R) / ${h.d} (D)`).sort();;
+  public readonly formattedFactions = this.reachValues.map(x => x.name).sort();
 
   public readonly reachesForPlayer = {
     2: 17,
@@ -114,7 +115,8 @@ export class ReachModalPage implements OnInit {
     deck: 'random',
     playerCount: 4,
     landmarks: ['random: 2'],
-    validHirelings: this.formattedHirelings
+    validHirelings: this.formattedHirelings,
+    validFactions: this.formattedFactions
   };
 
   public adsetGenerated = {
@@ -333,7 +335,19 @@ export class ReachModalPage implements OnInit {
       }
 
       if (this.adsetSettings.validHirelings.length < 3) {
-        this.adsetSettings.validHirelings = this.reachValues.map(x => x.name).sort();
+        this.adsetSettings.validHirelings = this.formattedHirelings.slice(0);
+      }
+    }, 0);
+  }
+
+  validateADSETFactionChoices() {
+    setTimeout(() => {
+      if (this.adsetSettings.validFactions.length < this.adsetSettings.playerCount + 1) {
+        this.adsetSettings.validFactions = this.formattedFactions.slice(0);
+      }
+
+      if(this.adsetSettings.validFactions.every(x => !this.reachValues.find(r => r.name === x).red)) {
+        this.adsetSettings.validFactions = this.formattedFactions.slice(0);
       }
     }, 0);
   }
@@ -383,7 +397,7 @@ export class ReachModalPage implements OnInit {
       }
     });
 
-    const allFactions = JSON.parse(JSON.stringify(this.reachValues));
+    const allFactions = JSON.parse(JSON.stringify(this.reachValues.filter(x => this.adsetSettings.validFactions.includes(x.name))));
     let validFactions = shuffle(allFactions).filter(x => !ignoreFactions[x.name]);
     if (numPlayers === 2) {
       validFactions = validFactions.filter(x => x.red);

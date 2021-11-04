@@ -362,7 +362,32 @@
           </ion-row>
         </ion-col>
 
-        <ion-col size-md="6" size-xs="12" class="true-center">
+        <!-- Factions Choice -->
+        <ion-col size-md="6" size-xs="12">
+          <ion-row>
+            <ion-col size="12" class="choice-header">{{ 'Modal.Reach.Adset.Choices.Factions' | translate }}</ion-col>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="6">
+              <ion-list>
+                <ion-item>
+                  <ion-select multiple="true" [(ngModel)]="adsetSettings.validFactions" [interfaceOptions]="{ header: 'Choose Factions', subHeader: 'Choose at least ' + (adsetSettings.playerCount + 1) + '.' }" placeholder="Choose your factions..." (ionChange)="validateADSETFactionChoices()">
+                    <ion-select-option *ngFor="let faction of formattedFactions" [value]="faction">
+                      {{ faction }}
+                    </ion-select-option>
+                  </ion-select>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+
+            <ion-col size="6" class="choice-result">
+            </ion-col>
+          </ion-row>
+        </ion-col>
+
+        <!-- Generate -->
+        <ion-col size-md="12" size-xs="12" class="true-center">
           <ion-button color="primary" (click)="calculateForADSET()">
             {{ 'Modal.Reach.Adset.Generate' | translate }}
           </ion-button>
