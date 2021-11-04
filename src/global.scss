@@ -170,6 +170,10 @@ a:not(.rule-link) {
     --height: 80%;
     --width: 80%;
   }
+
+  .alert-wrapper {
+    --min-width: 500px;
+  }
 }
 
 .language {
@@ -187,10 +191,6 @@ a:not(.rule-link) {
     padding-left: 32px;
   }
 
-}
-
-.alert-wrapper {
-  --min-width: 500px;
 }
 
 .true-center {
