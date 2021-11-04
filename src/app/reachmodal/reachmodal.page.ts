@@ -301,7 +301,7 @@ export class ReachModalPage implements OnInit {
 
   validateADSETLandmarkChoices() {
     setTimeout(() => {
-      if(this.adsetSettings.landmarks.includes('none')) {
+      if (this.adsetSettings.landmarks.includes('none')) {
         this.adsetSettings.landmarks = ['none'];
         return;
       }
@@ -327,7 +327,7 @@ export class ReachModalPage implements OnInit {
   validateADSETHirelingChoices() {
     setTimeout(() => {
 
-      if(this.adsetSettings.validHirelings.includes('none')) {
+      if (this.adsetSettings.validHirelings.includes('none')) {
         this.adsetSettings.validHirelings = ['none'];
         return;
       }
@@ -355,7 +355,7 @@ export class ReachModalPage implements OnInit {
       this.adsetGenerated.landmarks = shuffle(this.landmarks).slice(0, 2);
     } else if (this.adsetSettings.landmarks.includes('random: 1')) {
       this.adsetGenerated.landmarks = shuffle(this.landmarks).slice(0, 1);
-    } else if(this.adsetSettings.landmarks.includes('none')) {
+    } else if (this.adsetSettings.landmarks.includes('none')) {
       this.adsetGenerated.landmarks = ['none'];
     } else {
       this.adsetGenerated.landmarks = this.adsetSettings.landmarks;
@@ -363,9 +363,9 @@ export class ReachModalPage implements OnInit {
 
     const numPlayers = this.adsetSettings.playerCount;
 
-    if(!this.adsetSettings.validHirelings.includes('none')) {
+    if (!this.adsetSettings.validHirelings.includes('none')) {
       const validHirelings = shuffle(this.adsetSettings.validHirelings).slice(0, 3);
-  
+
       this.adsetGenerated.hirelings[0] = validHirelings[0].split('/')[numPlayers >= 3 ? 1 : 0].trim();
       this.adsetGenerated.hirelings[1] = validHirelings[1].split('/')[numPlayers >= 4 ? 1 : 0].trim();
       this.adsetGenerated.hirelings[2] = validHirelings[2].split('/')[numPlayers >= 5 ? 1 : 0].trim();
@@ -385,7 +385,7 @@ export class ReachModalPage implements OnInit {
 
     const allFactions = JSON.parse(JSON.stringify(this.reachValues));
     let validFactions = shuffle(allFactions).filter(x => !ignoreFactions[x.name]);
-    if(numPlayers === 2) {
+    if (numPlayers === 2) {
       validFactions = validFactions.filter(x => x.red);
     }
 
