@@ -214,7 +214,7 @@
         - name: The Keep.
           text: The Marquise can place pieces in the clearing with the keep token, and other players cannot. _(Pieces may be moved into it. If the keep is removed, there is no way to place it on the map again.)_
         - name: Field Hospitals.
-          text: Whenever any number of Marquise warriors are removed from a clearing, the Marquise may spend a card matching that clearing place those warriors in the clearing with the keep token instead of the Marquise's supply
+          text: Whenever any number of Marquise warriors are removed from a clearing, the Marquise may spend a card matching that clearing to place those warriors in the clearing with the keep token instead of the Marquise's supply.
 
     - name: Faction Setup
       children:
