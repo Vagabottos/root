@@ -964,7 +964,7 @@
           text: The Hundreds craft during Daylight by activating strongholds.
 
         - name: The Warlord.
-          text: The Hundreds have a piece called the warlord. The warlord is a warrior that cannot be removed outside of battle, moved outside of the Hundreds' turn, or placed in any way except with the Anoint action (`rule:15.4.3`).
+          text: The Hundreds have a piece called the warlord. The warlord is a warrior that cannot be removed outside of battle, moved outside of the Hundreds' turn, or placed in any way except with the Anoint action (`rule:14.4.3`).
 
         - name: Contempt for Trade.
           text: Whenever the Hundreds craft an item, they may take the item but score none of the listed victory points, or may remove the item permanently to score the listed victory points. _(They can still score extra crafting points from effects such as Master Engravers and the Legendary Forge.)_
