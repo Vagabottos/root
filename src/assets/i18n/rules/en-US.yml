@@ -854,7 +854,7 @@
               text: Choose a minister card in your Unswayed Ministers pile. You must have a crown on your faction board matching the rank _(squire, noble, lord)_ of that minister.
 
             - name: Reveal Cards.
-              text: Reveal the number of cards listed on the chosen minister. For each card you wish to reveal, you must have at least one Ducchy piece in a clearing matching the suit of that card. Each such clearing with any of your pieces only allows you to reveal one matching card.
+              text: Reveal the number of cards listed on the chosen minister. For each card you wish to reveal, you must have at least one Duchy piece in a clearing matching the suit of that card. Each such clearing with any of your pieces only allows you to reveal one matching card.
 
             - name: Sway Minister and Score.
               text: Take the chosen minister card and place it above your faction board. Take a crown of that minister's rank from your faction board and place it on the minister card. Score the victory points listed on the space uncovered on your faction board.
