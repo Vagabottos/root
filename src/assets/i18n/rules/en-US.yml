@@ -109,7 +109,7 @@
         - name: Removing Buildings and Tokens.
           text: Whenever you remove an enemy's building or token, you score one victory point.
         - name: Crafting Items.
-          text: Whenever you craft an item (`rule:4.1`), you score the victory points listed on the card. `faction:eyrie:7.2.3`
+          text: Whenever you craft an item (`rule:4.1`), you score the victory points listed on the card. `faction:eyrie:7.2.3` `faction:warlord:14.2.3`
 
     - name: Dominance Cards
       pretext: The deck has four dominance cards, which let you win the game without scoring 30 victory points.
@@ -618,7 +618,7 @@
         - name: Discard Lost Souls.
           text: Discard all of the cards in the Lost Souls pile to the discard pile. _(Dominance cards become available to take.)_
         - name: Perform Conspiracies.
-          text: You can spend acolytes, returning them to your supply, to perform conspiracies in clearings matching the Outcast, in any order and combination, as follows. If the Outcast is Hated, the conspiracy costs one fewer acolyte. If you perform Convert or Sanctify, you must complete the conspiracy. If the Outcast is Hated, the conspiracy costs one fewer acolyte.
+          text: You can spend acolytes, returning them to your supply, to perform conspiracies in clearings matching the Outcast, in any order and combination, as follows. If you perform Convert or Sanctify, you must complete the conspiracy. If the Outcast is Hated, the conspiracy costs one fewer acolyte.
           subchildren:
             - name: Crusade.
               text: Spend two acolytes to initiate a battle in an Outcast clearing **or** to move _(at least one warrior)_ from an Outcast clearing and then, if you wish, initiate a battle in the destination clearing.
