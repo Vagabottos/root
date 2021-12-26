@@ -541,7 +541,7 @@
         - name: Battle.
           text: Exhaust one `item:sword` to initiate a battle. _(Check your relationship with the defender.)_
         - name: Explore.
-          text: Exhaust one `item:torch` to take one item under a ruin in your clearing, reveal it, and place it face up in your Satchel or on its matching track. If you take an item, score one victory point. Then, you score one victory point. If you remove the last item from a ruin, remove the ruin.
+          text: Exhaust one `item:torch` to take one item under a ruin in your clearing, reveal it, and place it face up in your Satchel or on its matching track. If you take an item, score one victory point. If you remove the last item from a ruin, remove the ruin.
         - name: Aid.
           text: Exhaust any one item, and give one of your cards matching your clearing to any player with faction pieces there _(even Hostile)_. Then, you may take one item, if any, from that player's Crafted Items box, and place it face up in your Satchel or on its matching track. _(Check your relationship with that player's faction.)_
         - name: Quest.
