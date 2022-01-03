@@ -221,7 +221,7 @@
         - name: "Step 1: Gather Warriors and Wood."
           text: Form supplies of 25 warriors and 8 wood tokens.
         - name: "Step 2: Place Keep."
-          text: Place the keep token in any corner clearing.
+          text: Place the keep token in any corner clearing. This is your starting clearing.
         - name: "Step 3: Garrison."
           text: Place a warrior in each clearing except the clearing in the diagonally opposite corner from the clearing with the keep token.
         - name: "Step 4: Place Starting Buildings."
@@ -277,7 +277,7 @@
         - name: "Step 1: Gather Warriors."
           text: Form a supply of 20 warriors.
         - name: "Step 2: Place Roost and Starting Warriors."
-          text: Place 1 roost and 6 warriors in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing. _(This is updated from earlier printings for more flexibility.)_
+          text: Place 1 roost and 6 warriors in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing.
         - name: "Step 3: Choose Leader."
           text: Choose 1 of the 4 Eyrie leader cards and place it in your Leader Card slot. Gather the remaining leaders face up near you.
         - name: "Step 4: Tuck Viziers."
@@ -476,7 +476,7 @@
         - name: Taking Hits.
           text: Whenever the Vagabond takes a hit (`rule:4.3.3`), he must damage one undamaged item, moving it to his Damaged box. If no undamaged items remain to damage, the Vagabond ignores any remaining hits.
         - name: Dominance Cards and Coalitions.
-          text: The Vagabond cannot activate a dominance card for its normal victory condition (`rule:3.3.1`). Instead, in games with four or more players, the Vagabond can activate a dominance card to form a coalition with another player, placing his score marker on that player's faction board. _(The Vagabond no longer scores points.)_ That player must have the fewer victory points than each other player except the Vagabond forming the coalition, and that player cannot be in a coalition. If there is a tie for fewest victory points, he chooses one tied player. If the coalitioned player wins the game, the Vagabond also wins.
+          text: The Vagabond cannot activate a dominance card for its normal victory condition (`rule:3.3.1`). Instead, in games with four or more players, the Vagabond can activate a dominance card to form a coalition with another player, placing his score marker on that player's faction board. _(The Vagabond no longer scores points.)_ That player must have fewer victory points than each other player except the Vagabond forming the coalition, and that player cannot be in a coalition. If there is a tie for fewest victory points, he chooses one tied player. If the coalitioned player wins the game, the Vagabond also wins.
         - name: Relationships.
           text: Your faction board shows a Relationships chart, which has four spaces on the Allied track and one Hostile box. It holds a relationship marker for each non-Vagabond faction.
           subchildren:
@@ -1131,10 +1131,10 @@
               text: Take a move from a clearing whose suit matches the card suit.
 
             - name: Battle then Delve.
-              text: Choose a clearing you rule whose suit matches the card suit and that has at least one Keeper warrior. You must initiate a battle there if any enemy pieces are there. Then, you may delve there as follows _(even if there was no enemy to battle)_.
+              text: Choose a clearing whose suit matches the card suit. You must initiate a battle there if any enemy pieces are there. Then, if you rule the clearing and it has at least one Keeper warrior, you may delve there as follows _(even if there was no enemy to battle)_.
               subchildren:
                 - name: "Step 1: Move and Flip Relic."
-                  text: Move any relic from an adjacent forest into that clearing. Flip that relic so its value is showing if it is not
+                  text: Move any relic from an adjacent forest into that clearing. Flip that relic so its value is showing if it is not.
 
                 - name: "Step 2: Check for Discard."
                   text: Count the number of clearings you rule adjacent to the forest from which you delved the relic. If you rule fewer of these clearings than the relic's value, then you must discard the Retinue card used to take this action.
