@@ -1130,7 +1130,7 @@
             - name: Move.
               text: Take a move from a clearing whose suit matches the card suit.
 
-            - name: Battle then Delve.
+            - name: The Keepers Don't Need Rule to Battle.
               text: Choose a clearing whose suit matches the card suit. You must initiate a battle there if any enemy pieces are there. Then, if you rule the clearing and it has at least one Keeper warrior, you may delve there as follows _(even if there was no enemy to battle)_.
               subchildren:
                 - name: "Step 1: Move and Flip Relic."
