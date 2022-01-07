@@ -12,8 +12,8 @@ Resources:
 
 Here are where those files are located:
 
-* [The Rules](https://github.com/seiyria/root/blob/master/src/assets/rules.yml)
-* [The FAQ](https://github.com/seiyria/root/blob/master/src/assets/faq.yml)
+* [The Rules](https://github.com/seiyria/root/blob/master/src/assets/i18n/rules/)
+* [The FAQ](https://github.com/seiyria/root/blob/master/src/assets/i18n/faq/)
 
 ## Want to Contribute to the Discord Bot?
 

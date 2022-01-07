@@ -876,7 +876,7 @@
   icon: corvid
   children:
     - name: Overview
-      pretext: The Corvid Conspiracy seeks to strong-arm the Woodland into submission by completing criminal **plots**, scoring victory points each time they flip one. The more revealed plots on the map, the more they score. Misdirection is critical-if their plans are too obvious, the Corvids risk exposure. To avoid this, they must recruit carefully and look for any opportunities for subterfuge and extortion.
+      pretext: The Corvid Conspiracy seeks to strong-arm the Woodland into submission by completing criminal **plots**, scoring victory points each time they flip one. The more revealed plots on the map, the more they score. Misdirection is critical—if their plans are too obvious, the Corvids risk exposure. To avoid this, they must recruit carefully and look for any opportunities for subterfuge and extortion.
 
     - name: Faction Rules and Abilities
       children:
@@ -884,7 +884,7 @@
           text: The Corvids craft during Birdsong by activating plot tokens _(whether face up or down)_.
 
         - name: Plot Tokens.
-          text: The Corvids have eight infiltration tokens, two of each type.
+          text: The Corvids have eight plot tokens, two of each type.
           subchildren:
             - name: Token Facing.
               text: While in the Corvids' supply, plot tokens are face down _(feather)_. While on the map, a plot token can be face up _(unique icon)_ or face down. The Corvids can inspect any facedown plot token at any time.
@@ -947,7 +947,7 @@
         - name: Snare.
           text: While a snare token is face up, enemy pieces cannot be placed in or moved from its clearing.
         - name: Extortion.
-          text: Whenever an extortion token is flipped, take a random card from each enemy player faction pieces in its clearing. While an extortion token is face up, you draw another card in Evening.
+          text: Whenever an extortion token is flipped, take a random card from each enemy player with faction pieces in its clearing. While an extortion token is face up, you draw another card in Evening.
         - name: Raid.
           text: Whenever a raid token is removed _(face up or down)_, place one warrior in each clearing adjacent to the clearing from which the raid was removed. _(Ignore this effect if the raid is removed by Exposure.)_
 
