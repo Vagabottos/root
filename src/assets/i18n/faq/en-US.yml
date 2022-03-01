@@ -2,6 +2,9 @@
 - category: The Law
   color: "#000000"
   questions:
+    - q: How do I read The Law?
+      a: Text in **small capitals** define key terms, text in _italics_ gives reminders and clarifications and faction icons mark rules modified by Faction Rules and Abilities sections.
+      
     - q: I'd like to do something, and the rules don't say that I can't do it. Can I do it?
       a: Within the confines of the action, yes! The game will often surprise you with outlandish, unexpected situations, and that's part of the fun, but this doesn't mean you can flip the table.
 
