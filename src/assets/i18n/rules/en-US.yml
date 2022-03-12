@@ -493,7 +493,7 @@
                 - name: Aiding Ally.
                   text: Each time you Aid an Allied faction, score two victory points.
                 - name: Moving with Ally.
-                  text: Whenever you move to an adjacent clearing, you may also move warriors of one Allied faction from your origin clearing to your destination clearing.
+                  text: Whenever you move to an adjacent clearing, you may also force warriors of one Allied faction to move from your origin clearing to your destination clearing.
                 - name: Attacking with Ally.
                   text: At the start of battle as the attacker, you may treat the warriors of one Allied faction in the clearing of battle as your own. The maximum hits you can roll equals the number of their warriors there plus your total undamaged `item:sword`. You cannot treat Allied warriors as your own when attacking the same Allied faction.
                 - name: Taking Hits with Ally.
