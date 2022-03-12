@@ -174,7 +174,7 @@
             - name: Defenseless.
               text: If the defender has no warriors in the clearing of battle, the attacker will deal an extra hit. `faction:vagabond:9.2.4`
         - name: "Step 4: Deal Hits."
-          text: Each hit that a side deals removes one piece of the other side from the clearing of battle. _(You score one victory point per enemy building or token removed.)_ All of a side's warriors there must be removed before any of their buildings or tokens there can be removed. The side taking hits chooses which of their buildings and tokens are removed, and chooses the order of any effects triggered by their pieces being removed.
+          text: Each hit that a side deals removes one piece of the other side from the clearing of battle. _(You score one victory point per enemy building or token removed.)_ The side taking hits chooses the order in which their own pieces are removed, but all of their warriors there must be removed before any of their buildings or tokens there can be removed; they also choose the order of any effects triggered by their pieces being removed.
 
 - name: Setup
   color: "#000000"
