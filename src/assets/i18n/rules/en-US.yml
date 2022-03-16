@@ -1083,7 +1083,7 @@
           text: The Keepers craft during Daylight by activating waystations _(of any type)_.
 
         - name: Devout Knights.
-          text: In battle, if the clearing of battle has at least one relic and at least one Keeper warrior, the Keepers ignore the first hit they take. _(If ambushed, ignore one hit from the ambush, but do not ignore further hits.)_ When moving, the Keepers may move one relic with each Keeper warrior that they move. _(If forced to move, the Keepers player may also move relics.)_
+          text: In battle, if the clearing of battle has at least one relic and at least one Keeper warrior, the Keepers ignore the first hit they take. _(If ambushed, ignore one hit from the ambush, but do not ignore further hits.)_ When moving, the Keepers may move one relic with each Keeper warrior that they move.
 
         - name: Prized Trophies.
           text: Whenever an enemy removes a relic, they place it in any forest face up and score an extra victory point _(for a total of two)_.
