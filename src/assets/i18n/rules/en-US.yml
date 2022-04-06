@@ -422,7 +422,7 @@
         - name: Mobilize.
           text: Add a card from your hand to the Supporters stack.
         - name: Train.
-          text: Spend a card whose suit the printed suit of a base on the map to place a warrior in the Officers box. This warrior is now an **officer**.
+          text: Spend a card whose suit matches the printed suit of a base on the map to place a warrior in the Officers box. This warrior is now an **officer**.
 
     - name: Evening
       pretext: Your Evening has two steps in the following order.
