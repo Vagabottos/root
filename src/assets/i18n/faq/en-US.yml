@@ -203,18 +203,18 @@
 - category: Advanced Setup
   color: "#000"
   questions:
-    - q: Keepers in Iron: For the second step of placing relics, do I get to choose which relics go in which clearings? 
+    - q: "Keepers in Iron: For the second step of placing relics, do I get to choose which relics go in which clearings?"
       a: Place them randomly. (That said, it usually won’t make much difference, since people can adjust their strategy to prevent you from delving efficiently.)
       
-    - q: Keepers in Iron: What happens if there aren’t any two adjacent clearings on the map edge?
-      a: Return the Keepers’ advanced setup card to the box and draw new advanced setup cards until you draw a militant faction (red with swords). This faction replaces the Keepers. We will likely add general mulligan rules that mirror this as more factions get added to the game and it becomes increasingly possible to draw a faction that is impossible to set up.
+    - q: "Keepers in Iron: What happens if there aren’t any two adjacent clearings on the map edge?
+      a: Return the Keepers’ advanced setup card to the box and draw new advanced setup cards until you draw a militant faction (red with swords). This faction replaces the Keepers. We will likely add general mulligan rules that mirror this as more factions get added to the game and it becomes increasingly possible to draw a faction that is impossible to set up."
 
 - category: Landmarks
   color: "#000"
   questions:
-    - q: Legendary Forge: Do I only need a faction piece at the Legendary Forge in order to craft an item there, or do I need something else?
+    - q: "Legendary Forge: Do I only need a faction piece at the Legendary Forge in order to craft an item there, or do I need something else?"
       a: You still follow the normal crafting rules, so you still need to discard a card that has an available item on it—in this case, an item that is on the Legendary Forge card—and you need crafting pieces in the relevant clearing suits, as shown on the card. You just also need a faction piece at the Legendary Forge.
 
-    - q: Lost City: Can I revolt in the Lost City if I have already filled the clearing’s slots with my bases, but I still have a base left on my board?
+    - q: "Lost City: Can I revolt in the Lost City if I have already filled the clearing’s slots with my bases, but I still have a base left on my board?"
       a: Yes, you can! The Lost City is very vulnerable to revolts, since it can be treated as any suit.
 
