@@ -1285,7 +1285,7 @@
               text: The clearing marked with the tower piece is **the pass**. At the end of a player's Evening, if that player rules the Pass, that player scores one victory point.
 
             - name: Forests.
-              text: All areas on the mountain map enclosed by paths and clearings are forests (`rule:2.2`), regardless of the presence or placement of trees within.
+              text: All areas on the mountain map enclosed by paths and clearings are forests (`rule:2.4`), regardless of the presence or placement of trees within.
 
     - name: Vagabonds
       children:
@@ -1366,13 +1366,13 @@
         - name: Gaining and Losing Hirelings
           subchildren:
             - name: Gaining from Supply.
-              text: When a player's score marker enters a space with a hireling marker, they take the hireling marker and place it below their Evening _(as a reminder)_. At the end of their turn, they take any hireling card from the supply, roll for control (`rule:1.2`), and flip over the hireling marker.
+              text: When a player's score marker enters a space with a hireling marker, they take the hireling marker and place it below their Evening _(as a reminder)_. At the end of their turn, they take any hireling card from the supply, roll for control (`rule:16.4.1.2`), and flip over the hireling marker.
 
             - name: Rolling for Control.
               text: When a player gains a hireling card, they roll the control die and place control markers on the hireling card equal in number to the die roll. They count only the gold die pips if they have the most victory points or are tied for the most; they count all the die pips otherwise _(including if they have activated a dominance card)_.
 
             - name: Gaining from Another Player.
-              text: At the end of a player's turn, they must remove one control marker from each hireling card they have. Then, they must give each hireling card they control that has no control markers, along with a hireling marker, to any other player _(even the player with the highest score)_. That player puts the hireling marker below their Evening _(as a reminder)_ and immediately rolls for control (`rule:1.2`).
+              text: At the end of a player's turn, they must remove one control marker from each hireling card they have. Then, they must give each hireling card they control that has no control markers, along with a hireling marker, to any other player _(even the player with the highest score)_. That player puts the hireling marker below their Evening _(as a reminder)_ and immediately rolls for control (`rule:16.4.1.2`).
 
         - name: Abilities and Actions
           text: Hirelings have various actions and abilities, as shown by unique icons. Actions and abilities that start with "**Controller**:" are gained by the hireling's controller.
