@@ -12,11 +12,6 @@
           text: The term **cannot** is absolute. It cannot be overridden unless explicitly instructed.
         - name: Resolving Simultaneous Things.
           text: If multiple effects or decisions would occur simultaneously, the player taking their turn chooses their order unless the order is explicitly defined. If an effect would remove multiple pieces simultaneously and trigger multiple effects from removing them, remove all the pieces before resolving the effects.
-        - name: Simultaneous Effects.
-          text: If two game effects occur simultaneously, the player taking the current turn chooses their order, unless explicitly instructed.
-        - name: Use of **Treat**.
-          plainName: Use of Treat.
-          text: If you are prompted to **treat** one thing as another, the former takes on all the properties of the latter. _(For example, if you caused Outrage while treating yourself as another player, the other player would give the card.)_
 
     - name: Public and Private Information
       children:
