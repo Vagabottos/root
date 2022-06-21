@@ -241,6 +241,24 @@
       laws:
         - "11.5.3"
 
+    - q: Can the Riverfolk refuse to sell you one of their services?
+      a: Nope! As long as you pay the cost, you get the service.
+      laws:
+        - "11.2.6"
+
+    - q: Can Riverfolk Mercenaries be used to battle hirelings controlled by the Riverfolk?
+      a: Yes! Mercenaries just won’t battle against the Riverfolk themselves, not controlled hirelings.
+      laws:
+        - "11.2.7"
+
+- category: Lizard Cult
+  color: "#fcf065"
+  questions:
+    - q: Can I use Convert or Sanctify to only remove a warrior or building, but not place my own warrior or building there?
+      a: Nope! The rule says that “you must complete the conspiracy,” and faction rules overrule general rules if you cannot fulfill them both. 
+      laws:
+        - "10.4.3"
+
 - category: Keepers in Iron
   color: "#8b8d90"
   questions:
@@ -253,6 +271,11 @@
       a: You do not need to rule in order to battle—only to delve!
       laws:
         - "15.5.2.2"
+
+    - q: If hirelings remove a relic, how do I resolve the Prized Trophy ability?
+      a: No victory points are awarded. If the hireling is controlled, the controlling player decides where to put the relic. If the hireling is uncontrolled, the player taking their turn decides where to put the relic.
+      laws:
+        - "15.2.5"
         
     - q: Does the Keepers’ Prized Trophies ability trigger if the Vagrant Vagabond removes a relic by using Instigate, but they’re in a coalition with the Keepers?
       a: As written, no, since the Vagrant is not an enemy in this case. Why the Vagrant would want to do this is beyond me, though!
@@ -266,6 +289,7 @@
       a: The Hundreds player does, matching the fact that the player taking hits chooses the order of removing buildings and tokens. So if you took two hits and you have the warlord, two warriors, and a stronghold, you could remove two warriors or you could remove one warrior and the warlord. Though we wouldn’t recommend removing the warlord early!
       laws:
         - "14.2.2"
+        - "4.3.4"
         
     - q: What exactly is required for the Hundreds to oppress a clearing?
       a: You need to (1) rule, (2) have a Hundreds piece there, and (3) have no enemy pieces there. For example, you do oppress with a mob and a Riverfolk Mercenary warrior. You do not oppress with only a Riverfolk Mercenary warrior. You do not oppress with a mob, a Riverfolk Mercenary warrior, and a Riverfolk trade post. 
@@ -276,6 +300,11 @@
       a: No. Rowdy makes you draw more cards only during your draw step in Evening.
       laws:
         - "14.7.6"
+
+    - q: Do I declare whether I’m using my Looters before or after the defender declares that they are ambushing?
+      a: Declaring Looters.
+      laws:
+        - "14.2.5"
 
 - category: Advanced Setup
   color: "#000"
