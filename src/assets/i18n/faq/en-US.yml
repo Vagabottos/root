@@ -23,14 +23,17 @@
   color: "#000000"
   questions:
     - q: Which pieces are buildings? Which are tokens?
-      a: Broadly, square cardboard pieces that go in slots are buildings, while circular cardboard pieces are tokens. You’ll find detailed lists of buildings and tokens on the back of the learn-to-play and the backs of the faction boards.
+      a: Buildings are square cardboard pieces that go in open building slots on the map, while tokens are circular cardboard pieces that do not occupy a slot. You’ll find detailed lists of buildings and tokens on the back of the learn-to-play and the backs of the faction boards.
       laws: 
         - "2.5"
+        - "16.6.3"
+        - "16.6.32"
     
     - q: Do I lose points if one of my buildings is removed?
       a: Nope!
       laws: 
         - "2.5.2"
+        - "16.6.22"
 
     - q: Can I play multiple ambush cards in a battle?
       a: Nope! Just one.
@@ -38,21 +41,17 @@
         - "4.3.1"
 
     - q: Do the Favor... cards really remove all enemy pieces from those clearings?
-      a: Yes. Every single one—except the Vagabond, of course. What a sneaky guy. However, Ruins and the items beneath them are not removed! Lucky Vagabond.
+      a: Yes, except for the Vagabond and the Lord of the Hundreds’ warlord.
       laws: 
-        - "2.1"
+        - "9.2.2"
+        - "14.2.2"
 
     - q: How do I get rid of enemy tokens, like sympathy tokens?
-      a: You battle them, like any other piece. You can also remove them with Favor cards. 
+      a: Just like any other other piece, they can be battled and can be removed by powers that say they remove pieces. 
       laws:
         - "2.1"
         - "2.5"
         - "4.3"
-
-    - q: Do the Favor... cards score victory points?
-      a: Yes. Every token and building removed scores one point.
-      laws: 
-        - "3.2.1"
     
     - q: Does placing a piece in a sympathetic clearing trigger Outrage?
       a: Nope! You have to move in warriors or remove the sympathy to trigger it.
@@ -64,16 +63,25 @@
       a: Most often, back to the board or supply of the owning player. This is described more in 2.5.
       laws:
         - "2.5"
+        - "16.6.22"
 
     - q: What does "activating" a piece for crafting mean? Do I do anything with it?
-      a: Nope. Activating just means "I have it, and I want to use it for crafting." You don't need to get rid of it or do anything other than point at it and say, "I'm activating this to craft a card."
+      a: Nope. Activating just means “I have it, and I want to use it for crafting.” You don’t need to get rid of it or do anything other than point at it and say, “I’m activating this to craft a card.”
       laws:
         - "4.1.1"
 
-    - q: Are Ruins placed even if there is no Vagabond in the game?
-      a: Yes. Ruins are always placed on the board.
+    - q: Can I not consent to the action of another player?
+      a: Nope, there are no actions in Root that require consent. For example, the Vagabond does not require consent to form a coalition with someone or Aid someone, and a player does not need the Riverfolk’s consent to buy services from them.
       laws:
-        - "2.2.4"
+        - "9.2.8"
+        - "9.5.4"
+        - "11.2.6"
+
+- category: Cards
+  color: "#000000"
+  questions:
+    - q: The Armorers card says “rolled hits”. Does it really mean “rolled hits” specifically and not “hits”?
+      a: Yes indeed! “Rolled hits” means only the hits rolled.
 
 - category: Marquise de Cat
   color: "#e07a37"
