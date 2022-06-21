@@ -312,8 +312,29 @@
     - q: "Keepers in Iron: For the second step of placing relics, do I get to choose which relics go in which clearings?"
       a: Place them randomly. (That said, it usually won’t make much difference, since people can adjust their strategy to prevent you from delving efficiently.)
       
-    - q: "Keepers in Iron: What happens if there aren’t any two adjacent clearings on the map edge?
-      a: Return the Keepers’ advanced setup card to the box and draw new advanced setup cards until you draw a militant faction (red with swords). This faction replaces the Keepers. We will likely add general mulligan rules that mirror this as more factions get added to the game and it becomes increasingly possible to draw a faction that is impossible to set up."
+    - q: "Keepers in Iron: What happens if there aren’t any two adjacent clearings on the map edge?"
+      a: Return the Keepers’ advanced setup card to the box and draw new advanced setup cards until you draw a militant faction (red with swords). This faction replaces the Keepers. We will likely add general mulligan rules that mirror this as more factions get added to the game and it becomes increasingly possible to draw a faction that is impossible to set up.
+
+- category: Hirelings
+  color: "#000"
+  questions:
+    - q: "The Exile: Can I give the Exile an exhausted item?"
+      a: Yes!
+
+    - q: "The Exile: Can I give the Exile multiple items on the same turn?"
+      a: Yes!
+
+    - q: "Highway Bandits: If the Highway Bandits remove a Marquise warrior, can the Marquise use Field Hospitals?"
+      a: Nope. The power happens while moving “on a path” with Highway Bandits, so they are not in a clearing at that moment.
+
+    - q: "Spring Uprising: Can a hireling battle the Spring Uprising?"
+      a: Nope. They do not have a hand of cards to discard from.
+
+    - q: "Warm Sun Prophets: When I force a battle and the defender plays an ambush card, which placer makes decisions about piece removal and playing counter-ambushes?"
+      a: The player who is being forced to battle.
+
+    - q: "Flame Bearers: Does “warriors first” preclude me from removing undefended buildings or tokens of a player if there are warriors of another player there?"
+      a: No, this works in the same way as battle or the Vagabond’s Strike—if a player has warriors there, you must remove the warriors first.
 
 - category: Landmarks
   color: "#000"
@@ -324,3 +345,5 @@
     - q: "Lost City: Can I revolt in the Lost City if I have already filled the clearing’s slots with my bases, but I still have a base left on my board?"
       a: Yes, you can! The Lost City is very vulnerable to revolts, since it can be treated as any suit.
 
+    - q: "Ferry: If I move the Ferry to a clearing with a sympathy token, do I draw the card first or trigger Outrage first?"
+      a: These happen at the same time, so you decide the order.
