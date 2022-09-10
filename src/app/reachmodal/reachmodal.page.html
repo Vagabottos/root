@@ -407,7 +407,7 @@
           <div class="faction-text-container">
             <ion-badge class="text-name">
               <span class="name-container">
-                {{ faction.name }}
+                {{ 'Modal.Reach.Factions.' + faction.name | translate }} {{ (faction.vagabondName ? ('Modal.Reach.Vagabonds.' + faction.vagabondName | translate) : '') }}
               </span>
             </ion-badge>
 

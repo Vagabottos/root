@@ -438,7 +438,7 @@ export class ReachModalPage implements OnInit {
         return chosenVagabond;
       };
 
-      f.name = `Vagabond (${getVagabond()})`;
+      f.vagabondName = getVagabond();
     });
 
     this.adsetGenerated.factions = chosenFactions;

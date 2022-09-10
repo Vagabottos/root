@@ -56,6 +56,17 @@
         "Vagabond #2": "Vagabundo #2",
         "Cult": "El Culto"
       },
+	  "Vagabonds": {
+		"Arbiter": "Arbiter",
+		"Ranger": "Ranger",
+		"Scoundrel": "Scoundrel",
+		"Thief": "Thief",
+		"Tinker": "Tinker",
+		"Vagrant": "Vagrant",
+		"Adventurer": "Adventurer",
+		"Ronin": "Ronin",
+		"Harrier": "Harrier"
+	  },
       "Draft": {
         "Players": {
           "Player A": "Jugador A",
