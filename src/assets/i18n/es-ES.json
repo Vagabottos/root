@@ -57,15 +57,15 @@
         "Cult": "El Culto"
       },
 	  "Vagabonds": {
-		"Arbiter": "Arbiter",
-		"Ranger": "Ranger",
-		"Scoundrel": "Scoundrel",
-		"Thief": "Thief",
-		"Tinker": "Tinker",
-		"Vagrant": "Vagrant",
-		"Adventurer": "Adventurer",
+		"Arbiter": "Árbitro",
+		"Ranger": "Montaraz",
+		"Scoundrel": "Bribón",
+		"Thief": "Ladrón",
+		"Tinker": "Chatarrero",
+		"Vagrant": "Agitador",
+		"Adventurer": "Aventurero",
 		"Ronin": "Ronin",
-		"Harrier": "Harrier"
+		"Harrier": "Hostigador"
 	  },
       "Draft": {
         "Players": {
