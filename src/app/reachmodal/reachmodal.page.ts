@@ -87,15 +87,15 @@ export class ReachModalPage implements OnInit {
     { r: 'Spring Uprising',     d: 'Rabbit Scouts',     baseFaction: 'Woodland Alliance' },
     { r: 'Forest Patrol',       d: 'Feline Physicians', baseFaction: 'Marquise de Cat' },
     { r: 'Last Dynasty',        d: 'Bluebird Nobles',   baseFaction: 'Eyrie Dynasties' },
-    { r: 'The Outcast',         d: 'The Brigand',       baseFaction: 'Vagabond (#1)' },
-    { r: 'Woodland Band',       d: 'Traveling Band',    baseFaction: '',                pink: true },
+    { r: 'The Exile',           d: 'The Brigand',       baseFaction: 'Vagabond' },
+    { r: 'Popular Band',        d: 'Street Band',       baseFaction: '',                pink: true },
     { r: 'Furious Protector',   d: 'Stoic Protector',   baseFaction: '',                pink: true },
-    { r: 'Highway Bandits',     d: 'Bandit Guild',      baseFaction: '',                pink: true },
+    { r: 'Highway Bandits',     d: 'Bandit Gangs',      baseFaction: '',                pink: true },
     { r: 'Riverfolk Flotilla',  d: 'Otter Divers',      baseFaction: 'Riverfolk Company' },
     { r: 'Warm Sun Prophets',   d: 'Lizard Envoys',     baseFaction: 'Lizard Cult' },
     { r: 'Sunward Expedition',  d: 'Mole Artisans',     baseFaction: 'Underground Duchy' },
-    { r: 'Corvid Spies',        d: 'Raven Guards',      baseFaction: 'Corvid Conspiracy' },
-    { r: 'Flame Bearers',       d: 'Rat Ravagers',      baseFaction: 'Lord of the Hundreds' },
+    { r: 'Corvid Spies',        d: 'Raven Sentries',    baseFaction: 'Corvid Conspiracy' },
+    { r: 'Flame Bearers',       d: 'Rat Smugglers',     baseFaction: 'Lord of the Hundreds' },
     { r: 'Vault Keepers',       d: 'Badger Bodyguards', baseFaction: 'Keepers in Iron' },
   ];
 
@@ -364,6 +364,9 @@ export class ReachModalPage implements OnInit {
   }
 
   calculateForADSET() {
+    this.unableToSelect = false;
+    this.adsetGenerated.factions = [];
+
     if (this.adsetSettings.deck === 'random') {
       this.adsetGenerated.deck = shuffle(this.decks)[0];
     } else {
@@ -404,7 +407,12 @@ export class ReachModalPage implements OnInit {
 
       const foundRef = this.hirelings.find(x => x.r === split || x.d === split);
       if (foundRef) {
-        ignoreFactions[foundRef.baseFaction] = true;
+        if (foundRef.baseFaction === 'Vagabond') {
+          ignoreFactions['Vagabond (#1)'] = true;
+          ignoreFactions['Vagabond (#2)'] = true;
+        } else {
+          ignoreFactions[foundRef.baseFaction] = true;
+        }
       }
     });
 
@@ -419,6 +427,11 @@ export class ReachModalPage implements OnInit {
 
     if (!chosenFactions[chosenFactions.length - 1].red) {
       chosenFactions[chosenFactions.length - 1].hide = true;
+    }
+
+    if (chosenFactions.length !== numPlayers + 1) {
+      this.unableToSelect = true;
+      return;
     }
 
     const vagabonds = {};
@@ -438,7 +451,7 @@ export class ReachModalPage implements OnInit {
         return chosenVagabond;
       };
 
-      f.name = `Vagabond (${getVagabond()})`;
+      f.vagabondName = getVagabond();
     });
 
     this.adsetGenerated.factions = chosenFactions;

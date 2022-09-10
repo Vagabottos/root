@@ -56,6 +56,17 @@
         "Vagabond #2": "Vagabundo #2",
         "Cult": "El Culto"
       },
+			"Vagabonds": {
+				"Arbiter": "Árbitro",
+				"Ranger": "Montaraz",
+				"Scoundrel": "Bribón",
+				"Thief": "Ladrón",
+				"Tinker": "Chatarrero",
+				"Vagrant": "Agitador",
+				"Adventurer": "Aventurero",
+				"Ronin": "Ronin",
+				"Harrier": "Hostigador"
+			},
       "Draft": {
         "Players": {
           "Player A": "Jugador A",
@@ -115,8 +126,8 @@
           "Spring Uprising (R)": "Spring Uprising (R)",
           "Forest Patrol (R)": "Forest Patrol (R)",
           "Last Dynasty (R)": "Last Dynasty (R)",
-          "The Outcast (R)": "The Outcast (R)",
-          "Woodland Band (R)": "Woodland Band (R)",
+          "The Exile (R)": "The Exile (R)",
+          "Popular Band (R)": "Popular Band (R)",
           "Furious Protector (R)": "Furious Protector (R)",
           "Highway Bandits (R)": "Highway Bandits (R)",
           "Riverfolk Flotilla (R)": "Riverfolk Flotilla (R)",
@@ -129,14 +140,14 @@
           "Feline Physicians (D)": "Feline Physicians (D)",
           "Bluebird Nobles (D)": "Bluebird Nobles (D)",
           "The Brigand (D)": "The Brigand (D)",
-          "Traveling Band (D)": "Traveling Band (D)",
+          "Street Band (D)": "Street Band (D)",
           "Stoic Protector (D)": "Stoic Protector (D)",
-          "Bandit Guild (D)": "Bandit Guild (D)",
+          "Bandit Gangs (D)": "Bandit Gangs (D)",
           "Otter Divers (D)": "Otter Divers (D)",
           "Lizard Envoys (D)": "Lizard Envoys (D)",
           "Mole Artisans (D)": "Mole Artisans (D)",
-          "Raven Guards (D)": "Raven Guards (D)",
-          "Rat Ravagers (D)": "Rat Ravagers (D)",
+          "Raven Sentries (D)": "Raven Sentries (D)",
+          "Rat Smugglers (D)": "Rat Smugglers (D)",
           "Badger Bodyguards (D)": "Badger Bodyguards (D)"
         }
       }
