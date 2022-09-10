@@ -428,7 +428,7 @@ export class ReachModalPage implements OnInit {
     if (!chosenFactions[chosenFactions.length - 1].red) {
       chosenFactions[chosenFactions.length - 1].hide = true;
     }
-    
+
     if (chosenFactions.length !== numPlayers + 1) {
       this.unableToSelect = true;
       return;
