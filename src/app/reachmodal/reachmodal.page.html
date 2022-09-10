@@ -377,7 +377,7 @@
                     <ion-select-option value="all">All</ion-select-option>
 
                     <ion-select-option *ngFor="let faction of formattedFactions" [value]="faction">
-                      {{ faction }}
+                      {{ 'Modal.Reach.Factions.' + faction | translate }}
                     </ion-select-option>
                   </ion-select>
                 </ion-item>
