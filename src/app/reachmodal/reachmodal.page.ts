@@ -364,6 +364,9 @@ export class ReachModalPage implements OnInit {
   }
 
   calculateForADSET() {
+    this.unableToSelect = false;
+    this.adsetGenerated.factions = [];
+
     if (this.adsetSettings.deck === 'random') {
       this.adsetGenerated.deck = shuffle(this.decks)[0];
     } else {
@@ -424,6 +427,11 @@ export class ReachModalPage implements OnInit {
 
     if (!chosenFactions[chosenFactions.length - 1].red) {
       chosenFactions[chosenFactions.length - 1].hide = true;
+    }
+    
+    if (chosenFactions.length !== numPlayers + 1) {
+      this.unableToSelect = true;
+      return;
     }
 
     const vagabonds = {};

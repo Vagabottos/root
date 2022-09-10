@@ -397,6 +397,10 @@
         </ion-col>
       </ion-row>
 
+      <div class="centered ion-margin-top" *ngIf="unableToSelect">
+        <ion-badge color="danger">{{ 'Modal.Reach.Error' | translate }}</ion-badge>
+      </div>
+
       <ion-row class="choice-row ion-margin-top">
 
         <ion-col class="faction-container"
