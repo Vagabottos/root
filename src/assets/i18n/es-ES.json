@@ -56,17 +56,17 @@
         "Vagabond #2": "Vagabundo #2",
         "Cult": "El Culto"
       },
-	  "Vagabonds": {
-		"Arbiter": "Árbitro",
-		"Ranger": "Montaraz",
-		"Scoundrel": "Bribón",
-		"Thief": "Ladrón",
-		"Tinker": "Chatarrero",
-		"Vagrant": "Agitador",
-		"Adventurer": "Aventurero",
-		"Ronin": "Ronin",
-		"Harrier": "Hostigador"
-	  },
+			"Vagabonds": {
+				"Arbiter": "Árbitro",
+				"Ranger": "Montaraz",
+				"Scoundrel": "Bribón",
+				"Thief": "Ladrón",
+				"Tinker": "Chatarrero",
+				"Vagrant": "Agitador",
+				"Adventurer": "Aventurero",
+				"Ronin": "Ronin",
+				"Harrier": "Hostigador"
+			},
       "Draft": {
         "Players": {
           "Player A": "Jugador A",
