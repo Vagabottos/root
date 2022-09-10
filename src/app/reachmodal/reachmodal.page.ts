@@ -404,7 +404,12 @@ export class ReachModalPage implements OnInit {
 
       const foundRef = this.hirelings.find(x => x.r === split || x.d === split);
       if (foundRef) {
-        ignoreFactions[foundRef.baseFaction] = true;
+        if (foundRef.baseFaction === 'Vagabond') {
+          ignoreFactions['Vagabond (#1)'] = true;
+          ignoreFactions['Vagabond (#2)'] = true;
+        } else {
+          ignoreFactions[foundRef.baseFaction] = true;
+        }
       }
     });
 
