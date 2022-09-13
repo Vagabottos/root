@@ -1,0 +1,170 @@
+{
+  "App": {
+    "NavTitle": "Regeln & Parteien (6. Ed. USA)",
+    "NavTitleShort": "Regeln (6th Ed.)",
+    "RootPrefix": "Das Gesetz von",
+    "SearchPlaceholder": "Regel suchen",
+    "Titles": {
+      "Search": "Regel suchen",
+      "FAQ": "Häufig gestellte Fragen",
+      "Reach": "Aufbau Auswahl-Tool",
+      "Map": "Spielbrett-Generator",
+      "Random": "Zufälliger Aufbau",
+      "DraftPlusOne": "+1 Draft",
+      "AdSet": "Erweiterter Aufbau"
+    }
+  },
+  "Modal": {
+    "FAQ": {
+      "Title": "Häufig gestellte Fragen",
+      "TitleShort": "FAQ",
+      "CloseButton": "Schließen",
+      "Law": "Gesetz",
+      "Q": "F",
+      "A": "A"
+    },
+    "Reach": {
+      "Title": "Reichweiten-Rechner",
+      "TitleShort": "Reichweite",
+      "CloseButton": "Schließen",
+      "Choose": "Neue Parteien auswählen",
+      "DraftPlusOne": "Draft +1",
+      "Error": "Parteien können nicht ausgewählt werden; bitte passe deine Auswahl an und versuche es erneut.",
+      "Factions": {
+        "Marquise de Cat": "Marquise de Katz",
+        "Lord of the Hundreds": "Lord of the Hundreds",
+        "Keepers in Iron": "Keepers in Iron",
+        "Underground Duchy": "Untergrund-Herzogtum",
+        "Eyrie Dynasties": "Horst-Dynastien",
+        "Vagabond (#1)": "Vagabund (#1)",
+        "Riverfolk Company": "Flussvolk-Kompanie",
+        "Woodland Alliance": "Waldland-Allianz",
+        "Corvid Conspiracy": "Krähen-Komplott",
+        "Vagabond (#2)": "Vagabund (#2)",
+        "Lizard Cult": "Echsen-Kult"
+      },
+      "FactionsShort": {
+        "Marquise": "Marquise",
+        "Hundreds": "Hundreds",
+        "Keepers": "Keepers",
+        "Duchy": "Herzogtum",
+        "Eyrie": "Dynastien",
+        "Vagabond #1": "Vagabund #1",
+        "Riverfolk": "Flussvolk",
+        "Woodland": "Waldland",
+        "Corvids": "Krähen",
+        "Vagabond #2": "Vagabund #2",
+        "Cult": "Echsen"
+      },
+      "Vagabonds": {
+        "Arbiter": "Schiedsrichter",
+        "Ranger": "Waldläufer",
+        "Scoundrel": "Schurke",
+        "Thief": "Dieb",
+        "Tinker": "Tüftler",
+        "Vagrant": "Landstreicher",
+        "Adventurer": "Abenteurer",
+        "Ronin": "Ronin",
+        "Harrier": "Plünderer"
+      },
+      "Draft": {
+        "Players": {
+          "Player A": "Spieler A",
+          "Player B": "Spieler B",
+          "Player C": "Spieler C",
+          "Player D": "Spieler D",
+          "Player E": "Spieler E",
+          "Player F": "Spieler F"
+        },
+        "Headers": {
+          "Factions": "Parteien",
+          "TurnDraftOrder": "Reihenfolge",
+          "Faction": "Partei",
+          "Reach": "Reichweite",
+          "Draft": "Partei-Auswahl",
+          "Player": "Spieler",
+          "Cards": "Karten",
+          "Picks": "Wählt",
+          "Turn": "Zug"
+        },
+        "Text": {
+          "Deck": "Nachziehstapel",
+          "Map": "Spielbrett",
+          "Choose": "Wähle ein Spielbrett, dann wähle einen Nachziehstapel. Wähle 3 Karten und lege den Rest zurück auf den Nachziehstapel."
+        }
+      },
+      "Adset": {
+        "Random": "Zufällig",
+        "Random1": "Zufällig (1)",
+        "Random2": "Zufällig (2)",
+        "Generate": "Generieren",
+        "None": "Keine",
+        "Waiting": "Warte auf Zufalls-Generator...",
+        "Players": "Spieler",
+        "Choices": {
+          "Map": "Spielbrett-Auswahl",
+          "Deck": "Nachziehstapel-Wahl",
+          "Players": "Spielerzahl",
+          "Landmarks": "Wahrzeichen",
+          "Hirelings": "Gültige Mietlinge",
+          "Factions": "Gültige Parteien",
+          "RemindDrawFive": "Erinnerung: Gib jedem Spieler 5 Karten."
+        },
+        "Deck": {
+          "Standard": "Standard-Nachziehstapel",
+          "EP": "Exilanten und Partisanen"
+        },
+        "Landmarks": {
+          "ElderTreetop": "Elder Treetop",
+          "LostCity": "Lost City",
+          "BlackMarket": "Black Market",
+          "LegendaryForge": "Legendary Forge",
+          "TheFerry": "The Ferry",
+          "TheTower": "The Tower"
+        },
+        "Hirelings": {
+          "Spring Uprising (R)": "Spring Uprising (R)",
+          "Forest Patrol (R)": "Forest Patrol (R)",
+          "Last Dynasty (R)": "Last Dynasty (R)",
+          "The Exile (R)": "The Exile (R)",
+          "Popular Band (R)": "Popular Band (R)",
+          "Furious Protector (R)": "Furious Protector (R)",
+          "Highway Bandits (R)": "Highway Bandits (R)",
+          "Riverfolk Flotilla (R)": "Riverfolk Flotilla (R)",
+          "Warm Sun Prophets (R)": "Warm Sun Prophets (R)",
+          "Sunward Expedition (R)": "Sunward Expedition (R)",
+          "Corvid Spies (R)": "Corvid Spies (R)",
+          "Flame Bearers (R)": "Flame Bearers (R)",
+          "Vault Keepers (R)": "Vault Keepers (R)",
+          "Rabbit Scouts (D)": "Rabbit Scouts (D)",
+          "Feline Physicians (D)": "Feline Physicians (D)",
+          "Bluebird Nobles (D)": "Bluebird Nobles (D)",
+          "The Brigand (D)": "The Brigand (D)",
+          "Street Band (D)": "Street Band (D)",
+          "Stoic Protector (D)": "Stoic Protector (D)",
+          "Bandit Gangs (D)": "Bandit Gangs (D)",
+          "Otter Divers (D)": "Otter Divers (D)",
+          "Lizard Envoys (D)": "Lizard Envoys (D)",
+          "Mole Artisans (D)": "Mole Artisans (D)",
+          "Raven Sentries (D)": "Raven Sentries (D)",
+          "Rat Smugglers (D)": "Rat Smugglers (D)",
+          "Badger Bodyguards (D)": "Badger Bodyguards (D)"
+        }
+      }
+    },
+    "Maps": {
+      "Title": "Spielbrett-Generator",
+      "TitleShort": "Spielbrett",
+      "CloseButton": "Schließen",
+      "MapNames": {
+        "fall": "Herbst",
+        "winter": "Winter",
+        "lake": "See",
+        "mountain": "Gebirge"
+      },
+      "Randomize": "Zufällig",
+      "Balanced": "Ausgeglichen",
+      "Error": "Versucht, ein ausgeglichen Layout zu finden; konnte aber nicht. Versuchen Sie es nochmal! Diesmal könnte es klappen."
+    }
+  }
+}

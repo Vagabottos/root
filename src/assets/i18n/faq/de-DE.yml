@@ -1,0 +1,344 @@
+
+- category: Das Gesetz
+  color: "#000000"
+  questions:
+    - q: Wie lese ich das Gesetz?
+      a: Der Text in Kapitälchen definiert Schlüsselbegriffe. Text in kursiv liefert Erinnerungen und Erläuterungen. Partei-Symbole markieren Regeln, die durch den Abschnitt zu Partei-Regeln und -Fähigkeiten verändert werden.
+      
+    - q: Ich möchte etwas Bestimmtes im Spiel tun und die Regeln verbieten es nicht. Darf ich es tun?
+      a: Solange du dich an alle Regeln der Aktion hältst, kannst du davon ausgehen, dass es möglich ist! Das Spiel wird dich oft mit skurrilen, unerwarteten Situationen überraschen, und das ist Teil des Spaßes, aber das bedeutet nicht, dass du den Tisch umwerfen darfst.
+
+    - q: Kann ein anderer Spieler meine Aktion verhindern, wenn er mit ihr nicht einverstanden ist?
+      a: Root hat keine Aktionen, die das Einverständnis eines Mitspielers erfordern. Führe deine Aktion einfach aus.
+
+    - q: Ich glaube, dass etwas Bestimmtes im Spiel geschehen sollte, aber das Gesetz enthält keine Anweisung dazu. Was soll ich machen?
+      a: Folge den Regeln im Gesetz, nicht deinem Instinkt.
+
+    - q: Eine Regel verwendet einen bestimmten Begriff oder Aktion. Beziehen sich diese auch auf andere, ähnliche Begriffe oder Aktionen?
+      a: "Nein. Du kannst davon ausgehen, dass wir nur den genannten Begriff meinen und keine ähnlichen. Beispiel: „bewegen“ und „platzieren“ sind verschiedene Begriffe."
+      laws:
+        - "6.2.2"
+
+- category: Allgemein
+  color: "#000000"
+  questions:
+    - q: Welche Marker sind Gebäude? Und welche sind Plättchen?
+      a: Gebäude sind quadratische Pappteile, die in offene Gebäudefelder auf dem Spielplan passen, während Plättchen runde Pappteile sind, die kein Feld belegen. Detaillierte Listen der Gebäude und Plättchen findest du auf der Rückseite des Lernspiels und auf den Rückseiten der Parteitafeln.
+      laws: 
+        - "2.5"
+        - "16.6.3"
+        - "16.6.32"
+    
+    - q: Verliere ich Punkte, wenn eines meiner Gebäude entfernt wird?
+      a: Nein!
+      laws: 
+        - "2.5.2"
+        - "16.6.22"
+
+    - q: Kann ich in einem Kampf mehrere Hinterhaltkarten spielen?
+      a: Nein! Nur eine.
+      laws: 
+        - "4.3.1"
+
+    - q: Entfernen die Gunst... Karten wirklich alle gegnerischen Marker von diesen Lichtungen?
+      a: Ja, außer den Vagabund und den Lord of the Hundreds’ warlord.
+      laws: 
+        - "9.2.2"
+        - "14.2.2"
+
+    - q: Wie werde ich feindliche Plättchen wie Sympathie-Plättchen los?
+      a: Wie jeden anderen Marker können sie bekämpft und von Fähigkeiten entfernt werden, die sagen, dass sie Marker entfernen können. 
+      laws:
+        - "2.1"
+        - "2.5"
+        - "4.3"
+    
+    - q: Löst die Platzierung eines Markers auf einer sympathisierenden Lichtung Empörung aus?
+      a: Nein! Du musst Krieger bewegen oder die Sympathie entfernen, um Empörung auszulösen.
+      laws:
+        - "8.2.6"
+        - "8.2.5"
+
+    - q: Wohin gehen die Gebäude und Plättchen, wenn sie entfernt werden?
+      a: Meistens zurück zum Brett oder zum Vorrat des besitzenden Spielers. Dies wird näher beschrieben in 2.5.
+      laws:
+        - "2.5"
+        - "16.6.22"
+
+    - q: Was bedeutet es, ein Marker für das Herstellen zu "aktivieren"? Mache ich etwas damit?
+      a: "Nö. Aktivieren bedeutet nur: \"Ich habe es und möchte es zum Herstellen verwenden.\" Du musst sie nicht loswerden oder etwas anderes tun, als auf sie zu zeigen und zu sagen: \"Ich aktiviere sie, um eine Karte herzustellen.\""
+      laws:
+        - "4.1.1"
+
+    - q: Kann ich der Handlung eines anderen Spielers nicht zustimmen?
+      a: Nein. Root hat keine Aktionen, die das Einverständnis eines Mitspielers erfordern. Führe deine Aktion einfach aus.  Der Vagabund braucht zum Beispiel keine Zustimmung, um mit jemandem ein Bündnis zu schließen oder jemandem zu helfen, und ein Spieler braucht nicht die Zustimmung des Flussvolkes, um von ihm Dienstleistungen zu kaufen.
+      laws:
+        - "9.2.8"
+        - "9.5.4"
+        - "11.2.6"
+
+- category: Karten
+  color: "#000000"
+  questions:
+    - q: Auf der "Rüstungsschmiede"-Karte steht "gewürfelte Treffer". Heißt es wirklich "gewürfelte Treffer" und nicht "Treffer"?
+      a: Ja, in der Tat! "Gewürfelte Treffer" bedeutet nur die gewürfelten Treffer.
+
+- category: Marquise de Katz
+  color: "#e07a37"
+  questions:
+    - q: Was passiert, wenn alle meine Marker von der Karte entfernt werden?
+      a: Leider bist du dann wahrscheinlich aus dem Spiel. Wenn jedoch die Flussvolk-Kompanie oder Hirelings im Spiel sind, können Sie erneut ein Gebäude bauen, wenn Sie eine Lichtung beherrschen. So oder so, wenn das passiert, ist das Spiel wahrscheinlich gleich zu Ende!
+      laws:
+        - "6"
+
+    - q: Kann jemand einen Marker mit meiner Festung in die Lichtung bewegen?
+      a: Ja! "Plazieren" ist ein anderes Schlüsselwort als "bewegen".
+      laws:
+        - "4.2"
+        - "6.2.2"
+
+    - q: Wenn ich in einem Kampf auf der Lichtung mit der Festung in einen Hinterhalt gerate, wann werden meine Krieger wieder auf die Lichtung der Festung gestellt?
+      a: Sofort, sofern du eine Karte ausgibst. Das bedeutet, dass du die Kontrolle über "keine verbleibenden Krieger" vermeiden kannst, die durch den Hinterhalt ausgelöst wird. 
+      laws:
+        - "4.3.1"
+        - "6.2.3"
+
+    - q: Kann die Marquise Hirelings auf der Festung platzieren?
+      a: Ja! 
+      laws:
+        - "6.2.3"
+
+- category: Horst-Dynastien
+  color: "#416eb0"
+  questions:
+    - q: Wird der Aufruhr ausgelöst, wenn ich eine leere Spalte habe?
+      a: Nö! Aufruhr wird ausgelöst, wenn du eine Karte in deinem Dekret hast, die du nicht erfüllen kannst.
+      laws:
+        - "7.7"
+
+    - q: Wird Aufruhr ausgelöst, wenn ich für einige, aber nicht für alle Karten in einer Spalte Aktionen ausführen kann?
+      a: Ja! In dem Moment, in dem du eine einzige Karte nicht ausführen kannst, gerätst du in Aufruhr.
+      laws:
+        - "7.7"
+
+    - q: Kann ich jeweils einen Krieger von derselben Lichtung bewegen, um mehrere Bewegungskarten in meinem Dekret zu erfüllen? Kann ich denselben Krieger hin und her bewegen, wenn ich die richtigen Karten habe?
+      a: Ja! Du kannst das Dekret so weit spielen, wie es die Karten zulassen. Befolge einfach die Regeln für die Bewegung und alles ist gut. 
+      laws:
+        - "7.5.2"
+    
+    - q: Was bewirkt die Fähigkeit des Despoten? Bekomme ich nicht schon einen Siegpunkt für das Entfernen eines Gebäudes oder eines Plättchens?
+      a: Da hast du recht! Du bekommst einen Extrapunkt, aber nicht mehrere Extrapunkte, wenn du mehrere Gebäude und/oder Plättchen gleichzeitig entfernst.
+      laws:
+        - "7.8.4"
+
+    - q: Wenn ich den charismatischen Anführer und Rekrutiere, aber nur noch einen Krieger in meinem Vorrat habe. Setze ich keine Krieger oder einen Krieger ein, bevor ich in den Aufruhr gehe?
+      a: Platziere einen. Wenn du aufgefordert wirst, Marker zu platzieren, aber nicht alle platzieren kannst, musst du so viele wie möglich platzieren.
+      laws:
+        - "7.7"
+        - "7.8.3"
+
+- category: Waldland-Allianz
+  color: "#68b653"
+  questions:
+    - q: Kann ich mit einem Stützpunkt mit einer Klasse, dessen Stützpunkt ich bereits gebaut habe, revoltieren?
+      a: Nein! Die Revoltieren-Aktion besagt, dass du eine sympathisierende Lichtung wählen musst, die zu einem ungebauten Stützpunkt passt.
+      laws:
+        - "8.4.1"
+
+    - q: Kann ich auf der Lichtung mit dem Festungs-Plättchen revoltieren?
+      a: Nein! Du müsstest zuerst ein Sympathieplättchen platzieren, was du wegen der besonderen Fähigkeit der Marquise "Die Festung" nicht tun kannst.
+      laws:
+        - "6.2.2"
+        - "8.4.1"
+
+    - q: Was passiert, wenn ein Hireling die Sympathie entfernt?
+      a: "Der Spieler, der den Hireling kontrolliert, würde Empörung auslösen, da Empörung besagt: \"Wenn ein Spieler ... entfernt\". Dies ist auch ausdrücklich in Gesetz E.3.7 geregelt."
+      laws:
+        - "8.2.6"
+        - "16.4.3.7"
+
+    - q: Verursacht der Vagabund Empörung?
+      a: Nö. Der Vagabund ist eine Figur, kein Krieger.
+      laws:
+        - "8.2.6"
+
+    - q: Verursachen Hirelings das Kriegsrecht?
+      a: Hirelings, die von einem feindlichen Spieler kontrolliert werden, werden zu dessen Parteikriegern hinzugefügt. Wenn die Dynastien also 1 Dynastien-Krieger und 2 von ihnen kontrollierte Hirelingskrieger auf einer Lichtung hat, würde diese Lichtung das Kriegsrecht auslösen. Unkontrollierte Hireling-Krieger würden jedoch nicht das Kriegsrecht auslösen.
+
+- category: Vagabund
+  color: "#6d6e70"
+  questions:
+    - q: Kann ich Karten mit Anforderungen für mehrere Klassen herstellen?
+      a: "Nein. Deine Hämmer passen zu deinem aktueller Lichtung, du kannst also immer nur mit einer Farbe arbeiten. Die gute Nachricht: Die Mehr-Klassen-Karten sind für dich sowieso nutzlos!"
+      laws:
+        - "9.2.1"
+
+    - q: Löse ich die Empörung der Allianz aus, wenn ich eine sympathisierende Lichtung betrete?
+      a: Nö. Der Vagabund ist eine Figur, kein Krieger.
+      laws:
+        - "8.2.6"
+        - "9.2.2"
+
+    - q: Löse ich Empörung aus, wenn ich verbündete Krieger der Waldland-Allianz auf eine sympathisierende Lichtung bewege?
+      a: Nein! (*Diese Regelung wurde mit der Veröffentlichung der Marodeur-Erweiterung und des 8. Drucks geändert, da die Bewegung der Vagabunden nun das Schlüsselwort "Zwingen" verwendet).
+      laws:
+        - "8.2.6"
+        - "9.2.9"
+
+    - q: Wird der Vagabund mit einer Partei feindlich, wenn er eines ihrer Gebäude oder Plättchen entfernt, aber keine Krieger? 
+      a: Nein! Es gibt keine Zeugen, die ihn sehen. Brenn alles nieder!
+      laws:
+        - "9.2.9.3"
+
+    - q: Wenn der Vagabund einen Hireling-Krieger entfernt, der von einer anderen Fraktion kontrolliert wird, wird der Vagabund dann mit dieser Fraktion verfeindet? 
+      a: Nein! Die Hireling sind keine Fraktionsmitglieder der jeweiligen Fraktion.
+      laws:
+        - "9.2.9.3"
+
+    - q: Wenn der Vagabund mit einem kontrollierten Hireling kämpft und gegnerische Spielfiguren entfernt, wird der Vagabund dann mit dieser Fraktion verfeindet oder erhält Niedertracht-Punkte, wenn er bereits verfeindet ist? 
+      a: Nein! Hirelings nutzen nicht die Fähigkeiten ihrer kontrollierenden Fraktion (E.3.5) und lassen ihre kontrollierende Fraktion keine Punkte für das Entfernen von gegnerischen Figuren erhalten. (E.3.6).
+      laws:
+        - "9.2.9.3"
+        - "16.4.3.5"
+        - "16.4.3.6"
+
+    - q: Kann der Vagabund verbündete Krieger mit der Fähre aus der Unterwelterweiterung bewegen? Wenn ja, zieht dann auch die verbündete Partei eine Karte? 
+      a: Ja zu beidem!
+      laws:
+        - "16.2.2.5"
+
+    - q: Kann ein Vagabund eine Koalition mit einem Spieler eingehen, der eine Dominanzkarte aktiviert hat? Kann ein Spieler eine Dominanzkarte aktivieren, nachdem ein Vagabund eine Koalition mit ihm gebildet hat? 
+      a: Ein Vagabund kann keine Koalition mit einem Dominanzspieler eingehen, da er keinen Siegpunktmarker auf der Leiste hat. Allerdings kann ein Spieler eine Dominanzkarte aktivieren, nachdem ein Vagabund eine Koalition mit ihm gebildet hat!
+      laws:
+        - "9.2.8"
+
+    - q: Der Vagabund ist in einer Koalition mit mir. Kann ich noch gegen ihn kämpfen? Kann er noch gegen mich kämpfen? 
+      a: Nein, keiner von euch kann gegen den anderen kämpfen. (*Diese Regelung wurde mit der Marodeur-Erweiterung und dem 8. Druck geändert. Die Kampfregeln besagen nun, dass man gegen einen Feind kämpfen muss, d.h. gegen jeden Spieler, der nicht in einer Koalition ist).
+      laws:
+        - "4.3"
+        - "9.2.8"
+
+    - q: Kann ich Niedertracht-Siegpunkte erhalten, indem ich einen Marker mit Schießen entferne? 
+      a: Nein! Niedertracht besagt, dass du der Marker im Kampf in deinem Zug entfernen musst. Jemanden mit einer Armbrust zu töten, ist schließlich der Weg des Feiglings.
+      laws:
+        - "9.2.9.3.1"
+
+- category: Flussvolk-Kompanie
+  color: "#5bc3bd"
+  questions:
+    - q: Wenn ich Flussvolk-Söldner anheuere, kann ich einen Kampf mit ihnen beginnen, auch wenn ich keine Marker auf der Lichtung habe, auf der ich kämpfe?
+      a: Nur zu! Und wenn du dort keine Krieger hast, gibt es niemanden, mit dem du die Treffer teilen kannst. 
+      laws:
+        - "11.2.7"
+    
+    - q: Kann ich eine Karte exportieren, wenn sich der darauf befindliche Gegenstand nicht im Vorrat befindet oder wenn ich den permanenten Effekt bereits besitze?
+      a: Nein! Sie müssen die Karte überhaupt erst herstellen können, um sie exportieren zu können. In diesen Fällen konnten Sie die Karte nicht exportieren.
+      laws:
+        - "11.5.3"
+
+    - q: Kann das Flussvolk sich weigern, Ihnen eine seiner Dienstleistungen zu verkaufen?
+      a: Nein! Solange Sie die Kosten bezahlen, erhalten Sie die Dienstleistung.
+      laws:
+        - "11.2.6"
+
+    - q: Können Flussvolk-Söldner für den Kampf gegen vom Flussvolk kontrollierte Hirelings eingesetzt werden?
+      a: Ja! Die Söldner werden nur nicht gegen das Flussvolk selbst kämpfen, aber schon gegen kontrollierte Hirelings.
+      laws:
+        - "11.2.7"
+
+- category: Echsen-Kult
+  color: "#fcf065"
+  questions:
+    - q: Kann ich mit " Konvertieren" oder " Weihen" nur einen Krieger oder ein Gebäude entfernen, aber nicht meinen eigenen Krieger oder ein Gebäude dort platzieren?
+      a: Nein! Die Regel besagt, dass "du die Verschwörung abschließen musst", und Parteienregeln haben Vorrang vor allgemeinen Regeln, wenn du nicht beide erfüllen kannst. 
+      laws:
+        - "10.4.3"
+
+# - category: Keepers in Iron
+  # color: "#8b8d90"
+  # questions:
+    # - q: For the second step of placing relics, do I get to choose which relics go in which clearings?
+      # a: Place them randomly.
+      # laws:
+        # - "15.3.3"
+        
+    # - q: The Law (15.5.2.II) says I need to rule a clearing in order to battle in it, but the Learn to Play and the board do not say this. What’s going on?
+      # a: You do not need to rule in order to battle—only to delve!
+      # laws:
+        # - "15.5.2.2"
+
+    # - q: If hirelings remove a relic, how do I resolve the Prized Trophy ability?
+      # a: No victory points are awarded. If the hireling is controlled, the controlling player decides where to put the relic. If the hireling is uncontrolled, the player taking their turn decides where to put the relic.
+      # laws:
+        # - "15.2.5"
+        
+    # - q: Does the Keepers’ Prized Trophies ability trigger if the Vagrant Vagabond removes a relic by using Instigate, but they’re in a coalition with the Keepers?
+      # a: As written, no, since the Vagrant is not an enemy in this case. Why the Vagrant would want to do this is beyond me, though!
+      # laws:
+        # - "15.2.5"
+
+# - category: Lord of the Hundreds
+  # color: "#e11b3f"
+  # questions:
+    # - q: In battle, who chooses whether a hit removes the warlord or a regular warrior?
+      # a: The Hundreds player does, matching the fact that the player taking hits chooses the order of removing buildings and tokens. So if you took two hits and you have the warlord, two warriors, and a stronghold, you could remove two warriors or you could remove one warrior and the warlord. Though we wouldn’t recommend removing the warlord early!
+      # laws:
+        # - "14.2.2"
+        # - "4.3.4"
+        
+    # - q: What exactly is required for the Hundreds to oppress a clearing?
+      # a: You need to (1) rule, (2) have a Hundreds piece there, and (3) have no enemy pieces there. For example, you do oppress with a mob and a Riverfolk Mercenary warrior. You do not oppress with only a Riverfolk Mercenary warrior. You do not oppress with a mob, a Riverfolk Mercenary warrior, and a Riverfolk trade post. 
+      # laws:
+        # - "14.6.2"
+        
+    # - q: Does the Rowdy mood let the Hundreds draw more cards when they use the Charm Offensive card from the Exiles & Partisans deck?
+      # a: No. Rowdy makes you draw more cards only during your draw step in Evening.
+      # laws:
+        # - "14.7.6"
+
+    # - q: Do I declare whether I’m using my Looters before or after the defender declares that they are ambushing?
+      # a: Declaring Looters.
+      # laws:
+        # - "14.2.5"
+
+# - category: Advanced Setup
+  # color: "#000"
+  # questions:
+    # - q: "Keepers in Iron: For the second step of placing relics, do I get to choose which relics go in which clearings?"
+      # a: Place them randomly. (That said, it usually won’t make much difference, since people can adjust their strategy to prevent you from delving efficiently.)
+      
+    # - q: "Keepers in Iron: What happens if there aren’t any two adjacent clearings on the map edge?"
+      # a: Return the Keepers’ advanced setup card to the box and draw new advanced setup cards until you draw a militant faction (red with swords). This faction replaces the Keepers. We will likely add general mulligan rules that mirror this as more factions get added to the game and it becomes increasingly possible to draw a faction that is impossible to set up.
+
+# - category: Hirelings
+  # color: "#000"
+  # questions:
+    # - q: "The Exile: Can I give the Exile an exhausted item?"
+      # a: Yes!
+
+    # - q: "The Exile: Can I give the Exile multiple items on the same turn?"
+      # a: Yes!
+
+    # - q: "Highway Bandits: If the Highway Bandits remove a Marquise warrior, can the Marquise use Field Hospitals?"
+      # a: Nope. The power happens while moving “on a path” with Highway Bandits, so they are not in a clearing at that moment.
+
+    # - q: "Spring Uprising: Can a hireling battle the Spring Uprising?"
+      # a: Nope. They do not have a hand of cards to discard from.
+
+    # - q: "Warm Sun Prophets: When I force a battle and the defender plays an ambush card, which placer makes decisions about piece removal and playing counter-ambushes?"
+      # a: The player who is being forced to battle.
+
+    # - q: "Flame Bearers: Does “warriors first” preclude me from removing undefended buildings or tokens of a player if there are warriors of another player there?"
+      # a: No, this works in the same way as battle or the Vagabond’s Strike—if a player has warriors there, you must remove the warriors first.
+
+# - category: Landmarks
+  # color: "#000"
+  # questions:
+    # - q: "Legendary Forge: Do I only need a faction piece at the Legendary Forge in order to craft an item there, or do I need something else?"
+      # a: You still follow the normal crafting rules, so you still need to discard a card that has an available item on it—in this case, an item that is on the Legendary Forge card—and you need crafting pieces in the relevant clearing suits, as shown on the card. You just also need a faction piece at the Legendary Forge.
+
+    # - q: "Lost City: Can I revolt in the Lost City if I have already filled the clearing’s slots with my bases, but I still have a base left on my board?"
+      # a: Yes, you can! The Lost City is very vulnerable to revolts, since it can be treated as any suit.
+
+    # - q: "Ferry: If I move the Ferry to a clearing with a sympathy token, do I draw the card first or trigger Outrage first?"
+      # a: These happen at the same time, so you decide the order.

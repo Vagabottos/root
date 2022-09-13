@@ -223,11 +223,6 @@
       laws:
         - "9.2.9.3.1"
 
-    - q: Can the Vagabond move Allied warriors using the Ferry from the Underworld Expansion? If so, does the Ally faction also draw a card? 
-      a: Yes to both!
-      laws:
-        - "16.2.2.5"
-
 - category: Riverfolk Company
   color: "#5bc3bd"
   questions:
