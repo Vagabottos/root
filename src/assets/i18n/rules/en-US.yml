@@ -524,7 +524,7 @@
       pretext: Your Birdsong has two steps in the following order.
       children:
         - name: Refresh.
-          text: Flip two exhausted items face up for each `item:tea` face up at the start of your Birdsong. Then flip up three more exhausted items.
+          text: Flip two exhausted items face up for each `item:tea` face up on the Refresh Track at the start of your Birdsong. Then flip up three more exhausted items.
         - name: Slip.
           text: You may move into an adjacent clearing or forest without exhausting any `item:boot`, even for moving into a Hostile clearing (`rule:9.2.9.3.2`). This move ignores all effects that prevent movement out of a clearing _(such as the Corvids' snare)_.
 
