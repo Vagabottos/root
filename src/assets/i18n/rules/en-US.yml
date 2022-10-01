@@ -10,8 +10,8 @@
         - name: Use of **Cannot**.
           plainName: Use of Cannot.
           text: The term **cannot** is absolute. It cannot be overridden unless explicitly instructed.
-        - name: Resolving Simultaneous Things.
-          text: If multiple effects or decisions would occur simultaneously, the player taking their turn chooses their order unless the order is explicitly defined. If an effect would remove multiple pieces simultaneously and trigger multiple effects from removing them, remove all the pieces before resolving the effects.
+        - name: Unclear Resolutions and Choices.
+          text: Whenever it is unclear what order simultaneous effects should resolve in, or which player should make a decision, the player taking their turn chooses.
 
     - name: Public and Private Information
       children:
@@ -405,7 +405,7 @@
               text: Spend supporters matching the suit of the chosen clearing. The number of supporters that must be spent is listed above the sympathy token.
               subchildren:
                 - name: Martial Law.
-                  text: You must spend another matching supporter if the target clearing has at least three warriors belonging to another player.
+                  text: You must spend another matching supporter if the target clearing has at least 3 warriors of another player, including warriors they are treating as their own for rule _(Mercenaries, hirelings, etc.)_.
             - name: "Step 3: Place and Score."
               text: Place a sympathy token in the chosen clearing. Score the victory points listed on the space uncovered on your faction board.
 
@@ -488,7 +488,7 @@
                 - name: Aiding Ally.
                   text: Each time you Aid an Allied faction, score two victory points.
                 - name: Moving with Ally.
-                  text: Whenever you move to an adjacent clearing, you may also force warriors of one Allied faction to move from your origin clearing to your destination clearing.
+                  text: Whenever you move to an adjacent clearing, you may also force warriors of one Allied faction to move from your origin clearing to your destination clearing along with your Vagabond pawn.
                 - name: Attacking with Ally.
                   text: At the start of battle as the attacker, you may treat the warriors of one Allied faction in the clearing of battle as your own. The maximum hits you can roll equals the number of their warriors there plus your total undamaged `item:sword`. You cannot treat Allied warriors as your own when attacking the same Allied faction.
                 - name: Taking Hits with Ally.
@@ -1263,7 +1263,7 @@
               text: Forests touching the lake are **coastal forests**. Each coastal forest is adjacent to its two neighboring coastal forests _(separated by one coastal clearing)_.
 
             - name: The Ferry.
-              text: Once per turn, a player taking a move from the coastal clearing with the Ferry can move to another coastal clearing, moving the Ferry as well. _(This follows the normal move rules.)_ After taking this move, that player draws one card. The Ferry cannot be battled or removed.
+              text: Once per turn, pieces moving from the coastal clearing with the Ferry can move to another coastal clearing, treating it as adjacent and moving the Ferry along with them. After this, the moving player draws one card. _(This follows the normal move rules.)_ The Ferry cannot be battled or removed.
             
         - name: Mountain Map
           subchildren:
