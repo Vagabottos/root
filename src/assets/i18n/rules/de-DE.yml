@@ -6,7 +6,7 @@
     - name: Widersprüchliche Regeln
       children:
         - name: Vorrang.
-          text: Wenn eine Karte dem Gesetz von Root widerspricht, hat die Karte Vorrang. Wenn die Spielanleitung dem Gesetz widerspricht, hat das Gesetz Vorrang. Wenn du sowohl eine Grundregel als auch eine Partei-Regel oder Hireling-Regel befolgen kannst, befolge beide; kannst du das nicht, befolge die Partei-Regel oder die Hireling-Regel.
+          text: Wenn eine Karte dem Gesetz von Root widerspricht, hat die Karte Vorrang. Wenn die Spielanleitung dem Gesetz widerspricht, hat das Gesetz Vorrang. Wenn du sowohl eine Grundregel, als auch eine Partei-Regel oder Hireling-Regel befolgen kannst, befolge beide; kannst du das nicht, befolge die Partei-Regel oder die Hireling-Regel.
         - name: Benutzung von **kann nicht**.
           plainName: Benutzung von "kann nicht".
           text: Der Ausdruck **kann nicht** ist absolut. Keine andere Regel kann Vorrang haben, sofern es nicht explizit anders angegeben ist.
@@ -44,7 +44,7 @@
         - name: Marker-Besitz.
           text: Der Besitz von Partei-Markern kann sich nicht ändern. _(So kann die Marquise zum Beispiel kein Feldlazarett für Flussvolk-Söldner oder Hirelings einsetzen, da diese keine Marquise-Krieger sind.)_
         - name: Marker-Manipulation.
-          text: Das Platzieren und Entfernen von Markern erfolgt wie im Glossar definiert  (`rule:16.6.19`, `rule:16.6.22`). Falls du aufgefordert wirst, Marker zu platzieren, zu nehmen oder zu entfernen, dies aber nicht vollständig tun kannst, musst du die maximal mögliche Anzahl setzen, nehmen oder entfernen. _(Dadurch kannst du keine Kosten oder Voraussetzungen vermeiden. Du kannst nur nicht weniger tun als das maximal Mögliche.)_
+          text: Das Platzieren und Entfernen von Markern erfolgt wie im Glossar definiert (`rule:16.6.19`, `rule:16.6.22`). Falls du aufgefordert wirst, Marker zu platzieren, zu nehmen oder zu entfernen, dies aber nicht vollständig tun kannst, musst du die maximal mögliche Anzahl setzen, nehmen oder entfernen. _(Dadurch kannst du keine Kosten oder Voraussetzungen vermeiden. Du kannst nur nicht weniger tun als das maximal Mögliche.)_
         - name: Verwendung von **zwingen**.
           plainName: Verwendung von zwingen.
           text: Mit einigen Effekten kannst du einen Spieler oder seine Marker zum Handeln **zwingen**. Handle dies genau so ab, als hätte sich dieser Spieler dafür entschieden, wie durch die Wirkung begrenzt. _(Zum Beispiel, wenn du die Dynastien zwingst Krieger zu bewegen, profitieren sie von Herren des Waldes.)_
@@ -60,7 +60,7 @@
         - name: Vögel sind Joker.
           text: Jede Vogel-Karte kann als Karte einer beliebigen Klasse benutzt werden, auch wenn du mehrere Karten derselben Klasse ausgeben, nehmen oder hergeben musst. `faction:cult:10.2.2`
           subchildren:
-            - name: Erzwungene Effekte..
+            - name: Erzwungene Effekte.
               text: Wenn du dazu aufgefordert wirst, Fuchs-, Hasen- oder Maus-Karten abzulegen oder herzugeben, musst du Vogel-Karten so behandeln wie die der verlangten Klasse.
             - name: Umgekehrter Austausch.
               text: Wenn du aufgefordert wirst, eine Vogel-Karte auszugeben, abzulegen, zu nehmen oder herzugeben, kannst du sie nicht mit der Karte einer anderen Klasse ersetzen.
@@ -158,7 +158,7 @@
             - name: Hinterhalt ausführen.
               text: Der Verteidiger landet sofort zwei Treffer (`rule:4.3.4`). Dann legt er die Hinterhalts-Karte ab. Wenn keine angreifenden Krieger oder Figuren übrig sind, beende den Kampf sofort.
         - name: "Schritt 2: Würfeln und extra Treffer landen."
-          text: Würfle mit beiden Würfeln. Der Angreifer wird Treffer entsprechend dem höheren Wert landen, der Verteidiger entsprechend dem niedrigeren. Ist der Wert gleich, werden Angreifer und Verteidiger die gleiche Anzahl Treffer landen. _(Die Verwendung von „wird“ spiegelt wieder, dass Treffer nicht vor Schritt 4 gelandet werden.)_ `faction:woodland:8.2.2`
+          text: Würfle mit beiden Würfeln. Der Angreifer wird Treffer entsprechend dem höheren Wert landen, der Verteidiger entsprechend dem niedrigeren. Ist der Wert gleich, werden Angreifer und Verteidiger die gleiche Anzahl Treffer landen. _(Die Verwendung von „wird“ spiegelt wider, dass Treffer nicht vor Schritt 4 gelandet werden.)_ `faction:woodland:8.2.2`
           subchildren:
             - name: Maximal würfelbare Treffer.
               text: Die maximale Anzahl Treffer, die du durch Würfeln landen kannst, entspricht der Anzahl deiner eigenen Krieger auf der Lichtung des Kampfes – egal ob du Angreifer oder Verteidiger bist. `faction:vagabond:9.2.6`
@@ -174,7 +174,7 @@
 
 - name: Spielaufbau
   color: "#000000"
-  pretext: Wenn einige Spieler neu im Spiel sind, verwendet die Standard-Aufbau (`rule:5.1`). Wenn alle Spieler bereits gespielt haben und ihr mehr Abwechslung wollt, verwendet den Erweiterten-Aufbau (`rule:16.1`). Wenn ihr mit fünf oder mehr Parteien spielen wollt, die in den Ecken starten würden, müsst ihr den Erweiterten-Aufbau  verwenden.
+  pretext: Wenn einige Spieler neu im Spiel sind, verwendet den Standard-Aufbau (`rule:5.1`). Wenn alle Spieler das Spiel bereits gespielt haben und ihr mehr Abwechslung wollt, verwendet den Erweiterten-Aufbau (`rule:16.1`). Wenn ihr mit fünf oder mehr Parteien spielen wollt, die in den Ecken starten würden, müsst ihr den Erweiterten-Aufbau verwenden.
   children:
     - name: Standard-Aufbau
       children:
@@ -395,13 +395,13 @@
             - name: "Schritt 2: Anhänger ausgeben."
               text: Gib zwei Anhänger entsprechend der Klasse deiner gewählten Lichtung aus.
             - name: "Schritt 3: Effekt ausführen."
-              text: Entferne alle gegnerischen Marker auf der gewählten Lichtung. Dann platziere dort den entsprechenden Stützpunkt und so viele Krieger, wie du sympathisierende Lichtungen der gleichen Klasse hast. Am Ende legst du einen Krieger auf dein Feld für Offiziere.  Dieser Krieger ist nun ein **Offizier**. _(Denk daran, du erhältst einen Siegpunkt pro entferntem Plättchen und Gebäude.)_
+              text: Entferne alle gegnerischen Marker auf der gewählten Lichtung. Dann platziere dort den entsprechenden Stützpunkt und so viele Krieger, wie du sympathisierende Lichtungen der gleichen Klasse hast. Am Ende legst du einen Krieger auf dein Feld für Offiziere. Dieser Krieger ist nun ein **Offizier**. _(Denk daran, du erhältst einen Siegpunkt pro entferntem Plättchen und Gebäude.)_
 
         - name: Sympathie verbreiten.
           text: Platziere ein Sympathie- Plättchen wie folgt. Du kannst beliebig oft Sympathie verbreiten.
           subchildren:
             - name: "Schritt 1: Lichtung wählen."
-              text: Wähle eine nicht-sympathisierendeLichtung, die zu einer sympathisierenden Lichtung benachbart ist. Wenn es keine sympathisierenden Lichtungen gibt, kannst du eine beliebige Lichtung wählen.
+              text: Wähle eine nicht-sympathisierende Lichtung, die zu einer sympathisierenden Lichtung benachbart ist. Wenn es keine sympathisierenden Lichtungen gibt, kannst du eine beliebige Lichtung wählen.
             - name: "Schritt 2: Anhänger ausgeben."
               text: Gib Anhänger entsprechend der Klasse deiner gewählten Lichtung aus. Die Anzahl, die du ausgeben musst, ist über den Sympathie-Plättchen angegeben.
               subchildren:
@@ -423,7 +423,7 @@
     - name: Abend
       pretext: Dein Abend besteht aus zwei Schritten in dieser Reihenfolge.
       children:
-        - name: Militäreinsätze..
+        - name: Militäreinsätze.
           text: Du kannst die folgenden Aktionen, bis zur Anzahl deiner Offiziere, in beliebiger Reihenfolge und Häufigkeit ausführen.
           subchildren:
             - name: Bewegen.
@@ -519,7 +519,7 @@
         - name: "Schritt 5: Start-Gegenstände nehmen."
           text: Nimm die Gegenstände, die mit „S“ markiert sind, wie auf deiner Charakter-Karte angegeben. Platziere alle angegebenen `item:tea`, `item:coin` und `item:sack` Gegenstände auf den entsprechenden Leisten deiner Partei-Tafel. Lege alle anderen angegebenen Gegenstände aufgedeckt in deinen Rucksack. Lege alle verbleibenden „S“-Gegenstände in die Schachtel zurück.
         - name: "Schritt 6: Beziehungs-Marker platzieren."
-          text: Nimm einen Beziehungs-Marker für jede Partei außer dem Vagabund und platziere sie alle auf der Neutral-Spalte deiner Tabelle für Beziehungen.
+          text: Nimm einen Beziehungs-Marker für jede Partei außer dem Vagabunden und platziere sie alle auf der Neutral-Spalte deiner Tabelle für Beziehungen.
 
     - name: Morgenröte
       pretext: "Deine Morgenröte besteht aus zwei Schritten in dieser Reihenfolge:"
@@ -684,7 +684,7 @@
             - name: Flussboote.
               text: Der Käufer kann bis zum Ende seines Zuges Flüsse wie Wege verwenden.
             - name: Söldner.
-              text: Während des Tageslichts und Abends seines Zuges kann der Käufer Krieger des Flussvolks wie seine eigenen behandeln, um zu herrschen oder mit anderen Parteien, außer dem Flussvolk, zu kämpfen. _(Sie sind immer noch Partei-Marker vom Flussvolk, daher können sie nicht von Fähigkeiten wie dem Feldlazarett der Marquise betroffen sein oder bei Aktionen wie den Überzeugten Ministern des Herzogtums eingesetzt werden.)_
+              text: Während des Tageslichts und Abends seines Zuges kann der Käufer Krieger des Flussvolks wie seine eigenen behandeln, um zu herrschen oder mit anderen Parteien, außer dem Flussvolk, zu kämpfen. _(Sie sind immer noch Partei-Marker vom Flussvolk, daher können sie nicht von Fähigkeiten wie dem Feldlazarett der Marquise betroffen sein oder bei Aktionen wie den überzeugten Ministern des Herzogtums eingesetzt werden.)_
               subchildren:
                 - name: Treffer erleiden.
                   text: Der Käufer muss die Treffer aufteilen, wobei er ungerade Treffer durch das Entfernen von eigenen _(nicht Flussvolk)_ Kriegern, falls vorhanden, oder von eigenen Gebäuden oder Plättchen nur dann einstecken muss, wenn er keine Krieger _(einschließlich Flussvolk)_ in der Kampf-Lichtung hat.
@@ -698,7 +698,7 @@
         - name: "Schritt 2: Platziere Krieger."
           text: Platziere vier Krieger auf einer oder mehreren beliebigen Lichtungen am Fluss.
         - name: "Schritt 3: Handelsposten-Leisten füllen."
-          text: Platziere die 9 Handelsposten auf den entsprechenden Felder deiner Handelsposten-Leisten.
+          text: Platziere die 9 Handelsposten auf den entsprechenden Feldern deiner Handelsposten-Leisten.
         - name: "Schritt 4: Start-Mittel erhalten."
           text: Platziere drei Krieger auf deinem Feld für Einzahlungen.
         - name: "Schritt 5: Start-Preise setzen."
@@ -775,10 +775,10 @@
           text: Lege einen Vorrat von 20 Kriegern und 3 Tunnel-Plättchen an.
 
         - name: "Schritt 2: Erdhöhle vorbereiten."
-          text: Platziere das Erdhöhle-Brett nahe des Spielbretts.
+          text: Platziere das Erdhöhle-Brett nahe dem Spielbrett.
 
         - name: "Schritt 3: Oberfläche."
-          text: Platziere 2 Krieger und 1 Tunnel auf einer Eck-Lichtung die nicht die Start-Eck-Lichtung eines anderen Spielers ist und, wenn möglich, diagonal gegenüber von einer anderen Start-Eck-Lichtung ist.  Platziere dann 2 Krieger auf jeder Lichtung, die zu der gewählten Eck-Lichtung benachbart ist, mit Ausnahme der Erdhöhle. Platziere dann 2 Krieger auf jeder Lichtung, die zu der gewählten Eck-Lichtung benachbart ist, mit Ausnahme der Erdhöhle. _(Dies wurde gegenüber früheren Ausgaben aktualisiert, um die Flexibilität zu erhöhen.)_
+          text: Platziere 2 Krieger und 1 Tunnel auf einer Eck-Lichtung, die nicht die Start-Eck-Lichtung eines anderen Spielers ist und, wenn möglich, diagonal gegenüber von einer anderen Start-Eck-Lichtung ist. Platziere dann 2 Krieger auf jeder Lichtung, die zu der gewählten Eck-Lichtung benachbart ist, mit Ausnahme der Erdhöhle. Platziere dann 2 Krieger auf jeder Lichtung, die zu der gewählten Eck-Lichtung benachbart ist, mit Ausnahme der Erdhöhle. _(Dies wurde gegenüber früheren Ausgaben aktualisiert, um die Flexibilität zu erhöhen.)_
 
         - name: "Schritt 4: Gebäude-Leisten auffüllen."
           text: Platziere drei Zitadellen und 3 Märkte auf deinen entsprechenden Gebäude-Feldern.
@@ -979,7 +979,7 @@
     - name: Faction Setup
       children:
         - name: "Step 1: Garrison"
-          text:  Place your warlord, four warriors, and one stronghold in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing.
+          text: Place your warlord, four warriors, and one stronghold in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing.
 
         - name: "Step 2: Place Items"
           text: Place the four "R" items randomly under the ruins, unless this has already been done.
@@ -1000,7 +1000,7 @@
           text: If the warlord is not on the map, you must replace any Hundreds warrior with the warlord. If you cannot, you must place the warlord in any clearing.
 
         - name: Choose Mood.
-          text:  You must replace the mood card in your Mood Card slot with a different mood card that does not show an item that is in your Hoard. If you are Lavish and cannot choose a new mood card, you remain Lavish.
+          text: You must replace the mood card in your Mood Card slot with a different mood card that does not show an item that is in your Hoard. If you are Lavish and cannot choose a new mood card, you remain Lavish.
 
     - name: Daylight
       pretext: Your Daylight has three steps in the following order.
@@ -1177,16 +1177,16 @@
           text: Bestimmt die Sitzordnung und den ersten Spieler nach dem Zufallsprinzip.
 
         - name: "Schritt 5: Landmarken aufbauen"
-          text: Wählt als Gruppe ob ihr mit Landmarken spielen wollt. Wenn dies der Fall ist, können die in den Varianten-Spielbretten beschriebene Platzierung der Turm- und Fährenmarker ignorieren oder außer Kraft setzen.
+          text: Wählt als Gruppe, ob ihr mit Landmarken spielen wollt. Wenn dies der Fall ist, können die in den Varianten-Spielbretten beschriebene Platzierung der Turm- und Fährenmarker ignorieren oder außer Kraft setzen.
           subchildren:
             - name: "Schritt 1: Wählt."
               text: Entscheidet euch als Gruppe, ob ihr mit einem oder zwei Landmarken spielen wollt, und entfernt alle Landmarkenkarten, mit denen ihr nicht spielen wollt.
 
             - name: "Schritt 2: Landmarken bestimmen."
-              text: Mischt die gewählten Wahrzeichen-Karten, teilt die gewählte Anzahl aus und sammelt das auf jeder Karte abgebildete Wahrzeichen ein.
+              text: Mischt die gewählten Landmarken-Karten, teilt die gewählte Anzahl aus und sammelt das auf jeder Karte abgebildete Wahrzeichen ein.
 
             - name: "Schritt 3: Aufbau."
-              text: Der letzte Spieler in der Zugreihenfolge stellt eine gezogenen Landmarke auf, wie auf seiner Karte beschrieben. Wenn ihr euch für das Spiel mit zwei Landmarken entschieden habt, stellt der vorletzte Spieler in der Zugreihenfolge die andere gezogene Landmarke auf, wie auf seiner Karte beschrieben.
+              text: Der letzte Spieler in der Zugreihenfolge stellt eine gezogenen Landmarke auf, wie auf der Karte beschrieben. Wenn ihr euch für das Spiel mit zwei Landmarken entschieden habt, stellt der vorletzte Spieler in der Zugreihenfolge die andere gezogene Landmarke auf, wie auf seiner Karte beschrieben.
 
         - name: "Schritt 6: Aufbau Hirelings"
           text: As a group, you may choose to use exactly three hirelings, as follows.
@@ -1210,7 +1210,7 @@
           text: Wenn ihr mit zwei Spielern spielt, nehmt ihr alle vier Dominanzkarten vom Stapel. Mischt den Stapel. Jeder Spieler zieht fünf Karten. _(Nicht drei, wie bei der Standardaufstellung! Du wählst drei Karten aus, die du in Schritt 10 behältst)_.
 
         - name: "Schritt 8: Aufbau Parteien"
-          text: Als Gruppe könnt ihr Parteien auswählen und aufstellen, wie in der Standard-Aufbau beschrieben (`rule:5.1`) oder ihr könnt die Partei-Aufbau-Karten aus der Marodeur-Erweiterung verwenden, wie unten beschrieben.
+          text: Als Gruppe könnt ihr Parteien auswählen und aufstellen, wie in dem Standard-Aufbau beschrieben (`rule:5.1`) oder ihr könnt die Partei-Aufbau-Karten aus der Marodeur-Erweiterung verwenden, wie unten beschrieben.
           subchildren:
             - name: "Schritt 1: Aufbau-Karten austeilen."
               text: Mischt alle Aufbaukarten der militanten Parteien _(roter Name mit Schwert)_ und teilt eine Karte in der Tischmitte aus. Mischt die verbleibenden Aufbaukarten der militanten Partei zusammen mit allen Aufbaukarten der aufständischen Parteien _(grauer Name ohne Schwert)_ und legt eine Aufbaukarte der Parteien pro Spieler aus. _(Es wird eine Karte mehr als die Anzahl der Spieler sein.)_
