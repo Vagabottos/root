@@ -44,7 +44,7 @@
         - name: Piece Ownership.
           text: The ownership of faction pieces cannot change. _(For example, the Marquise cannot use Field Hospitals on Riverfolk mercenaries or hirelings, since these are not Marquise warriors.)_
         - name: Piece Manipulation.
-          text: Pieces are placed and removed as defined in the Glossary (`rule:16.6.19`, `rule:16.6.22`). If you are prompted to place, take, or remove pieces but you cannot do so fully, you must place, take, or remove the maximum number possible. _(This does not allow you to avoid costs or prerequisites. You just cannot do less than the most you can.)_
+          text: Pieces are placed and removed as defined in the Glossary (`rule:16.6.19`, `rule:16.6.22`). If you are prompted to place, take, or remove pieces but you cannot do so fully, you must place, take, or remove the maximum number possible. _(This does not allow you to avoid costs or prerequisites. You just cannot do less than the most you can.)_ If multiple pieces are removed simultaneously and that would trigger effects, remove all pieces before triggering effects.
         - name: Use of **Force**.
           plainName: Use of Force.
           text: Some effects let you **force** a player or their pieces to act. Resolve this exactly as if that player were choosing to do this, as limited by the effect. _(For example, if you force the Eyrie to move warriors, they benefit from Lords of the Forest.)_
@@ -461,11 +461,9 @@
           text: The Vagabond's capabilities depend on the items he acquires. Instead of a Crafted Items box, he has a Satchel and various item tracks. Items on the Vagabond's faction board can be face up or face down. The Vagabond **exhausts** face-up undamaged items, flipping them face down, to take many actions.
           subchildren:
             - name: Item Tracks.
-              text: When gained, `item:tea`, `item:coin`, and `item:sack` are placed face up on their matching tracks. Each track can only hold three matching items.
+              text: When gained or flipped face up in the Satchel, `item:tea`, `item:coin`, and `item:sack` are placed face up on their matching tracks. When flipped face down, `item:tea`, `item:coin`, and `item:sack` on tracks are placed face down in the Satchel. Each track can only hold three matching items.
             - name: Satchel.
               text: When gained, `item:boot`, `item:sword`, `item:crossbow`, `item:torch`, and `item:hammer` are placed face up in the Vagabond's Satchel.
-            - name: Moving Items.
-              text: The Vagabond can freely move face-up, undamaged `item:tea`, `item:coin`, and `item:sack` between their tracks and the Satchel.
         - name: Maximum Rolled Hits.
           text: In battle, the Vagabond's maximum rolled hits (`rule:4.3.2.1`) equals his undamaged `item:sword`, face up or face down, in his Satchel.
         - name: Taking Hits.
@@ -544,7 +542,7 @@
         - name: Strike.
           text: Exhaust one `item:crossbow` to remove an enemy warrior from your clearing. If that enemy has no warriors there, you may instead remove one of their other faction pieces there. _(Check your relationship with that player's faction.)_
         - name: Repair.
-          text: Exhaust one `item:hammer` to move one damaged item to the Satchel or to its matching track (if face up `item:coin`, `item:tea`, `item:sack`), keeping the item on its current side.
+          text: Exhaust one `item:hammer` to move one damaged item to the Satchel keeping the item on its current side. (Face up `item:coin`, `item:tea`, `item:sack` immediately move to their tracks).
         - name: Craft.
           text: Play a card from your hand, and exhaust the `item:hammer` of listed suit to craft it. All of your `item:hammer` match the suit of your clearing. If a card requires multiple of one suit to craft, you must exhaust the listed number of `item:hammer`. If you craft an item, you may place it face up in your Satchel or on the matching track.
         - name: Special Action.
@@ -763,7 +761,7 @@
           text: "**The Burrow** is an unsuited clearing adjacent to each clearing with a tunnel token. Non-Duchy pieces cannot be placed in or moved into the Burrow. The Duchy always rules the Burrow _(even with no pieces there)_."
 
         - name: The Price of Failure.
-          text: Whenever any number of Duchy buildings are removed, the Duchy discards a random card, returns their swayed minister card of the highest rank _(lord, then noble, then squire)_ to their Unswayed Ministers pile, and removes its crown from the game permanently. If they have multiple swayed ministers of highest rank, the Duchy chooses which to return.
+          text: Whenever any number of Duchy buildings are removed, the Duchy returns their swayed minister card of highest rank _(lord, then noble, then squire)_ to their Unswayed Ministers pile, and removes its crown from the game permanently, then discards a random card. If they have multiple swayed ministers of highest rank, the Duchy chooses which to return.
 
         - name: Tunnels.
           text: The Duchy has three tunnel tokens. If the Duchy is prompted to place a tunnel but all three tunnels are on the map, the Duchy may first remove any tunnel from the map.
@@ -1367,7 +1365,7 @@
               text: When a player gains a hireling card, they roll the control die and place control markers on the hireling card equal in number to the die roll. They count only the gold die pips if they have the most victory points or are tied for the most; they count all the die pips otherwise _(including if they have activated a dominance card)_.
 
             - name: Gaining from Another Player.
-              text: At the end of a player's turn, they must remove one control marker from each hireling card they have. Then, they must give each hireling card they control that has no control markers, along with a hireling marker, to any other player _(even the player with the highest score)_. That player puts the hireling marker below their Evening _(as a reminder)_ and immediately rolls for control (`rule:16.4.1.2`).
+              text: At the end of a player’s turn, they must remove one control marker from each hireling card they gained on previous turns. Then, they must give each hireling card they control that has no control markers, along with a hireling marker, to any other player _(even the player with the highest score)_. That player puts the hireling marker below their Evening _(as a reminder)_ and immediately rolls for control (`rule:16.4.1.2`).
 
         - name: Abilities and Actions
           text: Hirelings have various actions and abilities, as shown by unique icons. Actions and abilities that start with "**Controller**:" are gained by the hireling's controller.
@@ -1474,7 +1472,7 @@
           text: Any component—building, token, warrior, pawn, item, marker, and so on.
 
         - name: Place.
-          text: Take the prompted piece from the prompted source and put it in the prompted destination. Usually, no source is specified—in this case, take it from its supply, or take the leftmost prompted piece if it is on a track. 
+          text: Take the prompted piece from the prompted source and put it in the prompted destination. Usually, no source is specified—in this case, take it from its supply, or take the leftmost prompted piece if it is on a track. _Put_ is shorthand for _Place_.
 
         - name: Play Area. 
           text: The area around your faction board. Cards in it can only be spent, discarded, or used for other purposes if explicitly instructed.
@@ -1501,7 +1499,7 @@
           text: Let the prompted player see the prompted piece.
 
         - name: Slot.
-          text: White box in a clearing (`rule:2.3.3`).
+          text: White box in a clearing (`rule:2.2.3`).
 
         - name: Spend.
           text: See **Discard** (`rule:16.6.5`). _(These terms are equivalent, but spend is used in contexts with choice.)_
