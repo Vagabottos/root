@@ -1,0 +1,170 @@
+{
+  "App": {
+    "NavTitle": "Правила и фракции",
+    "NavTitleShort": "Правила",
+    "RootPrefix": "Законы леса",
+    "SearchPlaceholder": "Поиск в правилах",
+    "Titles": {
+      "Search": "Поиск",
+      "FAQ": "Часто задаваемые вопросы",
+      "Reach": "Сочетание фракций",
+      "Map": "Генерация поля",
+      "Random": "Случайная подготовка",
+      "DraftPlusOne": "+1 Draft",
+      "AdSet": "Расширенная подготовка"
+    }
+  },
+  "Modal": {
+    "FAQ": {
+      "Title": "Часто задаваемые вопросы",
+      "TitleShort": "FAQ",
+      "CloseButton": "Закрыть",
+      "Law": "Законы леса",
+      "Q": "Q",
+      "A": "A"
+    },
+    "Reach": {
+      "Title": "Расчет сочетания фракций",
+      "TitleShort": "Сочетание фракций",
+      "CloseButton": "Закрыть",
+      "Choose": "Выбрать новые фракции",
+      "DraftPlusOne": "Draft +1",
+      "Error": "Невозможно выбрать фракции; пожалуйста измените выбор и попробуйте снова.",
+      "Factions": {
+        "Marquise de Cat": "Маркиса де Котé",
+        "Lord of the Hundreds": "Полчища Грозных Крыс",
+        "Keepers in Iron": "Хранители в Доспехах",
+        "Underground Duchy": "Подземное Герцогство",
+        "Eyrie Dynasties": "Птичья Династия",
+        "Vagabond (#1)": "Бродяга (#1)",
+        "Riverfolk Company": "Компания Речное Братство",
+        "Woodland Alliance": "Лесной Союз",
+        "Corvid Conspiracy": "Вороний Сговор",
+        "Vagabond (#2)": "Бродяга (#2)",
+        "Lizard Cult": "Культ Пресмыкающихся"
+      },
+      "FactionsShort": {
+        "Marquise": "Маркиса",
+        "Hundreds": "Полчища",
+        "Keepers": "Хранители",
+        "Duchy": "Герцогство",
+        "Eyrie": "Династия",
+        "Vagabond #1": "Бродяга #1",
+        "Riverfolk": "Братство",
+        "Woodland": "Союз",
+        "Corvids": "Сговор",
+        "Vagabond #2": "Бродяга #2",
+        "Cult": "Культ"
+      },
+      "Vagabonds": {
+        "Arbiter": "Судья",
+        "Ranger": "Следопыт",
+        "Scoundrel": "Поджигатель",
+        "Thief": "Вор",
+        "Tinker": "Ремесленник",
+        "Vagrant": "Скиталец",
+        "Adventurer": "Авантюрист",
+        "Ronin": "Ронин",
+        "Harrier": "Налётчица"
+      },
+      "Draft": {
+        "Players": {
+          "Player A": "Игрок A",
+          "Player B": "Игрок Б",
+          "Player C": "Игрок В",
+          "Player D": "Игрок Г",
+          "Player E": "Игрок Д",
+          "Player F": "Игрок Е"
+        },
+        "Headers": {
+          "Factions": "Фракции",
+          "TurnDraftOrder": "Порядок хода/взятия карт",
+          "Faction": "Фракция",
+          "Reach": "Коэффициент",
+          "Draft": "Draft",
+          "Player": "Игрок",
+          "Cards": "Карты",
+          "Picks": "Выбор",
+          "Turn": "Очердность хода"
+        },
+        "Text": {
+          "Deck": "Колода",
+          "Map": "Карта",
+          "Choose": "Выберите карту, затем колоду. Возьмите три карты и верните остальные в колоду."
+        }
+      },
+      "Adset": {
+        "Random": "Случайно",
+        "Random1": "Случайная (1)",
+        "Random2": "Случайная (2)",
+        "Generate": "Сгенерировать",
+        "None": "Никакие",
+        "Waiting": "Ожидание генерации...",
+        "Players": "Игрока(ов)",
+        "Choices": {
+          "Map": "Выбор карты",
+          "Deck": "Выбор колоды",
+          "Players": "Количество игроков",
+          "Landmarks": "Достопримечательности",
+          "Hirelings": "Рекруты",
+          "Factions": "Фракции",
+          "RemindDrawFive": "Напоминание: раздайте по 5 карт каждому игроку."
+        },
+        "Deck": {
+          "Standard": "Базовая колода",
+          "EP": "Изгнанники и партизаны"
+        },
+        "Landmarks": {
+          "ElderTreetop": "Древо старейшин",
+          "LostCity": "Затерянный город",
+          "BlackMarket": "Чёрный рынок",
+          "LegendaryForge": "Легендарная наковальня",
+          "TheFerry": "Плот",
+          "TheTower": "Башня"
+        },
+        "Hirelings": {
+          "Spring Uprising (R)": "Spring Uprising (R)",
+          "Forest Patrol (R)": "Forest Patrol (R)",
+          "Last Dynasty (R)": "Last Dynasty (R)",
+          "The Exile (R)": "The Exile (R)",
+          "Popular Band (R)": "Popular Band (R)",
+          "Furious Protector (R)": "Furious Protector (R)",
+          "Highway Bandits (R)": "Highway Bandits (R)",
+          "Riverfolk Flotilla (R)": "Riverfolk Flotilla (R)",
+          "Warm Sun Prophets (R)": "Warm Sun Prophets (R)",
+          "Sunward Expedition (R)": "Sunward Expedition (R)",
+          "Corvid Spies (R)": "Corvid Spies (R)",
+          "Flame Bearers (R)": "Flame Bearers (R)",
+          "Vault Keepers (R)": "Vault Keepers (R)",
+          "Rabbit Scouts (D)": "Rabbit Scouts (D)",
+          "Feline Physicians (D)": "Feline Physicians (D)",
+          "Bluebird Nobles (D)": "Bluebird Nobles (D)",
+          "The Brigand (D)": "The Brigand (D)",
+          "Street Band (D)": "Street Band (D)",
+          "Stoic Protector (D)": "Stoic Protector (D)",
+          "Bandit Gangs (D)": "Bandit Gangs (D)",
+          "Otter Divers (D)": "Otter Divers (D)",
+          "Lizard Envoys (D)": "Lizard Envoys (D)",
+          "Mole Artisans (D)": "Mole Artisans (D)",
+          "Raven Sentries (D)": "Raven Sentries (D)",
+          "Rat Smugglers (D)": "Rat Smugglers (D)",
+          "Badger Bodyguards (D)": "Badger Bodyguards (D)"
+        }
+      }
+    },
+    "Maps": {
+      "Title": "Генератор случайной карты",
+      "TitleShort": "Карта",
+      "CloseButton": "Закрыть",
+      "MapNames": {
+        "fall": "Осенняя",
+        "winter": "Зимняя",
+        "lake": "Озёрная",
+        "mountain": "Горная"
+      },
+      "Randomize": "Случайно",
+      "Balanced": "Баланс",
+      "Error": "Попытка найти сбалансированное расположение полян не удалась. Попробуйте еще! В другой раз может сработать"
+    }
+  }
+}
