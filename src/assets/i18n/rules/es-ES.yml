@@ -944,7 +944,7 @@
         - name: Bomba.
           text: Al voltear y revelar una ficha de Bomba, retira todas las piezas enemigas del claro, y después retira la ficha de Bomba.
         - name: Trampa.
-          text: Mientras una ficha de Trampa esté bocarriba, los enemigos no pueden colocar ni mover piezas desde o hacia este claro.
+          text: Mientras una ficha de Trampa esté bocarriba, los enemigos no pueden colocar piezas en este claro, ni mover piezas desde este claro.
         - name: Extorsión.
           text: Al voltear una ficha de Extorsión, quita una carta al azar de la mano de cada jugador que tenga al menos una pieza en dicho claro. Por cada ficha de Extorsión que haya bocarriba, robarás una carta extra en tu Noche.
         - name: Asalto.
