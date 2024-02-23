@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
+    <ion-buttons *ngIf="!showSearch" slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
 
@@ -8,29 +8,25 @@
       <span class="title-container">
         <span class="title-text ion-hide-sm-down">{{ 'App.RootPrefix' | translate }}</span>
         <img class="title-logo" src="assets/logo.png" />
-      </span> 
+      </span>
     </ion-title>
 
-    <ion-searchbar *ngIf="showSearch" 
-                   color="primary"
-                   showCancelButton="true"
-                   debounce="300"
-                   (ionCancel)="setSearchValue(null)"
-                   (ionClear)="setSearchValue(null)"
-                   (ionChange)="setSearchValue($event.detail.value)"
-                   [placeholder]="'App.SearchPlaceholder' | translate"></ion-searchbar>
+    <ion-searchbar *ngIf="showSearch" color="primary" showCancelButton="true" debounce="300"
+      (ionCancel)="setSearchValue(null)" (ionClear)="setSearchValue(null)"
+      (ionChange)="setSearchValue($event.detail.value)"
+      [placeholder]="'App.SearchPlaceholder' | translate"></ion-searchbar>
 
     <ion-buttons slot="end">
       <ion-button (click)="toggleSearch()" [title]="'App.Titles.Search' | translate">
         <ion-icon name="search"></ion-icon>
       </ion-button>
-      <ion-button (click)="openFAQ()" [title]="'App.Titles.FAQ' | translate">
+      <ion-button *ngIf="!showSearch" (click)="openFAQ()" [title]="'App.Titles.FAQ' | translate">
         <ion-icon name="help-circle"></ion-icon>
       </ion-button>
-      <ion-button (click)="openReach()" [title]="'App.Titles.Reach' | translate">
+      <ion-button *ngIf="!showSearch" (click)="openReach()" [title]="'App.Titles.Reach' | translate">
         <ion-icon name="calculator"></ion-icon>
       </ion-button>
-      <ion-button (click)="openMaps()" [title]="'App.Titles.Map' | translate">
+      <ion-button *ngIf="!showSearch" (click)="openMaps()" [title]="'App.Titles.Map' | translate">
         <ion-icon name="map"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -47,72 +43,70 @@
 
   <div id="top"></div>
 
-  <div *ngFor="let rule of rulesService.rules; let majorIndex = index" 
-        class="rule-container major" 
-        [style.border-color]="rule.color"
-        [class.ion-hide]="!isVisible([majorIndex + 1])">
+  <div *ngFor="let rule of rulesService.rules; let majorIndex = index" class="rule-container major"
+    [style.border-color]="rule.color" [class.ion-hide]="!isVisible([majorIndex + 1])">
 
     <!-- no text at this level -->
 
     <div class="rule major" [id]="rulesService.indexesToRules[rule.index]">
-      <span class="index major">{{ rule.index }}</span> 
+      <span class="index major">{{ rule.index }}</span>
       <a [innerHTML]="rule.formattedName | highlight:searchTerm:rule.index"
-         [href]="'#' + rulesService.indexesToRules[rule.index]"></a>
+        [href]="'#' + rulesService.indexesToRules[rule.index]"></a>
     </div>
 
     <div class="pretext" [innerHTML]="rule.pretext | highlight:searchTerm:rule.index"></div>
 
-    <div *ngFor="let childRule of rule.children; let minorIndex = index" 
-          class="rule-container minor"
-          [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1])">
+    <div *ngFor="let childRule of rule.children; let minorIndex = index" class="rule-container minor"
+      [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1])">
 
       <!-- no text at this level -->
 
       <div class="rule minor" [id]="rulesService.indexesToRules[childRule.index]">
-        <span class="index minor">{{ childRule.index }}</span> 
-        <a [innerHTML]="childRule.formattedName | highlight:searchTerm:childRule.index" 
-           [href]="'#' + rulesService.indexesToRules[childRule.index]"></a>
+        <span class="index minor">{{ childRule.index }}</span>
+        <a [innerHTML]="childRule.formattedName | highlight:searchTerm:childRule.index"
+          [href]="'#' + rulesService.indexesToRules[childRule.index]"></a>
       </div>
 
       <div class="pretext" [innerHTML]="childRule.pretext | highlight:searchTerm:childRule.index"></div>
 
-      <div *ngFor="let grandchildRule of childRule.children; let childIndex = index" 
-            class="rule-container child"
-            [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1])">
-    
+      <div *ngFor="let grandchildRule of childRule.children; let childIndex = index" class="rule-container child"
+        [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1])">
+
         <!-- no pretext at this level -->
-  
+
         <div class="rule child" [id]="rulesService.indexesToRules[grandchildRule.index]">
-          <span class="index child">{{ grandchildRule.index }}</span> 
+          <span class="index child">{{ grandchildRule.index }}</span>
           <span class="desc child">
             <a class="name child" [innerHTML]="grandchildRule.formattedName | highlight:searchTerm:grandchildRule.index"
-                                  [href]="'#' + rulesService.indexesToRules[grandchildRule.index]"></a>
-            <span class="text child" [innerHTML]="grandchildRule.text | highlight:searchTerm:grandchildRule.index"></span>
+              [href]="'#' + rulesService.indexesToRules[grandchildRule.index]"></a>
+            <span class="text child"
+              [innerHTML]="grandchildRule.text | highlight:searchTerm:grandchildRule.index"></span>
 
             <!-- please never go deeper -->
             <ol class="romanized-list list" *ngIf="grandchildRule.subchildren">
               <li *ngFor="let descRule of grandchildRule.subchildren; let descIndex = index"
-                  [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1, descIndex + 1])">
-                <a class="name child"    [id]="rulesService.indexesToRules[descRule.index]" 
-                                         [innerHTML]="descRule.formattedName | highlight:searchTerm:descRule.index"
-                                         [href]="'#' + rulesService.indexesToRules[descRule.index]"></a>
+                [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1, descIndex + 1])">
+                <a class="name child" [id]="rulesService.indexesToRules[descRule.index]"
+                  [innerHTML]="descRule.formattedName | highlight:searchTerm:descRule.index"
+                  [href]="'#' + rulesService.indexesToRules[descRule.index]"></a>
                 <span class="text child" [innerHTML]="descRule.text | highlight:searchTerm:descRule.index"></span>
 
                 <!-- I said please :( -->
                 <ol class="alphabeta-list list sublist" *ngIf="descRule.subchildren">
                   <li *ngFor="let descDescRule of descRule.subchildren; let descDescIndex = index"
-                      [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1, descIndex + 1, descDescIndex + 1])">
-                    <a class="name child"    [id]="rulesService.indexesToRules[descDescRule.index]" 
-                                             [innerHTML]="descDescRule.formattedName | highlight:searchTerm:descDescRule.index"
-                                             [href]="'#' + rulesService.indexesToRules[descDescRule.index]"></a>
-                    <span class="text child" [innerHTML]="descDescRule.text | highlight:searchTerm:descDescRule.index"></span>
+                    [class.ion-hide]="!isVisible([majorIndex + 1, minorIndex + 1, childIndex + 1, descIndex + 1, descDescIndex + 1])">
+                    <a class="name child" [id]="rulesService.indexesToRules[descDescRule.index]"
+                      [innerHTML]="descDescRule.formattedName | highlight:searchTerm:descDescRule.index"
+                      [href]="'#' + rulesService.indexesToRules[descDescRule.index]"></a>
+                    <span class="text child"
+                      [innerHTML]="descDescRule.text | highlight:searchTerm:descDescRule.index"></span>
                   </li>
                 </ol>
               </li>
             </ol>
           </span>
         </div>
-  
+
       </div>
 
     </div>
