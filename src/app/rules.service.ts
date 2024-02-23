@@ -1,25 +1,25 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
-import * as marked from "marked";
-import { convert as toRoman } from "roman-numeral";
-import slugify from "slugify";
+import * as marked from 'marked';
+import { convert as toRoman } from 'roman-numeral';
+import slugify from 'slugify';
 
-import { Subject } from "rxjs";
+import { Subject } from 'rxjs';
 
-import * as deDERules from "../assets/i18n/rules/de-DE.json";
-import * as enUSRules from "../assets/i18n/rules/en-US.json";
-import * as esESRules from "../assets/i18n/rules/es-ES.json";
-import * as ruRURules from "../assets/i18n/rules/ru-RU.json";
+import * as deDERules from '../assets/i18n/rules/de-DE.json';
+import * as enUSRules from '../assets/i18n/rules/en-US.json';
+import * as esESRules from '../assets/i18n/rules/es-ES.json';
+import * as ruRURules from '../assets/i18n/rules/ru-RU.json';
 
 const rules = {
-  "en-US": (enUSRules as any).default || enUSRules,
-  "es-ES": (esESRules as any).default || esESRules,
-  "de-DE": (deDERules as any).default || deDERules,
-  "ru-RU": (ruRURules as any).default || ruRURules,
+  'en-US': (enUSRules as any).default || enUSRules,
+  'es-ES': (esESRules as any).default || esESRules,
+  'de-DE': (deDERules as any).default || deDERules,
+  'ru-RU': (ruRURules as any).default || ruRURules,
 };
 
 @Injectable({
-  providedIn: "root",
+  providedIn: 'root',
 })
 export class RulesService {
   public indexVisibilityHash = {};
@@ -40,7 +40,7 @@ export class RulesService {
   }
 
   public get baseRules() {
-    return rules[localStorage.getItem("language") || "en-US"] || enUSRules;
+    return rules[localStorage.getItem('language') || 'en-US'] || enUSRules;
   }
 
   constructor() {
@@ -58,7 +58,7 @@ export class RulesService {
   public slugTitle(index: string, title: string): string {
     const baseString = `${index}-${slugify(title.toLowerCase())}`
       .split('"')
-      .join("");
+      .join('');
     if (baseString.match(/^.+(\.)$/)) {
       return baseString.substring(0, baseString.length - 1);
     }
@@ -70,13 +70,13 @@ export class RulesService {
 
     // custom inline image formatter
     renderer.codespan = (text: string) => {
-      if (text.includes(":")) {
-        const [type, subtype, extra] = text.split(":");
+      if (text.includes(':')) {
+        const [type, subtype, extra] = text.split(':');
 
-        if (type === "rule") {
-          const [major, minor, child, desc, descDesc] = subtype.split(".");
+        if (type === 'rule') {
+          const [major, minor, child, desc, descDesc] = subtype.split('.');
           let chosenNode = null;
-          let chosenString = "";
+          let chosenString = '';
 
           if (major) {
             chosenString += major;
@@ -113,7 +113,7 @@ export class RulesService {
           )}" class="rule-link">${chosenString}</a>`;
         }
 
-        if (type === "faction") {
+        if (type === 'faction') {
           return `
             <a href="#${this.indexRuleHash[extra]}">
               <img src="assets/inicon/${type}-${subtype}.png" class="inline-icon" />
@@ -146,7 +146,7 @@ export class RulesService {
       return marked(str, { renderer });
     };
 
-    const buildIndex = (arr: string[]) => arr.join(".");
+    const buildIndex = (arr: string[]) => arr.join('.');
 
     baseRules.forEach((rule, majorRuleIndex) => {
       rule.formattedName = format(rule.name);
@@ -231,10 +231,10 @@ export class RulesService {
 
   public setVisibility(index: string) {
     setTimeout(() => {
-      if (index.endsWith(".")) {
+      if (index.endsWith('.')) {
         index = index.substring(0, index.length - 1);
       }
-      const allEntries = index.split(".");
+      const allEntries = index.split('.');
 
       // take care of the first entry
       this.indexVisibilityHash[allEntries[0]] = this.indexVisibilityHash[

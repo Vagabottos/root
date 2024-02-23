@@ -1,9 +1,9 @@
-import { Pipe, PipeTransform } from "@angular/core";
+import { Pipe, PipeTransform } from '@angular/core';
 
-import { RulesService } from "./rules.service";
+import { RulesService } from './rules.service';
 
 @Pipe({
-  name: "highlight",
+  name: 'highlight',
 })
 export class HighlightPipe implements PipeTransform {
   constructor(private rulesService: RulesService) {}
@@ -13,7 +13,7 @@ export class HighlightPipe implements PipeTransform {
       return value;
     }
 
-    const re = new RegExp(`<img.*?>|(${searchString})`, "gi");
+    const re = new RegExp(`<img.*?>|(${searchString})`, 'gi');
     return value.replace(re, (img, match) => {
       if (!match) {
         return img;
@@ -23,7 +23,7 @@ export class HighlightPipe implements PipeTransform {
         this.rulesService.setVisibility(mutateIndex);
       }
 
-      return "<mark>" + match + "</mark>";
+      return '<mark>' + match + '</mark>';
     });
   }
 }
