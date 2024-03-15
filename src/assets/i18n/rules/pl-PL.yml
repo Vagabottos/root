@@ -1,0 +1,1522 @@
+
+- name: Złote Zasady
+  color: "#000000"
+  pretext: Ten rozdział zawiera odpowiedzi na techniczne, szczegółowe pytania. Nie musisz go czytać podczas nauki gry.
+  children:
+    - name: Sprzeczność Reguł
+      children:
+        - name: Pierwszeństwo.
+          text:  Jeżeli tekst na karcie jest sprzeczny z zasadami Księgi Praw, zasada z karty jest nadrzędna. Jeżeli zasady z Instrukcji są sprzeczne z zasadami Księgi Praw, zasady Księgi Praw mają pierwszeństwo. Jeżeli możliwe jest zastosowanie zarówno zasady ogólnej, jak i zasady Frakcji lub Zaciężnych, należy stosować obie; jeśli nie jest to możliwe, należy zastosować zasadę Frakcji lub Zaciężnych.
+        - name: '**Nie można.**'
+          plainName: Nie można.
+          text: Jeżeli zasady mówią, że gracz nie może czegoś zrobić, to jest to niepodważalne - unieważnienie tego nie jest możliwe, chyba że zostanie to wprost napisane
+        - name: Efekty Równoczesne.
+          text: Jeżeli dwa efekty gry zachodzą jednocześnie, o kolejności ich rozpatrywania decyduje gracz rozgrywający swoją turę (chyba że wprost napisano inaczej). Jeśli efekt miałby usunąć wiele komponentów jednocześnie i uruchomić wiele równoczesnych efektów przez ich usunięcie, najpierw należy usunąć wszystkie komponenty, a następnie rozpatrzyć efekty.
+
+    - name: Jawne i Tajne Informacje
+      children:
+        - name: Ręka.
+          text: Gracz może pokazać albo ujawnić karty na ręce tylko, jeśli jest to wprost napisane, jednak liczba kart na ręce jest informacją jawną `faction:riverfolk:11.2.3`
+        - name: Stos Kart Odrzuconych.
+          text: Gracze mogą w każdej chwili przeszukiwać i przeglądać stos kart odrzuconych.
+
+    - name: Negocjacje i Transakcje
+      children:
+        - name: Umowy.
+          text: W trakcie gry gracze mogą dyskutować i zawierać umowy, ale nie są one wiążące.
+        - name: Karty.
+          text: Gracze mogą przekazywać sobie nawzajem karty tylko jeśli jest to wprost napisane.
+
+    - name: Struktura Rozgrywki
+      children:
+        - name: Struktura Tury.
+          text: >
+            Tura każdego gracza ma trzy fazy: Świt, Dzień i Wieczór. Gdy dany gracz rozegra wszystkie trzy fazy, gracz siedzący po jego lewej rozpoczyna swoją turę. Wszystko, co ma wydarzyć się "na początku" fazy, należy rozpatrzyć przed wszystkimi efektami w tej fazie. Wszystko, co ma wydarzyć się "na koniec" fazy, należy rozpatrzyć po wszystkich efektach w tej fazie, jednak przed rozpoczęciem kolejnej fazy (jeśli jeszcze jakieś są). Rozgrywka przebiega w ten sposób do momentu, gdy któryś z graczy zwycięży (`rule:3.1`).
+        - name: Przerywanie.
+          text: Nie wolno przerywać innym efektem akcji _(w tym akcji złożonych takich jak Marsz Markizy)_, umiejętności _(takich jak Krucze Zdemaskowanie)_, ani efektów stałych _(takich jak karta Emigrant Orlich Gniazd)_ chyba, że jest wprost napisane inaczej.
+
+    - name: Komponenty Graczy
+      children:
+        - name: Limity.
+          text: Liczba komponentów jest ograniczona. Nie używajcie zamienników, jeśli komponenty się skończą.
+        - name: Frakcje Początkowe.
+          text: Każdy gracz jest właścicielem frakcji, którą wybrał podczas Przygotowania Rozgrywki (5) oraz komponentów wyszczególnionych na odwrocie jego planszy frakcji. Ogólnie nazywamy je **komponentami frakcji** lub podobnie. Konkretnie nazywamy je komponentami **[nazwa frakcji]** _(Np. "wojownicy twojej Frakcji" lub "wojownicy Markizy" może odwoływać się do pomarańczowych komponentów w kształcie kotów.)_
+        - name: Własność Komponentów.
+          text: Własność komponentów Frakcji nie może się zmienić. _(Np Markiza nie może używać Szpitali Polowych na najemnikach Plemion Rzecznych lub Zaciężnych, ponieważ nie są to wojownicy Markizy)._
+        - name: Manipulacja Komponentami.
+          text: Komponenty są umiesz- czane i usuwane tak, jak to opisano w Glosariuszu (`rule:16.6.19`, `rule:16.6.22`). Jeśli gra nakazuje umieścić, wziąć lub usunąć komponenty, których nie ma w wystarczającej liczbie, należy umieścić, wziąć lub usunąć maksymalną możliwą liczbę. _Nie pozwala to na pomijanie kosztów. Nie wolno robić mniej, niż możliwe maksimum_ .
+        - name: '**Zmuszenie**.'
+          plainName: Zmuszenie.
+          text: Niektóre efekty pozwalają **zmusić** gracza lub komponent do konkretnego działania. Należy rozpatrzeć ten efekt dokładnie tak, jak gdyby ten gracz wykonywał działania w ramach jego obostrzeń _(np. jeśli gracz Orlich Gniazd zostanie zmuszony do ruchu swoimi wojownikami, używa zasady Władcy Lasu.)_
+
+- name: Kluczowe Słowa i Pojęcia
+  color: "#000000"
+  pretext: Pojęcia są wyjaśnione szczegółowo w Glosariuszu (`rule:16.6`).
+  children:
+    - name: Karty
+      pretext: "Należy dobierać karty ze wspólnej talii i odrzucać je na wspólny stos kart odrzuconych. Jeśli talia się skończy należy przetasować jej stos kart odrzuconych, by utworzyć nową talię. Każda karta posiada swój **symbol**: ptak, lis, królik albo mysz. Większość kart posiada również efekt, który gracz rozpatruje po przekuciu tej karty (`rule:4.1`)."
+      children:
+        - name: Ptaki jako Jokery.
+          text: Dowolna ptasia karta może być traktowana jako karta o innym symbolu, nawet jeżeli gracz musi zagrać, dobrać albo oddać kilka kart o tym samym symbolu. `faction:cult:10.2.2`
+          subchildren:
+            - name: Wymuszone Efekty.
+              text: Jeżeli gracz jest zmuszony do odrzucenia albo oddania lisich, króliczych lub mysich kart, musi traktować ptasie karty tak, jakby miały symbol wymagany przez dany efekt.
+            - name: Odwrotna Zastępowalność.
+              text: Jeżeli gracz zostaje zmuszony do zagrania, odrzucenia, dobrania albo oddania ptasiej karty, nie może jej zastąpić kartą o innym symbolu.
+        - name: Karty Zasadzki.
+          text: "W grze występuje pięć **kart Zasadzek**: mysia, królicza, lisia i dwie ptasie. Gracz może zagrać kartę Zasadzki dla jej symbolu, ale nie może jej przekuć. Gracz może również zagrać jedną kartę Zasadzki w trakcie walki, aby zadać dodatkowe obrażenia albo udaremnić Zasadzkę przeciwnika (`rule:4.3.1`)."
+        - name: Karty Dominacji.
+          text: W grze występują cztery **karty Dominacji** - każda odpowiadająca jednemu z czterech symboli. Gracz może zagrać kartę Dominacji dla jej symbolu, jednak nie może ona zostać przekuta. Gracz może również zagrać kartę Dominacji, aby na stałe zmienić swój warunek zwycięstwa (`rule:3.3`).
+
+    - name: Polany i Ścieżki
+      pretext: Mapa Leśnogrodu składa się z licznych **polan** połączonych ze sobą **ścieżkami**.
+      children:
+        - name: Sąsiadowanie.
+          text: Polana sąsiaduje z każdą inną polaną, z którą jest połączona ścieżką. `faction:duchy:12.2.2`
+        - name: Symbol.
+          text: Każda polana posiada swój **symbol:** myszy, królika albo lisa.
+        - name: Pola.
+          text: Każda polana posiada określoną liczbę **pól dla budynków** _(białe kwadraty)_. Przy każdym rozmieszczeniu budynku gracz zapełnia jedno wolne pole. Gracz nie może rozmieścić budynku na polanie, na której nie ma ani jednego wolnego pola.
+        - name: Ruiny.
+          text: Pola oznaczone literą "R" rozpoczynają rozgrywkę zakryte **Ruinami**. Ruiny mogą być usunięte tylko jeśli jest to wyraźnie napisane _(np. po tym, jak Włóczęga przeprowadzi akcję Eksploracji, `rule:9.5.3`)_.
+
+    - name: Rzeki
+      pretext: Wiele polan jest połączonych **rzekami**. _(Rzeki nie są ścieżkami, ale mogą być traktowane jako ścieżki, jeśli jest to wprost napisane. Rzeki nie dzielą polan ani lasów.)_ `faction:riverfolk:11.2.2`
+
+    - name: Lasy
+      pretext: Obszary na Mapie otoczone z każdej strony przez nadruko- wane ścieżki i polany nazywa się **lasami**.
+      children:
+        - name: Sąsiadowanie.
+          text: Las sąsiaduje ze wszystkimi polanami, z którymi styka się bez oddzielającej je nadrukowanej ścieżki, a także z każdym lasem oddzielonym tylko jedną nadrukowaną ścieżką.
+
+    - name: Kontrola
+      ptetext: "**Polana** znajduje się pod kontrolą tego gracza, który posiada na niej łącznie najwięcej wojowników i budynków. _(Żetony i pionki nie są brane pod uwagę przy ustalaniu kontroli.)_ W przypadku remisu żaden z graczy nie kontroluje polany. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`"
+
+- name: Zwycięstwo
+  color: "#000000"
+  children:
+    - name: Warunek Zwycięstwa
+      pretext: Gracz, który jako pierwszy zdobędzie 30 Punktów Zwycięstwa, natychmiast wygrywa grę. Jeżeli kilku graczy jednocześnie zdobędzie 30 lub więcej Punktów Zwycięstwa, wygrywa gracz aktualnie rozgrywający swoją turę.
+
+    - name: Zdobywanie Punktów Zwycięstwa
+      pretext: Każda Frakcja ma swój unikatowy sposób na zdobywanie Punktów Zwycięstwa, jednak wszystkie Frakcje mogą zdobywać Punkty Zwycięstwa w wyniku poniższych akcji.
+      children:
+        - name: Usuwanie Budynków i Żetonów.
+          text: Za każdym razem, gdy gracz usuwa budynek lub żeton przeciwnika, otrzymuje po 1 Punkcie Zwycięstwa za każdy usunięty budynek lub żeton.
+        - name: Przekuwanie Kart.
+          text: Za każdym razem, gdy gracz przekuwa kartę (`rule:4.1`), otrzymuje Punkty Zwycięstwa w liczbie przedstawionej na przekuwanej karcie. `faction:eyrie:7.2.3` `faction:warlord:14.2.3`
+
+    - name: Karty Dominacji
+      pretext: W talii znajdują się cztery karty Dominacji, które pozwalają graczom wygrać bez zdobywania 30 Punktów Zwycięstwa.
+      children:
+        - name: Aktywacja.
+          text: Jeżeli podczas swojego Dnia gracz posiada co najmniej 10 Punktów Zwycięstwa, może **aktywować** kartę Dominacji, którą ma na ręce, umieszczając ją w swoim obszarze rozgrywki. Następnie usuwa swój znacznik Punktacji z toru Punktacji. Do końca gry ten gracz nie może otrzymywać Punktów Zwycięstwa. `faction:vagabond:9.2.8`
+          subchildren:
+            - name: Mysia, Królicza i Lisia Karta Dominacji.
+              text: Gracz zwycięża natychmiast, gdy na początku swojego Świtu kontroluje trzy polany o symbolach odpowiadających aktywowanej karcie Dominacji.
+            - name: Ptasia Dominacja.
+              text: Gracz zwycięża natychmiast, gdy na początku swojego Świtu kontroluje dwie polany znajdujące się w przeciwległych narożnikach Mapy.
+        - name: Aktywowane Karty.
+          text: Aktywowana karta Dominacji nie wlicza się do limitu kart na ręce gracza i nie może zostać usunięta z gry. Gracz nie może zastąpić aktywowanej karty Dominacji inną kartą Dominacji.
+        - name: Zagrywanie dla Symbolu.
+          text: Karta Dominacji może zostać zagrana w celu wykorzystania jej symbolu. W takiej sytuacji, zamiast umieszczać ją na stosie kart odrzuconych, należy położyć ją w pobliżu Mapy, aby pokazać, że jest dostępna do wzięcia przez każdego z graczy. `faction:cult:10.4.2`
+        - name: Dobieranie Dostępnych Kart.
+          text: Podczas swojego Dnia gracz może dobrać dostępną kartę Dominacji na rękę. Aby to zrobić, musi wydać kartę o tym samym symbolu. Nie można traktować dostępnej ptasiej karty dominacji jak karty o innym symbolu
+
+- name: Kluczowe akcje
+  color: "#000000"
+  children:
+    - name: Przekucie
+      pretext: Gracz może przekuć większość kart z ręki, aby otrzymać natychmiastowy albo trwały efekt.
+      children:
+        - name: Koszt.
+          text: Aby przekuć kartę, gracz musi **aktywować** komponenty do przekuwania używane przez swoją Frakcję. W tym celu może użyć tylko komponentów o takich samych symbolach, jakie widnieją w lewym dolnym rogu karty _(Komponenty do przekuwania każdej Frakcji wypisane są na jej planszy Frakcji.)_ Symbol komponentu użytego do przekucia odpowiada polanie, na której się znajduje. Każdy komponent używany do przekucia może zostać aktywowany tylko raz na turę.Trójkolorowy znak zapytania oznacza komponent do przekuwania o dowolnym symbolu. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1`
+        - name: Efekty Natychmiastowe.
+          text: Po przekuciu karty z efektem natychmiastowym _(papierowe pole na karcie)_ gracz rozpatruje ten efekt, a następnie odrzuca przekutą kartę. Jeżeli efekt przedstawia przedmiot, gracz dobiera odpowiedni przedmiot z puli przedmiotów na planszy i umieszcza go na polu Przekutych Przedmiotów na swojej planszy Frakcji. Jeżeli karta przedstawia przedmiot, którego nie ma w puli przedmiotów, ta karta nie może zostać przekuta. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8` `faction:warlord:14.2.1`
+        - name: Trwałe Efekty.
+          text: Po przekuciu karty z trwałym efektem _(kamienne pole na karcie)_, gracz umieszcza przekutą kartę w swoim obszarze rozgrywki. Od tego momentu może korzystać z trwałego efektu _(Emigrant Orlich Gniazd z talii Banitów i Partyzantów jest obowiązkowy.)_
+        - name: Żadnych Duplikatów.
+          text: Gracz nie może przekuć karty z trwałym efektem, jeżeli posiada w swoim obszarze rozgrywki kartę z identycznym trwałym efektem.
+
+    - name: Ruch
+      pretext: Podczas **ruchu** gracz może przemieścić dowolną liczbę _(nie mniejszą niż 1)_ swoich wojowników oraz pionków z jednej polany na inną sąsiadującą polanę.
+      children:
+        - name: Wymagana Kontrola.
+          text: Aby przeprowadzić akcję ruchu, gracz musi kontrolować początkową albo docelową polanę, albo obie. `faction:vagabond:9.2.3` `faction:riverfolk:11.2.2` `faction:corvid:13.2.3`
+        - name: Brak Limitu Poruszania.
+          text: Dany komponent może zostać przemieszczony dowolną liczbę razy w czasie jednej tury. Jeżeli gracz przeprowadza kilka ruchów, może wielokrotnie poruszyć się tą samą grupą wojowników albo wybrać różne grupy wojowników.
+
+    - name: Walka
+      pretext: Podczas **walki** gracz wybiera polanę, na której posiada dowolną liczbę swoich wojowników lub pionków, jako **polanę walki**. Ten gracz jest **atakującym** i wybiera przeciwnika, którego komponenty znajdują się na polanie walki, jako **obrońcę**.
+      children:
+        - name: "Krok 1: Obrońca Może Przygotować Zasadzkę."
+          text: Obrońca może zagrać jedną kartę Zasadzki o symbolu odpowiadającym symbolowi polany walki. Jeśli to zrobi należy wykonać kroki `rule:4.3.1.1` - `rule:4.3.1.2`
+          subchildren:
+            - name: Udaremnienie Zasadzki.
+              text: Atakujący również może zagrać kartę zasadzki o symbolu odpowiadającym polanie walki. Jeśli tak zrobi, obrońca odrzuca swoją kartę zasadzki i pomija krok `rule:4.2.1.2`.
+            - name: Rozwiązanie Zasadzki.
+              text: Obrońca natychmiast zadaje 2 obrażenia (`rule:4.3.4`). Następnie obrońca odrzuca kartę zasadzki. Jeśli na polanie walki nie zostały żadne pionki ani wojownicy atakującego, należy natychmiast zakończyć walkę
+        - name: "Krok 2: Rzut Kośćmi i Zadanie Dodatkowych Obrażeń."
+          text: Atakujący rzuca obiema kośćmi. Atakujący zada obrażenia w liczbie równej wyższemu wynikowi, podczas gdy obrońca zada obrażenia w liczbie równej niższemu wynikowi rzutu. Gdy oba wyniki są takie same, atakujący i obrońca zadadzą sobie taką samą liczbę obrażeń _("Zadadzą" występuje w czasie przyszłym, ponieważ przydzielenie obrażeń następuje dopiero w kroku 4.)_ `faction:woodland:8.2.2`
+          subchildren:
+            - name: Maksymalna Liczba Wyrzuconych Obrażeń.
+              text: Maksymalna liczba obrażeń, jaką gracz może zadać w wyniku rzutu, równa się liczbie wojowników tego gracza na polanie walki, niezależnie od tego, czy gracz jest atakującym, czy obrońcą. `faction:vagabond:9.2.6`
+        - name: "Krok 3: Używanie Efektów."
+          text: Atakujący i obrońca mogą użyć opcjonalnych efektów, mających wpływ na walkę _(np. karta Brutalna Taktyka.)_ Jeżeli obaj gracze chcą użyć efektów, gracz atakujący wybiera kolejność (`rule:1.1.3`).
+          subchildren:
+            - name: Dodatkowe obrażenia.
+              text: Wiele efektów w grze zadaje **dodatkowe obrażenia**, których liczba nie jest ograniczona liczbą wojowników na polanie walki.
+            - name: Bezbronny.
+              text: Jeżeli obrońca nie ma żadnych wojowników na polanie walki, atakujący zada dodatkowe obrażenie. `faction:vagabond:9.2.4`
+        - name: "Krok 4: Zadanie Obrażeń."
+          text: W wyniku każdego obrażenia wyrzuconego przez jedną stronę konfliktu, zostaje usunięty jeden komponent przeciwnej strony. Gracz otrzymujący obrażenia wybiera swoje komponenty, które usuwa z polany walki, jednak w pierwszej kolejności musi usunąć wszystkich swoich wojowników, zanim przystąpi do usuwania budynków lub żetonów _(Gracz otrzymuje po jednym Punkcie Zwycięstwa za każdy usunięty budynek lub żeton przeciwnika.)_
+
+- name: Przygotowanie Rozgrywki
+  color: "#000000"
+  pretext: Dla pierwszych rozgrywek należy użyć Standardowego przygotowania Rozgrywki (`rule:5.1`). Jeżeli jednak wszyscy gracze znają już grę i chcą większego zróżnicowania lub chcą zagrać z pięcioma Frakcjami rozpoczynającymi w polanach narożnych, należy użyć Przygotowania Zaawansowanego Rozgrywki (`rule:16.1`).
+  children:
+    - name: Standardowe Przygotowanie Rozgrywki
+      children:
+        - name: "Krok 1: Wybór Frakcji i Gracza Rozpoczynającego."
+          text: Każdemu graczowi w dowolny sposób należy przydzielić jedną Frakcję. Gracza rozpoczynającego oraz miejsca zajmowane przez graczy przy stole należy wybrać w sposób losowy. Każdy gracz bierze planszę wybranej Frakcji wraz ze wszystkimi komponentami wymienionymi na jej rewersie.
+        - name: "Krok 2: Rozmieszczenie Znaczników Punktacji."
+          text: Każdy gracz umieszcza swój znacznik Punktacji na polu "0" toru Punktacji.
+        - name: "Krok 3: Dobranie Startowej Ręki."
+          text: W rozgrywkach na dwóch graczy należy usunąć z talii wszystkie cztery karty Dominacji. Po przetasowaniu wspólnej talii każdy z graczy dobiera z niej po trzy karty.
+        - name: "Krok 4: Rozmieszczenie Ruin."
+          text: Ruiny należy rozmieścić na każdym polu na Mapie oznaczonym literą "R" _(łącznie cztery)_.
+        - name: "Krok 5: Utworzenie Puli Przedmiotów."
+          text: "Następujące przedmioty należy umieścić na polach puli przedmiotów na górze Mapy: 2 `item:boot`, 2 `item:sack`, 1 `item:crossbow`, 1 `item:hammer`, 2 `item:sword`, 2 `item:tea`, 2 `item:coin`."
+        - name: "Krok 6: Dobranie Pozostałych Komponentów."
+          text: Gracze dzielą między sobą 16 kart opisu Frakcji i kładą dwie specjalne kości obok Mapy.
+        - name: "Krok 7: Przygotowanie Frakcji."
+          text: Zgodnie z kolejnością przygotowania rozgrywki (A, B, C itd.) gracze kolejno wykonują instrukcje przygotowania swojej Frakcji przedstawione w sekcji zasad na rewersie ich planszy Frakcji.
+
+    - name: Zasięg
+      pretext: Aby przygotowywana rozgrywka była jak najbardziej emocjonująca należy wybrać Frakcje, których suma wartości Zasięgu jest równa lub wyższa od sugerowanej w tabeli wartości dla odpowiedniej liczby graczy. _(Pewni siebie gracze mogą użyć dowolnych kombinacji Frakcji o sumie zasięgu 17+)_
+
+- name: Markiza de Kot
+  color: "#e07a37"
+  icon: marquise
+  children:
+    - name: Omówienie
+      pretext: Markiza de Kot rezyduje w Leśnogrodzie, który planuje zamienić w potęgę przemysłową i militarną. Za każdym razem, gdy Markiza wznosi jeden ze swoich **budynków** - Warsztat, Tartak albo Koszary - otrzymuje Punkty Zwycięstwa. Im więcej budynków danego typu znajduje się na Mapie, tym więcej Punktów Zwycięstwa otrzymuje. Jednak aby napędzać ciągłą rozbudowę, Markiza musi utrzymać i chronić potężną, wzajemnie połączoną gospodarkę **drzewną**.
+
+    - name: Zasady Frakcji i jej Zdolności
+      children:
+        - name: Przekuwanie.
+          text: Markiza przekuwa za Dnia poprzez aktywację Warsztatów.
+        - name: Twierdza.
+          text: Tylko Markiza może rozmieszczać swoje komponenty na polanie z żetonem Twierdzy. _(Jednak inni gracze mogą przemieszczać swoje komponenty na tę polanę)_. Jeżeli żeton Twierdzy zostanie usunięty, należy odłożyć go do pudełka. Nie ma możliwości ponownego wprowadzenia go do gry.
+        - name: Szpitale Polowe.
+          text: Za każdym razem, gdy dowolna liczba wojowników Markizy jest usuwana z polany, Markiza może wydać kartę z odpowiadającym tej polanie symbolem, aby rozmieścić wszystkich tych wojowników na polanie z żetonem Twierdzy.
+
+    - name: Przygotowanie Frakcji
+      children:
+        - name: "Krok 1: Przygotowanie Wojowników i Drewna"
+          text: Gracz tworzy pulę 25 wojowników i 8 żetonów drewna.
+        - name: "Krok 2: Gracz wybiera dowolną narożną polanę i rozmieszcza na niej żeton Twierdzy."
+          text: Jest to startowa polana Markizy.
+        - name: "Krok 3: Garnizon."
+          text: Gracz rozmieszcza po jednym wojowniku na każdej polanie, oprócz narożnej polany leżącej po przekątnej od polany z Twierdzą.
+        - name: "Krok 4: Rozmieszczenie Startowych Budynków."
+          text: Gracz rozmieszcza 1 Tartak, 1 Warsztat oraz 1 Koszary na polanie z Twierdzą i/lub na dowolnych sąsiadujących z nią polanach, w dowolnej kombinacji.
+        - name: "Krok 5: Uzupełnienie Torów Budynków."
+          text: Pozostałe 5 Tartaków, 5 Warsztatów i 5 Koszar gracz rozmieszcza od prawej do lewej na odpowiednich torach budynków na planszy Frakcji. _(Pola najbardziej z lewej każdego z tych torów pozostają puste.)_
+
+    - name: Świt
+      pretext: Gracz rozmieszcza żetony drewna na każdej polanie, na której znajduje się dowolna liczba Tartaków, po jednym żetonie za każdy Tartak.
+
+    - name: Dzień
+      pretext: W pierwszej kolejności gracz może aktywować Warsztaty, aby przekuć karty z ręki. Następnie może przeprowadzić do trzech poniższych akcji - plus jedna akcja za każdą ptasią kartę, którą zdecyduje się dodatkowo wydać _(nie jako część akcji)_ - w dowolnej kolejności i liczbie powtórzeń.
+      children:
+        - name: Walka.
+          text: Gracz inicjuje walkę.
+        - name: Marsz.
+          text: Gracz przeprowadza do dwóch ruchów.
+        - name: Werbunek.
+          text: Gracz rozmieszcza po jednym wojowniku w każdym budynku Koszar na Mapie. Ta akcja może zostać przeprowadzona tylko raz na turę.
+        - name: Budowa.
+          text: Gracz rozmieszcza budynek na Mapie.
+          subchildren:
+            - name: Wybór Budynku.
+              text: "Gracz wybiera jedną z kontrolowanych przez siebie polan oraz jaki typ budynku chce rozmieścić: Tartak, Warsztat czy Koszary. Następnie bierze pierwszy od lewej budynek z odpowiedniego toru na swojej planszy Frakcji. Musi w tym celu móc opłacić jego koszt (`rule:6.5.4.2`) oraz móc go umieścić (`rule:6.5.4.3`)."
+            - name: Opłacenie Kosztu.
+              text: Gracz odnajduje koszt na szczycie odpowiedniej kolumny. Następnie usuwa żetony drewna w liczbie równej kosztowi budynku z wybranej polany, sąsiadujących z nią polan, które kontroluje, albo z dowolnych innych polan połączonych z wybraną polaną dowolną liczbą kontrolowanych przez siebie polan.
+            - name: Rozmieszczenie Budynku i Punktacja.
+              text: Gracz rozmieszcza wybrany budynek na wybranej polanie i otrzymuje tyle Punktów Zwycięstwa, ile widnieje na nowo odkrytym polu planszy Frakcji.
+        - name: Nadprodukcja.
+          text: Gracz może wydać kartę odpowiadającą symbolowi polany z Tartakiem i umieścić na tej polanie jeden żeton drewna.
+
+    - name: Wieczór
+      pretext: Gracz dobiera jedną kartę oraz po jednej dodatkowej karcie za każdą odkrytą premię dobierania. Następnie, jeżeli posiada na ręce więcej niż pięć kart, odrzuca wybrane przez siebie karty do momentu, aż będzie miał na ręce pięć kart.
+
+- name: Dynastie Orlich Gniazd
+  color: "#416eb0"
+  icon: eyrie
+  children:
+    - name: Omówienie
+      pretext: Dynastie Orlich Gniazd pragną przejąć kontrolę nad polanami i odzyskać chwałę, jaką niegdyś cieszył się ich ród w Leśnogrodzie. Podczas swojego Wieczoru gracz Dynastii otrzymuje Punkty Zwycięstwa w oparciu o liczbę **Gniazd** posiadanych na Mapie. Im więcej Gniazd w Leśnogrodzie, tym więcej Punktów Zwycięstwa otrzymuje. Niemniej poczynania Orlich Gniazd wiąże **Dekret** - stale rozrastający się zestaw akcji obowiązkowych obiecanych przez ich **Przywódcę**. W trakcie każdej tury gracz musi przeprowadzić wszystkie akcje wymienione w Dekrecie W przeciwnym wypadku wybuchają **Zamieszki**.
+
+    - name: Zasady Frakcji i jej Zdolności
+      children:
+        - name: Przekuwanie.
+          text: Dynastie przekuwają karty poprzez aktywację Gniazd za Dnia, zanim zostanie rozpatrzony Dekret.
+        - name: Władcy Lasu.
+          text: Dynastie Orlich Gniazd kontrolują polanę również wtedy, gdy posiadają na niej łącznie tyle samo wojowników i budynków, co gracz posiadający ich na tej polanie najwięcej. Nie kontrolują pustych polan. `faction:cult:10.2.4`
+        - name: Niechęć do Handlu.
+          text: Za każdym razem, gdy Orle Gniazda przekuwają kartę, ignorują przedstawione na niej Punkty Zwycięstw - zamiast tego, otrzymują tylko jeden Punkt Zwycięstwa. _(Nadal zdobywają dodatkowe Punkty Zwycięstwa z efektów takich jak Mistrz Dłuta czy Legendarna Kuźnia)_.
+
+    - name: Przygotowanie Frakcji
+      children:
+        - name: "Krok 1: Przygotowanie Wojowników."
+          text: Gracz tworzy pulę 20 wojowników.
+        - name: "Krok 2: Rozmieszczenie Gniazda i Wojowników."
+          text: Gracz rozmieszcza 1 Gniazdo i 6 wojowników na narożnej polanie, która nie jest polaną startową innego gracza i, jeśli to możliwe, po przekątnej od innej startowej polany.
+        - name: "Krok 3: Wybór Przywódcy."
+          text: Gracz wybiera jednego spośród czterech Przywódców Dynastii Orlich Gniazd i kładzie jego kartę na polu "Karta Przywódcy". Pozostałe karty Przywódców kładzie odkryte w swoim obszarze rozgrywki.
+        - name: "Krok 4: Lojalni Wezyrowie."
+          text: Gracz wsuwa 2 karty Lojalnych Wezyrów pod swoją planszę Frakcji tak, aby ich symbole było widać w kolumnach Dekretu wskazanych przez wybraną kartę Przywódcy.
+        - name: "Krok 5: Uzupełnienie Toru Gniazd."
+          text: Pozostałe Gniazda gracz rozmieszcza od prawej do lewej na torze Gniazd.
+
+    - name: Świt
+      pretext: Świt Dynastii Orlich Gniazd składa się z trzech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Rozkazy Awaryjne.
+          text: Jeżeli gracz Orlich Gniazd nie ma kart na ręce, dobiera jedną kartę z talii.
+        - name: Dodanie Kart do Dekretu.
+          text: Gracz musi dodać jedną albo dwie karty do Dekretu, ale tylko jedna spośród dodawanych kart może być ptasią kartą. Gracz może dołożyć karty do dowolnych kolumn, a każda kolumna może składać się z dowolnej liczby kart.
+        - name: Nowe Gniazdo.
+          text: Jeżeli gracz Dynastii nie posiada na Mapie żadnych Gniazd, rozmieszcza jedno Gniazdo oraz trzech wojowników na polanie z najmniejszą liczbą wojowników, na której wszystkie te komponenty mogą być rozmieszczone.
+
+    - name: Dzień
+      pretext: Dzień Dynastii Orlich Gniazd składa się z dwóch kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Przekucie.
+          text: Gracz może aktywować Gniazda, aby przekuć karty ze swojej ręki.
+        - name: Rozpatrzenie Dekretu.
+          text: Gracz musi rozpatrzyć Dekret, począwszy od lewej kolumny i kontynuując w prawo. W każdej kolumnie musi rozpatrzyć wszystkie karty, ale może to zrobić w dowolnej kolejności. Za każdą kartę w danej kolumnie gracz musi przeprowadzić akcję podyktowaną przez tę kolumnę zgodnie z poniższym opisem. Jeżeli gracz nie jest w stanie przeprowadzić którejkolwiek z akcji Dekretu, natychmiast wybuchają Zamieszki (`rule:7.7`).
+          subchildren:
+            - name: Werbunek.
+              text: Gracz rozmieszcza wojownika na dowolnej polanie z Gniazdem, której symbol odpowiada symbolowi z karty.
+            - name: Ruch.
+              text: Gracz przemieszcza wojowników z dowolnej polany, której symbol odpowiada symbolowi z karty. _(Gracz musi przemieścić co najmniej jednego wojownika)_.
+            - name: Walka.
+              text: Gracz inicjuje walkę na dowolnej polanie, której symbol odpowiada symbolowi z karty.
+            - name: Budowa.
+              text: Gracz rozmieszcza Gniazdo na dowolnej kontrolowanej przez siebie polanie, której symbol odpowiada symbolowi z karty i na której nie ma żadnego Gniazda.
+
+    - name: Wieczór
+      pretext: Wieczór Dynastii Orlich Gniazd składa się z dwóch kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Punktacja.
+          text: Gracz otrzymuje Punkty Zwycięstwa przedstawione poniżej pierwszego od prawej pustego pola na torze Gniazd.
+        - name: Dobranie i Odrzucenie Kart.
+          text: Gracz dobiera jedną kartę oraz po jednej dodatkowej karcie za każdą odkrytą premię dobierania. Następnie, jeżeli posiada na ręce więcej niż pięć kart, odrzuca wybrane przez siebie karty do momentu, aż będzie miał na ręce pięć kart.
+
+    - name: Zamieszki
+      pretext: Jeżeli z jakiegokolwiek powodu gracz Orlich Gniazd nie jest w stanie przeprowadzić którejkolwiek z akcji z Dekretu (`rule:7.5.2`), dochodzi do Zamieszek, które gracz musi przeprowadzić zgodnie z poniższym opisem.
+      children:
+        - name: "Krok 1: Upokorzenie."
+          text: Gracz traci jeden Punkt Zwycięstwa za każdą ptasią kartę w Dekrecie _(wliczając w to Lojalnych Wezyrów)_.
+        - name: "Krok 2: Czystki."
+          text: Gracz odrzuca z Dekretu wszystkie karty oprócz Lojalnych Wezyrów.
+        - name: "Krok 3: Usunięcie z Urzędu."
+          text: Gracz zakrywa kartę swojego dotychczasowego Przywódcy i odkłada ją na bok. Następnie spośród odkrytych kart wybiera nowego Przywódcę i kładzie jego kartę na swojej planszy Frakcji, a karty Lojalnych Wezyrów wsuwa pod odpowiednie pola wyznaczone przez kartę nowo wybranego Przywódcy.
+          subchildren:
+            - name: Nowe Pokolenie.
+              text: Jeżeli gracz nie posiada już żadnej odkrytej karty Przywódcy, odkrywa wszystkie zakryte karty Przywódców.
+        - name: "Krok 4: Odpoczynek."
+          text: Dzień dobiega końca, natychmiast rozpoczyna się Wieczór.
+
+    - name: Omówienie Przywódców
+      pretext: Dynastie Orlich Gniazd posiadają czterech Przywódców opisanych poniżej.
+      children:
+        - name: Budowniczy.
+          text: Lojalni Wezyrowie rozpoczynają na polach Werbunku i Ruchu. Za każdym razem, gdy gracz przekuwa kartę, ignoruje swoją zdolność specjalną Niechęć do Handlu (`rule:7.2.3`).
+        - name: Charyzmatyk.
+          text: Lojalni Wezyrowie rozpoczynają na polach Werbunku i Walki. Za każdym razem, gdy gracz przeprowadza akcję Werbunku, musi rozmieścić na Mapie dwóch wojowników zamiast jednego.
+        - name: Komandor.
+          text: Lojalni Wezyrowie rozpoczynają na polach Ruchu i Walki. Podczas udziału w walce jako atakujący gracz zadaje jedno dodatkowe obrażenie.
+        - name: Despota.
+          text: Lojalni Wezyrowie rozpoczynają na polach Ruchu i Budowy. Za każdym razem, gdy podczas walki gracz usuwa co najmniej jeden budynek lub żeton przeciwnika, otrzymuje jeden dodatkowy Punkt Zwycięstwa _(w sumie dwa Punkty, `rule:3.2.1`)_.
+
+- name: Sojusz Stworzeń Leśnych
+  color: "#68b653"
+  icon: woodland
+  children:
+    - name: Omówienie
+      pretext: Sojusz Stworzeń Leśnych stara się pozyskać **Sympatyków** wśród najróżniejszych mieszkańców Leśnogrodu, którzy są niezadowoleni z obecnie panujących tam warunków. Za każdym razem, gdy Sojusz rozmieszcza żeton Sympatyków, otrzymuje Punkty Zwycięstwa. Im więcej Sympatyków gracz Sojuszu ma na Mapie, tym więcej Punktów Zwycięstwa otrzymuje Pozyskiwanie Sympatyków wymaga **Stronników**. Tych Stronników można także wysłać z bardziej agresywną misją wzniecania Rewolty w całym lesie. Podczas Rewolty Sojusz zakłada swoją **Bazę**. Bazy pozwalają Sojuszowi szkolić Oficerów, co zwiększa ich militarne możliwości.
+
+    - name: Zasady Frakcji i jej Zdolności
+      children:
+        - name: Przekuwanie.
+          text: Sojusz przekuwa karty za Dnia poprzez aktywację żetonów Sympatyków.
+        - name: Wojna Partyzancka.
+          text: Jako obrońca podczas walki Sojusz zada obrażenia równe wyższemu wynikowi rzutu, podczas gdy atakujący zada obrażenia równe niższemu wynikowi rzutu kośćmi.
+        - name: Stos Stronników.
+          text: Aby przeprowadzać różne akcje, Sojusz wydaje **Stronników**, czyli karty znajdujące się na jego stosie Stronników. Karty Stronników mogą zostać wydane tylko ze względu na ich symbol i nie wliczają się do limitu kart na ręce. Karty Stronników są zakryte, jednak gracz Sojuszu może przeglądać ten stos w dowolnym momencie rozgrywki.
+          subchildren:
+            - name: Limit Stronników.
+              text: Jeżeli Sojusz nie posiada żadnej Bazy na Mapie, stos Stronników może składać się z maksymalnie pięciu kart. Jeżeli Sojusz miałby pozyskać Stronnika wykraczającego poza limit kart na stosie, ta karta zostaje odrzucona. Jeżeli Sojusz posiada co najmniej jedną Bazę na Mapie, stos Stronników może składać się z nieograniczonej liczby kart.
+        - name: Usuwanie Baz.
+          text: Za każdym razem, gdy Baza zostaje usunięta, Sojusz musi odrzucić wszystkich Stronników o nadrukowanym symbolu odpowiadającym usuwanej Bazie _(łącznie z ptasimi kartami)_ oraz usunąć połowę swoich Oficerów _(zaokrąglając w górę)_. Jeżeli Sojusz nie ma już żadnej Bazy na Mapie, a w stosie Stronników jest więcej niż pięć kart, gracz odrzuca z tego stosu karty wykraczające poza ten limit.
+        - name: Żetony Sympatyków.
+          text: Sojusz posiada 10 żetonów Sympatyków.
+          subchildren:
+            - name: Ograniczenia przy Rozmieszczaniu.
+              text: Na każdej z polan może znajdować się tylko jeden żeton Sympatyków.
+            - name: Pojęcia.
+              text: "**Polana z Sympatykami** to polana, na której znajduje się żeton Sympatyków. **Polana bez Sympatyków** to polana, na której nie ma żetonu Sympatyków."
+        - name: Bunt.
+          text: Za każdym razem, gdy inny gracz usuwa z polany żeton Sympatyków albo przemieszcza swoich wojowników na polanę z Sympatykami, musi dodać na stos Stronników jedną kartę ze swojej ręki, o symbolu odpowiadającym tej polanie. Jeżeli gracz nie ma na ręce odpowiedniej karty _(ani żadnej ptasiej karty)_, musi pokazać karty na swojej ręce graczowi Sojuszu. Następnie gracz Sojuszu dobiera kartę ze wspólnej talii i dodaje ją do swojego stosu Stronników.
+
+    - name: Przygotowanie Frakcji
+      children:
+        - name: "Krok 1: Przygotowanie Wojowników."
+          text: Gracz tworzy pulę 10 wojowników.
+        - name: "Krok 2: Rozmieszczenie Baz."
+          text: Gracz rozmieszcza 3 Bazy na odpowiadających im polach w tabeli Baz.
+        - name: "Krok 3: Uzupełnienie Toru Sympatyków."
+          text: Gracz rozmieszcza 10 żetonów Sympatyków na swoim torze Sympatyków.
+        - name: "Krok 4: Pozyskanie Stronników"
+          text: Gracz dobiera 3 karty i umieszcza je zakryte na swoim stosie Stronników.
+
+    - name: Świt
+      pretext: Świt Sojuszu Stworzeń Leśnych składa się z dwóch kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Rewolta.
+          text: Za każdym razem gdy gracz przeprowadza akcję Rewolty, należy postępować według poniższych kroków.
+          subchildren:
+            - name: "Krok 1: Wybór Polany."
+              text: Gracz wybiera polanę z żetonem Sympatyków, która odpowiada symbolem niewybudowanej jeszcze Bazie na swojej Planszy Frakcji.
+            - name: "Krok 2: Wydanie Stronników."
+              text: Gracz wydaje dwie karty Stronników o symbolu odpowiadającym wybranej polanie.
+            - name: "Krok 3: Rozpatrzenie Efektu."
+              text: Gracz usuwa wszystkie komponenty przeciwników z wybranej polany. Następnie rozmieszcza tam Bazę o symbolu odpowiadającym tej polanie, a także wojowników w liczbie równej liczbie wszystkich polan z Sympatykami o nadrukowanym symbolu odpowiadającym rozmieszczonej Bazie. Na koniec gracz rozmieszcza jednego wojownika z puli na polu Oficerów. Od teraz ten wojownik jest **Oficerem**. _(Należy pamiętać o otrzymaniu po jednym Punkcie Zwycięstwa za każdy usunięty żeton i budynek)_.
+
+        - name: Zdobywanie Sympatyków.
+          text: Za każdym razem gdy gracz przeprowadza akcję Zdobywania Sympatyków, należy postępować według poniższych kroków.
+          subchildren:
+            - name: "Krok 1: Wybór Polany."
+              text: Gracz wybiera polanę bez Sympatyków, która sąsiaduje z polaną z Sympatykami. Jeżeli na Mapie nie ma żadnej polany z Sympatykami, gracz Sojuszu wybiera dowolną polanę.
+            - name: "Krok 2: Wydanie Stronników."
+              text: Gracz wydaje Stronników o symbolu odpowiadającym wybranej polanie. Liczba Stronników, których gracz musi wydać, jest przedstawiona powyżej żetonu Sympatyków na torze Sympatyków.
+              subchildren:
+                - name: Prawo Wojny.
+                  text: Jeżeli na wybranej polanie znajduje się co najmniej trzech wojowników innego gracza, wliczając w to wojownika, którego gracz traktuje jako swojego do kontroli _(Najemnicy, Zacieżni)_ gracz Sojuszu musi wydać dodatkowego Stronnika o odpowiednim symbolu.
+            - name: "Krok 3: Rozmieszczenie i Punktacja."
+              text: Gracz rozmieszcza żeton Sympatyków na wybranej polanie. Następnie otrzymuje Punkty Zwycięstwa widniejące na nowo odkrytym polu na swojej planszy Frakcji.
+
+    - name: Dzień
+      pretext: Gracz może przeprowadzić poniższe akcje w dowolnej kolejności oraz liczbie powtórzeń.
+      children:
+        - name: Przekucie.
+          text: Gracz aktywuje Sympatyków, aby przekuć karty z ręki.
+        - name: Mobilizacja.
+          text: Gracz dodaje kartę ze swojej ręki do stosu Stronników.
+        - name: Szkolenie.
+          text: Gracz wydaje z ręki kartę o symbolu odpowiadającym nadrukowanemu symbolowi wybudowanej na mapie Bazy, aby rozmieścić wojownika na polu Oficerów. Ten wojownik staje się **Oficerem**.
+
+    - name: Wieczór
+      pretext: Wieczór Sojuszu Stworzeń Leśnych składa się z dwóch kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Operacje Militarne.
+          text: Gracz może przeprowadzić poniższe akcje w dowolnej kolejności i liczbie powtórzeń, ale w łącznej liczbie nie większej niż liczba posiadanych Oficerów.
+          subchildren:
+            - name: Ruch.
+              text: Gracz przeprowadza pojedynczy ruch.
+            - name: Walka.
+              text: Gracz inicjuje walkę.
+            - name: Werbunek.
+              text: Gracz rozmieszcza wojownika na dowolnej polanie z Bazą.
+            - name: Przegrupowanie.
+              text: Gracz usuwa jednego ze swoich wojowników Leśnych Stworzeń z polany bez Sympatyków i rozmieszcza tam żeton Sympatyków, po czym otrzymuje Punkty Zwycięstwa widniejące na nowo odkrytym polu na planszy Frakcji.
+        - name: Dobranie i Odrzucenie Kart.
+          text: Gracz dobiera jedną kartę oraz po jednej dodatkowej karcie za każdą odkrytą premię dobierania. Następnie, jeżeli posiada na ręce więcej niż pięć kart, odrzuca wybrane przez siebie karty do momentu, aż będzie miał na ręce pięć kart.
+
+- name: Włóczęga
+  color: "#6d6e70"
+  icon: vagabond
+  children:
+    - name: Omówienie
+      pretext: Włóczęga gra po każdej stronie konfliktu, wykonując różne zadania, aby zwiększyć swoją sławę w Leśnogrodzie. Za każdym razem, gdy Włóczęga poprawia swoją **Relację** z inną Frakcją albo usuwa komponent należący do swojego Wroga, otrzymuje Punkty Zwycięstwa. Może także otrzymać Punkty Zwycięstwa za wykonanie **Misji**. Aby efektywnie działać i poruszać się po Leśnogrodzie, Włóczęga musi zarządzać swoimi **przedmiotami** i zwiększać ich liczbę poprzez eksplorację Ruin Leśnogrodu oraz udzielanie pomocy pozostałym Frakcjom.
+
+    - name: Zasady Frakcji i jej Zdolności
+      children:
+        - name: Przekuwanie.
+          text: Aby przekuć karty z ręki, Włóczęga wyczerpuje `item:hammer`. Wszystkie posiadane przez niego `item:hammer` odpowiadają symbolem polanie, na której aktualnie się znajduje. Gdy Włóczęga otrzymuje przedmiot w wyniku przekucia karty, dobiera go natychmiast jako odkryty.
+        - name: Samotny Wędrowiec.
+          text: Pionek Włóczęgi nie jest wojownikiem _(nie może kontrolować polany ani powstrzymać innego gracza przed kontrolą polan)_. Pionek Włóczęgi nie może zostać usunięty z Mapy.
+          subchildren:
+            - name: Wielka Czystka.
+              text: Za każdym razem, gdy przeciwnik używa efektu usuwającego komponenty pozostałych graczy _(np. Rewolta Sojuszu, karta Mysiej Przysługi czy Bomba Konspiracji)_ z polany, na której znajduje się pionek Włóczęgi, Włóczęga uszkadza trzy swoje przedmioty.
+
+        - name: Zwinny.
+          text: Włóczęga porusza się pomiędzy polanami bez względu na to, które Frakcje kontrolują początkową i docelową polanę (`rule:4.2.1`).
+        - name: Bezbronny.
+          text: Jeżeli podczas walki Włóczęga nie posiada żadnego nieuszkodzonego `item:sword`, jest bezbronny (`rule:4.3.3.2`).
+        - name: Przedmioty.
+          text: Możliwości Włóczęgi zależą od pozyskanych przez niego przedmiotów. Zamiast Przekutych Przedmiotów ma Plecak i liczne tory przedmiotów. Przedmioty na planszy Frakcji Włóczęgi mogą być odkryte albo zakryte. Włóczęga **wyczerpuje** odkryte nieuszkodzone przedmioty, zakrywając ich żetony, aby przeprowadzać liczne akcje.
+          subchildren:
+            - name: Tory Przedmiotów.
+              text: Po pozyskaniu `item:tea`, `item:coin` lub `item:sack` należy je umieścić odkryte na odpowiadających im torach. Na każdym torze mogą znajdować się maksymalnie trzy przedmioty.
+            - name: Plecak.
+              text: Po pozyskaniu `item:boot`, `item:sword`, `item:crossbow`, `item:torch` lub `item:hammer` należy umieścić je odkryte w Plecaku Włóczęgi.
+            - name: Przenoszenie Przedmiotów.
+              text: Włóczęga może dowolnie przenosić odkryte, nieuszkodzone `item:tea`, `item:coin` lub `item:sack` pomiędzy odpowiadającymi im torami a Plecakiem.
+        - name: Maksymalna Liczba Wyrzuconych Obrażeń.
+          text: Podczas walki maksymalna liczba wyrzuconych obrażeń Włóczęgi (`rule:4.3.2.1`) równa się liczbie nieuszkodzonych `item:sword` w jego Plecaku _(odkrytych i zakrytych)_.
+        - name: Otrzymywanie Obrażeń.
+          text: Za każdym razem, gdy Włóczęga otrzymuje obrażenie (`rule:4.3.3`), musi uszkodzić jeden nieuszkodzony przedmiot poprzez przeniesienie jego żetonu na pole Uszkodzonych Przedmiotów. Jeżeli nie posiada więcej nieuszkodzonych przedmiotów, Włóczęga ignoruje pozostałe obrażenia.
+        - name: Karty Dominacji i Koalicje.
+          text: Włóczęga nie może aktywować karty Dominacji dla ich zwykłego warunku zwycięstwa (`rule:3.3.1`). Podczas rozgrywek dla co najmniej czterech graczy Włóczęga może aktywować kartę Dominacji w celu utworzenia koalicji z innym graczem posiadającym najmniej Punktów Zwycięstwa (pomijając Włóczęgę tworzącego właśnie koalicję), nie będącym już w koalicji, umieszczając swój znacznik Punktacji na planszy Frakcji tego gracza. _(Włóczęga już nie zdobywa Punktów)_. Jeżeli kilku graczy posiada taką samą, najmniejszą, liczbę Punktów Zwycięstwa, Włóczęga wybiera, z którym z nich utworzy koalicję. Jeżeli wybrany gracz wygrywa grę, Włóczęga również zwycięża.
+        - name: Relacje.
+          text: Plansza Frakcji Włóczęgi przedstawia tabelę Relacji, która składa się z czterech pól toru Sojuszników oraz pola Wrogów. W tabeli znajduje się znacznik Relacji dla każdej Frakcji, która nie jest Włóczęgą
+          subchildren:
+            - name: Poprawa Relacji.
+              text: Włóczęga może poprawiać Relacje z nie-Wrogą Frakcją poprzez przeprowadzanie akcji Pomocy.
+              subchildren:
+                - name: Koszt.
+                  text: Podczas jednej tury gracz musi przeprowadzić akcję Pomocy tyle razy, ile wskazuje cyfra pomiędzy obecnym poziomem Relacji z daną Frakcją a następnym. _(Dana akcja Pomocy wlicza się do podniesienia Relacji tylko o jeden poziom)_.
+                - name: Efekt.
+                  text: Gracz przesuwa znacznik Relacji z daną Frakcją o jedno pole w prawo i otrzymuje Punkty Zwycięstwa w liczbie przedstawionej na nowym polu.
+            - name: Status Sojusznika.
+              text: Jeżeli znacznik Relacji znajdzie się na ostatnim polu toru Sojuszników, Frakcja, do której on należy, staje się Sojusznikiem Włóczęgi. _(Wojownicy tego gracza ufają Włóczędze)_!
+              subchildren:
+                - name: Pomaganie Sojusznikowi.
+                  text: Za każdym razem, gdy Włóczęga Pomaga sojuszniczej Frakcji otrzymuje dwa Punkty Zwycięstwa.
+                - name: Poruszanie się z Sojusznikiem.
+                  text: Za każdym razem, gdy Włóczęga przemieszcza się na sąsiednią polanę, może przemieścić ze sobą wojowników jednej z Sojuszniczych Frakcji ze swojej początkowej polany na docelową.
+                - name: Atakowanie z Sojusznikiem.
+                  text: Za każdym razem, gdy Włóczęga inicjuje walkę, może traktować wojowników jednej ze swoich Sojuszniczych Frakcji znajdujących się na polanie walki, jako swoich własnych wojowników. Maksymalna liczba wyrzuconych obrażeń równa jest łącznej liczbie znajdujących się na polanie wojowników tej Sojuszniczej Frakcji i wszystkich nieuszkodzonych `item:sword` Włóczęgi. Włóczęga nie może traktować wojowników swojego Sojusznika jak swoich, jeżeli atakuje tę samą Sojuszniczą Frakcję
+                - name: Otrzymywanie Obrażeń z Sojusznikiem.
+                  text: Podczas walki, w której Włóczęga traktuje wojowników Sojuszniczej Frakcji jak swoich własnych, Włóczęga może otrzymywać obrażenia poprzez usuwanie wojowników tego Sojusznika. Jeżeli jednak podczas tej samej walki Włóczęga usunie więcej wojowników swojego Sojusznika, niż uszkodzi przedmiotów, na koniec walki ta Sojusznicza Frakcja zostaje Wrogiem Włóczęgi (`rule:9.2.9.3`). Ta zasada ma pierwszeństwo przed warunkiem zostania Wrogiem opisanym w `rule:9.2.9.3`.
+            - name: Status Wroga.
+              text: Jeżeli Włóczęga usunie wojownika nie-Wrogiej Frakcji, znacznik Relacji z tą Frakcją należy natychmiast przenieść na pole "Wrogowie". Od tego momentu ta Frakcja staje się Wrogiem Włóczęgi. Następnie, jeśli stało się to podczas walki, należy sprawdzić Punktację Niesławy (`rule:9.2.9.3.1`).
+              subchildren:
+                - name: Niesława.
+                  text: Za każdym razem, gdy podczas walki w swojej turze Włóczęga usunie komponent swojego Wroga, otrzymuje jeden Punkt Zwycięstwa. _(Ten punkt należy dodać do Punktów Zwycięstwa otrzymanych za usunięte budynki i żetony przeciwnika. Włóczęga nie otrzymuje Punktu Zwycięstwa za usunięcie wojownika, który sprawił, że Frakcja tego wojownika stała się Wrogiem Włóczęgi)_.
+                - name: Wkraczanie na Polany z Wrogiem.
+                  text: Włóczęga musi wyczerpać dodatkowy `item:boot`, aby przemieścić się na polanę, na której znajduje się co najmniej jeden wojownik którejś z jego Wrogich Frakcji.
+                - name: Pomaganie Wrogim Frakcjom.
+                  text: Włóczęga nie może przenieść znacznika Relacji swojego Wroga z pola Wrogów na tor Sojuszników w wyniku akcji Pomocy, jednak nadal może Pomagać Wrogim Frakcjom w zamian za przekute przedmioty.
+                - name: Koalicja z Wrogą Frakcją.
+                  text: Włóczęga może utworzyć koalicję (`rule:9.2.8`) z Wrogą Frakcją. W takim przypadku należy przenieść znacznik Relacji tego Wroga na pole "Neutralny".
+
+    - name: Przygotowanie Frakcji
+      children:
+        - name: "Krok 1: Wybór Postaci."
+          text: Gracz wybiera kartę Postaci i umieszcza ją na polu "Karta Postaci" na swojej planszy Frakcji.
+        - name: "Krok 2: Rozmieszczenie Pionka."
+          text: Gracz rozmieszcza swój pionek Włóczęgi w dowolnym lesie.
+        - name: "Krok 3: Przygotowanie Misji."
+          text: Należy potasować talię Misji, a następnie dobrać z niej 3 karty i umieścić je odkryte w pobliżu Mapy.
+        - name: "Krok 4: Rozmieszczenie Ruin."
+          text: Należy wziąć z Mapy cztery żetony Ruin, a następnie przygotować przedmioty `item:sack`, `item:boot`, `item:hammer` i `item:sword`oznaczone literą "R". Pod każdym z żetonów Ruin należy umieścić po jednym z tych przedmiotów, a następnie losowo rozmieścić na pustych polach Ruin na Mapie.
+        - name: "Krok 5: Dobranie Przedmiotów Startowych."
+          text: Włóczęga dobiera te przedmioty oznaczone literą "S", które wymienione są na karcie wybranej Postaci. Wszystkie wymienione `item:tea`, `item:coin` i `item:sack` należy umieścić odkryte na odpowiadających im torach na planszy Frakcji Włóczęgi. Pozostałe spośród przedmiotów wymienionych na karcie Postaci należy rozmieścić odkryte w jego Plecaku. Resztę przedmiotów oznaczonych literą "S" należy odłożyć do pudełka.
+        - name: "Krok 6: Ustalenie Relacji."
+          text: Włóczęga dobiera po jednym znaczniku Relacji dla każdej Frakcji biorącej udział w grze (niebędącej Włóczęgą), a następnie umieszcza je na polu "Neutralny" w tabeli Relacji.
+
+    - name: Świt
+      pretext: Świt Włóczęgi składa się z dwóch kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Przygotowanie.
+          text: Na początku Świtu należy odkryć po dwa wyczerpane przedmioty za każdą odkrytą `item:tea` na odpowiednim torze. Następnie należy odkryć trzy kolejne wyczerpane przedmioty (o ile to możliwe).
+        - name: Zakradanie się.
+          text: Gracz może przemieścić się na sąsiadującą polanę albo do lasu bez wyczerpywania żadnych `item:boot`, nawet jeżeli wkracza na polanę, na której znajduje się Wróg (`rule:9.2.9.3.2`). Wykonując ten ruch, Włóczęga ignoruje wszelkie efekty, które uniemożliwiają przemieszczenie z początkowej polany _(np. Wnyki Kruczej Konspiracji)_.
+
+    - name: Dzień
+      pretext: Gracz może wyczerpać przedmioty w celu przeprowadzenia poniższych akcji w dowolnej kolejności i liczbie powtórzeń. Jeżeli gracz wyczerpie `item:coin`, `item:tea` albo `item:sack` na odpowiadającym im torach, przenosi je do Plecaka.
+      children:
+        - name: Ruch.
+          text: Gracz wyczerpuje jeden `item:boot`, aby się przemieścić oraz jeden dodatkowy `item:boot`, jeżeli na docelowej polanie znajduje się co najmniej jeden wojownik jego Wroga. Włóczęga nie może przemieścić się do lasu w ramach akcji Ruchu. Przebywając w lesie, gracz może przemieścić się jedynie na sąsiednią polanę.
+        - name: Walka.
+          text: Gracz wyczerpuje jeden `item:sword`, aby zainicjować walkę. _(Następnie Włóczęga sprawdza swoją Relację z obrońcą)_.
+        - name: Eksploracja.
+          text: Gracz wyczerpuje jedną `item:torch`, aby dobrać przedmiot spod żetonu Ruin na swojej polanie, ujawnić go i umieścić odkryty w Plecaku albo na odpowiadającym mu torze. Jeśli Włóczęga wziął przedmiot, otrzymuje jeden Punkt Zwycięstwa. Jeżeli usunął ostatni przedmiot spod żetonu Ruin, usuwa z Mapy ten żeton Ruin.
+        - name: Pomoc.
+          text: Gracz wyczerpuje jeden dowolny przedmiot i oddaje jedną ze swoich kart odpowiadających symbolem polanie, na której się znajduje, graczowi z co najmniej jednym komponentem Frakcji tego gracza na tej polanie _(może to też być Wróg)_. Następnie _(o ile to możliwe)_ Włóczęga dobiera jeden przedmiot z pola Przekutych Przedmiotów na planszy Frakcji tego gracza i umieszcza go odkrytego w swoim Plecaku albo na odpowiednim torze. _(Następnie Włóczęga sprawdza Relację z tą Frakcją)_.
+        - name: Misja.
+          text: Gracz wybiera Misję, której symbol odpowiada polanie, na której znajduje się Włóczęga i wyczerpuje dwa przedmioty wymienione na tej karcie Misji, aby ją ukończyć Gracz umieszcza kartę wykonanej Misji w swoim obszarze rozgrywki, a następnie dobiera nową Misję i kładzie ją w pobliżu Mapy. Gracz może otrzymać po jednym Punkcie Zwycięstwa za każdą ukończoną Misję o odpowiadającym symbolu _(łącznie z właśnie ukończoną Misją)_ albo dobrać dwie karty z talii.
+        - name: Cios.
+          text: Gracz wyczerpuje jedną `item:crossbow`, aby usunąć wojownika przeciwnika ze swojej polany. Jeżeli dany gracz nie posiada na tej polanie wojowników, Włóczęga może zamiast tego usunąć jeden z komponentów Frakcji tego przeciwnika. _(Następnie Włóczęga sprawdza Relację z Frakcją tego gracza)_
+        - name: Naprawa.
+          text: Gracz wyczerpuje jeden `item:hammer`, aby przenieść jeden uszkodzony przedmiot do Plecaka albo na odpowiedni tor _(jeżeli są to odkryte `item:coin`, `item:tea`, `item:sack`)_, zachowując stronę, którą przedmiot jest aktualnie odwrócony.
+        - name: Przekucie.
+          text: Gracz zagrywa kartę z ręki i wyczerpuje `item:hammer` o przedstawionym symbolu, aby ją przekuć. Wszystkie `item:hammer` Włóczęgi odpowiadają symbolowi polany, na której się aktualnie znajduje. Jeżeli karta wymaga kilku `item:hammer` o tym samym symbolu, aby ją przekuć, gracz musi wyczerpać przedstawioną liczbę `item:hammer`. Otrzymany w ten sposób przedmiot gracz umieszcza w swoim Plecaku albo na odpowiednim torze.
+        - name: Akcja Specjalna.
+          text: Gracz wyczerpuje jedną `item:torch`, aby przeprowadzić akcję opisaną na swojej karcie Postaci.
+
+    - name: Wieczór
+      pretext: Wieczór Włóczęgi składa się z czterech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Wieczorny Odpoczynek.
+          text: Jeżeli pionek Włóczęgi znajduje się w lesie, gracz przenosi wszystkie przedmioty z pola Uszkodzonych Przedmiotów do swojego Plecaka albo na odpowiedni tor i odkrywa je.
+        - name: Dobranie Kart.
+          text: Gracz dobiera jedną kartę oraz po jednej dodatkowej karcie za każdy odkryty `item:coin` na odpowiednim torze.
+        - name: Odrzucenie Kart.
+          text: Jeżeli gracz posiada na ręce więcej niż pięć kart, odrzuca wybrane przez siebie karty do momentu, aż będzie miał na ręce pięć kart.
+        - name: Usunięcie Przedmiotów.
+          text: Jeżeli gracz posiada w swoim Plecaku i na polu Uszkodzonych Przedmiotów więcej przedmiotów, niż wynosi ich limit (sześć plus po dwa za każdy odkryty `item:sack` na odpowiednim torze), usuwa przedmioty wykraczające poza ten limit z Plecaka i pola Uszkodzonych Przedmiotów. Usunięte przedmioty należy odłożyć do pudełka.
+
+    - name: Rozgrywka z Udziałem Dwóch Włóczęgów
+      subtext: "W przypadku posiadania Rozszerzenia: _Plemiona Rzeczne_, gracze mogą zdecydować się na rozgrywkę z udziałem dwóch Włóczęgów, stosując się do poniższych zasad"
+      children:
+        - name: Przygotowanie.
+          text: Podczas przygotowania rozgrywki gracze korzystają z obu zestawów przedmiotów z Ruin i rozmieszczają po dwa losowe przedmioty na każdym polu Ruin. Jeśli Gracze używają Standardowego Przygotowania Rozgrywki (`rule:5.1`), powinni losowo ustalić który Włóczęga będzie pierwszy.
+        - name: Współdzielenie Misji.
+          text: Umieszczona obok Mapy pula trzech kart Misji jest wspólna dla obydwu Włóczęgów. Każdy z Włóczęgów może ukończyć dowolną spośród trzech odkrytych Misji - nie należy rozkładać dodatkowych kart Misji podczas przygotowania do rozgrywki.
+        - name: Zbieranie Przedmiotów z Ruin.
+          text: Gdy Włóczęga eksploruje Ruiny z dwoma przedmiotami lub Władca Szczurów zniszczy ruiny (`rule:14.4.1`) z dwoma przedmiotami, może je przejrzeć i wybrać jeden z nich _(Przeprowadzając dwie akcje Eksploracji, Włóczęga może zabrać obydwa przedmioty z tych samych Ruin)_. Włóczęga nie może zabrać przedmiotu oznaczonego literą "R", jeżeli posiada już taki sam przedmiot z literą "R" na swojej planszy Frakcji. Jeżeli w wyniku eksploracji Włóczęga nie zabierze żadnego przedmiotu, nie otrzymuje Punktu Zwycięstwa, ale `item:torch` pozostaje wyczerpana.
+
+- name: Jaszczurzy Kultyści
+  color: "#fcf065"
+  icon: cult
+  children:
+    - name: Omówienie
+      pretext: Jaszczurzy Kultyści planują pokonać swoich przeciwników czystą siłą woli i zaspokoić potrzeby stworzeń odrzuconych przez pozostałe Frakcje. Na kontrolowanych przez siebie polanach Kultyści mogą zakładać **Ogrody**, by krzewić swoją wiarę wśród mieszkańców Leśnogrodu. Im silniejsza władza Kultystów nad sercami i duszami wyznawców, tym więcej Punktów Zwycięstwa może zdobyć gracz podczas przeprowadzania odpowiednich **Rytuałów**. Podczas gdy pozostałe Frakcje starają się osiągać swoje cele poprzez zagrywanie kart, Kultyści ujawniają swoje karty i stopniowo gromadzą grupę doskonałych wiernych. Wieczorem ujawnione karty wracają na rękę gracza Kultystów, chyba że zostały odrzucone w celu zdobycia Punktów Zwycięstwa. Jednak to subtelniejsze podejście ma swoje wady, gdyż utrudnia walkę i poruszanie się - Kultyści mogą wykonywać te akcje tylko za pomocą zradykalizowanych **Akolitów**, których Frakcja zyskuje, gdy wojownicy zginą w walce jako obrońcy.
+
+    - name: Zasady Frakcji i jej Zdolności
+      children:
+        - name: Przekuwanie.
+          text: Kultyści przekuwają karty Wieczorem poprzez aktywację Ogrodów, których nadrukowany symbol odpowiada symbolowi Wygnańców (`rule:10.4.1`). _(Zazwyczaj odpowiada to symbolowi polany, poza Punktem Terenu Zaginione Miasto)_.
+        - name: Nienawiść do Ptaków.
+          text: Podczas przeprowadzania Rytuałów ptasie karty nie działają jak jokery.
+        - name: Zemsta.
+          text: Za każdym razem, gdy wojownik Kultystów zostaje usunięty podczas obrony w walce, zostaje umieszczony na polu Akolitów, a nie w puli wojowników Kultystów.
+        - name: Pielgrzymi.
+          text: Kultyści kontrolują każdą polanę, na której znajduje się co najmniej jeden Ogród. Ta zasada ma pierwszeństwo przed zdolnością Władców Lasu Dynastii Orlich Gniazd (`rule:7.2.2`).
+        - name: Strach przed Wiernymi.
+          text: Za każdym razem, gdy Ogród zostaje usunięty z Mapy, gracz Kultystów musi odrzucić z ręki losową kartę.
+        - name: Stos Zagubionych Dusz.
+          text: Za każdym razem, gdy dowolna karta zostaje zagrana, wydana albo odrzucona _(nawet karta Dominacji)_, należy ją umieścić na stosie Zagubionych Dusz, a nie na stosie kart odrzuconych. Każdy gracz może w dowolnym momencie rozgrywki przeglądać stos Zagubionych Dusz.
+
+    - name: Przygotowanie Frakcji
+      children:
+        - name: "Krok 1: Przygotowanie Wojowników."
+          text: Gracz tworzy pulę 25 wojowników.
+        - name: "Krok 2: Rozmieszczenie Ogrodu i Wojowników."
+          text: Gracz Kultystów rozmieszcza 4 wojowników i 1 Ogród o symbolu odpowiadającym wybranej polanie na narożnej polanie, która nie jest polaną startową innego gracza i, jeśli to możliwe, po przekątnej od innej startowej polany. To jego polana startowa Jeżeli w rozgrywce bierze udział zarówno Markiza, jak i Dynastia, gracz Kultystów wybiera jedną z dwóch pozostałych narożnych polan. Następnie rozmieszcza po jednym wojowniku na każdej polanie sąsiadującej z tym Ogrodem.
+        - name: "Krok 3: Wybór Wygnańców."
+          text: Gracz Kultystów rozmieszcza znacznik Wygnańców na polu z dowolnym symbolem w tabeli Wygnańców. Symbol z wybranego pola określa **Wygnańców**.
+        - name: "Krok 4: Uzupełnienie Torów Ogrodów."
+          text: Gracz rozmieszcza 14 pozostałych Ogrodów na odpowiadających im polach na torach Ogrodów, od prawej do lewej.
+
+    - name: Świt
+      pretext: Świt Jaszczurzych Kultystów składa się z trzech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Wyznaczenie Wygnańców.
+          text: Gracz przegląda stos Zagubionych Dusz, ignorując przy tym ptasie karty. Symbol, który występuje w nim najczęściej, wyznacza nowych Wygnańców - gracz przesuwa znacznik Wygnańców pokazujący stronę Wygnańcy na pole z tym symbolem. Jeżeli ten symbol wyznaczał Wygnańców w poprzedniej turze Kultystów, gracz odwraca znacznik Wygnańców na stronę przedstawiającą Znienawidzonych. Jeżeli żaden symbol nie jest dominujący w stosie Zagubionych Dusz, znacznik Wygnańców zostaje na swoim miejscu, ale należy go odwrócić na stronę przedstawiającą Znienawidzonych _(jeśli już się na niej nie znajduje)_.
+        - name: Odrzucenie Zagubionych Dusz.
+          text: Gracz Kultystów odrzuca na stos kart odrzuconych wszystkie karty ze stosu Zagubionych Dusz._(Karty Dominacji stają się dostępne do wzięcia)_.
+        - name: Przeprowadzanie Spisków.
+          text: Gracz wydaje Akolitów, aby wprowadzać w życie Spiski na polanach odpowiadających symbolowi Wygnańców. Może to robić w dowolnej kolejności i liczbie powtórzeń, zgodnie z poniższym opisem. Jeżeli Wygnańcy są Znienawidzeni, przeprowadzenie każdego ze Spisków wymaga o jednego Akolitę mniej.
+          subchildren:
+            - name: Krucjata.
+              text: Gracz wydaje dwóch Akolitów, aby zainicjować walkę na polanie Wygnańców **albo** przemieścić wojowników _(co najmniej jednego)_ z polany Wygnańców, a następnie _(jeśli chce)_ zainicjować walkę na docelowej polanie.
+            - name: Nawrócenie.
+              text: Gracz wydaje dwóch Akolitów, aby wymienić wojownika należącego do przeciwnika z polany Wygnańców na wojownika Kultu. _(Aby wymienić komponent, gracz musi móc usunąć stary komponent i rozmieścić nowy)_.
+            - name: Uświęcenie.
+              text: Gracz wydaje trzech Akolitów, aby wymienić budynek należący do przeciwnika na polanie Wygnańców na odpowiadający symbolem polany Ogród.
+
+    - name: Dzień
+      pretext: Gracz może ujawnić dowolną liczbę kart z ręki i wykonać jeden Rytuał za każdą ujawnioną kartę, zgodnie z poniższym opisem. _(Gracz ujawnia kartę z ręki i kładzie ją w swoim obszarze rozgrywki. Podczas Dnia ujawnione karty nie mogą być wykorzystane w żadnym innym celu)_.
+      children:
+        - name: Budowa.
+          text: Na kontrolowanej przez siebie polanie o symbolu odpowiadającym ujawnionej karcie gracz rozmieszcza Ogród o takim samym symbolu.
+        - name: Werbunek.
+          text: Na polanie o symbolu odpowiadającym ujawnionej karcie gracz rozmieszcza swojego wojownika.
+        - name: Punktacja.
+          text: Gracz wydaje kartę, którą ujawnił _(i umieszcza ją na stosie Zagubionych Dusz)_, aby otrzymać Punkty Zwycięstwa przedstawione powyżej tej kolumny Ogrodów, w której znajduje się pierwsze z prawej puste pole odpowiadające symbolowi ujawnionej karty. Dla każdego symbolu Punktacja może być przeprowadzona tylko jeden raz na turę.
+        - name: Ofiara.
+          text: Gracz rozmieszcza wojownika na polu Akolitów. Aby to zrobić, ujawniona karta musi być ptasia.
+
+    - name: Wieczór.
+      pretext: Wieczór Jaszczurzych Kultystów składa się z trzech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Zebranie Ujawnionych Kart.
+          text: Gracz ponownie bierze na rękę wszystkie ujawnione w tej turze karty _(poza wydanymi)_.
+        - name: Przekucie.
+          text: Gracz może przekuwać karty poprzez aktywację Ogrodów odpowiadających nadrukowanym symbolem obecnemu symbolowi Wygnańców.
+        - name: Dobranie i Odrzucenie Kart.
+          text: Gracz dobiera jedną kartę oraz po jednej dodatkowej karcie za każdą odkrytą premię dobierania. Następnie, jeżeli posiada na ręce więcej niż pięć kart, odrzuca wybrane przez siebie karty do momentu, aż będzie miał na ręce pięć kart.
+
+- name: Kompania Plemion Rzecznych
+  color: "#5bc3bd"
+  icon: riverfolk
+  children:
+    - name: Omówienie
+      pretext: Po otrzymaniu wieści o tym, że leżący u wybrzeży jeziora Leśnogród stanął na krawędzi wojny absolutnej, Kompania Plemion Rzecznych szybko wysłała swoich przedstawicieli, aby ustanowili placówkę handlową. Wraz z wykupywaniem Usług przez pozostałe Frakcje Kompania może powiększać swój kapitał, zdobywając Punkty Zwycięstwa poprzez budowę **Faktorii** wzdłuż rzeki. Może również zdobywać Punkty Zwycięstwa, kumulując **Fundusze**. Jednak zasobny skarbiec jest łatwym celem, więc Plemiona Rzeczne muszą rozważnie prowadzić swoje działania w zdradliwym lesie.
+
+    - name: Zasady Frakcji i jej Zdolności
+      children:
+        - name: Przekuwanie.
+          text: Kompania przekuwa karty za Dnia poprzez inwestowanie Funduszy na puste pola torów Faktorii. _(Kompania nie posiada komponentów do przekuwania)_.
+        - name: Pływacy.
+          text: Kompania traktuje rzeki jak ścieżki i może poruszać się wzdłuż rzek bez względu na to, kto kontroluje początkową i docelową polanę _(Kompania nadal może korzystać ze zwykłych ścieżek)_.
+        - name: Na Sprzedaż.
+          text: Gracz Kompani kładzie karty z ręki odkryte powyżej swojej planszy Frakcji. Jeżeli inny gracz ma dobrać losową kartę z ręki gracza Kompanii, te karty należy zakryć, potasować, a następnie utworzyć z nich stos, z którego ten gracz dobiera losową kartę. Po tej czynności karty należy ponownie rozłożyć odkryte.
+        - name: Fundusze.
+          text: Gracz Kompanii może przeprowadzać wiele akcji, inwestując albo wydając **Fundusze** - wojowników znajdujących się na polu Funduszy na planszy Frakcji.
+        - name: Faktorie.
+          text: Gracz Kompanii otrzymuje Punkty Zwycięstwa, gdy rozmieszcza Faktorie.
+          subchildren:
+            - name: Zakłócenia w Handlu.
+              text: Za każdy razem, gdy z Mapy zostaje usunięta Faktoria, gracz Kompanii usuwa połowę swoich Funduszy _(zaokrąglając w górę)_ i odkłada usuniętą Faktorię do pudełka.
+        - name: Wykupowanie Usług.
+          text: Dowolny inny gracz na początku swojego Świtu może wykupić Usługi Kompanii.
+          subchildren:
+            - name: Koszt.
+              text: Kupujący płaci za Usługi wojownikami ze swojej puli, których rozmieszcza na polu Płatności Kompanii Plemion Rzecznych w liczbie równej kosztowi Usługi przedstawionemu na torze Usług Kompanii.
+            - name: Liczba Usług.
+              text: Podczas każdej tury dany gracz może wykupić jedną Usługę Kompanii oraz po jednej Usłudze za każdą polanę z Faktorią, na której znajduje się dowolny komponent Frakcji tego gracza.
+            - name: Fundusze Włóczęgi.
+              text: Włóczęga płaci za Usługi, wyczerpując przedmioty - za każdy wyczerpany w ten sposób przedmiot gracz Kompanii rozmieszcza jednego wojownika Kompanii na polu Płatności.
+        - name: Usługi Kompanii.
+          text: Kompania Plemion Rzecznych oferuje trzy następujące Usługi.
+          subchildren:
+            - name: Karta.
+              text: Kupujący bierze na rękę jedną dowolną kartę z jawnej ręki gracza Kompanii _(Kupujący może korzystać z tej Usługi kilkukrotnie pod warunkiem, że ma dostęp do wystarczającej liczby Faktorii)_.
+            - name: Łodzie Rzeczne.
+              text: Do końca swojej tury kupujący traktuje rzeki jak ścieżki.
+            - name: Najemnicy.
+              text: Podczas Dnia i Wieczorem w danej turze kupujący traktuje wojowników Kompanii jako swoich wojowników, ale wyłącznie podczas rozpatrywania kontroli i walki z Frakcją inną niż Kompania. _(Kupujący nie może przemieszczać wojowników Kompanii, wliczać na poczet Dominacji ani usuwać w sytuacji innej niż otrzymywanie obrażeń. Nadal są to komponenty Kompanii, nie mają na nich zatem wpływu efekty takie jak Szpital Polowy Markizy czy Przekonywanie Ministra Księstwa)_.
+              subchildren:
+                - name: Otrzymywanie Obrażeń.
+                  text: Kupujący musi rozdzielić otrzymane obrażenia między swoich wojowników a wojowników Kompanii. Kupujący przyjmuje nieparzystą liczbę obrażeń poprzez usunięcie swoich _(nie Plemion Rzecznych)_ wojowników, jeśli biorą udział w walce, albo poprzez usunięcie swoich budynków lub żetonów - jeśli na polanie walki nie ma wojowników _(w tym wojowników Kompanii)_.
+                - name: Najemnicy Włóczęgi.
+                  text: Włóczęga nie może kupować Najemników od Kompanii. _(Jeśli kupujący walczy z Włóczęgą i najemnik Kompanii jest usuwany, Frakcja kupującego, nie Kompania, zostaje Wrogą Frakcją)_.
+
+    - name: Przygotowanie Frakcji
+      children:
+        - name: "Krok 1: Przygotowanie Wojowników."
+          text: Gracz tworzy pulę 15 wojowników.
+        - name: "Krok 2: Rozmieszczenie Wojowników."
+          text: Gracz rozmieszcza 4 wojowników na dowolnych polanach położonych nad rzeką.
+        - name: "Krok 3: Uzupełnienie Torów Faktorii."
+          text: Gracz rozmieszcza 9 Faktorii na odpowiadających im torach Faktorii.
+        - name: "Krok 4: Pozyskanie Startowych Funduszy."
+          text: Gracz rozmieszcza 3 wojowników na polu Płatności.
+        - name: "Krok 5: Ustalenie Cen Początkowych."
+          text: Gracz umieszcza po jednym znaczniku Usług na wybranym polu każdego toru Usług.
+
+    - name: Świt
+      pretext: Świt Kompanii Plemion Rzecznych składa się z trzech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Protekcjonizm.
+          text: Jeżeli pole Płatności jest puste, gracz Kompanii rozmieszcza na nim dwóch swoich wojowników.
+        - name: Dywidendy.
+          text: Jeżeli na Mapie znajduje się co najmniej jedna Faktoria, gracz Kompanii otrzymuje po jednym Punkcie Zwycięstwa za każde dwa Fundusze _(Gracz nie otrzymuje punktów za wojowników na polach Płatności i Inwestycji)_.
+        - name: Zebranie Funduszy.
+          text: Gracz przenosi na pole Funduszy wszystkich wojowników znajdujących się na planszy Frakcji
+
+    - name: Dzień
+      pretext: Gracz może inwestować i wydawać Fundusze, aby przeprowadzać poniższe akcje w dowolnej kolejności i liczbie powtórzeń. Gdy gracz inwestuje Fundusz, przenosi wojownika na pole Inwestycji. Jeżeli gracz wydaje Fundusz, zwraca tego wojownika do puli jego właściciela.
+      children:
+        - name: Ruch.
+          text: Gracz inwestuje jeden Fundusz, aby się poruszyć.
+        - name: Walka.
+          text: Gracz inwestuje jeden Fundusz, aby zainicjować walkę.
+        - name: Przekucie.
+          text: Gracz inwestuje Fundusze, aby przekuć karty ze swojej ręki. Zamiast przenieść tych wojowników na pole Inwestycji, gracz musi rozmieścić ich na pustych polach torów Faktorii odpowiadających symbolom przedstawionym w koszcie przekucia karty.
+          subchildren:
+            - name: Eksport.
+              text: Zamiast korzystać z efektu przekutej karty, gracz może ją odrzucić, aby rozmieścić jednego z wojowników Kompanii na polu Płatności.
+        - name: Dobranie Karty.
+          text: Gracz inwestuje jeden Fundusz, aby dobrać kartę.
+        - name: Werbunek.
+          text: Gracz wydaje jeden Fundusz, aby rozmieścić wojownika na dowolnej polanie położonej nad rzeką.
+        - name: Budowa Faktorii z Garnizonem.
+          text: Gracz wydaje dwa Fundusze, aby rozmieścić Faktorię oraz wojownika.
+          subchildren:
+            - name: Wybór Polany.
+              text: Gracz wybiera dowolną polanę bez Faktorii, która kontrolowana jest przez dowolnego gracza.
+            - name: Wydanie Funduszy.
+              text: Gracz wydaje dwa Fundusze w postaci wojowników gracza, który kontroluje wybraną polanę.
+            - name: Rozmieszczenie i Punktacja.
+              text: Na wybranej polanie gracz rozmieszcza odpowiadającą jej symbolem Faktorię oraz wojownika. Następnie otrzymuje Punkty Zwycięstwa widniejące na nowo odkrytym polu na swojej planszy Frakcji.
+
+    - name: Wieczór
+      pretext: Wieczór Kompanii Plemion Rzecznych składa się z dwóch kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Odrzucenie Kart.
+          text: Jeżeli gracz posiada na ręce więcej niż pięć kart, odrzuca wybrane przez siebie karty do momentu, aż będzie miał na ręce pięć kart.
+        - name: Ustalenie Kosztów.
+          text: Gracz Kompanii może przenieść każdy znacznik Usługi na dowolne pole danego toru w celu ustalenia nowej ceny odpowiedniej Usługi.
+
+- name: Podziemne Księstwo
+  color: "#eec4ab"
+  icon: duchy
+  children:
+    - name: Omówienie
+      pretext: Podziemne Księstwo chce pokazać cudzoziemcom z Leśnogrodu, że lepiej by się im żyło jako poddani Księcia. Poprzez budowę demonstrujących jego potęgę placówek granicznych - Targów i Cytadel - Księstwo może przekonać **Ministrów** do swojej sprawy, dzięki czemu zdobędzie Punkty Zwycięstwa i zwiększy swoje zasoby. Jednak Książę musi uważać - jeśli odwróci się od niego szczęście i zazna publicznego upokorzenia, Ministrowie porzucą jego ideały.
+
+    - name: Zasady Frakcji i jej Zdolności
+      children:
+        - name: Przekuwanie.
+          text: Księstwo przekuwa karty Wieczorem poprzez aktywację Cytadel i Targów.
+
+        - name: Nora.
+          text: "**Nora** to polana bez symbolu, która sąsiaduje z każdą polaną, na której znajduje się żeton Tunelu. Komponenty Frakcji innej niż Księstwa nie mogą być umieszczane ani poruszane do Nory. Księstwo zawsze kontroluje Norę _(nawet gdy nie ma w niej komponentów)_."
+
+        - name: Cena Porażki.
+          text: Za każdym razem, gdy jakakolwiek liczba budynków Księstwa zostanie usunięta, gracz odrzuca losową kartę, zwraca najwyższego rangą Przekonanego Ministra _(Wielmożę, następnie Notabla, a potem Ziemianina)_ na stos Nieprzekonanych Ministrów i odkłada jego koronę do pudełka. Jeżeli gracz ma kilku Przekonanych Ministrów tej samej najwyższej rangi, wybiera, którego zwrócić na stos.
+
+        - name: Tunele.
+          text: Księstwo dysponuje trzema żetonami Tuneli. Jeżeli gracz ma rozmieścić Tunel, a wszystkie trzy żetony są już na Mapie, może najpierw usunąć dowolny Tunel z Mapy.
+
+    - name: Przygotowanie Frakcji
+      children:
+        - name: "Krok 1: Przygotowanie Wojowników i Tuneli."
+          text: Gracz tworzy pulę 20 wojowników i 3 żetonów Tuneli.
+
+        - name: "Krok 2: Przygotowanie Nory."
+          text: Gracz umieszcza Norę obok Mapy.
+
+        - name: "Krok 3: Na Powierzchni."
+          text: Gracz rozmieszcza 1 Tunel i 2 wojowników na narożnej polanie nie będącej startową polaną innego gracza i _(jeśli to możliwe)_ leżącej po przekątnej od polany, na której znajduje się Twierdza Markizy albo startowe Gniazdo Dynastii. To twoja polana startowa. Następnie gracz rozmieszcza po 2 wojowników na każdej polanie sąsiadującej z jego narożną polaną startową _(ale nie w Norze)_.
+
+        - name: "Krok 4: Uzupełnienie Torów Budynków."
+          text: Gracz rozmieszcza 3 Cytadele i 3 Targi na polach odpowiednich torów budynków na planszy Frakcji.
+
+        - name: "Krok 5: Zebranie Ministrów."
+          text: Gracz umieszcza 9 odkrytych kart Ministrów na stosie Nieprzekonanych Ministrów.
+
+        - name: "Krok 6: Uzupełnienie Pól Koron."
+          text: Gracz umieszcza 9 koron na polach oznaczonych Punktami Zwycięstwa na planszy Frakcji.
+
+    - name: Świt
+      pretext: Gracz rozmieszcza w Norze jednego wojownika, plus po jednym dodatkowym wojowniku za każdy odkryty symbol wojownika na planszy Frakcji.
+
+    - name: Dzień
+      pretext: Dzień Podziemnego Księstwa składa się z trzech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Akumulacja.
+          text: Gracz może wykonać do dwóch poniższych akcji w dowolnej kolejności i liczbie powtórzeń.
+          subchildren:
+            - name: Budowa.
+              text: Gracz ujawnia jedną kartę, aby rozmieścić Cytadelę albo Targ na kontrolowanej przez siebie polanie o symbolu odpowiadającym symbolowi karty.
+
+            - name: Werbunek.
+              text: Gracz rozmieszcza jednego wojownika w Norze.
+
+            - name: Ruch.
+              text: Gracz przeprowadza pojedynczy ruch.
+
+            - name: Walka.
+              text: Gracz inicjuje walkę.
+
+            - name: Podkop.
+              text: Gracz wydaje jedną kartę, aby rozmieścić żeton Tunelu na polanie bez Tunelu, o symbolu odpowiadającym symbolowi karty. Następnie przemieszcza do czterech wojowników z Nory na tę polanę. _(Jeżeli wszystkie trzy Tunele są już na Mapie, gracz może najpierw usunąć dowolny Tunel z Mapy)_.
+
+        - name: Parlament.
+          text: Gracz może wykonać akcję każdego z Przekonanych Ministrów - jeden raz i w dowolnej kolejności.
+          subchildren:
+            - name: Sztygar.
+              text: Gracz ujawnia dowolną kartę, aby rozmieścić Cytadelę albo Targ na dowolnej kontrolowanej przez siebie polanie _(bez względu na jej symbol)_.
+
+            - name: Kapitan.
+              text: Gracz inicjuje walkę.
+
+            - name: Kwatermistrz.
+              text: Gracz przeprowadza pojedynczy ruch.
+
+            - name: Brygadier.
+              text: TGracz wykonuje do dwóch ruchów albo inicjuje do dwóch walk.
+
+            - name: Bankier.
+              text: Gracz wydaje dowolną liczbę kart _(nawet jedną)_ o tym samym symbolu, aby otrzymać taką samą liczbę Punktów Zwycięstwa.
+
+            - name: Burmistrz.
+              text: Gracz wykonuje akcję dowolnego Przekonanego Notabla albo Ziemianina.
+
+            - name: Księżna Błot.
+              text: Jeżeli wszystkie trzy Tunele są na Mapie, gracz otrzymuje dwa Punkty Zwycięstwa.
+
+            - name: Baron Gleb.
+              text: Gracz otrzymuje po jednym Punkcie Zwycięstwa za każdy Targ na Mapie.
+
+            - name: Hrabia Głazów.
+              text: Gracz otrzymuje po jednym Punkcie Zwycięstwa za każdą Cytadelę na Mapie.
+
+        - name: Przekonywanie.
+          text: Gracz może przekonać jednego Ministra w następujący sposób.
+          subchildren:
+            - name: Wybór Ministra.
+              text: Gracz wybiera kartę Ministra ze stosu Nieprzekonanych Ministrów. Aby przekonać Ministra, gracz musi mieć na planszy Frakcji koronę odpowiadającą jego randze _(Ziemianin, Notabl albo Wielmoża)_.
+
+            - name: Ujawnienie Kart.
+              text: Gracz ujawnia z ręki karty w liczbie wskazanej na wybranej karcie Ministra. Na każdą kartę, którą gracz chce ujawnić, musi przypadać co najmniej jeden komponent Księstwa znajdujący się na polanie z symbolem odpowiadającym karcie. Każda polana z dowolną liczbą komponentów Księstwa pozwala ujawnić tylko jedną odpowiadającą jej symbolem kartę.
+
+            - name: Przekonanie Ministra i Punktacja.
+              text: Gracz umieszcza kartę wybranego Ministra nad swoją planszą Frakcji. Następnie na karcie Ministra umieszcza jedną koronę z toru odpowiadającego randze tego Ministra. Następnie otrzymuje Punkty Zwycięstwa widniejące na nowo odkrytym polu na swojej planszy Frakcji.
+
+    - name: Wieczór
+      pretext: Wieczór Podziemnego Księstwa składa się z trzech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Odrzucenie i Zebranie Ujawnionych Kart.
+          text: Gracz odrzuca wszystkie ptasie karty, jakie ujawnił w tej turze, a następnie ponownie bierze na rękę wszystkie pozostałe ujawnione karty.
+
+        - name: Przekucie.
+          text: Gracz może aktywować Cytadele i Targi, aby przekuć karty z ręki. _(Przy przekuwaniu oba budynki działają w taki sam sposób)_.
+
+        - name: Dobranie i odrzucenie kart.
+          text: Gracz dobiera jedną kartę oraz po jednej dodatkowej karcie za każdą odkrytą premię dobierania. Następnie, jeżeli posiada na ręce więcej niż pięć kart, odrzuca wybrane przez siebie karty do momentu, aż będzie miał na ręce pięć kart.
+
+- name: Krucza Konspiracja
+  color: "#925da5"
+  icon: corvid
+  children:
+    - name: Omówienie
+      pretext: Krucza Konspiracja próbuje zmusić Leśnogród do uległości, knując kryminalne **Intrygi** i zdobywając Punkty Zwycięstwa za każdym razem, gdy uda się którąś zrealizować. Im więcej odkrytych żetonów Intryg na Mapie, tym więcej Punktów Zwycięstwa otrzymuje. Ściema to podstawa - jeśli Intrygi Konspiracji będą zbyt oczywiste, Kruki ryzykują zdemaskowaniem. Aby tego uniknąć, muszą rozważnie werbować wojowników, nieustannie knuć nowe Intrygi i czyhać na sposobność ściągnięcia Haraczu.
+
+    - name: Zasady Frakcji i jej Zdolności
+      children:
+        - name: Przekuwanie.
+          text: Konspiracja przekuwa karty podczas swojego Świtu poprzez aktywację żetonów Intryg _(zarówno odkrytych, jak i zakrytych)_.
+
+        - name: Żetony Intryg.
+          text: Krucza Konspiracja dysponuje ośmioma żetonami Intryg _(po dwa z każdego rodzaju)_.
+          subchildren:
+            - name: Strony Żetonów.
+              text: Kiedy żetony znajdują się w puli gracza, są zakryte _(strona z piórem)_. Na Mapie żetony mogą być albo zakryte, albo odkryte _(symbolem Intrygi do góry)_. Gracz Konspiracji może w każdej chwili sprawdzać zakryte żetony Intryg.
+            - name: Ograniczenia przy Rozmieszczaniu.
+              text: Na każdej polanie może znajdować się tylko jeden żeton Intrygi.
+
+        - name: Zwinny.
+          text: Kruczy wojownicy poruszają się pomiędzy polanami bez względu na to, które Frakcje kontrolują początkową i docelową polanę (`rule:4.2.1`).
+
+        - name: Zdemaskowanie.
+          text: W dowolnym momencie swojej tury, ale przed Wieczornym dobraniem kart, przeciwnicy posiadający co najmniej jeden komponent Frakcji na polanie z zakrytym żetonem Intrygi, mogą spróbować odgadnąć rodzaj tej Intrygi. Przed zgadywaniem muszą pokazać graczowi Konspiracji kartę z symbolem odpowiadającym tej polany. Jeżeli przeciwnik nie odgadnie rodzaju żetonu, gracz Konspiracji mówi "nie", a gracz zgadujący oddaje mu pokazaną kartę. Jeżeli przeciwnik odgadnie, usuwa żeton Intrygi _(otrzymując Punkt Zwycięstwa)_ i ignoruje jego efekt.
+
+        - name: Ukryte Kruki.
+          text: Jako obrońca w walce, jeżeli na polanie walki znajduje się zakryty żeton Intrygi _(nawet bezbronny)_, Konspiracja zadaje jedno dodatkowe obrażenie.
+
+    - name: Przygotowanie Frakcji
+      children:
+        - name: "Krok 1: Przygotowanie Wojowników i Intryg."
+          text: Gracz tworzy pulę 15 wojowników i 8 zakrytych żetonów Intryg.
+
+        - name: "Krok 2: Rozproszenie."
+          text: Gracz rozmieszcza po 1 wojowniku na jednej wybranej polanie z każdego symbolu _(łącznie 3)_.
+
+    - name: Świt
+      pretext: Świt Kruczej Konspiracji składa się z trzech kroków w następującej kolejności.
+      children:
+        - name: Przekucie.
+          text: Gracz może przekuwać karty z ręki poprzez aktywację żetonów Intryg _(zarówno odkrytych, jak i zakrytych)_.
+
+        - name: Realizacja Intryg.
+          text: Gracz może odwrócić dowolną liczbę żetonów Intryg na Mapie, na polanach, na których znajduje się co najmniej jeden Kruczy wojownik. Po każdym odwróceniu żetonu Intrygi zdobywa po jednym Punkcie Zwycięstwa za każdy odkryty żeton Intrygi na Mapie _(w tym za nowo odkryty)_ i rozpatruje efekt odwróconej Intrygi w przypadku Bomb i Haraczy.
+
+        - name: Werbunek.
+          text: Raz na turę gracz może wydać dowolną kartę, aby rozmieścić po jednym wojowniku na każdej polanie o odpowiadającym jej symbolu _(W przypadku ptasich kart gracz wybiera jeden z trzech symboli)_.
+
+    - name: Dzień
+      pretext: Gracz może wykonać do trzech poniższych akcji - w dowolnej kolejności oraz liczbie powtórzeń.
+      children:
+        - name: Ruch.
+          text: Gracz przeprowadza pojedynczy ruch.
+        - name: Intryga.
+          text: Gracz usuwa jednego Kruczego wojownika z polany, na której nie ma żetonu Intrygi, aby rozmieścić na niej jeden zakryty żeton Intrygi. Jeżeli gracz chce rozmieścić kolejne żetony na Mapie, musi usunąć jednego wojownika, plus po jednym wojowniku za każdą Intrygę, którą rozmieścił w tej turze.
+        - name: Walka.
+          text: Gracz inicjuje walkę.
+        - name: Podmianka.
+          text: Gracz zamienia miejscami dwa żetony Intryg na Mapie Obydwa żetony muszą być albo zakryte, albo odkryte.
+
+    - name: Wieczór
+      pretext: Wieczór Kruczej Konspiracji składa się z dwóch kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Wysiłek.
+          text: Gracz może wykonać jedną dodatkową akcję Dnia, o ile zrezygnuje z dobierania kart podczas tego Wieczoru.
+        - name: Dobranie Kart.
+          text: Gracz dobiera jedną oraz po 1 dodatkowej karcie za każdy odkryty żeton Haraczu na Mapie. Następnie, jeżeli posiada na ręce więcej niż pięć kart, odrzuca wybrane przez siebie karty do momentu, aż będzie miał na ręce pięć kart.
+
+    - name: Omówienie Żetonów Intryg
+      children:
+        - name: Bomba.
+          text: Za każdym razem, gdy żeton Bomby zostanie odwrócony, gracz usuwa wszystkie komponenty przeciwników z danej polany, a następnie usuwa żeton Bomby.
+        - name: Wnyki.
+          text: Dopóki żeton Wnyków jest odkryty, przeciwnicy nie mogą rozmieszczać swoich komponentów na polanie z tym żetonem ani przemieszczać komponentów, które na niej są.
+        - name: Haracz.
+          text: Za każdym razem, gdy żeton Haraczu zostanie odwrócony, gracz Konspiracji bierze po jednej losowej karcie od każdego przeciwnika, który ma co najmniej jeden komponent Frakcji na polanie z tym żetonem. Dopóki żeton Haraczu jest odkryty, gracz Konspiracji dobiera dodatkową kartę Wieczorem.
+        - name: Najazd.
+          text: Za każdym razem, gdy żeton Najazdu jest usuwany z Mapy _(obojętne odkryty, czy zakryty)_, gracz Konspiracji rozmieszcza po jednym wojowniku na każdej polanie sąsiadującej z polaną, z której usuwany jest ten żeton Najazdu _(Ten efekt jest ignorowany, jeżeli Najazd zostanie usunięty przez Zdemaskowanie)_.
+
+- name: Władca Szczurów
+  color: "#e11b3f"
+  icon: warlord
+  children:
+    - name: Omówienie
+      pretext: Władca Szczurów nie znosi głupców i nie pozwala na bunt. Podczas Wieczoru zdobywa punkty za to jak dobrze **nęka** przeciwników. Im więcej polan posiada komponenty Szczurów ale nie posiada komponentów innych Frakcji (wojowników, budynków - niczego) tym więcej otrzymuje punktów. By rosnąć w potęgę i przyciągać nowych wojowników Władca Szczurów musi zdobywać przedmioty i umieszczać je w coraz bardziej rosnącym **Skarbcu**. Szczurom przewodzi **Lord**, wojownik-demagog, którego zmienny **Nastrój** daje mu umiejętność na każdą turę. Szczurzy Lord ma obsesję na punkcie zbieractwa, im więcej ma przedmiotów, tym mniej Nastrojów ma do wyboru. Deklarując samych siebie głosem Leśnogrodu Szczury mogą przypuszczać Szturmy, które niszczą budynki i żetony przeciwników, by zdobywać przedmioty.
+
+    - name: Zasady Frakcji i jej Zdolności
+      children:
+        - name: Przekuwanie.
+          text: Władca Szczurów przekuwa w ciągu Dnia aktywując Twierdze.
+
+        - name: Lord.
+          text: Szczurzy gracz posiada komponent nazwany Lordem. Lord jest wojownikiem, którego nie można usunąć inaczej niż w walce, przemieszczać poza turą Szczurów, ani rozmieszczać poza przygotowaniem rozgrywki (`rule:14.3.1`) lub w akcji Powołania Lorda (`rule:14.4.3`).
+
+        - name: Pogarda dla Handlu.
+          text: Kiedy Szczurzy Gracz przekuwa przedmiot, może wziąć ten przedmiot, jednak nie otrzymuje żadnych wskazanych Punktów Zwycięstwa albo zamiast tego może usunąć ten przedmiot z gry aby zdobyć wskazane Punkty Zwycięstwa. Nadal może zdobyć dodatkowe PZ dzięki efektom takim jak Mistrz Dłuta czy Legendarna Kuźnia.
+
+        - name: Skarbiec.
+          text: "Zamiast pola na przekute przedmioty Władca Szczurów posiada pole Skarbca. Są na nim dwa tory: Dowództwo i Waleczność. Tor Dowództwa może zawierać `item:boot`, `item:sack` oraz `item:coin`. Tor Waleczności może zawierać `item:hammer`, `item:tea`, `item:sword` oraz `item:crossbow`."
+          subchildren:
+            - name: Zdobywanie przedmiotów.
+              text: Gdy Władca Szczurów zdobywa przedmiot, umieszcza go na pierwszym, wolnym, polu z lewej strony toru Dowództwa albo Waleczności w zależności od typu przedmiotu. Jeśli nie ma już wolnego pola odpowiadającego typowi przedmiotu, Władca Szczurów musi usunąć ten przedmiot albo dowolny przedmiot z odpowiadającego toru i zdobywa jeden Punkt Zwycięstwa.
+
+            - name: Dowództwo i Waleczność.
+              text: "Liczba przedmiotów na torach określa wartość Waleczności i Dowództwa, która wpływa na wiele reguł. Jeśli tory są puste, ta wartość to 1, kiedy na torze jest jeden lub dwa przedmioty, ta wartość to 2. Z trzema przedmiotami, wartość to 3, z czterema przedmiotami: 4"
+
+        - name: Szabrownicy.
+          text: Na początku walki, jako atakujący, Władca Szczurów może oznajmić szabrowanie obrońcy _(jeżeli obrońca posiada przedmioty na polu Przekutych Przedmiotów)_. Władca Szczurów nie może szabrować Włóczęgi. Jeśli Władca Szczurów zdecyduje się Szabrować, nie zadaje żadnych wyrzuconych Obrażeń. Obrońca nadal zadaje wyrzucone Obrażenia. Władca Szczurów nadal zadaje dodatkowe Obrażenia, jak np z karty Nastroju "Gniewny". Na koniec walki, jeśli Władca Szczurów kontroluje polanę walki, zabiera jeden przedmiot z Pola Przekutych Przedmiotów obrońcy.
+
+    - name: Przygotowanie Frakcji
+      children:
+        - name: "Krok 1: Garnizon"
+          text: Gracz Rozmieszcza Lorda, 4 wojowników i 1 Warownię na narożnej polanie, która nie jest polaną startową innego gracza i, jeśli to możliwe, po przekątnej od innej startowej polany.
+
+        - name: "Krok 2: Rozmieszczanie przedmiotów"
+          text: Rozmieść cztery przedmioty "R" w losowy sposób pod żetonami Ruin, chyba że już zostało to zrobione.
+
+        - name: "Krok 3: Upór"
+          text: Gracz umieszcza swoją kartę Nastroju "Uparty" na polu karty Nastroju.
+
+    - name: Świt
+      pretext: Świt Władcy Szczurów składa się z czterech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Najazd.
+          text: Z każdej polany z żetonem Szturmu, Gracz usuwa wszystkie budynki i żetony przeciwników, zbiera żeton przedmiotu z Ruin i usuwa żeton Ruin jeżeli zabrał z nich ostatni przedmiot. Następnie Gracz rzuca kością Szturmu i rozmieszcza żeton Szturmu na odpowiadającej symbolem polanie, na której nie ma żetonu Szturmu ale sąsiaduje z żetonem Szturmu _(jeśli nie ma takiej polany, nie rozmieszcza żetonu Szturmu.)_
+
+        - name: Werbunek.
+          text: Gracz rozmieszcza na polanie z Lordem wojowników Szczurów w liczbie zgodnej z wartością Waleczności. Następnie gracz rozmieszcza po jednym wojowniku na każdej polanie z Warownią.
+
+        - name: Powołanie Lorda.
+          text: Jeśli na Mapie nie ma Lorda, gracz musi zamienić jednego wojownika Władcy Szczurów na Lorda. Jeżeli nie jest to możliwe, musi Rozmieścić Lorda na dowolnej polanie.
+
+        - name: Wybór Nastroju.
+          text: Gracz musi wymienić kartę Nastroju na polu karty Nastroju na inną, która nie wskazuje przedmiotu znajdującego się na polu Skarbca. Jeśli Lord jest "Rozrzutny" i gracz nie może wybrać innego Nastroju, Lord pozostaje "Rozrzutny"
+
+    - name: Dzień
+      pretext: Dzień Władcy Szczurów składa się z trzech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Przekuwanie.
+          text: Gracz może przekuwać aktywując Warownie.
+
+        - name: Rozkazuj Szczurom.
+          text: Gracz może wykonać poniższe akcje w dowolnej kolejności, w maksymalnej liczbie równej wartości Dowództwa.
+          subchildren:
+            - name: Ruch.
+              text: Gracz wykonuje ruch.
+            - name: Walka.
+              text: Gracz rozpoczyna walkę.
+            - name: Budowa.
+              text: Gracz wydaje kartę, aby zbudować Warownię na kontrolowanej przez siebie polanie odpowiadającej symbolowi wydanej karty.
+
+        - name: Natarcie Lordem.
+          text: Gracz może wykonać tę akcję w maksymalnej liczbie odpowiadającej wartości Waleczności. Gracz może wykonać ruch Lordem wraz z dowolną liczbą wojowników Szczurów, po czym rozpocząć walkę na polanie z Lordem.
+
+    - name: Wieczór
+      pretext: Wieczór Władcy Szczurów składa się z trzech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Przypuszczanie Szturmu.
+          text: Gracz może wydać dowolną liczbę kart, aby za każdą z nich rozmieścić jeden żeton Szturmu na polanie odpowiadającej symbolowi wydanej karty, oraz takiej, na której nie ma jeszcze żetonu Szturmu lecz jest na niej wojownik Szczurów _(wliczając Lorda)_.
+
+        - name: Nękanie.
+          text: Gracz zdobywa punkty zwycięstwa w oparciu o liczbę polan, które kontroluje oraz na których nie ma komponentów przeciwników. Za jedną lub dwie takie polany gracz zdobywa jeden punkt, trzy lub cztery polany - dwa punkty, pięć polan - trzy punkty, za sześć lub więcej polan gracz zdobywa cztery punkty.
+
+        - name: Dobranie i odrzucanie kart.
+          text: Gracz dobiera jedną kartę. Następnie jeżeli posiada więcej niż pięć kart, odrzuca, aż będzie miał ich na ręce pięć.
+
+    - name: Nastroje
+      children:
+        - name: Rozgoryczony (`item:hammer`).
+          text: Podczas Walki na polanie z Lordem, przed rzutem kośćmi, gracz może usunąć dowolną liczbę żetonów Szturmu z polany z Lordem oraz z sąsiadujących polan. Następnie gracz rozmieszcza wojowników na polanie z Lordem w liczbie równiej liczbie usuniętych żetonów Szturmu.
+
+        - name: Ambitny (`item:tea`).
+          text: W tej turze, gracz wykonuje krok Nacieraj Lordem (`rule:14.5.3`) oraz Rozkazuj Szczurom (`rule:14.5.2`) w odwrotnej kolejności. _(najpierw Nacieraj Lordem, potem Rozkazuj Szczurom)_.
+
+        - name: Radosny (`item:boot`).
+          text: Gdy gracz wykonuje akcję Przypuszczenia Szturmu na polanie z Lordem, po umieszczeniu żetonu Szturmu, gracz może rzucić kością Szturmu do czterech razy oraz rozmieścić żeton Szturmu na polanie odpowiadającej symbolowi na kości, która nie zawiera jeszcze żetonu Szturmu ale sąsiaduje z dowolną polaną zawierającą już żeton Szturmu.
+
+        - name: Rozrzutny (brak przedmiotu).
+          text: Na koniec Świtu gracz może na stałe usunąć dowolną liczbę przedmiotów ze swojego Skarbca. Za każdy usunięty w ten sposób przedmiot gracz rozmieszcza dwóch wojowników na polanie z Lordem. Następnie przesuwa żetony w Skarbcu, by wypełnić puste miejsca od lewej do prawej.
+
+        - name: Bezlitosny (`item:sack`).
+          text: Gdy gracz wykonuje akcję Nacierania Lordem i porusza się oraz walczy, może następnie poruszyć Lordem wraz z dowolną liczbą wojowników Szczurów albo walczyć na polanie z Lordem.
+
+        - name: Hałaśliwy (`item:coin`).
+          text: odczas Wieczora (`rule:14.6.3`), gracz dobiera dodatkową kartę. Jeżeli na polanie z Lordem znajdują się trzy lub więcej komponenty przeciwników _(mogą to być komponenty należące do różnych graczy)_ gracz zamiast tego dobiera dodatkowe dwie karty.
+
+        - name: Uparty (`item:crossbow`).
+          text: Podczas walki na polanie z Lordem gracz ignoruje pierwsze otrzymane obrażenie, _(nie łączy się to z innymi umiejętnościami pozwalającymi ignorować pierwsze obrażenie)_.
+
+        - name: Gniewny (`item:sword`).
+          text: Podczas walki jako atakujący na polanie z Lordem gracz zadaje dodatkowe obrażenie.
+
+- name: Żelazna Straż
+  color: "#8b8d90"
+  icon: keepers
+  children:
+    - name: Omówienie
+      pretext: Żelazna Straż to zakon oddanych rycerzy niegdyś wygnanych z Leśnogrodu. Teraz wrócili, by odzyskać utracone w przeszłych konfliktach **Relikty**. Czy te Relikty rzeczywiście należą do nich czy do Leśnogrodu, to zupełnie odmienna kwestia. By ukończyć swoje zadanie muszą odnajdywać Relikty w lasach, przemieszczać je do **posterunków** tego samego typu, a następnie je Odzyskiwać. Gdy odzyskają Relikt zdobywają PZ w liczbie równej wartości Reliktu (1-3). Zdobywają również dwa PZ za każdym razem, gdy Odzyskają zestaw trzech Reliktów tego samego typu (figur, biżuterii lub tablic). Z czasem Straż rozwinie **Świtę** Leśnych Stworzeń, która pozwoli im na więcej akcji. Za każdym razem jednak, gdy Straż Odnajdzie lub Odzyska Relikt, może stracić kartę Świty, której użyła do wykonania akcji; będzie więc musiała snuć dalekosiężne plany i odpowiednio zarządzać ryzykiem, by zwyciężyć.
+
+    - name: Zasady Frakcji i jej Zdolności
+      children:
+        - name: Relikty.
+          text: Straż poszukuje dwunastu żetonów Reliktów w trzech typach (figur, tablic, biżuterii). Każdy typ Reliktu posiada cztery żetony, na których rewersie znajdują się wartości 1, 2, 3 oraz 3.
+
+        - name: Posterunki.
+          text: Straż posiada trzy Posterunki Każdy wskazuje jeden typ Reliktu na awersie i inny na rewersie.
+
+        - name: Przekuwanie.
+          text: Żelazna Straż przekuwa w ciągu Dnia aktywując Posterunki _(dowolnego typu)_.
+
+        - name: Oddani Rycerze.
+          text: Podczas Walki, jeżeli na polanie walki znajduje się przynajmniej jeden żeton Reliktu i przynajmniej jeden Wojownik Straży, gracz Straży ignoruje pierwsze Obrażenie. _(w przypadku Zasadzki gracz ignoruje tylko pierwsze otrzymane obrażenie z Zasadzki. Pozostałe Obrażenia w walce przydziela normalnie)_. Podczas ruchu Straż może poruszyć jeden żeton Reliktu z każdym wojownikiem Straży _(przy wymuszonym ruchu gracz Straży może nadal poruszać się z żetonami Reliktów)_.
+
+        - name: Cenne Trofea.
+          text: Kiedy przeciwnik usunie żeton Reliktu, rozmieszcza go odkrytego na dowolnym polu lasu i zdobywa dodatkowy Punkt Zwycięstwa _(w sumie dwa)_.
+
+    - name: Przygotowanie Frakcji
+      children:
+        - name: "Krok 1: Początkowe Relikty."
+          text: Gracz miesza wszystkie dwanaście żetonów Reliktów zakryte _(z ukrytą wartością punktową)_ i umieszcza po jednym w każdym lesie _(Zalecamy mieszać żetony zakryte na planszy, po czym pozwolić wszystkim graczom umieszczać je jak najszybciej w lasach. Inną metodą jest umieszczenie żetonów w stos, podanie ich innemu graczowi do przełożenia i upuszczenia każdego żetonu ze spodu stosu w każdym lesie)_.
+
+        - name: "Krok 2: Rozmieszczenie Wojowników."
+          text: Gracz umieszcza czterech wojowników Straży na narożnej polanie, która nie jest polaną startową innego gracza i, jeśli to możliwe, po przekątnej od innej startowej polany. Następnie rozmieszcza czterech wojowników Straży na innej, sąsiadującej polanie na krawędzi Mapy.
+
+        - name: "Krok 3: Rozmieszczenie pozostałych Reliktów."
+          text: Gracz rozmieszcza pozostałe Relikty losowo, tak równo jak to możliwe, w lasach niesąsiadujących z polanami zawierającymi wojowników Straży.
+
+        - name: "Krok 4: Wsunięcie Wiernych Sług."
+          text: Gracz wsuwa po jednej karcie Wiernego Sługi do każdej kolumny Świty.
+
+        - name: "Krok 5: Rozmieszczenie Posterunków."
+          text: Gracz Umieszcza trzy żetony Posterunków na polach w tabeli Posterunków na swojej planszy Frakcji.
+
+
+    - name: Świt
+      text: Świt Żelaznej Straży składa się z trzech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Obozowanie.
+          text: Dla każdej polany gracz może Zamienić Wojownika Straży na Posterunek. Jeśli gracz nie ma na planszy wojowników lub Posterunków, zamiast tego rozmieszcza jeden Posterunek i jednego wojownika Straży na dowolnej polanie na krawędzi Mapy. Gracz może wybrać czy rozmieszcza Posterunek odkryty czy zakryty.
+
+        - name: Zwinięcie Posterunku.
+          text: Dla każdej polany gracz może wymienić jeden Posterunek na jednego wojownika Straży.
+
+        - name: Werbunek.
+          text: Dowolną liczbę razy gracz może wydać kartę, aby rozmieścić dwóch wojowników Straży na odpowiadającej symbolem polanie z Posterunkiem.
+
+    - name: Dzień
+      text: Dzień Żelaznej Straży składa się z dwóch kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Przekuwanie.
+          text: Gracz może przekuwać karty aktywując Posterunki _(dowolnego typu)_.
+
+        - name: Aktywacja Świty.
+          text: Zaczynając od lewej kolumny kart Świty i kontynuując w prawo, gracz może dla każdej karty wykonać akcję opisaną w kolumnie tej karty.
+          subchildren:
+            - name: Ruch.
+              text: Gracz wykonuje ruch z polany o odpowiadającym karcie Świty symbolu.
+
+            - name: Walka i Odnajdywanie.
+              text: Gracz wybiera polanę o odpowiadającym symbolu na karcie Świty. Następnie musi rozpocząć Walkę na tej polanie, jeżeli znajdują się tam komponenty przeciwnika. Następnie, jeżeli kontroluje polanę i ma na niej przynajmniej jednego wojownika Straży, może Odnaleźć, zgodnie z poniższą kolejnością.
+              subchildren:
+                - name: "Krok 1: Ruch i odkrywanie Reliktu."
+                  text: Gracz porusza dowolny żeton Reliktu z sąsiadującego lasu do tej polany. Następnie, jeżeli żeton nie wskazuje wartości, gracz odkrywa ten żeton Reliktu.
+
+                - name: "Krok 2: Sprawdzanie i odrzucanie."
+                  text: Gracz sumuje liczbę kontrolowanych przez siebie polan sąsiadujących z lasem, w którym Odnajdywał Relikt. Jeśli gracz kontroluje takich polan mniej, niż wynosi wartość Reliktu, gracz musi odrzucić kartę Świty użytą do tej akcji.
+
+            - name: Ruch albo Odzyskanie.
+              text: Gracz wybiera polanę o symbolu odpowiadającym karcie Świty. Następnie wykonuje ruch z tej polany albo Odzyskuje z niej Relikt zgodnie z poniższą kolejnością.
+              subchildren:
+                - name: "Krok 1: Zebranie Reliktów."
+                  text: Gracz zbiera Relikt jeżeli na tej polanie znajduje się Posterunek o odpowiadającym typie. Następnie umieszcza ten żeton na polu na ten typ Reliktu najbardziej po lewej stronie.
+
+                - name: "Krok 2: Zdobywanie Punktów."
+                  text: Gracz zdobywa Punkty Zwycięstwa w liczbie równej wartości Reliktu oraz dwa dodatkowe PZ, jeśli wypełnił kolumnę na torach Reliktów.
+
+                - name: "Krok 3: Sprawdzanie i Odrzucanie."
+                  text: Gracz liczy polany, które kontroluje o symbolu odpowiadającym symbolowi polany, z której Odzyskał Relikt. Jeśli gracz kontroluje mniej takich polan, niż wartość Odzyskanego Reliktu, musi zakończyć te akcję Odzyskania i odrzucić kartę Świty użytą do przeprowadzenia tej akcji. W przeciwnym razie może wrócić do punktu Zebranie Reliktów albo zakończyć akcję Odzyskanie.
+
+    - name: Wieczór
+      text: Wieczór Żelaznej Straży składa się z trzech kroków wykonywanych w następującej kolejności.
+      children:
+        - name: Opuszczenie Terenu.
+          text: Gracz musi usunąć jednego Wojownika Straży z każdej polany, na której ma czterech lub więcej wojowników Straży.
+
+        - name: Zebranie Świty.
+          text: Gracz może dodać dowolną liczbę kart z ręki do dowolnych kolumn albo może przemieścić jedną kartę Świty do innej kolumny. Świta nie może zawierać więcej niż dziesięć kart.
+
+        - name: Dobranie i Odrzucanie.
+          text: Gracz dobiera jedną kartę i jedną dodatkową kartę za każdą odkrytą premię _(w liczbie równej liczbie Posterunków na planszy)_. Następnie, jeśli gracz ma więcej niż pięć kart na ręce, musi odrzucać karty, aż będzie ich miał na ręce pięć.
+
+
+- name: Warianty, Włóczędzy i Zaciężni
+  color: "#000000"
+  children:
+    - name: Przygotowanie Zaawansowane Rozgrywki
+      children:
+        - name: "Krok 1: Wybór i Rozłożenie Mapy"
+          text: Gracze wspólnie wybierają Mapę. Jeśli wybiorą wariant Mapy, muszą przestrzegać odpowiednich Modyfikacji Przygotowania Rozgrywki. Następnie należy zebrać 12 znaczników symboli polan, zakryć je i pomieszać, po czym umieścić losowo na każdej polanie, zakrywając nimi nadrukowane symbole polan. Należy również rozłożyć Ruiny (`rule:5.1.4`) oraz pulę przedmiotów (`rule:5.1.5`) i kości (`rule:5.1.6`).
+
+        - name: "Krok 2: Wybór Talii"
+          text: Gracze wspólnie wybierają czy wymienić całą talię standardową na talię Banitów i Partyzantów.
+
+        - name: "Krok 3: Przygotowanie Botów"
+          text: Gracze wspólnie decydują czy zastosować boty. W tym przypadku należy zastosować Prawa Rootbotyki.
+
+        - name: "Krok 4: Rozmieszczenie Graczy"
+          text: Należy losowo ustalić pierwszego gracza oraz rozmieszczenie wszystkich graczy przy stole.
+
+        - name: "Krok 5: Rozmieszczenie Punktów Terenu"
+          text: Gracze wspólnie decydują czy chcą użyć Punktów Terenu. Jeżeli tak, mogą zignorować rozmieszczenie Wieży i Promu opisane w Wariantach Mapy.
+          subchildren:
+            - name: "Krok 1: Wybór."
+              text: Gracze wspólnie decydują czy użyć jeden lub dwa Punkty Terenu i usuwają z gry wszystkie karty Punktów Terenu, z którymi nie zamierzają grać.
+
+            - name: "Krok 2: Karty i Kompnenty."
+              text: Gracze tasują wybrane karty Punktów Terenu, odkrywają wybraną ich liczbę i pobierają odpowiednie komponenty wskazane na każdej z tych kart.
+
+            - name: "Krok 3: Przygotowanie."
+              text: Ostatni w kolejności gracz przygotowuje jeden z rozdanych Punktów Terenu tak jak opisano to na jego karcie. Jeśli gracze wybrali grę z dwoma Punktami Terenu, drugi od końca w kolejności gracz przygotowuje drugi Punkt Terenu, zgodnie z opisem na jego karcie.
+
+        - name: "Krok 6: Przygotowanie Zaciężnych."
+          text: Gracze wspólnie decydujący czy chcą użyć w rozgrywce dokładnie trzech Zaciężnych, zgodnie z poniższym opisem.
+          subchildren:
+            - name: "Krok 1: Zebranie Komponentów."
+              text: Gracze tasują karty Zaciężnych, odkrywają trzy, a pozostałe odkładają do pudełka. Następnie dodają komponenty z odkrytych kart do wspólnej puli.
+
+            - name: "Krok 2: Degradacja."
+              text: Dla gry trzyosobowej gracze odwracają jedną losową kartę Zaciężnych na ich stronę Zdegradowaną _(oznaczoną "Z")_. Dla gry czteroosobowej należy odwrócić dwie losowe karty. Przy grach pięcioosobowych i z większą liczną graczy należy odwrócić wszystkie trzy karty.
+
+            - name: "Krok 3: Przygotowanie Zaciężnych."
+              text: Zaczynając od ostatniego w kolejności gracza i kontynuując przeciwnie do kierunku ruchu wskazówek zegara, każdy gracz przygotowuje jednych Zaciężnych zgodnie z opisem na ich karcie. _(niektórzy wymagają dodatkowego przygotowania.)_
+
+            - name: "Krok 4: Rozmieszczenie znaczników Zaciężnych."
+              text: Gracze rozmieszczają trzy znaczniki Zaciężnych - "4","8" i "12" na 4, 8 i 12 polu na torze punktacji na Mapie.
+
+            - name: "Krok 5: Zwrócenie Odpowiadających Frakcji."
+              text: Dana Frakcja nie może być użyta w grze, jeśli użyci są Zaciężni tej samej Frakcji _(oznaczone zostało to kolorem i symbolem)_. Należy zwrócić odpowiednie plansze Frakcji, komponenty i karty przygotowania do pudełka.
+
+        - name: "Krok 7: Dobranie Pięciu Kart"
+          text: W grach dwuosobowych należy usunąć z talii wszystkie cztery karty Dominacji i przetasować talię. Każdy gracz musi dobrać pięć kart. _(zamiast trzech jak przy standardowym przygotowaniu rozgrywki)_. W kroku 10 każdy gracz wybierze trzy z tych kart, z którymi rozpocznie rozgrywkę.
+
+        - name: "Krok 8: Przygotowanie Frakcji"
+          text: Gracze wspólnie decydują czy przygotują Frakcje zgodnie ze Standardowym Przygotowaniem Rozgrywki (`rule:5.1`), czy użyją kart Przygotowania z rozszerzenia Maruderzy, zgodnie z poniższymi instrukcjami.
+          subchildren:
+            - name: "Krok 1: Rozdanie kart Przygotowania."
+              text: Należy potasować karty Przygotowania Zaawansowanego wszystkich Frakcji militarnych _(z ikoną miecza na czerwonym tle pod nazwą)_ i dodać jedną z nich do puli na środku stołu. Następnie należy potasować pozostałe Frakcje militarne wraz ze wszystkimi Frakcjami powstańczymi _(bez ikony miecza na szarym tle pod nazwą)_ i odkryć jedną z nich na gracza. _(Do wyboru będzie jedna Frakcja więcej niż liczba graczy biorących udział w rozgrywce.)_
+              subchildren:
+                - name: Rozgrywka dwuosobowa.
+                  text: Przy rozgrywkach dwuosobowych należy usunąć wszystkie karty Frakcji powstańczych przed odkrywaniem kart przygotowania. _(Odważni gracze mogą je zostawić, jeżeli używają Zaciężnych.)_
+
+                - name: Blokowanie Ostatnich Powstańców.
+                  text: Jeżeli ostatnia odkryta karta przygotowania to karta Frakcji powstańczej, należy obrócić ją bokiem, by pokazać, że jest to Frakcja zablokowana. Nie może zostać ona wybrana, dopóki nie zostanie wybrana przynajmniej jedna Frakcja militarna.
+
+                - name: Włóczęga.
+                  text: Gdy zostanie odkryta karta Włóczęgi, należy wraz z nią odkryć jedną, losową kartę Postaci Włóczęgi. Jeżeli gracz wybierze Włóczęgę jako Frakcję do gry, musi również użyć tej karty Postaci.
+
+            - name: "Krok 2: Wybór Frakcji."
+              text: Rozpoczynając od ostatniego w kolejności gracza i kontynuując przeciwnie do kierunku ruchu wskazówek zegara, każdy gracz wybiera jedną kartę przygotowania Frakcji z puli i natychmiast przygotowuje wybraną Frakcję _(zanim kolejny gracz wybierze kartę)_ zgodnie z opisem na jej tej karcie.
+              subchildren:
+                - name: Polana ojczysta.
+                  text: W przygotowaniu gracze mogą wybrać jedną lub więcej polan ojczystych. Gracz nie może wybrać polan ojczystych, które już zostały wybrane przez innych graczy lub takich, na których nie może rozstawić swoich komponentów zgodnie z instrukcjmi przygotowania Frakcji.
+
+                - name: Sąsiadujące Polany Ojczyste.
+                  text: Niektóre Frakcje wymagają wybrania polany ojczystej, która nie sąsiaduje z polaną ojczystą przeciwnika lub odpowiednich odległości pomiędzy polanami ojczystymi. Jeżeli gracz nie jest w stanie wybrać polany oddalonej o dwie polany od polany ojczystej przeciwnika, może wybrać polanę niesąsiadującą z polaną ojczystą przeciwnika. Jeżeli nie jest w stanie wybrać polany niesąsiadującej, może wybrać polanę sąsiadująca z polaną ojczystą przeciwnika. _(Dla uproszczenia - gracz stara się rozstawić najdalej jak to możliwe.)_
+
+
+        - name: "Krok 9: Rozmieszczenie znaczników Punktacji"
+          text: Gracze umieszczają znaczniki punktacji swoich Frakcji na polu "0" na torze punktacji.
+
+        - name: "Krok 10: Wybór Początkowych Kart"
+          text: Każdy gracz wybiera trzy karty i pozostawia je na ręce. Pozostałe dwie karty każdy gracz odkłada zakryte na wierzchu wspólnej talii. Następnie należy potasować tę talię.
+
+
+    - name: Warianty Map
+      children:
+        - name: Mapa Zimowa
+          subchildren:
+            - name: Rwąca Rzeka.
+              text: Rzeka dzieli lasy na części, jak robią to nadrukowane ścieżki.
+
+        - name: Mapa Jeziora
+          subchildren:
+            - name: Modyfikacje Przygotowania Rozgrywki.
+              text: Prom należy rozmieścić na narożnej polanie położonej u brzegu jeziora.
+
+            - name: Jezioro.
+              text: "**Jezioro** położone jest w centralnej części Mapy. Jest ono traktowane tak jak rzeki - łączy każdą przybrzeżną polanę z pozostałymi przybrzeżnymi polanami. Jezioro dzieli lasy"
+
+            - name: Przybrzeżne Polany.
+              text: "**Przybrzeżnymi polanami** są te polany, które stykają się z jeziorem _(nie są oddzielone od niego lasem)_."
+
+            - name: Przybrzeżne Lasy.
+              text: Lasy, które stykają się z jeziorem, są **przybrzeżnymi lasami**. Każdy przybrzeżny las sąsiaduje z dwoma najbliższymi przybrzeżnymi lasami _(oddziela je tylko jedna przybrzeżna polana)_.
+
+            - name: Prom.
+              text: Raz na turę gracz wykonujący ruch z przybrzeżnej polany z Promem może przemieścić się na inną przybrzeżną polanę razem z Promem. _(Zgodnie z podstawowymi zasadami ruchu)_. Po wykonaniu tego ruchu gracz dobiera jedną kartę. Promu nie można usunąć z Mapy ani z nim walczyć.
+
+        - name: Mapa Gór
+          subchildren:
+            - name: Modyfikacje Przygotowania Rozgrywki.
+              text: Znaczniki Zamkniętych Ścieżek należy rozmieścić na 6 ścieżkach z rozkopaną ziemią _(zaznaczonych na Mapie ciemniejszym kolorem)_. Wieżę należy rozmieścić na centralnej polanie z nadrukowanymi dwiema wieżami.
+
+            - name: Zamknięte Ścieżki.
+              text: Zamknięta ścieżka to ścieżka, na której znajduje się znacznik **Zamkniętej Ścieżki**. Polany połączone zamkniętą ścieżką nie sąsiadują ze sobą. Komponenty _(takie jak Zbójca)_ nie mogą być na nich rozmieszczanie. Zamknięte ścieżki otaczają lasy i dzielą je tak, jak zwykłe ścieżki _(więc Włóczęga może się przez nie zakradać)_.
+
+            - name: Otwieranie Ścieżek.
+              text: Raz na turę, podczas swojego Dnia, gracze mogą wydać kartę, aby na stałe usunąć znacznik Zamkniętej Ścieżki z rozgrywki i otrzymać 1 Punkt Zwycięstwa. Aby to zrobić, przynajmniej jeden komponent Frakcji gracza musi znajdować się na którejś z polan połączonych zamkniętą ścieżką.
+
+            - name: Przełęcz i Wieża.
+              text: Polana, na której znajduje się Wieża, nazywana jest **Przełęczą**. Jeżeli gracz kontroluje Przełęcz na koniec swojego Wieczoru, otrzymuje 1 Punkt Zwycięstwa.
+
+            - name: Lasy.
+              text: Wszystkie obszary na górskiej Mapie, które otoczone są ścieżkami i polanami, należy traktować jako lasy (`rule:2.4`), niezależnie od tego, czy w danym miejscu Mapy widnieją drzewa.
+
+    - name: Opis Postaci Włóczęgi
+      children:
+        - name: Złodziej
+          subchildren:
+            - name: Przedmioty Startowe.
+              text: Gracz zaczyna z `item:boot`, `item:torch`, `item:tea`, `item:sword`.
+
+            - name: "Akcja Specjalna: Kradzież."
+              text: Gracz wyczerpuje jedną `item:torch`, aby dobrać losową kartę od każdego gracza znajdującego się na tej samej polanie co pionek Włóczęgi.
+
+        - name: Majsterkowicz
+          subchildren:
+            - name: Przedmioty Startowe.
+              text: Gracz zaczyna z `item:boot`, `item:torch`, `item:sack`, `item:hammer`.
+
+            - name: "Akcja Specjalna: Dniówka."
+              text: Gracz wyczerpuje jedną `item:torch`, aby dobrać ze stosu kart odrzuconych kartę z symbolem odpowiadającym polanie, na której znajduje się pionek Włóczęgi. _(Zawsze można dobrać ptasią kartę)_.
+
+        - name: Ranger
+          subchildren:
+            - name: Przedmioty Startowe.
+              text: Gracz zaczyna z `item:boot`, `item:torch`, `item:crossbow`, `item:sword`.
+
+            - name: "Akcja Specjalna: Kryjówka."
+              text: Gracz wyczerpuje jedną `item:torch`, aby naprawić 3 przedmioty Następnie natychmiast kończy Dzień i przechodzi do Wieczoru.
+
+        - name: Przybłęda
+          subchildren:
+            - name: Przedmioty Startowe.
+              text: Gracz zaczyna z `item:coin`, `item:torch`, `item:boot`.
+
+            - name: "Akcja Specjalna: Namowa."
+              text: Gracz wyczerpuje jedną `item:torch`, aby zainicjować walkę na swojej polanie. Włóczęga wybiera atakującego i obrońcę oraz kolejność, w jakiej usuwają budynki i żetony, a następnie usuwa komponenty za tych graczy. _(Włóczęga otrzymuje jeden Punkt Zwycięstwa za każdy usunięty budynek albo żeton walczących graczy oraz za każdy komponent Wroga, jaki usunął któremukolwiek z tych graczy.)_
+
+        - name: Rozjemca
+          subchildren:
+            - name: Przedmioty Startowe.
+              text: Gracz zaczyna z `item:boot`, `item:torch`, `item:sword`, `item:sword`.
+
+            - name: "Akcja Specjalna: Ochrona."
+              text: Bezpośrednio przed rzutem kośćmi w walce obrońca może zwerbować Rozjemcę, jeżeli znajduje się on na polanie walki. Rozjemca otrzymuje 1 Punkt Zwycięstwa i dodaje wszystkie nieuszkodzone `item:sword` do maksymalnej liczby wyrzuconych obrażeń obrońcy. Rozjemca nie może zwerbować sam siebie ani zostać zwerbowany przeciwko sobie.
+
+        - name: Łotr
+          subchildren:
+            - name: Przedmioty Startowe.
+              text: Gracz zaczyna z `item:boot`, `item:boot`, `item:torch`, `item:crossbow`.
+
+            - name: "Akcja Specjalna: Spalona Ziemia."
+              text: Gracz wyczerpuje jedną `item:torch` i rozmieszcza ją na polanie, na której się znajduje. Następnie usuwa z tej polany wszystkie komponenty przeciwników. Do końca rozgrywki na tej polanie nie można rozmieszczać komponentów. Komponenty nie mogą być rozmieszczane ani przemieszczane na polanę z `item:torch`. _(Włóczęga pozostaje na tej polanie. Jeżeli się z niej przemieści, nie może już na nią wrócić. `item:torch` nie może zostać usunięty przez kartę "... Przysługa" Ponieważ nie jest to komponent przeciwnika)_.
+
+        - name: Poszukiwacz Przygód
+          subchildren:
+            - name: Przedmioty Startowe.
+              text: Gracz zaczyna z `item:boot`, `item:torch`, `item:hammer`.
+
+            - name: "Akcja Specjalna: Improwizacja."
+              text: Raz na turę na potrzeby ukończenia Misji gracz może traktować jeden niewyczerpany przedmiot jako dowolny inny przedmiot. Jeżeli wyczerpie go, wykonując Misję, musi również uszkodzić ten przedmiot.
+
+        - name: Ronin
+          subchildren:
+            - name: Przedmioty Startowe.
+              text: Gracz zaczyna z `item:boot`, `item:boot`, `item:torch`, `item:sword`.
+
+            - name: "Akcja Specjalna: Szybki Atak."
+              text: Gracz może wyczerpać `item:sword`, aby zadać jedno dodatkowe obrażenie w walce _(po rzucie kośćmi)_.
+
+        - name: Lotnik
+          subchildren:
+            - name: Przedmioty Startowe.
+              text: Gracz zaczyna z `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
+
+            - name: "Akcja Specjalna: Szybowanie"
+              text: Gracz może wyczerpać `item:torch`, aby przemieścić wyłącznie pionek Włóczęgi _(żadnych innych komponentów)_ na dowolną polanę na Mapie _(również na polanę z Wrogiem)_ bez wyczerpywania żadnych `item:boot`.
+
+    - name: Zaciężni
+      children:
+        - name: Zdobywanie i Tracenie Zaciężnych
+          subchildren:
+            - name: Zdobywanie z Puli.
+              text: Kiedy znacznik punktacji gracza znajdzie się na polu ze znacznikiem Zaciężnych, gracz ten zabiera znacznik Zaciężnych i umieszcza przy swojej planszy, pod akcjami Wieczoru jako przypomnienie. Na koniec swojej tury gracz ten bierze dowolną kartę Zaciężnych z puli, rzuca kością kontroli (`rule:16.4.1.2`) i odwraca żeton Zaciężnych.
+
+            - name: Rzucanie Kością Kontroli.
+              text: Kiedy gracz zdobędzie kartę Zaciężnych rzuca kością kontroli i umieszcza żetony kontroli na karcie Zaciężnych w liczbie równej wyrzuconej na kości wartości. Należy policzyć jedynie złote gwiazdki jeżeli gracz ma najwięcej punktów albo remisuje z innym graczem o pierwsze miejsce. W przeciwnym wypadku należy policzyć wszystkie gwiazdki na kośc. _(Również wtedy, gdy gracz zagrał kartę dominacji)_.
+
+            - name: Zdobywanie od Innego Gracza.
+              text: Na koniec swojej tury gracz musi usunąć znacznik kontroli z każdej posiadanej karty Zaciężnych. Następnie każdą posiadaną kartę Zaciężnych, na której nie ma znacznika kontroli, musi wraz ze znacznikiem Zaciężnych oddać dowolnemu innemu graczowi _(nawet temu z największą liczbą punktów)_. Nowy właściciel Zaciężnych umieszcza ten żeton Zaciężnych przy swojej planszy, pod akcjami Wieczoru jako przypomnienie i natychmiast rzuca kością kontroli (`rule:16.4.1.2`).
+
+        - name: Akcje i Zdolności
+          text: Zaciężni mają wiele akcji i umiejętności reprezentowane przez unikatowe symbole. Gracz kontrolujący zyskuje akcje i umiejętności, które rozpoczynają się od "**Gracz Kontrolujący**:"
+          subchildren:
+            - name: Akcja Po Zdobyciu (`hireling:whenhired`).
+              text: Gracz przejmując kontrolę nad tymi Zaciężonymi musi wykonać te akcje.
+
+            - name: Zdolności (`hireling:ability`).
+              text: Zdolności takie są zawsze aktywne w konkretnych, opisanych w zdolności momentach.
+
+            - name: Akcja na Początku Świtu (`hireling:birdsong`).
+              text: Na początku Świtu gracz Kontrolujący może albo musi wykonać tę akcję, zgodnie z jej opisem.
+
+            - name: Akcja Raz Podczas Dnia (`hireling:daylight`).
+              text: Raz każdego Dnia gracz Kontrolujący może wykonać tę Akcję.
+
+        - name: Reguły
+          subchildren:
+            - name: Kontrola.
+              text:  Gracz Kontrolujący traktuje komponenty Zaciężnych jak swoje jedynie w celu ustalenia Kontroli. Gracz Kontrolujący może Kontrolować polanę nawet posiadając tam jedynie Zaciężnych (`rule:2.5`).
+
+            - name: Status Przeciwnika.
+              text: Zaciężni są przeciwnikami graczy innych niż gracz ich Kontrolujący oraz graczy w koalicji z graczem Kontrolującym.
+
+            - name: Oddzielne komponenty.
+              text: Komponenty Zaciężnych nie są komponentami Frakcji gracza Kontrolującego. Zatem Księstwo nie może traktować ich jak swoich dla celów Przekonywania, Straż nie może usuwać ich, by Obozować itd.
+
+            - name: Oddzielne Akcje.
+              text: Akcje ruchu i walki Zaciężnych mogą poruszać lub rozpoczynać walki komponentami Zaciężnych. Zaciężni nie mogą wykonywać akcji w inny sposób _(jak np. Akcja ruchu gracza Kontrolującego, Relacje Sojusznicze Włóczęgi czy Fałszywe Rozkazy)_.
+
+            - name: Oddzielne Efekty.
+              text: Zaciężni nie mogą używać umiejętności, przekutych efektów stałych, ani kart Zasadzki gracza Kontrolującego. Zatem jednostka Zaciężna nie może użyć Szkutników podczas ruchu, a Zbójca nie mógłby być Rozstawiony na rzece. Gracz Kontrolujący nie może zagrać karty Zasadzki, mając w walce jedynie jednostki Zaciężne.
+
+            - name: Punktowanie za Usuwanie.
+              text: Gracz Kontrolujący Zaciężnych nie otrzymuje Punktów Zwycięstwa, jeśli usuną oni komponenty przeciwnika _(zazwyczaj w walce)_. Gracze nadal zdobywają PZ usuwając budynki i żetony Zaciężnych nawet jako Obrońcy w walce przeciw Zaciężnym. Gracze nadal zdobywają PZ w standardowy sposób, jeżeli Prorocy Ciepłego Słońca zmuszą ich do walki.
+
+            - name: Inne.
+              text: Jeżeli gracz poruszy Zaciężnych za pomocą Promu - dobiera kartę. Jeżeli poruszy Zaciężnych na polanę z żetonem Sympatyków Sojuszu lub usunie żeton Sympatyków używając Zaciężnych - nie aktywuje to Buntu. Te efekty odnoszą się do gracza usuwającego oraz gracza poruszającego.
+
+    - name: Punkty Terenu
+      children:
+        - name: Zasady Ogólne
+          subchildren:
+            - name: Bezpieczeństwo.
+              text: Punkty Terenu nie biorą udziału w walce, nie mogą być poruszane, ani usuwane, chyba że na Punkcie Terenu wspomniano inaczej.
+
+            - name: Własność.
+              text: Punkty Terenu nie są własnością żadnej Frakcji oraz nie są komponentami przeciwników.
+
+    - name: Glosariusz
+      children:
+        - name: Budynek.
+          text: Tekturowy, kwadratowy komponent. Własność jego Frakcji.
+
+        - name: Dobieranie.
+          text: Zabranie wierzchniej karty ze wspólnej talii (`rule:2.1`).
+
+        - name: Efekt.
+          text: Cokolwiek, co zmienia zasady gry, wliczając w to efekty stałe, umiejętności Frakcji i akcje.
+
+        - name: Komponent.
+          text: Dowolny komponent Budynek, żeton, wojownik, pionek, przedmiot, znacznik itd.
+
+        - name: Komponent Frakcji.
+          text: Wszyscy wojownicy, pionki, budynki i żetony, jakie wypisano na odwrocie Planszy Frakcji. Przedmioty nie są komponentami Frakcji (Patrz `rule:1.5.2` ).
+
+        - name: Komponenty przeciwnika.
+          text: Komponenty Frakcji przeciwnika lub komponenty Zaciężnych kontrolowanych przez przeciwnika za wyjątkiem tych, które traktujesz jak własne na potrzeby reguł _(Najemnicy Plemion Rzecznych, Zaciężni kontrolowani przez ciebie itd.)_. Przedmioty nie mogą być traktowane jako komponenty przeciwnika.
+
+        - name: Kontrola.
+          text: Polana znajduje się pod kontrolą tego gracza, który posiada na niej łącznie najwięcej wojowników i budynków. _(Żetony i pionki nie są brane pod uwagę przy ustalaniu kontroli)_. W przypadku remisu żaden z graczy nie kontroluje polany.
+
+        - name: Krawędź Mapy.
+          text: Jedna zamknięta pętla polan, ścieżek, która określa granice Mapy, włączając w to zamknięte ścieżki na planszy Gór.
+
+        - name: Las.
+          text: Obszar planszy otoczony ścieżkami i polanami.
+
+        - name: Mapa.
+          text: Patrz `rule:2.2`.
+
+        - name: "Nie można."
+          text: Jeżeli zasady mówią, że gracz nie może czegoś zrobić, to jest to niepodważalne - unieważnienie tego nie jest możliwe, chyba że zostanie to wprost napisane `rule:1.1.2`.
+
+        - name: Obszar Rozgrywki.
+          text: Obszar wokół planszy Frakcji gracza stanowi jego obszar rozgrywki. Karty z obszaru rozgrywki gracza mogą zostać zagrane, odrzucone albo użyte do innych celów tylko wtedy, jeśli jest to wprost napisane.
+
+        - name: Odrzucanie.
+          text: Umieszczenie odpowiedniej karty na wspólnym stosie kart odrzuconych (`rule:2.1`). Jeżeli jest to karta Dominacji, należy umieścić ją zamiast tego w pobliżu planszy (`rule:3.3.3`). `faction:cult:10.4.2`.
+
+        - name: Pionek.
+          text: Drewniana figurka Własność jej Frakcji.
+
+        - name: Pokazanie.
+          text: Należy pozwolić wskazanemu graczowi zobaczyć wskazany komponent.
+
+        - name: Pole.
+          text: Białe pole na polanie (`rule:2.2.3`).
+
+        - name: Przeciwnik.
+          text: Przeciwnikiem jest każdy gracz, z którym nie jest się w koalicji (`rule:9.2.8`) lub Zaciężni w puli oraz Zaciężni kontrolowani przez innego gracza.
+
+        - name: Przedmiot.
+          text: Kwadratowy komponent tekturowy przedstawiający przedmiot (`item:boot`, `item:sword`, `item:crossbow`, itd.), który nie jest własnością żadnej Frakcji.
+
+        - name: Rozmieszczenie.
+          text: Umieszczenie wskazanego komponentu ze wskazanego źródła we wskazanym miejscu docelowym. Zazwyczaj żadne źródło nie jest uściślone - w tym przypadku należy wziąć komponent z jego zasobów lub, jeżeli komponent znajduje się na torze, z pola najbardziej po lewej stronie.
+
+        - name: Ruiny.
+          text: Pola Oznaczone literą "R" Rozpoczynają grę wypełnione żetonami Ruin. Ruiny mogą być usunięte tylko, jeśli jest to wyraźnie napisane _(np. po tym, jak Włóczęga przeprowadzi akcję Eksploracji, 9.5.3.)_.
+
+        - name: Rzeka.
+          text: Niebieskie połącznie pomiędzy dwiema polanami.
+
+        - name: Sąsiadowanie.
+          text: Polana sąsiaduje z każdą inną polaną, z którą jest połączona ścieżką. Las sąsiaduje z każdą polaną, z którą łączy się nie przekraczając ścieżki oraz sąsiaduje z każdym lasem jeśli oddzielony jest on niego tylko przez jedną ścieżkę, za wyjątkiem jeziora (`rule:16.2.2`). `faction:duchy:12.2.2`
+
+        - name: Ścieżka.
+          text: Białe połączenie pomiędzy dwiema polanami.
+
+        - name: Traktowanie.
+          text: Wskazana rzecz przejmuje właściwości innej wskazanej rzeczy. Jeżeli traktujesz komponenty przeciwnika jak swoje dla celów kontroli, nie są komponentami przeciwnika, lecz nadal są komponentami Frakcji tego przeciwnika. _(Dla przykładu Wojownicy Plemion Rzecznych wynajęci jako najemnicy nie są komponentami przeciwnika lecz nadal są komponentami Frakcji Plemion Rzecznych)_.
+
+        - name: Ujawnienie.
+          text: Należy umieścić wskazaną kartę odkrytą w swoim Obszarze Rozgrywki. Zazwyczaj nie jest wskazane żadne źródło. W tej sytuacji należy wziąć kartę z ręki.
+
+        - name: Umiejętność.
+          text: Efekt stały Frakcji, taki jak został opisany na górze planszy Frakcji, w zasadach Frakcji i w dziale Umiejętności. Również efekt stały Zaciężnych, taki jak został opisany na karcie Zaciężnych (`rule:16.4.2`).
+
+        - name: Usunięcie.
+          text: Należy wziąć wskazany komponent ze wskazanego źródła i zwrócić go do wskazanego miejsca docelowego. Zwykle nie jest podane żadne miejsce docelowe. W tej sytuacji należy zwrócić komponent do zasobów właściciela, na pole najbardziej po prawej stronie, jeżeli powinien znajdować się na torze. W innym razie należy usunąć komponent całkowicie z gry. _(Przedmioty usuwane są całkowicie z gry)_.
+
+        - name: Wojownik.
+          text: Drewniana figurka. Własność jej Frakcji. Pionek Włóczęgi nie jest wojownikiem i nie może zostać usunięty.
+
+        - name: Wydawanie.
+          text: Patrz **Odrzucanie** (`rule:16.6.5`). Te pojęcia są równoznaczne. _(Jednak Wydawanie jest używanie w kontekście z wyborem)_.
+
+        - name: Wymiana.
+          text: Skrót oznaczający **Usunięcie**, następnie **Rozmieszczenie**. Należy Usunąć wskazany komponent, a następnie Rozstawić inny wskazany komponent w miejscu, z którego ten pierwszy został Usunięty. Należy rozpatrzyć wszystkie kroki **Wymiany**, aby jej dokonać.
+
+        - name: Zamiana miejsc.
+          text: Wymiana miejsc dwóch wskazanych komponentów. Ignoruje to ograniczenia Ruchu i Rozmieszczania, takie jak Krucze Wnyki czy Twierdza Markizy.
+
+        - name: Zasoby.
+          text: Zbiór komponentów nieznajdujący się na planszy Frakcji ani na Mapie. Zasoby przedmiotów to zbiór przedmiotów na Mapie.
+
+        - name: "**Zmuszenie**."
+          text: Niektóre efekty pozwalają zmusić gracza lub komponent do konkretnego działania. Należy rozpatrzeć ten efekt dokładnie tak, jak gdyby ten gracz wykonywał działania w ramach jego obostrzeń _(np. Jeśli gracz Orlich Gniazd zostanie zmuszony do ruchu swoimi wojownikami, używa zasady Władcy Lasu)_. `rule:1.5.5`.
+
+        - name: Żeton.
+          text: Tekturowy komponent. Własność jego Frakcji.
