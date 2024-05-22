@@ -1,0 +1,344 @@
+
+- category: The Law
+  color: "#000000"
+  questions:
+    - q: How do I read The Law?
+      a: Text in small capitals define key terms, text in italics gives reminders and clarifications and faction icons mark rules modified by Faction Rules and Abilities sections.
+      
+    - q: I'd like to do something, and the rules don't say that I can't do it. Can I do it?
+      a: Within the confines of the action, yes! The game will often surprise you with outlandish, unexpected situations, and that's part of the fun, but this doesn't mean you can flip the table.
+
+    - q: Can another player not consent to an action?
+      a: No actions require consent. Just do the thing.
+
+    - q: It seems like something should happen, but the rule doesn't tell me to do that thing. What do I do?
+      a: Follow the literal word of the Law, not your instinct, even if a similar rule exists. 
+
+    - q: A rule uses a specific term or action. Does it also include another, closely related term or action?
+      a: Nope! Assume we mean only the original term and not any related terms. For example, the terms move and place are different, which is an important distinction in rules such as The Keep.
+      laws:
+        - "6.2.2"
+
+- category: General
+  color: "#000000"
+  questions:
+    - q: Which pieces are buildings? Which are tokens?
+      a: Buildings are square cardboard pieces that go in open building slots on the map, while tokens are circular cardboard pieces that do not occupy a slot. You’ll find detailed lists of buildings and tokens on the back of the learn-to-play and the backs of the faction boards.
+      laws: 
+        - "2.5"
+        - "16.6.3"
+        - "16.6.32"
+    
+    - q: Do I lose points if one of my buildings is removed?
+      a: Nope!
+      laws: 
+        - "2.5.2"
+        - "16.6.22"
+
+    - q: Can I play multiple ambush cards in a battle?
+      a: Nope! Just one.
+      laws: 
+        - "4.3.1"
+
+    - q: Do the Favor... cards really remove all enemy pieces from those clearings?
+      a: Yes, except for the Vagabond and the Lord of the Hundreds’ warlord.
+      laws: 
+        - "9.2.2"
+        - "14.2.2"
+
+    - q: How do I get rid of enemy tokens, like sympathy tokens?
+      a: Just like any other other piece, they can be battled and can be removed by powers that say they remove pieces. 
+      laws:
+        - "2.1"
+        - "2.5"
+        - "4.3"
+    
+    - q: Does placing a piece in a sympathetic clearing trigger Outrage?
+      a: Nope! You have to move in warriors or remove the sympathy to trigger it.
+      laws:
+        - "8.2.6"
+        - "8.2.5"
+
+    - q: Where do buildings and tokens go when removed?
+      a: Most often, back to the board or supply of the owning player. This is described more in 2.5.
+      laws:
+        - "2.5"
+        - "16.6.22"
+
+    - q: What does "activating" a piece for crafting mean? Do I do anything with it?
+      a: Nope. Activating just means “I have it, and I want to use it for crafting.” You don’t need to get rid of it or do anything other than point at it and say, “I’m activating this to craft a card.”
+      laws:
+        - "4.1.1"
+
+    - q: Can I not consent to the action of another player?
+      a: Nope, there are no actions in Root that require consent. For example, the Vagabond does not require consent to form a coalition with someone or Aid someone, and a player does not need the Riverfolk’s consent to buy services from them.
+      laws:
+        - "9.2.8"
+        - "9.5.4"
+        - "11.2.6"
+
+- category: Cards
+  color: "#000000"
+  questions:
+    - q: The Armorers card says “rolled hits”. Does it really mean “rolled hits” specifically and not “hits”?
+      a: Yes indeed! “Rolled hits” means only the hits rolled.
+
+- category: Marquise de Cat
+  color: "#e07a37"
+  questions:
+    - q: What happens if all of my pieces are removed from the map?
+      a: Unfortunately, you’re probably out of the game. However, if the Riverfolk Company or hirelings are in play, you can build a building again if you rule a clearing. Either way, if this happens, the game will likely end at a moment’s notice!
+      laws:
+        - "6"
+
+    - q: Can someone move a piece into the clearing with my keep?
+      a: Yes! "Place" is a different keyword from "move."
+      laws:
+        - "4.2"
+        - "6.2.2"
+
+    - q: If someone ambushes me in a battle at the Keep, when do my warriors get placed back in the Keep’s clearing?
+      a: Immediately, as long as you spend a card. This means you can avoid the check for “no remaining warriors” prompted by the ambush. 
+      laws:
+        - "4.3.1"
+        - "6.2.3"
+
+    - q: Can the Marquise place hirelings at the Keep?
+      a: Yes! 
+      laws:
+        - "6.2.3"
+
+- category: Eyrie Dynasties
+  color: "#416eb0"
+  questions:
+    - q: Does Turmoil trigger if I have an empty column?
+      a: Nope! Turmoil triggers if you have a card in your Decree that you can't complete.
+      laws:
+        - "7.7"
+
+    - q: Does Turmoil trigger if I can take actions for some but not all cards in a column?
+      a: Yes! The moment you can't complete a single card, you go into Turmoil.
+      laws:
+        - "7.7"
+
+    - q: Can I move one warrior at a time from the same clearing to fulfill many Move cards in my Decree? Can I move the same warrior back and forth, given the right cards?
+      a: Yes! You can game the Decree as much as the cards allow you to. Just follow the rules for movement, and you're good. 
+      laws:
+        - "7.5.2"
+    
+    - q: What does the Despot's ability do? Don't I already get a victory point for removing a building or token?
+      a: Quite right you are! You get an extra point, though you do not get multiple extra points if you remove multiple buildings and/or tokens at the same time.
+      laws:
+        - "7.8.4"
+
+    - q: If I have the Charismatic leader and Recruit, but I have one warrior left in my supply. Do I place no warriors or one warrior before going into Turmoil?
+      a: Place one. If you are prompted to place pieces but cannot place them all, you must place as many as possible.
+      laws:
+        - "7.7"
+        - "7.8.3"
+
+- category: Woodland Alliance
+  color: "#68b653"
+  questions:
+    - q: Can I revolt with a base in a suit whose base I've already built?
+      a: Nope! The revolt action says you must choose a sympathetic clearing matching an unbuilt base.
+      laws:
+        - "8.4.1"
+
+    - q: Can I revolt in the clearing with the keep token?
+      a: Nope! You would have to place a sympathy token first, which you can't do because of the Marquise's special ability The Keep.
+      laws:
+        - "6.2.2"
+        - "8.4.1"
+
+    - q: What happens if a hireling removes sympathy?
+      a: The player controlling the hireling would trigger Outrage, since Outrage specifies “When a player removes…” This is also covered explicitly in Law E.3.7.
+      laws:
+        - "8.2.6"
+        - "16.4.3.7"
+
+    - q: Does the Vagabond cause Outrage?
+      a: Nope. The Vagabond is a pawn, not a warrior.
+      laws:
+        - "8.2.6"
+
+    - q: Do hirelings cause Martial Law?
+      a: Hirelings controlled by an enemy player will add to that player’s faction warriors. So if the Eyrie had 1 Eyrie warrior and 2 hireling warriors they controlled in a clearing, that clearing would prompt Martial Law. However, uncontrolled hireling warriors would not prompt Martial Law.
+
+- category: Vagabond
+  color: "#6d6e70"
+  questions:
+    - q: Can I craft cards with multiple-suit requirements?
+      a: "No. Your hammers match your current clearing, so you can only craft with one suit at a time. Good news: the multi-suit cards are useless to you anyway!"
+      laws:
+        - "9.2.1"
+
+    - q: Do I trigger the Alliance's Outrage when I move into a sympathetic clearing?
+      a: Nope! You're a friendly Vagabond, and you have a pawn, not a warrior. 
+      laws:
+        - "8.2.6"
+        - "9.2.2"
+
+    - q: If I move Allied warriors of the Woodland Alliance into a sympathetic clearing, do I trigger Outrage?
+      a: Nope! (*This ruling was changed as of the release of the Marauder Expansion and the 8th Printing, because the Vagabond’s Allied movement now uses the “Force” keyword.)
+      laws:
+        - "8.2.6"
+        - "9.2.9"
+
+    - q: Does the Vagabond go Hostile with a faction when he removes one of their buildings or tokens, but no warriors? 
+      a: Nope! There are no witnesses to see him. Burn it all down!
+      laws:
+        - "9.2.9.3"
+
+    - q: If the Vagabond removes a hireling warrior controlled by another faction, does the Vagabond become Hostile with that faction? 
+      a: Nope! The hirelings are not faction pieces of that faction.
+      laws:
+        - "9.2.9.3"
+
+    - q: If the Vagabond battles using a controlled hireling and removes enemy pieces, does the Vagabond turn Hostile with that faction or gain Infamy points if they’re already Hostile? 
+      a: Nope! Hirelings don’t use the abilities of their controlling faction (E.3.5) or let their controlling faction score points for removing enemy pieces (E.3.6).
+      laws:
+        - "9.2.9.3"
+        - "16.4.3.5"
+        - "16.4.3.6"
+
+    - q: Can the Vagabond move Allied warriors using the Ferry from the Underworld Expansion? If so, does the Ally faction also draw a card? 
+      a: Yes to both!
+      laws:
+        - "16.2.2.5"
+
+    - q: Can a Vagabond form a coalition with a player who has activated a dominance card? Can a player activate a dominance card after a Vagabond formed a coalition with them? 
+      a: A Vagabond cannot form a coalition with a dominance player, since they have no victory point marker on the track. However, a player can activate a dominance card after a Vagabond forms a coalition with them!
+      laws:
+        - "9.2.8"
+
+    - q: The Vagabond is in a coalition with me. Can I still battle him? Can he still battle me? 
+      a: No, neither of you can battle each other. (*This ruling changed as of the Marauder Expansion and the 8th Printing. The Battle rules now specify that you must battle an enemy, which means any player not in a coalition.)
+      laws:
+        - "4.3"
+        - "9.2.8"
+
+    - q: Can I gain Infamy victory points by removing a piece with Strike? 
+      a: Nope! Infamy specifies that you must remove the piece in battle on your turn. Killing someone with a crossbow is the coward’s way, after all.
+      laws:
+        - "9.2.9.3.1"
+
+- category: Riverfolk Company
+  color: "#5bc3bd"
+  questions:
+    - q: When I hire Riverfolk mercenaries, can I start a battle with them even if I don't have pieces in the clearing where I'm battling?
+      a: Go for it! Plus, if you don't have any warriors there, there's no one to split hits with. 
+      laws:
+        - "11.2.7"
+    
+    - q: Can I export a card if the item on it is not in the supply or if I already have its permanent effect?
+      a: Nope! You must be able to craft the card in the first place in order to export it. In these cases, you could not export the card.
+      laws:
+        - "11.5.3"
+
+    - q: Can the Riverfolk refuse to sell you one of their services?
+      a: Nope! As long as you pay the cost, you get the service.
+      laws:
+        - "11.2.6"
+
+    - q: Can Riverfolk Mercenaries be used to battle hirelings controlled by the Riverfolk?
+      a: Yes! Mercenaries just won’t battle against the Riverfolk themselves, not controlled hirelings.
+      laws:
+        - "11.2.7"
+
+- category: Lizard Cult
+  color: "#fcf065"
+  questions:
+    - q: Can I use Convert or Sanctify to only remove a warrior or building, but not place my own warrior or building there?
+      a: Nope! The rule says that “you must complete the conspiracy,” and faction rules overrule general rules if you cannot fulfill them both. 
+      laws:
+        - "10.4.3"
+
+- category: Keepers in Iron
+  color: "#8b8d90"
+  questions:
+    - q: For the second step of placing relics, do I get to choose which relics go in which clearings?
+      a: Place them randomly.
+      laws:
+        - "15.3.3"
+        
+    - q: The Law (15.5.2.II) says I need to rule a clearing in order to battle in it, but the Learn to Play and the board do not say this. What’s going on?
+      a: You do not need to rule in order to battle—only to delve!
+      laws:
+        - "15.5.2.2"
+
+    - q: If hirelings remove a relic, how do I resolve the Prized Trophy ability?
+      a: No victory points are awarded. If the hireling is controlled, the controlling player decides where to put the relic. If the hireling is uncontrolled, the player taking their turn decides where to put the relic.
+      laws:
+        - "15.2.5"
+        
+    - q: Does the Keepers’ Prized Trophies ability trigger if the Vagrant Vagabond removes a relic by using Instigate, but they’re in a coalition with the Keepers?
+      a: As written, no, since the Vagrant is not an enemy in this case. Why the Vagrant would want to do this is beyond me, though!
+      laws:
+        - "15.2.5"
+
+- category: Lord of the Hundreds
+  color: "#e11b3f"
+  questions:
+    - q: In battle, who chooses whether a hit removes the warlord or a regular warrior?
+      a: The Hundreds player does, matching the fact that the player taking hits chooses the order of removing buildings and tokens. So if you took two hits and you have the warlord, two warriors, and a stronghold, you could remove two warriors or you could remove one warrior and the warlord. Though we wouldn’t recommend removing the warlord early!
+      laws:
+        - "14.2.2"
+        - "4.3.4"
+        
+    - q: What exactly is required for the Hundreds to oppress a clearing?
+      a: You need to (1) rule, (2) have a Hundreds piece there, and (3) have no enemy pieces there. For example, you do oppress with a mob and a Riverfolk Mercenary warrior. You do not oppress with only a Riverfolk Mercenary warrior. You do not oppress with a mob, a Riverfolk Mercenary warrior, and a Riverfolk trade post. 
+      laws:
+        - "14.6.2"
+        
+    - q: Does the Rowdy mood let the Hundreds draw more cards when they use the Charm Offensive card from the Exiles & Partisans deck?
+      a: No. Rowdy makes you draw more cards only during your draw step in Evening.
+      laws:
+        - "14.7.6"
+
+    - q: Do I declare whether I’m using my Looters before or after the defender declares that they are ambushing?
+      a: Declaring Looters.
+      laws:
+        - "14.2.5"
+
+- category: Advanced Setup
+  color: "#000"
+  questions:
+    - q: "Keepers in Iron: For the second step of placing relics, do I get to choose which relics go in which clearings?"
+      a: Place them randomly. (That said, it usually won’t make much difference, since people can adjust their strategy to prevent you from delving efficiently.)
+      
+    - q: "Keepers in Iron: What happens if there aren’t any two adjacent clearings on the map edge?"
+      a: Return the Keepers’ advanced setup card to the box and draw new advanced setup cards until you draw a militant faction (red with swords). This faction replaces the Keepers. We will likely add general mulligan rules that mirror this as more factions get added to the game and it becomes increasingly possible to draw a faction that is impossible to set up.
+
+- category: Hirelings
+  color: "#000"
+  questions:
+    - q: "The Exile: Can I give the Exile an exhausted item?"
+      a: Yes!
+
+    - q: "The Exile: Can I give the Exile multiple items on the same turn?"
+      a: Yes!
+
+    - q: "Highway Bandits: If the Highway Bandits remove a Marquise warrior, can the Marquise use Field Hospitals?"
+      a: Nope. The power happens while moving “on a path” with Highway Bandits, so they are not in a clearing at that moment.
+
+    - q: "Spring Uprising: Can a hireling battle the Spring Uprising?"
+      a: Nope. They do not have a hand of cards to discard from.
+
+    - q: "Warm Sun Prophets: When I force a battle and the defender plays an ambush card, which placer makes decisions about piece removal and playing counter-ambushes?"
+      a: The player who is being forced to battle.
+
+    - q: "Flame Bearers: Does “warriors first” preclude me from removing undefended buildings or tokens of a player if there are warriors of another player there?"
+      a: No, this works in the same way as battle or the Vagabond’s Strike—if a player has warriors there, you must remove the warriors first.
+
+- category: Landmarks
+  color: "#000"
+  questions:
+    - q: "Legendary Forge: Do I only need a faction piece at the Legendary Forge in order to craft an item there, or do I need something else?"
+      a: You still follow the normal crafting rules, so you still need to discard a card that has an available item on it—in this case, an item that is on the Legendary Forge card—and you need crafting pieces in the relevant clearing suits, as shown on the card. You just also need a faction piece at the Legendary Forge.
+
+    - q: "Lost City: Can I revolt in the Lost City if I have already filled the clearing’s slots with my bases, but I still have a base left on my board?"
+      a: Yes, you can! The Lost City is very vulnerable to revolts, since it can be treated as any suit.
+
+    - q: "Ferry: If I move the Ferry to a clearing with a sympathy token, do I draw the card first or trigger Outrage first?"
+      a: These happen at the same time, so you decide the order.

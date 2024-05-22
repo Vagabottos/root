@@ -1,0 +1,170 @@
+{
+  "App": {
+    "NavTitle": "Regras e Facções (7ª Ed.)",
+    "NavTitleShort": "Regras (7ª Ed.)",
+    "RootPrefix": "Lei de Root",
+    "SearchPlaceholder": "Produrar nas Regras",
+    "Titles": {
+      "Search": "Procurar nas Regas",
+      "FAQ": "Perguntas Frequentes",
+      "Reach": "Ferramenta de Seleção de Preparação",
+      "Map": "Gerador de Mapa",
+      "Random": "Preparação Aleatória",
+      "DraftPlusOne": "+1 Draft",
+      "AdSet": "Preparação Avançada"
+    }
+  },
+  "Modal": {
+    "FAQ": {
+      "Title": "Perguntas Frequentes",
+      "TitleShort": "FAQ",
+      "CloseButton": "Fechar",
+      "Law": "Lei",
+      "Q": "P",
+      "A": "R"
+    },
+    "Reach": {
+      "Title": "Calculadora de Alcance",
+      "TitleShort": "Alcance",
+      "CloseButton": "Fechar",
+      "Choose": "Escolher Novas Facções",
+      "DraftPlusOne": "Draft +1",
+      "Error": "Não foi possível selecionar facções; ajuste as seleções e tente novamente.",
+      "Factions": {
+        "Marquise de Cat": "Marqueses",
+        "Lord of the Hundreds": "Senhor das Centenas",
+        "Keepers in Iron": "Guardiões de Ferro",
+        "Underground Duchy": "Ducado Subterrâneo",
+        "Eyrie Dynasties": "Dinastia das Rapinas",
+        "Vagabond (#1)": "Malandro (#1)",
+        "Riverfolk Company": "Companhia Ribeirinha",
+        "Woodland Alliance": "Aliança da Floresta",
+        "Corvid Conspiracy": "Conspiração Corvídea",
+        "Vagabond (#2)": "Malandro (#2)",
+        "Lizard Cult": "Lagartos Cultistas"
+      },
+      "FactionsShort": {
+        "Marquise": "Marqueses",
+        "Hundreds": "Centenas",
+        "Keepers": "Guardiões",
+        "Duchy": "Ducado",
+        "Eyrie": "Rapinas",
+        "Vagabond #1": "Malandro #1",
+        "Riverfolk": "Ribeirinhos",
+        "Woodland": "Aliança",
+        "Corvids": "Corvídeos",
+        "Vagabond #2": "Malandro #2",
+        "Cult": "Lagartos"
+      },
+      "Vagabonds": {
+        "Arbiter": "Árbitro",
+        "Ranger": "Andarilho",
+        "Scoundrel": "Patife",
+        "Thief": "Ladrão",
+        "Tinker": "Funileiro",
+        "Vagrant": "Vagabundo",
+        "Adventurer": "Aventureiro",
+        "Ronin": "Ronin",
+        "Harrier": "Saqueador"
+      },
+      "Draft": {
+        "Players": {
+          "Player A": "Jogador A",
+          "Player B": "Jogador B",
+          "Player C": "Jogador C",
+          "Player D": "Jogador D",
+          "Player E": "Jogador E",
+          "Player F": "Jogador F"
+        },
+        "Headers": {
+          "Factions": "Facções",
+          "TurnDraftOrder": "Turno/Ordem de Draft",
+          "Faction": "Facção",
+          "Reach": "Alcance",
+          "Draft": "Draft",
+          "Player": "Jogador",
+          "Cards": "Cartass",
+          "Picks": "Escolhas",
+          "Turn": "Turno"
+        },
+        "Text": {
+          "Deck": "Baralho",
+          "Map": "Mapa",
+          "Choose": "Escolha o Mapa, e então escolha o baralho. Escolha 3 cartas e devolva o restante ao baralho."
+        }
+      },
+      "Adset": {
+        "Random": "Aleatório",
+        "Random1": "Aleatório (1)",
+        "Random2": "Aleatório (2)",
+        "Generate": "Gerar",
+        "None": "Nenhum",
+        "Waiting": "Aguardando geração aleatória...",
+        "Players": "Jogadores",
+        "Choices": {
+          "Map": "Mapa Escolhido",
+          "Deck": "Baralho Escolhido",
+          "Players": "Quantidade de Jogadores",
+          "Landmarks": "Marcos",
+          "Hirelings": "Capangas Válidos",
+          "Factions": "Facções Válidas",
+          "RemindDrawFive": "Lembrete: Distribua 5 cartas para cada jogador."
+        },
+        "Deck": {
+          "Standard": "Baralho Comum",
+          "EP": "Exilados e Partisans"
+        },
+        "Landmarks": {
+          "ElderTreetop": "Árvore Anciã",
+          "LostCity": "Cidade Perdida",
+          "BlackMarket": "Feira do Rolo",
+          "LegendaryForge": "Forja Lendária",
+          "TheFerry": "A Balsa",
+          "TheTower": "A Torre"
+        },
+        "Hirelings": {
+          "Spring Uprising (R)": "Spring Uprising (R)",
+          "Forest Patrol (R)": "Forest Patrol (R)",
+          "Last Dynasty (R)": "Last Dynasty (R)",
+          "The Exile (R)": "The Exile (R)",
+          "Popular Band (R)": "Popular Band (R)",
+          "Furious Protector (R)": "Furious Protector (R)",
+          "Highway Bandits (R)": "Highway Bandits (R)",
+          "Riverfolk Flotilla (R)": "Riverfolk Flotilla (R)",
+          "Warm Sun Prophets (R)": "Warm Sun Prophets (R)",
+          "Sunward Expedition (R)": "Sunward Expedition (R)",
+          "Corvid Spies (R)": "Corvid Spies (R)",
+          "Flame Bearers (R)": "Flame Bearers (R)",
+          "Vault Keepers (R)": "Vault Keepers (R)",
+          "Rabbit Scouts (D)": "Rabbit Scouts (D)",
+          "Feline Physicians (D)": "Feline Physicians (D)",
+          "Bluebird Nobles (D)": "Bluebird Nobles (D)",
+          "The Brigand (D)": "The Brigand (D)",
+          "Street Band (D)": "Street Band (D)",
+          "Stoic Protector (D)": "Stoic Protector (D)",
+          "Bandit Gangs (D)": "Bandit Gangs (D)",
+          "Otter Divers (D)": "Otter Divers (D)",
+          "Lizard Envoys (D)": "Lizard Envoys (D)",
+          "Mole Artisans (D)": "Mole Artisans (D)",
+          "Raven Sentries (D)": "Raven Sentries (D)",
+          "Rat Smugglers (D)": "Rat Smugglers (D)",
+          "Badger Bodyguards (D)": "Badger Bodyguards (D)"
+        }
+      }
+    },
+    "Maps": {
+      "Title": "Gerador de Mapa",
+      "TitleShort": "Mapa",
+      "CloseButton": "Fechar",
+      "MapNames": {
+        "fall": "Outono",
+        "winter": "Inverno",
+        "lake": "Lago",
+        "mountain": "Montanha"
+      },
+      "Randomize": "Gerar",
+      "Balanced": "Balanceado",
+      "Error": "Tentei encontrar um layout equilibrado; mas não foi possível. Tente novamente! Pode funcionar desta vez."
+    }
+  }
+}
