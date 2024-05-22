@@ -156,7 +156,7 @@
           text: The defender may play one ambush card matching the clearing of battle. If so, resolve `rule:4.3.1.1`–`rule:4.3.1.2` in order.
           subchildren:
             - name: Foil Ambush.
-              text: The attacker may also play an ambush card matching the clearing of the battle. If they do, the defender discards their ambush card and skips `rule:4.2.1.2`.
+              text: The attacker may also play an ambush card matching the clearing of the battle. If they do, the defender discards their ambush card and skips `rule:4.3.1.2`.
             - name: Resolve Ambush.
               text: The defender deals two hits immediately (`rule:4.3.4`). Then, the defender discards the ambush card. If no attacking warriors or pawns remain, end the battle immediately.
         - name: "Step 2: Roll Dice and Add Extra Hits."
@@ -1103,7 +1103,7 @@
 
     
     - name: Birdsong
-      text: Your Birdsong has three steps in the following order.
+      pretext: Your Birdsong has three steps in the following order.
       children:
         - name: Encamp.
           text: Once per clearing, you may replace a Keeper warrior with a waystation. If you have no warriors or waystations on the map, instead place one waystation and one warrior in any clearing on the map edge. In either case, you may place the waystation face up or face down.
@@ -1115,7 +1115,7 @@
           text: Any number of times, you may spend a card to place two warriors at a matching waystation.
 
     - name: Daylight
-      text: Your Daylight has two steps in the following order.
+      pretext: Your Daylight has two steps in the following order.
       children:
         - name: Craft.
           text: You may activate waystations _(of any type)_ to craft cards.
@@ -1148,7 +1148,7 @@
                   text: Count the number of clearings you rule whose suit matches the clearing from which you are recovering the relic. If you rule fewer of these clearings than the relic's value, then you must end this Recover action and discard the Retinue card used to take this action. Otherwise, you may return to the Take Relic step or end this Recover action.
 
     - name: Evening
-      text: Your Evening has three steps in the following order.
+      pretext: Your Evening has three steps in the following order.
       children:
         - name: Live Off the Land.
           text: You must remove one Keeper warrior from each clearing that has four or more Keeper warriors.
