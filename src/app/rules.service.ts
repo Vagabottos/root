@@ -19,7 +19,7 @@ const rules = {
   'es-ES': (esESRules as any).default || esESRules,
   'de-DE': (deDERules as any).default || deDERules,
   'ru-RU': (ruRURules as any).default || ruRURules,
-  'pl-PL': (plPLRules as any).default || plPLRules,
+  'pl-PL': (plPLRules as any).default || plPLRules
 };
 
 @Injectable({
