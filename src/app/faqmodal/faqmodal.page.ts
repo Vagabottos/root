@@ -11,17 +11,17 @@ import * as plPLFAQ from '../../assets/i18n/faq/pl-PL.json';
 
 const faq = {
   'en-US': (enUSFAQ as any).default || enUSFAQ,
-  'en-US': (ptBRFAQ as any).default || ptBRFAQ,
+  'pt-BR': (ptBRFAQ as any).default || ptBRFAQ,
   'es-ES': (esESFAQ as any).default || esESFAQ,
   'de-DE': (deDEFAQ as any).default || deDEFAQ,
   'ru-RU': (ruRUFAQ as any).default || ruRUFAQ,
-  'pl-PL': (plPLFAQ as any).default || plPLFAQ,
+  'pl-PL': (plPLFAQ as any).default || plPLFAQ
 };
 
 @Component({
   selector: 'app-faqmodal',
   templateUrl: './faqmodal.page.html',
-  styleUrls: ['./faqmodal.page.scss'],
+  styleUrls: ['./faqmodal.page.scss']
 })
 export class FAQModalPage {
 
