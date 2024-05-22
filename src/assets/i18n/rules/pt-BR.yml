@@ -80,8 +80,7 @@
         - name: Locais.
           text: Cada clareira possui uma quantidade de **locais de construção** _(caixas brancas)_. Sempre que um jogador posicionar uma construção, ela ocupará um local vazio. Você não pode posicionar uma construção em uma clareira sem locais vagos.
         - name: Ruínas.
-          text: Locais demarcados com um pequeno "R" começam a partida cobertos com **ruínas**. Ruínas não podem ser removidas a menos que explicitado _(por
-          exemplo, pela ação de Exploração dos Malandros, `rule:9.5.3`)_.
+          text: Locais demarcados com um pequeno "R" começam a partida cobertos com **ruínas**. Ruínas não podem ser removidas a menos que explicitado _(por exemplo, pela ação de Exploração dos Malandros, `rule:9.5.3`)_.
     
     - name: Rios
       pretext: Muitas clareiras são ligadas por **rios**. _(Rios não são caminhos, mas podem ser tratados como tal caso seja explicitamente instruído desta forma. Rios não dividem clareiras ou florestas.)_ `faction:riverfolk:11.2.2`
