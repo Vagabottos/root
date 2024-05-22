@@ -23,7 +23,7 @@ const rules = {
 };
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class RulesService {
   public indexVisibilityHash = {};
