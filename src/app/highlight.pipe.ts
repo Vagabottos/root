@@ -3,7 +3,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { RulesService } from './rules.service';
 
 @Pipe({
-  name: 'highlight',
+  name: 'highlight'
 })
 export class HighlightPipe implements PipeTransform {
   constructor(private rulesService: RulesService) {}
