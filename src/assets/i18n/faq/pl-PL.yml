@@ -1,0 +1,346 @@
+
+- category: Księga praw
+  color: "#000000"
+  questions:
+    - q: Jak czytać Księge Praw?
+      a: Słowa kluczowe zostały oznaczone kapitalikami. Przypomnienia i wyjaśnienia zostały oznaczone kursywą. Zasady, które modyfikowane są przez zasady Frakcji i ich Zdolności, oznaczone są symbolami Frakcji.
+
+    - q: Chciałbym coś zrobić, a instrukcja nie zabrania mi tego. Czy mogę to zrobić?
+      a: W ramach akcji - tak! Gra często zaskoczy was niebywałymi, fantastycznymi i zaskakującymi sytuacjami. Jest to część frajdy. Nie oznacza to jednak, że możecie zacząć przewracać stoły.
+
+    - q: Czy inny gracz może nie zgodzić się na jakąś akcję?
+      a: Nie. Akcje nie wymagają zgody. Po prostu przeprowadź akcję.
+
+    - q: Wydaje mi się, że coś powinno mieć miejsce, jednak reguły nie każą mi tego robić. Co robić?
+      a: Wykonaj tylko to, co dosłownie wynika z Księgi Praw. Nawet jeżeli istnieje podobna reguła.
+
+    - q: Reguła używa konkretnego terminu lub akcji. Czy dotyczy to również innej, zbliżonej reguły lub akcji?
+      a: Nie! Zakładaj, że mamy na myśli tylko oryginalny termin, a nie terminy pokrewne. Dla przykładu terminy ruch i umieszczanie różnią się od siebie i jest to bardzo istotne rozróżnienie w regułach takich jak Twierdza.
+      laws:
+        - "6.2.2"
+
+- category: Ogólne
+  color: "#000000"
+  questions:
+    - q: Które komponenty to budynki, a które to żetony?
+      a: Budynki to tekturowe kwadraciki, które umieszczamy na kwadratowych pustych polach na mapie. Żetony to okrągkłe tekturowe komponenty, które nie zajmują pól budynków. Szczegółową listę budynków i żetonów znajdziesz w instrukcji oraz na odwrocie planszy frakcji.
+      laws:
+        - "2.5"
+        - "16.6.3"
+        - "16.6.32"
+
+    - q: Czy tracę punkty kiedy mój budynek zostanie usunięty?
+      a: Nie!
+      laws:
+        - "2.5.2"
+        - "16.6.22"
+
+    - q: Czy mogę zagrać kilka kart zasadzki podczas jednej bitwy?
+      a: Nie! Tylko jedna karta zasadzki na gracza może być użyta podczas jednej bitwy.
+      laws:
+        - "4.3.1"
+
+    - q: Czy karty "... Przysługi" naprawdę usuwają wszystkie komponenty przeciwników z podanych polan?
+      a: Tak, z wyjątkiem Włóczęgi i Szczurzego Lorda.
+      laws:
+        - "9.2.2"
+        - "14.2.2"
+
+    - q: Jak mogę się pozbyć żetonów przeciwnika takich jak żetony Sympatyków.
+      a: Tak jak wszystkich inne komponenty, używając walki lub zdolności która usuwa komponenty.
+      laws:
+        - "2.1"
+        - "2.5"
+        - "4.3"
+
+    - q: Czy rozmieszczenie komponenty na polanie z Sympatykami aktywuje bunt?
+      a: Nie! Tylko przemieszczenie wojownika na polane lub usunięcie z polany żetonu Sympatyków aktywuje bunt.
+      laws:
+        - "8.2.6"
+        - "8.2.5"
+
+    - q: Gdzie należy odłożyć usunięte budynki i żetony?
+      a: Zwykle na plansze lub do puli zasobów gracza który jest właścicielem komponentów. Patrz zasada 2.5.
+      laws:
+        - "2.5"
+        - "16.6.22"
+
+    - q: Co oznacza "aktywacja" komponent w celu przekucia karty? Czy z danym komponentem coś się dzieje?
+      a: Nie. Aktywacja oznacza "Mam go, i chcę go użyć w celu przekucia." Nie musisz odrzucać komponentu ani nic robić oprócz wskazania na komponent i powiedzenia "Aktywuje go żeby przekuć karte."
+      laws:
+        - "4.1.1"
+
+    - q: Czy mogę nie zgodzić sie na akcje innego gracza?
+      a: Nie, żadne akcjie w grze Root nie wymagaja zgody. Na przykład, Włóczęga nie wymaga zgody aby stworzyć z kimś sojusz lub udzielić pomocy, a gracz nie wymaga zgody Kompani Plemion aby kupować od nich usługi.
+      laws:
+        - "9.2.8"
+        - "9.5.4"
+        - "11.2.6"
+
+- category: Karty
+  color: "#000000"
+  questions:
+    - q: Karta Płatnerze wspomina obrażenia z "rzutów koścmi". Czy to naprawdę oznacza tylko obrażenia z rzutów kośćmi a nie wszystkie obrażnia?
+      a: W rzeczy samej! Należy zignorować tylko obrażenia związane z rzutem kośćmi.
+
+- category: Markiza de Kot
+  color: "#e07a37"
+  questions:
+    - q: Co w sytuacji gdy wszystkie moje komponenty zostały usunięte z mapy?
+      a: Niestety, prawdopodobnie wypadasz z gry. Jeśli jednak w grze znajduje się Kompania Rzecznych Plemion lub Zaciężni, możesz ponownie zbudować budynek, jeśli rządzisz polaną. Tak czy inaczej, jeśli tak się stanie, gra prawdopodobnie zakończy się w mgnieniu oka!
+      laws:
+        - "6"
+
+    - q: Czy ktoś może przemieścić komponent na polanę z żetonem twierdzy?
+      a: Tak! "Rozmieszczenie" to co innego niż "przemieszczenie".
+      laws:
+        - "4.2"
+        - "6.2.2"
+
+    - q: Jeśli ktoś wykorzysta karty zasadzki na polanie z Twierdzą, kiedy moi wojownicy zostaną umieszczeni z powrotem na polanie z Twierdzą?
+      a: Natychmiast, o ile wydasz kartę. Oznacza to, że polana z twierdza nie bedzie bezbronna w przypadku gdy zasadzka usunie ostatnie dla koty.
+      laws:
+        - "4.3.1"
+        - "6.2.3"
+
+    - q: Czy Markiza może rozmieszczać zacięznych na polanie z Twierdzą?
+      a: Tak!
+      laws:
+        - "6.2.3"
+
+- category: Dynastie Orlich Gniazd
+  color: "#416eb0"
+  questions:
+    - q: Czy jeśli mam pustą kolumnę dochodzi do Zamieszek?
+      a: Nie! Zamieszki wybuchają, jeśli w Twoim Dekrecie znajduje się karta, której nie możesz ukończyć.
+      laws:
+        - "7.7"
+
+    - q: Czy Zamieszki wybuchają jeżeli mogę wykonać akcje dla niektórych, ale nie wszystkich kart w kolumnie?
+      a: Tak! W momencie, gdy nie możesz ukończyć nawet jednej karty, wkraczasz w Zamieszki.
+      laws:
+        - "7.7"
+
+    - q: Czy mogę poruszyć jednego wojownika na raz z tej samej polany, aby wypełnić wiele kart Ruchu z mojego Dekretu? Czy mogę przesuwać tego samego wojownika tam i z powrotem, mając odpowiednie karty?
+      a: Tak! Możesz rozgrywać Dekret wedle uznania, o ile pozwalają na to karty. Wystarczy przestrzegać zasad poruszania się i będzie dobrze.
+      laws:
+        - "7.5.2"
+
+    - q: Jak działą zdolność Despoty? Czy nie dostaję już punktu zwycięstwa za usunięcie budynku lub żetonu?
+      a: Masz całkowitą rację! Otrzymujesz dodatkowy punkt, chociaż nie otrzymasz wielu dodatkowych punktów, jeśli usuniesz wiele budynków i/lub żetonów w tym samym czasie.
+      laws:
+        - "7.8.4"
+
+    - q: Jeśli mam Charyzmatycznego Przywódcę i wykonuję akcje Werbunek, ale w moich zasobach pozostał jeszcze jeden Wojownik. Czy nie umieszczam żadnych wojowników lub jednego wojownika przed wejściem w Zamieszki?
+      a: Umieść jednego wojownika. Jeśli zostaniesz poproszony o umieszczenie elementów, ale nie możesz umieścić ich wszystkich, musisz umieścić ich jak najwięcej.
+      laws:
+        - "7.7"
+        - "7.8.3"
+
+- category: Sojusz Stworzeń Leśnych
+  color: "#68b653"
+  questions:
+    - q: Czy mogę dokonać rewolty z bazą o symbolu, którego bazę już zbudowałem?
+      a: Nie! Akcja rewolty mówi, że musisz wybrać polanę z sympatykami pasującą do niewybudowanej bazy.
+      laws:
+        - "8.4.1"
+
+    - q: Czy mogę wykonać akcje rewolty na polanie z żetonem twierdzy?
+      a: Nie! Najpierw musiałbyś położyć żeton sympatyka, czego nie możesz zrobić ze względu na specjalną zdolność Twierdza.
+      laws:
+        - "6.2.2"
+        - "8.4.1"
+
+    - q: Co się stanie, jeśli Zaciężny usunie żeton sympatyka?
+      a: Gracz kontrolujący najemnika wywoła bunt, ponieważ bunt określa "Kiedy gracz usuwa..." Jest to również wyraźnie omówione w Księdze Praw E.3.7.
+      laws:
+        - "8.2.6"
+        - "16.4.3.7"
+
+    - q: Czy Włóczęga wywołuje oburzenie?
+      a: To zależy. Każdy gracz, który usunie żeton sympatyka, wywoła bunt. Wejście na polanę z sympatykami nie, ponieważ Włóczęga jest pionkiem, a nie wojownikiem.
+      laws:
+        - "8.2.6"
+
+    - q: Czy Zaciężni aktywują Prawo Wojny?
+      a: Zaciężni kontrolowani przez wrogiego gracza dołączą do wojowników frakcji tego gracza. Zatem jeśli Dynastie mają 1 wojownika Dynastii i 2 wojowników najemników, które kontroluje na polanie, na tej polanie zadziała Prawo Wojny. Jednak niekontrolowani Zaciężni nie aktywowaliby Prawa Wojny.
+
+- category: Włóczęga
+  color: "#6d6e70"
+  questions:
+    - q: Czy mogę przekuwać karty wymagające wielu rónych symboli?
+      a: "Nie. Twoje młoty odpowiadają aktualnej polanie, więc możesz tworzyć tylko w jednym kolorze na raz. Dobra wiadomość: karty wielokolorowe i tak są dla Ciebie bezużyteczne!"
+      laws:
+        - "9.2.1"
+
+    - q: Czy wywołam bunt Sojuszu, kiedy wkroczę na Polanę z Sympatykami?
+      a: Nie! Jesteś przyjaznym Włóczęgą i masz pionka, a nie wojownika.
+      laws:
+        - "8.2.6"
+        - "9.2.2"
+
+    - q: Czy jeśli będac w sojuszu z Sojuszem Stworzeń Leśnych, przesunę ich wojowników na Polanę z Sympatykami, wywołam Bunt?
+    - q: If I move Allied warriors of the Woodland Alliance into a sympathetic clearing, do I trigger Outrage?
+      a: Nie! (*To prawo zostało zmienione wraz z wydaniem Rozszerzenia Maruderzy i 8-ego wydania, ponieważ ruch frakcji będącej w sojuszu z Włóczęgą, używa teraz słowa kluczowego "Zmuś").
+      laws:
+        - "8.2.6"
+        - "9.2.9"
+
+    - q: Czy Włóczęga staje się wrogo nastawiony do frakcji, kiedy usuwa jeden z jej budynków lub żetonów, ale nie ma wojowników?
+      a: Nie! Nie ma świadków, którzy by go widzieli. Spal wszystko do gołej ziemii.
+      laws:
+        - "9.2.9.3"
+
+    - q: Jeśli Włóczęga usunie wojownika Zaciężnych, kontrolowanego przez inną frakcję, czy Włóczęga stanie się wrogi wobec tej frakcji?
+      a: Nie! Zaciężnych nie są własnością tej frakcji.
+      laws:
+        - "9.2.9.3"
+
+    - q: Jeśli Włóczęga walczy za pomocą kontrolowanego Zaciężnego i usuwa pionki wroga, czy Włóczęga staje się wrogi w stosunku do tej frakcji lub zdobywa punkty niesławy, jeśli jest już wrogi?
+      a: Nie! Zaciężni nie korzystają ze zdolności kontrolującej ich frakcji (E.3.5) ani nie pozwalają frakcji ich kontrolującej  zdobywać punktów za usuwanie wrogich pionków (E.3.6).
+      laws:
+        - "9.2.9.3"
+        - "16.4.3.5"
+        - "16.4.3.6"
+
+    - q: Czy Włóczęga może przemieszczać wojowników sojusznika za pomocą promu z rozszerzenia Podziemia? Jeśli tak, czy frakcja Sojuszników również dobiera kartę?
+      a: Tak dla obu!
+      laws:
+        - "16.2.2.5"
+
+    - q: Czy Włóczęga może stworzyć koalicję z graczem, który aktywował kartę dominacji? Czy gracz może aktywować kartę dominacji po tym, jak Włóczęga stworzył z nim koalicję?
+      a: Włóczęga nie może utworzyć koalicji z graczem który zagrał karte dominacji, ponieważ nie ma on na torze znacznika punktów zwycięstwa. Jednakże gracz może aktywować kartę dominacji po tym, jak Włóczęga utworzy z nim koalicję!
+      laws:
+        - "9.2.8"
+
+    - q: Włóczęga jest ze mną w koalicji. Czy nadal mogę z nim walczyć? Czy nadal może ze mną walczyć?
+      a: Nie, żadne z was nie może ze sobą walczyć. (*To orzeczenie uległo zmianie wraz z rozszerzeniem Maruderzy i 8-ym wydaniem. Zasady bitwy określają teraz, że musisz walczyć z wrogiem, co oznacza dowolnego gracza niebędącego w koalicji.)
+      laws:
+        - "4.3"
+        - "9.2.8"
+
+    - q: Czy mogę zdobyć punkty zwycięstwa Niesławy, usuwając pion za pomocą Uderzenia?
+      a: Nie! Niesława określa, że musisz usunąć ten element w bitwie w swojej turze. W końcu zabicie kogoś z kuszy jest postępowaniem tchórza.
+      laws:
+        - "9.2.9.3.1"
+
+- category: Kompania Plemion Rzecznych
+  color: "#5bc3bd"
+  questions:
+    - q: Czy zatrudniając najemników Plemion Rzecznych, mogę rozpocząć z nimi bitwę, nawet jeśli nie mam żadnych elementów na polanie, na której walczę?
+      a: Smiało! W końcu, jeśli nie masz tam żadnych wojowników, nie ma z kim dzielić obrażeń.
+      laws:
+        - "11.2.7"
+
+    - q: Czy mogę wyeksportować kartę, jeśli znajdującego się na niej przedmiotu nie ma w zasobach lub jeśli mam już jej trwały efekt?
+      a: Nie! Aby móc ją wyeksportować, musisz najpierw być w stanie ją wytworzyć. W takich przypadkach nie możnesz wyeksportować karty.
+      laws:
+        - "11.5.3"
+
+    - q: Czy Plemiona Rzeczne mogą odmówić sprzedaży jednej ze swoich usług?
+      a: Nie! Dopóki płacisz koszty, otrzymujesz usługę.
+      laws:
+        - "11.2.6"
+
+    - q: Czy Najemnicy Plemion Rzecznych mogą być wykorzystywani do walki z Zaciężnymi kontrolowanymi przez Plemiona Rzeczne?
+      a: Tak! Najemnicy po prostu nie będą walczyć z samymi Plemionami Rzecznymi, a nie z kontrolowanymi najemnikami.
+      laws:
+        - "11.2.7"
+
+- category: Jaszczurzy Kultyści
+  color: "#fcf065"
+  questions:
+    - q: Czy mogę użyć Nawrócenia lub Uświęcenia, aby usunąć tylko wojownika lub budynek, ale nie umieścić tam własnego wojownika lub budynku?
+      a: Nie! Zasada mówi, że "musisz dokończyć spisek", a zasady frakcji zastępują zasady ogólne, jeśli nie możesz spełnić ich obu.
+      laws:
+        - "10.4.3"
+
+- category: Żelazna Straż
+  color: "#8b8d90"
+  questions:
+    - q: Czy w drugim kroku umieszczania reliktów mogę wybrać, które relikty trafią na które polany?
+      a: Ułóż je losowo.
+      laws:
+        - "15.3.3"
+
+    - q: Prawo (15.5.2.II) mówi, że muszę rządzić polaną, aby na niej walczyć, ale Instrukcja i planszetka tego nie mówią. Co się dzieje?
+    - q: The Law (15.5.2.II) says I need to rule a clearing in order to battle in it, but the Learn to Play and the board do not say this. What’s going on?
+      a: Nie musisz kontrolować, żeby walczyć - tylko do akcji Odnajdywanie!
+      laws:
+        - "15.5.2.2"
+
+    - q: Jeśli najemnicy usuną relikt, jak mogę rozpatrzyć zdolność Cenne Trofea?
+      a: Nie przyznaje się żadnych punktów zwycięstwa. Jeśli Zaciężny jest kontrolowany, kontrolujący go gracz decyduje, gdzie umieścić relikt. Jeśli Zaciężny jest niekontrolowany, gracz w swojej turze decyduje, gdzie umieścić relikt.
+      laws:
+        - "15.2.5"
+
+    - q: Czy zdolność Cenne Trofea Straży uruchamia się, jeśli Włóczęga Przybłęda usunie relikt za pomocą Namowy, ale jest w koalicji ze Strażnikami?
+      a: Jak napisano, nie, ponieważ Włóczęga nie jest w tym przypadku wrogiem. Jednak to, dlaczego Włóczęga miałby chcieć to zrobić, nie mieści mi się w głowie!
+      laws:
+        - "15.2.5"
+
+- category: Władca Szczurów
+  color: "#e11b3f"
+  questions:
+    - q: Kto w bitwie decyduje, czy trafienie usuwa Lorda Szczurów, czy zwykłego wojownika?
+      a: Gracz Władcą Szczurów decyduje, zgodnie z faktem, że gracz otrzymujący trafienia wybiera kolejność usuwania budynków i żetonów. Zatem jeśli przyjąłeś dwa trafienia i masz Lorda, dwóch wojowników i twierdzę, możesz usunąć dwóch wojowników lub możesz usunąć jednego wojownika i Lorda. Chociaż nie zalecamy wcześniejszego usuwania Lorda!
+      laws:
+        - "14.2.2"
+        - "4.3.4"
+
+    - q: Co dokładnie jest potrzebne, aby Szczury nękały polanę?
+      a: Musisz (1) kontrolować polane, (2) mieć tam komponent Szczurów i (3) nie mieć tam żadnych komponentów wroga. Na przykład możesz nękać żetonem Szturmu i Najemnikiem Plemion Rzecznych. Nie możesz nękasz jedynie wojownikiem Najemników Rzecznego Ludu. Nie możesz nękać żetonem szturmu, Najemnikiem Plemion Rzecznych i Faktorią.
+      laws:
+        - "14.6.2"
+
+    - q: Czy Hałaśliwy nastrój pozwala Szczurom dobrać więcej kart, gdy korzystają z karty Charm Offensive z talii Banitów i Partyzantów?
+      a: Nie. Hałaśliwy nastrój każe ci dobierać więcej kart tylko podczas kroku dobierania wieczorem.
+      laws:
+        - "14.7.6"
+
+    - q: Czy deklaruję, że korzystam z moich Szabrowników przed czy po tym, jak obrońca zadeklaruje, że zagrywa kartę zasadzkę?
+      a: Deklarujesz użycie Szabrowników przed zasadzką.
+      laws:
+        - "14.2.5"
+
+- category: Przygotowanie Zaawansowane Rozgrywki
+  color: "#000"
+  questions:
+    - q: "Żelazna Straż: Czy w drugim kroku umieszczania reliktów mogę wybrać, które relikty trafią na które polany?"
+      a: Ułóż je losowo. (To powiedziawszy, zwykle nie będzie to miało większego znaczenia, ponieważ gracze mogą dostosować swoją strategię, aby uniemożliwić Ci efektywne Odnajdywanie).
+
+    - q: "Żelazna Straż: Co się stanie, jeśli na krawędzi mapy nie ma dwóch sąsiadujących ze sobą polan?"
+      a: Odłóż kartę zaawansowanego przygotowania Straży do pudełka i dobierz nowe karty zaawansowanego przygotowania, aż wylosujesz frakcję militarną (czerwoną z mieczami). Ta frakcja zastąpi Straż. Prawdopodobnie dodamy ogólne zasady mulliganów, które będą to odzwierciedlać, w miarę jak do gry będzie dodawanych więcej frakcji i coraz bardziej możliwe będzie wylosowanie frakcji, której nie da się skonfigurować.
+
+- category: Zaciężni
+  color: "#000"
+  questions:
+    - q: "Wygnaniec: Czy mogę dać Wygnańcowi wyczerpany przedmiot?"
+      a: Tak!
+
+    - q: "Wygnaniec: Czy mogę dać Wygnańcowi wiele przedmiotów w tej samej turze?"
+      a: Tak!
+
+    - q: "Zbójcy: Jeśli Zbójcy usuną wojownika markizy, czy markiz może skorzystać ze szpitali polowych?"
+      a: Nie. Zdolność pojawia się podczas poruszania się "po ścieżce" ze Zbójcami, więc w tym momencie nie znajdują się oni na polanie.
+
+    - q: "Wiosenne Powstanie: Czy Zaciężny może walczyć z Wiosennym Powstaniem?"
+      a: Nie. Nie mają na ręce kart, które mogliby odrzucić.
+
+    - q: "Prorocy Ciepłego Słońca: Kiedy wymuszam bitwę, a obrońca zagrywa kartę zasadzki, który gracz podejmuje decyzję o usunięciu pionka i zagraniu kontra zasadzki?"
+      a: Gracz zmuszony do walki.
+
+    - q: "Powiernicy Ognia: Czy zasada “najpierw wojownicy” uniemożliwia mi usunięcie niebronionych budynków lub żetonów gracza, jeśli znajdują się tam wojownicy innego gracza?"
+      a: Nie, działa to w taki sam sposób, jak bitwa lub Uderzenie Włóczęgi - jeśli gracz ma tam wojowników, musi najpierw ich usunąć.
+
+- category: Punkty Terenu
+  color: "#000"
+  questions:
+    - q: "Legendarna Kuźnia: Czy potrzebuję tylko komponentu frakcji w Legendarnej Kuźni, aby przekuć tam przedmiot, czy też potrzebuję czegoś innego?"
+      a: Nadal przestrzegasz normalnych zasad przekuwania, więc nadal musisz odrzucić kartę, na której znajduje się dostępny przedmiot - w tym przypadku przedmiot znajdujący się na karcie Legendarnej Kuźni - potrzebujesz także komponentu do przekuwania na odpowiednich symbolach polan, tak jak pokazane na karcie. Potrzebujesz także komponentu frakcji w Legendarnej Kuźni.
+
+    - q: "Zaginione Miasto: Czy mogę przeprowadzić rewolte w Zaginionym Mieście, jeśli zapełniłem już pola polany moimi bazami, ale nadal mam bazę na mojej planszy?"
+      a: Tak, możesz! Zaginione Miasto jest bardzo podatne na rewolty, gdyż można je traktować jak każdy kolor.
+
+    - q: "Prom: Jeśli przesunę Prom na polanę z żetonem sympatyków, czy najpierw dobieram kartę, czy najpierw uruchamiam bunt?"
+      a: Dzieje się to w tym samym czasie, więc Ty decydujesz o kolejności.

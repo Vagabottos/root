@@ -9,7 +9,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o --host=0.0.0.0",
+    "start": "ng serve -o",
     "build": "npm run lint && npm run prepare && ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint",

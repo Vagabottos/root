@@ -6,11 +6,12 @@ import slugify from 'slugify';
 
 import { Subject } from 'rxjs';
 
+import * as deDERules from '../assets/i18n/rules/de-DE.json';
 import * as enUSRules from '../assets/i18n/rules/en-US.json';
 import * as ptBRRules from '../assets/i18n/rules/pt-BR.json';
 import * as esESRules from '../assets/i18n/rules/es-ES.json';
-import * as deDERules from '../assets/i18n/rules/de-DE.json';
 import * as ruRURules from '../assets/i18n/rules/ru-RU.json';
+import * as plPLRules from '../assets/i18n/rules/pl-PL.json';
 
 const rules = {
   'en-US': (enUSRules as any).default || enUSRules,
@@ -18,13 +19,13 @@ const rules = {
   'es-ES': (esESRules as any).default || esESRules,
   'de-DE': (deDERules as any).default || deDERules,
   'ru-RU': (ruRURules as any).default || ruRURules,
+  'pl-PL': (plPLRules as any).default || plPLRules
 };
 
 @Injectable({
   providedIn: 'root'
 })
 export class RulesService {
-
   public indexVisibilityHash = {};
 
   private indexRuleHash = {};
@@ -51,7 +52,6 @@ export class RulesService {
   }
 
   public loadRules() {
-
     // the formatter needs this to have run once
     // and this needs the formatter to run correctly
     // bad solution: we just run it twice.
@@ -60,8 +60,12 @@ export class RulesService {
   }
 
   public slugTitle(index: string, title: string): string {
-    const baseString = `${index}-${slugify(title.toLowerCase())}`.split('"').join('');
-    if (baseString.match(/^.+(\.)$/)) { return baseString.substring(0, baseString.length - 1); }
+    const baseString = `${index}-${slugify(title.toLowerCase())}`
+      .split('"')
+      .join('');
+    if (baseString.match(/^.+(\.)$/)) {
+      return baseString.substring(0, baseString.length - 1);
+    }
     return baseString;
   }
 
@@ -80,32 +84,37 @@ export class RulesService {
 
           if (major) {
             chosenString += major;
-            chosenNode = allRules[(+major) - 1];
+            chosenNode = allRules[+major - 1];
           }
 
           if (minor && chosenNode && chosenNode.children) {
             chosenString += `.${minor}`;
-            chosenNode = chosenNode.children[(+minor) - 1];
+            chosenNode = chosenNode.children[+minor - 1];
           }
 
           if (child && chosenNode && chosenNode.children) {
             chosenString += `.${child}`;
-            chosenNode = chosenNode.children[(+child) - 1];
+            chosenNode = chosenNode.children[+child - 1];
           }
 
           if (desc && chosenNode && chosenNode.subchildren) {
             chosenString += `.${toRoman(desc)}`;
-            chosenNode = chosenNode.subchildren[(+desc) - 1];
+            chosenNode = chosenNode.subchildren[+desc - 1];
           }
 
           if (descDesc && chosenNode && chosenNode.subchildren) {
-            chosenString += `${String.fromCharCode((+descDesc) + 96)}`;
-            chosenNode = chosenNode.subchildren[(+descDesc) - 1];
+            chosenString += `${String.fromCharCode(+descDesc + 96)}`;
+            chosenNode = chosenNode.subchildren[+descDesc - 1];
           }
 
-          if (!chosenNode) { return `<span class="error">Not Found: ${subtype}</span>`; }
+          if (!chosenNode) {
+            return `<span class="error">Not Found: ${subtype}</span>`;
+          }
 
-          return `<a href="#${this.slugTitle(subtype, chosenNode.name)}" class="rule-link">${chosenString}</a>`;
+          return `<a href="#${this.slugTitle(
+            subtype,
+            chosenNode.name
+          )}" class="rule-link">${chosenString}</a>`;
         }
 
         if (type === 'faction') {
@@ -135,7 +144,9 @@ export class RulesService {
     const renderer = this.getCustomRenderer(baseRules);
 
     const format = (str: string) => {
-      if (!str) { return; }
+      if (!str) {
+        return;
+      }
       return marked(str, { renderer });
     };
 
@@ -146,7 +157,8 @@ export class RulesService {
       rule.text = format(rule.text);
       rule.pretext = format(rule.pretext);
       rule.index = `${majorRuleIndex + 1}.`;
-      this.indexRuleHash[rule.index] = this.slugTitle(rule.index,
+      this.indexRuleHash[rule.index] = this.slugTitle(
+        rule.index,
         rule.plainName || rule.name
       );
 
@@ -156,37 +168,60 @@ export class RulesService {
         childRule.pretext = format(childRule.pretext);
         childRule.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1]);
         this.indexRuleHash[childRule.index] = this.slugTitle(
-          childRule.index, childRule.plainName || childRule.name
+          childRule.index,
+          childRule.plainName || childRule.name
         );
 
         (childRule.children || []).forEach((grandchildRule, revRuleIndex) => {
           grandchildRule.formattedName = format(grandchildRule.name);
           grandchildRule.text = format(grandchildRule.text);
           grandchildRule.pretext = format(grandchildRule.pretext);
-          grandchildRule.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1]);
+          grandchildRule.index = buildIndex([
+            majorRuleIndex + 1,
+            minorRuleIndex + 1,
+            revRuleIndex + 1,
+          ]);
           this.indexRuleHash[grandchildRule.index] = this.slugTitle(
-            grandchildRule.index, grandchildRule.plainName || grandchildRule.name
+            grandchildRule.index,
+            grandchildRule.plainName || grandchildRule.name
           );
 
-          (grandchildRule.subchildren || []).forEach((descendantNode, descRuleIndex) => {
-            descendantNode.formattedName = format(descendantNode.name);
-            descendantNode.text = format(descendantNode.text);
-            descendantNode.index = buildIndex([majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1, descRuleIndex + 1]);
-            this.indexRuleHash[descendantNode.index] = this.slugTitle(descendantNode.index,
-              descendantNode.plainName || descendantNode.name
-            );
+          (grandchildRule.subchildren || []).forEach(
+            (descendantNode, descRuleIndex) => {
+              descendantNode.formattedName = format(descendantNode.name);
+              descendantNode.text = format(descendantNode.text);
+              descendantNode.index = buildIndex([
+                majorRuleIndex + 1,
+                minorRuleIndex + 1,
+                revRuleIndex + 1,
+                descRuleIndex + 1,
+              ]);
+              this.indexRuleHash[descendantNode.index] = this.slugTitle(
+                descendantNode.index,
+                descendantNode.plainName || descendantNode.name
+              );
 
-            (descendantNode.subchildren || []).forEach((descDescendantNode, descDescRuleIndex) => {
-              descDescendantNode.formattedName = format(descDescendantNode.name);
-              descDescendantNode.text = format(descDescendantNode.text);
-              descDescendantNode.index = buildIndex(
-                [majorRuleIndex + 1, minorRuleIndex + 1, revRuleIndex + 1, descRuleIndex + 1, descDescRuleIndex + 1]
+              (descendantNode.subchildren || []).forEach(
+                (descDescendantNode, descDescRuleIndex) => {
+                  descDescendantNode.formattedName = format(
+                    descDescendantNode.name
+                  );
+                  descDescendantNode.text = format(descDescendantNode.text);
+                  descDescendantNode.index = buildIndex([
+                    majorRuleIndex + 1,
+                    minorRuleIndex + 1,
+                    revRuleIndex + 1,
+                    descRuleIndex + 1,
+                    descDescRuleIndex + 1,
+                  ]);
+                  this.indexRuleHash[descDescendantNode.index] = this.slugTitle(
+                    descDescendantNode.index,
+                    descDescendantNode.plainName || descDescendantNode.name
+                  );
+                }
               );
-              this.indexRuleHash[descDescendantNode.index] = this.slugTitle(
-                descDescendantNode.index, descDescendantNode.plainName || descDescendantNode.name
-              );
-            });
-          });
+            }
+          );
         });
       });
     });
@@ -199,19 +234,25 @@ export class RulesService {
   }
 
   public setVisibility(index: string) {
-    if (index.endsWith('.')) { index = index.substring(0, index.length - 1); }
-    const allEntries = index.split('.');
+    setTimeout(() => {
+      if (index.endsWith('.')) {
+        index = index.substring(0, index.length - 1);
+      }
+      const allEntries = index.split('.');
 
-    // take care of the first entry
-    this.indexVisibilityHash[allEntries[0]] = this.indexVisibilityHash[allEntries[0]] || { visible: true };
-    let curObj = this.indexVisibilityHash[allEntries[0]];
+      // take care of the first entry
+      this.indexVisibilityHash[allEntries[0]] = this.indexVisibilityHash[
+        allEntries[0]
+      ] || { visible: true };
+      let curObj = this.indexVisibilityHash[allEntries[0]];
 
-    allEntries.shift();
+      allEntries.shift();
 
-    // iteratively do the rest
-    allEntries.forEach(idx => {
-      curObj[idx] = curObj[idx] || { visible: true };
-      curObj = curObj[idx];
-    });
+      // iteratively do the rest
+      allEntries.forEach((idx) => {
+        curObj[idx] = curObj[idx] || { visible: true };
+        curObj = curObj[idx];
+      });
+    }, 0);
   }
 }

@@ -158,7 +158,7 @@
         - "16.4.3.7"
 
     - q: Does the Vagabond cause Outrage?
-      a: Nope. The Vagabond is a pawn, not a warrior.
+      a: Depends. Any player removing a sympathy token will cause outrage. Moving into a sympathetic clearing will not, as the Vagabond is a pawn, not a warrior.
       laws:
         - "8.2.6"
 

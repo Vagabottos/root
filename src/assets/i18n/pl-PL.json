@@ -1,0 +1,170 @@
+{
+  "App": {
+    "NavTitle": "Zasady & Frakcje (6-ta Edycja)",
+    "NavTitleShort": "Zasady (6-ta Edycja)",
+    "RootPrefix": "Księga Praw",
+    "SearchPlaceholder": "Szukaj Zasad",
+    "Titles": {
+      "Search": "Szukaj Zasad",
+      "FAQ": "Najczęściej Zadawane Pytania",
+      "Reach": "Przygotuj Narzędzie Wyboru",
+      "Map": "Generator Map",
+      "Random": "Przygotowanie Losowe",
+      "DraftPlusOne": "Ciągnij +1",
+      "AdSet": "Przygotowanie Zaawansowane"
+    }
+  },
+  "Modal": {
+    "FAQ": {
+      "Title": "Najczęściej Zadawane Pytania",
+      "TitleShort": "FAQ",
+      "CloseButton": "Zamknij",
+      "Law": "Prawo",
+      "Q": "Pyt",
+      "A": "Odp"
+    },
+    "Reach": {
+      "Title": "Kalkulator Zasięgu",
+      "TitleShort": "Zasięg",
+      "CloseButton": "Zamknij",
+      "Choose": "Wybierz Nową Frakcje",
+      "DraftPlusOne": "Ciągnij +1",
+      "Error": "Wybór frakcji nieudany; zmień ustawienia wyboru i spróbuj ponownie.",
+      "Factions": {
+        "Marquise de Cat": "Markiza de Kot",
+        "Lord of the Hundreds": "Władca Szczurów",
+        "Keepers in Iron": "Żelazna Straż",
+        "Underground Duchy": "Podziemne Księstwo",
+        "Eyrie Dynasties": "Dynastie Orlich Gniazd",
+        "Vagabond (#1)": "Włóczęga (#1)",
+        "Riverfolk Company": "Kompania Plemion Rzecznych",
+        "Woodland Alliance": "Sojusz Leśnych Stworzeń",
+        "Corvid Conspiracy": "Krucza Konspiracja",
+        "Vagabond (#2)": "Włóczęga (#2)",
+        "Lizard Cult": "Jaszczurzy Kultyści"
+      },
+      "FactionsShort": {
+        "Marquise": "Markiza",
+        "Hundreds": "Szczury",
+        "Keepers": "Straż",
+        "Duchy": "Krety",
+        "Eyrie": "Dynastie",
+        "Vagabond #1": "Włóczęga #1",
+        "Riverfolk": "Kampania",
+        "Woodland": "Sojusz",
+        "Corvids": "Konspiracja",
+        "Vagabond #2": "Włóczęga #2",
+        "Cult": "Jaszczurki"
+      },
+      "Vagabonds": {
+        "Arbiter": "Rozjemca",
+        "Ranger": "Strażnik",
+        "Scoundrel": "Łotr",
+        "Thief": "Złodziej",
+        "Tinker": "Majsterkowicz",
+        "Vagrant": "Przybłęda",
+        "Adventurer": "Poszukiwacz Przygód",
+        "Ronin": "Ronin",
+        "Harrier": "Lotnik"
+      },
+      "Draft": {
+        "Players": {
+          "Player A": "Gracz A",
+          "Player B": "Gracz B",
+          "Player C": "Gracz C",
+          "Player D": "Gracz D",
+          "Player E": "Gracz E",
+          "Player F": "Gracz F"
+        },
+        "Headers": {
+          "Factions": "Frakcje",
+          "TurnDraftOrder": "Kolejność Tury/Losowania",
+          "Faction": "Frakcja",
+          "Reach": "Zasięg",
+          "Draft": "Losowanie",
+          "Player": "Gracze",
+          "Cards": "Karty",
+          "Picks": "Wybór",
+          "Turn": "Tura"
+        },
+        "Text": {
+          "Deck": "Talia",
+          "Map": "Mapa",
+          "Choose": "Wybierz mape, następnie wybierz talie. Wybierz 3 karty i odłóż resztę do talii."
+        }
+      },
+      "Adset": {
+        "Random": "Losowy",
+        "Random1": "Losowy (1)",
+        "Random2": "Losowy (2)",
+        "Generate": "Generuj",
+        "None": "Brak",
+        "Waiting": "Oczekiwanie na losowanie...",
+        "Players": "Gracze",
+        "Choices": {
+          "Map": "Wybór Mapy",
+          "Deck": "Wybór Talii",
+          "Players": "Liczba Graczy",
+          "Landmarks": "Punkty Ternu",
+          "Hirelings": "Dozwoleni Zaciężni",
+          "Factions": "Dozwolone Frakcje",
+          "RemindDrawFive": "Przypomnienie: Rozdaj każdemu graczowi po 5 kart."
+        },
+        "Deck": {
+          "Standard": "Standardowa Talia",
+          "EP": "Banici & Partyzanci"
+        },
+        "Landmarks": {
+          "ElderTreetop": "Stare Drzewo",
+          "LostCity": "Zaginione Miasto",
+          "BlackMarket": "Czarny Rynek",
+          "LegendaryForge": "Legendarna Kuźnia",
+          "TheFerry": "Tratwa",
+          "TheTower": "Wieża"
+        },
+        "Hirelings": {
+          "Spring Uprising (R)": " Wiosenne Powstanie (R)",
+          "Forest Patrol (R)": "Leśny Patrol (R)",
+          "Last Dynasty (R)": "Ostatnia Dynastia (R)",
+          "The Exile (R)": "Wygnaniec (R)",
+          "Popular Band (R)": "Popularny Zespół (R)",
+          "Furious Protector (R)": "Wściekły Opiekun (R)",
+          "Highway Bandits (R)": "Zbójcy (R)",
+          "Riverfolk Flotilla (R)": "Rzeczna Flotylla (R)",
+          "Warm Sun Prophets (R)": "Prorocy Ciepłego Słońca (R)",
+          "Sunward Expedition (R)": "Słoneczna Ekspedycja (R)",
+          "Corvid Spies (R)": "Szpiedzy Konspiracji (R)",
+          "Flame Bearers (R)": "Powiernicy Ognia (R)",
+          "Vault Keepers (R)": "Strażnicy Krypty (R)",
+          "Rabbit Scouts (D)": "Króliczy Zwiadowcy (D)",
+          "Feline Physicians (D)": "Koci Medycy (D)",
+          "Bluebird Nobles (D)": "Ptasi Arystokraci (D)",
+          "The Brigand (D)": "Bandyta (D)",
+          "Street Band (D)": "Uliczna Banda (D)",
+          "Stoic Protector (D)": "Stoicki Opiekun (D)",
+          "Bandit Gangs (D)": "Gangi Bandytów (D)",
+          "Otter Divers (D)": "Wydrzy Nurkowie (D)",
+          "Lizard Envoys (D)": "Wysłannicy Jaszczurów (D)",
+          "Mole Artisans (D)": "Kreci Rzemieślnicy (D)",
+          "Raven Sentries (D)": "Strażnicy Kruków (D)",
+          "Rat Smugglers (D)": "Szczurzy Szmuglerzy (D)",
+          "Badger Bodyguards (D)": "Borsuczy Ochroniarze (D)"
+        }
+      }
+    },
+    "Maps": {
+      "Title": "Generator Map",
+      "TitleShort": "Mapa",
+      "CloseButton": "Zamknij",
+      "MapNames": {
+        "fall": "Jesień",
+        "winter": "Zima",
+        "lake": "Jezioro",
+        "mountain": "Góry"
+      },
+      "Randomize": "Losuj",
+      "Balanced": "Balans",
+      "Error": "Próba ustawienia balansu niemożliwa. Spróbuj ponownie! Być może teraz zadziała.."
+    }
+  }
+}
