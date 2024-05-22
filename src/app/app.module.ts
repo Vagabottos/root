@@ -28,7 +28,7 @@ const langs = {
   'es-ES': (esES as any).default || esES,
   'de-DE': (deDE as any).default || deDE,
   'ru-RU': (ruRU as any).default || ruRU,
-  'pl-PL': (plPL as any).default || plPL,
+  'pl-PL': (plPL as any).default || plPL
 };
 
 export class JSONLoader implements TranslateLoader {
