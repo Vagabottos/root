@@ -301,44 +301,44 @@
       laws:
         - "15.2.5"
 
-- category: Advanced Setup
+- category: Preparação Avançada 
   color: "#000"
   questions:
-    - q: "Keepers in Iron: For the second step of placing relics, do I get to choose which relics go in which clearings?"
-      a: Place them randomly. (That said, it usually won’t make much difference, since people can adjust their strategy to prevent you from delving efficiently.)
+    - q: "Guardiões de Ferro: Para o segundo passo de colocar relíquias, eu posso escolher quais relíquias vão em cada clareira?"
+      a: Coloque elas aleatoriamente da mesma forma que no 1º passo. (Dito isto, normalmente não fará muita diferença, uma vez que os outros jogadores podem ajustar suas estratégias para impedir que você se escave de forma eficiente.)
       
-    - q: "Keepers in Iron: What happens if there aren’t any two adjacent clearings on the map edge?"
-      a: Return the Keepers’ advanced setup card to the box and draw new advanced setup cards until you draw a militant faction (red with swords). This faction replaces the Keepers. We will likely add general mulligan rules that mirror this as more factions get added to the game and it becomes increasingly possible to draw a faction that is impossible to set up.
+    - q: "Guardiões de Ferro: O que acontece se não houver duas clareiras adjacentes na borda do mapa?"
+      a: Retorne a carta de preparação avançada dos Guardiões para a caixa e pegue uma nova carta de preparação avançada até que apareça uma facção militante (nome vermelho com espada). Esta facção substituirá os Guardiões. Provavelmente adicionaremos regras gerais de mulligan que refletem isso à medida que mais facções forem adicionadas ao jogo e se tornar cada vez mais possível abrir uma facção que é impossível de realizar a preparação.
 
-- category: Hirelings
+- category: Capangas
   color: "#000"
   questions:
-    - q: "The Exile: Can I give the Exile an exhausted item?"
-      a: Yes!
+    - q: "O Exilado: Posso entregar um item exaurido ao Exilado?"
+      a: Sim!
 
-    - q: "The Exile: Can I give the Exile multiple items on the same turn?"
-      a: Yes!
+    - q: "O Exilado: Posso entregar vários itens ao Exilado no mesmo turno?"
+      a: Sim!
 
-    - q: "Highway Bandits: If the Highway Bandits remove a Marquise warrior, can the Marquise use Field Hospitals?"
-      a: Nope. The power happens while moving “on a path” with Highway Bandits, so they are not in a clearing at that moment.
+    - q: "Bandidos da Estrada: Se os Bandidos da Estrada removeremum guerreiro Marquês, os Marqueses podem utilizar Hospitais de Batalha?"
+      a: Não. O poder acontece enquanto se move “em um caminho” com os Bandidos da Estrada, então eles não estão em uma clareira naquele momento.
 
-    - q: "Spring Uprising: Can a hireling battle the Spring Uprising?"
-      a: Nope. They do not have a hand of cards to discard from.
+    - q: "Insurgentes da Primavera: Um capanga pode batalhar contra os Insurgentes da Primavera?"
+      a: Não. Eles não têm uma mão de cartas para descartar..
 
-    - q: "Warm Sun Prophets: When I force a battle and the defender plays an ambush card, which placer makes decisions about piece removal and playing counter-ambushes?"
-      a: The player who is being forced to battle.
+    - q: "Profetas do Sol Quente: Quando eu forço uma batalha e o defensor joga uma carta de emboscada, qual jogador faz as decisões de remover peças e jogar contra-emboscadas?"
+      a: O jogador que está sendo forçado a batalhar.
 
-    - q: "Flame Bearers: Does “warriors first” preclude me from removing undefended buildings or tokens of a player if there are warriors of another player there?"
-      a: No, this works in the same way as battle or the Vagabond’s Strike—if a player has warriors there, you must remove the warriors first.
+    - q: "Portadores do Fogo: “Guerreiros primeiro” me impede de remover construções ou marcadores indefesos de um jogador se houver guerreiros de outro jogador na clareira?"
+      a: Não, isso funciona da mesma forma que uma batalha ou o Ataque do Malandro – se um jogador tiver guerreiros lá, você deve removê-los primeiro, mas neste caso você não esta atacando o jogador que tem guerreiros.
 
-- category: Landmarks
+- category: Marcos
   color: "#000"
   questions:
-    - q: "Legendary Forge: Do I only need a faction piece at the Legendary Forge in order to craft an item there, or do I need something else?"
-      a: You still follow the normal crafting rules, so you still need to discard a card that has an available item on it—in this case, an item that is on the Legendary Forge card—and you need crafting pieces in the relevant clearing suits, as shown on the card. You just also need a faction piece at the Legendary Forge.
+    - q: "Forja Lendária: Eu só preciso de uma peça da minha facção na Forja Lendária para crir itens lá, ou preciso algo mais?"
+      a: Você ainda segue as regras normais de criação, então ainda precisa descartar uma carta que tenha um item disponível-neste caso, um item que esteja na carta da Forja Lendária-e precisa de peças para crar nas clareiras dos naipes necessários, como mostrado na carta. Você só precisa ter também uma peça na clareira da Forja Lendária.
 
-    - q: "Lost City: Can I revolt in the Lost City if I have already filled the clearing’s slots with my bases, but I still have a base left on my board?"
-      a: Yes, you can! The Lost City is very vulnerable to revolts, since it can be treated as any suit.
+    - q: "Cidade Perdida: Eu posso causr uma revolve na Cidade Perdida se eu ja tiver preenchido os locais de clareira com minhas bases, mas ainda tiver uma base sobrando no meu tabuleiro?"
+      a: Sim, você pode! A Cidade Perdida é muito vulnerável a revoltas, pois pode ser tratada como qualquer naipe.
 
-    - q: "Ferry: If I move the Ferry to a clearing with a sympathy token, do I draw the card first or trigger Outrage first?"
-      a: These happen at the same time, so you decide the order.
+    - q: "A Balse: Se eu mover a Balsa para uma clareira simpática, eu devo comprar uma carta primeiro ou ativar o Ultraje primeiro?"
+      a: Eles acontecem ao mesmo tempo, então você decide a ordem.
