@@ -44,9 +44,7 @@
         - name: Propriedade.
           text: A propriedade de uma peça de facção não pode mudar.. _(Por exemplo, os Marqueses não podem usar seus Hospitais de Batalha em mercenários dos Ribeirinhos ou capangas, já que não são guerreiros dos Marqueses.)_
         - name: Manipulação de Peças.
-          text: Peças são posicionadas e removidas conforme definido no Glossário (`rule:16.6.19`, `rule:16.6.22`). Se você for comandado a posicionar, tomar ou remover peças, mas não puder fazê-lo, você deve posicionar, tomar ou remover o máximo possível. _(Isto não permite evitar custos ou pré-requisitos. Você simplesmente fará menos do que poderia)_
-          
-          Pieces are placed and removed as defined in the Glossary (`rule:16.6.19`, `rule:16.6.22`). If you are prompted to place, take, or remove pieces but you cannot do so fully, you must place, take, or remove the maximum number possible. _(This does not allow you to avoid costs or prerequisites. You just cannot do less than the most you can.)_ Se várias peças forem removidas simultaneamente e isso desencadearia efeitos, remova todas as peças antes de ativar os efeitos.
+          text: Peças são posicionadas e removidas conforme definido no Glossário (`rule:16.6.19`, `rule:16.6.22`). Se você for comandado a posicionar, tomar ou remover peças, mas não puder fazê-lo, você deve posicionar, tomar ou remover o máximo possível. _(Isto não permite evitar custos ou pré-requisitos. Você simplesmente fará menos do que poderia)_ Se várias peças forem removidas simultaneamente e isso desencadearia efeitos, remova todas as peças antes de ativar os efeitos.
         - name: Uso de **Forçar**.
           plainName: Uso de Forçar.
           text: Alguns efeitos lhe permitem **forçar** um jogador ou suas peças a agirem. Resolva isso exatamente como se aquele jogador estivesse escolhendo fazê-lo, limitado pelo efeito. _(Por exemplo, se você forçar as Rapinas a moverem guerreiros, elas se beneficiam de Lordes da Floresta.)_
