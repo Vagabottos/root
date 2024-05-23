@@ -223,83 +223,83 @@
       laws:
         - "9.2.9.3.1"
 
-- category: Riverfolk Company
-  color: "#5bc3bd"
-  questions:
-    - q: When I hire Riverfolk mercenaries, can I start a battle with them even if I don't have pieces in the clearing where I'm battling?
-      a: Go for it! Plus, if you don't have any warriors there, there's no one to split hits with. 
-      laws:
-        - "11.2.7"
-    
-    - q: Can I export a card if the item on it is not in the supply or if I already have its permanent effect?
-      a: Nope! You must be able to craft the card in the first place in order to export it. In these cases, you could not export the card.
-      laws:
-        - "11.5.3"
-
-    - q: Can the Riverfolk refuse to sell you one of their services?
-      a: Nope! As long as you pay the cost, you get the service.
-      laws:
-        - "11.2.6"
-
-    - q: Can Riverfolk Mercenaries be used to battle hirelings controlled by the Riverfolk?
-      a: Yes! Mercenaries just won’t battle against the Riverfolk themselves, not controlled hirelings.
-      laws:
-        - "11.2.7"
-
-- category: Lizard Cult
+- category: Lagartos Cultistas
   color: "#fcf065"
   questions:
-    - q: Can I use Convert or Sanctify to only remove a warrior or building, but not place my own warrior or building there?
-      a: Nope! The rule says that “you must complete the conspiracy,” and faction rules overrule general rules if you cannot fulfill them both. 
+    - q: Eu posso Converter ou Santificar para somente remover um guerreiro ou construção, mas sem colocar meu próprio guerreiro ou construção na clareira alvo?
+      a: Não! As regras dizem que “você deve completar a conspiração”, e as regras da facção anulam as regras gerais se você não puder cumprir ambas.
       laws:
         - "10.4.3"
 
-- category: Keepers in Iron
-  color: "#8b8d90"
+- category: Companhia Ribeirinha
+  color: "#5bc3bd"
   questions:
-    - q: For the second step of placing relics, do I get to choose which relics go in which clearings?
-      a: Place them randomly.
+    - q: Quando eu contrato mercenários Ribeirinhos, eu posso iniciar uma batalha utilizando eles mesmo se eu não tiver peças na clareira que eu estiver batalhando?
+      a: Vá em frente! Além disso, se você não tiver nenhum guerreiro lá, não haverá ninguém com quem dividir os danos.
       laws:
-        - "15.3.3"
-        
-    - q: The Law (15.5.2.II) says I need to rule a clearing in order to battle in it, but the Learn to Play and the board do not say this. What’s going on?
-      a: You do not need to rule in order to battle—only to delve!
+        - "11.2.7"
+    
+    - q: Eu posso exportar uma carta se o item nela não estiver no suprimento compartilhado ou se eu já tiver o efeito permanente dela?
+      a: Não! Você deve ser capaz de criar a carta em primeiro lugar para poder exportá-lo. Nestes casos, você não pode exportar a carta.
       laws:
-        - "15.5.2.2"
+        - "11.5.3"
 
-    - q: If hirelings remove a relic, how do I resolve the Prized Trophy ability?
-      a: No victory points are awarded. If the hireling is controlled, the controlling player decides where to put the relic. If the hireling is uncontrolled, the player taking their turn decides where to put the relic.
+    - q: Os Ribeirinhos podem recusar de me oferecer um dos seus serviços?
+      a: Não! Desde que você pague o custo terá o serviço.
       laws:
-        - "15.2.5"
-        
-    - q: Does the Keepers’ Prized Trophies ability trigger if the Vagrant Vagabond removes a relic by using Instigate, but they’re in a coalition with the Keepers?
-      a: As written, no, since the Vagrant is not an enemy in this case. Why the Vagrant would want to do this is beyond me, though!
-      laws:
-        - "15.2.5"
+        - "11.2.6"
 
-- category: Lord of the Hundreds
+    - q: Mercenários Ribeirinhos podem ser usados para batalhar capangas controlados pelos Ribeirinhos?
+      a: Sim! Os Mercenários só não lutarão contra os próprios Ribeirinhos, mas lutarão não contra capangas controlados por eles.
+      laws:
+        - "11.2.7"
+
+- category: Senhor das Centenas
   color: "#e11b3f"
   questions:
-    - q: In battle, who chooses whether a hit removes the warlord or a regular warrior?
-      a: The Hundreds player does, matching the fact that the player taking hits chooses the order of removing buildings and tokens. So if you took two hits and you have the warlord, two warriors, and a stronghold, you could remove two warriors or you could remove one warrior and the warlord. Though we wouldn’t recommend removing the warlord early!
+    - q: Em batalha, quem escolhe se um dano remove o senhor da guerra ou um guerreiro comum?
+      a: O jogador das Centenas, da mesma forma que o jogador levando os danos escolhe a ordem em que remove construções e marcadores. Logo, se você receber dois dano e tiver o senhor da guerra, dois guerreiros e um forte, poderá remover dois guerreiros ou remover um guerreiro e o senhor da guerra. Embora não seja recomendado remover o senhor da guerra muito cedo!
       laws:
         - "14.2.2"
         - "4.3.4"
         
-    - q: What exactly is required for the Hundreds to oppress a clearing?
-      a: You need to (1) rule, (2) have a Hundreds piece there, and (3) have no enemy pieces there. For example, you do oppress with a mob and a Riverfolk Mercenary warrior. You do not oppress with only a Riverfolk Mercenary warrior. You do not oppress with a mob, a Riverfolk Mercenary warrior, and a Riverfolk trade post. 
+    - q: O que exatamente é necessário para que as Centenas oprimam uma clareira?
+      a: Você precisa (1) governar, (2) ter uma peça da Centenas ali e (3) não ter peças inimigas ali. Por exemplo, você oprime com uma multidão e um guerreiro Mercenário Ribeirinho. Você não oprime apenas com um guerreiro Mercenário Ribeirinho. Você não oprime com uma turba, um guerreiro Mercenário dos Ribeirinho e um entreposto comercial dos Ribeirinhos.
       laws:
         - "14.6.2"
         
-    - q: Does the Rowdy mood let the Hundreds draw more cards when they use the Charm Offensive card from the Exiles & Partisans deck?
-      a: No. Rowdy makes you draw more cards only during your draw step in Evening.
+    - q: O humor Conflitante permite as Centenas comprar mais cartas quando eles usam a carta Charme Ofensivo do baralho Exilados e Partisans?
+      a: Não. Conflitante faz você comprar mais cartas somente durante o o seu passo de comprar cartas no Anoitecer.
       laws:
         - "14.7.6"
 
-    - q: Do I declare whether I’m using my Looters before or after the defender declares that they are ambushing?
-      a: Declaring Looters.
+    - q: Eu devo declarar que estou usando Saqueadores antes ou depois que o defensor declare que vai utilizar uma carta de Emboscada?
+      a: Saqueadores primeiro.
       laws:
         - "14.2.5"
+
+- category: Guardiões de Ferro
+  color: "#8b8d90"
+  questions:
+    - q: Para o segundo passo de colocar relíquias, eu posso escolher quais relíquias vão em cada clareira?
+      a: Coloque elas aleatoriamente da mesma forma que no 1º passo.
+      laws:
+        - "15.3.3"
+        
+    - q: A Lei (15.5.2.II) diz que eu devo governar uma clareira para batalhar nela, mas o guia Aprenda a Jogar e o tabuleiro de jogador não dizem isso. Como deve ser feito?
+      a: Você não precisa governar para batalhar – apenas para escavar!
+      laws:
+        - "15.5.2.2"
+
+    - q: Se capangas removerem relíquias, como deve ser resolvida a habilidade Troféus Premiados?
+      a: Nenhum ponto de vitória é recebido. Se o capanga é controlado, o jogador que o controla decide onde colocar a relíquia. Se o capanga não é controlado, o jogador com o turno ativo decide onde colocar a relíquia.
+      laws:
+        - "15.2.5"
+        
+    - q: A habilidade Troféus Premiados dos Guardiões ativa se o Malandro Vagabundo remover uma relíquia utilizando sua Ação Especial Instigar, mas eles estiverem em uma coalizão com os Guardiões?
+      a: Conforme está escrito, não, já que o Vagabundo não é um inimigo neste caso. Mas por que o Vagabundo iria querer fazer isto está além da minha compreensão!
+      laws:
+        - "15.2.5"
 
 - category: Advanced Setup
   color: "#000"
