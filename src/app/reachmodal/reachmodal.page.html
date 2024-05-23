@@ -293,7 +293,7 @@
               <ion-list>
                 <ion-item>
                   <ion-select multiple="true" [(ngModel)]="adsetSettings.landmarks" [interfaceOptions]="{ header: 'Choose Landmarks', subHeader: 'Choose up to 2.' }" placeholder="Choose your landmarks..." (ionChange)="validateADSETLandmarkChoices()">
-                    <ion-select-option value="none">None</ion-select-option>
+                    <ion-select-option value="none">{{ 'Modal.Reach.Adset.None' | translate }}</ion-select-option>
                     <ion-select-option value="random: 2">{{ 'Modal.Reach.Adset.Random2' | translate }}</ion-select-option>
                     <ion-select-option value="random: 1">{{ 'Modal.Reach.Adset.Random1' | translate }}</ion-select-option>
                     <ion-select-option *ngFor="let landmark of landmarks" [value]="landmark">
@@ -333,9 +333,8 @@
               <ion-list>
                 <ion-item>
                   <ion-select multiple="true" [(ngModel)]="adsetSettings.validHirelings" [interfaceOptions]="{ header: 'Choose Hirelings', subHeader: 'Choose at least 3.' }" placeholder="Choose your hirelings..." (ionChange)="validateADSETHirelingChoices()">
-                    <ion-select-option value="none">None</ion-select-option>
-                    <ion-select-option value="all">All</ion-select-option>
-
+                    <ion-select-option value="none">{{ 'Modal.Reach.Adset.None' | translate }}</ion-select-option>
+                    <ion-select-option value="all">{{ 'Modal.Reach.Adset.All' | translate }}</ion-select-option>
                     <ion-select-option *ngFor="let hireling of formattedHirelings" [value]="hireling">
                       {{ hireling }}
                     </ion-select-option>
@@ -374,8 +373,7 @@
               <ion-list>
                 <ion-item>
                   <ion-select multiple="true" [(ngModel)]="adsetSettings.validFactions" [interfaceOptions]="{ header: 'Choose Factions', subHeader: 'Choose at least ' + (adsetSettings.playerCount + 1) + '.' }" placeholder="Choose your factions..." (ionChange)="validateADSETFactionChoices()">
-                    <ion-select-option value="all">All</ion-select-option>
-
+                    <ion-select-option value="all">{{ 'Modal.Reach.Adset.None' | translate }}</ion-select-option>
                     <ion-select-option *ngFor="let faction of formattedFactions" [value]="faction">
                       {{ 'Modal.Reach.Factions.' + faction | translate }}
                     </ion-select-option>

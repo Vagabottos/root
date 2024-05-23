@@ -1,0 +1,178 @@
+{
+  "App": {
+    "NavTitle": "Regras e Facções (7ª Ed.)",
+    "NavTitleShort": "Regras (7ª Ed.)",
+    "RootPrefix": "As Leis De",
+    "SearchPlaceholder": "Procurar nas Regras",
+    "Titles": {
+      "Search": "Procurar nas Regas",
+      "FAQ": "Perguntas Frequentes",
+      "Reach": "Ferramenta de Seleção de Preparação",
+      "Map": "Gerador de Mapa",
+      "Random": "Preparação Aleatória",
+      "DraftPlusOne": "+1 Draft",
+      "AdSet": "Preparação Avançada"
+    }
+  },
+  "Modal": {
+    "FAQ": {
+      "Title": "Perguntas Frequentes",
+      "TitleShort": "FAQ",
+      "CloseButton": "Fechar",
+      "Law": "Lei",
+      "Q": "P",
+      "A": "R"
+    },
+    "Reach": {
+      "Title": "Calculadora de Alcance",
+      "TitleShort": "Alcance",
+      "CloseButton": "Fechar",
+      "Choose": "Escolher Novas Facções",
+      "DraftPlusOne": "Draft +1",
+      "Error": "Não foi possível selecionar facções; ajuste as seleções e tente novamente.",
+      "Factions": {
+        "Marquise de Cat": "Marqueses",
+        "Lord of the Hundreds": "Senhor das Centenas",
+        "Keepers in Iron": "Guardiões de Ferro",
+        "Underground Duchy": "Ducado Subterrâneo",
+        "Eyrie Dynasties": "Dinastia das Rapinas",
+        "Vagabond (#1)": "Malandro (#1)",
+        "Riverfolk Company": "Companhia Ribeirinha",
+        "Woodland Alliance": "Aliança da Floresta",
+        "Corvid Conspiracy": "Conspiração Corvídea",
+        "Vagabond (#2)": "Malandro (#2)",
+        "Lizard Cult": "Lagartos Cultistas"
+      },
+      "FactionsShort": {
+        "Marquise": "Marqueses",
+        "Hundreds": "Centenas",
+        "Keepers": "Guardiões",
+        "Duchy": "Ducado",
+        "Eyrie": "Rapinas",
+        "Vagabond #1": "Malandro #1",
+        "Riverfolk": "Ribeirinhos",
+        "Woodland": "Aliança",
+        "Corvids": "Corvídeos",
+        "Vagabond #2": "Malandro #2",
+        "Cult": "Lagartos"
+      },
+      "Vagabonds": {
+        "Arbiter": "Árbitro",
+        "Ranger": "Andarilho",
+        "Scoundrel": "Patife",
+        "Thief": "Ladrão",
+        "Tinker": "Funileiro",
+        "Vagrant": "Vagabundo",
+        "Adventurer": "Aventureiro",
+        "Ronin": "Ronin",
+        "Harrier": "Saqueador"
+      },
+      "Draft": {
+        "Players": {
+          "Player A": "Jogador A",
+          "Player B": "Jogador B",
+          "Player C": "Jogador C",
+          "Player D": "Jogador D",
+          "Player E": "Jogador E",
+          "Player F": "Jogador F"
+        },
+        "Headers": {
+          "Factions": "Facções",
+          "TurnDraftOrder": "Turno/Ordem de Draft",
+          "Faction": "Facção",
+          "Reach": "Alcance",
+          "Draft": "Draft",
+          "Player": "Jogador",
+          "Cards": "Cartass",
+          "Picks": "Escolhas",
+          "Turn": "Turno"
+        },
+        "Text": {
+          "Deck": "Baralho",
+          "Map": "Mapa",
+          "Choose": "Escolha o Mapa, e então escolha o baralho. Escolha 3 cartas e devolva o restante ao baralho."
+        }
+      },
+      "Adset": {
+        "Random": "Aleatório",
+        "Random1": "Aleatório (1)",
+        "Random2": "Aleatório (2)",
+        "Generate": "Gerar",
+        "None": "Nenhum",
+        "Waiting": "Aguardando geração aleatória...",
+		"ChooseMap": "Escolha o Mapa",
+        "Players": "Jogadores",
+		"ChoosePlayerCount": "Escolha Quantidade de Jogadores",
+		"ChooseHirelings": "Escolha os capangas",
+		"Choose3": "Escolha pelo menos 3",
+		"ChooseUpTo2": "Escolha até 2",
+		"ChooseDeck": "Escolhas de Baralho",
+		"All": "Todos",
+        "Choices": {
+          "Map": "Mapa",
+          "Deck": "Baralho",
+          "Players": "Quantidade de Jogadores",
+          "Landmarks": "Marcos",
+          "Hirelings": "Capangas Válidos",
+          "Factions": "Facções Válidas",
+          "RemindDrawFive": "Lembrete: Distribua 5 cartas para cada jogador."
+        },
+        "Deck": {
+          "Standard": "Baralho Comum",
+          "EP": "Exilados e Partisans"
+        },
+        "Landmarks": {
+          "ElderTreetop": "Árvore Anciã",
+          "LostCity": "Cidade Perdida",
+          "BlackMarket": "Feira do Rolo",
+          "LegendaryForge": "Forja Lendária",
+          "TheFerry": "A Balsa",
+          "TheTower": "A Torre"
+        },
+        "Hirelings": {
+          "Spring Uprising (D)": "Insurgentes da Primavera (D)",
+          "Forest Patrol (D)": "Patrulha da Floresta (D)",
+          "Last Dynasty (D)": "Última Dinastia (D)",
+          "The Exile (D)": "O Exilado (D)",
+          "Popular Band (D)": "Banda Popular (D)",
+          "Furious Protector (D)": "Protetor Furioso (D)",
+          "Highway Bandits (D)": "Bandidos da Estrada (D)",
+          "Riverfolk Flotilla (D)": "Flotilha Ribeirinha (D)",
+          "Warm Sun Prophets (D)": "Profetas do Sol Quente (D)",
+          "Sunward Expedition (D)": "Expedição à Luz (D)",
+          "Corvid Spies (D)": "Espiões Corvídeos (D)",
+          "Flame Bearers (D)": "Portadores do Fogo (D)",
+          "Vault Keepers (D)": "Guardiões do Cofre (D)",
+          "Rabbit Scouts (R)": "Coelhos Batedores (R)",
+          "Feline Physicians (R)": "Médicos Felinos (R)",
+          "Bluebird Nobles (R)": "Nobres Azulinos (R)",
+          "The Brigand (R)": "O Bandido (R)",
+          "Street Band (R)": "Banda de Rua (R)",
+          "Stoic Protector (R)": "Protetor Estoico (R)",
+          "Bandit Gangs (R)": "Gangues Urbanas (R)",
+          "Otter Divers (R)": "Lontras Mergulhadoras (R)",
+          "Lizard Envoys (R)": "Enviados Reptilianos (R)",
+          "Mole Artisans (R)": "Toupeiras Artesãs (R)",
+          "Raven Sentries (R)": "Corvos Sentinelas (R)",
+          "Rat Smugglers (R)": "Ratos Contrabandistas (R)",
+          "Badger Bodyguards (R)": "Texugos Guarda-Costas (R)"
+        }
+      }
+    },
+    "Maps": {
+      "Title": "Gerador de Mapa",
+      "TitleShort": "Mapa",
+	  "ChooseMap": "Escolhas de Mapa",
+      "CloseButton": "Fechar",
+      "MapNames": {
+        "fall": "Outono",
+        "winter": "Inverno",
+        "lake": "Lago",
+        "mountain": "Montanha"
+      },
+      "Randomize": "Gerar",
+      "Balanced": "Balanceado",
+      "Error": "Tentei encontrar um layout equilibrado; mas não foi possível. Tente novamente! Pode funcionar desta vez."
+    }
+  }
+}
