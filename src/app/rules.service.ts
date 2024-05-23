@@ -15,7 +15,7 @@ import * as plPLRules from '../assets/i18n/rules/pl-PL.json';
 
 const rules = {
   'en-US': (enUSRules as any).default || enUSRules,
-  'en-US': (ptBRRules as any).default || ptBRRules,
+  'pt-BR': (ptBRRules as any).default || ptBRRules,
   'es-ES': (esESRules as any).default || esESRules,
   'de-DE': (deDERules as any).default || deDERules,
   'ru-RU': (ruRURules as any).default || ruRURules,
