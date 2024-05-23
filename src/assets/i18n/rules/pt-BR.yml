@@ -74,7 +74,7 @@
         - name: Adjacência.
           text: Uma clareira é adjacente a todas as demais clareiras ligadas diretamente a ela por um caminho. `faction:duchy:12.2.2`
         - name: Naipe.
-          text: Cada clareira possui um **naipe**: rato, coelho ou raposa 
+          text: Cada clareira possui um **naipe**: rato, coelho ou raposa.
         - name: Locais.
           text: Cada clareira possui uma quantidade de **locais de construção** _(caixas brancas)_. Sempre que um jogador posicionar uma construção, ela ocupará um local vazio. Você não pode posicionar uma construção em uma clareira sem locais vagos.
         - name: Ruínas.
