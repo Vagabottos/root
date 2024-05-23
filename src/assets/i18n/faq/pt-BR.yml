@@ -1,77 +1,77 @@
 
-- category: The Law
+- category: A Lei
   color: "#000000"
   questions:
-    - q: How do I read The Law?
-      a: Text in small capitals define key terms, text in italics gives reminders and clarifications and faction icons mark rules modified by Faction Rules and Abilities sections.
+    - q: Como ler A Lei?
+      a: Textos em MAIÚSCULAS são termos-chave para o jogo. Textos em _itálico_ são lembretes e esclarecimentos. Ícones das facções destacam regras que são alteradas pelas Regras da Facção e Habilidades.
       
-    - q: I'd like to do something, and the rules don't say that I can't do it. Can I do it?
-      a: Within the confines of the action, yes! The game will often surprise you with outlandish, unexpected situations, and that's part of the fun, but this doesn't mean you can flip the table.
+    - q: Eu gostaria de fazer algo e as regras não dizem que eu não posso. Posso fazer?
+      a: Dentro dos limites de uma ação, podemos dizer que sim. Este jogo lhe surpreenderá com situações estranhas e inesperadas e isto faz parte da diversão, mas não significa que você pode virar a mesa.
 
-    - q: Can another player not consent to an action?
-      a: No actions require consent. Just do the thing.
+    - q: Outro jogador pode não consentir com uma ação?
+      a: Root não possui nenhuma ação que exija consentimento. Apenas faça.
 
-    - q: It seems like something should happen, but the rule doesn't tell me to do that thing. What do I do?
-      a: Follow the literal word of the Law, not your instinct, even if a similar rule exists. 
+    - q: Determinada coisa parece que deveria acontecer, mas as regras não me dizem para fazer isto. O que eu faço?
+      a: Siga literalmente a palavra da Lei, não seus instintos, mesmo que exista uma regra para uma situação similar.
 
-    - q: A rule uses a specific term or action. Does it also include another, closely related term or action?
-      a: Nope! Assume we mean only the original term and not any related terms. For example, the terms move and place are different, which is an important distinction in rules such as The Keep.
+    - q: Uma regra usa um termo ou ação específica. Isto também incluiria outra que é relacionada com essa ação ou termo?
+      a: Não! Assuma que nós estamos nos referindo apenas ao termo especificado e não a uma gama de termos relacionados. Por exemplo, MOVER e POSICIONAR são coisas diferentes que tem uma distinção importante nas regras de algumas facções, como A Torre da Guarda.
       laws:
         - "6.2.2"
 
-- category: General
+- category: Gerais
   color: "#000000"
   questions:
-    - q: Which pieces are buildings? Which are tokens?
-      a: Buildings are square cardboard pieces that go in open building slots on the map, while tokens are circular cardboard pieces that do not occupy a slot. You’ll find detailed lists of buildings and tokens on the back of the learn-to-play and the backs of the faction boards.
+    - q: Quais peças são construções? Quais são marcadores?
+      a: Construções são peças quadradas que ficam em espaços de construção abertos no mapa, enquanto os marcadores são peças circulares que não ocupam nenhum espaço. Você encontrará listas detalhadas de construções e marcadores no verso do Aprenda a Jogar e no verso dos tabuleiros de facção.
       laws: 
         - "2.5"
         - "16.6.3"
         - "16.6.32"
     
-    - q: Do I lose points if one of my buildings is removed?
-      a: Nope!
+    - q: Eu perco pontos se uma construção minha for removida?
+      a: Não!
       laws: 
         - "2.5.2"
         - "16.6.22"
 
-    - q: Can I play multiple ambush cards in a battle?
-      a: Nope! Just one.
+    - q: Posso jogar várias cartas de emboscada em uma batalha?
+      a: Não! Apenas uma.
       laws: 
         - "4.3.1"
 
-    - q: Do the Favor... cards really remove all enemy pieces from those clearings?
-      a: Yes, except for the Vagabond and the Lord of the Hundreds’ warlord.
+    - q: As cartas Favor de... realmente removem todas as peças inimigas destas clareiras?
+      a: Sim, exceto o(s) Malandro(s) e o Senhor da Guerra do Senhor das Centenas.
       laws: 
         - "9.2.2"
         - "14.2.2"
 
-    - q: How do I get rid of enemy tokens, like sympathy tokens?
-      a: Just like any other other piece, they can be battled and can be removed by powers that say they remove pieces. 
+    - q: Como me livro de marcadores inimigos, como os marcadores de simpatia?
+      a: Assim como qualquer outra peça, eles podem ser atacados e também podem ser removidos por poderes que removem peças.
       laws:
         - "2.1"
         - "2.5"
         - "4.3"
     
-    - q: Does placing a piece in a sympathetic clearing trigger Outrage?
-      a: Nope! You have to move in warriors or remove the sympathy to trigger it.
+    - q: Colocar uma peça em uma clareira simpática ativa o Ultraje?
+      a: Não! Você deve mover guerreiros ou remover a simpatia para ativá-lo.
       laws:
         - "8.2.6"
         - "8.2.5"
 
-    - q: Where do buildings and tokens go when removed?
-      a: Most often, back to the board or supply of the owning player. This is described more in 2.5.
+    - q: Para onde vão a construções e marcadores quando são removidos?
+      a: Na maioria das vezes, de volta ao tabuleiro ou ao estoque do jogador proprietário. Isto é descrito mais detalhadamente em 2.5.
       laws:
         - "2.5"
         - "16.6.22"
 
-    - q: What does "activating" a piece for crafting mean? Do I do anything with it?
-      a: Nope. Activating just means “I have it, and I want to use it for crafting.” You don’t need to get rid of it or do anything other than point at it and say, “I’m activating this to craft a card.”
+    - q: O que quer dizer "atvar" uma peça para criar ? Eu devo fazer algo com a peça?
+      a: Não. Ativar significa apenas "eu tenho e quero usá-lo para criar". Você não precisa se livrar da peça ou fazer qualquer coisa além de apontar para ela e dizer: "estou ativando isto para criar uma carta".
       laws:
         - "4.1.1"
 
-    - q: Can I not consent to the action of another player?
-      a: Nope, there are no actions in Root that require consent. For example, the Vagabond does not require consent to form a coalition with someone or Aid someone, and a player does not need the Riverfolk’s consent to buy services from them.
+    - q: Eu posso não consentir com a ação de outro jogador?
+      a: Não, não há ações em Root que exigem consentimento. Por exemplo, o Malandro não precisa de consentimento para formar uma coalizão com alguém ou Ajudar alguém, e um jogador não precisa do consentimento dos Ribeirinhos para comprar serviços deles.
       laws:
         - "9.2.8"
         - "9.5.4"
