@@ -56,7 +56,7 @@
     - name: Cartas
       pretext: "Você compra cartas do topo do baralho compartilhado e descarta no monte de descarte comum. Se não existirem mais cartas no baralho, embaralhe o monte de descarte imediatamente para formar um novo. Cada carta possui um **naipe**: pássaro, raposa, coelho ou rato. A maioria das cartas também possui um efeito que pode se criar (`rule:4.1`)."
       children:
-        - name: Pássaros Aão Curingas.
+        - name: Pássaros São Curingas.
           text: Você sempre pode tratar uma carta de pássaro como uma carta de outro naipe, mesmo quando você gastar, tomar ou entregar múltiplas cartas do mesmo naipe. `faction:cult:10.2.2`
           subchildren:
             - name: Efeito Obrigatório.
@@ -92,36 +92,36 @@
     - name: Governante
       pretext: Um jogador **governa** uma clareira se ele possui uma quantidade maior de guerreiros e construções na clareira que qualquer outro jogador. _(Marcadores e peões não contam para governar.)_ Se existe um empate entre jogadores em uma clareira, então ninguém a governa. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
 
-- name: Victory
+- name: Vitória
   color: "#000000"
   children:
-    - name: How to Win
-      pretext: The first player to reach 30 victory points immediately wins the game. If multiple players reach 30 or more victory points simultaneously, the player taking the current turn wins.
+    - name: Como Ganhar
+      pretext: O primeiro jogador a conseguir 30 pontos de vitória vence a partida imediatamente. Caso mais de um jogador consiga 30 ou mais pontos de vitória simultaneamente, então o jogador que tem a rodada atual é o vencedor.
 
-    - name: Scoring Victory Points
-      pretext: Each faction has a unique way to score victory points, but any faction can score victory points as follows.
+    - name: Ganhando Pontos de Vitória
+      pretext: Cada facção possui uma forma única de ganhar pontos de vitória, porém todas as facções podem receber PVs das seguintes formas.
       children:
-        - name: Removing Buildings and Tokens.
-          text: Whenever you remove an enemy's building or token, you score one victory point.
-        - name: Crafting Items.
-          text: Whenever you craft an item (`rule:4.1`), you score the victory points listed on the card. `faction:eyrie:7.2.3` `faction:warlord:14.2.3`
+        - name: Removendo Construções ou Marcadores.
+          text: Sempre que você remover uma construção ou marcador inimigo você recebe 1 PV.
+        - name: Criando Itens.
+          text: Sempre que você criar um item (`rule:4.1`) você recebe tantos PVs quantos mostrados. `faction:eyrie:7.2.3` `faction:warlord:14.2.3`
 
-    - name: Dominance Cards
-      pretext: The deck has four dominance cards, which let you win the game without scoring 30 victory points.
+    - name: Cartas de Domínio
+      pretext: O baralho de cartas possui 4 cartas de domínio, as quais podem ser usadas para ganhar o jogo sem que o jogador tenha atingido 30 PVs.
       children:
-        - name: Activating.
-          text: During your Daylight, if you have at least 10 victory points, you may **activate** a dominance card in your hand by placing it in your play area. Remove your score marker from the score track. You can no longer score victory points. `faction:vagabond:9.2.8`
+        - name: Ativar.
+          text: Durante o Dia, se você possui pelo menos 10 PVs, você pode **ativar** uma carta de domínio de sua mão, posicionando-a em sua área de jogo. Remova seu marcador de pontos da trilha de pontuação. Você não irá mais receber PVs. `faction:vagabond:9.2.8`
           subchildren:
-            - name: Mouse, Rabbit, or Fox Dominance.
-              text: You win the game immediately if you rule three clearings of the suit matching the activated dominance card at the start of your Birdsong.
-            - name: Bird Dominance.
-              text: You win the game immediately if you rule two clearings in opposite corners at the start of your Birdsong.
-        - name: Activated Cards.
-          text: An activated dominance card does not count against your hand limit, and it cannot be removed from play. You cannot replace an activated dominance card with a different one.
-        - name: Using Dominance Cards.
-          text: A dominance card can be spent for its suit. Anytime a dominance card would be placed in the discard pile, instead place it near the map to show it is **available** to be taken. `faction:cult:10.4.2`        
-        - name: Taking Available Cards.
-          text: During your Daylight, you can take an available dominance card into your hand by spending a card of matching suit. You cannot treat an available bird dominance card as a non-bird suit.
+            - name: Domínio de Rato, Coelho ou Raposa.
+              text: Você ganha a partida imediatamente caso, no Amanhecer de seu turno, você seja o governante em 3 clareiras cujo naipe combine com a carta de domínio ativada.
+            - name: Domínio de Pássaro.
+              text: Você ganha a partida imediatamente caso, no Amanhecer de seu turno, você seja o governante de 2 clareiras em cantos opostos.
+        - name: Cartas Ativadas.
+          text: Uma carta de domínio ativada não conta no limite de cartas na mão e não pode ser removida do jogo. Você não pode substituir uma carta de domínio ativa por outra.
+        - name: Usando Cartas de Domínio.
+          text: Uma carta de domínio pode ser gasta pelo seu naipe. Sempre que uma carta de domínio for ser colocada no descarte, em vez disso, posicione-a ao lado do mapa, mostrando que ela está disponível para ser **tomada**. `faction:cult:10.4.2`
+        - name: Tomando Cartas Disponíveis.
+          text: Durante o Dia de seu turno, você pode tomar uma carta de domínio disponível para sua mão, gastando uma carta de mesmo naipe para fazê-lo. Você não pode tratar uma carta de domínio de pássaro como sendo de qualquer outro naipe diferente de pássaro.
 
 - name: Key Actions
   color: "#000000"
