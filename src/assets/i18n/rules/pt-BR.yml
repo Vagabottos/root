@@ -1,6 +1,6 @@
 
 - name: Regras de Ouro
-  color: "#000000"
+  color: "#ffffff"
   pretext: Este capítulo trará respostas para questões técnicas de forma detalhada. Não é preciso ler quando começar a aprender o jogo.
   children:
     - name: Conflito de Regras
@@ -50,7 +50,7 @@
           text: Alguns efeitos lhe permitem **forçar** um jogador ou suas peças a agirem. Resolva isso exatamente como se aquele jogador estivesse escolhendo fazê-lo, limitado pelo efeito. _(Por exemplo, se você forçar as Rapinas a moverem guerreiros, elas se beneficiam de Lordes da Floresta.)_
 
 - name: Conceitos Chave
-  color: "#000000"
+  color: "#3f3f3f"
   pretext: Termos serão definidos no Glossário (`rule:16.6`).
   children:
     - name: Cartas
@@ -93,7 +93,7 @@
       pretext: Um jogador **governa** uma clareira se ele possui uma quantidade maior de guerreiros e construções na clareira que qualquer outro jogador. _(Marcadores e peões não contam para governar.)_ Se existe um empate entre jogadores em uma clareira, então ninguém a governa. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
 
 - name: Vitória
-  color: "#000000"
+  color: "#7f7f7f"
   children:
     - name: Como Ganhar
       pretext: O primeiro jogador a conseguir 30 pontos de vitória vence a partida imediatamente. Caso mais de um jogador consiga 30 ou mais pontos de vitória simultaneamente, então o jogador que tem a rodada atual é o vencedor.
@@ -124,7 +124,7 @@
           text: Durante o Dia de seu turno, você pode tomar uma carta de domínio disponível para sua mão, gastando uma carta de mesmo naipe para fazê-lo. Você não pode tratar uma carta de domínio de pássaro como sendo de qualquer outro naipe diferente de pássaro.
 
 - name: Key Actions
-  color: "#000000"
+  color: "#c0c0c0"
   children:
     - name: Craft
       pretext: You can **craft** most cards from your hand to gain an immediate or persistent effect.
