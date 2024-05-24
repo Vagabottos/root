@@ -149,7 +149,22 @@
           "Raven Sentries (D)": "Raven Sentries (D)",
           "Rat Smugglers (D)": "Rat Smugglers (D)",
           "Badger Bodyguards (D)": "Badger Bodyguards (D)"
-        }
+        },
+		"FormattedHirelings": {
+          "Spring Uprising (R) / Rabbit Scouts (D)": "Spring Uprising (R) / Rabbit Scouts (D)",
+          "Forest Patrol (R) / Feline Physicians (D)": "Forest Patrol (R) / Feline Physicians (D)",
+          "Last Dynasty (R) / Bluebird Nobles (D)": "Last Dynasty (R) / Bluebird Nobles (D)",
+          "The Exile (R) / The Brigand (D)": "The Exile (R) / The Brigand (D)",
+          "Popular Band (R) / Street Band (D)": "Popular Band (R) / Street Band (D)",
+          "Furious Protector (R) / Stoic Protector (D)": "Furious Protector (R) / Stoic Protector (D)",
+          "Highway Bandits (R) / Bandit Gangs (D)": "Highway Bandits (R) / Bandit Gangs (D)",
+          "Riverfolk Flotilla (R) / Otter Divers (D)": "Riverfolk Flotilla (R) / Otter Divers (D)",
+          "Warm Sun Prophets (R) / Lizard Envoys (D)": "Warm Sun Prophets (R) / Lizard Envoys (D)",
+          "Sunward Expedition (R) / Mole Artisans (D)": "Sunward Expedition (R) / Mole Artisans (D)",
+          "Corvid Spies (R) / Raven Sentries (D)": "Corvid Spies (R) / Raven Sentries (D)",
+          "Flame Bearers (R) / Rat Smugglers (D)": "Flame Bearers (R) / Rat Smugglers (D)",
+          "Vault Keepers (R) / Badger Bodyguards (D)": "Vault Keepers (R) / Badger Bodyguards (D)"
+      }
       }
     },
     "Maps": {

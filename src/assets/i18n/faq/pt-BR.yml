@@ -1,6 +1,6 @@
 
 - category: A Lei
-  color: "#000000"
+  color: "#ffffff"
   questions:
     - q: Como ler A Lei?
       a: Textos em MAIÚSCULAS são termos-chave para o jogo. Textos em *itálico* são lembretes e esclarecimentos. Ícones das facções destacam regras que são alteradas pelas Regras da Facção e Habilidades. Root contém dois livros de regras":" o guia Aprenda a Jogar e este livro, a Lei. Se você prefere um estilo de aprendizagem com mais diálogos e muitos exemplos gráficos, leia o guia Aprenda a Jogar. Se você prefere ler as regras de forma mais definida e formal com um estilo de referência mais conciso, leia A Lei. Estas regras práticas irão ajudá-lo a interpretar A Lei.
@@ -20,7 +20,7 @@
         - "6.2.2"
 
 - category: Gerais
-  color: "#000000"
+  color: "#7f7f7f"
   questions:
     - q: Quais peças são construções? Quais são marcadores?
       a: Construções são peças quadradas que ficam em espaços de construção abertos no mapa, enquanto os marcadores são peças circulares que não ocupam nenhum espaço. Você encontrará listas detalhadas de construções e marcadores no verso do Aprenda a Jogar e no verso dos tabuleiros de facção.
@@ -302,7 +302,7 @@
         - "15.2.5"
 
 - category: Preparação Avançada 
-  color: "#000"
+  color: "#ffffff"
   questions:
     - q: "Guardiões de Ferro: Para o segundo passo de colocar relíquias, eu posso escolher quais relíquias vão em cada clareira?"
       a: Coloque elas aleatoriamente da mesma forma que no 1º passo. (Dito isto, normalmente não fará muita diferença, uma vez que os outros jogadores podem ajustar suas estratégias para impedir que você se escave de forma eficiente.)
@@ -311,7 +311,7 @@
       a: Retorne a carta de preparação avançada dos Guardiões para a caixa e pegue uma nova carta de preparação avançada até que apareça uma facção militante (nome vermelho com espada). Esta facção substituirá os Guardiões. Provavelmente adicionaremos regras gerais de mulligan que refletem isso à medida que mais facções forem adicionadas ao jogo e se tornar cada vez mais possível abrir uma facção que é impossível de realizar a preparação.
 
 - category: Capangas
-  color: "#000"
+  color: "#7f7f7f"
   questions:
     - q: "O Exilado: Posso entregar um item exaurido ao Exilado?"
       a: Sim!
@@ -332,7 +332,7 @@
       a: Não, isso funciona da mesma forma que uma batalha ou o Ataque do Malandro – se um jogador tiver guerreiros lá, você deve removê-los primeiro, mas neste caso você não esta atacando o jogador que tem guerreiros.
 
 - category: Marcos
-  color: "#000"
+  color: "#000000"
   questions:
     - q: "Forja Lendária: Eu só preciso de uma peça da minha facção na Forja Lendária para crir itens lá, ou preciso algo mais?"
       a: Você ainda segue as regras normais de criação, então ainda precisa descartar uma carta que tenha um item disponível-neste caso, um item que esteja na carta da Forja Lendária-e precisa de peças para crar nas clareiras dos naipes necessários, como mostrado na carta. Você só precisa ter também uma peça na clareira da Forja Lendária.
