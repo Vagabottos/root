@@ -123,7 +123,7 @@
           "TheTower": "Wieża"
         },
         "Hirelings": {
-          "Spring Uprising (R)": " Wiosenne Powstanie (R)",
+          "Spring Uprising (R)": "Wiosenne Powstanie (R)",
           "Forest Patrol (R)": "Leśny Patrol (R)",
           "Last Dynasty (R)": "Ostatnia Dynastia (R)",
           "The Exile (R)": "Wygnaniec (R)",
@@ -149,7 +149,22 @@
           "Raven Sentries (D)": "Strażnicy Kruków (D)",
           "Rat Smugglers (D)": "Szczurzy Szmuglerzy (D)",
           "Badger Bodyguards (D)": "Borsuczy Ochroniarze (D)"
-        }
+        },
+		"FormattedHirelings": {
+          "Spring Uprising (R) / Rabbit Scouts (D)": "Wiosenne Powstanie (R) / Króliczy Zwiadowcy (D)",
+          "Forest Patrol (R) / Feline Physicians (D)": "Leśny Patrol (R) / Koci Medycy (D)",
+          "Last Dynasty (R) / Bluebird Nobles (D)": "Ostatnia Dynastia (R) / Ptasi Arystokraci (D)",
+          "The Exile (R) / The Brigand (D)": "Wygnaniec (R) / Bandyta (D)",
+          "Popular Band (R) / Street Band (D)": "Popularny Zespół (R) / Uliczna Banda (D)",
+          "Furious Protector (R) / Stoic Protector (D)": "Wściekły Opiekun (R) / Stoicki Opiekun (D)",
+          "Highway Bandits (R) / Bandit Gangs (D)": "Zbójcy (R) / Gangi Bandytów (D)",
+          "Riverfolk Flotilla (R) / Otter Divers (D)": "Rzeczna Flotylla (R) / Wydrzy Nurkowie (D)",
+          "Warm Sun Prophets (R) / Lizard Envoys (D)": "Prorocy Ciepłego Słońca (R) / Wysłannicy Jaszczurów (D)",
+          "Sunward Expedition (R) / Mole Artisans (D)": "Słoneczna Ekspedycja (R) / Kreci Rzemieślnicy (D)",
+          "Corvid Spies (R) / Raven Sentries (D)": "Szpiedzy Konspiracji (R) / Strażnicy Kruków (D)",
+          "Flame Bearers (R) / Rat Smugglers (D)": "Powiernicy Ognia (R) / Szczurzy Szmuglerzy (D)",
+          "Vault Keepers (R) / Badger Bodyguards (D)": "Strażnicy Krypty (R) / Borsuczy Ochroniarze (D)"
+      }
       }
     },
     "Maps": {

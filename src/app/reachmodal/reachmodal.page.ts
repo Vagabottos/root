@@ -84,22 +84,22 @@ export class ReachModalPage implements OnInit {
   ];
 
   public readonly hirelings = [
-    { r: 'Spring Uprising',     d: 'Rabbit Scouts',     baseFaction: 'Woodland Alliance' },
     { r: 'Forest Patrol',       d: 'Feline Physicians', baseFaction: 'Marquise de Cat' },
-    { r: 'Last Dynasty',        d: 'Bluebird Nobles',   baseFaction: 'Eyrie Dynasties' },
+	{ r: 'Last Dynasty',        d: 'Bluebird Nobles',   baseFaction: 'Eyrie Dynasties' },
+	{ r: 'Spring Uprising',     d: 'Rabbit Scouts',     baseFaction: 'Woodland Alliance' },
     { r: 'The Exile',           d: 'The Brigand',       baseFaction: 'Vagabond' },
-    { r: 'Popular Band',        d: 'Street Band',       baseFaction: '',                pink: true },
-    { r: 'Furious Protector',   d: 'Stoic Protector',   baseFaction: '',                pink: true },
-    { r: 'Highway Bandits',     d: 'Bandit Gangs',      baseFaction: '',                pink: true },
-    { r: 'Riverfolk Flotilla',  d: 'Otter Divers',      baseFaction: 'Riverfolk Company' },
-    { r: 'Warm Sun Prophets',   d: 'Lizard Envoys',     baseFaction: 'Lizard Cult' },
-    { r: 'Sunward Expedition',  d: 'Mole Artisans',     baseFaction: 'Underground Duchy' },
-    { r: 'Corvid Spies',        d: 'Raven Sentries',    baseFaction: 'Corvid Conspiracy' },
-    { r: 'Flame Bearers',       d: 'Rat Smugglers',     baseFaction: 'Lord of the Hundreds' },
-    { r: 'Vault Keepers',       d: 'Badger Bodyguards', baseFaction: 'Keepers in Iron' }
+	{ r: 'Warm Sun Prophets',   d: 'Lizard Envoys',     baseFaction: 'Lizard Cult' },
+	{ r: 'Riverfolk Flotilla',  d: 'Otter Divers',      baseFaction: 'Riverfolk Company' },
+	{ r: 'Highway Bandits',     d: 'Bandit Gangs',      baseFaction: '',                pink: true },
+	{ r: 'Sunward Expedition',  d: 'Mole Artisans',     baseFaction: 'Underground Duchy' },
+	{ r: 'Corvid Spies',        d: 'Raven Sentries',    baseFaction: 'Corvid Conspiracy' },
+	{ r: 'Furious Protector',   d: 'Stoic Protector',   baseFaction: '',                pink: true }
+	{ r: 'Flame Bearers',       d: 'Rat Smugglers',     baseFaction: 'Lord of the Hundreds' },
+    { r: 'Vault Keepers',       d: 'Badger Bodyguards', baseFaction: 'Keepers in Iron' },
+    { r: 'Popular Band',        d: 'Street Band',       baseFaction: '',                pink: true }
   ];
 
-  public readonly formattedHirelings = this.hirelings.map(h => `${h.r} (R) / ${h.d} (D)`).sort();
+  public readonly formattedHirelings = this.hirelings.map(h => `${h.r} (R) / ${h.d} (D)`);
   public readonly formattedFactions = this.reachValues.map(x => x.name).sort();
 
   public readonly reachesForPlayer = {
