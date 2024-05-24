@@ -42,7 +42,7 @@
         - name: Facção Inicial.
           text: Cada jogador possui a facção escolhida na preparação (5) e as peças listadas no verso de seu tabuleiro de facção, exceto itens. Elas são chamadas, de forma genérica, de peças da facção ou outro termo similar. De forma específica, elas são chamadas de peças da **[nome da facção]**. _(Por exemplo, "os guerreiros de sua facção" e "guerreiros Marqueses" se referem as peças de formato de gato laranja do jogador dos Marqueses)_.
         - name: Propriedade.
-          text: A propriedade de uma peça de facção não pode mudar.. _(Por exemplo, os Marqueses não podem usar seus Hospitais de Batalha em mercenários dos Ribeirinhos ou capangas, já que não são guerreiros dos Marqueses.)_
+          text: A propriedade de uma peça de facção não pode mudar. _(Por exemplo, os Marqueses não podem usar seus Hospitais de Batalha em mercenários dos Ribeirinhos ou capangas, já que não são guerreiros dos Marqueses.)_
         - name: Manipulação de Peças.
           text: Peças são posicionadas e removidas conforme definido no Glossário (`rule:16.6.19`, `rule:16.6.22`). Se você for comandado a posicionar, tomar ou remover peças, mas não puder fazê-lo, você deve posicionar, tomar ou remover o máximo possível. _(Isto não permite evitar custos ou pré-requisitos. Você simplesmente fará menos do que poderia)_ Se várias peças forem removidas simultaneamente e isso desencadearia efeitos, remova todas as peças antes de ativar os efeitos.
         - name: Uso de **Forçar**.
