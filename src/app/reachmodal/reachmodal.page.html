@@ -336,7 +336,7 @@
                     <ion-select-option value="none">{{ 'Modal.Reach.Adset.None' | translate }}</ion-select-option>
                     <ion-select-option value="all">{{ 'Modal.Reach.Adset.All' | translate }}</ion-select-option>
                     <ion-select-option *ngFor="let hireling of formattedHirelings" [value]="hireling">
-                      {{ ((hireling == 'Modal.Reach.Adset.FormattedHirelings.' + hireling) ? ('Modal.Reach.Adset.FormattedHirelings.' + hireling | translate) : hireling) }}					  
+                      {{ 'Modal.Reach.Adset.FormattedHirelings.' + hireling | translate }}					  
                     </ion-select-option>
                   </ion-select>
                 </ion-item>
