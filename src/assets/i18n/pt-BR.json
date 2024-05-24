@@ -1,7 +1,7 @@
 {
   "App": {
-    "NavTitle": "Regras e Facções (7ª Ed.)",
-    "NavTitleShort": "Regras (7ª Ed.)",
+    "NavTitle": "Regras e Facções (8ª Ed.)",
+    "NavTitleShort": "Regras (8ª Ed.)",
     "RootPrefix": "As Leis De",
     "SearchPlaceholder": "Procurar nas Regras",
     "Titles": {
@@ -83,7 +83,7 @@
           "Reach": "Alcance",
           "Draft": "Draft",
           "Player": "Jogador",
-          "Cards": "Cartass",
+          "Cards": "Cartas",
           "Picks": "Escolhas",
           "Turn": "Turno"
         },

@@ -3,7 +3,7 @@
   color: "#000000"
   questions:
     - q: Como ler A Lei?
-      a: Textos em MAIÚSCULAS são termos-chave para o jogo. Textos em _itálico_ são lembretes e esclarecimentos. Ícones das facções destacam regras que são alteradas pelas Regras da Facção e Habilidades.
+      a: Textos em MAIÚSCULAS são termos-chave para o jogo. Textos em *itálico* são lembretes e esclarecimentos. Ícones das facções destacam regras que são alteradas pelas Regras da Facção e Habilidades. Root contém dois livros de regras":" o guia Aprenda a Jogar e este livro, a Lei. Se você prefere um estilo de aprendizagem com mais diálogos e muitos exemplos gráficos, leia o guia Aprenda a Jogar. Se você prefere ler as regras de forma mais definida e formal com um estilo de referência mais conciso, leia A Lei. Estas regras práticas irão ajudá-lo a interpretar A Lei.
       
     - q: Eu gostaria de fazer algo e as regras não dizem que eu não posso. Posso fazer?
       a: Dentro dos limites de uma ação, podemos dizer que sim. Este jogo lhe surpreenderá com situações estranhas e inesperadas e isto faz parte da diversão, mas não significa que você pode virar a mesa.
@@ -77,268 +77,268 @@
         - "9.5.4"
         - "11.2.6"
 
-- category: Cards
+- category: Cartas
   color: "#000000"
   questions:
-    - q: The Armorers card says “rolled hits”. Does it really mean “rolled hits” specifically and not “hits”?
-      a: Yes indeed! “Rolled hits” means only the hits rolled.
+    - q: A carta Armeiros diz “danos recebidos do dado”. Isso quer dizer especificamente “danos rolados” e não “danos” no geral?
+      a: Correto! “Danos de dados” quer dizer somente os danos de dados.
 
-- category: Marquise de Cat
+- category: Marqueses
   color: "#e07a37"
   questions:
-    - q: What happens if all of my pieces are removed from the map?
-      a: Unfortunately, you’re probably out of the game. However, if the Riverfolk Company or hirelings are in play, you can build a building again if you rule a clearing. Either way, if this happens, the game will likely end at a moment’s notice!
+    - q: O que acontece se todas as minhas peças forem removidas do mapa?
+      a: Infelizmente, você provavelmente está fora do jogo. Porém, se a Companhia Ribeirinha ou capangas estiverem em jogo, você pode uma realizar construção se você governa uma clareira. De qualquer forma, se isto acontecer, o jogo provavelmente vai acabar a qualquer momento!
       laws:
         - "6"
 
-    - q: Can someone move a piece into the clearing with my keep?
-      a: Yes! "Place" is a different keyword from "move."
+    - q: Outro jogador pode mover peças para a clareira com a minha Torre da Guarda?
+      a: Sim! "Colocar" é uma palavra chave diferente de "mover".
       laws:
         - "4.2"
         - "6.2.2"
 
-    - q: If someone ambushes me in a battle at the Keep, when do my warriors get placed back in the Keep’s clearing?
-      a: Immediately, as long as you spend a card. This means you can avoid the check for “no remaining warriors” prompted by the ambush. 
+    - q: Se alguém usar uma carta de Emboscada em uma batalha na clareira que contem minha Torre da Guarda, quando meus guerreiros são colocados de volta na clareira da Torre da Guarda?
+      a: Imediatamente, desde que você descarte uma carta. Assim seria possível impedir a checagem de “não há guerreiros remanescentes” causada pela Emboscada. 
       laws:
         - "4.3.1"
         - "6.2.3"
 
-    - q: Can the Marquise place hirelings at the Keep?
-      a: Yes! 
+    - q: Os Marqueses podem colocar capangas na clareira da Torre da Guarda?
+      a: Sim! 
       laws:
         - "6.2.3"
 
-- category: Eyrie Dynasties
+- category: Dinastia da Rapinas
   color: "#416eb0"
   questions:
-    - q: Does Turmoil trigger if I have an empty column?
-      a: Nope! Turmoil triggers if you have a card in your Decree that you can't complete.
+    - q: O Tumulto é ativado se houver uma coluna vazia?
+      a: Não! O Tumulto é ativado caso você não consiga completar a ação de uma carta no Decreto.
       laws:
         - "7.7"
 
-    - q: Does Turmoil trigger if I can take actions for some but not all cards in a column?
-      a: Yes! The moment you can't complete a single card, you go into Turmoil.
+    - q: O Tumulto ativa se eu conseguir realizar ações de algumas mas não de todas as cartas de uma coluna?
+      a: Sim! No momento em que não conseguir completar a ação de uma carta você entra em Tumulto.
       laws:
         - "7.7"
 
-    - q: Can I move one warrior at a time from the same clearing to fulfill many Move cards in my Decree? Can I move the same warrior back and forth, given the right cards?
-      a: Yes! You can game the Decree as much as the cards allow you to. Just follow the rules for movement, and you're good. 
+    - q: Posso mover um guerreiro de cada vez de uma mesma clareira para completar cartas de Movimento no meu Decreto? Posso mover o mesmo guerreiro e retorná-lo, considerando que eu tenha as cartas?
+      a: Sim! Você pode fazer o se jogo com o Decreto desde que as cartas permitam. Siga as regras para Movimento, e tá tudo bem. 
       laws:
         - "7.5.2"
     
-    - q: What does the Despot's ability do? Don't I already get a victory point for removing a building or token?
-      a: Quite right you are! You get an extra point, though you do not get multiple extra points if you remove multiple buildings and/or tokens at the same time.
+    - q: O que a habilidade do Déspota faz? Eu já não recebo um ponto de vitória por remover uma construção ou marcador?
+      a: Sim recebe mesmo! Neste caso você recebe um ponto extra, porém não recebe vários pontos extras caso remova várias construções e/ou marcadores ao mesmo tempo.
       laws:
         - "7.8.4"
 
-    - q: If I have the Charismatic leader and Recruit, but I have one warrior left in my supply. Do I place no warriors or one warrior before going into Turmoil?
-      a: Place one. If you are prompted to place pieces but cannot place them all, you must place as many as possible.
+    - q: Se eu estiver com o líder Carismático e Recrutar no meu Decreto, mas tiver somente um guerreiro no meu estoque. Eu não coloco nenhum guerreiro ou coloco um guerreiro e entro em Tumulto?
+      a: Coloque um. Se você precisar colocar peças mas não conseguir colocar todas, coloque quantas forem possíveis. Não conseguir colocar os guerreiros extras não te faria entrar em Tumulto.
       laws:
         - "7.7"
         - "7.8.3"
 
-- category: Woodland Alliance
+- category: Aliança da Floresta
   color: "#68b653"
   questions:
-    - q: Can I revolt with a base in a suit whose base I've already built?
-      a: Nope! The revolt action says you must choose a sympathetic clearing matching an unbuilt base.
+    - q: Posso causar uma Revolta com uma base de um naipe que eu já construí a base?
+      a: Não! A ação de Revolta diz que você deve escolher uma clareira simpática que corresponda a uma base não construída.
       laws:
         - "8.4.1"
 
-    - q: Can I revolt in the clearing with the keep token?
-      a: Nope! You would have to place a sympathy token first, which you can't do because of the Marquise's special ability The Keep.
+    - q: Posso causar uma revolta em uma clareira com o marcador da Torre da Guarda?
+      a: Não! Você teria que colocar um marcador de simpatia primeiro, que você não pode por causa da habilidade especial da Torre da Guarda dos Marqueses.
       laws:
         - "6.2.2"
         - "8.4.1"
 
-    - q: What happens if a hireling removes sympathy?
-      a: The player controlling the hireling would trigger Outrage, since Outrage specifies “When a player removes…” This is also covered explicitly in Law E.3.7.
+    - q: O que acontece se um capanga remover um marcador de simpatia?
+      a: O jogador controlando o capanga ativaria o Ultraje, já que o Ultraje especifica “Quando um jogador remove…”. Isso também é abordado explicitamente na Lei (E.3.7).
       laws:
         - "8.2.6"
         - "16.4.3.7"
 
-    - q: Does the Vagabond cause Outrage?
-      a: Nope. The Vagabond is a pawn, not a warrior.
+    - q: O Malandro ativa o Ultraje?
+      a: Não. O Malandrão é um peão, não um guerreiro.
       laws:
         - "8.2.6"
 
-    - q: Do hirelings cause Martial Law?
-      a: Hirelings controlled by an enemy player will add to that player’s faction warriors. So if the Eyrie had 1 Eyrie warrior and 2 hireling warriors they controlled in a clearing, that clearing would prompt Martial Law. However, uncontrolled hireling warriors would not prompt Martial Law.
+    - q: Capangas afetam a Lei Marcial?
+      a: Os Capangas controlados por um jogador adversário serão adicionados os guerreiros da facção daquele jogador. Portanto, se as Rapinas tiverem 1 guerreiro e 2 capangas guerreiros que eles controlam na mesma clareira, esta clareira desencadeiaria a Lei Marcial. No entanto, guerreiros capangas não controlados não afeta a Lei Marcial.
 
-- category: Vagabond
+- category: Malandro
   color: "#6d6e70"
   questions:
-    - q: Can I craft cards with multiple-suit requirements?
-      a: "No. Your hammers match your current clearing, so you can only craft with one suit at a time. Good news: the multi-suit cards are useless to you anyway!"
+    - q: Eu posso criar cartas com mais de um tipo de naipe?
+      a: "Não. Seus martelos correspondem à sua clareira atual, então você só pode fabricar um naipe por vez. Boas notícias: as cartas com mais um tipo de naipe são inúteis pra você!"
       laws:
         - "9.2.1"
 
-    - q: Do I trigger the Alliance's Outrage when I move into a sympathetic clearing?
-      a: Nope! You're a friendly Vagabond, and you have a pawn, not a warrior. 
+    - q: Eu ativo o Ultraje da Aliança quando eu me movo para uma clareira simpática?
+      a: Negativo! Você é um Malandro amigável, e você tem um peão, não um guerreiro. 
       laws:
         - "8.2.6"
         - "9.2.2"
 
-    - q: If I move Allied warriors of the Woodland Alliance into a sympathetic clearing, do I trigger Outrage?
-      a: Nope! (*This ruling was changed as of the release of the Marauder Expansion and the 8th Printing, because the Vagabond’s Allied movement now uses the “Force” keyword.)
+    - q: Se eu mover guerreiros Aliados da Aliança da Floresta para uma clareira simática eu ativo o Ultrae?
+      a: Não! (*Esta regra foi alterada a partir do lançamento da Expansão do Saqueadores e da 8ª Impressão, porque o movimento Aliado do Vagabundo agora usa a palavra-chave “Força”.)
       laws:
         - "8.2.6"
         - "9.2.9"
 
-    - q: Does the Vagabond go Hostile with a faction when he removes one of their buildings or tokens, but no warriors? 
-      a: Nope! There are no witnesses to see him. Burn it all down!
+    - q: O Malandro se torna Hostil com uma facção quando ele remove uma de suas construções ou marcadores, mas não remove guerreiros? 
+      a: Não! Não há testemunhas. Quebra tudo!
       laws:
         - "9.2.9.3"
 
-    - q: If the Vagabond removes a hireling warrior controlled by another faction, does the Vagabond become Hostile with that faction? 
-      a: Nope! The hirelings are not faction pieces of that faction.
+    - q: Se o Malandro remove um guerreiro capanga controlado por outra facção, o Malandro se torna Hostil com aquela facção?
+      a: Negativo! Os capangas não são peças daquela facção.
       laws:
         - "9.2.9.3"
 
-    - q: If the Vagabond battles using a controlled hireling and removes enemy pieces, does the Vagabond turn Hostile with that faction or gain Infamy points if they’re already Hostile? 
-      a: Nope! Hirelings don’t use the abilities of their controlling faction (E.3.5) or let their controlling faction score points for removing enemy pieces (E.3.6).
+    - q: Se o Malandro batalhar usando um capanga controlado e remover peças, ele se torna Hostil com aquela facção ou ganha pontos de Infâmia se já for Hostil?
+      a: Não! Capangas não usam habilidades das facções que os controlam (E.3.5) ou permitem que as facções que os controlam ganhem pontos por remover peças inimigas (E.3.6).
       laws:
         - "9.2.9.3"
         - "16.4.3.5"
         - "16.4.3.6"
 
-    - q: Can the Vagabond move Allied warriors using the Ferry from the Underworld Expansion? If so, does the Ally faction also draw a card? 
-      a: Yes to both!
+    - q: O Malandro pode mover guerreiros Aliados usando A Balsa da Expansão Submundo? Se possível, a facção Aliada também compra uma carta?
+      a: Sim para ambos!
       laws:
         - "16.2.2.5"
 
-    - q: Can a Vagabond form a coalition with a player who has activated a dominance card? Can a player activate a dominance card after a Vagabond formed a coalition with them? 
-      a: A Vagabond cannot form a coalition with a dominance player, since they have no victory point marker on the track. However, a player can activate a dominance card after a Vagabond forms a coalition with them!
+    - q: O Malandro pode formar uma coalizão com um jogador que ativou uma carta de domínio? Um jogador pode ativar uma carta de domínio depois de um Malandro ter formado uma coalizão com ele?
+      a: Um Malandro não pode formar uma coalizão com um jogador que ativou uma carta de domínio, pois não possui marcador de ponto de vitória na trilha. No entanto, um jogador pode ativar uma carta de domínio depois que um Malandro formar uma coalizão com ele!
       laws:
         - "9.2.8"
 
-    - q: The Vagabond is in a coalition with me. Can I still battle him? Can he still battle me? 
-      a: No, neither of you can battle each other. (*This ruling changed as of the Marauder Expansion and the 8th Printing. The Battle rules now specify that you must battle an enemy, which means any player not in a coalition.)
+    - q: O Malandro está em um coalizão comigo. Eu ainda posso batalhar com ele? Ele ainda pode batalhar contra mim?
+      a: Não, nenhum de vocês pode batalhar entre si. (*Esta regra foi alterada a partir do lançamento da Expansão Saqueadores e da 8ª Impressão. As regras de batalha agora especificam que você deve lutar contra um inimigo, o que significa qualquer jogador que não esteja em uma coalizão.)
       laws:
         - "4.3"
         - "9.2.8"
 
-    - q: Can I gain Infamy victory points by removing a piece with Strike? 
-      a: Nope! Infamy specifies that you must remove the piece in battle on your turn. Killing someone with a crossbow is the coward’s way, after all.
+    - q: Posso ganhar pontos de Infâmia por remover peças com Ataque?
+      a: Não! Infâmia especifica que você deve remover a peça em batalha no seu turno. Afinal, matar alguém com uma besta é o jeito dos covardes.
       laws:
         - "9.2.9.3.1"
 
-- category: Riverfolk Company
-  color: "#5bc3bd"
-  questions:
-    - q: When I hire Riverfolk mercenaries, can I start a battle with them even if I don't have pieces in the clearing where I'm battling?
-      a: Go for it! Plus, if you don't have any warriors there, there's no one to split hits with. 
-      laws:
-        - "11.2.7"
-    
-    - q: Can I export a card if the item on it is not in the supply or if I already have its permanent effect?
-      a: Nope! You must be able to craft the card in the first place in order to export it. In these cases, you could not export the card.
-      laws:
-        - "11.5.3"
-
-    - q: Can the Riverfolk refuse to sell you one of their services?
-      a: Nope! As long as you pay the cost, you get the service.
-      laws:
-        - "11.2.6"
-
-    - q: Can Riverfolk Mercenaries be used to battle hirelings controlled by the Riverfolk?
-      a: Yes! Mercenaries just won’t battle against the Riverfolk themselves, not controlled hirelings.
-      laws:
-        - "11.2.7"
-
-- category: Lizard Cult
+- category: Lagartos Cultistas
   color: "#fcf065"
   questions:
-    - q: Can I use Convert or Sanctify to only remove a warrior or building, but not place my own warrior or building there?
-      a: Nope! The rule says that “you must complete the conspiracy,” and faction rules overrule general rules if you cannot fulfill them both. 
+    - q: Eu posso Converter ou Santificar para somente remover um guerreiro ou construção, mas sem colocar meu próprio guerreiro ou construção na clareira alvo?
+      a: Não! As regras dizem que “você deve completar a conspiração”, e as regras da facção anulam as regras gerais se você não puder cumprir ambas.
       laws:
         - "10.4.3"
 
-- category: Keepers in Iron
-  color: "#8b8d90"
+- category: Companhia Ribeirinha
+  color: "#5bc3bd"
   questions:
-    - q: For the second step of placing relics, do I get to choose which relics go in which clearings?
-      a: Place them randomly.
+    - q: Quando eu contrato mercenários Ribeirinhos, eu posso iniciar uma batalha utilizando eles mesmo se eu não tiver peças na clareira que eu estiver batalhando?
+      a: Vá em frente! Além disso, se você não tiver nenhum guerreiro lá, não haverá ninguém com quem dividir os danos.
       laws:
-        - "15.3.3"
-        
-    - q: The Law (15.5.2.II) says I need to rule a clearing in order to battle in it, but the Learn to Play and the board do not say this. What’s going on?
-      a: You do not need to rule in order to battle—only to delve!
+        - "11.2.7"
+    
+    - q: Eu posso exportar uma carta se o item nela não estiver no suprimento compartilhado ou se eu já tiver o efeito permanente dela?
+      a: Não! Você deve ser capaz de criar a carta em primeiro lugar para poder exportá-lo. Nestes casos, você não pode exportar a carta.
       laws:
-        - "15.5.2.2"
+        - "11.5.3"
 
-    - q: If hirelings remove a relic, how do I resolve the Prized Trophy ability?
-      a: No victory points are awarded. If the hireling is controlled, the controlling player decides where to put the relic. If the hireling is uncontrolled, the player taking their turn decides where to put the relic.
+    - q: Os Ribeirinhos podem recusar de me oferecer um dos seus serviços?
+      a: Não! Desde que você pague o custo terá o serviço.
       laws:
-        - "15.2.5"
-        
-    - q: Does the Keepers’ Prized Trophies ability trigger if the Vagrant Vagabond removes a relic by using Instigate, but they’re in a coalition with the Keepers?
-      a: As written, no, since the Vagrant is not an enemy in this case. Why the Vagrant would want to do this is beyond me, though!
-      laws:
-        - "15.2.5"
+        - "11.2.6"
 
-- category: Lord of the Hundreds
+    - q: Mercenários Ribeirinhos podem ser usados para batalhar capangas controlados pelos Ribeirinhos?
+      a: Sim! Os Mercenários só não lutarão contra os próprios Ribeirinhos, mas lutarão não contra capangas controlados por eles.
+      laws:
+        - "11.2.7"
+
+- category: Senhor das Centenas
   color: "#e11b3f"
   questions:
-    - q: In battle, who chooses whether a hit removes the warlord or a regular warrior?
-      a: The Hundreds player does, matching the fact that the player taking hits chooses the order of removing buildings and tokens. So if you took two hits and you have the warlord, two warriors, and a stronghold, you could remove two warriors or you could remove one warrior and the warlord. Though we wouldn’t recommend removing the warlord early!
+    - q: Em batalha, quem escolhe se um dano remove o senhor da guerra ou um guerreiro comum?
+      a: O jogador das Centenas, da mesma forma que o jogador levando os danos escolhe a ordem em que remove construções e marcadores. Logo, se você receber dois dano e tiver o senhor da guerra, dois guerreiros e um forte, poderá remover dois guerreiros ou remover um guerreiro e o senhor da guerra. Embora não seja recomendado remover o senhor da guerra muito cedo!
       laws:
         - "14.2.2"
         - "4.3.4"
         
-    - q: What exactly is required for the Hundreds to oppress a clearing?
-      a: You need to (1) rule, (2) have a Hundreds piece there, and (3) have no enemy pieces there. For example, you do oppress with a mob and a Riverfolk Mercenary warrior. You do not oppress with only a Riverfolk Mercenary warrior. You do not oppress with a mob, a Riverfolk Mercenary warrior, and a Riverfolk trade post. 
+    - q: O que exatamente é necessário para que as Centenas oprimam uma clareira?
+      a: Você precisa (1) governar, (2) ter uma peça da Centenas ali e (3) não ter peças inimigas ali. Por exemplo, você oprime com uma multidão e um guerreiro Mercenário Ribeirinho. Você não oprime apenas com um guerreiro Mercenário Ribeirinho. Você não oprime com uma turba, um guerreiro Mercenário dos Ribeirinho e um entreposto comercial dos Ribeirinhos.
       laws:
         - "14.6.2"
         
-    - q: Does the Rowdy mood let the Hundreds draw more cards when they use the Charm Offensive card from the Exiles & Partisans deck?
-      a: No. Rowdy makes you draw more cards only during your draw step in Evening.
+    - q: O humor Conflitante permite as Centenas comprar mais cartas quando eles usam a carta Charme Ofensivo do baralho Exilados e Partisans?
+      a: Não. Conflitante faz você comprar mais cartas somente durante o o seu passo de comprar cartas no Anoitecer.
       laws:
         - "14.7.6"
 
-    - q: Do I declare whether I’m using my Looters before or after the defender declares that they are ambushing?
-      a: Declaring Looters.
+    - q: Eu devo declarar que estou usando Saqueadores antes ou depois que o defensor declare que vai utilizar uma carta de Emboscada?
+      a: Saqueadores primeiro.
       laws:
         - "14.2.5"
 
-- category: Advanced Setup
+- category: Guardiões de Ferro
+  color: "#8b8d90"
+  questions:
+    - q: Para o segundo passo de colocar relíquias, eu posso escolher quais relíquias vão em cada clareira?
+      a: Coloque elas aleatoriamente da mesma forma que no 1º passo.
+      laws:
+        - "15.3.3"
+        
+    - q: A Lei (15.5.2.II) diz que eu devo governar uma clareira para batalhar nela, mas o guia Aprenda a Jogar e o tabuleiro de jogador não dizem isso. Como deve ser feito?
+      a: Você não precisa governar para batalhar – apenas para escavar!
+      laws:
+        - "15.5.2.2"
+
+    - q: Se capangas removerem relíquias, como deve ser resolvida a habilidade Troféus Premiados?
+      a: Nenhum ponto de vitória é recebido. Se o capanga é controlado, o jogador que o controla decide onde colocar a relíquia. Se o capanga não é controlado, o jogador com o turno ativo decide onde colocar a relíquia.
+      laws:
+        - "15.2.5"
+        
+    - q: A habilidade Troféus Premiados dos Guardiões ativa se o Malandro Vagabundo remover uma relíquia utilizando sua Ação Especial Instigar, mas eles estiverem em uma coalizão com os Guardiões?
+      a: Conforme está escrito, não, já que o Vagabundo não é um inimigo neste caso. Mas por que o Vagabundo iria querer fazer isto está além da minha compreensão!
+      laws:
+        - "15.2.5"
+
+- category: Preparação Avançada 
   color: "#000"
   questions:
-    - q: "Keepers in Iron: For the second step of placing relics, do I get to choose which relics go in which clearings?"
-      a: Place them randomly. (That said, it usually won’t make much difference, since people can adjust their strategy to prevent you from delving efficiently.)
+    - q: "Guardiões de Ferro: Para o segundo passo de colocar relíquias, eu posso escolher quais relíquias vão em cada clareira?"
+      a: Coloque elas aleatoriamente da mesma forma que no 1º passo. (Dito isto, normalmente não fará muita diferença, uma vez que os outros jogadores podem ajustar suas estratégias para impedir que você se escave de forma eficiente.)
       
-    - q: "Keepers in Iron: What happens if there aren’t any two adjacent clearings on the map edge?"
-      a: Return the Keepers’ advanced setup card to the box and draw new advanced setup cards until you draw a militant faction (red with swords). This faction replaces the Keepers. We will likely add general mulligan rules that mirror this as more factions get added to the game and it becomes increasingly possible to draw a faction that is impossible to set up.
+    - q: "Guardiões de Ferro: O que acontece se não houver duas clareiras adjacentes na borda do mapa?"
+      a: Retorne a carta de preparação avançada dos Guardiões para a caixa e pegue uma nova carta de preparação avançada até que apareça uma facção militante (nome vermelho com espada). Esta facção substituirá os Guardiões. Provavelmente adicionaremos regras gerais de mulligan que refletem isso à medida que mais facções forem adicionadas ao jogo e se tornar cada vez mais possível abrir uma facção que é impossível de realizar a preparação.
 
-- category: Hirelings
+- category: Capangas
   color: "#000"
   questions:
-    - q: "The Exile: Can I give the Exile an exhausted item?"
-      a: Yes!
+    - q: "O Exilado: Posso entregar um item exaurido ao Exilado?"
+      a: Sim!
 
-    - q: "The Exile: Can I give the Exile multiple items on the same turn?"
-      a: Yes!
+    - q: "O Exilado: Posso entregar vários itens ao Exilado no mesmo turno?"
+      a: Sim!
 
-    - q: "Highway Bandits: If the Highway Bandits remove a Marquise warrior, can the Marquise use Field Hospitals?"
-      a: Nope. The power happens while moving “on a path” with Highway Bandits, so they are not in a clearing at that moment.
+    - q: "Bandidos da Estrada: Se os Bandidos da Estrada removeremum guerreiro Marquês, os Marqueses podem utilizar Hospitais de Batalha?"
+      a: Não. O poder acontece enquanto se move “em um caminho” com os Bandidos da Estrada, então eles não estão em uma clareira naquele momento.
 
-    - q: "Spring Uprising: Can a hireling battle the Spring Uprising?"
-      a: Nope. They do not have a hand of cards to discard from.
+    - q: "Insurgentes da Primavera: Um capanga pode batalhar contra os Insurgentes da Primavera?"
+      a: Não. Eles não têm uma mão de cartas para descartar..
 
-    - q: "Warm Sun Prophets: When I force a battle and the defender plays an ambush card, which placer makes decisions about piece removal and playing counter-ambushes?"
-      a: The player who is being forced to battle.
+    - q: "Profetas do Sol Quente: Quando eu forço uma batalha e o defensor joga uma carta de emboscada, qual jogador faz as decisões de remover peças e jogar contra-emboscadas?"
+      a: O jogador que está sendo forçado a batalhar.
 
-    - q: "Flame Bearers: Does “warriors first” preclude me from removing undefended buildings or tokens of a player if there are warriors of another player there?"
-      a: No, this works in the same way as battle or the Vagabond’s Strike—if a player has warriors there, you must remove the warriors first.
+    - q: "Portadores do Fogo: “Guerreiros primeiro” me impede de remover construções ou marcadores indefesos de um jogador se houver guerreiros de outro jogador na clareira?"
+      a: Não, isso funciona da mesma forma que uma batalha ou o Ataque do Malandro – se um jogador tiver guerreiros lá, você deve removê-los primeiro, mas neste caso você não esta atacando o jogador que tem guerreiros.
 
-- category: Landmarks
+- category: Marcos
   color: "#000"
   questions:
-    - q: "Legendary Forge: Do I only need a faction piece at the Legendary Forge in order to craft an item there, or do I need something else?"
-      a: You still follow the normal crafting rules, so you still need to discard a card that has an available item on it—in this case, an item that is on the Legendary Forge card—and you need crafting pieces in the relevant clearing suits, as shown on the card. You just also need a faction piece at the Legendary Forge.
+    - q: "Forja Lendária: Eu só preciso de uma peça da minha facção na Forja Lendária para crir itens lá, ou preciso algo mais?"
+      a: Você ainda segue as regras normais de criação, então ainda precisa descartar uma carta que tenha um item disponível-neste caso, um item que esteja na carta da Forja Lendária-e precisa de peças para crar nas clareiras dos naipes necessários, como mostrado na carta. Você só precisa ter também uma peça na clareira da Forja Lendária.
 
-    - q: "Lost City: Can I revolt in the Lost City if I have already filled the clearing’s slots with my bases, but I still have a base left on my board?"
-      a: Yes, you can! The Lost City is very vulnerable to revolts, since it can be treated as any suit.
+    - q: "Cidade Perdida: Eu posso causr uma revolve na Cidade Perdida se eu ja tiver preenchido os locais de clareira com minhas bases, mas ainda tiver uma base sobrando no meu tabuleiro?"
+      a: Sim, você pode! A Cidade Perdida é muito vulnerável a revoltas, pois pode ser tratada como qualquer naipe.
 
-    - q: "Ferry: If I move the Ferry to a clearing with a sympathy token, do I draw the card first or trigger Outrage first?"
-      a: These happen at the same time, so you decide the order.
+    - q: "A Balse: Se eu mover a Balsa para uma clareira simpática, eu devo comprar uma carta primeiro ou ativar o Ultraje primeiro?"
+      a: Eles acontecem ao mesmo tempo, então você decide a ordem.
