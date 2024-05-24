@@ -50,7 +50,7 @@
           text: Alguns efeitos lhe permitem **forçar** um jogador ou suas peças a agirem. Resolva isso exatamente como se aquele jogador estivesse escolhendo fazê-lo, limitado pelo efeito. _(Por exemplo, se você forçar as Rapinas a moverem guerreiros, elas se beneficiam de Lordes da Floresta.)_
 
 - name: Conceitos Chave
-  color: "#3f3f3f"
+  color: "#c0c0c0"
   pretext: Termos serão definidos no Glossário (`rule:16.6`).
   children:
     - name: Cartas
@@ -124,7 +124,7 @@
           text: Durante o Dia de seu turno, você pode tomar uma carta de domínio disponível para sua mão, gastando uma carta de mesmo naipe para fazê-lo. Você não pode tratar uma carta de domínio de pássaro como sendo de qualquer outro naipe diferente de pássaro.
 
 - name: Key Actions
-  color: "#c0c0c0"
+  color: "#3f3f3f"
   children:
     - name: Craft
       pretext: You can **craft** most cards from your hand to gain an immediate or persistent effect.
