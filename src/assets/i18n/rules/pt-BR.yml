@@ -1369,7 +1369,7 @@
               text: Ao final do turno do jogador, ele deve remover um marcador de controle de cada carta de **capanga** que possua. Depois, deve entregar cada carta de **capanga** controlada por ele que não tenha marcadores de controle, juntamente com o marcador de **capanga**, para qualquer outro jogador _(até mesmo para o jogador com mais PVs)_. Esse jogador posiciona o marcador de capanga abaixo de seu anoitecer _(como lembrete)_ e imediatamente rola por controle (`rule:16.4.1.2`).
 
         - name: Habilidades e Ações
-          text: "**Capangas** possuem diversas ações e habilidades, como mostradas por seus ícones únicos. Ações e habilidades que começam com "**controlador**:" são recebidas pelo controlador do **capanga**."
+          text: "**Capangas** possuem diversas ações e habilidades, como mostradas por seus ícones únicos. Ações e habilidades que começam com “**controlador**”: são recebidas pelo controlador do **capanga**."
           subchildren:
             - name: Ação Quando Ganho (`hireling:whenhired`).
               text: Quando tomar o controle deste **capanga**, o jogador controlador deve realizar esta ação.
