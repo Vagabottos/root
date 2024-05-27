@@ -6,7 +6,7 @@
     - name: Conflito de Regras
       children: 
         - name: Precedência.
-          text: Se o texto de uma carta conflita com o texto das Leis de Root, o texto da carta tem precedência. Se o texto no guia “Aprenda a Jogar” conflitar com o texto nas Leis de Root, as Leis de Root têm precedência. Se você puder seguir uma regra geral e uma regra de facção ou dos capangas, siga ambas; caso não seja possível, siga a regra da facção ou capanga.
+          text: Se o texto de uma carta conflita com o texto das Leis de Root, o texto da carta tem precedência. Se o texto no guia “Aprenda a Jogar” conflitar com o texto nas Leis de Root, as Leis de Root têm precedência. Se você puder seguir uma regra geral e uma regra de facção ou dos **capangas**, siga ambas; caso não seja possível, siga a regra da facção ou **capanga**.
         - name: Uso do **Não Pode**.
           plainName: Uso do **Não Pode**.
           text: Qualquer regra que contenha o texto **não pode** ou variações é absoluta. Ela não pode ser substituída por nenhuma outra regra, exceto quando explicitamente instruído.
@@ -42,7 +42,7 @@
         - name: Facção Inicial.
           text: Cada jogador possui a facção escolhida na preparação (5) e as peças listadas no verso de seu tabuleiro de facção, exceto itens. Elas são chamadas, de forma genérica, de peças da facção ou outro termo similar. De forma específica, elas são chamadas de peças da **[nome da facção]**. _(Por exemplo, "os guerreiros de sua facção" e "guerreiros Marqueses" se referem as peças de formato de gato laranja do jogador dos Marqueses)_.
         - name: Propriedade.
-          text: A propriedade de uma peça de facção não pode mudar. _(Por exemplo, os Marqueses não podem usar seus Hospitais de Batalha em mercenários dos Ribeirinhos ou capangas, já que não são guerreiros dos Marqueses.)_
+          text: A propriedade de uma peça de facção não pode mudar. _(Por exemplo, os Marqueses não podem usar seus **Hospitais de Batalha** em **mercenários** dos Ribeirinhos ou **capangas**, já que não são guerreiros dos Marqueses.)_
         - name: Manipulação de Peças.
           text: Peças são posicionadas e removidas conforme definido no Glossário (`rule:16.6.19`, `rule:16.6.22`). Se você for comandado a posicionar, tomar ou remover peças, mas não puder fazê-lo, você deve posicionar, tomar ou remover o máximo possível. _(Isto não permite evitar custos ou pré-requisitos. Você simplesmente fará menos do que poderia)_ Se várias peças forem removidas simultaneamente e isso desencadearia efeitos, remova todas as peças antes de ativar os efeitos.
         - name: Uso de **Forçar**.
@@ -1176,34 +1176,34 @@
           text: Determine a ordem de turno e o primeiro jogador de forma aleatória.
 
         - name: "5º Passo: Prepare os Marcos"
-          text: Em consenso, vocês podem escolher usar marcos (`rule:16.5`). Se o fizerem, vocês podem ignorar ou substituir o posicionamento das peças da Torre e da Balsa descritas nos Mapas Alternativos (`rule:16.2`).
+          text: Em consenso, vocês podem escolher usar **marcos** (`rule:16.5`). Se o fizerem, vocês podem ignorar ou substituir o posicionamento das peças da **Torre** e da **Balsa** descritas nos Mapas Alternativos (`rule:16.2`).
           subchildren:
             - name: "1º Passo: Escolha."
-              text: Em grupo, escolham se vocês jogarão com 1 ou 2 marcos e removam quaisquer cartas de marco que vocês não queiram em jogo.
+              text: Em grupo, escolham se vocês jogarão com 1 ou 2 **marcos** e removam quaisquer cartas de **marco** que vocês não queiram em jogo.
             
             - name: "2º Passo: Revele e Recolha."
-              text: Misture as cartas de marco escolhidas, revele a quantidade acordada e colete as peças de marco mostradas em cada carta revelada.
+              text: Misture as cartas de **marco** escolhidas, revele a quantidade acordada e colete as peças de **marco** mostradas em cada carta revelada.
 
             - name: "3º Passo: Prepare."
-              text: O último jogador na ordem de turno posiciona um marco conforme descrito em sua respectiva carta. Caso tenham escolhido jogar com 2 marcos, o penúltimo jogador na ordem de turno posiciona o outro marco conforme descrito na sua respectiva carta.
+              text: O último jogador na ordem de turno posiciona um **marco** conforme descrito em sua respectiva carta. Caso tenham escolhido jogar com 2 **marcos**, o penúltimo jogador na ordem de turno posiciona o outro **marco** conforme descrito na sua respectiva carta.
 
         - name: "6º Passo: Prepare os Capangas"
-          text: Em consenso, vocês podem escolher utilizar exatamente 3 capangas (`rule:16.4`), da seguinte forma.
+          text: Em consenso, vocês podem escolher utilizar exatamente 3 **capangas** (`rule:16.4`), da seguinte forma.
           subchildren:
             - name: "1º Passo: Recolha Peças."
-              text: Embaralhe todas as cartas de capangas. Revele 3 destas cartas e retorne as demais para a caixa. Junte as peças dos capangas reveladas em um suprimento.
+              text: Embaralhe todas as cartas de **capangas**. Revele 3 destas cartas e retorne as demais para a caixa. Junte as peças dos **capangas** reveladas em um suprimento.
             
             - name: "2º Passo: Rebaixe."
-              text: Caso esteja em uma partida em 3 jogadores, vire um capanga aleatório para seu lado Rebaixado _(marcado com um "R")_. Em uma partida em 4 jogadores, vire 2 capangas aleatórios para seu lado Rebaixado. Em partidas com 5 ou mais jogadores, todos os 3 capangas ficam em seu lado Rebaixado.
+              text: Caso esteja em uma partida em 3 jogadores, vire um **capanga** aleatório para seu lado Rebaixado _(marcado com um "R")_. Em uma partida em 4 jogadores, vire 2 **capangas** aleatórios para seu lado Rebaixado. Em partidas com 5 ou mais jogadores, todos os 3 **capangas** ficam em seu lado Rebaixado.
             
             - name: "3º Passo: Prepare os Capangas."
-              text: Começando com o último jogador na ordem de turno e seguindo em sentido anti-horário, cada jogador prepara um dos capangas revelados conforme descrito em sua carta de capanga. _(Alguns não possuem instruções de preparação.)_
+              text: Começando com o último jogador na ordem de turno e seguindo em sentido anti-horário, cada jogador prepara um dos **capangas** revelados conforme descrito em sua carta de **capanga**. _(Alguns não possuem instruções de preparação.)_
             
             - name: "4º Passo: Posicione Marcadores de Capangas."
-              text: Posicione os 3 marcadores de capangas–marcados com "4", "8" e "12"–nos espaços 4, 8 e 12 da trilha de pontuação do mapa.
+              text: Posicione os 3 marcadores de **capangas**–marcados com "4", "8" e "12"–nos espaços 4, 8 e 12 da trilha de pontuação do mapa.
             
             - name: "5º Passo: Retorne Facções Correspondentes."
-              text: Uma facção não pode ser usada caso o capanga correspondente esteja em jogo _(mostrado pela sua cor e ícone)_. Retorne os tabuleiros de facção, peças e cartas de preparação correspondentes para a caixa.
+              text: Uma facção não pode ser usada caso o **capanga** correspondente esteja em jogo _(mostrado pela sua cor e ícone)_. Retorne os tabuleiros de facção, peças e cartas de preparação correspondentes para a caixa.
 
         - name: "8º Passo: Prepare as Facções"
           text: Se você está jogando uma partida com 2 jogadores, remova as 4 cartas de domínio do jogo. Embaralhe as cartas restantes. Cada jogador compra 5 cartas. _(Não 3 como na Preparação Padrão! Você escolherá apenas 3 para ficar no 10º passo.)_
@@ -1215,7 +1215,7 @@
               text: Embaralhe todas as cartas de preparação de facção militantes _(nome vermelho com espada)_ e revele uma no centro da mesa. Embaralhe as cartas de preparação de facção militantes restantes com as cartas de preparação de facção insurgentes _(nome cinza sem espada)_ e revele uma carta por jogador no centro da mesa. _(Ao final, você terá uma carta de preparação de facção a mais revelada do que a quantidade de jogadores.)_
               subchildren:
                 - name: Dois Jogadores.
-                  text: Caso esteja jogando em 2 jogadores, remova todas as cartas de preparação de facções insurgentes antes de revelar as cartas. _(Embora você possa mantê-las, caso esteja jogando com capangas e esteja se sentindo corajoso.)_
+                  text: Caso esteja jogando em 2 jogadores, remova todas as cartas de preparação de facções insurgentes antes de revelar as cartas. _(Embora você possa mantê-las, caso esteja jogando com **capangas** e esteja se sentindo corajoso.)_
 
                 - name: Trave o Último Insurgente.
                   text: Caso a última carta de preparação de facção revelada seja uma insurgente, vire-a de lado para mostrar que ela está travada. Ela não pode ser escolhida a menos que pelo menos uma facção militante tenha sido escolhida antes.
@@ -1267,7 +1267,7 @@
         - name: Mapa das Montanhas
           subchildren:
             - name: Alterações na Preparação.
-              text: Posicione os 6 marcadores de caminho fechado cobrindo os 6 caminhos de cores mais escuras. Posicione a peça da Torre na clareira central mostrando 2 torres.
+              text: Posicione os 6 marcadores de caminho fechado cobrindo os 6 caminhos de cores mais escuras. Posicione a peça da **Torre** na clareira central mostrando 2 torres.
 
             - name: Caminhos Fechados.
               text: Um caminho coberto com um marcador de caminho fechado é um **caminho fechado**. Clareiras ligadas por caminhos fechados não são adjacentes, e peças _(como os Bandidos da Estrada)_ não podem ser posicionadas em caminhos fechados. Caminhos fechados cercam e dividem florestas como se fossem caminhos _(logo, o Malandro pode deslizar cruzando-os)_.
@@ -1276,7 +1276,7 @@
               text: Uma vez por turno, durante o Dia, um jogador pode gastar uma carta para remover um marcador de caminho fechado permanentemente, e receber 1 PV. Para poder fazê-lo, o jogador deve ter pelo menos uma peça de facção qualquer em uma das clareiras ligadas ao marcador de caminho fechado.
 
             - name: A Passagem e a Torre.
-              text: A clareira marcada com a peça de Torre é **a passagem**. Ao final do Anoitecer de um jogador, caso ele governe a Passagem, ele recebe 1 PV.
+              text: A clareira marcada com a peça de **Torre** é **a passagem**. Ao final do Anoitecer de um jogador, caso ele governe a Passagem, ele recebe 1 PV.
 
             - name: Florestas.
               text: Todos os terrenos cercados por caminhos e clareiras no mapa das Montanhas são considerados Florestas (`rule:2.4`), independentemente da presença de árvores em sua ilustração.
@@ -1315,7 +1315,7 @@
             - name: "Ação Especial: Instigar"
               text: Exaura 1 `item:torch` para iniciar uma batalha em sua clareira. Você escolhe o atacante e o defensor, e você escolhe a ordem em que eles removem construções e marcadores. _(Receba 1 PV para cada construção ou marcador removido de cada jogador e por peça Hostil de cada jogador removida.)_
 
-        - name:  Árbitro
+        - name: Árbitro
           subchildren:
             - name: Itens Iniciais
               text: Comece com `item:boot`, `item:torch`, `item:sword`, `item:sword`.
@@ -1360,19 +1360,19 @@
         - name: Recebendo e Perdendo Capangas
           subchildren:
             - name: Recebendo do Suprimento.
-              text: Quando o marcador de pontuação de um jogador entra no espaço com um marcador de capanga, ele pega o marcador de capanga e o coloca abaixo de seu Anoitecer _(como um lembrete)_. Ao final de seu turno, ele pega qualquer carta de capanga do suprimento, rola por controle (`rule:16.4.1.2`) e vira o marcador do capanga.
+              text: Quando o marcador de pontuação de um jogador entra no espaço com um marcador de **capanga**, ele pega o marcador de **capanga** e o coloca abaixo de seu Anoitecer _(como um lembrete)_. Ao final de seu turno, ele pega qualquer carta de **capanga** do suprimento, rola por controle (`rule:16.4.1.2`) e vira o marcador do **capanga**.
 
             - name: Rolar por Controle.
-              text: Quando um jogador ganha uma carta de capanga, ele rola o dado de controle e posiciona marcadores de controle na carta de capanga em quantidade igual ao resultado da rolagem. Ele conta apenas os pontos dourados no caso de ser o jogador com mais PVs ou estar empatado em primeiro; do contrário, conta todos os pontos _(incluindo se tiver ativado uma carta de domínio)_.
+              text: Quando um jogador ganha uma carta de **capanga**, ele rola o dado de controle e posiciona marcadores de controle na carta de **capanga** em quantidade igual ao resultado da rolagem. Ele conta apenas os pontos dourados no caso de ser o jogador com mais PVs ou estar empatado em primeiro; do contrário, conta todos os pontos _(incluindo se tiver ativado uma carta de domínio)_.
 
             - name: Ganhando de Outro Jogador.
-              text: Ao final do turno do jogador, ele deve remover um marcador de controle de cada carta de capanga que possua. Depois, deve entregar cada carta de capanga controlada por ele que não tenha marcadores de controle, juntamente com o marcador de capanga, para qualquer outro jogador _(até mesmo para o jogador com mais PVs)_. Esse jogador posiciona o marcador de capanga abaixo de seu anoitecer _(como lembrete)_ e imediatamente rola por controle (`rule:16.4.1.2`).
+              text: Ao final do turno do jogador, ele deve remover um marcador de controle de cada carta de **capanga** que possua. Depois, deve entregar cada carta de **capanga** controlada por ele que não tenha marcadores de controle, juntamente com o marcador de **capanga**, para qualquer outro jogador _(até mesmo para o jogador com mais PVs)_. Esse jogador posiciona o marcador de capanga abaixo de seu anoitecer _(como lembrete)_ e imediatamente rola por controle (`rule:16.4.1.2`).
 
         - name: Habilidades e Ações
-          text: Capangas possuem diversas ações e habilidades, como mostradas por seus ícones únicos. Ações e habilidades que começam com "**controlador**:" são recebidas pelo controlador do capanga.
+          text: "**Capangas** possuem diversas ações e habilidades, como mostradas por seus ícones únicos. Ações e habilidades que começam com "**controlador**:" são recebidas pelo controlador do **capanga**."
           subchildren:
             - name: Ação Quando Ganho (`hireling:whenhired`).
-              text: Quando tomar o controle deste capanga, o jogador controlador deve realizar esta ação.
+              text: Quando tomar o controle deste **capanga**, o jogador controlador deve realizar esta ação.
 
             - name: Habilidade (`hireling:ability`).
               text: Esta habilidade está sempre ativa ou ela especificará quando acontece.
@@ -1386,35 +1386,35 @@
         - name: Regras
           subchildren:
             - name: Governar.
-              text: O controlador do capanga trata as peças do capanga como suas apenas para o propósito de governar. _(O controlador pode até mesmo governar uma clareira que tenha apenas capangas.)_ Capangas não controlados podem governar clareiras como se eles fossem jogadores (`rule:2.5`).
+              text: O controlador do **capanga** trata as peças do **capanga** como suas apenas para o propósito de governar. _(O controlador pode até mesmo governar uma clareira que tenha apenas **capangas**.)_ **Capangas** não controlados podem governar clareiras como se eles fossem jogadores (`rule:2.5`).
 
             - name: Inimigo.
-              text: Um capanga é considerado um inimigo para jogadores que não sejam seu controlador e jogadores que não estejam em coalizão com seu controlador.
+              text: Um **capanga** é considerado um inimigo para jogadores que não sejam seu controlador e jogadores que não estejam em coalizão com seu controlador.
 
             - name: Peças Separadas.
-              text: Peças dos capangas não são peças da facção do controlador. _(Desta forma, por exemplo, o Ducado não pode contá-las como peças do Ducado para influenciar, os Guardiões não podem removê-las quando levantam acampamento, etc.)_.
+              text: Peças dos **capangas** não são peças da facção do controlador. _(Desta forma, por exemplo, o Ducado não pode contá-las como peças do Ducado para influenciar, os Guardiões não podem removê-las quando levantam acampamento, etc.)_.
 
             - name: Ações Separadas.
-              text: Ações de Mover ou Batalhar de um Capanga somente podem mover ou iniciar batalhas com as peças do capanga e não podem incluir peças do controlador. Capangas não podem realizar ações de outra forma _(por exemplo, a partir de ações de Mover de seu controlador, Ordens Falsas, ou Status de Aliado do Malandro)._
+              text: Ações de Mover ou Batalhar de um **Capanga** somente podem mover ou iniciar batalhas com as peças do **capanga** e não podem incluir peças do controlador. **Capangas** não podem realizar ações de outra forma _(por exemplo, a partir de ações de Mover de seu controlador, Ordens Falsas, ou Status de Aliado do Malandro)._
 
             - name: Efeitos Separados.
-              text: Capangas não podem usar as habilidades de seus controladores, efeitos de cartas permanentes criadas ou cartas de emboscada. _(Por exemplo, um capanga não pode usar Construtores de Barcos quando se mover, e os Bandidos da Estrada não podem ser posicionados num rio. O controlador de um capanga não pode jogar uma carta de emboscada quando batalhar com ele.)_
+              text: "**Capangas** não podem usar as habilidades de seus controladores, efeitos de cartas permanentes criadas ou cartas de emboscada. _(Por exemplo, um **capanga** não pode usar Construtores de Barcos quando se mover, e os Bandidos da Estrada não podem ser posicionados num rio. O controlador de um **capanga** não pode jogar uma carta de emboscada quando batalhar com ele.)_"
 
             - name: Sem Pontos na Remoção.
-              text: O controlador do capanga não recebe PVs quando o capanga remove quaisquer peças inimigas _(usualmente em batalha)_. _(Os jogadores ainda podem receber PVs por remover construções e marcadores dos capangas, mesmo quando se defendendo em batalha contra capangas. Os jogadores ainda pontuam normalmente caso os Profetas do Sol Quente forcem as peças de facção daquele jogador a entrar em batalha.)_
+              text: O controlador do **capanga** não recebe PVs quando o **capanga** remove quaisquer peças inimigas _(usualmente em batalha)_. _(Os jogadores ainda podem receber PVs por remover construções e marcadores dos **capangas**, mesmo quando se defendendo em batalha contra **capangas**. Os jogadores ainda pontuam normalmente caso os Profetas do Sol Quente forcem as peças de facção daquele jogador a entrar em batalha.)_
 
             - name: Coisas Estranhas.
-              text: Se você mover um capanga com a Balsa, você compra uma carta. Se você mover guerreiros de um capanga para uma clareira com um marcador de simpatia da Aliança ou remover simpatia da Aliança usando um capanga, isso aciona o Ultraje (`rule:8.2.6`). _(Estes efeitos se referem ao "movimento do jogador" ou ao "jogador removendo".)_
+              text: Se você mover um **capanga** com a Balsa, você compra uma carta. Se você mover guerreiros de um **capanga** para uma clareira com um marcador de simpatia da Aliança ou remover simpatia da Aliança usando um **capanga**, isso aciona o Ultraje (`rule:8.2.6`). _(Estes efeitos se referem ao "movimento do jogador" ou ao "jogador removendo".)_
         
     - name: Marcos
       children:
         - name: Regras Gerais
           subchildren:
             - name: Segurança.
-              text: Marcos não podem ser atacados, movidos, ou removidos, a menos que esteja explicitado no marco.
+              text: "**Marcos** não podem ser atacados, movidos, ou removidos, a menos que esteja explicitado no **marco**."
 
             - name: Propriedade.
-              text: Marcos não são de propriedade de nenhuma facção e não são peças inimigas.
+              text: "**Marcos** não são de propriedade de nenhuma facção e não são peças inimigas."
 
     - name: Glossário
       children:
@@ -1458,10 +1458,10 @@
           text: Veja `rule:2.5`.
 
         - name: Habilidade.
-          text: Efeito persistente de uma facção conforme listado no topo do respectivo tabuleiro de facção e na respectiva seção Regras da Facção e Habilidades, ou um efeito continuo de um capanga, conforme listado em sua carta de capanga (`rule:16.4.2`).
+          text: Efeito persistente de uma facção conforme listado no topo do respectivo tabuleiro de facção e na respectiva seção Regras da Facção e Habilidades, ou um efeito continuo de um capanga, conforme listado em sua carta de **capanga** (`rule:16.4.2`).
 
         - name: Inimigo.
-          text: Qualquer outro jogador que não esteja em **Coalizão** com você (`rule:9.2.8`) ou um capanga que esteja no suprimento, ou sendo controlado por um jogador inimigo.
+          text: Qualquer outro jogador que não esteja em **Coalizão** com você (`rule:9.2.8`) ou um **capanga** que esteja no suprimento, ou sendo controlado por um jogador inimigo.
 
         - name: Item.
           text: Peça cartonada quadrada mostrando um item (`item:boot`, `item:sword`, `item:crossbow`, etc.) que não pertence a nenhuma facção.
@@ -1491,7 +1491,7 @@
           text: Todos os guerreiros, peões, construções e marcadores listados no verso de um tabuleiro de facção. _(Itens não são peças de facção.)_ Veja `rule:1.5.2`.
 
         - name: Peça Inimiga.
-          text: Uma peça de facção de um jogador inimigo ou uma peça de capanga de um capanga inimigo, exceto quando você tratar a peça como sua devido a uma regra _(por exemplo, os mercenários Ribeirinhos, etc.). _(Itens não são peças inimigas.)_
+          text: Uma peça de facção de um jogador inimigo ou uma peça de **capanga** de um **capanga** inimigo, exceto quando você tratar a peça como sua devido a uma regra _(por exemplo, os **mercenários** Ribeirinhos, etc.). _(Itens não são peças inimigas.)_
 
         - name: Posicione.
           text: Pegue a peça indicada do suprimento correspondente e a coloque no destino indicado. Usualmente, nenhum suprimento é indicado, nesse caso, a peça vem de seu suprimento usual ou é retirada do espaço mais à esquerda da trilha correspondente.
@@ -1515,10 +1515,10 @@
           text: Coleção de peças que não está em um tabuleiro de facção ou no mapa. O suprimento de itens é a coleção de itens presentes no mapa.
 
         - name: Trata.
-          text: Uma coisa indicada toma as propriedades da segunda coisa indicada. Enquanto você trata peças inimiga como suas para governar, elas não são peças inimigas, mas ainda são peças de facção do jogador inimigo. _(Por exemplo, guerreiros Ribeirinhos contratados como mercenários não são peças inimigas para você, mas ainda são peças de facção dos Ribeirinhos.)_
+          text: Uma coisa indicada toma as propriedades da segunda coisa indicada. Enquanto você trata peças inimiga como suas para governar, elas não são peças inimigas, mas ainda são peças de facção do jogador inimigo. _(Por exemplo, guerreiros Ribeirinhos contratados como **mercenários** não são peças inimigas para você, mas ainda são peças de facção dos Ribeirinhos.)_
 
         - name: Trocar.
-          text: Troque a localização de duas peças indicadas entre si. _(Isso ignora restrições de mover e posicionar, como a Armadilha da Conspiração Corvídea e a Torre da Guarda dos Marqueses.)_
+          text: Troque a localização de duas peças indicadas entre si. _(Isso ignora restrições de mover e posicionar, como a Armadilha da Conspiração Corvídea e a **Torre da Guarda** dos Marqueses.)_
 
 - name: Índice
   color: "#ffffff"
