@@ -1188,7 +1188,7 @@
               text: O último jogador na ordem de turno posiciona um marco conforme descrito em sua respectiva carta. Caso tenham escolhido jogar com 2 marcos, o penúltimo jogador na ordem de turno posiciona o outro marco conforme descrito na sua respectiva carta.
 
         - name: "6º Passo: Prepare os Capangas"
-          text: Em consenso, vocês podem escolher utilizar exatamente 3 capangas (`rule:16.3`), da seguinte forma.
+          text: Em consenso, vocês podem escolher utilizar exatamente 3 capangas (`rule:16.4`), da seguinte forma.
           subchildren:
             - name: "1º Passo: Recolha Peças."
               text: Embaralhe todas as cartas de capangas. Revele 3 destas cartas e retorne as demais para a caixa. Junte as peças dos capangas reveladas em um suprimento.
@@ -1255,11 +1255,11 @@
             - name: O Lago.
               text: "**O Lago** está no centro do mapa. O lago é tratado como rios ligando todas as clareiras costeiras com qualquer outra clareira costeira. O lago divide florestas."
 
-            - name: Coastal Clearings.
-              text: Clearings touching the lake _(not separated by a forest)_ are **coastal clearings**.
-
             - name: Clareiras Costeiras.
               text: Todas as clareiras que tocam o Lago _(não separadas por uma floresta)_ são **clareiras costeiras**. Toda floresta costeira é adjacente às suas duas florestas costeiras vizinhas _(separadas por uma floresta costeira)_.
+
+            - name: Florestas Costeiras.
+              text: Florestas que tocam o Lago são **florestas costeiras**. Cada floresta costeira é adjacente a duas outras florestas costeiras vizinhas _(separadas por uma clareira costeira)_.
 
             - name: A Balsa.
               text: Uma vez por turno, peças realizando um movimento partindo da clareira costeira onde esteja a balsa, podem se mover para outra clareira costeira, movendo a balsa junto _(e seguindo as regras normais de movimento)_. Após esse movimento, esse jogador compra uma carta. A Balsa não pode ser atacada ou removida.
