@@ -1527,265 +1527,265 @@
       text: "`rule:16.2.3.4`"
 
     - name: Alcance.
-      text: `rule:5.2`
+      text: "`rule:5.2`"
 
     - name: Andamento e Resoluções.
       children:
         - name: Sequência de Turno.
-          text: `rule:1.4.1`
+          text: "`rule:1.4.1`"
 
         - name: Interrupções.
-          text: `rule:1.4.2`
+          text: "`rule:1.4.2`"
 
         - name: Efeitos Simultâneos.
-          text: `rule:1.1.3`
+          text: "`rule:1.1.3`"
 
     - name: Autômatos .
-      text: `rule:16.1.3`
+      text: "`rule:16.1.3`"
 
     - name: Balsa.
-      text: `rule:16.2.2.5`
+      text: "`rule:16.2.2.5`"
 
     - name: Baralhos.
-      text: `rule:16.1.2`
+      text: "`rule:16.1.2`"
 
     - name: Batalha.
-      text: `rule:4.3`
+      text: "`rule:4.3`"
       children:
         - name: Defensor pode Emboscar.
-          text: `rule:4.3.1`
+          text: "`rule:4.3.1`"
 
         - name: Indefeso.
-          text: `rule:4.3.3.2`
+          text: "`rule:4.3.3.2`"
 
         - name: Resolver Emboscada.
-          text: `rule:4.3.1.2`
+          text: "`rule:4.3.1.2`"
 
     - name: Caminhos.
-      text: `rule:2.2`
+      text: "`rule:2.2`"
       children:
         - name: No mapa das Montanhas.
-          text: `rule:16.2.3.2`-`rule:16.2.3.3`
+          text: "`rule:16.2.3.2`"-`"rule:16.2.3.3`"
 
     - name: Capangas.
-      text: `rule:16.4`
+      text: "`rule:16.4`"
       children:
         - name: Preparação.
-          text: `rule:16.1.6`
+          text: "`rule:16.1.6`"
 
     - name: Cartas.
       children:
         - name: Comprar e Descartar.
-          text: `rule:2.1`
+          text: "`rule:2.1`"
 
         - name: Domínio.
-          text: `rule:2.1.3`
+          text: "`rule:2.1.3`"
           subchildren:
             - name: Ativar.
-              text: `rule:3.3.1`
+              text: "`rule:3.3.1`"
 
             - name: Gastando pelo Naipe.
-              text: `rule:3.3.3`
+              text: "`rule:3.3.3`"
 
             - name: Limite de mão.
-              text: `rule:3.3.2`
+              text: "`rule:3.3.2`"
 
             - name: Tomando Cartas Disponíveis.
-              text: `rule:3.3.4`
+              text: "`rule:3.3.4`"
 
             - name: Vencendo com.
-              text: `rule:3.3.1.1`-`rule:3.3.1.2`
+              text: "`rule:3.3.1.1`"-`"rule:3.3.1.2`"
 
         - name: Emboscada.
-          text: `rule:2.1.2`
+          text: "`rule:2.1.2`"
           subchildren:
             - name: Em batalhas.
-              text: `rule:4.3.1`
+              text: "`rule:4.3.1`"
 
         - name: Entregando cartas para outros jogadores.
-          text: `rule:1.3.2`
+          text: "`rule:1.3.2`"
 
         - name: Naipes .
-          text: `rule:2.1`
+          text: "`rule:2.1`"
 
         - name: Pássaros são Curingas.
-          text: `rule:2.1.1`
+          text: "`rule:2.1.1`"
 
     - name: Clareiras.
       children:
         - name: Adjacência.
-          text: `rule:2.2.1`
+          text: "`rule:2.2.1`"
 
         - name: Inicial.
-          text: `rule:16.1.8.2.1`-`rule:16.1.8.2.2`
+          text: "`rule:16.1.8.2.1`"-`"rule:16.1.8.2.2`"
 
         - name: No mapa do lago.
-          text: `rule:16.2.2.3`
+          text: "`rule:16.2.2.3`"
 
         - name: Locais.
-          text: `rule:2.2.3`
+          text: "`rule:2.2.3`"
 
         - name: Naipe.
-          text: `rule:2.2.2`
+          text: "`rule:2.2.2`"
 
         - name: Ruínas.
-          text: `rule:2.1.4`
+          text: "`rule:2.1.4`"
 
     - name: Conflito de Regras,.
-      text: `rule:1.1`
+      text: "`rule:1.1`"
 
     - name: Criar/Criando.
       children:
         - name: Custo .
-          text: `rule:4.1.1`
+          text: "`rule:4.1.1`"
 
         - name: Ganhando pontos.
-          text: `rule:3.2.2`
+          text: "`rule:3.2.2`"
 
         - name: 3 interrogações.
-          text: `rule:4.1.1`
+          text: "`rule:4.1.1`"
 
     - name: Danos.
       children:
         - name: Causando.
-          text: `rule:4.3.4`
+          text: "`rule:4.3.4`"
 
         - name: Indefeso.
-          text: `rule:4.3.3.2`
+          text: "`rule:4.3.3.2`"
 
         - name: Extra.
-          text: `rule:4.3.3.1`
+          text: "`rule:4.3.3.1`"
 
         - name: Máximo.
-          text: `rule:4.3.2.1`
+          text: "`rule:4.3.2.1`"
 
         - name: Role os dados.
-          text: `rule:4.3.2`
+          text: "`rule:4.3.2`"
 
         - name: Recebendo.
-          text: `rule:4.3.4`
+          text: "`rule:4.3.4`"
 
     - name: Efeitos Permanentes.
-      text: `rule:4.1.3`
+      text: "`rule:4.1.3`"
       children:
         - name: Duplicatas.
-          text: `rule:4.1.4`
+          text: "`rule:4.1.4`"
 
     - name: Facção.
       children:
         - name: Preparação Avançada.
-          text: `rule:16.1.8`
+          text: "`rule:16.1.8`"
 
         - name: Peças de.
-          text: `rule:1.5.2`
+          text: "`rule:1.5.2`"
 
         - name: Preparação Padrão.
-          text: `rule:5.1.1`, `rule:5.1.7`
+          text: "`rule:5.1.1`", `"rule:5.1.7`"
 
     - name: Florestas.
-      text: `rule:2.4`
+      text: "`rule:2.4`"
       children:
         - name: No mapa do Lago.
-          text: `rule:16.2.2.4`
+          text: "`rule:16.2.2.4`"
 
         - name: No mapa das Montanhas.
-          text: `rule:16.2.3.5`
+          text: "`rule:16.2.3.5`"
 
     - name: Glossário.
-      text: `rule:16.6`
+      text: "`rule:16.6`"
 
     - name: Governante.
-      text: `rule:2.5`
+      text: "`rule:2.5`"
       children:
         - name: Em caso de empate.
-          text: `rule:2.5`
+          text: "`rule:2.5`"
 
     - name: Informações Públicas e Privadas.
-      text: `rule:1.2`
+      text: "`rule:1.2`"
 
     - name: Indefeso.
-      text: `rule:4.3.3.2`
+      text: "`rule:4.3.3.2`"
 
     - name: Lago.
-      text: `rule:16.2.2.2`
+      text: "`rule:16.2.2.2`"
 
     - name: Mapas.
-      text: `rule:16.2`
+      text: "`rule:16.2`"
       children:
         - name: Preparação.
-          text: `rule:16.1.1`
+          text: "`rule:16.1.1`"
 
     - name: Marcos.
-      text: `rule:16.5`
+      text: "`rule:16.5`"
       children:
         - name: Preparação.
-          text: `rule:16.1.5`
+          text: "`rule:16.1.5`"
 
     - name: Movimento.
-      text: `rule:4.2`
+      text: "`rule:4.2`"
       children:
         - name: Você deve governar.
-          text: `rule:4.2.1`
+          text: "`rule:4.2.1`"
 
         - name: Múltiplos Movimentos.
-          text: `rule:4.2.2`
+          text: "`rule:4.2.2`"
 
         - name: Usando a Balsa.
-          text: `rule:16.2.2.5`
+          text: "`rule:16.2.2.5`"
 
     - name: Negociações.
-      text: `rule:1.3`
+      text: "`rule:1.3`"
 
     - name: Peças.
-      text: `rule:16`
+      text: "`rule:16`"
       children:
         - name: Limite de.
-          text: `rule:1.5.1`
+          text: "`rule:1.5.1`"
 
         - name: Manipulação de.
-          text: `rule:1.5.4`
+          text: "`rule:1.5.4`"
 
         - name: Propriedade,.
-          text: `rule:1.5.3`
+          text: "`rule:1.5.3`"
 
     - name: Pontuando.
       children:
         - name: Criando.
-          text: `rule:3.2.2`
+          text: "`rule:3.2.2`"
 
         - name: Removendo Construções e Marcadores Inimigos.
-          text: `rule:3.2.1`
+          text: "`rule:3.2.1`"
 
     - name: Preparação.
       children:
         - name: Avançada.
-          text: `rule:16.1`
+          text: "`rule:16.1`"
 
         - name: Padrão.
-          text: `rule:5.1`
+          text: "`rule:5.1`"
 
     - name: Rios.
-      text: `rule:2.3`
+      text: "`rule:2.3`"
       children:
         - name: No mapa do Lago.
-          text: `rule:16.2.2`
+          text: "`rule:16.2.2`"
 
         - name: No mapa do Inverno.
-          text: `rule:16.2.1`
+          text: "`rule:16.2.1`"
 
     - name: Termos.
-      text: `rule:16.6`
+      text: "`rule:16.6`"
 
     - name: Torre.
-      text: `rule:16.2.3.4`
+      text: "`rule:16.2.3.4`"
 
     - name: Vencendo.
       children:
         - name: Por Domínio.
-          text: `rule:3.3`
+          text: "`rule:3.3`"
 
         - name: Por Pontos de Vitória.
-          text: `rule:3.1`
+          text: "`rule:3.1`"
 
         - name: Pelos dois acima ao mesmo tempo.
-          text: `rule:3.1`
+          text: "`rule:3.1`"
