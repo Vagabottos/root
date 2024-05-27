@@ -561,7 +561,7 @@
           text: If you have more items total in your Satchel and Damaged box than your item limit—six plus two per `item:sack` face up on the matching track—remove items from your Satchel and Damaged box until you have items equal to your item limit, and remove them from the game permanently.
 
     - name: Playing with Two Vagabonds
-      subtext: If you have _The Riverfolk Expansion_, you can play a game with two Vagabonds by following these rules.
+      pretext: If you have _The Riverfolk Expansion_, you can play a game with two Vagabonds by following these rules.
       children:
         - name: Setup.
           text: During setup, use both sets of "R" items and place two random "R" items in each ruin slot. If you are using the Standard Setup (5.1), randomly determine which Vagabond sets up first. 
@@ -1524,10 +1524,13 @@
   color: "#ffffff"
   children:
     - name: A Passagem.
-      pretext: "`rule:16.2.3.4`"
+      children:
+        - name: "`rule:16.2.3.4`"
 
     - name: Alcance.
-      pretext: "`rule:5.2`"
+      children:
+        - name:
+          text: "`rule:5.2`"
 
     - name: Andamento e Resoluções.
       children:
