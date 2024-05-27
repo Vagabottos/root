@@ -1524,7 +1524,7 @@
   color: "#ffffff"
   children:
     - name: A Passagem.
-      text: `rule:16.2.3.4`
+      text: "`rule:16.2.3.4`"
 
     - name: Alcance.
       text: `rule:5.2`
