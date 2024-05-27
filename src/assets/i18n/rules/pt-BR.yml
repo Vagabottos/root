@@ -1524,13 +1524,10 @@
   color: "#ffffff"
   children:
     - name: A Passagem.
-      children:
-        - name: "`rule:16.2.3.4`"
+      pretext: "`rule:16.2.3.4`"
 
     - name: Alcance.
-      children:
-        - name:
-          text: "`rule:5.2`"
+      pretext: "`rule:5.2`"
 
     - name: Andamento e Resoluções.
       children:
