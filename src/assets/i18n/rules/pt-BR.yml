@@ -1680,7 +1680,7 @@
           text: `rule:1.5.2`
 
         - name: Preparação Padrão.
-          text: `rule:5.1.1`,`rule:5.1.7`
+          text: `rule:5.1.1`, `rule:5.1.7`
 
     - name: Florestas.
       text: `rule:2.4`
