@@ -1307,7 +1307,7 @@
             - name: "Ação Especial: Esconderijo"
               text: Exaura 1 `item:torch` para reparar 3 itens e, imediatamente, termine o Dia e siga para o Anoitecer.
 
-        - name: Vagrant
+        - name: Vagabundo
           subchildren:
             - name: Itens Iniciais
               text: Comece com `item:coin`, `item:torch`, `item:boot`.
