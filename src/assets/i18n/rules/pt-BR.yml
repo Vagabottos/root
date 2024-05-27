@@ -1162,7 +1162,7 @@
   children:
     - name: Preparação Avançada
       pretext: Existem centenas de formas de jogar **Root**.
-        children:
+      children:
         - name: "1º Passo: Escolha e Prepare o Mapa"
           text: Em grupo, escolham um mapa. Se você escolher um mapa alternativo (`rule:16.2`), siga sua seção de Modificações na Preparação. Depois, recolha os 12 marcadores de naipe, coloque-os com a face para baixo, misture-os, e coloque um em cada clareira, cobrindo o naipe impresso, caso exista. Prepare as ruínas (`rule:5.1.4`), suprimento de itens (`rule:5.1.5`) e dados (`rule:5.1.6`) normalmente.
 
