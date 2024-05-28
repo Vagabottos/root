@@ -745,124 +745,124 @@
         - name: Set Costs.
           text: You may move each service marker to any space on its track, setting it to a new cost.
 
-- name: Underground Duchy
+- name: Ducado Subterrâneo
   color: "#eec4ab"
   icon: duchy
   children:
-    - name: Overview
-      pretext: The Underground Duchy wants to show the foreign creatures of the Woodland that they would be better off as subjects. As they set up frontier outposts to show their power in the Woodland, the Duchy can sway **ministers** to the cause, scoring victory points and diverting more of the Duchy's resources. But be careful-a reversal of fortune could spell public humiliation, leading ministers to abandon the task.
+    - name: Resumo
+      pretext: O Ducado Subterrâneo quer mostrar para as criaturas de fora da Floresta da Madeira que elas estariam melhores como súditos. Ao mesmo tempo que eles estabelecem postos avançados para mostrar sua força na Floresta, eles podem influenciar **ministros** para sua causa, recebendo PVs e desviando mais recursos do Ducado. Mas cuidado –uma reviravolta de sorte causar humilhação pública, levando os ministros a abandonarem suas tarefas.
 
-    - name: Faction Rules and Abilities
+    - name: Regras da Facção e Habilidades
       children:
-        - name: Crafting.
-          text: The Duchy crafts during Evening by activating citadels and markets.
+        - name: Criar.
+          text: O Ducado cria durante o anoitecer, ativando Cidadelas e Mercados.
 
-        - name: The Burrow.
-          text: "**The Burrow** is an unsuited clearing adjacent to each clearing with a tunnel token. Non-Duchy pieces cannot be placed in or moved into the Burrow. The Duchy always rules the Burrow _(even with no pieces there)_."
+        - name: A Toca.
+          text: "**A Toca** é uma clareira sem naipe que está adjacente a todas as clareiras que possuem um marcador de **túnel**. Peças que não sejam do Ducado não podem ser posicionadas ou movidas para lá. O Ducado sempre governa a **Toca** _(mesmo sem peças lá)_."
 
-        - name: The Price of Failure.
-          text: Whenever any number of Duchy buildings are removed, the Duchy returns their swayed minister card of highest rank _(lord, then noble, then squire)_ to their Unswayed Ministers pile, and removes its crown from the game permanently, then discards a random card. If they have multiple swayed ministers of highest rank, the Duchy chooses which to return.
+        - name: O Preço da Derrota.
+          text: Sempre que qualquer quantidade de construções do Ducado é removida, o Ducado descarta uma carta aleatória, retorna sua carta de ministro influenciado de maior nível _(lorde, seguido de nobre e comuns)_ para seu baralho de ministros não influenciados e remove sua coroa permanentemente do jogo. Caso ele possua mais do que um ministro influenciado empatado no maior nível, então o Ducado escolhe qual retornar.
 
-        - name: Tunnels.
-          text: The Duchy has three tunnel tokens. If the Duchy is prompted to place a tunnel but all three tunnels are on the map, the Duchy may first remove any tunnel from the map.
+        - name: Túneis.
+          text: O Ducado possui três marcadores de túneis. Caso o Ducado seja instruído a posicionar um túnel mas todos os três já estejam no mapa, o Ducado pode, primeiro, remover um do mapa.
 
-    - name: Faction Setup
+    - name: Preparação
       children:
-        - name: "Step 1: Gather Warriors and Tunnels."
-          text: Form supplies of 20 warriors and 3 tunnel tokens.
+        - name: "1º Passo: Receber Guerreiros e Túneis."
+          text: Forme um suprimento de 20 guerreiros e 3 marcadores de túneis túneis próximos de você.
 
-        - name: "Step 2: Prepare the Burrow."
-          text: Place the Burrow board near the map.
+        - name: "2º Passo: Prepare a Toca."
+          text: Posicione o tabuleiro da **Toca** próximo do mapa.
 
-        - name: "Step 3: Surface."
-          text: Place 2 warriors and 1 tunnel in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing.  Then place 2 warriors in each clearing adjacent to that corner clearing, except the Burrow. _(This is updated from earlier printings for more flexibility.)_
+        - name: "3º Passo: Vá para a Superfície."
+          text: Posicione 2 guerreiros e 1 **túnel** em uma clareira de canto que não seja a clareira inicial de outro jogador e, se possível, diagonalmente oposta a uma clareira de canto inicial. Essa é sua clareira inicial. Depois, posicione 2 guerreiros em cada clareira adjacente, exceto na **Toca**. _(Esta regra foi alterada em relação a edições anteriores para maior flexibilidade.)_
 
-        - name: "Step 4: Fill Building Tracks."
-          text: Place 3 citadels and 3 markets on your matching Buildings spaces.
+        - name: "4º Passo: Complete as Trilhas de Construções."
+          text: Posicione as 3 Cidadelas e os 3 Mercados nos espaços correspondentes.
 
-        - name: "Step 5: Collect Ministers."
-          text: Place 9 minister cards face up on your Unswayed Ministers pile.
+        - name: "5º Passo: Receba Ministros."
+          text: Posicione as 9 cartas de ministros, com a frente para cima, no seu Baralho de Ministros Não Influenciados.
 
-        - name: "Step 6: Fill Crown Spaces."
-          text: Place 9 crowns on the spaces with victory points on your faction board.
+        - name: "6º Passo: Complete as Coroas."
+          text: Posicione as 9 coroas nos espaços com PVs de seu tabuleiro de facção
 
-    - name: Birdsong
-      pretext: Place one warrior, plus one warrior per warrior icon showing, in the Burrow.
+    - name: Amanhecer
+      pretext: Posicione, na **Toca**, 1 guerreiro, mais 1 guerreiro para cada ícone de guerreiro visível.
       
-    - name: Daylight
-      pretext: Your Daylight has three steps in the following order.
+    - name: Dia
+      pretext: Seu Dia possui três passos, realizados na ordem abaixo.
       children:
-        - name: Assembly.
-          text: You may take up to two actions in any order and number, as follows.
+        - name: 1º.Montar.
+          text: Você pode realizar até duas ações, em qualquer ordem e combinação, conforme segue.
           subchildren:
-            - name: Build.
-              text: Reveal one card to place a citadel or market in a matching clearing you rule.
+            - name: Construir.
+              text: Revele uma carta para posicionar uma cidadela ou mercado em uma clareira correspondente que você governe.
 
-            - name: Recruit.
-              text: Place one warrior in the Burrow.
+            - name: Recrutar.
+              text: Posicione 1 guerreiro na **Toca**.
 
-            - name: Move.
-              text: Take a move.
+            - name: Mover.
+              text: Realize 1 movimento.
 
-            - name: Battle.
-              text: Initiate a battle.
+            - name: Batalhar.
+              text: Inicie 1 batalha.
 
-            - name: Dig.
-              text: Spend one card to place a tunnel token in a matching clearing without a tunnel token. Then, move up to four warriors from the Burrow to that clearing. _(If all three tunnels are on the map, you may remove a tunnel first.)_
+            - name: Escavar.
+              text: Gaste uma carta para posicionar um marcador de **túnel** em uma clareira correspondente que não possua um **túnel**. Depois, mova até quatro guerreiros presentes na **Toca** para essa clareira. _(Caso todos os túneis estejam no mapa, você pode retirar um deles primeiro.)_
 
-        - name: Parliament.
-          text: You may take the action of each swayed minister once in any order.
+        - name: 2º.Parlamento.
+          text: Você pode realizar a ação de cada ministro influenciado uma vez, em qualquer ordem.
           subchildren:
-            - name: Foremole.
-              text: Reveal any card to place a citadel or market in any clearing _(matching or not)_ you rule.
+            - name: Capataz.
+              text: Revele qualquer carta para posicionar uma Cidadela ou Mercado em qualquer clareira _(correspondente ou não)_ que você governe.
 
-            - name: Captain.
-              text: Initiate a battle.
+            - name: Capitão.
+              text: Inicie 1 batalha.
 
-            - name: Marshal.
-              text: Take a move.
+            - name: Marechal.
+              text: Realize 1 movimento.
 
-            - name: Brigadier.
-              text: Take up to two moves or initiate up to two battles.
+            - name: Brigadeiro.
+              text: Realize até 2 movimentos ou inicie até 2 batalhas.
 
-            - name: Banker.
-              text: Spend any number of cards _(even one)_ of the same suit to score victory points in equal number.
+            - name: Banqueiro.
+              text: Gaste uma quantidade qualquer de cartas _(mesmo uma)_ de mesmo naipe para receber a mesma quantidade de PVs..
 
-            - name: Mayor.
-              text: Take the action of any swayed noble or squire.
+            - name: Prefeito.
+              text: Realize a ação de qualquer nobre ou comum influenciado.
 
-            - name: Duchess of Mud.
-              text: Score two victory points if all three tunnels are on the map.
+            - name: Duquesa da Lama.
+              text: Receba 2 PVs caso todos os três **túneis** estejam no mapa.
 
-            - name: Baron of Dirt.
-              text: Score one victory point per market on the map.
+            - name: Barão da Terra.
+              text: Receba 1 PV por Mercado no mapa.
 
-            - name: Earl of Stone.
-              text: Score one victory point per citadel on the map.
+            - name: Conde da Pedra.
+              text: Receba 1 PV por Cidadela no mapa.
 
-        - name: Sway.
-          text: You may sway one minister, as follows.
+        - name: 3º.Influenciar.
+          text: Você pode influenciar um ministro, como segue.
           subchildren:
-            - name: Choose Minister.
-              text: Choose a minister card in your Unswayed Ministers pile. You must have a crown on your faction board matching the rank _(squire, noble, lord)_ of that minister.
+            - name: 1º.Escolha o Ministro.
+              text: Escolha uma carta de Ministro de seu baralho de Ministros Não Influenciados. Você deve ter uma coroa em seu tabuleiro de facção que corresponda ao nível _(comum, nobre ou lorde)_ desse ministro.
 
-            - name: Reveal Cards.
-              text: Reveal the number of cards listed on the chosen minister. For each card you wish to reveal, you must have at least one Duchy piece in a clearing matching the suit of that card. Each such clearing with any of your pieces only allows you to reveal one matching card.
+            - name: 2º.Revele Cartas.
+              text: Revele a quantidade de cartas mostradas no ministro escolhido. Para cada carta que você deseje revelar, você deve ter pelo menos uma peça do Ducado em uma clareira cujo naipe corresponda a carta revelada. Cada clareira, independentemente da quantidade de suas peças presentes, só permite revelar uma carta correspondente.
 
-            - name: Sway Minister and Score.
-              text: Take the chosen minister card and place it above your faction board. Take a crown of that minister's rank from your faction board and place it on the minister card. Score the victory points listed on the space uncovered on your faction board.
+            - name: 3º.Influenciar o Ministro e Pontuae.
+              text: Pegue a carta de Ministro escolhida e coloque-a acima de seu tabuleiro de facção. Pegue uma coroa daquele nível de Ministro, proveniente de seu tabuleiro de facção, e a coloque sobre a carta de Ministro. Receba os PVs mostrados no espaço revelado de seu tabuleiro de facção.
 
-    - name: Evening
-      pretext: Your Evening has three steps in the following order.
+    - name: Anoitecer
+      pretext: Seu Anoitecer possui três passos, realizados na ordem abaixo.
       children:
-        - name: Discard and Return Revealed Cards.
-          text: Discard any bird cards you revealed this turn, then return all other cards you revealed this turn to your hand.
+        - name: 1º.Descarte e Retorne Cartas Reveladas.
+          text: Descarte quaisquer cartas de pássaro que você revelou nesta rodada e, depois, retorne todas as demais cartas reveladas por você neste turno para sua mão.
 
-        - name: Craft.
-          text: You may craft by activating citadels and markets. _(These are identical for crafting purposes.)_
+        - name: Crie.
+          text: Você pode criar ativando Cidadelas e Mercados. _(Ambas funcionam de forma idêntica para este fim.)_
 
-        - name: Draw and Discard.
-          text: Draw one card, plus one card per card draw icon showing. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
+        - name: Compre e Descarte.
+          text: Compre 1 carta, mais 1 para cada bônus de compra não coberto. Depois, se você possuir mais que 5 cartas na mão, descarte quaisquer cartas até que reste apenas 5.
 
 - name: Conspiração Corvídea
   color: "#925da5"
@@ -880,7 +880,7 @@
           text: A Conspiração possui 8 marcadores de trama, dois de cada tipo.
           subchildren:
             - name: Apresentação.
-              text: Enquanto estiverem no estoque da Conspiração, os marcadores de **trama** são deixados virados pra baixo _(pena)_. Uma vez no mapa, um marcador de **trama** pode estar virado para cima _(ícone único)_ou para baixo. A Conspiração pode inspecionar quaisquer marcadores virados para baixo a qualquer momento.
+              text: Enquanto estiverem no estoque da Conspiração, os marcadores de **trama** são deixados virados pra baixo _(pena)_. Uma vez no mapa, um marcador de **trama** pode estar virado para cima _(ícone único)_ ou para baixo. A Conspiração pode inspecionar quaisquer marcadores virados para baixo a qualquer momento.
             - name: Limites de Posicionamento.
               text: Cada clareira pode acomodar apenas um único marcador de trama.
 
