@@ -33,7 +33,7 @@
           text: > 
             Cada turno é realizado em 3 fases: Amanhecer, Dia e Anoitecer. Qualquer coisa que diga **"no início"** de uma fase acontece antes de qualquer outra coisa naquela fase e qualquer coisa que diga **"no final de"** acontece depois de tudo na fase, mas antes de começar a próxima fase, se houver. Assim que um jogador terminar o Anoitecer, o próximo jogador, em sentido horário, começa seu turno. O jogo continua dessa forma até que um dos jogadores alcance a vitória (`rule:3.1`).
         - name: Interrupções.
-          text: Você não pode interromper uma ação _(incluindo uma ação composta, como a Marcha dos Marqueses)_, habilidade _(como a Exposição dos Corvídeos)_, ou efeito persistente _(como a Emigração das Rapinas)_ com outro efeito, a menos que isso esteja explicitado. _(Por exemplo, por exemplo, a carta dos Armeiros que afirma que é usada "Em Batalha...")_.
+          text: Você não pode interromper uma ação _(incluindo uma ação composta, como a Marcha dos Marqueses)_, habilidade _(como a Exposição da Conspiração)_, ou efeito persistente _(como a Emigração das Rapinas)_ com outro efeito, a menos que isso esteja explicitado. _(Por exemplo, por exemplo, a carta dos Armeiros que afirma que é usada "Em Batalha...")_.
 
     - name: Peças
       children:
@@ -864,85 +864,85 @@
         - name: Draw and Discard.
           text: Draw one card, plus one card per card draw icon showing. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
-- name: Corvid Conspiracy
+- name: Conspiração Corvídea
   color: "#925da5"
   icon: corvid
   children:
-    - name: Overview
-      pretext: The Corvid Conspiracy seeks to strong-arm the Woodland into submission by completing criminal **plots**, scoring victory points each time they flip one. The more revealed plots on the map, the more they score. Misdirection is critical—if their plans are too obvious, the Corvids risk exposure. To avoid this, they must recruit carefully and look for any opportunities for subterfuge and extortion.
+    - name: Resumo
+      pretext: A Conspiração Corvídea quer submeter a Floresta da Madeira através da realização de **tramas** criminosas, recebendo PVs cada vez que eles revelam um marcador de trama. Quanto mais tramas reveladas no mapa, mais pontos eles recebem. Distrações são fundamentais–caso seus planos sejam muito óbvios, a Conspiração se arrisca a ser exposta. Para evitar isto, eles devem recrutar cuidadosamente e buscar quaisquer oportunidades de subterfúgios e extorsão.
 
-    - name: Faction Rules and Abilities
+    - name: Regras da Facção e Habilidades
       children:
-        - name: Crafting.
-          text: The Corvids craft during Birdsong by activating plot tokens _(whether face up or down)_.
+        - name: Criar.
+          text: A Conspiração criam durante o Amanhecer, ativando marcadores de **trama** _(revelados ou não)_.
 
-        - name: Plot Tokens.
-          text: The Corvids have eight plot tokens, two of each type.
+        - name: Marcadores de Trama.
+          text: A Conspiração possui 8 marcadores de trama, dois de cada tipo.
           subchildren:
-            - name: Token Facing.
-              text: While in the Corvids' supply, plot tokens are face down _(feather)_. While on the map, a plot token can be face up _(unique icon)_ or face down. The Corvids can inspect any facedown plot token at any time.
-            - name: Placement Limits.
-              text: Each clearing can hold only one plot token.
+            - name: Apresentação.
+              text: Enquanto estiverem no estoque da Conspiração, os marcadores de **trama** são deixados virados pra baixo _(pena)_. Uma vez no mapa, um marcador de **trama** pode estar virado para cima _(ícone único)_ou para baixo. A Conspiração pode inspecionar quaisquer marcadores virados para baixo a qualquer momento.
+            - name: Limites de Posicionamento.
+              text: Cada clareira pode acomodar apenas um único marcador de trama.
 
-        - name: Nimble.
-          text: The Corvids can move regardless of who rules their origin or destination clearing.
+        - name: Ágeis.
+          text: A Conspiração pode mover-se independente de quem governa a clareira inicial e a final (`rule:4.2.1`).
 
-        - name: Exposure.
-          text: Anytime on their turn, but before drawing any cards in their Evening, an enemy player with faction pieces in a clearing with a facedown plot token may show the Corvids a matching card to guess the type of plot token in that clearing. If incorrect, the Corvids say "no," and the enemy player gives that card to the Corvids. If correct, the enemy player removes the plot token _(scoring a victory point)_ and ignores its effect.
+        - name: Exposição.
+          text: A qualquer momento em seus turnos, porém antes de comprar quaisquer cartas no Anoitecer, um jogador inimigo que possua peças de facção em uma clareira contendo um marcador de trama virado para baixo, pode mostrar para a Conspiração uma carta correspondente para tentar adivinhar o tipo de marcador de **trama** presente na clareira. Caso erre, a Conspiração responde "não" e o jogador inimigo entrega a carta mostrada para a Conspiração. Caso acerte, o jogador inimigo remove o marcador de trama _(recebendo 1 PV)_ e ignora seu efeito.
 
-        - name: Embedded Agents.
-          text: As defender in battle, if the Corvids have a facedown plot token _(even defenseless)_ in the clearing of battle, they deal an extra hit.
+        - name: Agentes Escondidos.
+          text: Como defensor em batalha, caso a Conspiração possua um marcador de **trama** virado para baixo _(mesmo que esteja indefeso)_ na clareira da batalha, eles causam 1 dano adicional.
 
-    - name: Faction Setup
+    - name: Preparação
       children:
-        - name: "Step 1: Gather Warriors and Plots."
-          text: Form supplies of 15 warriors and 8 plot tokens face down.
+        - name: "1º Passo: Receber Guerreiros e Tramas."
+          text: Forme um suprimento de 15 guerreiros e 8 marcadores de trama voltados para baixo, próximos de você.
 
-        - name: "Step 2: Scatter."
-          text: Place 1 warrior in any clearing of each suit _(total of 3)_.
+        - name: "2º Passo: Espalhar."
+          text: Posicione 1 guerreiro em uma clareira qualquer de cada naipe _(totalizando 3 guerreiros posicionados)_.
 
-    - name: Birdsong
-      pretext: Your Birdsong has three steps in the following order.
+    - name: Amanhecer
+      pretext: Seu Amanhecer possui três passos, realizados na ordem abaixo.
       children:
-        - name: Craft.
-          text: You may activate plot tokens _(whether face up or down)_ to craft cards from your hand.
+        - name: 1º.Crie.
+          text: Você pode ativar marcadores de trama _(virados para baixo ou para cima)_ para criar cartas de sua mão.
         
-        - name: Flip Plots.
-          text: Any number of times, flip a plot token face up in a clearing with any Corvid warriors, score one victory point per face-up plot token on the map _(including the newly flipped one)_, and then resolve its flip effect if it is a bomb or extortion.
+        - name: 2º.Revele Tramas.
+          text: Uma quantidade de vezes qualquer, revele um marcador de **trama**, deixando-o virado para cima, em uma clareira com qualquer quantidade de guerreiros da Conspiração e receba 1 PV por cada marcador de trama virado para cima presente no mapa _(incluindo o que acaba de ser revelado)_ e, depois, resolva seu efeito caso seja uma bomba ou uma extorsão.
 
-        - name: Recruit.
-          text: Once per turn, you may spend any card to place one warrior in each matching clearing. _(If you spend a bird, choose one suit to place warriors in.)_
+        - name: 3º.Recrute.
+          text: Uma vez por turno, você pode gastar uma carta qualquer para posicionar um guerreiro em cada clareira correspondente. _(Caso você gaste uma carta de pássaro, escolha um naipe para posicionar os guerreiros.)_
 
-    - name: Daylight
-      pretext: You may take up to three actions, as follows.
+    - name: Dia
+      pretext: Você pode realizar até 3 ações, em qualquer ordem e combinação, inclusive podendo repeti-las, dentre as seguintes.
       children:
-        - name: Move.
-          text: Take a move.
-        - name: Plot.
-          text: Remove a Corvid warrior, plus another Corvid warrior per plot you have placed this turn, from a clearing with no plot tokens to place a facedown plot token there.
-        - name: Battle.
-          text: Initiate a battle.
-        - name: Trick.
-          text: Swap two plot tokens on the map. Both plot tokens must be face up or face down.
+        - name: Tramar.
+          text: Remova 1 guerreiro da Conspiração, mais 1 guerreiro da Cospiração adicional, para cada marcador de **trama** que foi posicionado neste turno, provenientes de uma clareira sem marcador de trama, para lá posicionar um marcador de **trama** virado para baixo.
+        - name: Mover.
+          text: Realize 1 movimento.
+        - name: Despistar.
+          text: Troque a posição de dois marcadores de trama presentes no mapa entre eles. Ambos os marcadores devem estar virados para cima ou ambos virados para baixo.
+        - name: Batalhar.
+          text: Inicie 1 batalha.
 
-    - name: Evening
-      pretext: Your Evening has two steps in the following order.
+    - name: Anoitecer
+      pretext: Seu Anoitecer possui dois passos, realizados na ordem abaixo.
       children:
-        - name: Exert.
-          text: You may take one action listed in Daylight if you choose to not draw cards during Evening.
-        - name: Draw.
-          text: Draw one card plus one card per face-up extortion token on the map. Then, if you have more than five cards, discard down to five cards.
+        - name: 1º.Exceder.
+          text: Você pode realizar uma ação do **Dia**. Caso o faça não compre cartas durante o anoitecer.
+        - name: Compre e Descarte.
+          text: Compre 1 carta, mais 1 para cada marcador de trama de extorsão virado para cima e presente no mapa. Depois, se você possuir mais que 5 cartas na mão, descarte quaisquer cartas até que reste apenas 5.
 
-    - name: Plot Tokens Reference
+    - name: Referência dos Marcadores de Trama
       children:
-        - name: Bomb.
-          text: Whenever a bomb token is flipped, remove all enemy pieces in its clearing, then remove the bomb token.
-        - name: Snare.
-          text: While a snare token is face up, enemy pieces cannot be placed in or moved from its clearing.
-        - name: Extortion.
-          text: Whenever an extortion token is flipped, take a random card from each enemy player with faction pieces in its clearing. While an extortion token is face up, you draw another card in Evening.
-        - name: Raid.
-          text: Whenever a raid token is removed _(face up or down)_, place one warrior in each clearing adjacent to the clearing from which the raid was removed. _(Ignore this effect if the raid is removed by Exposure.)_
+        - name: Bomba.
+          text: Sempre que um marcador de Vomba for revelado (`rule:13.4.2`), remova todas as peças inimigas na clareira e, depois, remova o marcador de bomba.
+        - name: Armadilha.
+          text: Enquanto um marcador de Armadilha estiver virado para cima, peças inimigas não podem ser posicionadas nesta clareira, tampouco movidas para fora desta clareira.
+        - name: Extorsão.
+          text: Sempre que um marcador de Extorsão for revelado (`rule:13.4.2`), pegue uma carta aleatória de cada jogador com pelo menos uma peça de facção na respectiva clareira. Enquanto um marcador de extorsão permanecer no mapa virado para cima, compre uma carta adicional durante o Anoitecer.
+        - name: Ataque.
+          text: Sempre que um marcador de Ataque for removido _(virado para cima ou para baixo)_, posicione um guerreiro em cada clareira adjacente àquela da qual o marcador de ataque foi removido. _(Ignore esse efeito caso o marcador de ataque tenha sido removido pela Exposição (`rule:13.2.4`).)_
 
 - name: Senhor das Centenas
   color: "#e11b3f"
