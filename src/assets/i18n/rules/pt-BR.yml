@@ -944,217 +944,218 @@
         - name: Raid.
           text: Whenever a raid token is removed _(face up or down)_, place one warrior in each clearing adjacent to the clearing from which the raid was removed. _(Ignore this effect if the raid is removed by Exposure.)_
 
-- name: Lord of the Hundreds
+- name: Senhor das Centenas
   color: "#e11b3f"
   icon: warlord
   children:
-    - name: Overview
-      pretext: The Lord of the Hundreds suffers no fools and allows no dissent. During their Evening, they score points based on how well they **oppress** their foes. The more clearings they rule that have a Hundreds piece and no enemy pieces—no warriors, no buildings, nothing—the more points they score. To grow in power and attract warriors, the Hundreds must gain items and add them to their towering **Hoard**. Leading the Hundreds is the **warlord**, a warrior-demagogue whose fickle **mood** gives them an ability for the turn. Their warlord is obsessed with hoarding, so as the Hundreds gain more items, they will have fewer moods to choose from. Declaring themselves as the true voice of the Woodland, the Hundreds can incite **mobs**, which destroy enemy buildings and tokens, and raid ruins for items.
+    - name: Resumo
+      pretext: O Senhor das Centenas não aceita nem permite discordância. Durante seu Anoitecer, ele marca pontos com base no quão bem ele **oprime** seus inimigos. Quanto mais clareiras ele governa onde existam peças das Centenas e nenhuma peça inimiga –sem guerreiros, sem construções, nada– mais PVs ele marca. Para crescer em poder e atrair guerreiros, as Centenas devem ganhar itens e adicioná-los para o seu gigantesco **Tesouro**. À frente das Centenas está o **Senhor da Guerra**, um guerreiro demagogo cujo humor inconstante lhes confere uma habilidade para o turno. O **Senhor da Guerra** é obcecado em acumular, então, à medida que as Centenas ganham mais itens, elas terão menos humores para escolher. Declarando-se como a verdadeira voz da Floresta da Madeira, as Centenas podem incitar **turbas**, que destroem construções e marcadores inimigos, e assolam ruínas por itens.
 
-    - name: Faction Rules and Abilities
+    - name: Regras da Facção e Habilidades
       children:
-        - name: Crafting.
-          text: The Hundreds craft during Daylight by activating strongholds.
+        - name: Criar.
+          text: As Centenas criam durante o **Dia**, ativando **fortes**.
 
-        - name: The Warlord.
-          text: The Hundreds have a piece called the warlord. The warlord is a warrior that cannot be removed outside of battle, moved outside of the Hundreds' turn, or placed in any way except with the Anoint action (`rule:14.4.3`).
+        - name: O Senhor da Guerra.
+          text: As Centenas possuem uma peça chamada **Senhor da Guerra**. O **Senhor da Guerra** é um guerreiro que não pode ser removido do mapa –exceto em batalha–, movido fora do turno das Centenas ou posicionado de uma forma diferente de sua preparação (`rule:14.3.1`) e da ação Convocar (`rule:14.4.3`).
 
-        - name: Contempt for Trade.
-          text: Whenever the Hundreds craft an item, they may take the item but score none of the listed victory points, or may remove the item permanently to score the listed victory points. _(They can still score extra crafting points from effects such as Master Engravers and the Legendary Forge.)_
+        - name: Desprezo pelo Comércio.
+          text: Sempre que as Centenas criam um item, eles podem pegar o item, mas não recebem os PVs marcados; ou podem remover permanentemente o item, recebendo os PVs marcados. _(Eles ainda podem receber PVs adicionais de outros efeitos, como Mestre Escultor e a Forja Lendária.)_
 
-        - name: The Hoard.
-          text: Instead of a Crafted Items box, the Hundreds have the Hoard box. This has two tracks, Command and Prowess. The Command track can hold `item:boot`, `item:sack`, and `item:coin`. The Prowess track can hold `item:hammer`, `item:tea`, `item:sword`, and `item:crossbow`. 
+        - name: O Tesouro.
+          text: Em vez de um local para Itens Artesanais, as Centenas possuem uma seção de Tesouro. A seção possui duas trilhas: Comando e Proezas. A trilha de Comando pode acomodar `item:boot`, `item:sack`, and `item:coin`. A trilha de Proezas pode acomodar `item:hammer`, `item:tea`, `item:sword`, and `item:crossbow`.
           subchildren:
-            - name: Gaining Items.
-              text: When the Hundreds gain an item, they put it in the leftmost empty Command or Prowess space based on the item type; if there is no such empty space, they must permanently remove the gained item or any item on that track, and they score one victory point.
+            - name: Ganhando Itens.
+              text: Quando as Centenas ganham um item, elas o posicionam no espaço vazio mais à esquerda da trilha de Comando ou Proezas, a depender do tipo do item. Se não houver um espaço vazio para tal, o item ganho ou um item que já esteja na trilha correspondente deve ser removido permanentemente, e o jogador recebe 1 PV.
 
-            - name: Command and Prowess.
-              text: The number of items on the Command and Prowess tracks determine their Command and Prowess, which affect various parts of their rules. With no items, they have 1 Command or Prowess; with one or two items, they have 2; with three items, they have 3; with four items, they have 4.
+            - name: Comando e Proezas.
+              text: A quantidade de itens nas trilhas de Comando e Proezas determina seus Comandos e Proezas, o que afeta diversas partes de suas regras. Sem itens, possuem 1 Comando ou Proeza. Com 1 ou 2 itens, possuem 2, com 3 itens, possuem 3 e com 4 itens, possuem 4.
 
-        - name: Looters.
-          text: At the start of battle as the attacker, the Hundreds may declare that they want to loot the defender, so long as the defender has an item in their Crafted Items box. _(They cannot loot the Vagabond.)_ If they declare that they want to loot, the Hundreds deal no rolled hits. _(The defender deals rolled hits, and the Hundreds can still deal extra hits, such as from their Wrathful mood.)_ Then, at the end of that battle, if the Hundreds rule the clearing of battle, they take one item from the defender's Crafted Items box.
+        - name: Saqueadores.
+          text: No início de uma batalha como atacante, caso o defensor possua ao menos um item em sua seção de Itens Artesanais, as Centenas podem declarar que eles querem saquear o defensor. _(O Malandro não pode ser saqueado.)_ Se declararem que querem saquear, as Centenas não causam danos rolados nos dados. _(O defensor causa danos rolados e as Centenas ainda podem causar danos adicionais, como os provenientes do humor Colérico.)_ Depois, ao final da batalha, caso as Centenas governem a clareira da batalha, eles pegam 1 item da seção de Itens Artesanais do defensor.
 
-    - name: Faction Setup
+    - name: Preparação
       children:
-        - name: "Step 1: Garrison"
-          text:  Place your warlord, four warriors, and one stronghold in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing.
+        - name: "1º Passo: Tropas"
+          text: Posicione seu **Senhor da Guerra**, 4 guerreiros e 1 **forte** em uma clareira de canto que não seja a clareira inicial de outro jogador e, se possível, diagonalmente oposta a uma clareira inicial de outro jogador.
 
-        - name: "Step 2: Place Items"
-          text: Place the four "R" items randomly under the ruins, unless this has already been done.
+        - name: "2º Passo: Abasteça as Ruínas"
+          text: Posicione os 4 itens "R" aleatoriamente abaixo das ruínas, a menos que isto já tenha sido feito.
 
-        - name: "Step 3: Get Stubborn"
-          text: Place your Stubborn mood card on your Mood Card slot.
+        - name: "3º Passo: Torne-se Teimoso"
+          text: Posicione sua carta de Humor **Teimoso** no local para Carta de Humor.
           
-    - name: Birdsong
-      pretext: Your Birdsong has four steps in the following order.
+    - name: Amanhecer
+      pretext: Seu amanhecer possui quatro passos, realizados na ordem abaixo.
       children:
-        - name: Raze.
-          text: In each clearing with a mob token, remove all enemy buildings and tokens, take one item from the ruin in the clearing, if any, and remove the ruin if you took its last item. After resolving all mobs, you must roll the mob die once and place a mob token in a matching clearing that has no mob token but is adjacent to a clearing with a mob token. _(If there are no such clearings, do not place a mob.)_
+        - name: 1º.Arrase.
+          text: Em cada clareira com um marcador de **turba**, remova todas as construções e marcadores inimigos, pegue um item de uma ruína presente na clareira, caso exista, e remova a ruína se tiver pegado o último item. Após resolver todas as **turbas**, você deve rolar o dado de turba uma vez e posicionar um marcador de **turba** em uma clareira correspondente que não tenha nenhum marcador de **turba**, mas que seja adjacente a uma clareira com um marcador de **turba**. _(Caso não exista uma clareira que satisfaça essa condição, não posicione nenhum marcador de **turba**.)_
 
-        - name: Recruit.
-          text: Place warriors equal in number to your Prowess into the clearing with your warlord. Then, place warriors in each clearing with any strongholds, one warrior per stronghold there.
+        - name: 2º.Recrute.
+          text: Posicione uma quantidade de guerreiros igual às suas Proezas na clareira de seu **Senhor da Guerra**. Depois, posicione guerreiros em cada clareira com fortes, um guerreiro por forte.
 
-        - name: Anoint.
-          text: If the warlord is not on the map, you must replace any Hundreds warrior with the warlord. If you cannot, you must place the warlord in any clearing.
+        - name: 3º.Convoque.
+          text: Caso o **Senhor da Guerra** não esteja no mapa, você deve substituir qualquer guerreiro das Centenas pelo **Senhor da Guerra**. Caso não consiga, você deve posicioná-lo em qualquer clareira.
 
-        - name: Choose Mood.
-          text:  You must replace the mood card in your Mood Card slot with a different mood card that does not show an item that is in your Hoard. If you are Lavish and cannot choose a new mood card, you remain Lavish.
+        - name: 4º.Escolha o Humor.
+          text: Você deve substituir a carta de humor no espaço de Carta de Humor de seu tabuleiro de facção por uma carta de humor diferente que não mostre um item que esteja presente em seu Tesouro. Caso você esteja Esbanjador e não consiga escolher outra carta de humor, você permanece Esbanjador.
 
-    - name: Daylight
-      pretext: Your Daylight has three steps in the following order.
+    - name: Dia
+      pretext: Seu dia possui três passos, realizados na ordem a seguir.
       children:
-        - name: Craft.
-          text: You may activate strongholds to craft cards.
+        - name: 1º.Crie.
+          text: Você pode ativar fortes para criar cartas.
 
-        - name: Command the Hundreds.
-          text: You may take the following actions, in any order, a number of times up to your Command.
+        - name: 2º.Comande as Centenas.
+          text: Você pode realizar as seguintes ações, em qualquer ordem, uma quantidade de vezes menor ou igual ao seu Comando.
           subchildren:
-            - name: Move
-              text: Take a move.
-            - name: Battle.
-              text: Initiate a battle.
-            - name: Build.
-              text: Spend a card to place a stronghold in a matching clearing that you rule.
+            - name: Mover
+              text: Realize 1 movimento.
+            - name: Batalha.
+              text: Inicie 1 batalha.
+            - name: Construir.
+              text: Gaste uma carta para posicionar um forte em uma clareira correspondente que você governe.
 
-        - name: Advance the Warlord.
-          text: You may take this action a number of times up to your Prowess. You may move the warlord with any Hundreds warriors, and then you may battle in the warlord's clearing.
+        - name: 3º.Avance o Senhor da Guerra.
+          text: Você pode realizar esta ação um número de vezes até sua quantidade de Proezas. Você pode mover o Senhor da Guerra com quaisquer guerreiros das Centenas e, em seguida, você pode batalhar na clareira do Senhor da Guerra.
 
-    - name: Evening
-      pretext: Your Evening has three steps in the following order.
+    - name: Anoitecer
+      pretext: Seu Anoitecer possui três passos, realizados na ordem a seguir.
       children:
-        - name: Incite.
-          text: Any number of times, you may spend a card to place a mob token in a matching clearing that has no mob token but does have a Hundreds warrior _(including your warlord)_.
+        - name: 1º.Incite.
+          text: Qualquer número de vezes, você pode gastar uma carta para posicionar um marcador de **turba** em uma clareira correspondente que não tenha nenhum marcador de turba mas possua um guerreiro das Centenas _(incluindo seu Senhor da Guerra)_.
         
-        - name: Oppress.
-          text: You score victory points based on the number of clearings you rule that have a Hundreds piece and no enemy pieces. For one or two clearings, score one point; for three or four clearings, score two points; for five clearings, score three points; for six or more clearings, score four points.
+        - name: 2º.Oprima.
+          text: Você recebe PVs de acordo com a quantidade de clareiras que você governa que contenham pelo menos uma peça das Centenas e nenhuma peça inimiga. Para 1 ou 2 clareiras, receba 1 PV; para 3 ou 4 clareiras, 2 PVs; para 5 clareiras, 3 PVs e para 6 ou mais clareiras, 4 PVs.
 
-        - name: Draw and Discard.
-          text: Draw one card. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
+        - name: 3º.Compre e Descarte.
+          text: Compre 1 carta. Depois, caso você possua mais que 5 cartas na mão, descarte cartas até chegar ao limite de 5 cartas.
 
-    - name: Moods
+    - name: Humores
       children:
-        - name: Bitter (`item:hammer`).
-          text: In battle in your warlord's clearing, before the roll you may remove any number of mob tokens from your warlord's clearing and any clearings adjacent to it. Place warriors in your warlord's clearing equal to the number of mob tokens you removed.
+        - name: Colérico  (`item:sword`).
+          text: Como atacante em batalhas na clareira do **Senhor da Guerra**, você causa um dano adicional.
 
-        - name: Grandiose (`item:tea`).
-          text: This turn, perform your Advance the Warlord step (`rule:14.5.3`) and your Command the Hundreds step (`rule:14.5.2`) in reverse order. _(Advance the Warlord first, then Command the Hundreds.)_
+        - name: Conflitante (`item:coin`).
+          text: No passo de comprar cartas no seu Anoitecer (`rule:14.6.3`), compre 1 carta a mais. Caso a clareira do **Senhor da Guerra** possua 3 ou mais peças inimigas _(mesmo que seja uma combinação entre peças de diferentes inimigos)_, compre 2 cartas a mais no lugar de 1.
 
-        - name: Jubilant (`item:boot`).
-          text: Whenever you take the Incite action in your warlord's clearing, after placing the mob token for the action, you may—up to four times—roll the mob die and place a mob token in a matching clearing that has no mob token but is adjacent to any clearing with a mob token.
+        - name: Cruel (`item:hammer`).
+          text: Em batalhas na clareira do **Senhor da Guerra**, antes de rolar, você pode remover qualquer número de marcadores de **turba** da clareira do **Senhor da Guerra** ou adjacentes a ela. Posicione guerreiros na clareira do **Senhor da Guerra** em quantidade igual aos marcadores de **turba** removidos.
 
-        - name: Lavish (No Item). 
-          text: At the end of your Birdsong, you may remove any number of items from your Hoard permanently. For each item you remove, place two warriors into your warlord's clearing. When you are done, shift items in your Hoard to fill its tracks from left to right.
+        - name: Esbanjador (Sem Item). 
+          text: Ao final de seu Amanhecer, você pode remover permanentemente qualquer quantidade de itens de seu Tesouro. Para cada item que você remove, posicione 2 guerreiros na clareira do **Senhor da Guerra**. Quando terminar, mova os itens em seu tesouro para preencher as trilhas sempre da esquerda para a direita.
 
-        - name: Relentless (`item:sack`).
-          text: Whenever you take the Advance the Warlord action and both move and battle, you may then either move your warlord with any Hundreds warriors or battle in your warlord's clearing.
+        - name: Grandioso (`item:tea`).
+          text: Neste turno, realize os passos Avance o Senhor da Guerra (`rule:14.5.3`) e Comande as Centenas (`rule:14.5.2`) na ordem inversa. _(Avance o **Senhor da Guerra** primeiro e Comande as Centenas depois.)_
 
-        - name: Rowdy (`item:coin`).
-          text: In Evening, draw one more card. If your warlord's clearing has three or more enemy pieces (even a combination of pieces from different enemies), draw two more cards instead.
+        - name: Inflexível (`item:sack`).
+          text: Sempre que você usar a ação Avançar o Senhor da Guerra e se mover e batalhar, você pode ou mover seu Senhor da Guerra com qualquer quantidade de guerreiros junto ou batalhar na clareira onde seu **Senhor da Guerra** se encontra.
 
-        - name: Stubborn (`item:crossbow`).
-          text: In battle in your warlord's clearing, you ignore the first hit you take. _(This does not combine with other abilities that let you ignore the first hit you take.)_
+        - name: Jubilante (`item:boot`).
+          text: Sempre que você realizar a ação de Incitar (`rule:14.6.1`) na clareira do **Senhor da Guerra**, após posicionar o marcador de **turba** da ação, você pode, até 4 vezes, rolar o dado de turba e posicionar um marcador de turba em uma clareira correspondente que não possua um marcador de turba mas esteja adjacente a uma clareira que contenha um marcador de turba..
 
-        - name: Wrathful (`item:sword`).
-          text: As attacker in battle in your warlord's clearing, you deal an extra hit.
+        - name: Teimoso (`item:crossbow`).
+          text: Em batalhas na clareira do **Senhor da Guerra**, você ignora o primeiro dano recebido. _(Isto não é combinado com outras habilidades que lhe permitem ignorar o primeiro dano.)_
 
-- name: Keepers in Iron
+
+- name: Guardiões de Ferro
   color: "#8b8d90"
   icon: keepers
   children:
-    - name: Overview
-      pretext: The Keepers in Iron are an order of devout knights, once exiled from the Woodland, who have returned to recover **relics** lost in past conflicts. Whether these relics belong to the Keepers or the Woodland, though, is another question. To accomplish their mission, they will need to delve relics out of the forests, move them to a **waystation** of the same type, and then recover them. When they recover a relic, they score points equal to the relic's value of one to three, and they also score two points each time they complete a set of the three relic types—figures, tablets, and jewelry. Over time, the Keepers will gather a **Retinue** of Woodland creatures, letting them take more actions. However, each time they delve a relic or recover one, they might lose the Retinue card they used to act, so they will need to plan ahead and take prudent risks in order to succeed.
+    - name: Resumo
+      pretext: Os Guardiões de Ferro são uma ordem de cavaleiros devotos, outrora exilados da Floresta da Madeira, que agora retornam para recuperar **relíquias** perdidas em conflitos passados. Se elas, no entanto, pertencem aos Guardiões ou à Floresta, é outra questão. Para cumprir sua missão, eles precisarão escavar as relíquias das florestas, movê-las para uma **estação** do mesmo tipo, e depois recuperá-las. Quando recuperam uma relíquia, eles marcam PVs iguais a o valor da relíquia, entre 1 e 3, e eles também marcam 2 PVs cada vez que completam um conjunto de três tipos –figuras, tábuas e joias. Com o tempo, os guardiões reunirão um **séquito** de criaturas da Floresta da Madeira, permitindo mais ações. Entretanto, cada vez que eles escavam uma relíquia ou recuperam uma, eles podem perder a carta de Séquito utilizada para a ação precisando, desta forma, planejar e assumir riscos com prudência a fim de ter sucesso.
 
-    - name: Faction Rules and Abilities
+    - name: Regras da Facção e Habilidades
       children:
-        - name: Relics.
-          text: You seek out twelve relic tokens of three types—figures, tablets, and jewelry. Each relic type has four tokens in total. The relic front shows only its type, and the relic back shows a value of 1, 2, 3, or 3.
+        - name: Relíquias.
+          text: Você procura 12 marcadores de relíquia de três tipos diferentes: figuras, tábuas e joias. Cada tipo possui 4 marcadores. A frente dos marcadores mostra apenas seu tipo e o verso mostra os valores 1, 2 ou 3.
 
-        - name: Waystations.
-          text: You have three waystations. Each waystation shows one relic type on its front and another relic type on its back.
+        - name: Estações.
+          text: Você possui três estações. Cada estação mostra um tipo de relíquia em sua frente e outro em seu verso.
 
-        - name: Crafting.
-          text: The Keepers craft during Daylight by activating waystations _(of any type)_.
+        - name: Criar.
+          text: Os Guardiões criam durante o **Dia** ativando suas estações _(de qualquer tipo)_.
 
-        - name: Devout Knights.
-          text: In battle, if the clearing of battle has at least one relic and at least one Keeper warrior, the Keepers ignore the first hit they take. _(If ambushed, ignore one hit from the ambush, but do not ignore further hits.)_ When moving, the Keepers may move one relic with each Keeper warrior that they move.
+        - name: Cavaleiros Devotos.
+          text: Em batalha, se a clareira da batalha possuir pelo menos uma relíquia e pelo menos um guerreiro Guardião, os Guardiões ignoram o primeiro dano recebido da batalha. _(Se emboscados, ignore o primeiro dano da emboscada, mas não ignore mais nenhum dano.)_ Quando se movem, os Guardiões podem mover uma relíquia com cada guerreiro Guardião que for movido _(mesmo quando forem forçados a se mover, o jogador dos Guardiões pode também mover relíquias)_.
 
-        - name: Prized Trophies.
-          text: Whenever an enemy removes a relic, they place it in any forest face up and score an extra victory point _(for a total of two)_.
+        - name: Troféus Premiados.
+          text: Sempre que um inimigo remover uma relíquia, ele a coloca em uma floresta qualquer, com a frente para cima, e recebe um PV adicional _(um total de 2)_.
 
-    - name: Faction Setup
+    - name: Preparação
       children:
-        - name: "Step 1: Place Starting Relics"
-          text: "Collect all twelve relic tokens and shuffle them face down _(without the value showing)_. Place one randomly in each forest. _(We recommend that you just slide the relics around face down, then place relics as fast as possible as a group. Otherwise, you can use this more random but fiddly method: the Keepers stack the randomized relics, then any other player cuts the stack, picks it up, and drops relics one by one from the bottom onto the forests.)_"
+        - name: "1º Passo: Posicione as Relíquias Iniciais"
+          text: "Recolha todos os 12 marcadores de relíquia e misture-os com o verso para cima _(sem mostrar o valor)_. Aleatoriamente, posicione um em cada floresta. _(Recomendamos que você simplesmente distribua as relíquias com o verso para cima da forma mais rápida possível. Você também pode usar um método mais aleatório, porém mais complicado: os Guardiões empilham as relíquias aleatoriamente e outro jogador corta o monte e coloca relíquias nas florestas, uma a uma, vindas da base do monte.)_"
           
-        - name: "Step 2: Place Warriors"
-          text: Place four warriors in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing. Then, place four warriors in a clearing on the map edge that is adjacent to the chosen clearing.
+        - name: "2º Passo: Posicionar Guerreiros"
+          text: Posicione 4 guerreiros em uma clareira de canto que não seja a clareira inicial de outro jogador e, se possível, diagonalmente oposta a uma clareira de canto inicial. Depois, posicione 4 guerreiros em uma clareira na borda do mapa que seja adjacente à clareira escolhida inicialmente.
 
-        - name: "Step 3: Place Remaining Relics"
-          text: Place all remaining relics randomly, as evenly as possible, among forests not adjacent to clearings with your warriors.
+        - name: "3º Passo: Posicione as Relíquias Remanescentes"
+          text: Posicione todas as relíquias remanescentes, da forma mais equivalente possível, entre as florestas não adjacentes a clareiras com guerreiros Guardiões.
 
-        - name: "Step 4: Tuck Faithful Retainers"
-          text: Tuck one Faithful Retainer card into each Retinue slot of your faction board.
+        - name: "4º Passo: Aloque Seguidores Fieis"
+          text: Posicione uma carta de Seguidor Fiel em cada espaço de Séquito de seu tabuleiro de facção.
 
-        - name: "Step 5: Collect Waystations"
-          text: Place your three waystation buildings on the matching Waystations spaces of your faction board.
+        - name: "5º Passo: Receba Estações"
+          text: Posicione suas 3 estações nos espaços de Estações correspondentes de seu tabuleiro de facção
 
     
-    - name: Birdsong
-      pretext: Your Birdsong has three steps in the following order.
+    - name: Amanhecer
+      pretext: Seu Amanhecer possui três passos, realizados na ordem a seguir.
       children:
-        - name: Encamp.
-          text: Once per clearing, you may replace a Keeper warrior with a waystation. If you have no warriors or waystations on the map, instead place one waystation and one warrior in any clearing on the map edge. In either case, you may place the waystation face up or face down.
+        - name: 1º.Acampe.
+          text: Uma vez por clareira, você pode substituir um guerreiro Guardião por uma estação. Se você não possuir nenhum guerreiro ou estação no mapa, posicione, em vez disso, 1 estação e 1 guerreiro em qualquer clareira na borda do mapa. Em qualquer das condições, você pode posicionar a estação voltada para cima ou para baixo.
 
-        - name: Decamp.
-          text: Once per clearing, you may replace a waystation with a Keeper warrior.
+        - name: 2º.Levante Acampamento.
+          text: Uma vez por clareira, você pode substituir uma estação por um guerreiro Guardião.
 
-        - name: Recruit.
-          text: Any number of times, you may spend a card to place two warriors at a matching waystation.
+        - name: 3º.Recrute.
+          text: Qualquer quantidade de vezes, você pode gastar uma carta para posicionar 2 guerreiros em uma **estação** correspondente.
 
-    - name: Daylight
-      pretext: Your Daylight has two steps in the following order.
+    - name: Dia
+      pretext: Seu Dia possui dois passos, realizados na ordem abaixo.
       children:
-        - name: Craft.
-          text: You may activate waystations _(of any type)_ to craft cards.
+        - name: 1º.Crie.
+          text: Você pode ativar estações _(de qualquer tipo)_ para criar cartas.
 
-        - name: Act with Retinue.
-          text: Starting with the leftmost column of your Retinue and moving to the right, you may take the column's action, as follows, for each card in the column in any order.
+        - name: 2º.Use o seu Séquito.
+          text: Começando com a coluna mais à esquerda de seu Séquito e se movendo para a direita, você pode realizar a ação da coluna, conforme explicado a seguir, para cada carta na coluna, em qualquer ordem.
           subchildren:
-            - name: Move.
-              text: Take a move from a clearing whose suit matches the card suit.
+            - name: Mover.
+              text: Realize 1 movimento a partir de uma clareira cujo naipe corresponda ao naipe da carta.
 
-            - name: Battle then Delve.
-              text: Choose a clearing whose suit matches the card suit. You must initiate a battle there if any enemy pieces are there. Then, if you rule the clearing and it has at least one Keeper warrior, you may delve there as follows _(even if there was no enemy to battle)_.
+            - name: Batalhe e Escave.
+              text: Escolha uma clareira cujo naipe corresponda ao naipe da carta. Você deve iniciar 1 batalha lá se quaisquer peças inimigas estiverem presentes. Depois, se você governar a clareira e possuir pelo menos um guerreiro Guardião lá, você pode escavar, da seguinte forma _(mesmo caso não existisse nenhum inimigo na batalha)_.
               subchildren:
-                - name: "Step 1: Move and Flip Relic."
-                  text: Move any relic from an adjacent forest into that clearing. Flip that relic so its value is showing if it is not.
+                - name: "1º Passo: Mova e Revele Relíquias."
+                  text: Mova qualquer relíquia de uma floresta adjacente para a clareira da batalha. Vire a relíquia de modo que seu valor fique visível, caso já não esteja.
 
-                - name: "Step 2: Check for Discard."
-                  text: Count the number of clearings you rule adjacent to the forest from which you delved the relic. If you rule fewer of these clearings than the relic's value, then you must discard the Retinue card used to take this action.
+                - name: "2º Passo: Verifique o Descarte."
+                  text: Conte a quantidade de clareiras que você governa adjacentes à floresta na qual você investigou a relíquia. Se você governar menos clareiras que o valor da relíquia, então você deve descartar a carta de Séquito usada para realizar esta ação.
 
-            - name: Move or Recover.
-              text: Choose a clearing whose suit matches the card suit. Take a move from it, or recover relics from it as follows. 
+            - name: Mover ou Recuperar.
+              text: Escolha uma clareira cujo naipe corresponda ao naipe da carta. Realize 1 movimento a partir dela ou recupere uma relíquia da seguinte forma.
               subchildren:
-                - name: "Step 1: Take Relic."
-                  text: Take a relic there of the same type as a waystation there. Place it in your leftmost empty Relics space of that relic type.
+                - name: "1º Passo: Pegue a Relíquia."
+                  text: Pegue uma relí quia da clareira que seja do mesmo tipo que uma estação presente lá. Posicione-a no seu espaço de Relíquias vazio mais à esquerda daquele tipo de relíquia.
 
-                - name: "Step 2: Score Points."
-                  text: Score victory points equal to the relic's value, and score two victory points if you filled a Relics column.
+                - name: "2º Passo: Receba Pontos."
+                  text: Receba PVs iguais ao valor da relíquia e mais 2 PVs caso tenha completado uma coluna de Relíquias.
 
-                - name: "Step 3: Check for Discard."
-                  text: Count the number of clearings you rule whose suit matches the clearing from which you are recovering the relic. If you rule fewer of these clearings than the relic's value, then you must end this Recover action and discard the Retinue card used to take this action. Otherwise, you may return to the Take Relic step or end this Recover action.
+                - name: "3º Passo: Verifique o Descarte."
+                  text: Conte o número de clareiras que você governa cujo naipe corresponda ao da clareira na qual recuperou a relíquia. Se você governar uma quantidade menor dessas clareiras do que o valor da relíquia, então você deve terminar esta ação de Recuperação e descartar a carta de Séquito usada para realizá-la. Do contrário, você pode retornar para o passo Pegue a Relíquia ou terminar a ação de Recuperar.
 
-    - name: Evening
-      pretext: Your Evening has three steps in the following order.
+    - name: Anoitecer
+      pretext: Seu Anoitecer possui três passos, realizados na ordem a seguir.
       children:
-        - name: Live Off the Land.
-          text: You must remove one Keeper warrior from each clearing that has four or more Keeper warriors.
+        - name: 1º.Deixe a Terra.
+          text: Você deve remover um guerreiro Guardião de cada clareira que contenha 4 ou mais guerreiros Guardiões.
 
-        - name: Gather Retinue.
-          text: You may add any number of cards from your hand to any Retinue slots, or you may shift one card in your Retinue to a different slot. Your Retinue cannot hold more than ten cards.
+        - name: 2º.Reunir o Séquito.
+          text: Você pode posicionar qualquer quantidade de cartas de sua mão em qualquer dos locais de Séquito, ou você pode deslizar uma carta em seu Séquito para uma posição de séquito diferente. Seu Séquito não pode conter mais do que 10 cartas.
 
-        - name: Draw and Discard.
-          text: Draw one card, plus one card per uncovered draw bonus _(equal to waystations on the map)_. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
+        - name: 3º.Compre e Descarte.
+          text: Compre 1 carta, mais 1 carta para cada bônus de compra não coberto _(igual à quantidade de estações no mapa)_. Depois, se você possuir mais que 5 cartas na mão, descarte quaisquer cartas até que reste apenas 5.
       
 
 - name: Apêndices
