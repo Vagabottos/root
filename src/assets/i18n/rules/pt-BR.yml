@@ -963,7 +963,7 @@
           text: Sempre que as Centenas criam um item, eles podem pegar o item, mas não recebem os PVs marcados; ou podem remover permanentemente o item, recebendo os PVs marcados. _(Eles ainda podem receber PVs adicionais de outros efeitos, como Mestre Escultor e a Forja Lendária.)_
 
         - name: O Tesouro.
-          text: Em vez de um local para Itens Artesanais, as Centenas possuem uma seção de Tesouro. A seção possui duas trilhas: Comando e Proezas. A trilha de Comando pode acomodar `item:boot`, `item:sack`, and `item:coin`. A trilha de Proezas pode acomodar `item:hammer`, `item:tea`, `item:sword`, and `item:crossbow`.
+          text: "Em vez de um local para Itens Artesanais, as Centenas possuem uma seção de Tesouro. A seção possui duas trilhas: Comando e Proezas. A trilha de Comando pode acomodar `item:boot`, `item:sack`, and `item:coin`. A trilha de Proezas pode acomodar `item:hammer`, `item:tea`, `item:sword`, and `item:crossbow`."
           subchildren:
             - name: Ganhando Itens.
               text: Quando as Centenas ganham um item, elas o posicionam no espaço vazio mais à esquerda da trilha de Comando ou Proezas, a depender do tipo do item. Se não houver um espaço vazio para tal, o item ganho ou um item que já esteja na trilha correspondente deve ser removido permanentemente, e o jogador recebe 1 PV.
