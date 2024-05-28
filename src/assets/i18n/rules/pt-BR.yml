@@ -10,7 +10,7 @@
         - name: Uso do **Não Pode**.
           plainName: Uso do **Não Pode**.
           text: Qualquer regra que contenha o texto **não pode** ou variações é absoluta. Ela não pode ser substituída por nenhuma outra regra, exceto quando explicitamente instruído.
-        - name: Resoluções e escolhas simultâneas.
+        - name: Resoluções e Escolhas Simultâneas.
           text: Se múltiplos efeitos ou decisões ocorrerem simultaneamente, o jogador que tem a vez no turno escolhe a ordem de resolução, salvo quando explicitado o contrário. Se um efeito removeria múltiplas peças simultaneamente e acionaria múltiplos efeitos ao fazê-lo, remova todas as peças antes de resolver todos os efeitos.
 
     - name: Informações Públicas e Privadas
@@ -78,7 +78,7 @@
         - name: Locais.
           text: Cada clareira possui uma quantidade de **locais de construção** _(caixas brancas)_. Sempre que um jogador posicionar uma construção, ela ocupará um local vazio. Você não pode posicionar uma construção em uma clareira sem locais vagos.
         - name: Ruínas.
-          text: Locais demarcados com um pequeno "R" começam a partida cobertos com **ruínas**. Ruínas não podem ser removidas a menos que explicitado _(por exemplo, pela ação de Exploração dos Malandros, `rule:9.5.3`)_.
+          text: Locais demarcados com um pequeno "R" começam a partida cobertos com **ruínas**. **Ruínas** não podem ser removidas a menos que explicitado _(por exemplo, pela ação de Exploração dos Malandros, `rule:9.5.3`)_.
     
     - name: Rios
       pretext: Muitas clareiras são ligadas por **rios**. _(Rios não são caminhos, mas podem ser tratados como tal caso seja explicitamente instruído desta forma. Rios não dividem clareiras ou florestas.)_ `faction:riverfolk:11.2.2`
@@ -123,77 +123,77 @@
         - name: Tomando Cartas Disponíveis.
           text: Durante o Dia de seu turno, você pode tomar uma carta de domínio disponível para sua mão, gastando uma carta de mesmo naipe para fazê-lo. Você não pode tratar uma carta de domínio de pássaro como sendo de qualquer outro naipe diferente de pássaro.
 
-- name: Key Actions
+- name: Ações Chave
   color: "#3f3f3f"
   children:
-    - name: Craft
-      pretext: You can **craft** most cards from your hand to gain an immediate or persistent effect.
+    - name: Criando
+      pretext: Você pode **criar** a maioria das cartas direto de sua mão para ganhar um efeito imediato ou um efeito permanente.
       children:
-        - name: Cost.
-          text: To craft a card, you must **activate** crafting pieces of the suits listed in the card's bottom-left corner. _(A faction's crafting piece is listed in its Crafting section.)_ A crafting piece's suit matches its clearing. Each crafting piece may be activated only once per turn. A three-color question mark denotes a crafting piece of any suit. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1`
-        - name: Immediate Effects.
-          text: When you craft an immediate effect _(paper box)_, resolve its effect and then discard the card. If it shows an item, take the matching item from the item supply on the map and place it in the Crafted Items box on your faction board. If the card lists an item not in the item supply, the card cannot be crafted. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8` `faction:warlord:14.2.1`
-        - name: Persistent Effects.
-          text: When you craft a persistent effect _(stone box)_, place it in your play area. You may use the effect as described on the card. _(The Eyrie Emigre card in the Exiles & Partisans deck is mandatory.)_
-        - name: No Duplicates.
-          text: You cannot craft a persistent effect if you have an identical one in your play area.
+        - name: Custo.
+          text: Para criar uma carta você deve **ativar** peças artesanais dos naipes listados no canto inferior esquerdo dela. _(As peças artesanais de cada facção estão listadas na sua seção de Criar.)_ O naipe de uma peça artesanal corresponde à sua clareira. Cada peça artesanal pode ser ativada apenas uma vez por turno. Uma interrogação em 3 cores denota uma peça artesanal de qualquer naipe. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1`
+        - name: Efeitos Imediatos.
+          text: Quando você cria um efeito imediato _(caixa de papel)_, você deve resolver esse efeito e descartar a carta. Se ela mostra um item, pegue o item correspondente do suprimento compartilhado do mapa e posicione-o no espaço para Itens Artesanais de seu tabuleiro de facção. Se a carta mostra um item não disponível no suprimento compartilhado, então ela não pode ser criada. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8` `faction:warlord:14.2.1`
+        - name: Efeitos Permanentes.
+          text: Quando você cria um efeito permanente _(caixa de pedra)_, coloque a carta em sua área de jogo. Você poderá usar os efeitos como estão descritos nas cartas. _(A carta Imigrante Rapina do baralho de **Exilados e Partisans** é mandatória)_
+        - name: Sem Repetição.
+          text: Você não pode criar um efeito permanente no caso de você já possuir um efeito permanente idêntico na sua área de jogo.
   
-    - name: Move
-      pretext: When you **move**, you may take any number _(more than zero)_ of your warriors and pawns from one clearing and move them to one adjacent clearing.
+    - name: Movimento
+      pretext: Quando você se **move**, pegue qualquer quantidade _(maior que zero)_ de guerreiros e/ou peões seus, removendo-os de uma clareira e levando-os para uma clareira adjacente.
       children:
-        - name: You Must Rule.
-          text: To take a move, you must rule the origin clearing, destination clearing, or both. `faction:vagabond:9.2.3` `faction:riverfolk:11.2.2` `faction:corvid:13.2.3`
-        - name: No Movement Limits.
-          text: A given piece can be moved any number of times per turn. If you are prompted to take multiple moves, you may move the same or separate groups of warriors.
+        - name: Você Deve Governar.
+          text: Para realizar um movimento, você deve ser o governante da clareira de origem, da clareira de destino ou de ambas. `faction:vagabond:9.2.3` `faction:riverfolk:11.2.2` `faction:corvid:13.2.3`
+        - name: Sem Limite de Movimentos.
+          text: Uma peça pode ser movida uma quantidade qualquer de vezes durante um turno. Se você for instruído a realizar múltiplos movimentos, você pode mover o mesmo grupo ou grupos separados de guerreiros.
 
-    - name: Battle
-      pretext: When you **battle**, choose a clearing with any number of your warriors and pawns as the **clearing of battle**. You are the **attacker**. Choose an enemy in the clearing of battle to be the **defender**.
+    - name: Batalha
+      pretext: Quando você vai para a **batalha**, escolha uma clareira onde você possua qualquer número de guerreiros e/ou peões como a **clareira de batalha**. Você é o **atacante**. Escolha um inimigo presente na clareira da batalha para ser o **defensor**.
       children:
-        - name: "Step 1: Defender May Ambush."
-          text: The defender may play one ambush card matching the clearing of battle. If so, resolve `rule:4.3.1.1`–`rule:4.3.1.2` in order.
+        - name: "1º Passo: Defensor Pode Emboscar."
+          text: O defensor pode jogar 1 carta de emboscada correspondente à clareira da batalha. Se isso ocorrer, resolva `rule:4.3.1.1`–`rule:4.3.1.2` em ordem.
           subchildren:
-            - name: Foil Ambush.
-              text: The attacker may also play an ambush card matching the clearing of the battle. If they do, the defender discards their ambush card and skips `rule:4.3.1.2`.
-            - name: Resolve Ambush.
-              text: The defender deals two hits immediately (`rule:4.3.4`). Then, the defender discards the ambush card. If no attacking warriors or pawns remain, end the battle immediately.
-        - name: "Step 2: Roll Dice and Add Extra Hits."
-          text: Roll both dice. The attacker will deal hits equal to the higher roll, and the defender will deal hits equal to the lower roll. If the rolls are equal, attacker and defender will deal the same number of hits. _(The use of "will" here reflects that hits are not dealt until step 4.)_ `faction:woodland:8.2.2`
+            - name: Emboscada Frustrada.
+              text: O atacante também pode jogar uma carta de emboscada correspondente à clareira da batalha. Caso o faça, o defensor descarta sua carta de emboscada e o passo `rule:4.3.1.2` é pulado.
+            - name: Resolver a Emboscada.
+              text: O defensor causa 2 danos imediatamente (`rule:4.3.4`). Depois, o defensor descarta a carta de emboscada. Caso não sobre nenhum guerreiro ou peão atacante, a batalha termina imediatamente.
+        - name: "2º Passo: Role Os Dados E Danos Adicionais."
+          text: Role ambos os dados. O atacante causará danos iguais ao maior resultado e o defensor iguais ao menor resultado. Caso ambos os dados mostrem o mesmo resultado, tanto o atacante quanto o defensor causarão a mesma quantidade de dano. _(Note que o verbo está no futuro, pois o dano só será realmente causado no 4º Passo.)_ `faction:woodland:8.2.2`
           subchildren:
-            - name: Maximum Rolled Hits.
-              text: The maximum hits you can deal from rolling equals the number of your warriors in the clearing of battle, whether you are the attacker or defender. `faction:vagabond:9.2.6`
-        - name: "Step 3: Use Effects."
-          text: The attacker and defender may use optional effects _(such as the Brutal Tactics card)_ that affect battle. If both want to use effects, the attacker chooses who uses them first (`rule:1.1.3`). 
+            - name: Dano Máximo de Dados.
+              text: A quantidade máxima de dano que você pode causar na rolagem dos dados é igual à quantidade de guerreiros que você possui na clareira da batalha, independentemente de ser o atacante ou o defensor. `faction:vagabond:9.2.6`
+        - name: "3º Passo: Use Efeitos."
+          text: O atacante e o defensor podem usar efeitos opcionais _(como a carta Táticas Brutais)_ para afetar a batalha. Se ambos o fizerem, o atacante escolhe quem usa primeiro (`rule:1.1.3`).
           subchildren:
-            - name: Extra Hits.
-              text: Many effects will deal **extra hits**, which are not limited by the number of warriors in the clearing of battle.
-            - name: Defenseless.
-              text: If the defender has no warriors in the clearing of battle, the attacker will deal an extra hit. `faction:vagabond:9.2.4`
-        - name: "Step 4: Deal Hits."
-          text: Each hit that a side deals removes one piece of the other side from the clearing of battle. _(You score one victory point per enemy building or token removed.)_ The side taking hits chooses the order in which their own pieces are removed, but all of their warriors there must be removed before any of their buildings or tokens there can be removed; they also choose the order of any effects triggered by their pieces being removed.
+            - name: Danos Adicionais.
+              text: Muitos efeitos podem gerar **danos adicionais**, que não estão limitados pela quantidade de guerreiros presentes na clareira da batalha.
+            - name: Indefeso.
+              text: Se o defensor não possuir nenhum guerreiro na clareira da batalha, então o atacante causa um dano adicional. `faction:vagabond:9.2.4`
+        - name: "4º Passo: Causando Danos."
+          text: Cada dano causado remove uma peça oponente da clareira da batalha. _(Você ganha 1 PV para cada construção ou marcador inimigo removido.)_ Todos os guerreiros de um jogador devem ser removidos antes de qualquer de suas construções ou marcadores. O jogador que está recebendo o dano escolhe qual de suas peças será removida e a ordem dos efeitos acionados pelas peças retiradas.
 
-- name: Setup
+- name: Preparação
   color: "#000000"
-  pretext: If any players are new to the game, use the Standard Setup (`rule:5.1`) If everyone has played and you want more variety, use the Advanced Setup (`rule:16.1`). If you want to play with five or more factions that would start in corner clearings, you must use the Advanced Setup.
+  pretext: Se qualquer jogador for novo no jogo, use a Preparação Padrão (`rule:5.1`). Caso todos já conheçam o jogo e queiram mais variabilidade, use a Preparação Avançada (`rule:16.1`). Caso você queira jogar com 5 ou mais facções que começariam em clareiras de canto, então você deve usar a Preparação Avançada.
   children:
-    - name: Standard Setup Procedure
+    - name: Preparação Padrão
       children:
-        - name: "Step 1: Assign Factions and Starting Player."
-          text: Assign one faction to each player in any way. Determine the starting player and seating order randomly. Each player takes their chosen faction board and the pieces listed on its back.
-        - name: "Step 2: Place Score Markers."
-          text: Each player places their score marker on "0" on the score track.
-        - name: "Step 3: Draw Starting Hands."
-          text: If you are playing with two players, remove all four dominance cards from the deck. Shuffle the deck. Each player draws three cards.
-        - name: "Step 4: Place Ruins."
-          text: Place a ruin in each slot on the map marked with an "R" _(four in total)_.
-        - name: "Step 5: Form Item Supply."
-          text: "Place these items on the matching spaces of the item supply near the top of the map: 2 `item:boot`, 2 `item:sack`, 1 `item:crossbow`, 1 `item:hammer`, 2 `item:sword`, 2 `item:tea`, 2 `item:coin`."
-        - name: "Step 6: Gather Other Pieces."
-          text: Hand out the 16 faction overview cards as desired, and place the two custom dice near the map.
-        - name: "Step 7: Set Up Factions."
-          text: In setup order (A, B, C, etc.), each player follows their faction's setup instructions, listed in their rules section and on the back of their faction board.
+        - name: "1º Passo: Atribuir Facções e Jogador Inicial."
+          text: Utilize um método qualquer para atribuir uma facção para cada jogador. Determine o jogador inicial e a posição dos jogadores na mesa de forma aleatória. Cada jogador recebe o seu tabuleiro de facção e todas as peças listadas em seu verso.
+        - name: "2º Passo: Posicione os Marcadores de Pontos."
+          text: Cada jogador posiciona seu marcador de pontos na trilha de pontuação, sobre o valor “0” (zero).
+        - name: "3º Passo: Compre sua Mão Inicial."
+          text: Se você está jogando uma partida com 2 jogadores, remova as 4 cartas de domínio do jogo. Embaralhe as cartas restantes. Cada jogador compra 3 cartas.
+        - name: "4º Passo: Posicionar Ruínas."
+          text: Posicione uma ruína em cada local do mapa que possua um “R” _(4 locais no total)_.
+        - name: "5º Passo: Forme o Suprimento de Itens."
+          text: "Posicione estes itens nos espaços correspondentes, presentes no topo do mapa: 2 `item:boot`, 2 `item:sack`, 1 `item:crossbow`, 1 `item:hammer`, 2 `item:sword`, 2 `item:tea`, 2 `item:coin`."
+        - name: "6º Passo: Demais Componentes."
+          text: Distribua cartas de resumo das facções e posicione os 2 dados próximos ao mapa.
+        - name: "7º Passo: Prepare as Facções."
+          text: Na ordem alfabética de acordo com a letra presente na seção de preparação dos tabuleiros de facção (A, B, C, etc.), cada jogador segue a preparação de sua facção, a qual também é mostrada na seção de regras de sua facção nos manuais.
 
-    - name: Reach
-      pretext: To set up an interesting game, choose factions whose Reach values add up to at least the total reach recommended for your player count. _(Adventurous players are welcome to use any faction mix with 17+ Reach.)_ To see the recommended reach for your player count, tap the Calculator icon in the top right of the app.
+    - name: Alcance
+      pretext: Para criar uma preparação viável, as facções escolhidas devem ter um alcance total que seja igual ou superior a aquele apresentado na tabela, de acordo com a quantidade de jogadores. _(Jogadores audaciosos podem tentar usar quaisquer combinações de facções que totalizem pelo menos 17 de Alcance.)_ Para ver o Alcance recomendado para sua contagem de jogadores, clique no ícone de Calculadora no canto superior direito do app.
 
 - name: Marquise de Cat
   color: "#e07a37"
@@ -1164,7 +1164,7 @@
       pretext: Existem centenas de formas de jogar **Root**.
       children:
         - name: "1º Passo: Escolha e Prepare o Mapa"
-          text: Em grupo, escolham um mapa. Se você escolher um mapa alternativo (`rule:16.2`), siga sua seção de Modificações na Preparação. Depois, recolha os 12 marcadores de naipe, coloque-os com a face para baixo, misture-os, e coloque um em cada clareira, cobrindo o naipe impresso, caso exista. Prepare as ruínas (`rule:5.1.4`), suprimento de itens (`rule:5.1.5`) e dados (`rule:5.1.6`) normalmente.
+          text: Em grupo, escolham um mapa. Se você escolher um mapa alternativo (`rule:16.2`), siga sua seção de Modificações na Preparação. Depois, recolha os 12 marcadores de naipe, coloque-os com a face para baixo, misture-os, e coloque um em cada clareira, cobrindo o naipe impresso, caso exista. Prepare as **ruínas** (`rule:5.1.4`), suprimento de itens (`rule:5.1.5`) e dados (`rule:5.1.6`) normalmente.
 
         - name: "2º Passo: Escolha o Baralho"
           text: Em consenso, vocês podem substituir completamente o baralho da caixa base pelo baralho de Exilados e Partisans.
@@ -1205,10 +1205,10 @@
             - name: "5º Passo: Retorne Facções Correspondentes."
               text: Uma facção não pode ser usada caso o **capanga** correspondente esteja em jogo _(mostrado pela sua cor e ícone)_. Retorne os tabuleiros de facção, peças e cartas de preparação correspondentes para a caixa.
 
-        - name: "8º Passo: Prepare as Facções"
+        - name: "7º Passo: Compre 5 Cartas"
           text: Se você está jogando uma partida com 2 jogadores, remova as 4 cartas de domínio do jogo. Embaralhe as cartas restantes. Cada jogador compra 5 cartas. _(Não 3 como na Preparação Padrão! Você escolherá apenas 3 para ficar no 10º passo.)_
 
-        - name: "Step 8: Set Up Factions"
+        - name: "8º Passo: Prepare as Facções"
           text: Em consenso, vocês podem escolher preparar as facções conforme a Preparação Padrão (`rule:5.1`) ou podem usar as cartas de preparação de facção contidas na Expansão Saqueadores, da seguinte forma,"
           subchildren:
             - name: "1º Passo: Distribua Cartas de Preparação."
@@ -1232,13 +1232,11 @@
                 - name: Adjacente à Clareira Inicial.
                   text: Algumas facções irão instruir a escolher clareiras iniciais que não sejam adjacentes a clareiras iniciais inimigas, ou que tenham 2 ou mais clareiras entre elas e uma clareira inicial inimiga. Caso você não consiga cumprir com um requisito de "2 ou mais clareiras entre", você pode escolher uma clareira que não seja adjacente a uma clareira inicial inimiga. Caso não consiga cumprir com um requisito de "não adjacente", você pode escolher uma clareira adjacente a uma clareira inicial inimiga. _(De forma resumida, pense como sendo "Tente fazer a preparação o mais distante possível".)_
 
-
         - name: "9º Passo: Posicione os Marcadores de Pontos"
           text: Cada jogador posiciona o marcador de pontos de sua facção no espaço "0" da trilha de pontuação.
 
         - name: "10º Passo: Escolha a Mão Inicial"
           text: Cada jogador escolhe 3 cartas de sua mão para manter e coloca as outras duas cartas, com o verso para cima, no baralho de compra. Em seguida, embaralhe o baralho de compra.
- 
 
     - name: Mapas Alternativos
       children:
@@ -1250,19 +1248,19 @@
         - name: Mapa do Lago
           subchildren:
             - name: Alterações na Preparação.
-              text: Posicione a peça da Balsa na clareira de canto que também é uma clareira costeira.
+              text: Posicione a peça da **Balsa** na clareira de canto que também é uma clareira costeira.
 
             - name: O Lago.
-              text: "**O Lago** está no centro do mapa. O lago é tratado como rios ligando todas as clareiras costeiras com qualquer outra clareira costeira. O lago divide florestas."
+              text: "**O Lago** está no centro do mapa. O **lago** é tratado como rios ligando todas as clareiras costeiras com qualquer outra clareira costeira. O **lago** divide florestas."
 
             - name: Clareiras Costeiras.
-              text: Todas as clareiras que tocam o Lago _(não separadas por uma floresta)_ são **clareiras costeiras**. Toda floresta costeira é adjacente às suas duas florestas costeiras vizinhas _(separadas por uma floresta costeira)_.
+              text: Todas as clareiras que tocam o **Lago** _(não separadas por uma floresta)_ são **clareiras costeiras**. Toda floresta costeira é adjacente às suas duas florestas costeiras vizinhas _(separadas por uma floresta costeira)_.
 
             - name: Florestas Costeiras.
-              text: Florestas que tocam o Lago são **florestas costeiras**. Cada floresta costeira é adjacente a duas outras florestas costeiras vizinhas _(separadas por uma clareira costeira)_.
+              text: Florestas que tocam o **Lago** são **florestas costeiras**. Cada floresta costeira é adjacente a duas outras florestas costeiras vizinhas _(separadas por uma clareira costeira)_.
 
             - name: A Balsa.
-              text: Uma vez por turno, peças realizando um movimento partindo da clareira costeira onde esteja a balsa, podem se mover para outra clareira costeira, movendo a balsa junto _(e seguindo as regras normais de movimento)_. Após esse movimento, esse jogador compra uma carta. A Balsa não pode ser atacada ou removida.
+              text: Uma vez por turno, peças realizando um movimento partindo da clareira costeira onde esteja a **balsa**, podem se mover para outra clareira costeira, movendo a balsa junto _(e seguindo as regras normais de movimento)_. Após esse movimento, esse jogador compra uma carta. A **Balsa** não pode ser atacada ou removida.
             
         - name: Mapa das Montanhas
           subchildren:
@@ -1404,7 +1402,7 @@
               text: O controlador do **capanga** não recebe PVs quando o **capanga** remove quaisquer peças inimigas _(usualmente em batalha)_. _(Os jogadores ainda podem receber PVs por remover construções e marcadores dos **capangas**, mesmo quando se defendendo em batalha contra **capangas**. Os jogadores ainda pontuam normalmente caso os Profetas do Sol Quente forcem as peças de facção daquele jogador a entrar em batalha.)_
 
             - name: Coisas Estranhas.
-              text: Se você mover um **capanga** com a Balsa, você compra uma carta. Se você mover guerreiros de um **capanga** para uma clareira com um marcador de simpatia da Aliança ou remover simpatia da Aliança usando um **capanga**, isso aciona o Ultraje (`rule:8.2.6`). _(Estes efeitos se referem ao "movimento do jogador" ou ao "jogador removendo".)_
+              text: Se você mover um **capanga** com a **Balsa**, você compra uma carta. Se você mover guerreiros de um **capanga** para uma clareira com um marcador de simpatia da Aliança ou remover simpatia da Aliança usando um **capanga**, isso aciona o Ultraje (`rule:8.2.6`). _(Estes efeitos se referem ao "movimento do jogador" ou ao "jogador removendo".)_
         
     - name: Marcos
       children:
