@@ -642,108 +642,108 @@
         - name: Draw and Discard.
           text: Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
-- name: Riverfolk Company
+- name: Companhia Ribeirinha
   color: "#5bc3bd"
   icon: riverfolk
   children:
-    - name: Overview
-      pretext: When news arrived that the Woodland on the shore of the great lake was descending into all-out war, the Riverfolk Company quickly dispatched its officers to set up shop. As other factions purchase their services, the Riverfolk can further entrench their commercial interests by establishing **trade** posts along the river, scoring victory points. So too can they score points by raw accumulation of **funds**, but a big treasury makes for an easy target, so the Riverfolk must take care in expanding their operations across the dangerous forest.
+    - name: Resumo
+      pretext: Quando as notícias de que a Floresta da Madeira, nas margens do grande lago, estava caminhando para a guerra, a Companhia Ribeirinha rapidamente enviou seus oficiais para montarem lojas. Conforme as outras facções compram serviços, os Ribeirinhos conseguem consolidar ainda mais seus interesses comerciais estabelecendo **entrepostos comerciais** ao longo do rio, recebendo PVs. Eles também podem ganhar pontos acumulando **fundos**, mas um grande tesouro é um alvo fácil, então os Ribeirinhos devem tomar cuidado ao expandir suas operações pela perigosa floresta.
 
-    - name: Faction Rules and Abilities
+    - name: Regras da Facção e Habilidades
       children:
-        - name: Crafting.
-          text: The Riverfolk craft during Daylight by committing funds to empty spaces on the Trade Posts tracks. _(They have no crafting pieces.)_
-        - name: Swimmers.
-          text: The Riverfolk treat rivers as paths and may move along rivers regardless of who rules their origin or destination clearing. _(They can still move using paths.)_
-        - name: Public Hand.
-          text: The Riverfolk place their hand face up above their faction board. If another player would take a random card from the Riverfolk's hand, the cards are flipped face down, shuffled, drawn from, and then flipped face up.
-        - name: Funds.
-          text: "To take many actions, the Riverfolk commit and spend **funds**: warriors in their Funds box."
-        - name: Trade Posts.
-          text: The Riverfolk score victory points when they place trade posts.
+        - name: Criar.
+          text: Os Ribeirinhos criam durante o **Dia**, comprometendo Fundos para espaços vazios na trilha de Entrepostos Comerciais. _(Eles não possuem peças artesanais.)_
+        - name: Nadadores.
+          text: Os Ribeirinhos tratam rios como caminhos e podem mover-se por rios independente de quem governa as clareiras de origem e destino. _(Embora eles ainda possam se mover por caminhos também.)_
+        - name: Mão Pública.
+          text: Os Ribeirinhos mantém suas cartas de mão reveladas acima de seu tabuleiro de facção. Se um jogador deve pegar uma carta aleatória da mão de um Ribeirinho, então as cartas são voltadas para baixo e embaralhadas e, depois da compra, novamente colocadas com a frente para cima.
+        - name: Fundos.
+          text: "Para realizar muitas ações, os Ribeirinhos devem comprometer e gastar fundos: guerreiros na seção Fundos."
+        - name: Entrepostos Comerciais.
+          text: Os Ribeirinhos recebem PVs quando constroem entrepostos comerciais.
           subchildren:
-            - name: Trade Disruption.
-              text: Whenever a trade post is removed, the Riverfolk remove half of their funds, rounded up, and remove the trade post from the game permanently.
-        - name: Buying Services.
-          text: At the start of another player's Birdsong, that player may buy Riverfolk services.
+            - name: Perturbação do Comércio.
+              text: Sempre que um **entreposto comercial** é removido, os Ribeirinhos removem metade de seus **Fundos**, arredondado para cima, e retornam o entreposto comercial para a caixa do jogo.
+        - name: Comprando Serviços.
+          text: No início do Amanhecer de outro jogador, aquele jogador pode comprar os serviços dos Ribeirinhos.
           subchildren:
-            - name: Cost.
-              text: The buyer must place warriors from their supply into the Riverfolk's Payments box equal in number to the cost of that service listed on the Riverfolk's Services track.
-            - name: Number of Services.
-              text: Each turn, a player may buy one service plus one per clearing with a trade post and their faction pieces.
-            - name: Vagabond Funds.
-              text: The Vagabond pays for services by exhausting items - for each item he exhausts to do so, the Riverfolk place one Riverfolk warrior in the Payments box.
-        - name: Riverfolk Services.
-          text: The Riverfolk offer three services, as follows.
+            - name: Custo.
+              text: O comprador deve posicionar guerreiros provenientes de seu suprimento, na seção de pagamentos dos Ribeirinhos, em quantidade igual ao custo do serviço, conforme mostrado na trilha de Serviços dos Ribeirinhos.
+            - name: Quantidade de Serviços.
+              text: A cada rodada, um jogador pode comprar um serviço e mais um para cada clareira que contenha um entreposto comercial junto a qualquer peça de facção desse jogador.
+            - name: Fundos do Malandro.
+              text: O Malandro paga por serviços exaurindo itens – para cada item exaurido, os Ribeirinhos posicionam um guerreiro Ribeirinho na Seção de Pagamentos.
+        - name: Serviços dos Ribeirinhos.
+          text: Os Ribeirinhos prestam três diferentes serviços.
           subchildren:
-            - name: Hand Card.
-              text: The buyer takes any card from the Riverfolk's hand and adds it to their hand. _(The buyer may buy this service multiple times as long as they have access to enough trade posts.)_
-            - name: Riverboats.
-              text: The buyer treats rivers as paths until the end of their turn.
-            - name: Mercenaries.
-              text: During Daylight and Evening of this turn, the buyer treats Riverfolk warriors as their own for rule and for battle against any faction except the Riverfolk. _(The buyer cannot move them, count them toward dominance, or remove them except by taking hits. They are still Riverfolk faction pieces, so they cannot be affected by abilities such as the Marquise's Field Hospitals or used in actions such as the Duchy's Sway Ministers.)_
+            - name: Carta da Mão.
+              text: O comprador toma uma carta qualquer da mão dos Ribeirinhos, adicionando-a a sua própria mão. _(O comprador pode realizar esta ação diversas vezes, desde que tenha acesso a entrepostos comerciais suficientes.)_
+            - name: Botes.
+              text: O comprador trata rios como caminhos até o final de seu turno
+            - name: Mercenários.
+              text: Durante o Dia e o Anoitecer deste turno, o comprador trata guerreiros Ribeirinhos como se fossem seus para o propósito de governar e para batalhar contra facções diferentes dos Ribeirinhos. _(O comprador não pode movê-los, contá-los para domínio ou removê-los, exceto como resultado de danos. Eles ainda são peças de facção dos Ribeirinhos, logo não podem ser afetados por habilidades de outras facções como os **Hospitais de Batalha** dos Marqueses ou como Influenciar Ministros do Ducado.)_
               subchildren:
-                - name: Taking Hits.
-                  text: The buyer must split hits, taking odd hits by removing owned _(not Riverfolk)_ warriors, if any, or owned buildings or tokens only if they have no warriors _(including Riverfolk)_ in the clearing of battle.
-                - name: Vagabond Mercenaries.
-                  text: The Vagabond cannot buy Riverfolk mercenaries. _(If a buyer battles the Vagabond and a Riverfolk mercenary warrior is removed, the buyer's faction becomes Hostile, not the Riverfolk.)_
+                - name: Recebendo Danos.
+                  text: O comprador deve dividir igualmente os danos recebidos, tomando danos ímpares através da remoção de seus próprios guerreiros _(não dos Ribeirinhos)_, caso existam, ou de construções ou marcadores seus apenas caso não existam mais guerreiros _(incluindo guerreiros Ribeirinhos)_ na clareira da batalha.
+                - name: Mercenários para o Malandro.
+                  text: O Malandro não pode comprar mercenários Ribeirinhos. _(Se um comprador batalhar com o Malandro e um mercenário Ribeirinho for removido, a facção compradora se torna Hostil, não os Ribeirinhos.)_
 
-    - name: Faction Setup
+    - name: Preparação
       children:
-        - name: "Step 1: Gather Warriors."
-          text: Form a supply of 15 warriors.
-        - name: "Step 2: Place Warriors."
-          text: Place 4 warriors in any clearings touching the river.
-        - name: "Step 3: Fill Trade Posts Tracks."
-          text: Place the 9 trade posts on the matching spaces of your Trade Posts tracks.
-        - name: "Step 4: Gain Starting Funds."
-          text: Place 3 warriors in your Payments box.
-        - name: "Step 5: Set Starting Prices."
-          text: Place 1 service marker on any space of each of your Services track.
+        - name: "1º Passo: Receber Guerreiros."
+          text: Forme um suprimento de 15 guerreiros.
+        - name: "2º Passo: Posicione Guerreiros."
+          text: Posicione 4 guerreiros em uma ou mais clareiras conectadas com o rio.
+        - name: "3º Passo: Preencha as Trilhas de Entrepostos Comerciais."
+          text: Posicione os 9 **entrepostos comerciais** nos espaços correspondentes da trilha de **Entrepostos Comerciais**.
+        - name: "4º Passo: Recebendo Fundos Iniciais."
+          text: Posicione 3 guerreiros na seção de Pagamentos.
+        - name: "5º Passo: Ajustando os Preços Iniciais."
+          text: Posicione um marcador de serviço em um espaço de cada trilha de **Serviço**.
 
-    - name: Birdsong
-      pretext: Your Birdsong has three steps in the following order.
+    - name: Amanhecer
+      pretext: Seu Amanhecer possui 3 passos, realizados na ordem a seguir.
       children:
-        - name: Protectionism.
-          text: If the Payments box is empty, place two warriors in it.
-        - name: Score Dividends.
-          text: If there are any trade posts on the map, score one victory point per two funds. _(Do not score points for warriors in Payments or Committed.)_
-        - name: Gather Funds.
-          text: Move all warriors on your faction board to the Funds box.
+        - name: 1º.Protecionismo.
+          text: Caso a seção de Pagamentos esteja vazia, posicione 2 guerreiros lá.
+        - name: 2º.Pontue pelos Dividendos.
+          text: Caso exista algum **entreposto comercial** no mapa, receba 1 PV para cada 2 Fundos. _(Cocê não recebe pontos pelos guerreiros nas seções de Pagamentos ou Comprometido.)_
+        - name: 3º.Angariando Fundos.
+          text: Mova todos os guerreiros presentes no seu tabuleiro de facção para a seção de Fundos.
 
-    - name: Daylight
-      pretext: You can commit and spend funds to take actions, as follows, in any order and number. When you commit a fund, move the warrior to the Committed box. When you spend a fund, return the warrior to its owner's supply. 
+    - name: Dia
+      pretext: Você pode comprometer e gastar Fundos para realizar ações, em qualquer ordem ou combinação. Quando você compromete um fundo, mova o guerreiro para a seção de comprometido. Quando você gasta um fundo, retorne o guerreiro para o suprimento de seu dono.
       children:
-        - name: Move.
-          text: Commit one fund to take a move.
-        - name: Battle.
-          text: Commit one fund to initiate a battle.
-        - name: Craft.
-          text: Commit funds to craft a card from your hand. Instead of moving these warriors to the Committed box, you must place them on empty spaces of the Trade Posts tracks matching the suits listed on the crafting cost.
+        - name: Mover.
+          text: Comprometa 1 fundo para realizar 1 movimento.
+        - name: Batalhar.
+          text: Comprometa 1 fundo para iniciar 1 batalha.
+        - name: Criar.
+          text: Comprometa Fundos para criar uma carta de sua mão. Em vez de mover os guerreiros para a seção de Comprometido, você deve colocá-los em locais vazios das trilhas de **Entrepostos Comerciais** correspondentes aos naipes listados no custo para criar.
           subchildren:
-            - name: Export.
-              text: You may ignore the listed benefit of crafting a card, discarding it, to place one Riverfolk warrior in the Payments box.
-        - name: Draw.
-          text: Commit one fund to draw a card.
-        - name: Recruit.
-          text: Spend one fund to place a warrior in any clearing with a river.
-        - name: Establish Trade Post with Garrison.
-          text: Spend two funds to place a trade post and a warrior.
+            - name: Exportar.
+              text: Você pode ignorar o benefício listado na carta, descartando-a, para posicionar um guerreiro Ribeirinho na Seção de Pagamentos.
+        - name: Comprar.
+          text: Comprometa 1 fundo para comprar uma carta.
+        - name: Recrutar.
+          text: Gaste 1 fundo para posicionar 1 guerreiro em qualquer clareira com rio.
+        - name: Estabeleça um Entreposto Comercial com Guarnição.
+          text: Gaste 2 Fundos para posicionar um **entreposto comercial** e um guerreiro.
           subchildren:
-            - name: Choose Clearing.
-              text: Choose any clearing without a trade post that is ruled by any player.
-            - name: Spend Funds.
-              text: Spend two funds of the player who rules the chosen clearing.
-            - name: Place and Score.
-              text: Place the matching trade post and one warrior in the chosen clearing. Score the victory points listed on the space uncovered on your faction board.
+            - name: Escolha a Clareira.
+              text: Escolha qualquer clareira sem um **entreposto comercial**, que seja governada por qualquer jogador.
+            - name: Gaste Fundos.
+              text: Gaste 2 Fundos do jogador que governa a clareira..
+            - name: Posicione e Pontue.
+              text: Posicione o entreposto comercial correspondente e 1 guerreiro na clareira escolhida. Receba PVs de acordo com o espaço revelado em seu tabuleiro de facção.
 
-    - name: Evening
-      pretext: Your Evening has two steps in the following order.
+    - name: Anoitecer
+      pretext: Seu Anoitecer possui 2 etapas, realizadas na ordem mostrada a seguir.
       children:
-        - name: Discard Cards.
-          text: If you have more than five cards in your hand, discard cards of your choice until there are five.
-        - name: Set Costs.
-          text: You may move each service marker to any space on its track, setting it to a new cost.
+        - name: 1º.Descarte Cartas.
+          text: Caso você possua mais que 5 cartas na sua mão, descarte cartas até ficar com apenas 5.
+        - name: 2º.Ajuste os PreçosSet Costs.
+          text: Você pode mover cada marcador de serviço para qualquer espaço na respectiva trilha, definindo um novo preço.
 
 - name: Ducado Subterrâneo
   color: "#eec4ab"
