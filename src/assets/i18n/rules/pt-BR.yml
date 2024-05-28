@@ -1068,7 +1068,7 @@
     - name: Regras da Facção e Habilidades
       children:
         - name: Relíquias.
-          text: Você procura 12 marcadores de relíquia de três tipos diferentes: figuras, tábuas e joias. Cada tipo possui 4 marcadores. A frente dos marcadores mostra apenas seu tipo e o verso mostra os valores 1, 2 ou 3.
+          text: "Você procura 12 marcadores de relíquia de três tipos diferentes: figuras, tábuas e joias. Cada tipo possui 4 marcadores. A frente dos marcadores mostra apenas seu tipo e o verso mostra os valores 1, 2 ou 3."
 
         - name: Estações.
           text: Você possui três estações. Cada estação mostra um tipo de relíquia em sua frente e outro em seu verso.
