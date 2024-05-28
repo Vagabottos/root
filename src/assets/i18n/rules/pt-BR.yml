@@ -699,7 +699,7 @@
         - name: "4º Passo: Recebendo Fundos Iniciais."
           text: Posicione 3 guerreiros na seção de Pagamentos.
         - name: "5º Passo: Ajustando os Preços Iniciais."
-          text: Posicione um marcador de serviço em um espaço de cada trilha de **Serviço**.
+          text: Posicione um marcador de serviço em um espaço de cada trilha de **Serviços**.
 
     - name: Amanhecer
       pretext: Seu Amanhecer possui 3 passos, realizados na ordem a seguir.
@@ -1490,7 +1490,7 @@
           text: Todos os guerreiros, peões, construções e marcadores listados no verso de um tabuleiro de facção. _(Itens não são peças de facção.)_ Veja `rule:1.5.2`.
 
         - name: Peça Inimiga.
-          text: Uma peça de facção de um jogador inimigo ou uma peça de **capanga** de um **capanga** inimigo, exceto quando você tratar a peça como sua devido a uma regra _(por exemplo, os **mercenários** Ribeirinhos, etc.). _(Itens não são peças inimigas.)_
+          text: Uma peça de facção de um jogador inimigo ou uma peça de **capanga** de um **capanga** inimigo, exceto quando você tratar a peça como sua devido a uma regra _(por exemplo, os **mercenários** Ribeirinhos, etc.)._ _(Itens não são peças inimigas.)_
 
         - name: Posicione.
           text: Pegue a peça indicada do suprimento correspondente e a coloque no destino indicado. Usualmente, nenhum suprimento é indicado, nesse caso, a peça vem de seu suprimento usual ou é retirada do espaço mais à esquerda da trilha correspondente.
