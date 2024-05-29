@@ -858,10 +858,10 @@
         - name: 1º.Descarte e Retorne Cartas Reveladas.
           text: Descarte quaisquer cartas de pássaro que você revelou nesta rodada e, depois, retorne todas as demais cartas reveladas por você neste turno para sua mão.
 
-        - name: Crie.
+        - name: 2º.Crie.
           text: Você pode criar ativando Cidadelas e Mercados. _(Ambas funcionam de forma idêntica para este fim.)_
 
-        - name: Compre e Descarte.
+        - name: 3º.Compre e Descarte.
           text: Compre 1 carta, mais 1 para cada bônus de compra não coberto. Depois, se você possuir mais que 5 cartas na mão, descarte quaisquer cartas até que reste apenas 5.
 
 - name: Conspiração Corvídea
