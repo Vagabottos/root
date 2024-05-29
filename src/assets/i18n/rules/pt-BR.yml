@@ -570,77 +570,77 @@
         - name: Taking Items from Ruins.
           text: When a Vagabond explores a ruin with two items, or the Hundreds raze a ruin (`rule:14.4.1`) with two items, that player may look at those items and take one of their choice. _(By taking two Explore actions, the Vagabond could take both items from one ruin.)_ A player cannot take an "R" item if they have the same type of "R" item on their faction board. _(If the Vagabond explores but does not take an item, he does not score a victory point, but the `item:torch` is still exhausted.)_
 
-- name: Lizard Cult
+- name: Lagartos Cultistas
   color: "#fcf065"
   icon: cult
   children:
-    - name: Overview
-      pretext: Catering to the discarded creatures of the Woodland, the Lizard Cult seeks to overwhelm its foes through sheer force of will. Wherever the Cult rules clearings, it can build **gardens**, using word of mouth and beak to spread its gospel to the animals living there. The firmer its hold over the hearts of its followers, the more victory points the Cult can score by completing the proper **rituals**. While other factions spend cards to achieve their aims, the Cult acts chiefly by revealing cards and gradually gathering a set of ideal followers. These revealed cards are returned to the Cult's hand in Evening, unless discarded to score victory points. However, this gentler approach makes movement and battle difficult-the Cult can only take these actions with its radicalized **acolytes**, gained as the Cult's warriors are slaughtered while defending in battle.
+    - name: Resumo
+      pretext: Alimentando-se das criaturas da Floresta descartadas pelas outras facções, os Lagartos Cultistas procuram sobrepujar seus inimigos através da pura força de vontade. Em clareiras governadas por Cultistas poderão ser construídos **jardins**, os quais irão espalhar a palavra deles entre os animais que moram lá. Quanto mais firme for seu domínio sobre os corações de seus seguidores, mais pontos de vitória o Culto poderá marcar ao completar os **rituais** apropriados. Enquanto outras facções gastam cartas para atingir seus objetivos, os Cultistas agem principalmente revelando cartas e, gradualmente, criando o conjunto ideal de seguidores. A menos que sejam usadas para pontuação, essas cartas retornam para a mão dos Cultistas ao Anoitecer. Contudo, sua aproximação gentil torna movimentos e operações de combate difíceis, de modo que os Cultistas só podem realizar essas ações com os seus **acólitos** radicais, obtidos à medida que os guerreiros Cultistas são massacrados enquanto se defendem em batalha.
 
-    - name: Faction Rules and Abilities
+    - name: Regras da Facção e Habilidades
       children:
-        - name: Crafting.
-          text: The Cult crafts during Evening by activating gardens whose printed suit matches the Outcast suit (`rule:10.4.1`). _(Generally this matches the clearing, except with the Lost City landmark.)_
-        - name: Hatred of Birds.
-          text: Bird cards are not wild for Cult rituals.
-        - name: Revenge.
-          text: Whenever a Cult warrior is removed while defending in battle, it is placed in the Acolytes box instead of the Cult's supply.
-        - name: Pilgrims.
-          text: The Cult rules any clearings where they have any gardens. This overrides the Eyrie's Lords of the Forest (`rule:7.2.2`).
-        - name: Fear of the Faithful.
-          text: Whenever a garden is removed, the Cult must discard a random card.
-        - name: The Lost Souls Pile.
-          text: Whenever any card is spent or discarded _(even a dominance card)_, place it in the Lost Souls pile instead of the discard pile. The Lost Souls pile can be inspected by any player at any time.
+        - name: Criar.
+          text: Os Cultistas criam durante o Anoitecer ativando jardins cujo naipe impresso corresponda ao naipe do Pária (`rule:10.4.1`). _(Geralmente ele corresponde à clareira, exceto com o **marco** da **Cidade Perdida**.)_
+        - name: Ódio aos Pássaros.
+          text: Cartas de pássaro não são curingas para os rituais dos Cultistas.
+        - name: Vingança.
+          text: Sempre que um guerreiro cultista for removido quando estava defendendo em uma batalha, o mesmo é colocado na sessão dos Acólitos, e não no suprimento pessoal dos Cultistas.
+        - name: Peregrinos.
+          text: Os Cultistas governam qualquer clareira na qual eles possuam um jardim. Isto supera a habilidade **Lordes da Floresta** das Rapinas (`rule:7.2.2`).
+        - name: Medo dos Fiéis.
+          text: Sempre que um jardim for removido, os Cultistas devem descartar uma carta aleatória.
+        - name: O Baralho das Almas Perdidas.
+          text: Sempre que uma carta for gasta ou descartada por qualquer jogador _(inclusive cartas de domínio)_, coloque-a no baralho das Almas Perdidas no lugar do monte de descarte. O baralho das Almas Perdidas pode ser verificado por qualquer jogador a qualquer momento
 
-    - name: Faction Setup
+    - name: Preparação
       children:
-        - name: "Step 1: Gather Warriors."
-          text: Form a supply of 25 warriors.
-        - name: "Step 2: Place Warriors."
-          text: Place 4 warriors and 1 garden matching the clearing of matching printed suit in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing. Then place 1 warrior in each adjacent clearing. _(This is updated from earlier printings for more flexibility.)_
-        - name: "Step 3: Choose Outcast."
-          text: Place the outcast marker on any suit space in the Outcast box. The suit of this space is called the **Outcast**.
-        - name: "Step 4: Fill Gardens Tracks."
-          text: Place your 14 remaining gardens on the matching spaces of your Gardens tracks from right to left.
+        - name: "1º Passo: Receber Guerreiros."
+          text: Forme um suprimento de 25 guerreiros.
+        - name: "2º Passo: Posicione os Guerreiros."
+          text: Posicione 4 guerreiros e 1 **jardim** do naipe impresso correspondente em uma clareira de canto que não seja a clareira inicial de outro jogador e, se possível, diagonalmente oposta a uma clareira de canto inicial. Essa é sua clareira inicial. Depois, posicione 1 guerreiro em cada clareira adjacente. _(Esta regra foi alterada em relação a edições anteriores para maior flexibilidade.)_
+        - name: "3º Passo: Escolha o Pária."
+          text: Posicione o marcador de Pária em qualquer naipe na seção Pária do tabuleiro de facção. O naipe escolhido é chamado de **Pária**.
+        - name: "4º Passo: Complete as Trilhas de Jardins."
+          text: Posicione os 14 jardins restantes nos espaços correspondentes das trilhas de jardins, da direita para a esquerda.
   
-    - name: Birdsong
-      pretext: Your Birdsong has three steps in the following order.
+    - name: Amanhecer
+      pretext: Seu Amanhecer possui 3 passos, realizados na sequência a seguir.
       children:
-        - name: Adjust Outcast.
-          text: Look at the cards in the Lost Souls pile, ignoring birds. The suit with the most cards becomes the new Outcast—move the outcast marker, showing its Outcast side, to that suit. If that suit was already the Outcast, flip the marker to Hated. If no one suit had the most cards, the marker stays on its current suit and, if it is not Hated, flips to its Hated side.
-        - name: Discard Lost Souls.
-          text: Discard all of the cards in the Lost Souls pile to the discard pile. _(Dominance cards become available to take.)_
-        - name: Perform Conspiracies.
-          text: You can spend acolytes, returning them to your supply, to perform conspiracies in clearings matching the Outcast, in any order and combination, as follows. If you perform Convert or Sanctify, you must complete the conspiracy. If the Outcast is Hated, the conspiracy costs one fewer acolyte.
+        - name: 1º.Ajuste o Pária.
+          text:  Olhe as cartas do baralho das Almas Perdidas, ignorando pássaros. O naipe com a maior quantidade de cartas será o novo Pária–mova o marcador de Pária, mostrando o lado de Pária, para o naipe correspondente. Caso esse naipe já fosse o Pária, vire o marcador para mostrar o lado de Ódio. Caso nenhum naipe possua uma maioria absoluta, o marcador permanece em seu espaço atual e, caso não esteja em condição de Ódio, vire para o lado de Ódio.
+        - name: 2º.Descarte as Almas Perdidas.
+          text: Descarte todas as cartas do baralho das Almas Perdidas para o monte de descarte. _(Cartas de domínio ficam disponíveis para serem tomadas.)_
+        - name: 3º.Realize Conspirações.
+          text: Você pode gastar acólitos, retornando-os para seu suprimento, para realizar conspirações em clareiras correspondentes ao seu Pária, em qualquer ordem, quantidade e combinação, da maneira a seguir. Se o Pária é Odiado, a conspiração custa um acólito a menos.
           subchildren:
-            - name: Crusade.
-              text: Spend two acolytes to initiate a battle in an Outcast clearing **or** to move _(at least one warrior)_ from an Outcast clearing and then, if you wish, initiate a battle in the destination clearing.
-            - name: Convert.
-              text: Spend two acolytes to replace an enemy warrior from an Outcast clearing with a Cult warrior. _(To replace a piece, you must be able to remove the old piece and place the new piece.)_
-            - name: Sanctify.
-              text: Spend three acolytes to replace an enemy building from an Outcast clearing with a matching garden.
+            - name: Cruzada.
+              text: Gaste 2 acólitos para iniciar uma batalha em uma clareira Pária **ou** para mover _(pelo menos um guerreiro)_ a partir de uma clareira Pária e, então, se quiser, começar uma batalha na clareira de destino.
+            - name: Conversão.
+              text: Gaste 2 acólitos para substituir um guerreiro inimigo de uma clareira Pária por um guerreiro Cultista. _(Para substituir uma peça, você deve conseguir remover a peça antiga e posicionar uma nova.)_
+            - name: Santificação.
+              text: Gaste 3 acólitos para substituir uma construção inimiga de uma clareira Pária por um jardim do naipe correspondente.
 
-    - name: Daylight
-      pretext: You may reveal any number of cards and perform one ritual per card revealed, in any order and number, as follows. _(Reveal cards from your hand into your play area. They cannot be used for any other purposes during Daylight.)_
+    - name: Dia
+      pretext: Você pode revelar uma quantidade qualquer de cartas da sua mão e realizar um ritual para cada carta revelada, em qualquer ordem, quantidade ou combinação. _(Revele cartas de sua mão para sua área de jogo. Elas não poderão ser usadas para quaisquer outros propósitos durante o **Dia**.)_
       children:
-        - name: Build.
-          text: In a clearing you rule matching the revealed card, place a matching garden.
-        - name: Recruit.
-          text: In a clearing matching the revealed card, place a warrior.
-        - name: Score.
-          text: Spend the same card you reveal _(placing in Lost Souls)_ to score the victory points listed above the rightmost empty Gardens space of the suit matching the revealed card. You may perform this only once per turn per suit.
-        - name: Sacrifice.
-          text: Place a warrior in the Acolytes box. To perform this ritual, you must reveal a bird card.
+        - name: Construir.
+          text: Em uma clareira que você governe e que combine com a carta revelada, posicione um jardim do naipe correspondente.
+        - name: Recrutar.
+          text: Em uma clareira que combine com a carta revelada, posicione um guerreiro.
+        - name: Pontuar.
+          text: Gaste a mesma carta que você revelou _(colocando-a no baralho das Almas Perdidas)_ para marcar os PVs mostrados acima do espaço de jardim vazio mais a direita de seu tabuleiro de facção, do naipe correspondente à carta revelada. Você só pode realizar esta ação uma vez por rodada, por naipe.
+        - name: Sacrificar.
+          text: Posicione um guerreiro de seu suprimento no espaço de acólitos. Para realizar esta ação você deve revelar uma carta de pássaro.
 
-    - name: Evening.
-      pretext: Your Evening has three steps in the following order.
+    - name: Anoitecer.
+      pretext: Seu Anoitecer possui três passos, na ordem a seguir.
       children:
-        - name: Return Revealed Cards.
-          text: Return all cards that you revealed this turn to your hand.
-        - name: Craft.
-          text: You may craft by activating gardens whose printed suit matches the Outcast suit.
-        - name: Draw and Discard.
-          text: Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
+        - name: 1º.Retornar Cartas Reveladas.
+          text: Retorne todas as cartas reveladas para a sua mão.
+        - name: 2º.Crie.
+          text: Você pode criar ativando jardins cujo naipe impresso correspondam ao naipe Pária.
+        - name: 3º.Comprar e Descartar.
+          text: Compre 1 carta, mais 1 por bônus de compra revelado. Depois, caso você possua mais que 5 cartas na mão, descarte cartas até chegar ao limite de 5 cartas.
 
 - name: Companhia Ribeirinha
   color: "#5bc3bd"
