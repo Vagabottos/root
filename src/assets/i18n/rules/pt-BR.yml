@@ -195,61 +195,61 @@
     - name: Alcance
       pretext: Para criar uma preparação viável, as facções escolhidas devem ter um alcance total que seja igual ou superior a aquele apresentado na tabela, de acordo com a quantidade de jogadores. _(Jogadores audaciosos podem tentar usar quaisquer combinações de facções que totalizem pelo menos 17 de Alcance.)_ Para ver o Alcance recomendado para sua contagem de jogadores, clique no ícone de Calculadora no canto superior direito do app.
 
-- name: Marquise de Cat
+- name: Marqueses
   color: "#e07a37"
   icon: marquise
   children:
-    - name: Overview
-      pretext: The Marquise de Cat occupies the Woodland and wants to turn it into an industrial and military powerhouse. Each time the Marquise builds one of her **buildings**—a workshop, sawmill, or recruiter—she scores victory points. The more of the same building she has on the map, the more points she scores. However, to fuel ongoing construction, the Marquise must maintain and protect a strong, interconnected economy of **wood**.
+    - name: Resumo
+      pretext: Os Marqueses ocupam a Floresta da Madeira e querem transformá-la em uma potência industrial e militar. Cada vez que os Marqueses erguem uma de suas **construções**–uma oficina, serraria ou recrutador– eles ganham PVs. Quanto mais construções do mesmo tipo eles possuírem no mapa, mais PVs eles recebem. Contudo, para manter as construções contínuas, os Marqueses devem possuir uma forte economia de **madeira** interconectada.
 
-    - name: Faction Rules and Abilities
+    - name: Regras da Facção e Habilidades
       children:
-        - name: Crafting.
-          text: The Marquise crafts during Daylight by activating workshops.
-        - name: The Keep.
-          text: The Marquise can place pieces in the clearing with the keep token, and other players cannot. _(Pieces may be moved into it. If the keep is removed, there is no way to place it on the map again.)_
-        - name: Field Hospitals.
-          text: Whenever any number of Marquise warriors are removed from a clearing, the Marquise may spend a card matching that clearing to place those warriors in the clearing with the keep token instead of the Marquise's supply.
+        - name: Criando.
+          text: Os Marqueses criam durante o Dia, ativando suas oficinas.
+        - name: A Torre da Guarda.
+          text: Apenas os Marqueses podem posicionar peças na clareira que possui a Torre da Guarda. _(Peças podem ser movidas para essa clareira. Se a Torre da Guarda for removida, não há como colocá-la no mapa novamente.)_
+        - name: Hospitais de Batalha.
+          text: Sempre que qualquer quantidade de guerreiros Marqueses forem removidos de uma clareira, os Marqueses podem gastar uma carta com naipe correspondente à clareira desses guerreiros para posicioná-los na clareira com a Torre da Guarda em vez de colocá-los em seu suprimento.
 
-    - name: Faction Setup
+    - name: Preparação
       children:
-        - name: "Step 1: Gather Warriors and Wood."
-          text: Form supplies of 25 warriors and 8 wood tokens.
-        - name: "Step 2: Place Keep."
-          text: Place the keep token in any corner clearing. This is your starting clearing.
-        - name: "Step 3: Garrison."
-          text: Place a warrior in each clearing except the clearing in the diagonally opposite corner from the clearing with the keep token.
-        - name: "Step 4: Place Starting Buildings."
-          text: Place 1 sawmill, 1 workshop, and 1 recruiter. You may place them among the clearing with the keep token and any adjacent clearings, in any combination.
-        - name: "Step 5: Fill Buildings Tracks."
-          text: Place your remaining 5 sawmills, 5 workshops, and 5 recruiters on your matching Buildings tracks, from right to left. _(Leave the leftmost space of each track empty.)_
+        - name: "1º Passo: Receba Guerreiros e Madeira."
+          text: Forme um suprimento de 25 guerreiros e 8 madeiras, próximos a você.
+        - name: "2º Passo: Posicione a Torre da Guarda."
+          text: Posicione a Torre da Guarda em qualquer uma das 4 clareiras de canto do mapa. Essa é sua clareira inicial.
+        - name: "3º Passo: Guarnição."
+          text: Posicione um guerreiro em cada clareira, exceto na clareira diagonalmente oposta àquela que encontra-se a Torre da Guarda.
+        - name: "4º Passo: Posicione as Construções Iniciais."
+          text: Posicione 1 serraria, 1 oficina e 1 recrutador. Você pode posicioná-las na clareira com a Torre da Guarda ou nas clareiras adjacentes a esta, em qualquer combinação _(não precisam ser todas na mesma clareira)_.
+        - name: "5º Passo: Preencha as Trilhas das Construções."
+          text: Posicione as 5 serrarias, 5 oficinas e 5 recrutadores restantes nos espaços correspondentes da trilha das Construções, da direita para a esquerda. _(Deixe o espaço mais à esquerda de cada trilha vazio.)_
 
-    - name: Birdsong
-      pretext: Place wood tokens in each clearing with any number of sawmills, one wood per sawmill there.
+    - name: Amanhecer
+      pretext: Posicione uma madeira em cada serraria presente no tabuleiro.
 
-    - name: Daylight
-      pretext: First, you may activate workshops to craft cards from your hand. Then, you may take up to three actions -- plus one action per bird card you spend _(not as part of an action)_ -- in any order and number.
+    - name: Dia
+      pretext: Primeiro, você pode acionar oficinas para criar cartas da sua mão. Depois, você pode realizar até três ações -- mais uma ação por carta de pássaro que você gastar _(e que não seja parte de outra ação)_ -- em qualquer ordem e quantidade.
       children:
-        - name: Battle.
-          text: Initiate a battle.
-        - name: March.
-          text: Take up to two moves.
-        - name: Recruit.
-          text: Place one warrior at each recruiter. You may take this action only once per turn.
-        - name: Build.
-          text: Place a building.
+        - name: Batalhar.
+          text: Inicie 1 batalha.
+        - name: Marchar.
+          text: Realize até 2 movimentos.
+        - name: Recrutar.
+          text: Posicione 1 guerreiro em cada recrutador. Você só pode realizar esta ação uma vez por rodada.
+        - name: Erguer.
+          text: Posicione uma construção.
           subchildren:
-            - name: Choose Clearing and Building.
-              text: Choose a clearing you rule. Choose whether you want to place a sawmill, workshop, or recruiter. You will place the leftmost building of its type from your faction board. You must be able to pay its cost (`rule:6.5.4.2`) and place it (`rule:6.5.4.3`).
-            - name: Pay Cost.
-              text: Find the chosen building's cost at the top of its column. Remove wood tokens equal in number to the cost from the chosen clearing, any adjacent clearings you rule, or any clearings connected to the chosen clearing you rule through any number of clearings you rule.
-            - name: Place Building and Score.
-              text: Place the chosen building in the chosen clearing, and score the victory points listed on the space uncovered on your faction board.
-        - name: Overwork.
-          text: Spend a card matching the clearing of a sawmill, and place a wood token there.
+            - name: 1º.Escolha a Clareira e a Construção.
+              text: Escolha uma clareira que você governe. Escolha se você quer erguer uma serraria, oficina ou recrutador. Pegue a construção mais à esquerda da trilha escolhida de seu tabuleiro de facção. Você deve conseguir pagar seu custo (`rule:6.5.4.2`) e posicioná-la (`rule:6.5.4.3`).
+            - name: 2º.Pague os Custos.
+              text: Encontre os custos da construção escolhida no topo da coluna em que ela se encontra. Remova tantas madeiras quanto o custo, que podem ser provenientes da clareira escolhida, clareiras vizinhas que você governe, ou quaisquer clareiras que você governe conectadas à clareira escolhida por qualquer quantidade de outras clareiras que você governe.
+            - name: 3º.Posicione a Construção e Receba PVs.
+              text: Posicione a construção escolhida na clareira escolhida e receba tantos PVs quanto mostrados no espaço de seu tabuleiro de facção de onde a construção foi retirada.
+        - name: Hora Extra.
+          text: Gaste uma carta correspondente à clareira de uma serraria, e posicione um marcador de madeira ali.
 
-    - name: Evening
-      pretext: Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
+    - name: Anoitecer
+      pretext: Compre 1 carta, mais 1 para cada bônus de compra não coberto. Depois, se você possuir mais que 5 cartas na mão, descarte quaisquer cartas até que reste apenas 5.
 
 - name: Dinastia das Rapinas
   color: "#416eb0"
@@ -365,7 +365,7 @@
         - name: Marcadores de Simpatia.
           text: A Aliança possui 10 marcadores de simpatia.
           subchildren:
-            - name: Limites de Colocação.
+            - name: Limite de Colocação.
               text: Cada clareira suporta apenas 1 marcador de simpatia.
             - name: Terminologia.
               text: Uma **clareira simpática** é uma que possua um marcador de simpatia. Uma **clareira neutra** _(**não simpática**)_ é uma que não possua um marcador de simpatia.
