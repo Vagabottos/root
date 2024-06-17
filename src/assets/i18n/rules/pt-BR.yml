@@ -342,99 +342,98 @@
         - name: Despot.
           text: Loyal Viziers begin on Move and Build. Whenever you remove at least one enemy building or token in battle, you score one extra victory point _(two in total, `rule:3.2.1`)_.
 
-- name: Woodland Alliance
+- name: Aliança da Floresta
   color: "#68b653"
   icon: woodland
   children:
-    - name: Overview
-      pretext: The Woodland Alliance works to gain the **sympathy** of the various creatures of the Woodland who are dissatisfied with their present condition. Each time the Alliance places a sympathy token, they may score victory points. The more sympathy on the map they have, the more victory points they score. Gaining the sympathy of the people requires **supporters**. These supporters can also be put toward violent ends, inciting outright rebellion across the forest. When a revolt erupts, the Alliance will establish a **base**. Bases allow the Alliance to train officers, increasing their military flexibility.
+    - name: Resumo
+      pretext: A Aliança da Floresta trabalha para ganhar a **simpatia** das várias criaturas da Floresta da Madeira que estão descontentes com suas condições atuais. Cada vez que a Aliança posiciona um marcador de simpatia, ela pode receber PVs. Quanto mais simpatia existir no mapa, mais PVs ela recebe. Ganhar a simpatia do povo requer **apoiadores**. Estes apoiadores também podem ser usados para fins violentos, incitando rebeliões por toda a floresta. Quando uma revolta explode, a Aliança estabelecerá uma **base**. Bases permitem à Aliança treinar oficiais que aumentam sua flexibilidade militar.
 
-    - name: Faction Rules and Abilities
+    - name: Regras da Facção e Habilidades
       children:
-        - name: Crafting.
-          text: The Alliance crafts during Daylight by activating sympathy tokens.
-        - name: Guerrilla War.
-          text: As defender in battle, the Alliance will deal hits equal to the higher roll, and the attacker will deal hits equal to the lower roll.
-        - name: The Supporters Stack.
-          text: To take various actions, the Alliance spends **supporters**, which are cards on their Supporters stack. Supporters can only be spent for their suit and do not count against the Alliance's hand size. Supporters are face down, but the Alliance may inspect them at any time.
+        - name: Criando.
+          text: A Aliança cria durante o Dia, através da ativação de seus marcadores de simpatia.
+        - name: Guerrilha.
+          text: Como defensor em uma batalha, a Aliança irá causar danos igual ao maior valor rolado, e o atacante, ao menor valor rolado.
+        - name: O Baralho de Apoiadores.
+          text: Para realizar várias ações, a Aliança gasta **apoiadores**, que são as cartas em seu baralho de Apoiadores. Apoiadores só podem ser utilizados pelos seus naipes e não contam na quantidade de cartas na mão. Apoiadores permanecem com o verso para cima, mas a Aliança pode olhar as cartas sempre que quiser.
           subchildren:
-            - name: Capacity.
-              text: If the Alliance has no bases on the map, the Supporters stack can only hold up to five cards. If the Alliance would gain a supporter but the stack cannot hold it, that card is discarded. If any bases are on the map, the Supporters stack can hold unlimited cards.
-        - name: Removing Bases.
-          text: Whenever a base is removed, the Alliance must discard all supporters matching the printed suit of the base _(including birds)_, and remove half of their officers, rounded up. If the Alliance has no more bases on the map and has more than five supporters, they must discard down to five supporters.
-        - name: Sympathy Tokens.
-          text: The Alliance has 10 sympathy tokens.
+            - name: Capacidade.
+              text: Se a Aliança não possui nenhuma base no mapa, então o baralho de apoiadores pode comportar apenas 5 cartas. Caso a Aliança fosse receber um apoiador, e seu limite já esteja completo, então esta carta é descartada. Se houver qualquer base no mapa, a capacidade do baralho de Apoiadores é ilimitada.
+        - name: Removendo Bases.
+          text: Sempre que uma base é removida, a Aliança deve descartar todos os apoiadores do naipe impresso correspondente _(incluindo pássaros)_, e remover metade de seus oficiais, arredondado para cima. Caso a Aliança não possua mais bases no mapa e seu baralho de apoiadores tenha mais de 5 cartas, então ela deve descartar cartas desse baralho até chegar no limite de 5.
+        - name: Marcadores de Simpatia.
+          text: A Aliança possui 10 marcadores de simpatia.
           subchildren:
-            - name: Placement Limits.
-              text: A clearing can hold only one sympathy token.
-            - name: Terms.
-              text: A **sympathetic clearing** is one with a sympathy token. An **unsympathetic clearing** is one without a sympathy token.
-        - name: Outrage.
-          text: Whenever another player removes a sympathy token or moves any warriors into a sympathetic clearing, they must add one card matching the affected clearing from their hand to the Supporters stack. If they have no matching cards _(including no birds)_, they must show their hand to the Alliance, and then the Alliance draws a card from the deck and adds it to the Supporters stack.
+            - name: Limites de Colocação.
+              text: Cada clareira suporta apenas 1 marcador de simpatia.
+            - name: Terminologia.
+              text: Uma **clareira simpática** é uma que possua um marcador de simpatia. Uma **clareira neutra** _(**não simpática**)_ é uma que não possua um marcador de simpatia.
+        - name: Ultraje.
+          text: Sempre que outro jogador remover um marcador de simpatia ou mover guerreiros _(lembre-se que o peão do Malandro não é um guerreiro)_ para uma clareira simpática, ele deve colocar uma carta de sua mão do naipe correspondente à clareira afetada, no baralho de apoiadores. Caso ele não possua cartas correspondentes _(incluindo de pássaro)_, então ele deve mostrar a mão para a Aliança e a Aliança compra uma carta do baralho compartilhado e a adiciona ao baralho de Apoiadores.
 
-    - name: Faction Setup
+    - name: Preparação
       children:
-        - name: "Step 1: Gather Warriors."
-          text: Form a supply of 10 warriors.
-        - name: "Step 2: Place Bases."
-          text: Place 3 bases on the matching spaces in your Bases box.
-        - name: "Step 3: Fill Sympathy Track."
-          text: Place your 10 sympathy tokens on your Sympathy track.
-        - name: "Step 4: Gain Supporters."
-          text: Draw 3 cards and place them face down on your Supporters stack.
+        - name: "1º Passo: Receba Guerreiros."
+          text: Forme um suprimen to de 10 guerreiros e coloque-os próximos a você.
+        - name: "2º Passo: Posicione Bases."
+          text: Posicione suas 3 bases nos locais correspondentes de seu tabuleiro de facção.
+        - name: "3º Passo: Preencha a Trilha de Simpatia."
+          text: Posicione seus 10 marcadores de Simpatia na trilha correspondente de seu tabuleiro de facção.
+        - name: "4º Passo: Receba Apoiadores."
+          text: Compre 3 cartas e coloque-as, com o verso para cima, como seu baralho de apoiadores.
         
-    - name: Birdsong
-      pretext: Your Birdsong has two steps in the following order.
+    - name: Amanhecer
+      pretext: Seu Amanhecer possui duas fases, realizadas na ordem a seguir.
       children:
-        - name: Revolt.
-          text: Any number of times, you may take the Revolt action, as follows.
+        - name: 1º.Revolta.
+          text: Você pode realizar a ação Revolta quantas vezes quiser, da seguinte forma.
           subchildren:
-            - name: "Step 1: Choose Clearing."
-              text: Choose a sympathetic clearing that matches a base on your faction board.
-            - name: "Step 2: Spend Supporters."
-              text: Spend two supporters matching the suit of the chosen clearing.
-            - name: "Step 3: Resolve Effect."
-              text: Remove all enemy pieces from the chosen clearing. Then, place the matching base there, and place warriors there equal to the number of sympathetic clearings matching the base's printed suit. Finally, place one warrior in the Officers box. This warrior is now an **officer**. _(Remember to score one victory point per token and building removed.)_
-
-        - name: Spread Sympathy.
-          text: Any number of times, you may take the Spread Sympathy action, as follows.
+            - name: "1º Passo: Escolha uma Clareira."
+              text: Escolha uma clareira simpática cujo naipe corresponda a uma base em seu tabuleiro de facção.
+            - name: "2º Passo: Gaste Apoiadores."
+              text: Gaste 2 apoiadores correspondentes ao naipe da clareira escolhida.
+            - name: "3º Passo: Resolva o Efeito."
+              text: Remova todas as peças inimigas da clareira escolhida. Então posicione a base correspondente à clareira, bem como guerreiros, em quantidade igual ao número de clareiras simpáticas correspondentes ao naipe impresso na base. Finalmente, posicione 1 guerreiro na seção de Oficiais. Esse guerreiro é, agora, um **oficial**. _(Lembre-se de receber 1 PV para cada marcador e construção removidos.)_
+        - name: 2º.Distribuir Simpatia.
+          text: Você pode realizar a ação de Distribuir Simpatia quantas vezes quiser, da seguinte forma.
           subchildren:
-            - name: "Step 1: Choose Clearing."
-              text: Choose an unsympathetic clearing adjacent to a sympathetic clearing. If there are no sympathetic clearings, you may choose any clearing.
-            - name: "Step 2: Spend Supporters."
-              text: Spend supporters matching the suit of the chosen clearing. The number of supporters that must be spent is listed above the sympathy token.
+            - name: "1º Passo: Escolha uma Clareira."
+              text: Escolha uma clareira neutra adjacente a uma clareira simpática. Caso não exista nenhuma clareira simpática, você pode escolher qualquer clareira.
+            - name: "2º Passo: Gaste Apoiadores."
+              text: Gaste apoiadores correspondentes ao naipe da clareira. A quantidade de apoiadores necessária é mostrada acima do marcador de simpatia.
               subchildren:
-                - name: Martial Law.
-                  text: You must spend another matching supporter if the target clearing has at least 3 warriors of another player, including warriors they are treating as their own for rule _(Mercenaries, hirelings, etc.)_.
-            - name: "Step 3: Place and Score."
-              text: Place a sympathy token in the chosen clearing. Score the victory points listed on the space uncovered on your faction board.
+                - name: Lei Marcial.
+                  text: Você deve gastar um apoiador adicional caso a clareira possua pelo menos 3 guerreiros pertencentes a outro jogador, incluindo guerreiros que eles tratam como se fossem seus para governar _(Mercenários, Capangas, etc.)_.
+            - name: "3º Passo: Posicione e Pontue."
+              text: Posicione um marcador de simpatia na clareira escolhida. Receba os PVs mostrados no espaço revelado de seu tabuleiro de facção.
 
-    - name: Daylight
-      pretext: You may take the following actions in any order and number.
+    - name: Dia
+      pretext: Você pode realizar as seguintes ações em qualquer ordem e quantidade.
       children:
-        - name: Craft.
-          text: You may activate sympathy tokens to craft a card from your hand.
-        - name: Mobilize.
-          text: Add a card from your hand to the Supporters stack.
-        - name: Train.
-          text: Spend a card whose suit matches the printed suit of a base on the map to place a warrior in the Officers box. This warrior is now an **officer**.
+        - name: Criar.
+          text: Você pode ativar marcadores de simpatia para criar cartas da sua mão.
+        - name: Mobilizar.
+          text: Adicione uma carta da sua mão para o baralho de Apoiadores.
+        - name: Treinar.
+          text: Gaste uma carta cujo naipe corresponda ao naipe impresso de uma base já erguida para posicionar 1 guerreiro na seção de Oficiais. Ele passa a ser um **oficial**.
 
-    - name: Evening
-      pretext: Your Evening has two steps in the following order.
+    - name: Anoitecer
+      pretext: Seu Anoitecer possui dois passos, realizados na ordem abaixo.
       children:
-        - name: Military Operations.
-          text: You may take actions, as follows, up to your number of officers, in any order and number.
+        - name: 1º.Operações Militares.
+          text: Você pode realizar as ações a seguir, em qualquer ordem ou combinação, tantas vezes quanto oficiais você possuir.
           subchildren:
-            - name: Move.
-              text: Take one move.
-            - name: Battle.
-              text: Initiate a battle.
-            - name: Recruit.
-              text: Place a warrior in any clearing with a base.
-            - name: Organize.
-              text: Remove one Alliance warrior from an unsympathetic clearing, place a sympathy token there, and score the victory points listed on the space uncovered on your faction board.
-        - name: Draw and Discard.
-          text: Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
+            - name: Mover.
+              text: Realize 1 movimento.
+            - name: Batalhar.
+              text: Inicie 1 batalha.
+            - name: Recrutar.
+              text: Posicione 1 guerreiro em qualquer clareira com uma base.
+            - name: Organizar.
+              text: Remova um guerreiro da Aliança presente em uma clareira neutra, posicione um marcador de simpatia lá e receba os PVs mostrados no espaço revelado de seu tabuleiro de facção.
+        - name: Comprar e Descartar.
+          text: Compre 1 carta, mais 1 para cada bônus de compra não coberto. Depois, se você possuir mais que 5 cartas na mão, descarte quaisquer cartas até que reste apenas 5.
 
 - name: Malandro
   color: "#6d6e70"
