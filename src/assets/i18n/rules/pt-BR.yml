@@ -251,96 +251,96 @@
     - name: Evening
       pretext: Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
 
-- name: Eyrie Dynasties
+- name: Dinastia das Rapinas
   color: "#416eb0"
   icon: eyrie
   children:
-    - name: Overview
-      pretext: The Eyrie Dynasties wish to restore their once- dignified kind to their former glory in the Woodland by retaking control of the forest clearings. During their Evening, the Eyrie score victory points based on the number of **roosts** on the map. The greater their presence in the Woodland, the greater their gains. However, the Eyrie are bound by their **Decree**, an ever-increasing set of mandated actions promised by their **leader**. Each turn, they must take all of the actions on their Decree, or else fall into **turmoil**.
+    - name: Resumo
+      pretext: A Dinastia das Rapinas querem restaurar seu antigo status de glória na Floresta da Madeira, retomando o controle das clareiras. Durante seu anoitecer, as Rapinas marcam PVs baseados na quantidade de **ninhos** no mapa. Quanto maior sua presença no mapa, maiores seus ganhos. Contudo, as Rapinas são limitadas pelos seus **decretos**, um conjunto sempre crescente de ações obrigatórias prometidas pelo seu **líder**. A cada novo turno elas devem realizar todas as ações de seu decreto ou entrar em **tumulto**.
 
-    - name: Faction Rules and Abilities
+    - name: Regras da Facção e Habilidades
       children:
-        - name: Crafting.
-          text: The Eyrie craft before resolving the Decree during Daylight by activating roosts.
-        - name: Lords of the Forest.
-          text: The Eyrie rule a clearing when tied for most combined warriors and buildings there, and they have at least one Eyrie piece there. `faction:cult:10.2.4`
-        - name: Disdain for Trade.
-          text: Whenever the Eyrie craft an item, they ignore the listed victory points and instead score only one victory point. _(They can still score extra crafting points from effects such as Master Engravers and the Legendary Forge.)_
+        - name: Criando.
+          text: As Rapinas criam antes de resolver os Decretos, durante o Dia, através da ativação de seus ninhos.
+        - name: Lordes da Floresta.
+          text: As Rapinas governam uma clareira a partir do momento que estejam empatadas pela maior quantidade combinada de guerreiros e construções nela. Elas não governam clareiras vazias. `faction:cult:10.2.4`
+        - name: Desprezo pelo Comércio.
+          text: Sempre que as Rapinas criam um item, ela ignora o valor em PVs mostrados nele, recebendo somente 1 PV. _(Eles ainda podem ganhar pontos extras com outros efeitos ao criar, como o da carta Mestre Escultor e da Forja Lendária.)_
 
-    - name: Faction Setup
+    - name: Preparação
       children:
-        - name: "Step 1: Gather Warriors."
-          text: Form a supply of 20 warriors.
-        - name: "Step 2: Place Roost and Starting Warriors."
-          text: Place 1 roost and 6 warriors in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing.
-        - name: "Step 3: Choose Leader."
-          text: Choose 1 of the 4 Eyrie leader cards and place it in your Leader Card slot. Gather the remaining leaders face up near you.
-        - name: "Step 4: Tuck Viziers."
-          text: Tuck your 2 Loyal Vizier cards, showing their suit, into the Decree columns above your faction board as listed on your leader.
-        - name: "Step 5: Fill Roosts Track."
-          text: Place your 6 remaining roosts on your Roosts track from right to left.
+        - name: "1º Passo: Receba Guerreiros."
+          text: Forme um suprimento de 20 guerreiros e coloque-os próximos a você.
+        - name: "2º Passo: Posicione Ninhos e Guerreiros Iniciais."
+          text: Posicione 1 ninho e 6 guerreiros em uma clareira de canto que não seja a clareira inicial de outro jogador e, se possível, diagonalmente oposta a uma clareira de canto inicial. Essa é sua clareira inicial. _(Esta regra foi alterada em relação a edições anteriores para maior flexibilidade.)_
+        - name: "3º Passo: Escolha o Líder."
+          text: Escolha uma das quatro cartas de líder das rapinas e a coloque no espaço para a carta do líder de seu tabuleiro de facção. Deixe as demais 3 cartas, com a frente para cima, empilhadas ao seu lado.
+        - name: "4º Passo: Aloque os Vizires."
+          text: Posicione as duas cartas de Vizires Leais, mostrando seu naipe, nas colunas de Decretos acima do seu tabuleiro de facção, conforme descrito na carta de líder.
+        - name: "5º Passo: Preencha as Trilhas de Ninhos."
+          text: Posicione os ninhos restantes nos espaços correspondentes da trilha de Ninhos, da direita para a esquerda.
 
-    - name: Birdsong
-      pretext: Your Birdsong has three steps in the following order.
+    - name: Amanhecer
+      pretext: Seu Amanhecer possui 3 etapas, realizadas na ordem a seguir.
       children:
-        - name: Emergency Orders.
-          text: If you have no cards in your hand, draw one card.
-        - name: Add to the Decree.
-          text: You must add one or two cards to the Decree, but only one card added may be a bird card. You may play each card to any column, and each column can hold any number of cards.
-        - name: A New Roost.
-          text: If you have no roosts on the map, place a roost and three warriors in a clearing with the fewest warriors where all those pieces can be placed.
+        - name: 1º.Ordens Emergenciais.
+          text: Se você não tiver nenhuma carta em sua mão, compre uma carta.
+        - name: 2º.Adicione ao Decreto.
+          text: Você deve adicionar 1 ou 2 cartas ao Decreto, mas apenas uma delas pode ser uma carta de pássaro. Você pode colocar cada uma das cartas em qualquer uma das colunas, e cada coluna pode ter qualquer quantidade de cartas.
+        - name: 3º.Um Novo Ninho.
+          text: Se você não possui nenhum Ninho no mapa, posicione 1 Ninho e 3 guerreiros na clareira com a menor quantidade de guerreiros e onde todas essas peças possam ser posicionadas.
 
-    - name: Daylight
-      pretext: Your Daylight has two steps in the following order.
+    - name: Dia
+      pretext: Seu Dia possui dois passos, realizados na ordem abaixo.
       children:
-        - name: Craft.
-          text: You may activate roosts to craft cards from your hand.
-        - name: Resolve the Decree.
-          text: You must resolve the Decree, starting with the leftmost column and moving right. In each column, you must resolve all of its cards, but in any order. For each card, you must take the action listed for its column, as follows. If you cannot fully take an action, you immediately fall into turmoil (`rule:7.7`).
+        - name: 1º.Criar.
+          text: Você pode ativar ninhos para criar cartas da sua mão.
+        - name: 2º.Resolver o Decreto.
+          text: Você deve resolver o Decreto, começando pela coluna esquerda e seguindo para a direita. Em cada coluna você deve resolver todas as cartas, mas em qualquer ordem. Para cada carta você deve realizar a ação correspondente da sua coluna. Se você não puder realizar completamente uma ação, você imediatamente cai em **Tumulto** (`rule:7.7`).
           subchildren:
-            - name: Recruit.
-              text: Place a warrior in any clearing with a roost whose suit matches the card suit.
-            - name: Move.
-              text: Move from any clearing whose suit matches the card suit. _(You must move at least one warrior.)_
-            - name: Battle.
-              text: Initiate a battle in any clearing whose suit matches the card suit.
-            - name: Build.
-              text: Place a roost in any clearing you rule whose suit matches the card suit and which has no roost.
+            - name: Recrutar.
+              text: Posicione um guerreiro em uma clareira com ninho na qual o naipe corresponda ao naipe da carta.
+            - name: Mover.
+              text: Mova pelo menos um guerreiro partindo de qualquer clareira cujo naipe corresponda ao naipe da carta. _(Você deve mover pelo menos um guerreiro.)_
+            - name: Batalhar.
+              text: Inicie uma batalha em qualquer clareira cujo naipe corresponda ao naipe da carta.
+            - name: Construir.
+              text: Posicione um ninho em qualquer clareira que você governe, cujo naipe corresponda ao naipe da carta e que não possua um ninho.
 
-    - name: Evening
-      pretext: Your Evening has two steps in the following order.
+    - name: Anoitecer
+      pretext: Seu Anoitecer possui dois passos, realizados na ordem abaixo.
       children:
-        - name: Score Points.
-          text: Score the victory points listed on the rightmost empty space of your Roosts track.
-        - name: Draw and Discard.
-          text: Draw one card, plus one card per uncovered draw bonus. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
+        - name: 1º.Receber PVs.
+          text: Receba tantos PVs quantos mostrados no espaço mais à direita e descoberto da trilha de Ninhos de seu tabuleiro de facção.
+        - name: 2º.Comprar e Descartar.
+          text: Compre 1 carta, mais 1 para cada bônus de compra não coberto. Depois, se você possuir mais que 5 cartas na mão, descarte quaisquer cartas até que reste apenas 5.
 
-    - name: Turmoil
-      pretext: If you cannot fully take an action in the Decree (`rule:7.5.2`) for any reason, you fall into turmoil, as follows. You must take the Turmoil action as follows in order.
+    - name: Tumulto
+      pretext: Caso você não consiga realizar completamente uma ação do Decreto (`rule:7.5.2`), por qualquer razão que seja, você cai em Tumulto. Você deve realizar a ação de Tumulto na seguinte ordem.
       children:
-        - name: "Step 1: Humiliate."
-          text: Lose one victory point per bird card _(including Loyal Viziers)_ on the Decree.
-        - name: "Step 2: Purge."
-          text: Discard all of the cards on the Decree except your Loyal Viziers.
-        - name: "Step 3: Depose."
-          text: Flip your current leader face down and set it aside, choose a new leader from those face up, and place on your faction board. Tuck your Loyal Viziers into the Decree spaces listed on your new leader.
+        - name: "1º Passo: Humilhar."
+          text: Perca 1 PV por carta de pássaro _(incluindo os Vizires Leais)_ presentes no Decreto.
+        - name: "2º Passo: Expurgar."
+          text: Descarte todas as cartas do Decreto, exceto os Vizires Leais.
+        - name: "3º Passo: Destituir."
+          text: Vire com a face para baixo sua carta de líder atual e escolha, entre os restantes com a face para cima, um novo líder, posicionando-o em seu tabuleiro de facção. Posicione as duas cartas de Vizires Leais nas colunas de decretos conforme descrito no novo líder.
           subchildren:
-            - name: A New Clutch.
-              text: If you must choose a new leader but none are face up, flip them all face up.
-        - name: "Step 4: Rest."
-          text: End Daylight and begin Evening.
+            - name: Uma Nova Ninhada.
+              text: Caso você tenha que escolher um novo líder, mas nenhum esteja com a face virada para cima, vire todos novamente com a face para cima.
+        - name: "4º Passo: Descansar."
+          text: Termine o Dia e comece o Anoitecer.
 
-    - name: Leaders Reference
-      pretext: The Eyrie have four leader cards, as follows.
+    - name: Referência de Líderes
+      pretext: As Rapinas possuem quatro cartas de líder.
       children:
-        - name: Builder.
-          text: Loyal Viziers begin on Recruit and Move. Whenever you craft, you ignore your Disdain for Trade special ability (`rule:7.2.3`).
-        - name: Charismatic.
-          text: Loyal Viziers begin on Recruit and Battle. Whenever you take a Recruit action, you must place two warriors instead of one.
-        - name: Commander.
-          text: Loyal Viziers begin on Move and Battle. In battle as attacker, you deal an extra hit.
-        - name: Despot.
-          text: Loyal Viziers begin on Move and Build. Whenever you remove at least one enemy building or token in battle, you score one extra victory point _(two in total, `rule:3.2.1`)_.
+        - name: Construtor.
+          text: Vizires Leais começam em Recrutar e Mover. Sempre que você criar, você ignora a habilidade especial de Desprezo pelo Comércio (`rule:7.2.3`).
+        - name: Carismático.
+          text: Vizires Leais começam em Recrutar e Batalhar. Sempre que você realizar uma ação de Recrutar, você deve posicionar 2 guerreiros no lugar de apenas 1.
+        - name: Comandante.
+          text: Vizires Leais começam em Mover e Batalhar. Em batalhas como atacante, você causa 1 dano adicional.
+        - name: Déspota.
+          text: Vizires Leais começam em Mover e Construir. Sempre que você remover, durante uma batalha, ao menos uma construção ou marcador inimigo, você recebe 1 PV adicional _(2 no total, `rule:3.2.1`)_.
 
 - name: Aliança da Floresta
   color: "#68b653"
