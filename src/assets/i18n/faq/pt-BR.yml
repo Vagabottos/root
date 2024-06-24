@@ -82,6 +82,8 @@
   questions:
     - q: A carta Armeiros diz “danos recebidos do dado”. Isso quer dizer especificamente “danos rolados” e não “danos” no geral?
       a: Correto! “Danos de dados” quer dizer somente os danos de dados.
+    - q: Se eu usar Informantes (Exilados e Partisans) para pegar uma carta da pilha de descarte, ainda posso usar Exposição contra a Conspiração Corvídea no mesmo turno?
+      a: Sim.
 
 - category: Marqueses
   color: "#e07a37"
@@ -168,6 +170,11 @@
 - category: Malandro
   color: "#6d6e70"
   questions:
+    - q: Posso Reanimar `item:coin`, `item:sack` ou `item:tea` danificados na sessão de Itens Danificados para colocá-los de volta no em suas trilhas?
+      a: Não. Uma mudança na 10ª impressão, que impede o Malandro de mover itens livremente entre a Mochila e as Tilhas de Itens, sugere que isso é possível. Não é.
+      laws:
+        - "9.2.5.1"
+
     - q: Eu posso criar cartas com mais de um tipo de naipe?
       a: "Não. Seus martelos correspondem à sua clareira atual, então você só pode fabricar um naipe por vez. Boas notícias: as cartas com mais um tipo de naipe são inúteis pra você!"
       laws:
@@ -217,6 +224,12 @@
       laws:
         - "4.3"
         - "9.2.8"
+
+    - q: Posso negar se o Malandro quiser me Ajudar ou formar uma Coalizão comigo?
+      a: Não.
+      laws:
+        - "9.2.8"
+        - "9.5.4"
 
     - q: Posso ganhar pontos de Infâmia por remover peças com Ataque?
       a: Não! Infâmia especifica que você deve remover a peça em batalha no seu turno. Afinal, matar alguém com uma besta é o jeito dos covardes.
