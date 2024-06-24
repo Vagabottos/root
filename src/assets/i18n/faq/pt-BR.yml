@@ -170,7 +170,7 @@
 - category: Malandro
   color: "#6d6e70"
   questions:
-    - q: Posso Reanimar `item:coin`, `item:sack` ou `item:tea` danificados na sessão de Itens Danificados para colocá-los de volta no em suas trilhas?
+    - q: Posso Reanimar os itens Moeda, Mochila ou Chá danificados na sessão de Itens Danificados para colocá-los de volta no em suas trilhas?
       a: Não. Uma mudança na 10ª impressão, que impede o Malandro de mover itens livremente entre a Mochila e as Tilhas de Itens, sugere que isso é possível. Não é.
       laws:
         - "9.2.5.1"
