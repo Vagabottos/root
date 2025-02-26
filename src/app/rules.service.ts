@@ -12,6 +12,7 @@ import * as ptBRRules from '../assets/i18n/rules/pt-BR.json';
 import * as esESRules from '../assets/i18n/rules/es-ES.json';
 import * as ruRURules from '../assets/i18n/rules/ru-RU.json';
 import * as plPLRules from '../assets/i18n/rules/pl-PL.json';
+import * as nlNLRules from '../assets/i18n/rules/nl-NL.json';
 
 const rules = {
   'en-US': (enUSRules as any).default || enUSRules,
@@ -19,7 +20,8 @@ const rules = {
   'es-ES': (esESRules as any).default || esESRules,
   'de-DE': (deDERules as any).default || deDERules,
   'ru-RU': (ruRURules as any).default || ruRURules,
-  'pl-PL': (plPLRules as any).default || plPLRules
+  'pl-PL': (plPLRules as any).default || plPLRules,
+  'nl-NL': (nlNLRules as any).default || nlNLRules
 };
 
 @Injectable({
