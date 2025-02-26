@@ -1,0 +1,343 @@
+- category: Het Wetboek
+  color: "#000000"
+  questions:
+  - q: Hoe lees ik het Wetboek?
+    a: Tekst in kleine hoofdletters definieert belangrijke termen. Tekst in cursief geeft herinneringen en verduidelijkingen. Factie-iconen markeren regels die zijn aangepast door de secties Factieregels en Vaardigheden.
+
+  - q: Ik wil iets doen, en de regels zeggen niet dat het niet mag. Mag ik het doen?
+    a: Binnen de grenzen van de actie, ja! Het spel zal je vaak verrassen met onverwachte situaties, en dat is deel van het plezier, maar dit betekent niet dat je de tafel mag omgooien.
+
+  - q: Kan een andere speler een actie weigeren?
+    a: Geen enkele actie vereist toestemming. Doe gewoon wat je wilt doen.
+
+  - q: Het lijkt alsof er iets zou moeten gebeuren, maar de regel zegt niet dat ik dat moet doen. Wat doe ik
+    a: Volg letterlijk wat er in het Wetboek staat, niet je intuïtie, zelfs als er een vergelijkbare regel bestaat.
+
+  - q: Een regel gebruikt een specifieke term of actie. Geldt dit ook voor een andere, nauw verwante term of actie?
+    a: Nee! Ga ervan uit dat we alleen de originele term bedoelen en niet verwante termen. Bijvoorbeeld, de termen verplaat-sen en plaatsen zijn verschillend, wat belangrijk is bij regels zoals De Burcht.
+    laws:
+    - "6.2.2"
+
+- category: Algemeen
+  color: "#000000"
+  questions:
+  - q: Welke stukken zijn gebouwen? Welke zijn fiches?
+    a: Gebouwen zijn vierkante kartonnen stukken die in open gebouwvakjes op de kaart worden geplaatst, terwijl fiches ronde kartonnen stukken zijn die geen vakje bezetten. Je vindt gedetailleerde lijsten van gebouwen en fiches op de achterkant van de leer-te-spelen gids en de achterkanten van de factieborden.
+    laws:
+    - "2.5"
+    - "16.6.3"
+    - "16.6.32"
+
+  - q: Verlies ik punten als een van mijn gebouwen wordt verwijderd?
+    a: Nee!
+    laws:
+    - "2.5.2"
+    - "16.6.22"
+
+  - q: Kan ik meerdere hinderlaagkaarten in een gevecht spelen?
+    a: Nee! Slechts één.
+    laws:
+    - "4.3.1"
+
+  - q: Verwijderen de Gunst van... kaarten echt alle vijandelijke stukken uit die open plekken?
+    a: Ja, behalve voor de Vagebond en de krijgsheer van de Heer van de Honderden.
+    laws:
+    - "9.2.2"
+    - "14.2.2"
+
+  - q: Hoe raak ik vijandelijke fiches kwijt, zoals sympathiefiches?
+    a: Net als elk ander stuk kunnen ze worden bevochten en verwijderd door vaardigheden die zeggen dat ze stukken verwijderen.
+    laws:
+    - "2.1"
+    - "2.5"
+    - "4.3"
+
+  - q: Veroorzaakt het plaatsen van een stuk in een sympathieke open plek Woede?
+    a: Nee! Je moet krijgers naar binnen verplaatsen of de sympathie verwijderen om het te activeren.
+    laws:
+    - "8.2.6"
+    - "8.2.5"
+
+  - q: Waar gaan gebouwen en fiches naartoe als ze worden verwijderd?
+    a: Meestal terug naar het bord of de voorraad van de eigenaar. Dit wordt verder beschreven in 2.5.
+    laws:
+    - "2.5"
+    - "16.6.22"
+
+  - q: Wat betekent het "activeren" van een stuk voor vervaardigen? Moet ik er iets mee doen?
+    a: 'Nee. Activeren betekent alleen "Ik heb het, en ik wil het gebruiken voor vervaardigen." Je hoeft het niet weg te doen of iets anders te doen dan ernaar wijzen en zeggen: "Ik activeer dit om een kaart te vervaardigen."'
+    laws:
+    - "4.1.1"
+
+  - q: Kan ik weigeren toestemming te geven voor de actie van een andere speler?
+    a: Nee, er zijn geen acties in Root die toestemming vereisen. De Vagebond heeft bijvoorbeeld geen toestemming nodig om een coalitie te vormen met iemand of iemand te Helpen, en een speler heeft niet de toestemming van het Riviervolk nodig om diensten van hen te kopen.
+    laws:
+    - "9.2.8"
+    - "9.5.4"
+    - "11.2.6"
+
+- category: Kaarten
+  color: "#000000"
+  questions:
+  - q: De Pantserwerkers kaart zegt "geworpen treffers". Bedoelt het echt specifiek "geworpen treffers" en niet "treffers"?
+    a: Ja inderdaad! "Geworpen treffers" betekent alleen de treffers die geworpen zijn.
+
+- category: Markiezin de Kat
+  color: "#e07a37"
+  questions:
+  - q: Wat gebeurt er als al mijn stukken van de kaart worden verwijderd?
+    a: Helaas ben je waarschijnlijk uit het spel. Als de Riviervolk Compagnie of huurlingen in het spel zijn, kun je echter opnieuw een gebouw bouwen als je heerst over een open plek. Hoe dan ook, als dit gebeurt, zal het spel waarschijnlijk op stel en sprong eindigen!
+    laws:
+    - "6"
+
+  - q: Kan iemand een stuk verplaatsen naar de open plek met mijn burcht?
+    a: Ja! "Plaatsen" is een ander sleutelwoord dan "verplaatsen."
+    laws:
+    - "4.2"
+    - "6.2.2"
+
+  - q: Als iemand me in een hinderlaag lokt in een gevecht bij de Burcht, wanneer worden mijn krijgers dan teruggeplaatst in de Burcht?
+    a: Onmiddellijk, zolang je een kaart uitgeeft. Dit betekent dat je de controle voor "geen overgebleven krijgers" kunt vermijden die door de hinderlaag wordt veroorzaakt.
+    laws:
+    - "4.3.1"
+    - "6.2.3"
+
+  - q: Kan de Markiezin huurlingen bij de Burcht plaatsen?
+    a: Ja!
+    laws:
+    - "6.2.3"
+
+- category: Arendsnest Dynastie
+  color: "#416eb0"
+  questions:
+  - q: Wordt Chaos geactiveerd als ik een lege kolom heb?
+    a: Nee! Chaos wordt geactiveerd als je een kaart in je Decreet hebt die je niet kunt uitvoeren.
+    laws:
+    - "7.7"
+
+  - q: Wordt Chaos geactiveerd als ik acties kan uitvoeren voor sommige maar niet alle kaarten in een kolom?
+    a: Ja! Op het moment dat je één enkele kaart niet volledig kunt uitvoeren, val je in Chaos.
+    laws:
+    - "7.7"
+
+  - q: Kan ik één krijger tegelijk verplaatsen van dezelfde open plek om meerdere Verplaats kaarten in mijn Decreet te vervullen? Kan ik dezelfde krijger heen en weer verplaatsen, gegeven de juiste kaarten?
+    a: Ja! Je kunt het Decreet zo veel manipuleren als de kaarten je toestaan. Volg gewoon de regels voor verplaatsing en je bent in orde.
+    laws:
+    - "7.5.2"
+
+  - q: Wat doet de vaardigheid van de Despoot? Krijg ik niet al een overwinningspunt voor het verwijderen van een gebouw of fiche?
+    a: Helemaal juist! Je krijgt een extra punt, hoewel je niet meerdere extra punten krijgt als je meerdere gebouwen en/of fiches tegelijkertijd verwijdert.
+    laws:
+    - "7.8.4"
+
+  - q: Als ik de Charismatische leider heb en Rekruteer, maar ik heb nog één krijger in mijn voorraad. Plaats ik geen krijgers of één krijger voordat ik in Chaos val?
+    a: Plaats er één. Als je wordt gevraagd om stukken te plaatsen maar je kunt ze niet allemaal plaatsen, moet je er zoveel mogelijk plaatsen.
+    laws:
+    - "7.7"
+    - "7.8.3"
+
+- category: Woudland Alliantie
+  color: "#68b653"
+  questions:
+  - q: Kan ik een opstand veroorzaken met een basis van een soort waarvan ik al een basis heb gebouwd?
+    a: Nee! De opstand actie zegt dat je een sympathieke open plek moet kiezen die overeenkomt met een niet-gebouwde basis.
+    laws:
+    - "8.4.1"
+
+  - q: Kan ik een opstand veroorzaken in de open plek met het burchtfiche?
+    a: Nee! Je zou eerst een sympathiefiche moeten plaatsen, wat je niet kunt doen vanwege de speciale vaardigheid van de Markiezin, De Burcht.
+    laws:
+    - "6.2.2"
+    - "8.4.1"
+
+  - q: Wat gebeurt er als een huurling sympathie verwijdert?
+    a: De speler die de huurling controleert zou Woede veroorzaken, aangezien Woede specificeert "Wanneer een speler verwijdert..." Dit wordt ook expliciet behandeld in Wet E.3.7.
+    laws:
+    - "8.2.6"
+    - "16.4.3.7"
+
+  - q: Veroorzaakt de Vagebond Woede?
+    a: Dat hangt ervan af. Elke speler die een sympathiefiche verwijdert zal woede veroorzaken. Het verplaatsen naar een sympathieke open plek zal dat niet doen, aangezien de Vagebond een pion is, geen krijger.
+    laws:
+    - "8.2.6"
+
+  - q: Veroorzaken huurlingen Krijgswet?
+    a: Huurlingen gecontroleerd door een vijandelijke speler tellen mee voor de factiekrijgers van die speler. Dus als het Arendsnest 1 Arendsnest krijger en 2 huurlingkrijgers die ze controleren in een open plek had, zou die open plek Krijgswet veroorzaken. Echter, niet-gecontroleerde huurlingkrijgers zouden geen Krijgswet veroorzaken.
+
+- category: Vagebond
+  color: "#6d6e70"
+  questions:
+  - q: Kan ik kaarten vervaardigen met vereisten voor meerdere soorten?
+    a: "Nee. Je hamers komen overeen met je huidige open plek, dus je kunt maar met één soort tegelijk vervaardigen. Goed nieuws: de multi-soort kaarten zijn toch nutteloos voor jou!"
+    laws:
+    - "9.2.1"
+
+  - q: Activeer ik de Woede van de Alliantie als ik naar een sympathieke open plek verplaats?
+    a: Nee! Je bent een vriendelijke Vagebond, en je hebt een pion, geen krijger.
+    laws:
+    - "8.2.6"
+    - "9.2.2"
+
+  - q: Als ik Bondgenoot krijgers van de Woudland Alliantie naar een sympathieke open plek verplaats, activeer ik dan Woede?
+    a: Nee! (*Deze uitspraak is gewijzigd bij de uitgave van de Stroper Uitbreiding en de 8e druk, omdat de Bondgenoot verplaatsing van de Vagebond nu het sleutelwoord "Dwingen" gebruikt.)
+    laws:
+    - "8.2.6"
+    - "9.2.9"
+
+  - q: Wordt de Vagebond Vijandig met een factie wanneer hij een van hun gebouwen of fiches verwijdert, maar geen krijgers?
+    a: Nee! Er zijn geen getuigen om hem te zien. Verbrand het allemaal!
+    laws:
+    - "9.2.9.3"
+
+  - q: Als de Vagebond een huurlingkrijger verwijdert die door een andere factie wordt gecontroleerd, wordt de Vagebond dan Vijandig met die factie?
+    a: Nee! De huurlingen zijn geen factiestukken van die factie.
+    laws:
+    - "9.2.9.3"
+
+  - q: Als de Vagebond vecht met een gecontroleerde huurling en vijandelijke stukken verwijdert, wordt de Vagebond dan Vijandig met die factie of krijgt hij Beruchtheidspunten als ze al Vijandig zijn?
+    a: Nee! Huurlingen gebruiken de vaardigheden van hun controlerende factie niet (E.3.5) en laten hun controlerende factie geen punten scoren voor het verwijderen van vijandelijke stukken (E.3.6).
+    laws:
+    - "9.2.9.3"
+    - "16.4.3.5"
+    - "16.4.3.6"
+
+  - q: Kan de Vagebond Bondgenoot krijgers verplaatsen met de Veerboot uit de Onderwereld Uitbreiding? Zo ja, trekt de Bondgenoot factie dan ook een kaart?
+    a: Ja op beide vragen!
+    laws:
+    - "16.2.2.5"
+
+  - q: Kan een Vagebond een coalitie vormen met een speler die een dominantiekaart heeft geactiveerd? Kan een speler een dominantiekaart activeren nadat een Vagebond een coalitie met hen heeft gevormd?
+    a: Een Vagebond kan geen coalitie vormen met een dominantiespeler, omdat ze geen overwinningspuntmarkering op het spoor hebben. Een speler kan echter wel een dominantiekaart activeren nadat een Vagebond een coalitie met hen heeft gevormd!
+    laws:
+    - "9.2.8"
+
+  - q: De Vagebond zit in een coalitie met mij. Kan ik nog steeds tegen hem vechten? Kan hij nog steeds tegen mij vechten?
+    a: Nee, niemand van jullie kan tegen elkaar vechten. (*Deze uitspraak is gewijzigd bij de Stroper Uitbreiding en de 8e druk. De Gevechtsregels specificeren nu dat je moet vechten tegen een vijand, wat elke speler betekent die niet in een coalitie zit.)
+    laws:
+    - "4.3"
+    - "9.2.8"
+
+  - q: Kan ik Beruchtheid overwinningspunten krijgen door een stuk te verwijderen met Aanvallen?
+    a: Nee! Beruchtheid specificeert dat je het stuk moet verwijderen in gevecht tijdens je beurt. Iemand doden met een kruisboog is tenslotte de weg van de lafaard.
+    laws:
+    - "9.2.9.3.1"
+
+- category: Riviervolk Compagnie
+  color: "#5bc3bd"
+  questions:
+  - q: Als ik Riviervolk huursoldaten inhuur, kan ik dan een gevecht beginnen met hen, zelfs als ik geen stukken heb in de open plek waar ik vecht?
+    a: Ga ervoor! Bovendien, als je daar geen krijgers hebt, is er niemand om treffers mee te delen.
+    laws:
+    - "11.2.7"
+
+  - q: Kan ik een kaart exporteren als het voorwerp erop niet in de voorraad ligt of als ik het blijvende effect al heb?
+    a: Nee! Je moet in de eerste plaats in staat zijn om de kaart te vervaardigen om deze te kunnen exporteren. In deze gevallen zou je de kaart niet kunnen exporteren.
+    laws:
+    - "11.5.3"
+
+  - q: Kan het Riviervolk weigeren om een van hun diensten te verkopen?
+    a: Nee! Zolang je de kosten betaalt, krijg je de dienst.
+    laws:
+    - "11.2.6"
+
+  - q: Kunnen Riviervolk Huursoldaten worden gebruikt om te vechten tegen huurlingen die door het Riviervolk worden gecontroleerd?
+    a: Ja! Huursoldaten zullen gewoon niet vechten tegen het Riviervolk zelf, niet tegen gecontroleerde huurlingen.
+    laws:
+    - "11.2.7"
+
+- category: Hagedissencultus
+  color: "#fcf065"
+  questions:
+  - q: Kan ik Bekeren of Heiligen gebruiken om alleen een krijger of gebouw te verwijderen, maar niet mijn eigen krijger of gebouw daar te plaatsen?
+    a: Nee! De regel zegt dat je "de samenzwering moet voltooien", en factieregels gaan voor op algemene regels als je niet aan beide kunt voldoen.
+    laws:
+    - "10.4.3"
+
+- category: IJzeren Bewaarders
+  color: "#8b8d90"
+  questions:
+  - q: Voor de tweede stap van het plaatsen van relikwieën, mag ik kiezen welke relikwieën naar welke open plekken gaan?
+    a: Plaats ze willekeurig.
+    laws:
+    - "15.3.3"
+
+  - q: De Wet (15.5.2.II) zegt dat ik moet heersen over een open plek om er te vechten, maar de Leer-te-Spelen en het bord zeggen dit niet. Wat is er aan de hand?
+    a: Je hoeft niet te heersen om te vechten - alleen om te delven!
+    laws:
+    - "15.5.2.2"
+
+  - q: Als huurlingen een relikwie verwijderen, hoe los ik dan de Kostbare Trofeeën vaardigheid op?
+    a: Er worden geen overwinningspunten toegekend. Als de huurling wordt gecontroleerd, beslist de controlerende speler waar de relikwie moet worden geplaatst. Als de huurling niet wordt gecontroleerd, beslist de speler die aan de beurt is waar de relikwie moet worden geplaatst.
+    laws:
+    - "15.2.5"
+
+  - q: Wordt de Kostbare Trofeeën vaardigheid van de Bewaarders geactiveerd als de Zwerver Vagebond een relikwie verwijdert door Ophitsen te gebruiken, maar ze zitten in een coalitie met de Bewaarders?
+    a: Zoals geschreven, nee, aangezien de Zwerver in dit geval geen vijand is. Waarom de Zwerver dit zou willen doen, gaat mijn begrip te boven!
+    laws:
+    - "15.2.5"
+
+- category: Heer van de Honderden
+  color: "#e11b3f"
+  questions:
+  - q: Wie kiest er in gevecht of een treffer de krijgsheer of een normale krijger verwijdert?
+    a: De Honderden speler doet dat, overeenkomstig het feit dat de speler die treffers incasseert de volgorde kiest voor het verwijderen van gebouwen en fiches. Dus als je twee treffers incasseert en je hebt de krijgsheer, twee krijgers en een vesting, zou je twee krijgers kunnen verwijderen of je zou één krijger en de krijgsheer kunnen verwijderen. Hoewel we niet zouden aanraden om de krijgsheer vroeg te verwijderen!
+    laws:
+    - "14.2.2"
+    - "4.3.4"
+
+  - q: Wat is er precies nodig voor de Honderden om een open plek te onderdrukken?
+    a: Je moet (1) heersen, (2) een Honderden stuk daar hebben, en (3) geen vijandelijke stukken daar hebben. Je onderdrukt bijvoorbeeld wel met een menigte en een Riviervolk Huursoldaat krijger. Je onderdrukt niet met alleen een Riviervolk Huursoldaat krijger. Je onderdrukt niet met een menigte, een Riviervolk Huursoldaat krijger en een Riviervolk handelspost.
+    laws:
+    - "14.6.2"
+
+  - q: Laat de Rumoerige stemming de Honderden meer kaarten trekken wanneer ze de Charmant Offensief kaart uit het Ballingen & Partizanen dek gebruiken?
+    a: Nee. Rumoerig laat je alleen meer kaarten trekken tijdens je trekstap in de Avond.
+    laws:
+    - "14.7.6"
+
+  - q: Verklaar ik of ik mijn Plunderaars gebruik voor of nadat de verdediger verklaart dat ze een hinderlaag leggen?
+    a: Voor het verklaren van Plunderaars.
+    laws:
+    - "14.2.5"
+
+- category: Geavanceerde Voorbereiding
+  color: "#000"
+  questions:
+  - q: "IJzeren Bewaarders: Voor de tweede stap van het plaatsen van relikwieën, mag ik kiezen welke relikwieën naar welke open plekken gaan?"
+    a: Plaats ze willekeurig. (Dat gezegd hebbende, zal het meestal niet veel verschil maken, aangezien mensen hun strategie kunnen aanpassen om te voorkomen dat je efficiënt kunt delven.)
+
+  - q: "IJzeren Bewaarders: Wat gebeurt er als er geen twee aangrenzende open plekken aan de kaartrand zijn?"
+    a: Leg de geavanceerde voorbereidingskaart van de Bewaarders terug in de doos en trek nieuwe geavanceerde voorbereidingskaarten totdat je een militante factie trekt (rood met zwaarden). Deze factie vervangt de Bewaarders. We zullen waarschijnlijk algemene mulligan-regels toevoegen die dit weerspiegelen naarmate er meer facties aan het spel worden toegevoegd en het steeds waarschijnlijker wordt dat je een factie trekt die onmogelijk op te zetten is.
+
+- category: Huurlingen
+  color: "#000"
+  questions:
+  - q: "De Balling: Kan ik de Balling een uitgeput voorwerp geven?"
+    a: Ja!
+
+  - q: "De Balling: Kan ik de Balling meerdere voorwerpen in dezelfde beurt geven?"
+    a: Ja!
+
+  - q: "Snelweg Bandieten: Als de Snelweg Bandieten een Markiezin krijger verwijderen, kan de Markiezin dan Veldhospitalen gebruiken?"
+    a: Nee. De vaardigheid gebeurt tijdens het verplaatsen "op een pad" met Snelweg Bandieten, dus ze zijn op dat moment niet in een open plek.
+
+  - q: "Lente Opstand: Kan een huurling vechten tegen de Lente Opstand?"
+    a: Nee. Ze hebben geen hand van kaarten om van af te leggen.
+
+  - q: "Warme Zon Profeten: Wanneer ik een gevecht forceer en de verdediger een hinderlaagkaart speelt, welke speler neemt beslissingen over het verwijderen van stukken en het spelen van tegen-hinderlagen?"
+    a: De speler die wordt gedwongen om te vechten.
+
+  - q: '"Vuurdragers: Sluit "krijgers eerst" uit dat ik onverdedigde gebouwen of fiches van een speler verwijder als er krijgers van een andere speler zijn?"'
+    a: Nee, dit werkt op dezelfde manier als gevecht of de Aanval van de Vagebond - als een speler daar krijgers heeft, moet je eerst de krijgers verwijderen.
+
+- category: Oriëntatiepunten
+  color: "#000"
+  questions:
+  - q: "Legendarische Smidse: Heb ik alleen een factiestuk bij de Legendarische Smidse nodig om daar een voorwerp te vervaardigen, of heb ik nog iets anders nodig?"
+    a: Je volgt nog steeds de normale vervaardigingsregels, dus je moet nog steeds een kaart afleggen die een beschikbaar voorwerp erop heeft - in dit geval een voorwerp dat op de Legendarische Smidse kaart staat - en je hebt vervaardigstukken nodig in de relevante open plek soorten, zoals getoond op de kaart. Je hebt alleen ook een factiestuk bij de Legendarische Smidse nodig.
+
+  - q: "Verloren Stad: Kan ik een opstand veroorzaken in de Verloren Stad als ik de vakjes van de open plek al heb gevuld met mijn bases, maar ik nog een basis op mijn bord heb?"
+    a: Ja, dat kun je! De Verloren Stad is erg kwetsbaar voor opstanden, omdat het als elke soort kan worden behandeld.
+
+  - q: "Veerboot: Als ik de Veerboot naar een open plek met een sympathiefiche verplaats, trek ik dan eerst de kaart of activeer ik eerst Woede?"
+    a: Deze gebeuren tegelijkertijd, dus jij beslist de volgorde.

@@ -21,6 +21,7 @@ import * as esES from '../assets/i18n/es-ES.json';
 import * as deDE from '../assets/i18n/de-DE.json';
 import * as ruRU from '../assets/i18n/ru-RU.json';
 import * as plPL from '../assets/i18n/pl-PL.json';
+import * as nlNL from '../assets/i18n/nl-NL.json';
 
 const langs = {
   'en-US': (enUS as any).default || enUS,
@@ -28,7 +29,8 @@ const langs = {
   'es-ES': (esES as any).default || esES,
   'de-DE': (deDE as any).default || deDE,
   'ru-RU': (ruRU as any).default || ruRU,
-  'pl-PL': (plPL as any).default || plPL
+  'pl-PL': (plPL as any).default || plPL,
+  'nl-NL': (nlNL as any).default || nlNL
 };
 
 export class JSONLoader implements TranslateLoader {

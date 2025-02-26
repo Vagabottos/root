@@ -1,0 +1,186 @@
+{
+  "App": {
+    "NavTitle": "Regels & Facties (6de Ed.)",
+    "NavTitleShort": "Regels (6de Ed.)",
+    "RootPrefix": "Het Wetboek van",
+    "SearchPlaceholder": "Zoek Regels",
+    "Titles": {
+      "Search": "Zoek Regels",
+      "FAQ": "Veelgestelde Vragen",
+      "Reach": "Opstelling Keuzetool",
+      "Map": "Kaart Generator",
+      "Random": "Willekeurige Opstelling",
+      "DraftPlusOne": "+1 Draft",
+      "AdSet": "Expert-Opstelling"
+    }
+  },
+  "Modal": {
+    "FAQ": {
+      "Title": "Veelgestelde Vragen",
+      "TitleShort": "FAQ",
+      "CloseButton": "Sluiten",
+      "Law": "Wet",
+      "Q": "V",
+      "A": "A"
+    },
+    "Reach": {
+      "Title": "Reikwijdte Calculator",
+      "TitleShort": "Reikwijdte",
+      "CloseButton": "Sluiten",
+      "Choose": "Kies Nieuwe Facties",
+      "DraftPlusOne": "Draft +1",
+      "Error": "Kan geen facties kiezen; Pas keuze aan en probeer opnieuw.",
+      "Factions": {
+        "Marquise de Cat": "Markiezin de Kat",
+        "Lord of the Hundreds": "Heer van de Honderden",
+        "Keepers in Iron": "IJzeren Bewaarders",
+        "Underground Duchy": "Ondergronds Hertogdom",
+        "Eyrie Dynasties": "Arendsnest Dynastieën",
+        "Vagabond (#1)": "Vagebond (#1)",
+        "Riverfolk Company": "Riviervolk Compangnie",
+        "Woodland Alliance": "Woudland Alliantie",
+        "Corvid Conspiracy": "Kraaien Complot",
+        "Vagabond (#2)": "Vagabond (#2)",
+        "Lizard Cult": "Hagedissencultus"
+      },
+      "FactionsShort": {
+        "Marquise": "Markiezin",
+        "Hundreds": "Honderden",
+        "Keepers": "Bewaarders",
+        "Duchy": "Hertogdom",
+        "Eyrie": "Arendsnest",
+        "Vagabond #1": "Vagebond #1",
+        "Riverfolk": "Riviervolk",
+        "Woodland": "Alliantie",
+        "Corvids": "Kraaien",
+        "Vagabond #2": "Vagebond #2",
+        "Cult": "Hagedissen"
+      },
+      "Vagabonds": {
+        "Arbiter": "Arbiter",
+        "Ranger": "Boswachter",
+        "Scoundrel": "Schurk",
+        "Thief": "Dief",
+        "Tinker": "Knutselaar",
+        "Vagrant": "Zwerver",
+        "Adventurer": "Avonturier",
+        "Ronin": "Ronin",
+        "Harrier": "Kiekendief"
+      },
+      "Draft": {
+        "Players": {
+          "Player A": "Speler A",
+          "Player B": "Speler B",
+          "Player C": "Speler C",
+          "Player D": "Speler D",
+          "Player E": "Speler E",
+          "Player F": "Speler F"
+        },
+        "Headers": {
+          "Factions": "Facties",
+          "TurnDraftOrder": "Beurt/Draft Order",
+          "Faction": "Factie",
+          "Reach": "Reikwijdte",
+          "Draft": "Draft",
+          "Player": "Speler",
+          "Cards": "Kaarten",
+          "Picks": "Keuzes",
+          "Turn": "Beurt"
+        },
+        "Text": {
+          "Deck": "Dek",
+          "Map": "Kaart",
+          "Choose": "Kies Kaar en kas dan Dek. Kies 3 kaarten en stop de rest terug in het dek."
+        }
+      },
+      "Adset": {
+        "Random": "Willekeurig",
+        "Random1": "Willekeurig (1)",
+        "Random2": "Willekeurig (2)",
+        "Generate": "Genereer",
+        "All": "Alles",
+        "None": "Geen",
+        "Waiting": "Wachten op willekeurige generatie...",
+        "Players": "Spelers",
+        "Choices": {
+          "Map": "Kaart Keuze",
+          "Deck": "Dek Keuze",
+          "Players": "Speleraantal",
+          "Landmarks": "Orieëntatiepunten",
+          "Hirelings": "Geldige Huurlingen",
+          "Factions": "Geldige Facties",
+          "RemindDrawFive": "Herinnering: Deel 5 kaarten aan elke speler."
+        },
+        "Deck": {
+          "Standard": "Standaard dek",
+          "EP": "Ballingen & Partizanen"
+        },
+        "Landmarks": {
+          "ElderTreetop": "Ouderen Boomtop",
+          "LostCity": "Verloren Stad",
+          "BlackMarket": "Zwarte Markt",
+          "LegendaryForge": "Legendarische Smidse",
+          "TheFerry": "De Veerboot",
+          "TheTower": "De Toren"
+        },
+        "Hirelings": {
+          "Spring Uprising (R)": "Lente Opstand (R)",
+          "Forest Patrol (R)": "Woudpatrouille (R)",
+          "Last Dynasty (R)": "Laatste Dynastie (R)",
+          "The Exile (R)": "De Banneling (R)",
+          "Popular Band (R)": "Populaire Troep (R)",
+          "Furious Protector (R)": "Woeste Beschermer (R)",
+          "Highway Bandits (R)": "Struikrovers (R)",
+          "Riverfolk Flotilla (R)": "Riviervolk Vloot (R)",
+          "Warm Sun Prophets (R)": "Warme Zon Profeten (R)",
+          "Sunward Expedition (R)": "Zonwaartse Expeditie (R)",
+          "Corvid Spies (R)": "Kraaiachtigen Spionnen (R)",
+          "Flame Bearers (R)": "Vlamdragers (R)",
+          "Vault Keepers (R)": "Kluisbewakers (R)",
+          "Rabbit Scouts (D)": "Konijnenverkenners (D)",
+          "Feline Physicians (D)": "Katachtige Geneesheren (D)",
+          "Bluebird Nobles (D)": "Blauwvogel Edellieden (D)",
+          "The Brigand (D)": "De Rover (D)",
+          "Street Band (D)": "Straattroep (D)",
+          "Stoic Protector (D)": "Stoïcijnse Beschermer (D)",
+          "Bandit Gangs (D)": "Bandieten Bendes (D)",
+          "Otter Divers (D)": "Otterduikers (D)",
+          "Lizard Envoys (D)": "Hagedissen Gezanten (D)",
+          "Mole Artisans (D)": "Mol Ambachtslieden (D)",
+          "Raven Sentries (D)": "Raven Schildwachten (D)",
+          "Rat Smugglers (D)": "Rattensmokkelaars (D)",
+          "Badger Bodyguards (D)": "Dassenbodygards (D)"
+        },
+        "FormattedHirelings": {
+          "Spring Uprising (R) / Rabbit Scouts (D)": "Lente Opstand (R) / Konijnenverkenners (D)",
+          "Forest Patrol (R) / Feline Physicians (D)": "Woudpatrouille (R) / Katachtige Geneesheren (D)",
+          "Last Dynasty (R) / Bluebird Nobles (D)": "Laatste Dynastie (R) / Blauwvogel Edellieden (D)",
+          "The Exile (R) / The Brigand (D)": "De Banneling (R) / De Rover (D)",
+          "Popular Band (R) / Street Band (D)": "Populaire Troep (R) / Straattroep (D)",
+          "Furious Protector (R) / Stoic Protector (D)": "Woeste Beschermer (R) / Stoïcijnse Beschermer (D)",
+          "Highway Bandits (R) / Bandit Gangs (D)": "Struikrovers (R) / Bandieten Bendes (D)",
+          "Riverfolk Flotilla (R) / Otter Divers (D)": "Riviervolk Vloot (R) / Otterduikers (D)",
+          "Warm Sun Prophets (R) / Lizard Envoys (D)": "Warme Zon Profeten (R) / Hagedissen Gezanten (D)",
+          "Sunward Expedition (R) / Mole Artisans (D)": "Zonwaartse Expeditie (R) / Mol Ambachtslieden (D)",
+          "Corvid Spies (R) / Raven Sentries (D)": "Kraaiachtigen Spionnen (R) / Raven Schildwachten (D)",
+          "Flame Bearers (R) / Rat Smugglers (D)": "Vlamdragers (R) / Rattensmokkelaars (D)",
+          "Vault Keepers (R) / Badger Bodyguards (D)": "Kluisbewakers (R) / Dassenbodygards (D)"
+        }
+      }
+    },
+    "Maps": {
+      "Title": "Kaart Generator",
+      "TitleShort": "Kaart",
+      "CloseButton": "Sluiten",
+      "MapNames": {
+        "fall": "Herfst",
+        "winter": "Winter",
+        "lake": "Meer",
+        "mountain": "Berg"
+      },
+      "Randomize": "Willekeurig",
+      "Balanced": "Gebalanceerd",
+      "Error": "Geen gebalanceerde opstellingen kunnen vinden; Probeer opnieuw! Misschien dat het deze keer lukt."
+    }
+  }
+}

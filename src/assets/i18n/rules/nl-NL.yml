@@ -1,0 +1,1251 @@
+- name: Gouden Regels
+  color: "#000000"
+  pretext: Dit hoofdstuk geeft antwoorden op technische, gedetailleerde vragen. Je hoeft dit niet te lezen wanneer je het spel voor het eerst leert.
+  children:
+  - name: Regel Conflicten
+    children:
+    - name: Voorrang.
+      text: Als een kaart in conflict is met het Wetboek, volg dan de kaart. Als de Leer-te-Spelen gids in conflict is met het Wetboek, volg dan het Wetboek. Als je zowel een algemene regel als een factie- of huurlingenregel kunt volgen, volg dan beide; als dat niet kan, volg dan de factie- of huurlingenregel.
+    - name: Gebruik van **Kan Niet**.
+      plainName: Gebruik van Kan Niet.
+      text: De term **Kan Niet** is absoluut. Er kan niet van worden afgeweken tenzij expliciet aangegeven.
+    - name: Onduidelijke Oplossingen en Keuzes.
+      text: Wanneer het onduidelijk is in welke volgorde gelijktijdige effecten moeten worden opgelost, of welke speler een beslissing moet nemen, kiest de speler die aan de beurt is.
+  - name: Openbare en Privé Informatie
+    children:
+    - name: Handkaarten.
+      text: Spelers mogen alleen kaarten in hun hand tonen of onthullen als daar expliciet om wordt gevraagd, maar het aantal kaarten in hun hand is openbare informatie. `faction:riverfolk:11.2.3`
+    - name: Aflegstapel.
+      text: De aflegstapel mag op elk moment worden doorzocht en bekeken.
+  - name: Onderhandelingen en Deals
+    children:
+    - name: Afspraken.
+      text: Spelers mogen het spel bespreken en afspraken maken, maar deze zijn niet bindend.
+    - name: Kaarten.
+      text: Spelers mogen alleen kaarten aan elkaar geven als daar expliciet om wordt gevraagd.
+  - name: Spelstructuur
+    children:
+    - name: Beurtstructuur.
+      text: >
+        Elke beurt van een speler heeft drie fasen: Vogelzang, Daglicht en Avond. Alles wat "aan het begin van" een fase gebeurt, vindt plaats vóór al het andere in die fase, en alles wat "aan het einde van" gebeurt vindt plaats na al het andere in die fase maar vóór het begin van de volgende fase, indien van toepassing. Nadat een speler de Avond beëindigt, begint de volgende speler met de klok mee zijn beurt. Het spel gaat door totdat één speler het spel heeft gewonnen (`rule:3.1`).
+    - name: Onderbrekingen.
+      text: Je kunt een actie (_inclusief een samengestelde actie zoals de Mars van de Markiezin_), vaardigheid (_zoals de Onthulling van de Kraaien_), of aanhoudend effect (_zoals de Arendsnest Emigrant kaart_) niet onderbreken met een ander effect tenzij dit expliciet is toegestaan. (_Bijvoorbeeld, de Pantserwerkers kaart zegt dat deze "In gevecht..." wordt gebruikt_).
+  - name: Stukken
+    children:
+    - name: Limieten.
+      text: Speelstukken zijn beperkt tot de inhoud van het spel. Gebruik geen vervangende stukken als je er geen meer hebt.
+    - name: Startende Factie.
+      text: Elke speler bezit de factie die ze kiezen tijdens de voorbereiding (`rule:5.`) en de stukken die op de achterkant van hun factiebord staan, met uitzondering van voorwerpen. In het algemeen worden deze **factiestukken** of vergelijkbaar genoemd. Specifiek worden deze [**factienaam**] stukken genoemd. (_Bijvoorbeeld, "jouw factiekrijgers" en "krijgers van jouw factie" en "Markiezin krijgers" verwijzen allemaal naar de oranje houten katvormige krijgers_).
+    - name: Eigendom van Stukken.
+      text: Het eigendom van factiestukken kan niet veranderen. (_Bijvoorbeeld, de Markiezin kan geen Veldhospitalen gebruiken op Riviervolk huursoldaten of huurlingen, aangezien dit geen Markiezin krijgers zijn_).
+    - name: Manipulatie van Stukken.
+      text: Stukken worden geplaatst en verwijderd zoals gedefinieerd in de Woordenlijst (`rule:16.6.19`, `rule:16.6.22`). Als je wordt gevraagd om stukken te plaatsen, te nemen of te verwijderen maar je kunt dit niet volledig doen, moet je het maximaal mogelijke aantal plaatsen, nemen of verwijderen. (_Dit laat je niet toe om kosten of voorwaarden te vermijden. Je kunt gewoon niet minder doen dan het meeste wat je kunt_). Als meerdere stukken tegelijkertijd worden verwijderd en dat zou effecten veroorzaken, verwijder dan eerst alle stukken voordat effecten worden geactiveerd.
+    - name: Gebruik van **Dwang**.
+      plainName: Gebruik van Dwang.
+      text: Sommige effecten laten je een speler of hun stukken **dwingen** om te handelen. Los dit precies op alsof die speler ervoor koos om dit te doen, binnen de grenzen van het effect. (_Bijvoorbeeld, als je het Arendsnest dwingt om krijgers te verplaatsen, profiteren zij van Heren van het Woud._)
+- name: Basisbegrippen
+  color: "#000000"
+  pretext: Termen worden strikt gedefinieerd in de Woordenlijst (`rule:16.6`).
+  children:
+  - name: Kaarten
+    pretext: "Je trekt kaarten van de bovenkant van de gedeelde trekstapel en legt af op een gedeelde aflegstapel. Als de trekstapel ooit leeg is, schud dan de aflegstapel onmiddellijk om een nieuwe trekstapel te vormen. Elke kaart heeft een **soort**: vogel, vos, konijn of muis. De meeste kaarten hebben ook een effect dat je kunt vervaardigen (`rule:4.1`)."
+    children:
+    - name: Vogels Zijn Jokers.
+      text: Je kunt elke vogelkaart behandelen als een kaart van een andere soort, zelfs als je meerdere kaarten van dezelfde soort moet uitgeven, nemen of geven. `faction:cult:10.2.2`
+      subchildren:
+      - name: Gedwongen Effecten.
+        text: Als je wordt gevraagd om kaarten van niet-vogel soorten af te leggen of te geven, moet je je vogelkaarten behandelen als een gevraagde soort
+      - name: Omgekeerde Vervanging.
+        text: Als je wordt gevraagd om een vogelkaart uit te geven, af te leggen, te nemen of te geven, kun je geen kaart van een andere soort vervangen.
+    - name: Hinderlaagkaarten.
+      text: "Er zijn vijf **hinderlaagkaarten**: één muis, één konijn, één vos en twee vogels. Je mag een hinderlaagkaart uitgeven voor zijn soort, maar het heeft geen vervaardigeffect. Je mag er ook één spelen in gevecht om treffers toe te brengen (`rule:4.3.1`)."
+    - name: Dominantiekaarten.
+      text: Er zijn vier **dominantiekaarten** die overeenkomen met de vier soorten. Je mag een dominantiekaart uitgeven voor zijn soort, maar deze kan niet worden vervaardigd. Je mag er ook één spelen om je overwinningsvoorwaarde permanent te veranderen (`rule:3.3`).
+  - name: Open Plekken en Paden
+    pretext: De kaart van het Woudland bestaat uit vele **open plekken** verbonden door **paden**.
+    children:
+    - name: Aangrenzendheid.
+      text: Een open plek grenst aan alle andere open plekken waarmee deze verbonden is door een pad. `faction:duchy:12.2.2`
+    - name: Soort.
+      text: Elke open plek heeft een **soort** van muis, konijn of vos.
+    - name: Vakjes.
+      text: Elke open plek heeft een aantal **gebouwvakjes** _(witte vakjes)_. Elke keer dat je een gebouw plaatst, vult het een open vakje. Je kunt geen gebouw plaatsen in een open plek zonder open vakjes.
+    - name: Ruïnes.
+      text: Vakjes gemarkeerd met een kleine "R" beginnen het spel gevuld met **ruïnes**. Ruïnes kunnen niet worden verwijderd tenzij expliciet aangegeven _(zoals door de Verkenactie van de Vagebond, `rule:9.5.3`)_.
+  - name: Rivieren
+    pretext: Veel open plekken zijn verbonden door **rivieren**. _(Rivieren zijn geen paden, maar kunnen als paden worden behandeld als daar expliciet om wordt gevraagd. Rivieren verdelen geen open plekken of bossen.)_ `faction:riverfolk:11.2.2`
+  - name: Bossen
+    pretext: Gebieden op de kaart omsloten door gedrukte paden en open plekken worden **bossen** genoemd.
+    children:
+    - name: Aangrenzendheid.
+      text: Een bos grenst aan alle open plekken die het raken zonder een gedrukt pad te kruisen, en het grenst aan alle bossen die slechts door één gedrukt pad worden gescheiden.
+  - name: Heerschappij
+    pretext: Een speler **heerst** over een open plek als zij meer totale krijgers en gebouwen hebben dan elke andere speler. _(Fiches en pionnen tellen niet mee voor heerschappij.)_ Als er een gelijkspel is tussen spelers in een open plek, heerst niemand erover. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
+- name: Overwinning
+  color: "#000000"
+  children:
+  - name: Hoe te Winnen
+    pretext: De eerste speler die 30 overwinningspunten bereikt, wint onmiddellijk het spel. Als meerdere spelers tegelijkertijd 30 of meer overwinningspunten bereiken, wint de speler die de huidige beurt heeft.
+  - name: Overwinningspunten Scoren
+    pretext: Elke factie heeft een unieke manier om overwinningspunten te scoren, maar elke factie kan overwinningspunten scoren op de volgende manieren.
+    children:
+    - name: Gebouwen en Fiches Verwijderen.
+      text: Elke keer dat je een gebouw of fiche van een tegenstander verwijdert, scoor je één overwinningspunt.
+    - name: Voorwerpen Vervaardigen.
+      text: Wanneer je een voorwerp vervaardigt (`rule:4.1`), scoor je de overwinningspunten die op de kaart staan vermeld. `faction:eyrie:7.2.3` `faction:warlord:14.2.3`
+  - name: Dominantiekaarten
+    pretext: De stok kaarten bevat vier dominantiekaarten, waarmee je het spel kunt winnen zonder 30 overwinningspunten te scoren.
+    children:
+    - name: Activeren.
+      text: Tijdens je Daglicht, als je ten minste 10 overwinningspunten hebt, mag je een dominantiekaart in je hand **activeren** door deze in je speelgebied te leggen. Verwijder je scoremarker van het scorespoor. Je kunt geen overwinningspunten meer scoren. `faction:vagabond:9.2.8`
+      subchildren:
+      - name: Muis, Konijn of Vos Dominantie.
+        text: Je wint het spel onmiddellijk als je aan het begin van je Vogelzang heerst over drie open plekken die overeenkomen met de soort van de geactiveerde dominantiekaart.
+      - name: Vogel Dominantie.
+        text: Je wint het spel onmiddellijk als je aan het begin van je Vogelzang heerst over twee open plekken in tegenoverliggende hoeken.
+    - name: Geactiveerde Kaarten.
+      text: Een geactiveerde dominantiekaart telt niet mee voor je handlimiet en kan niet uit het spel worden verwijderd. Je kunt een geactiveerde dominantiekaart niet vervangen door een andere.
+    - name: Dominantiekaarten Gebruiken.
+      text: Een dominantiekaart kan worden uitgegeven voor zijn soort. Elke keer dat een dominantiekaart op de aflegstapel zou worden gelegd, leg deze in plaats daarvan naast de kaart om aan te geven dat deze **beschikbaar** is om te nemen. `faction:cult:10.4.2`
+    - name: Beschikbare Kaarten Nemen.
+      text: Tijdens je Daglicht kun je een beschikbare dominantiekaart in je hand nemen door een kaart van dezelfde soort uit te geven. Je kunt een beschikbare vogel-dominantiekaart niet behandelen als een niet-vogel soort.
+- name: Basisacties
+  color: "#000000"
+  children:
+  - name: Vervaardigen
+    pretext: Je kunt de meeste kaarten uit je hand **vervaardigen** om een onmiddellijk of blijvend effect te krijgen.
+    children:
+    - name: Kosten.
+      text: Om een kaart te vervaardigen, moet je vervaardig stukken **activeren** van de soorten die in de linkeronderhoek van de kaart staan vermeld. _(Het vervaardig stuk van een factie staat vermeld in zijn Vervaardigen-sectie.)_ De soort van een vervaardig stuk komt overeen met zijn open plek. Elk vervaardig stuk mag slechts eenmaal per beurt worden geactiveerd. Een driekleuren vraagteken staat voor een vervaardig stuk van elke willekeurige soort. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1`
+    - name: Onmiddellijke Effecten.
+      text: Wanneer je een onmiddellijk effect vervaardigt _(papieren vakje)_, los je het effect op en leg je de kaart daarna af. Als het een voorwerp toont, neem je het bijpassende voorwerp uit de voorraad op de kaart en plaats je het in het Vervaardigde Voorwerpen vak op je factiebord. Als de kaart een voorwerp vermeldt dat niet in de voorraad ligt, kan de kaart niet worden vervaardigd. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8` `faction:warlord:14.2.1`
+    - name: Blijvende Effecten.
+      text: Wanneer je een blijvend effect vervaardigt _(stenen vakje)_, leg je het in je speelgebied. Je mag het effect gebruiken dat op de kaart staat beschreven. _(De Arendsnest Emigrant kaart in het Ballingen & Partizanen dek is verplicht.)_
+    - name: Geen Duplicaten.
+      text: Je kunt geen blijvend effect vervaardigen als je er al een identiek exemplaar van in je speelgebied hebt.
+  - name: Verplaatsen
+    pretext: Wanneer je **verplaatst**, neem je een willekeurig aantal _(meer dan nul)_ van je krijgers en pionnen van één open plek en verplaats je ze naar een aangrenzende open plek.
+    children:
+    - name: Je Moet Heersen.
+      text: Om een verplaatsing uit te voeren, moet je heersen over de beginplek, eindbestemming of beide. `faction:vagabond:9.2.3` `faction:riverfolk:11.2.2` `faction:corvid:13.2.3`
+    - name: Geen Verplaatsingslimieten.
+      text: Een bepaald stuk kan een onbeperkt aantal keren per beurt worden verplaatst. Als je meerdere verplaatsingen moet uitvoeren, mag je dezelfde of verschillende groepen krijgers verplaatsen.
+  - name: Gevecht
+    pretext: Wanneer je een **gevecht** aangaat, kies je een open plek met een willekeurig aantal van je krijgers en pionnen als de **plek van het gevecht**. Jij bent de **aanvaller**. Kies een tegenstander in de plek van het gevecht als de **verdediger**.
+    children:
+    - name: "Stap 1: Verdediger Mag Hinderlaag Leggen."
+      text: De verdediger mag één hinderlaagkaart spelen die overeenkomt met de plek van het gevecht. Als dat gebeurt, los dan `rule:4.3.1.1`–`rule:4.3.1.2` in volgorde op.
+      subchildren:
+      - name: Verijdel Hinderlaag.
+        text: De aanvaller mag ook een hinderlaagkaart spelen die overeenkomt met de plek van het gevecht. Als ze dat doen, legt de verdediger zijn hinderlaagkaart af en slaat `rule:4.3.1.2` over.
+      - name: Los Hinderlaag Op.
+        text: De verdediger brengt onmiddellijk twee treffers toe (`rule:4.3.4`). Daarna legt de verdediger de hinderlaagkaart af. Als er geen aanvallende krijgers of pionnen meer over zijn, beëindig dan het gevecht onmiddellijk.
+    - name: "Stap 2: Werp Dobbelstenen en Voeg Extra Treffers Toe."
+      text: Werp beide dobbelstenen. De aanvaller zal treffers toebrengen gelijk aan de hoogste worp, en de verdediger zal treffers toebrengen gelijk aan de laagste worp. Als de worpen gelijk zijn, zullen aanvaller en verdediger evenveel treffers toebrengen. _(Het gebruik van "zal" hier geeft aan dat treffers pas in stap 4 worden toegebracht)._ `faction:woodland:8.2.2`
+      subchildren:
+      - name: Maximum Geworpen Treffers.
+        text: Het maximum aantal treffers dat je kunt toebrengen door te werpen is gelijk aan het aantal van je krijgers in de plek van het gevecht, of je nu aanvaller of verdediger bent. `faction:vagabond:9.2.6`
+    - name: "Stap 3: Gebruik Effecten."
+      text: De aanvaller en verdediger mogen optionele effecten _(zoals de Brutale Tactiek kaart)_ gebruiken die het gevecht beïnvloeden. Als beiden effecten willen gebruiken, kiest de aanvaller wie ze eerst gebruikt (`rule:1.1.3`).
+      subchildren:
+      - name: Extra Treffers.
+        text: Veel effecten brengen **extra treffers** toe, die niet worden beperkt door het aantal krijgers in de plek van het gevecht.
+      - name: Weerloos.
+        text: Als de verdediger geen krijgers heeft in de plek van het gevecht, brengt de aanvaller een extra treffer toe. `faction:vagabond:9.2.4`
+    - name: "Stap 4: Breng Treffers Toe."
+      text: Elke treffer die een zijde toebrengt, verwijdert één stuk van de andere zijde uit de plek van het gevecht. _(Je scoort één overwinningspunt per verwijderd vijandig gebouw of fiche.)_ De zijde die treffers incasseert kiest de volgorde waarin hun eigen stukken worden verwijderd, maar al hun krijgers daar moeten worden verwijderd voordat hun gebouwen of fiches daar kunnen worden verwijderd; ze kiezen ook de volgorde van eventuele effecten die worden geactiveerd door het verwijderen van hun stukken.
+- name: Voorbereiding
+  color: "#000000"
+  pretext: Als er nieuwe spelers zijn, gebruik dan de Standaard Voorbereiding (`rule:5.1`) Als iedereen al heeft gespeeld en je meer variatie wilt, gebruik dan de Geavanceerde Voorbereiding (`rule:16.1`). Als je met vijf of meer facties wilt spelen die in hoekplekken zouden beginnen, moet je de Geavanceerde Voorbereiding gebruiken.
+  children:
+  - name: Standaard Voorbereiding Procedure
+    children:
+    - name: "Stap 1: Wijs Facties en Startspeler Toe."
+      text: Wijs op een willekeurige manier één factie toe aan elke speler. Bepaal willekeurig de startspeler en zitplaatsvolgorde. Elke speler neemt hun gekozen factiebord en de stukken die op de achterkant staan vermeld.
+    - name: "Stap 2: Plaats Scoremarkers."
+      text: Elke speler plaatst hun scoremarker op "0" op het scorespoor.
+    - name: "Stap 3: Trek Starthanden."
+      text: Als je met twee spelers speelt, verwijder dan alle vier de dominantiekaarten uit het dek. Schud het dek. Elke speler trekt drie kaarten.
+    - name: "Stap 4: Plaats Ruïnes."
+      text: Plaats een ruïne in elk vakje op de kaart dat is gemarkeerd met een "R" _(vier in totaal)_.
+    - name: "Stap 5: Vorm Voorraad Voorwerpen."
+      text: "Plaats deze voorwerpen op de bijpassende plekken van de voorwerpenvoorraad bovenaan de kaart: 2 `item:boot`, 2 `item:sack`, 1 `item:crossbow`, 1 `item:hammer`, 2 `item:sword`, 2 `item:tea`, 2 `item:coin`."
+    - name: "Stap 6: Verzamel Andere Stukken."
+      text: Deel de 16 factie-overzichtskaarten uit zoals gewenst en plaats de twee dobbelstenen bij de kaart.
+    - name: "Stap 7: Stel Facties Op."
+      text: In de opstellingsvolgorde (A, B, C, enz.) volgt elke speler de voorbereidingsinstructies van zijn factie, vermeld in hun regelsectie en op de achterkant van hun factiebord.
+  - name: Reikwijdte
+    pretext: Om een interessant spel op te zetten, kies je facties waarvan de Reikwijdte-waarden optellen tot ten minste de totale reikwijdte die wordt aanbevolen voor je spelersaantal. _(Avontuurlijke spelers mogen elke factiemix met 17+ Reikwijdte gebruiken.)_ Om de aanbevolen reikwijdte voor je spelersaantal te zien, tik op het Rekenmachine icoon rechtsboven in de app.
+- name: Markiezin de Kat
+  color: "#e07a37"
+  icon: marquise
+  children:
+  - name: Overzicht
+    pretext: De Markiezin de Kat bezet het Woudland en wil het veranderen in een industrieel en militair machtscentrum. Elke keer dat de Markiezin één van haar **gebouwen** bouwt—een werkplaats, houtzagerij of rekruteringspost—scoort ze overwinningspunten. Hoe meer van hetzelfde gebouw ze op de kaart heeft, hoe meer punten ze scoort. Echter, om de voortdurende bouw te ondersteunen, moet de Markiezin een sterke, onderling verbonden economie van **hout** onderhouden en beschermen.
+  - name: Factieregels en Vaardigheden
+    children:
+    - name: Vervaardigen.
+      text: De Markiezin vervaardigt tijdens Daglicht door werkplaatsen te activeren.
+    - name: De Burcht.
+      text: De Markiezin kan stukken plaatsen in de open plek met het burchtfiche, en andere spelers kunnen dat niet. _(Stukken kunnen er wel naartoe worden verplaatst. Als de burcht wordt verwijderd, is er geen manier om deze weer op de kaart te plaatsen.)_
+    - name: Veldhospitalen.
+      text: Wanneer een willekeurig aantal Markiezin krijgers wordt verwijderd van een open plek, mag de Markiezin een kaart uitgeven die overeenkomt met die open plek om die krijgers in de open plek met de burcht te plaatsen in plaats van in de voorraad van de Markiezin.
+  - name: Factie Voorbereiding
+    children:
+    - name: "Stap 1: Verzamel Krijgers en Hout."
+      text: Vorm voorraden van 25 krijgers en 8 houtfiches.
+    - name: "Stap 2: Plaats Burcht."
+      text: Plaats het burchtfiche in een willekeurige hoekplek. Dit is je startplek.
+    - name: "Stap 3: Garnizoen."
+      text: Plaats een krijger in elke open plek behalve de open plek in de diagonaal tegenoverliggende hoek van de plek met het burchtfiche.
+    - name: "Stap 4: Plaats Startgebouwen."
+      text: Plaats 1 houtzagerij, 1 werkplaats en 1 rekruteringspost. Je mag ze plaatsen in de plek met het burchtfiche en aangrenzende plekken, in elke combinatie.
+    - name: "Stap 5: Vul Gebouwsporen."
+      text: Plaats je overgebleven 5 houtzagerijen, 5 werkplaatsen en 5 rekruteringsposten op je bijpassende Gebouwsporen van rechts naar links. _(Laat de meest linkse ruimte van elk spoor leeg.)_
+  - name: Vogelzang
+    pretext: Plaats houtfiches in elke open plek met een willekeurig aantal houtzagerijen, één hout per houtzagerij daar.
+  - name: Daglicht
+    pretext: Eerst mag je werkplaatsen activeren om kaarten uit je hand te vervaardigen. Daarna mag je tot drie acties nemen -- plus één actie per vogelkaart die je uitgeeft _(niet als deel van een actie)_ -- in elke volgorde en aantal.
+    children:
+    - name: Vecht.
+      text: Begin een gevecht.
+    - name: Mars.
+      text: Neem tot twee verplaatsingen.
+    - name: Rekruteer.
+      text: Plaats één krijger bij elke rekruteringspost. Je mag deze actie slechts eenmaal per beurt nemen.
+    - name: Bouw.
+      text: Plaats een gebouw.
+      subchildren:
+      - name: Kies Open Plek en Gebouw.
+        text: Kies een open plek waar je heerst. Kies of je een houtzagerij, werkplaats of rekruteringspost wilt plaatsen. Je plaatst het meest linkse gebouw van dat type van je factiebord. Je moet in staat zijn om de kosten te betalen (`rule:6.5.4.2`) en het te plaatsen (`rule:6.5.4.3`).
+      - name: Betaal Kosten.
+        text: Vind de kosten van het gekozen gebouw bovenaan de kolom. Verwijder houtfiches gelijk aan het aantal van de kosten uit de gekozen open plek, aangrenzende open plekken waar je heerst, of open plekken die verbonden zijn met de gekozen open plek waar je heerst via een willekeurig aantal open plekken waar je heerst.
+      - name: Plaats Gebouw en Scoor.
+        text: Plaats het gekozen gebouw in de gekozen open plek, en scoor de overwinningspunten die vermeld staan op de vrijgekomen ruimte op je factiebord.
+    - name: Overwerk.
+      text: Geef een kaart uit die overeenkomt met de open plek van een houtzagerij en plaats een houtfiche daar.
+  - name: Avond
+    pretext: Trek één kaart, plus één kaart per vrijgekomen trekbonus. Als je daarna meer dan vijf kaarten in je hand hebt, leg dan kaarten naar keuze af tot je er vijf hebt.
+- name: Arendsnest Dynastieën
+  color: "#416eb0"
+  icon: eyrie
+  children:
+  - name: Overzicht
+    pretext: De Arendsnest Dynastieën willen hun ooit waardige soort herstellen in hun vroegere glorie in het Woudland door de controle over de open plekken in het bos terug te nemen. Tijdens hun Avond scoort het Arendsnest overwinningspunten gebaseerd op het aantal **nesten** op de kaart. Hoe groter hun aanwezigheid in het Woudland, hoe groter hun winst. Het Arendsnest is echter gebonden aan hun **Decreet**, een steeds groeiende set van verplichte acties beloofd door hun **leider**. Elke beurt moeten ze alle acties op het Decreet uitvoeren, of anders in **chaos** vallen.
+  - name: Factieregels en Vaardigheden
+    children:
+    - name: Vervaardigen.
+      text: Het Arendsnest vervaardigt vóór het uitvoeren van het Decreet tijdens Daglicht door nesten te activeren.
+    - name: Heren van het Woud.
+      text: Het Arendsnest heerst over een open plek bij gelijkspel voor meeste gecombineerde krijgers en gebouwen daar, en heeft ten minste één Arendsnest stuk daar. `faction:cult:10.2.4`
+    - name: Minachting voor Handel.
+      text: Wanneer het Arendsnest een voorwerp vervaardigt, negeert het de vermelde overwinningspunten en scoort in plaats daarvan slechts één overwinningspunt. _(Ze kunnen nog steeds extra punten scoren van effecten zoals Meester Graveurs en de Legendarische Smederij.)_
+  - name: Factie Voorbereiding
+    children:
+    - name: "Stap 1: Verzamel Krijgers."
+      text: Vorm een voorraad van 20 krijgers.
+    - name: "Stap 2: Plaats Nest en Startkrijgers."
+      text: Plaats 1 nest en 6 krijgers in een hoekplek die niet de starthoekplek is van een andere speler en, indien mogelijk, diagonaal tegenover een starthoekplek ligt.
+    - name: "Stap 3: Kies Leider."
+      text: Kies 1 van de 4 Arendsnest leiderkaarten en plaats deze in je Leiderkaart vak. Verzamel de overige leiders met de beeldzijde naar boven bij je.
+    - name: "Stap 4: Plaats Viziers."
+      text: Voeg je 2 Loyale Vizier kaarten in, met hun soort zichtbaar, in de Decreet kolommen boven je factiebord zoals aangegeven op je leider.
+    - name: "Stap 5: Vul Nest Spoor."
+      text: Plaats je 6 overgebleven nesten op je Nest spoor van rechts naar links.
+  - name: Vogelzang
+    pretext: Je Vogelzang heeft drie stappen in de volgende volgorde.
+    children:
+    - name: Noodbevelen.
+      text: Als je geen kaarten in je hand hebt, trek dan één kaart.
+    - name: Voeg toe aan het Decreet.
+      text: Je moet één of twee kaarten aan het Decreet toevoegen, maar slechts één toegevoegde kaart mag een vogelkaart zijn. Je mag elke kaart aan elke kolom toevoegen, en elke kolom kan elk aantal kaarten bevatten.
+    - name: Een Nieuw Nest.
+      text: Als je geen nesten op de kaart hebt, plaats dan een nest en drie krijgers in een open plek met de minste krijgers waar al die stukken kunnen worden geplaatst.
+  - name: Daglicht
+    pretext: Je Daglicht heeft twee stappen in de volgende volgorde.
+    children:
+    - name: Vervaardig.
+      text: Je mag nesten activeren om kaarten uit je hand te vervaardigen.
+    - name: Los het Decreet op.
+      text: Je moet het Decreet oplossen, beginnend met de meest linkse kolom en naar rechts bewegend. In elke kolom moet je alle kaarten oplossen, maar in elke volgorde. Voor elke kaart moet je de actie uitvoeren die voor zijn kolom staat vermeld, als volgt. Als je een actie niet volledig kunt uitvoeren, val je onmiddellijk in chaos (`rule:7.7`).
+      subchildren:
+      - name: Rekruteer.
+        text: Plaats een krijger in een willekeurige open plek met een nest waarvan de soort overeenkomt met de kaartsoort.
+      - name: Verplaats.
+        text: Verplaats vanuit een willekeurige open plek waarvan de soort overeenkomt met de kaartsoort. _(Je moet ten minste één krijger verplaatsen)_.
+      - name: Vecht.
+        text: Begin een gevecht in een willekeurige open plek waarvan de soort overeenkomt met de kaartsoort.
+      - name: Bouw.
+        text: Plaats een nest in een willekeurige open plek waar je heerst waarvan de soort overeenkomt met de kaartsoort en waar geen nest is.
+  - name: Avond
+    pretext: Je Avond heeft twee stappen in de volgende volgorde.
+    children:
+    - name: Scoor Punten.
+      text: Scoor de overwinningspunten vermeld op de meest rechtse lege ruimte van je Nest spoor.
+    - name: Trek en Leg Af.
+      text: Trek één kaart, plus één kaart per vrijgekomen trekbonus. Als je daarna meer dan vijf kaarten in je hand hebt, leg dan kaarten naar keuze af tot je er vijf hebt.
+  - name: Chaos
+    pretext: Als je een actie in het Decreet (`rule:7.5.2`) om welke reden dan ook niet volledig kunt uitvoeren, val je in chaos, als volgt. Je moet de Chaos actie als volgt in volgorde uitvoeren.
+    children:
+    - name: "Stap 1: Vernedering."
+      text: Verlies één overwinningspunt per vogelkaart _(inclusief Loyale Viziers)_ op het Decreet.
+    - name: "Stap 2: Zuivering."
+      text: Leg alle kaarten op het Decreet af behalve je Loyale Viziers.
+    - name: "Stap 3: Afzetting."
+      text: Draai je huidige leider met de beeldzijde naar beneden en leg deze opzij, kies een nieuwe leider uit degenen met de beeldzijde naar boven, en plaats deze op je factiebord. Plaats je Loyale Viziers in de Decreet ruimtes vermeld op je nieuwe leider.
+      subchildren:
+      - name: Een Nieuw Broedsel.
+        text: Als je een nieuwe leider moet kiezen maar geen enkele ligt met de beeldzijde naar boven, draai ze dan allemaal met de beeldzijde naar boven.
+    - name: "Stap 4: Rust."
+      text: Beëindig Daglicht en begin Avond.
+  - name: Leiders Referentie
+    pretext: Het Arendsnest heeft vier leiderkaarten, als volgt.
+    children:
+    - name: Bouwer.
+      text: Loyale Viziers beginnen bij Rekruteer en Verplaats. Wanneer je vervaardigt, negeer je je Minachting voor Handel speciale vaardigheid (`rule:7.2.3`).
+    - name: Charismatisch.
+      text: Loyale Viziers beginnen bij Rekruteer en Vecht. Wanneer je een Rekruteer actie neemt, moet je twee krijgers in plaats van één plaatsen.
+    - name: Bevelhebber.
+      text: Loyale Viziers beginnen bij Verplaats en Vecht. In gevecht als aanvaller breng je een extra treffer toe.
+    - name: Despoot.
+      text: Loyale Viziers beginnen bij Verplaats en Bouw. Wanneer je minstens één vijandelijk gebouw of fiche verwijdert in gevecht, scoor je één extra overwinningspunt _(twee in totaal, `rule:3.2.1`)_.
+- name: Woudland Alliantie
+  color: "#68b653"
+  icon: woodland
+  children:
+  - name: Overzicht
+    pretext: De Woudland Alliantie werkt eraan om de **sympathie** te winnen van de verschillende wezens van het Woudland die ontevreden zijn met hun huidige situatie. Elke keer dat de Alliantie een sympathiefiche plaatst, kunnen ze overwinningspunten scoren. Hoe meer sympathie ze op de kaart hebben, hoe meer overwinningspunten ze scoren. Het winnen van de sympathie van het volk vereist **aanhangers**. Deze aanhangers kunnen ook voor gewelddadige doeleinden worden ingezet, door openlijke opstanden in het hele bos aan te wakkeren. Wanneer een opstand uitbreekt, zal de Alliantie een **basis** vestigen. Bases stellen de Alliantie in staat om officieren te trainen, waardoor hun militaire flexibiliteit toeneemt.
+  - name: Factieregels en Vaardigheden
+    children:
+    - name: Vervaardigen.
+      text: De Alliantie vervaardigt tijdens Daglicht door sympathiefiches te activeren.
+    - name: Guerrillaoorlog.
+      text: Als verdediger in gevecht zal de Alliantie treffers toebrengen gelijk aan de hoogste worp, en de aanvaller zal treffers toebrengen gelijk aan de laagste worp.
+    - name: De Aanhangersstapel.
+      text: Om verschillende acties uit te voeren, geeft de Alliantie **aanhangers** uit, dit zijn kaarten op hun Aanhangersstapel. Aanhangers kunnen alleen worden uitgegeven voor hun soort en tellen niet mee voor de handlimiet van de Alliantie. Aanhangers liggen met de beeldzijde naar beneden, maar de Alliantie mag ze op elk moment bekijken.
+      subchildren:
+      - name: Capaciteit.
+        text: Als de Alliantie geen bases op de kaart heeft, kan de Aanhangersstapel maximaal vijf kaarten bevatten. Als de Alliantie een aanhanger zou krijgen maar de stapel kan deze niet bevatten, wordt die kaart afgelegd. Als er bases op de kaart zijn, kan de Aanhangersstapel onbeperkt kaarten bevatten.
+    - name: Bases Verwijderen.
+      text: Wanneer een basis wordt verwijderd, moet de Alliantie alle aanhangers afleggen die overeenkomen met de gedrukte soort van de basis _(inclusief vogels)_, en de helft van hun officieren verwijderen, naar boven afgerond. Als de Alliantie geen bases meer op de kaart heeft en meer dan vijf aanhangers heeft, moeten ze afleggen tot vijf aanhangers.
+    - name: Sympathiefiches.
+      text: De Alliantie heeft 10 sympathiefiches.
+      subchildren:
+      - name: Plaatsingslimieten.
+        text: Een open plek kan maar één sympathiefiche bevatten.
+      - name: Termen.
+        text: Een **sympathieke open plek** is er een met een sympathiefiche. Een **niet-sympathieke open plek** is er een zonder een sympathiefiche.
+    - name: Woede.
+      text: Wanneer een andere speler een sympathiefiche verwijdert of krijgers verplaatst naar een sympathieke open plek, moeten zij één kaart uit hun hand toevoegen aan de Aanhangersstapel die overeenkomt met de beïnvloede open plek. Als ze geen passende kaarten hebben _(inclusief geen vogels)_, moeten ze hun hand aan de Alliantie laten zien, en dan trekt de Alliantie een kaart van de trekstapel en voegt deze toe aan de Aanhangersstapel.
+  - name: Factie Voorbereiding
+    children:
+    - name: "Stap 1: Verzamel Krijgers."
+      text: Vorm een voorraad van 10 krijgers.
+    - name: "Stap 2: Plaats Bases."
+      text: Plaats 3 bases op de bijpassende ruimtes in je Bases vak.
+    - name: "Stap 3: Vul Sympathie Spoor."
+      text: Plaats je 10 sympathiefiches op je Sympathie spoor.
+    - name: "Stap 4: Krijg Aanhangers."
+      text: Trek 3 kaarten en plaats ze met de beeldzijde naar beneden op je Aanhangersstapel.
+  - name: Vogelzang
+    pretext: Je Vogelzang heeft twee stappen in de volgende volgorde.
+    children:
+    - name: Opstand.
+      text: Een willekeurig aantal keren mag je de Opstand actie nemen, als volgt.
+      subchildren:
+      - name: "Stap 1: Kies Open Plek."
+        text: Kies een sympathieke open plek die overeenkomt met een basis op je factiebord.
+      - name: "Stap 2: Geef Aanhangers Uit."
+        text: Geef twee aanhangers uit die overeenkomen met de soort van de gekozen open plek.
+      - name: "Stap 3: Los Effect Op."
+        text: Verwijder alle vijandelijke stukken van de gekozen open plek. Plaats dan de bijpassende basis daar, en plaats krijgers daar gelijk aan het aantal sympathieke open plekken die overeenkomen met de gedrukte soort van de basis. Plaats tenslotte één krijger in het Officieren vak. Deze krijger is nu een **officier**. _(Vergeet niet één overwinningspunt te scoren per verwijderd fiche en gebouw.)_
+    - name: Verspreid Sympathie.
+      text: Een willekeurig aantal keren mag je de Verspreid Sympathie actie nemen, als volgt.
+      subchildren:
+      - name: "Stap 1: Kies Open Plek."
+        text: Kies een niet-sympathieke open plek aangrenzend aan een sympathieke open plek. Als er geen sympathieke open plekken zijn, mag je een willekeurige open plek kiezen.
+      - name: "Stap 2: Geef Aanhangers Uit."
+        text: Geef aanhangers uit die overeenkomen met de soort van de gekozen open plek. Het aantal aanhangers dat moet worden uitgegeven staat vermeld boven het sympathiefiche.
+        subchildren:
+        - name: Krijgswet.
+          text: Je moet nog een passende aanhanger uitgeven als de doelplek minstens 3 krijgers van een andere speler heeft, inclusief krijgers die ze als hun eigen behandelen voor heerschappij _(Huursoldaten, huurlingen, etc.)_.
+      - name: "Stap 3: Plaats en Scoor."
+        text: Plaats een sympathiefiche in de gekozen open plek. Scoor de overwinningspunten vermeld op de vrijgekomen ruimte op je factiebord.
+  - name: Daglicht
+    pretext: Je mag de volgende acties nemen in willekeurige volgorde en aantal.
+    children:
+    - name: Vervaardig.
+      text: Je mag sympathiefiches activeren om een kaart uit je hand te vervaardigen.
+    - name: Mobiliseer.
+      text: Voeg een kaart uit je hand toe aan de Aanhangersstapel.
+    - name: Train.
+      text: Geef een kaart uit waarvan de soort overeenkomt met de gedrukte soort van een basis op de kaart om een krijger in het Officieren vak te plaatsen. Deze krijger is nu een **officier**.
+  - name: Avond
+    pretext: Je Avond heeft twee stappen in de volgende volgorde.
+    children:
+    - name: Militaire Operaties.
+      text: Je mag acties nemen, als volgt, tot aan je aantal officieren, in willekeurige volgorde en aantal.
+      subchildren:
+      - name: Verplaats.
+        text: Neem één verplaatsing.
+      - name: Vecht.
+        text: Begin een gevecht.
+      - name: Rekruteer.
+        text: Plaats een krijger in een willekeurige open plek met een basis.
+      - name: Organiseer.
+        text: Verwijder één Alliantie krijger uit een niet-sympathieke open plek, plaats een sympathiefiche daar, en scoor de overwinningspunten vermeld op de vrijgekomen ruimte op je factiebord.
+    - name: Trek en Leg Af.
+      text: Trek één kaart, plus één kaart per vrijgekomen trekbonus. Als je daarna meer dan vijf kaarten in je hand hebt, leg dan kaarten naar keuze af tot je er vijf hebt.
+- name: Vagebond
+  color: "#6d6e70"
+  icon: vagabond
+  children:
+  - name: Overzicht
+    pretext: De Vagebond speelt alle kanten van het conflict terwijl hij op queesten gaat om zijn bekendheid in het woud te vergroten. Elke keer dat de Vagebond zijn **relatie** met een andere factie verbetert, of een krijger verwijdert die behoort tot een factie die hem vijandig gezind is, scoort hij overwinningspunten. Hij kan ook **queesten** voltooien om overwinningspunten te scoren. Om effectief te kunnen bewegen en handelen moet de Vagebond zijn verzameling **voorwerpen** beheren, zijn selectie uitbreiden door de bosruïnes te verkennen en hulp te bieden aan andere facties.
+  - name: Factieregels en Vaardigheden
+    children:
+    - name: Vervaardigen.
+      text: De Vagebond put `item:hammer` uit om te vervaardigen. Al zijn `item:hammer` komen overeen met de soort van zijn huidige open plek. Als de Vagebond een voorwerp vervaardigt, mag hij het onmiddellijk nemen, met de beeldzijde naar boven.
+    - name: Eenzame Zwerver.
+      text: De Vagebond pion is geen krijger _(dus hij kan geen open plek beheersen of een andere speler niet verhinderen om er te heersen)_. De Vagebond pion kan niet van de kaart worden verwijderd.
+      subchildren:
+      - name: Volledige Verwijdering.
+        text: Wanneer een vijandelijke speler een effect gebruikt dat zegt dat het alle vijandelijke stukken van een open plek verwijdert _(zoals Alliantie opstanden, Gunst van de Muizen kaarten, Samenzwering bommen)_ met de Vagebond, beschadigt de Vagebond drie voorwerpen.
+    - name: Behendig.
+      text: De Vagebond kan zich verplaatsen ongeacht wie heerst over zijn vertrek- of bestemmingsplek (`rule:4.2.1`).
+    - name: Weerloos.
+      text: In gevecht is de Vagebond weerloos (`rule:4.3.3.2`) als hij geen onbeschadigde `item:sword` heeft.
+    - name: Voorwerpen.
+      text: De mogelijkheden van de Vagebond hangen af van de voorwerpen die hij verkrijgt. In plaats van een Vervaardigde Voorwerpen vak heeft hij een Knapzak en verschillende voorwerpsporen. Voorwerpen op het factiebord van de Vagebond kunnen met de beeldzijde naar boven of naar beneden liggen. De Vagebond **put** onbeschadigde voorwerpen met de beeldzijde omhoog **uit**, en draait ze met de beeldzijde naar beneden om veel acties te ondernemen.
+      subchildren:
+      - name: Voorwerpsporen.
+        text: Wanneer verkregen of met de beeldzijde naar boven gedraaid in de Knapzak, worden `item:tea`, `item:coin` en `item:sack` met de beeldzijde naar boven op hun bijpassende sporen geplaatst. Wanneer met de beeldzijde naar beneden gedraaid, worden `item:tea`, `item:coin` en `item:sack` op sporen met de beeldzijde naar beneden in de Knapzak geplaatst. Elk spoor kan maar drie bijpassende voorwerpen bevatten.
+      - name: Knapzak.
+        text: Wanneer verkregen, worden `item:boot`, `item:sword`, `item:crossbow`, `item:torch` en `item:hammer` met de beeldzijde naar boven in de Knapzak van de Vagebond geplaatst.
+    - name: Maximum Geworpen Treffers.
+      text: In gevecht is het maximum aantal geworpen treffers van de Vagebond (`rule:4.3.2.1`) gelijk aan zijn onbeschadigde `item:sword`, met de beeldzijde naar boven of naar beneden, in zijn Knapzak.
+    - name: Treffers Incasseren.
+      text: Wanneer de Vagebond een treffer incasseert (`rule:4.3.3`), moet hij één onbeschadigd voorwerp beschadigen, door het naar zijn Beschadigde vak te verplaatsen. Als er geen onbeschadigde voorwerpen meer over zijn om te beschadigen, negeert de Vagebond eventuele resterende treffers.
+    - name: Dominantiekaarten en Coalities.
+      text: De Vagebond kan geen dominantiekaart activeren voor zijn normale overwinningsconditie (`rule:3.3.1`). In plaats daarvan kan de Vagebond in spellen met vier of meer spelers een dominantiekaart activeren om een coalitie te vormen met een andere speler, door zijn scoremarker op het factiebord van die speler te plaatsen. _(De Vagebond scoort geen punten meer.)_ Die speler moet minder overwinningspunten hebben dan elke andere speler behalve de Vagebond die de coalitie vormt, en die speler mag niet in een coalitie zitten. Als er een gelijkspel is voor minste overwinningspunten, kiest hij één van de gelijkspelende spelers. Als de speler in coalitie het spel wint, wint de Vagebond ook.
+    - name: Relaties.
+      text: Je factiebord toont een Relatieschema, dat vier ruimtes op het Bondgenoot spoor heeft en één Vijandig vak. Het bevat een relatiemarkering voor elke niet-Vagebond factie.
+      subchildren:
+      - name: Relaties Verbeteren.
+        text: Je kunt een relatie met een niet-Vijandige factie verbeteren door de Hulp actie te nemen.
+        subchildren:
+        - name: Kosten.
+          text: Help een niet-Vijandige factie het aantal keren vermeld tussen hun huidige Bondgenoot ruimte en hun volgende Bondgenoot ruimte tijdens dezelfde beurt. _(Een bepaalde Hulp actie telt maar voor één verbetering in relatie.)_
+        - name: Effect.
+          text: Schuif de relatiemarkering van die factie één ruimte naar rechts op het spoor. Scoor de overwinningspunten vermeld in de nieuwe ruimte.
+      - name: Bondgenoot Status.
+        text: Als een relatiemarkering de laatste ruimte op het Bondgenoot spoor bereikt, ben je nu **bondgenoot** met de factie aangegeven door die relatiemarkering. _(Hun krijgers vertrouwen je!)_
+        subchildren:
+        - name: Bondgenoot Helpen.
+          text: Elke keer dat je een Bondgenoot factie helpt, scoor je twee overwinningspunten.
+        - name: Verplaatsen met Bondgenoot.
+          text: Wanneer je naar een aangrenzende open plek verplaatst, mag je ook krijgers van één Bondgenoot factie dwingen om met je Vagebond pion mee te verplaatsen van je vertrekplek naar je bestemmingsplek.
+        - name: Aanvallen met Bondgenoot.
+          text: Aan het begin van gevecht als aanvaller mag je de krijgers van één Bondgenoot factie in de plek van het gevecht als je eigen behandelen. Het maximum aantal treffers dat je kunt werpen is gelijk aan het aantal van hun krijgers daar plus je totaal aan onbeschadigde `item:sword`. Je kunt Bondgenoot krijgers niet als je eigen behandelen wanneer je dezelfde Bondgenoot factie aanvalt.
+        - name: Treffers Incasseren met Bondgenoot.
+          text: In een gevecht waar je Bondgenoot krijgers als je eigen behandelt, kun je treffers incasseren door hen te verwijderen. Echter, als je meer treffers incasseert door Bondgenoot krijgers te verwijderen dan door voorwerpen te beschadigen tijdens hetzelfde gevecht, wordt die Bondgenoot factie Vijandig (`rule:9.2.9.3`) aan het einde van het gevecht. Deze regel heeft voorrang op de voorwaarde voor Vijandig worden in `rule:9.2.9.3`.
+      - name: Vijandige Status.
+        text: Als je een krijger van een niet-Vijandige factie verwijdert, verplaats je hun relatiemarkering naar het Vijandige vak. Deze factie is nu Vijandig. Als dit gebeurde in gevecht tijdens jouw beurt, check dan voor Beruchtheid scoring (`rule:9.2.9.3.1`).
+        subchildren:
+        - name: Beruchtheid.
+          text: Scoor één extra overwinningspunt voor elk stuk van een Vijandige factie dat je verwijdert in gevecht tijdens jouw beurt, behalve de krijger die de factie Vijandig maakte.  _(Tel dit op bij punten gescoord voor vijandelijke gebouwen en fiches.)_
+        - name: Verplaatsen naar Vijandige Open Plekken.
+          text: Je moet een extra `item:boot` uitputten om naar een open plek te verplaatsen met krijgers van een Vijandige factie.
+        - name: Vijandige Facties Helpen.
+          text: Je kunt een relatiemarkering niet uit het Vijandige vak verplaatsen door Hulp te gebruiken, maar je kunt nog steeds een Vijandige factie helpen om vervaardigde voorwerpen te nemen.
+        - name: Coalitie met Vijandige Factie.
+          text: Je kunt een coalitie vormen (`rule:9.2.8`) met een Vijandige factie. Als je dat doet, verplaats je hun relatiemarkering naar de Onverschilligen ruimte.
+  - name: Factie Voorbereiding
+    children:
+    - name: "Stap 1: Kies Karakter."
+      text: Kies een karakterkaart en plaats deze in je Karakterkaart vak.
+    - name: "Stap 2: Plaats Pion."
+      text: Plaats je Vagebond pion in een willekeurig bos.
+    - name: "Stap 3: Krijg Queesten."
+      text: Schud je queestedek, trek 3 queestekaarten, en plaats ze met de beeldzijde naar boven bij je.
+    - name: "Stap 4: Vul Ruïnes."
+      text: Neem de 4 ruïnes van de kaart, en neem de `item:sack`, `item:boot`, `item:hammer` en `item:sword` voorwerpen gemarkeerd met een "R." Plaats er één onder elke ruïne en schud dan elke ruïnestapel. Plaats daarna elke stapel terug in een leeg ruïnevak op de kaart.
+    - name: "Stap 5: Neem Startvoorwerpen."
+      text: Neem de voorwerpen gemarkeerd met "S" vermeld op je karakterkaart. Plaats alle vermelde `item:tea`, `item:coin` en `item:sack` voorwerpen met de beeldzijde naar boven op de bijpassende sporen van je factiebord. Plaats alle andere vermelde voorwerpen met de beeldzijde naar boven in je Knapzak. Leg eventuele overgebleven "S" voorwerpen terug in de doos.
+    - name: "Stap 6: Stel Relaties In."
+      text: Neem een relatiemarkering voor elke niet-Vagebond factie en plaats ze allemaal op de Onverschilligen ruimte van je Relatieschema.
+  - name: Vogelzang
+    pretext: Je Vogelzang heeft twee stappen in de volgende volgorde.
+    children:
+    - name: Ververs.
+      text: Draai twee uitgeputte voorwerpen met de beeldzijde naar boven voor elke `item:tea` met de beeldzijde naar boven op het Ververs spoor aan het begin van je Vogelzang. Draai daarna nog drie uitgeputte voorwerpen met de beeldzijde naar boven.
+    - name: Glip.
+      text: Je mag naar een aangrenzende open plek of bos verplaatsen zonder `item:boot` uit te putten, zelfs voor verplaatsing naar een Vijandige open plek (`rule:9.2.9.3.2`). Deze verplaatsing negeert alle effecten die verplaatsing uit een open plek verhinderen _(zoals de valstrik van de Kraaien)_.
+  - name: Daglicht
+    pretext: Je kunt voorwerpen uitputten om de volgende acties te nemen, in willekeurige volgorde en aantal. Als je een `item:coin`, `item:tea` of `item:sack` op een spoor uitput, verplaats je het naar de Knapzak.
+    children:
+    - name: Verplaats.
+      text: Put één `item:boot` uit om te verplaatsen, plus één `item:boot` als de bestemmingsplek Vijandige krijgers heeft. Je kunt niet naar een bos verplaatsen. Als je in een bos bent, mag je alleen naar een aangrenzende open plek verplaatsen.
+    - name: Vecht.
+      text: Put één `item:sword` uit om een gevecht te beginnen. _(Check je relatie met de verdediger.)_
+    - name: Verken.
+      text: Put één `item:torch` uit om één voorwerp onder een ruïne in je open plek te nemen, het te onthullen, en het met de beeldzijde naar boven in je Knapzak of op zijn bijpassende spoor te plaatsen. Als je een voorwerp neemt, scoor je één overwinningspunt. Als je het laatste voorwerp van een ruïne neemt, verwijder dan de ruïne.
+    - name: Help.
+      text: Put een willekeurig voorwerp uit, en geef één van je kaarten die overeenkomt met je open plek aan een willekeurige speler met factiestukken daar _(zelfs Vijandig)_. Daarna mag je één voorwerp nemen, indien aanwezig, uit het Vervaardigde Voorwerpen vak van die speler, en het met de beeldzijde naar boven in je Knapzak of op zijn bijpassende spoor plaatsen. _(Check je relatie met de factie van die speler.)_
+    - name: Queeste.
+      text: Kies een queeste waarvan de soort overeenkomt met je open plek, en put de twee voorwerpen vermeld op de queeste uit om deze te voltooien. Plaats de queeste in je speelgebied, en trek dan een nieuwe queeste en plaats deze bij de kaart. Je mag één overwinningspunt scoren per queeste van dezelfde soort die je hebt voltooid, inclusief deze, of trek twee kaarten van de trekstapel.
+    - name: Val Aan.
+      text: Put één `item:crossbow` uit om een vijandelijke krijger uit je open plek te verwijderen. Als die vijand geen krijgers daar heeft, mag je in plaats daarvan één van hun andere factiestukken daar verwijderen. _(Check je relatie met de factie van die speler.)_
+    - name: Repareer.
+      text: Put één `item:hammer` uit om één beschadigd voorwerp naar de Knapzak te verplaatsen, waarbij het voorwerp op zijn huidige zijde blijft. (Face up `item:coin`, `item:tea`, `item:sack` verplaatsen direct naar hun sporen).
+    - name: Vervaardig.
+      text: Speel een kaart uit je hand, en put de `item:hammer` van vermelde soort uit om deze te vervaardigen. Al je `item:hammer` komen overeen met de soort van je open plek. Als een kaart meerdere van één soort vereist om te vervaardigen, moet je het vermelde aantal `item:hammer` uitputten. Als je een voorwerp vervaardigt, mag je het met de beeldzijde naar boven in je Knapzak of op het bijpassende spoor plaatsen.
+    - name: Speciale Actie.
+      text: Put één `item:torch` uit om de actie vermeld op je karakterkaart uit te voeren.
+  - name: Avond
+    pretext: Je Avond heeft vier stappen in de volgende volgorde.
+    children:
+    - name: Avondrust.
+      text: Als je in een bos bent, verplaats alle voorwerpen in je Beschadigde vak naar je Knapzak of hun bijpassende spoor, en draai ze met de beeldzijde naar boven.
+    - name: Trek Kaarten.
+      text: Trek één kaart, plus één kaart per `item:coin` met de beeldzijde naar boven op het bijpassende spoor.
+    - name: Leg Kaarten Af.
+      text: Als je meer dan vijf kaarten in je hand hebt, leg dan kaarten naar keuze af tot je er vijf hebt.
+    - name: Check Voorwerplimiet.
+      text: Als je meer voorwerpen in totaal in je Knapzak en Beschadigde vak hebt dan je voorwerplimiet—zes plus twee per `item:sack` met de beeldzijde naar boven op het bijpassende spoor—verwijder dan voorwerpen uit je Knapzak en Beschadigde vak tot je voorwerpen hebt gelijk aan je voorwerplimiet, en verwijder ze permanent uit het spel.
+  - name: Spelen met Twee Vagebonden
+    subtext: Als je _De Riviervolk Uitbreiding_ hebt, kun je een spel spelen met twee Vagebonden door deze regels te volgen.
+    children:
+    - name: Voorbereiding.
+      text: Gebruik beide sets van "R" voorwerpen en plaats twee willekeurige "R" voorwerpen in elk ruïneslot. Als je de Standaard Voorbereiding (5.1) gebruikt, bepaal dan willekeurig welke Vagebond als eerste opzet.
+    - name: Deel Queesten.
+      text: Beide Vagebonden mogen elk van de drie openliggende queesten voltooien. Voeg geen extra queestekaarten toe tijdens de voorbereiding.
+    - name: Voorwerpen Nemen uit Ruïnes.
+      text: Wanneer een Vagebond een ruïne met twee voorwerpen verkent, of de Honderden een ruïne (`rule:14.4.1`) met twee voorwerpen vernietigen, mag die speler deze voorwerpen bekijken en er één naar keuze nemen. _(Door twee Verken acties te nemen, zou de Vagebond beide voorwerpen uit één ruïne kunnen nemen.)_ Een speler kan geen "R" voorwerp nemen als ze hetzelfde type "R" voorwerp op hun factiebord hebben. _(Als de Vagebond verkent maar geen voorwerp neemt, scoort hij geen overwinningspunt, maar de `item:torch` is nog steeds uitgeput.)_
+- name: Hagedissencultus
+  color: "#fcf065"
+  icon: cult
+  children:
+  - name: Overzicht
+    pretext: De Hagedissencultus, die zich richt op de verstoten wezens van het Woudland, probeert zijn vijanden te overweldigen door pure wilskracht. Waar de Cultus heerst over open plekken, kan het **tuinen** bouwen, en zo het evangelie verspreiden onder de dieren die daar leven via mond-tot-mond en snavel-tot-snavel reclame. Hoe sterker hun grip op de harten van hun volgelingen, hoe meer overwinningspunten de Cultus kan scoren door de juiste **rituelen** uit te voeren. Terwijl andere facties kaarten uitgeven om hun doelen te bereiken, handelt de Cultus voornamelijk door kaarten te onthullen en geleidelijk een set ideale volgelingen te verzamelen. Deze onthulde kaarten worden tijdens de Avond teruggegeven aan de hand van de Cultus, tenzij ze worden afgelegd om overwinningspunten te scoren. Deze zachtere aanpak maakt verplaatsing en gevecht echter moeilijk—de Cultus kan deze acties alleen uitvoeren met zijn geradicaliseerde **acolieten**, die worden verkregen wanneer de krijgers van de Cultus worden afgeslacht tijdens het verdedigen in gevecht.
+  - name: Factieregels en Vaardigheden
+    children:
+    - name: Vervaardigen.
+      text: De Cultus vervaardigt tijdens Avond door tuinen te activeren waarvan de gedrukte soort overeenkomt met de Verstoten soort (`rule:10.4.1`). _(Meestal komt dit overeen met de open plek, behalve bij het Verloren Stad oriëntatiepunt.)_
+    - name: Haat tegen Vogels.
+      text: Vogelkaarten zijn niet jokers voor Cultus rituelen.
+    - name: Wraak.
+      text: Wanneer een Cultus krijger wordt verwijderd tijdens het verdedigen in gevecht, wordt deze in het Acolieten vak geplaatst in plaats van in de voorraad van de Cultus.
+    - name: Pelgrims.
+      text: De Cultus heerst over alle open plekken waar ze tuinen hebben. Dit heeft voorrang op de Heren van het Woud van het Arendsnest (`rule:7.2.2`).
+    - name: Angst voor de Gelovigen.
+      text: Wanneer een tuin wordt verwijderd, moet de Cultus een willekeurige kaart afleggen.
+    - name: De Verloren Zielen Stapel.
+      text: Wanneer een kaart wordt uitgegeven of afgelegd _(zelfs een dominantiekaart)_, plaats deze in de Verloren Zielen stapel in plaats van de aflegstapel. De Verloren Zielen stapel mag op elk moment door elke speler worden bekeken.
+  - name: Factie Voorbereiding
+    children:
+    - name: "Stap 1: Verzamel Krijgers."
+      text: Vorm een voorraad van 25 krijgers.
+    - name: "Stap 2: Plaats Krijgers."
+      text: Plaats 4 krijgers en 1 tuin van bijpassende gedrukte soort in een hoekplek die niet de starthoekplek is van een andere speler en, indien mogelijk, diagonaal tegenover een starthoekplek ligt. Plaats dan 1 krijger in elke aangrenzende open plek. _(Dit is bijgewerkt van eerdere drukken voor meer flexibiliteit.)_
+    - name: "Stap 3: Kies Verstotene."
+      text: Plaats de verstoten markering op een willekeurige soort ruimte in het Verstoten vak. De soort van deze ruimte wordt de **Verstotene** genoemd.
+    - name: "Stap 4: Vul Tuin Sporen."
+      text: Plaats je 14 overgebleven tuinen op de bijpassende ruimtes van je Tuinen sporen van rechts naar links.
+  - name: Vogelzang
+    pretext: Je Vogelzang heeft drie stappen in de volgende volgorde.
+    children:
+    - name: Pas Verstotene Aan.
+      text: Kijk naar de kaarten in de Verloren Zielen stapel, negeer vogels. De soort met de meeste kaarten wordt de nieuwe Verstotene—verplaats de verstoten markering, met zijn Verstoten zijde naar boven, naar die soort. Als die soort al de Verstotene was, draai de markering naar Gehaat. Als geen enkele soort de meeste kaarten had, blijft de markering op zijn huidige soort en, als het niet Gehaat is, draait naar de Gehate zijde.
+    - name: Leg Verloren Zielen Af.
+      text: Leg alle kaarten in de Verloren Zielen stapel af naar de aflegstapel. _(Dominantiekaarten worden beschikbaar om te nemen.)_
+    - name: Voer Samenzweringen Uit.
+      text: Je kunt acolieten uitgeven, door ze terug naar je voorraad te sturen, om samenzweringen uit te voeren in open plekken die overeenkomen met de Verstotene, in willekeurige volgorde en combinatie, als volgt. Als je Bekeer of Heilig uitvoert, moet je de samenzwering voltooien. Als de Verstotene Gehaat is, kost de samenzwering één acoliet minder.
+      subchildren:
+      - name: Kruistocht.
+        text: Geef twee acolieten uit om een gevecht te beginnen in een Verstoten open plek **of** om te verplaatsen _(ten minste één krijger)_ vanuit een Verstoten open plek en dan, als je wilt, een gevecht te beginnen in de bestemmingsplek.
+      - name: Bekeer.
+        text: Geef twee acolieten uit om een vijandelijke krijger uit een Verstoten open plek te vervangen door een Cultus krijger. _(Om een stuk te vervangen, moet je in staat zijn om het oude stuk te verwijderen en het nieuwe stuk te plaatsen.)_
+      - name: Heilig.
+        text: Geef drie acolieten uit om een vijandelijk gebouw uit een Verstoten open plek te vervangen door een bijpassende tuin.
+  - name: Daglicht
+    pretext: Je mag een willekeurig aantal kaarten onthullen en één ritueel per onthulde kaart uitvoeren, in willekeurige volgorde en aantal, als volgt. _(Onthul kaarten uit je hand naar je speelgebied. Ze kunnen niet voor andere doeleinden worden gebruikt tijdens Daglicht.)_
+    children:
+    - name: Bouw.
+      text: In een open plek waar je heerst die overeenkomt met de onthulde kaart, plaats een bijpassende tuin.
+    - name: Rekruteer.
+      text: In een open plek die overeenkomt met de onthulde kaart, plaats een krijger.
+    - name: Scoor.
+      text: Geef dezelfde kaart uit die je onthult _(plaats in Verloren Zielen)_ om de overwinningspunten te scoren vermeld boven de meest rechtse lege Tuinen ruimte van de soort die overeenkomt met de onthulde kaart. Je mag dit slechts eenmaal per beurt per soort uitvoeren.
+    - name: Offer.
+      text: Plaats een krijger in het Acolieten vak. Om dit ritueel uit te voeren, moet je een vogelkaart onthullen.
+  - name: Avond
+    pretext: Je Avond heeft drie stappen in de volgende volgorde.
+    children:
+    - name: Neem Onthulde Kaarten Terug.
+      text: Neem alle kaarten die je deze beurt hebt onthuld terug in je hand.
+    - name: Vervaardig.
+      text: Je mag vervaardigen door tuinen te activeren waarvan de gedrukte soort overeenkomt met de Verstoten soort.
+    - name: Trek en Leg Af.
+      text: Trek één kaart, plus één kaart per vrijgekomen trekbonus. Als je daarna meer dan vijf kaarten in je hand hebt, leg dan kaarten naar keuze af tot je er vijf hebt.
+- name: Riviervolk Compagnie
+  color: "#5bc3bd"
+  icon: riverfolk
+  children:
+  - name: Overzicht
+    pretext: Toen het nieuws arriveerde dat het Woudland aan de oever van het grote meer in een complete oorlog verzeild raakte, stuurde de Riviervolk Compagnie snel haar officieren om zaken op te zetten. Terwijl andere facties hun diensten kopen, kan het Riviervolk hun commerciële belangen verder verstevigen door **handelsposten** langs de rivier te vestigen, waarmee ze overwinningspunten scoren. Ook kunnen ze punten scoren door pure accumulatie van **fondsen**, maar een grote schatkist maakt hen een makkelijk doelwit, dus het Riviervolk moet voorzichtig zijn bij het uitbreiden van hun operaties door het gevaarlijke woud.
+  - name: Factieregels en Vaardigheden
+    children:
+    - name: Vervaardigen.
+      text: Het Riviervolk vervaardigt tijdens Daglicht door fondsen toe te wijzen aan lege ruimtes op de Handelspost sporen. _(Ze hebben geen vervaardig stukken.)_
+    - name: Zwemmers.
+      text: Het Riviervolk behandelt rivieren als paden en mag langs rivieren verplaatsen ongeacht wie heerst over hun vertrek- of bestemmingsplek. _(Ze kunnen nog steeds paden gebruiken.)_
+    - name: Open Hand.
+      text: Het Riviervolk plaatst hun hand met de beeldzijde omhoog boven hun factiebord. Als een andere speler een willekeurige kaart zou nemen uit de hand van het Riviervolk, worden de kaarten met de beeldzijde naar beneden gedraaid, geschud, getrokken, en dan weer met de beeldzijde naar boven gedraaid.
+    - name: Fondsen.
+      text: "Om veel acties uit te voeren, wijst het Riviervolk **fondsen** toe en geeft ze uit: krijgers in hun Fondsen vak."
+    - name: Handelsposten.
+      text: Het Riviervolk scoort overwinningspunten wanneer ze handelsposten plaatsen.
+      subchildren:
+      - name: Handelsverstoringen.
+        text: Wanneer een handelspost wordt verwijderd, verwijdert het Riviervolk de helft van hun fondsen, naar boven afgerond, en verwijdert de handelspost permanent uit het spel.
+    - name: Diensten Kopen.
+      text: Aan het begin van Vogelzang van een andere speler, mag die speler Riviervolk diensten kopen.
+      subchildren:
+      - name: Kosten.
+        text: De koper moet krijgers uit hun voorraad in het Betalingen vak van het Riviervolk plaatsen gelijk aan het aantal van de kosten van die dienst vermeld op het Diensten spoor van het Riviervolk.
+      - name: Aantal Diensten.
+        text: Elke beurt mag een speler één dienst kopen plus één per open plek met een handelspost en hun factiestukken.
+      - name: Vagebond Fondsen.
+        text: De Vagebond betaalt voor diensten door voorwerpen uit te putten - voor elk voorwerp dat hij uitput om dit te doen, plaatst het Riviervolk één Riviervolk krijger in het Betalingen vak.
+    - name: Riviervolk Diensten.
+      text: Het Riviervolk biedt drie diensten aan, als volgt.
+      subchildren:
+      - name: Handkaart.
+        text: De koper neemt een willekeurige kaart uit de hand van het Riviervolk en voegt deze toe aan hun hand. _(De koper mag deze dienst meerdere keren kopen zolang ze toegang hebben tot genoeg handelsposten.)_
+      - name: Rivierboten.
+        text: De koper behandelt rivieren als paden tot het einde van hun beurt.
+      - name: Huursoldaten.
+        text: Tijdens Daglicht en Avond van deze beurt, behandelt de koper Riviervolk krijgers als hun eigen voor heerschappij en voor gevecht tegen elke factie behalve het Riviervolk. _(De koper kan ze niet verplaatsen, meetellen voor dominantie, of verwijderen behalve door treffers te incasseren. Ze zijn nog steeds Riviervolk factiestukken, dus ze kunnen niet worden beïnvloed door vaardigheden zoals de Veldhospitalen van de Markiezin of gebruikt in acties zoals het Beïnvloeden van Ministers van het Hertogdom.)_
+        subchildren:
+        - name: Treffers Incasseren.
+          text: De koper moet treffers verdelen, oneven treffers incasseren door eigen _(niet Riviervolk)_ krijgers te verwijderen, indien aanwezig, of eigen gebouwen of fiches alleen als ze geen krijgers _(inclusief Riviervolk)_ in de open plek van het gevecht hebben.
+        - name: Vagebond Huursoldaten.
+          text: De Vagebond kan geen Riviervolk huursoldaten kopen. _(Als een koper tegen de Vagebond vecht en een Riviervolk huurling krijger wordt verwijderd, wordt de factie van de koper Vijandig, niet het Riviervolk.)_
+  - name: Factie Voorbereiding
+    children:
+    - name: "Stap 1: Verzamel Krijgers."
+      text: Vorm een voorraad van 15 krijgers.
+    - name: "Stap 2: Plaats Krijgers."
+      text: Plaats 4 krijgers in willekeurige open plekken die de rivier raken.
+    - name: "Stap 3: Vul Handelsposten Sporen."
+      text: Plaats de 9 handelsposten op de bijpassende ruimtes van je Handelsposten sporen.
+    - name: "Stap 4: Krijg Startfondsen."
+      text: Plaats 3 krijgers in je Betalingen vak.
+    - name: "Stap 5: Stel Startprijzen In."
+      text: Plaats 1 dienstmarkering op een willekeurige ruimte van elk van je Diensten sporen.
+  - name: Vogelzang
+    pretext: Je Vogelzang heeft drie stappen in de volgende volgorde.
+    children:
+    - name: Bescherm.
+      text: Als het Betalingen vak leeg is, plaats twee krijgers erin.
+    - name: Scoor Dividend.
+      text: Als er handelsposten op de kaart zijn, scoor één overwinningspunt per twee fondsen. _(Tel niet mee voor krijgers in Betalingen of Toegewezen.)_
+    - name: Verzamel Fondsen.
+      text: Verplaats alle krijgers op je factiebord naar het Fondsen vak.
+  - name: Daglicht
+    pretext: Je kunt fondsen toewijzen en uitgeven om acties te nemen, als volgt, in willekeurige volgorde en aantal. Wanneer je een fonds toewijst, verplaats je de krijger naar het Toegewezen vak. Wanneer je een fonds uitgeeft, stuur je de krijger terug naar de voorraad van zijn eigenaar.
+    children:
+    - name: Verplaats.
+      text: Wijs één fonds toe om een verplaatsing te nemen.
+    - name: Vecht.
+      text: Wijs één fonds toe om een gevecht te beginnen.
+    - name: Vervaardig.
+      text: Wijs fondsen toe om een kaart uit je hand te vervaardigen. In plaats van deze krijgers naar het Toegewezen vak te verplaatsen, moet je ze plaatsen op lege ruimtes van de Handelsposten sporen die overeenkomen met de soorten vermeld op de vervaardigingskosten.
+      subchildren:
+      - name: Exporteer.
+        text: Je mag het vermelde voordeel van het vervaardigen van een kaart negeren, deze afleggen, om één Riviervolk krijger in het Betalingen vak te plaatsen.
+    - name: Trek.
+      text: Wijs één fonds toe om een kaart te trekken.
+    - name: Rekruteer.
+      text: Geef één fonds uit om een krijger te plaatsen in een willekeurige open plek met een rivier.
+    - name: Vestig Handelspost met Garnizoen.
+      text: Geef twee fondsen uit om een handelspost en een krijger te plaatsen.
+      subchildren:
+      - name: Kies Open Plek.
+        text: Kies een willekeurige open plek zonder handelspost die wordt beheerst door een willekeurige speler.
+      - name: Geef Fondsen Uit.
+        text: Geef twee fondsen uit van de speler die de gekozen open plek beheerst.
+      - name: Plaats en Scoor.
+        text: Plaats de bijpassende handelspost en één krijger in de gekozen open plek. Scoor de overwinningspunten vermeld op de vrijgekomen ruimte op je factiebord.
+  - name: Avond
+    pretext: Je Avond heeft twee stappen in de volgende volgorde.
+    children:
+    - name: Leg Kaarten Af.
+      text: Als je meer dan vijf kaarten in je hand hebt, leg dan kaarten naar keuze af tot er vijf zijn.
+    - name: Stel Kosten In.
+      text: Je mag elke dienstmarkering naar een willekeurige ruimte op zijn spoor verplaatsen, om deze in te stellen op de nieuwe kosten.
+- name: Ondergronds Hertogdom
+  color: "#eec4ab"
+  icon: duchy
+  children:
+  - name: Overzicht
+    pretext: Het Ondergronds Hertogdom wil de vreemde wezens van het Woudland laten zien dat ze beter af zouden zijn als onderdanen. Terwijl ze grensposten opzetten om hun macht in het Woudland te tonen, kan het Hertogdom **ministers** naar hun zaak overhalen, overwinningspunten scoren en meer van de middelen van het Hertogdom omleiden. Maar wees voorzichtig—een ommekeer van het lot zou kunnen leiden tot publieke vernedering, waardoor ministers de taak opgeven.
+  - name: Factieregels en Vaardigheden
+    children:
+    - name: Vervaardigen.
+      text: Het Hertogdom vervaardigt tijdens Avond door citadellen en markten te activeren.
+    - name: Het Hol.
+      text: "**Het Hol** is een soortloze open plek die grenst aan elke open plek met een tunnelfiche. Niet-Hertogdom stukken kunnen niet in het Hol worden geplaatst of erheen worden verplaatst. Het Hertogdom heerst altijd over het Hol _(zelfs zonder stukken daar)_."
+    - name: De Tol van Mislukking.
+      text: Wanneer een willekeurig aantal Hertogdom gebouwen wordt verwijderd, stuurt het Hertogdom hun beïnvloede minister kaart van hoogste rang _(heer, dan edelman, dan schildknaap)_ terug naar hun Niet-beïnvloede Ministers stapel, en verwijdert zijn kroon permanent uit het spel, en legt dan een willekeurige kaart af. Als ze meerdere beïnvloede ministers van hoogste rang hebben, kiest het Hertogdom welke terug te sturen.
+    - name: Tunnels.
+      text: Het Hertogdom heeft drie tunnelfiches. Als het Hertogdom wordt gevraagd om een tunnel te plaatsen maar alle drie tunnels zijn op de kaart, mag het Hertogdom eerst een willekeurige tunnel van de kaart verwijderen.
+  - name: Factie Voorbereiding
+    children:
+    - name: "Stap 1: Verzamel Krijgers en Tunnels."
+      text: Vorm voorraden van 20 krijgers en 3 tunnelfiches.
+    - name: "Stap 2: Bereid het Hol Voor."
+      text: Plaats het Holbord bij de kaart.
+    - name: "Stap 3: Duik Op."
+      text: Plaats 2 krijgers en 1 tunnel in een hoekplek die niet de starthoekplek is van een andere speler en, indien mogelijk, diagonaal tegenover een starthoekplek ligt. Plaats dan 2 krijgers in elke open plek aangrenzend aan die hoekplek, behalve het Hol. _(Dit is bijgewerkt van eerdere drukken voor meer flexibiliteit.)_
+    - name: "Stap 4: Vul Gebouwsporen."
+      text: Plaats 3 citadellen en 3 markten op je bijpassende Gebouwen ruimtes.
+    - name: "Stap 5: Verzamel Ministers."
+      text: Plaats 9 minister kaarten met de beeldzijde naar boven op je Niet-beïnvloede Ministers stapel.
+    - name: "Stap 6: Vul Kroonruimtes."
+      text: Plaats 9 kronen op de ruimtes met overwinningspunten op je factiebord.
+  - name: Vogelzang
+    pretext: Plaats één krijger, plus één krijger per krijger icoon dat zichtbaar is, in het Hol.
+  - name: Daglicht
+    pretext: Je Daglicht heeft drie stappen in de volgende volgorde.
+    children:
+    - name: Vergader.
+      text: Je mag tot twee acties nemen in willekeurige volgorde en aantal, als volgt.
+      subchildren:
+      - name: Bouw.
+        text: Onthul één kaart om een citadel of markt te plaatsen in een bijpassende open plek waar je heerst.
+      - name: Rekruteer.
+        text: Plaats één krijger in het Hol.
+      - name: Verplaats.
+        text: Neem een verplaatsing.
+      - name: Vecht.
+        text: Begin een gevecht.
+      - name: Graaf.
+        text: Geef één kaart uit om een tunnelfiche te plaatsen in een bijpassende open plek zonder tunnelfiche. Verplaats dan tot vier krijgers van het Hol naar die open plek. _(Als alle drie tunnels op de kaart zijn, mag je eerst een tunnel verwijderen.)_
+    - name: Parlement.
+      text: Je mag de actie van elke beïnvloede minister eenmaal nemen in willekeurige volgorde.
+      subchildren:
+      - name: Hoofdmol.
+        text: Onthul een willekeurige kaart om een citadel of markt te plaatsen in een willekeurige open plek _(bijpassend of niet)_ waar je heerst.
+      - name: Kapitein.
+        text: Begin een gevecht.
+      - name: Maarschalk.
+        text: Neem een verplaatsing.
+      - name: Brigadier.
+        text: Neem tot twee verplaatsingen of begin tot twee gevechten.
+      - name: Bankier.
+        text: Geef een willekeurig aantal kaarten _(zelfs één)_ van dezelfde soort uit om evenveel overwinningspunten te scoren.
+      - name: Burgemeester.
+        text: Neem de actie van een willekeurige beïnvloede edelman of schildknaap.
+      - name: Hertogin van Modder.
+        text: Scoor twee overwinningspunten als alle drie tunnels op de kaart zijn.
+      - name: Baron van Aarde.
+        text: Scoor één overwinningspunt per markt op de kaart.
+      - name: Graaf van Steen.
+        text: Scoor één overwinningspunt per citadel op de kaart.
+    - name: Beïnvloed.
+      text: Je mag één minister beïnvloeden, als volgt.
+      subchildren:
+      - name: Kies Minister.
+        text: Kies een minister kaart in je Niet-beïnvloede Ministers stapel. Je moet een kroon op je factiebord hebben die overeenkomt met de rang _(schildknaap, edelman, heer)_ van die minister.
+      - name: Onthul Kaarten.
+        text: Onthul het aantal kaarten vermeld op de gekozen minister. Voor elke kaart die je wilt onthullen, moet je ten minste één Hertogdom stuk hebben in een open plek die overeenkomt met de soort van die kaart. Elke zodanige open plek met jouw stukken staat je alleen toe om één bijpassende kaart te onthullen.
+      - name: Beïnvloed Minister en Scoor.
+        text: Neem de gekozen minister kaart en plaats deze boven je factiebord. Neem een kroon van die minister's rang van je factiebord en plaats deze op de minister kaart. Scoor de overwinningspunten vermeld op de vrijgekomen ruimte op je factiebord.
+  - name: Avond
+    pretext: Je Avond heeft drie stappen in de volgende volgorde.
+    children:
+    - name: Leg Af en Keer Onthulde Kaarten Terug.
+      text: Leg alle vogelkaarten af die je deze beurt hebt onthuld, en neem dan alle andere kaarten die je deze beurt hebt onthuld terug in je hand.
+    - name: Vervaardig.
+      text: Je mag vervaardigen door citadellen en markten te activeren. _(Deze zijn identiek voor vervaardigen.)_
+    - name: Trek en Leg Af.
+      text: Trek één kaart, plus één kaart per kaart trek icoon dat zichtbaar is. Als je daarna meer dan vijf kaarten in je hand hebt, leg dan kaarten naar keuze af tot je er vijf hebt.
+- name: Kraaien Complot
+  color: "#925da5"
+  icon: corvid
+  children:
+  - name: Overzicht
+    pretext: Het Kraaien Complot probeert het Woudland tot onderwerping te dwingen door criminele **complotten** te voltooien, waarbij ze overwinningspunten scoren elke keer dat ze er een omdraaien. Hoe meer onthulde complotten op de kaart, hoe meer ze scoren. Misleiding is cruciaal—als hun plannen te duidelijk zijn, riskeren de Kraaien ontmaskering. Om dit te voorkomen, moeten ze zorgvuldig rekruteren en zoeken naar elke mogelijkheid voor bedrog en afpersing.
+  - name: Factieregels en Vaardigheden
+    children:
+    - name: Vervaardigen.
+      text: De Kraaien vervaardigen tijdens Vogelzang door complotfiches te activeren _(of ze nu met de beeldzijde naar boven of beneden liggen)_.
+    - name: Complotfiches.
+      text: De Kraaien hebben acht complotfiches, twee van elk type.
+      subchildren:
+      - name: Fiche Richting.
+        text: Terwijl ze in de voorraad van de Kraaien zijn, liggen complotfiches met de beeldzijde naar beneden _(veer)_. Op de kaart kan een complotfiche met de beeldzijde naar boven _(uniek icoon)_ of naar beneden liggen. De Kraaien kunnen elk fiche met de beeldzijde naar beneden op elk moment bekijken.
+      - name: Plaatsingslimieten.
+        text: Elke open plek kan maar één complotfiche bevatten.
+    - name: Behendig.
+      text: De Kraaien kunnen zich verplaatsen ongeacht wie heerst over hun vertrek- of bestemmingsplek.
+    - name: Ontmaskering.
+      text: Op elk moment tijdens hun beurt, maar voor het trekken van kaarten in hun Avond, kan een vijandelijke speler met factiestukken in een open plek met een complotfiche met de beeldzijde naar beneden de Kraaien een bijpassende kaart laten zien om het type complotfiche in die open plek te raden. Als onjuist, zeggen de Kraaien "nee," en de vijandelijke speler geeft die kaart aan de Kraaien. Als juist, verwijdert de vijandelijke speler het complotfiche _(scoort een overwinningspunt)_ en negeert het effect ervan.
+    - name: Ingesloten Agenten.
+      text: Als verdediger in gevecht, als de Kraaien een complotfiche met de beeldzijde naar beneden hebben _(zelfs weerloos)_ in de open plek van het gevecht, brengen ze een extra treffer toe.
+  - name: Factie Voorbereiding
+    children:
+    - name: "Stap 1: Verzamel Krijgers en Complotten."
+      text: Vorm voorraden van 15 krijgers en 8 complotfiches met de beeldzijde naar beneden.
+    - name: "Stap 2: Verspreid."
+      text: Plaats 1 krijger in een willekeurige open plek van elke soort _(totaal van 3)_.
+  - name: Vogelzang
+    pretext: Je Vogelzang heeft drie stappen in de volgende volgorde.
+    children:
+    - name: Vervaardig.
+      text: Je mag complotfiches _(of ze nu met de beeldzijde naar boven of beneden liggen)_ activeren om kaarten uit je hand te vervaardigen.
+    - name: Draai Complotten Om.
+      text: Een willekeurig aantal keren mag je een complotfiche met de beeldzijde naar boven draaien in een open plek met Kraaien krijgers, scoor één overwinningspunt per complotfiche met de beeldzijde naar boven op de kaart _(inclusief het net omgedraaide)_, en los dan het omdraai-effect op als het een bom of afpersing is.
+    - name: Rekruteer.
+      text: Eenmaal per beurt mag je een willekeurige kaart uitgeven om één krijger te plaatsen in elke bijpassende open plek. _(Als je een vogel uitgeeft, kies dan één soort om krijgers in te plaatsen.)_
+  - name: Daglicht
+    pretext: Je mag tot drie acties nemen, als volgt.
+    children:
+    - name: Verplaats.
+      text: Neem een verplaatsing.
+    - name: Complotteren.
+      text: Verwijder een Kraaien krijger, plus nog een Kraaien krijger per complot dat je deze beurt hebt geplaatst, uit een open plek zonder complotfiches om een complotfiche met de beeldzijde naar beneden daar te plaatsen.
+    - name: Vecht.
+      text: Begin een gevecht.
+    - name: Truc.
+      text: Wissel twee complotfiches op de kaart. Beide complotfiches moeten met de beeldzijde naar boven of beneden liggen.
+  - name: Avond
+    pretext: Je Avond heeft twee stappen in de volgende volgorde.
+    children:
+    - name: Span In.
+      text: Je mag één actie vermeld in Daglicht nemen als je ervoor kiest om tijdens Avond geen kaarten te trekken.
+    - name: Trek.
+      text: Trek één kaart plus één kaart per complotfiche met afpersing met de beeldzijde naar boven op de kaart. Als je daarna meer dan vijf kaarten hebt, leg dan af tot vijf kaarten.
+  - name: Complotfiches Referentie
+    children:
+    - name: Bom.
+      text: Wanneer een bomfiche wordt omgedraaid, verwijder alle vijandelijke stukken in zijn open plek, verwijder dan het bomfiche.
+    - name: Valstrik.
+      text: Terwijl een valstrikfiche met de beeldzijde naar boven ligt, kunnen vijandelijke stukken niet worden geplaatst in of verplaatst uit zijn open plek.
+    - name: Afpersing.
+      text: Wanneer een afpersingsfiche wordt omgedraaid, neem een willekeurige kaart van elke vijandelijke speler met factiestukken in zijn open plek. Terwijl een afpersingsfiche met de beeldzijde naar boven ligt, trek je nog een kaart tijdens Avond.
+    - name: Overval.
+      text: Wanneer een overvalfiche wordt verwijderd _(met beeldzijde naar boven of beneden)_, plaats één krijger in elke open plek aangrenzend aan de open plek waaruit de overval werd verwijderd. _(Negeer dit effect als de overval wordt verwijderd door Ontmaskering.)_
+- name: Heer van de Honderden
+  color: "#e11b3f"
+  icon: warlord
+  children:
+  - name: Overzicht
+    pretext: De Heer van de Honderden duldt geen dwazen en staat geen onenigheid toe. Tijdens hun Avond scoren ze punten gebaseerd op hoe goed ze hun vijanden **onderdrukken**. Hoe meer open plekken ze beheersen die een Honderden stuk hebben en geen vijandelijke stukken—geen krijgers, geen gebouwen, niets—hoe meer punten ze scoren. Om in macht te groeien en krijgers aan te trekken, moeten de Honderden voorwerpen verkrijgen en deze toevoegen aan hun imposante **hamstervoorraad**. De Honderden worden geleid door de **krijgsheer**, een krijger-demagoog wiens grillige **stemming** hen een vaardigheid geeft voor de beurt. Hun krijgsheer is geobsedeerd door hamsteren, dus naarmate de Honderden meer voorwerpen verkrijgen, hebben ze minder stemmingen om uit te kiezen. Door zichzelf uit te roepen als de ware stem van het Woudland, kunnen de Honderden **menigtes** ophitsen, die vijandelijke gebouwen en fiches vernietigen, en ruïnes plunderen voor voorwerpen.
+  - name: Factieregels en Vaardigheden
+    children:
+    - name: Vervaardigen.
+      text: De Honderden vervaardigen tijdens Daglicht door vestingen te activeren.
+    - name: De Krijgsheer.
+      text: De Honderden hebben een stuk genaamd de krijgsheer. De krijgsheer is een krijger die niet kan worden verwijderd buiten gevecht, niet kan worden verplaatst buiten de beurt van de Honderden, of niet kan worden geplaatst op andere manieren dan met de Zalven actie (`rule:14.4.3`).
+    - name: Minachting voor Handel.
+      text: Wanneer de Honderden een voorwerp vervaardigen, mogen ze het voorwerp nemen maar geen van de vermelde overwinningspunten scoren, of ze mogen het voorwerp permanent verwijderen om de vermelde overwinningspunten te scoren. _(Ze kunnen nog steeds extra punten scoren van effecten zoals Meester Graveurs en de Legendarische Smederij.)_
+    - name: De Hamstervoorraad.
+      text: In plaats van een Vervaardigde Voorwerpen vak hebben de Honderden het Hamstervoorraad vak. Dit heeft twee sporen, Bevel en Bekwaamheid. Het Bevel spoor kan `item:boot`, `item:sack` en `item:coin` bevatten. Het Bekwaamheid spoor kan `item:hammer`, `item:tea`, `item:sword` en `item:crossbow` bevatten.
+      subchildren:
+      - name: Voorwerpen Verkrijgen.
+        text: Wanneer de Honderden een voorwerp verkrijgen, leggen ze het in de meest linkse lege Bevel of Bekwaamheid ruimte gebaseerd op het voorwerptype; als er geen zodanige lege ruimte is, moeten ze het verkregen voorwerp of een voorwerp op dat spoor permanent verwijderen, en ze scoren één overwinningspunt.
+      - name: Bevel en Bekwaamheid.
+        text: Het aantal voorwerpen op de Bevel en Bekwaamheid sporen bepaalt hun Bevel en Bekwaamheid, die verschillende delen van hun regels beïnvloeden. Zonder voorwerpen hebben ze 1 Bevel of Bekwaamheid; met één of twee voorwerpen hebben ze 2; met drie voorwerpen hebben ze 3; met vier voorwerpen hebben ze 4.
+    - name: Plunderaars.
+      text: Aan het begin van gevecht als aanvaller mogen de Honderden verklaren dat ze de verdediger willen plunderen, zolang de verdediger een voorwerp in hun Vervaardigde Voorwerpen vak heeft. _(Ze kunnen de Vagebond niet plunderen.)_ Als ze verklaren dat ze willen plunderen, brengen de Honderden geen geworpen treffers toe. _(De verdediger brengt geworpen treffers toe, en de Honderden kunnen nog steeds extra treffers toebrengen, zoals van hun Toornige stemming.)_ Dan, aan het einde van dat gevecht, als de Honderden heersen over de open plek van het gevecht, nemen ze één voorwerp uit het Vervaardigde Voorwerpen vak van de verdediger.
+  - name: Factie Voorbereiding
+    children:
+    - name: "Stap 1: Garnizoen"
+      text: Plaats je krijgsheer, vier krijgers, en één vesting in een hoekplek die niet de starthoekplek is van een andere speler en, indien mogelijk, diagonaal tegenover een starthoekplek ligt.
+    - name: "Stap 2: Plaats Voorwerpen"
+      text: Plaats de vier "R" voorwerpen willekeurig onder de ruïnes, tenzij dit al is gedaan.
+    - name: "Stap 3: Word Koppig"
+      text: Plaats je Koppige stemmingskaart op je Stemmingskaart slot.
+  - name: Vogelzang
+    pretext: Je Vogelzang heeft vier stappen in de volgende volgorde.
+    children:
+    - name: Verwoest.
+      text: In elke open plek met een menigtefiche, verwijder alle vijandelijke gebouwen en fiches, neem één voorwerp van de ruïne in de open plek, indien aanwezig, en verwijder de ruïne als je zijn laatste voorwerp nam. Na het oplossen van alle menigtes, moet je eenmaal met de menigte dobbelsteen werpen en een menigtefiche plaatsen in een bijpassende open plek die geen menigtefiche heeft maar grenst aan een open plek met een menigtefiche. _(Als er geen zulke open plekken zijn, plaats dan geen menigte.)_
+    - name: Rekruteer.
+      text: Plaats krijgers gelijk aan je Bekwaamheid in de open plek met je krijgsheer. Plaats dan krijgers in elke open plek met vestingen, één krijger per vesting daar.
+    - name: Zalf.
+      text: Als de krijgsheer niet op de kaart is, moet je een willekeurige Honderden krijger vervangen door de krijgsheer. Als je dat niet kunt, moet je de krijgsheer in een willekeurige open plek plaatsen.
+    - name: Kies Stemming.
+      text: Je moet de stemmingskaart in je Stemmingskaart slot vervangen door een andere stemmingskaart die geen voorwerp toont dat in je Hamstervoorraad zit. Als je Verkwistend bent en geen nieuwe stemmingskaart kunt kiezen, blijf je Verkwistend.
+  - name: Daglicht
+    pretext: Je Daglicht heeft drie stappen in de volgende volgorde.
+    children:
+    - name: Vervaardig.
+      text: Je mag vestingen activeren om kaarten te vervaardigen.
+    - name: Beveel de Honderden.
+      text: Je mag de volgende acties nemen, in willekeurige volgorde, een aantal keren tot aan je Bevel.
+      subchildren:
+      - name: Verplaats
+        text: Neem een verplaatsing.
+      - name: Vecht.
+        text: Begin een gevecht.
+      - name: Bouw.
+        text: Geef een kaart uit om een vesting te plaatsen in een bijpassende open plek waar je heerst.
+    - name: Laat de Krijgsheer Oprukken.
+      text: Je mag deze actie een aantal keren nemen tot aan je Bekwaamheid. Je mag de krijgsheer verplaatsen met willekeurige Honderden krijgers, en dan mag je vechten in de open plek van de krijgsheer.
+  - name: Avond
+    pretext: Je Avond heeft drie stappen in de volgende volgorde.
+    children:
+    - name: Hits Op.
+      text: Je mag een willekeurig aantal keren een kaart uitgeven om een menigtefiche te plaatsen in een bijpassende open plek die geen menigtefiche heeft maar wel een Honderden krijger heeft _(inclusief je krijgsheer)_.
+    - name: Onderdruk.
+      text: Je scoort overwinningspunten gebaseerd op het aantal open plekken waar je heerst die een Honderden stuk hebben en geen vijandelijke stukken. Voor één of twee open plekken, scoor één punt; voor drie of vier open plekken, scoor twee punten; voor vijf open plekken, scoor drie punten; voor zes of meer open plekken, scoor vier punten.
+    - name: Trek en Leg Af.
+      text: Trek één kaart. Als je daarna meer dan vijf kaarten in je hand hebt, leg dan kaarten naar keuze af tot je er vijf hebt.
+  - name: Stemmingen
+    children:
+    - name: Verbitterd (`item:hammer`).
+      text: In gevecht in de open plek van je krijgsheer mag je voor het werpen een willekeurig aantal menigtefiches verwijderen uit de open plek van je krijgsheer en aangrenzende open plekken. Plaats krijgers in de open plek van je krijgsheer gelijk aan het aantal menigtefiches dat je verwijderde.
+    - name: Groots (`item:tea`).
+      text: Deze beurt voer je je Laat de Krijgsheer Oprukken stap (`rule:14.5.3`) en je Beveel de Honderden stap (`rule:14.5.2`) in omgekeerde volgorde uit. _(Eerst Laat de Krijgsheer Oprukken, dan Beveel de Honderden.)_
+    - name: Uitgelaten (`item:boot`).
+      text: Wanneer je de Hits Op actie neemt in de open plek van je krijgsheer, mag je na het plaatsen van de menigtefiche voor de actie, tot vier keer—met de menigte dobbelsteen werpen en een menigtefiche plaatsen in een bijpassende open plek die geen menigtefiche heeft maar grenst aan een open plek met een menigtefiche.
+    - name: Verkwistend (Geen Voorwerp).
+      text: Aan het einde van je Vogelzang mag je een willekeurig aantal voorwerpen permanent uit je Hamstervoorraad verwijderen. Voor elk voorwerp dat je verwijdert, plaats twee krijgers in de open plek van je krijgsheer. Als je klaar bent, verschuif voorwerpen in je Hamstervoorraad om de sporen van links naar rechts te vullen.
+    - name: Onvermurwbaar (`item:sack`).
+      text: Wanneer je de Laat de Krijgsheer Oprukken actie neemt en zowel verplaatst als vecht, mag je daarna ofwel je krijgsheer verplaatsen met willekeurige Honderden krijgers of vechten in de open plek van je krijgsheer.
+    - name: Rumoerig (`item:coin`).
+      text: In Avond trek je één extra kaart. Als de open plek van je krijgsheer drie of meer vijandelijke stukken heeft (zelfs een combinatie van stukken van verschillende vijanden), trek in plaats daarvan twee extra kaarten.
+    - name: Koppig (`item:crossbow`).
+      text: In gevecht in de open plek van je krijgsheer negeer je de eerste treffer die je incasseert. _(Dit combineert niet met andere vaardigheden die je de eerste treffer die je incasseert laten negeren.)_
+    - name: Toornig (`item:sword`).
+      text: Als aanvaller in gevecht in de open plek van je krijgsheer breng je een extra treffer toe.
+- name: IJzeren Bewaarders
+  color: "#8b8d90"
+  icon: keepers
+  children:
+  - name: Overzicht
+    pretext: De IJzeren Bewaarders zijn een orde van toegewijde ridders, ooit verbannen uit het Woudland, die zijn teruggekeerd om **relikwieën** te herstellen die verloren zijn gegaan in vroegere conflicten. Of deze relikwieën echter aan de Bewaarders of aan het Woudland toebehoren, is een andere vraag. Om hun missie te volbrengen, zullen ze relikwieën uit de bossen moeten delven, ze naar een **overslagplaats** van hetzelfde type moeten verplaatsen, en ze dan moeten herstellen. Wanneer ze een relikwie herstellen, scoren ze punten gelijk aan de waarde van de relikwie van één tot drie, en ze scoren ook twee punten elke keer dat ze een set van de drie relikwie types voltooien—beeldjes, tabletten en juwelen. Na verloop van tijd zullen de Bewaarders een **gevolg** van Woudland wezens verzamelen, waardoor ze meer acties kunnen nemen. Echter, elke keer dat ze een relikwie delven of herstellen, kunnen ze de Gevolg kaart verliezen die ze gebruikten om te handelen, dus ze zullen vooruit moeten plannen en verstandige risico's moeten nemen om te slagen.
+  - name: Factieregels en Vaardigheden
+    children:
+    - name: Relikwieën.
+      text: Je zoekt twaalf relikwiefiches van drie types—beeldjes, tabletten en juwelen. Elk relikwie type heeft in totaal vier fiches. De relikwie voorkant toont alleen zijn type, en de relikwie achterkant toont een waarde van 1, 2, 3, of 3.
+    - name: Overslagplaatsen.
+      text: Je hebt drie overslagplaatsen. Elke overslagplaats toont één relikwie type op zijn voorkant en een ander relikwie type op zijn achterkant.
+    - name: Vervaardigen.
+      text: De Bewaarders vervaardigen tijdens Daglicht door overslagplaatsen te activeren _(van elk type)_.
+    - name: Toegewijde Ridders.
+      text: In gevecht, als de open plek van het gevecht ten minste één relikwie en ten minste één Bewaarder krijger heeft, negeren de Bewaarders de eerste treffer die ze incasseren. _(Als ze in een hinderlaag lopen, negeer één treffer van de hinderlaag, maar negeer geen verdere treffers.)_ Bij verplaatsing mogen de Bewaarders één relikwie verplaatsen met elke Bewaarder krijger die ze verplaatsen.
+    - name: Kostbare Trofeeën.
+      text: Wanneer een vijand een relikwie verwijdert, plaatsen ze het met de beeldzijde naar boven in een willekeurig bos en scoren een extra overwinningspunt _(voor een totaal van twee)_.
+  - name: Factie Voorbereiding
+    children:
+    - name: "Stap 1: Plaats Startrelikwieën"
+      text: "Verzamel alle twaalf relikwiefiches en schud ze met de beeldzijde naar beneden _(zonder dat de waarde zichtbaar is)_. Plaats er willekeurig één in elk bos. _(We raden aan dat je de relikwieën gewoon met de beeldzijde naar beneden schuift, en dan zo snel mogelijk relikwieën plaatst als groep. Anders kun je deze meer willekeurige maar omslachtige methode gebruiken: de Bewaarders stapelen de willekeurige relikwieën, dan snijdt een andere speler de stapel, pakt deze op, en laat relikwieën één voor één van onderaf op de bossen vallen.)_"
+    - name: "Stap 2: Plaats Krijgers"
+      text: Plaats vier krijgers in een hoekplek die niet de starthoekplek is van een andere speler en, indien mogelijk, diagonaal tegenover een starthoekplek ligt. Plaats dan vier krijgers in een open plek aan de rand van de kaart die grenst aan de gekozen open plek.
+    - name: "Stap 3: Plaats Overgebleven Relikwieën"
+      text: Plaats alle overgebleven relikwieën willekeurig, zo gelijk mogelijk verdeeld, tussen bossen die niet grenzen aan open plekken met je krijgers.
+    - name: "Stap 4: Voeg Trouwe Volgelingen In"
+      text: Voeg één Trouwe Volgeling kaart in in elk Gevolg slot van je factiebord.
+    - name: "Stap 5: Verzamel Overslagplaatsen"
+      text: Plaats je drie overslagplaats gebouwen op de bijpassende Overslagplaatsen ruimtes van je factiebord.
+  - name: Vogelzang
+    pretext: Je Vogelzang heeft drie stappen in de volgende volgorde.
+    children:
+    - name: Kamp Opslaan.
+      text: Eenmaal per open plek mag je een Bewaarder krijger vervangen door een overslagplaats. Als je geen krijgers of overslagplaatsen op de kaart hebt, plaats in plaats daarvan één overslagplaats en één krijger in een willekeurige open plek aan de rand van de kaart. In beide gevallen mag je de overslagplaats met de beeldzijde naar boven of naar beneden plaatsen.
+    - name: Breek Kamp Af.
+      text: Eenmaal per open plek mag je een overslagplaats vervangen door een Bewaarder krijger.
+    - name: Rekruteer.
+      text: Een willekeurig aantal keren mag je een kaart uitgeven om twee krijgers te plaatsen bij een bijpassende overslagplaats.
+  - name: Daglicht
+    pretext: Je Daglicht heeft twee stappen in de volgende volgorde.
+    children:
+    - name: Vervaardig.
+      text: Je mag overslagplaatsen _(van elk type)_ activeren om kaarten te vervaardigen.
+    - name: Handel met Gevolg.
+      text: Beginnend met de meest linkse kolom van je Gevolg en naar rechts bewegend, mag je de actie van de kolom nemen, als volgt, voor elke kaart in de kolom in willekeurige volgorde.
+      subchildren:
+      - name: Verplaats.
+        text: Neem een verplaatsing vanuit een open plek waarvan de soort overeenkomt met de kaartsoort.
+      - name: Vecht dan Delven.
+        text: Kies een open plek waarvan de soort overeenkomt met de kaartsoort. Je moet daar een gevecht beginnen als er vijandelijke stukken zijn. Daarna, als je heerst over de open plek en er ten minste één Bewaarder krijger heeft, mag je daar delven als volgt _(zelfs als er geen vijand was om tegen te vechten)_.
+        subchildren:
+        - name: "Stap 1: Verplaats en Draai Relikwie Om."
+          text: Verplaats een willekeurige relikwie van een aangrenzend bos naar die open plek. Draai die relikwie zodat zijn waarde zichtbaar is als dat nog niet zo is.
+        - name: "Stap 2: Check voor Afleggen."
+          text: Tel het aantal open plekken waar je heerst die grenzen aan het bos waaruit je de relikwie delfde. Als je over minder van deze open plekken heerst dan de waarde van de relikwie, dan moet je de Gevolg kaart afleggen die je gebruikte om deze actie te nemen.
+      - name: Verplaats of Herstel.
+        text: Kies een open plek waarvan de soort overeenkomt met de kaartsoort. Neem een verplaatsing eruit, of herstel relikwieën eruit als volgt.
+        subchildren:
+        - name: "Stap 1: Neem Relikwie."
+          text: Neem een relikwie daar van hetzelfde type als een overslagplaats daar. Plaats het in je meest linkse lege Relikwieën ruimte van dat relikwie type.
+        - name: "Stap 2: Scoor Punten."
+          text: Scoor overwinningspunten gelijk aan de waarde van de relikwie, en scoor twee overwinningspunten als je een Relikwieën kolom vulde.
+        - name: "Stap 3: Check voor Afleggen."
+          text: Tel het aantal open plekken waar je heerst waarvan de soort overeenkomt met de open plek waaruit je de relikwie herstelt. Als je over minder van deze open plekken heerst dan de waarde van de relikwie, dan moet je deze Herstel actie beëindigen en de Gevolg kaart afleggen die je gebruikte om deze actie te nemen. Anders mag je terug naar de Neem Relikwie stap of deze Herstel actie beëindigen.
+- name: Varianten, Vagebonden en Huurlingen
+  color: "#000000"
+  children:
+  - name: Geavanceerde Voorbereiding
+    children:
+    - name: "Stap 1: Kies en Bereid Kaart Voor"
+      text: Kies als groep een kaart. Als je een alternatieve kaart kiest, volg dan de Voorbereiding Aanpassingen sectie, verzamel dan de 12 soort markeringen, draai ze met de beeldzijde naar beneden, en schud ze, plaats dan één op elke open plek, waarbij je de gedrukte soort symbolen bedekt indien aanwezig. Bereid de ruïnes (`rule:5.1.4`), voorwerpenvoorraad (`rule:5.1.5`), en dobbelstenen (`rule:5.1.6`) voor zoals normaal.
+    - name: "Stap 2: Kies Dek"
+      text: Als groep mag je ervoor kiezen om het hele standaard dek te vervangen door het Ballingen en Partizanen dek.
+    - name: "Stap 3: Bereid Bots Voor"
+      text: Als groep mag je ervoor kiezen om met bots te spelen, zoals beschreven in het Wetboek van Rootbotica.
+    - name: "Stap 4: Plaats Spelers"
+      text: Bepaal willekeurig de zitplaatsvolgorde en de eerste speler.
+    - name: "Stap 5: Bereid Oriëntatiepunten Voor"
+      text: Als groep kun je ervoor kiezen om oriëntatiepunten te gebruiken. Zo ja, dan kun je de plaatsing van de Toren- en Veerbootstukken, beschreven in Variantkaarten, negeren of overschrijven.
+      subchildren:
+      - name: "Stap 1: Kies."
+        text: Kies als groep of je met één of twee oriëntatiepunten speelt, en verwijder oriëntatiepunt kaarten waarmee je niet wilt spelen.
+      - name: "Stap 2: Deel uit en Verzamel."
+        text: Schud de gekozen oriëntatiepunt kaarten, deel het gekozen aantal uit, en verzamel het oriëntatiepunt stuk dat op elke uitgedeelde kaart staat afgebeeld.
+      - name: "Stap 3: Bereid Voor."
+        text: De laatste speler in beurtvolgorde bereidt één getrokken oriëntatiepunt voor zoals beschreven op de kaart. Als je ervoor koos om met twee oriëntatiepunten te spelen, bereidt de op één na laatste speler in beurtvolgorde het andere getrokken oriëntatiepunt voor zoals beschreven op de kaart.
+    - name: "Stap 6: Bereid Huurlingen Voor"
+      text: Als groep kun je ervoor kiezen om precies drie huurlingen te gebruiken, als volgt.
+      subchildren:
+      - name: "Stap 1: Verzamel Stukken."
+        text: Schud alle huurlingen kaarten. Deel drie huurling kaarten uit en leg de rest terug in de doos. Verzamel de stukken voor de uitgedeelde huurling kaarten in een voorraad.
+      - name: "Stap 2: Degradeer."
+        text: Bij drie spelers, draai één willekeurige huurling naar zijn Gedegradeerde zijde _(gemarkeerd met een "D")_. Bij vier spelers, draai twee willekeurige huurlingen naar hun Gedegradeerde zijde. Bij vijf of meer spelers, draai alle drie de huurlingen naar hun Gedegradeerde zijde.
+      - name: "Stap 3: Bereid Huurlingen Voor."
+        text: Beginnend met de laatste speler in beurtvolgorde en tegen de klok in, bereiden spelers één uitgedeelde huurling elk voor zoals beschreven op zijn huurling kaart. _(Sommige hebben geen voorbereidingsinstructies.)_
+      - name: "Stap 4: Plaats Huurling Markeringen."
+        text: Plaats de drie huurling markeringen—gemarkeerd met "4," "8," en "12"—op de "4," "8," en "12" ruimtes van het scorespoor op de kaart.
+      - name: "Stap 5: Verwijder Corresponderende Facties."
+        text: Een factie kan niet worden gespeeld als zijn corresponderende huurling in het spel is _(aangegeven door kleur en icoon)_. Leg de corresponderende factieborden, stukken, en voorbereidingskaarten terug in de doos.
+    - name: "Stap 7: Trek Vijf Kaarten"
+      text: Als je met twee spelers speelt, verwijder dan alle vier de dominantiekaarten uit het dek. Schud het dek. Elke speler trekt vijf kaarten. _(Niet drie, zoals in Standaard Voorbereiding! Je zult drie kaarten kiezen om te houden in stap 10.)_
+    - name: "Stap 8: Bereid Facties Voor"
+      text: Als groep mag je facties kiezen en voorbereiden zoals beschreven in de Standaard Voorbereiding (`rule:5.1`) of je mag de factie voorbereidingskaarten gebruiken die zijn inbegrepen in de Plunderaar Uitbreiding, zoals hieronder beschreven.
+      subchildren:
+      - name: "Stap 1: Deel Voorbereidingskaarten Uit."
+        text: Schud alle militante factie voorbereidingskaarten _(rode naam met zwaard)_ en deel één kaart uit naar een poel in het midden van de tafel. Schud de overgebleven militante factie voorbereidingskaarten samen met alle opstandeling factie voorbereidingskaarten _(grijze naam zonder zwaard)_, en deel één factie voorbereidingskaart uit per speler. _(Er zal één factie voorbereidingskaart meer zijn dan het aantal spelers.)_
+        subchildren:
+        - name: Twee Spelers.
+          text: Als je met twee spelers speelt, verwijder dan alle opstandeling factie voorbereidingskaarten voor het delen. _(Je mag ze houden als je met huurlingen speelt en je avontuurlijk voelt.)_
+        - name: Vergrendel Laatste Opstandige.
+          text: Als de laatste uitgedeelde factie voorbereidingskaart een opstandeling is, draai deze zijwaarts om aan te geven dat deze vergrendeld is. Deze kan niet worden gekozen tenzij ten minste één militante factie is gekozen.
+        - name: Vagebond.
+          text: Wanneer een Vagebond factie voorbereidingskaart wordt uitgedeeld, deel dan ook één willekeurige karakterkaart uit ernaast met de beeldzijde naar boven. Als een speler deze Vagebond als hun factie kiest, moeten ze deze karakterkaart gebruiken.
+      - name: "Stap 2: Kies Facties."
+        text: Beginnend met de laatste speler in beurtvolgorde en tegen de klok in, kiest elke speler één factie voorbereidingskaart uit de poel en bereidt de factie onmiddellijk voor _(voordat een andere speler kiest)_, zoals beschreven op zijn factie voorbereidingskaart.
+        subchildren:
+        - name: Thuislanden.
+          text: Bij het voorbereiden kunnen spelers één of meer thuisland open plekken kiezen. Spelers kunnen geen thuislanden kiezen die vijanden hebben gekozen als hun thuislanden of waar ze niet alle stukken kunnen plaatsen die in de voorbereiding staan vermeld.
+        - name: Aangrenzende Vijandelijke Thuislanden.
+          text: Sommige facties vereisen dat je een thuisland kiest dat niet grenst aan vijandelijke thuislanden, of dat twee of meer open plekken tussen zich en vijandelijke thuislanden heeft. Als je niet aan een "twee of meer open plekken" vereiste kunt voldoen, mag je een thuisland kiezen dat niet grenst aan vijandelijke thuislanden. Als je niet aan een "niet aangrenzend" vereiste kunt voldoen, mag je een thuisland kiezen dat grenst aan een vijandelijk thuisland. _(In principe, probeer zo ver mogelijk op te zetten.)_
+    - name: "Stap 9: Plaats Scoremarkers"
+      text: Elke speler plaatst hun factie's scoremarker op de "0" ruimte op het scorespoor.
+    - name: "Stap 10: Kies Starthanden"
+      text: Elke speler kiest drie kaarten in hun hand om te houden en legt de andere twee kaarten met de beeldzijde naar beneden op het gedeelde dek. Als iedereen klaar is, schud het gedeelde dek.
+  - name: Variantkaarten
+    children:
+    - name: Winter Kaart
+      subchildren:
+      - name: Woeste Rivier.
+        text: De rivier verdeelt bossen _(zoals gedrukte paden doen)_.
+    - name: Meer Kaart
+      subchildren:
+      - name: Voorbereiding Aanpassingen.
+        text: Plaats het Veerboot stuk in de hoekplek die ook een oeverplek is.
+      - name: Het Meer.
+        text: "**Het Meer** is in het centrum van de kaart. Het meer wordt behandeld als rivieren die elke oeverplek verbinden met elke andere oeverplek. Het meer verdeelt bossen."
+      - name: Oeverplekken.
+        text: Open plekken die het meer raken _(niet gescheiden door een bos)_ zijn **oeverplekken**.
+      - name: Oeverbossen.
+        text: Bossen die het meer raken zijn **oeverbossen**. Elk oeverbos grenst aan zijn twee naburige oeverbossen _(gescheiden door één oeverplek)_.
+      - name: De Veerboot.
+        text: Eenmaal per beurt kunnen stukken die verplaatsen vanuit de oeverplek met de Veerboot naar een andere oeverplek verplaatsen, waarbij ze deze als aangrenzend behandelen en de Veerboot met hen mee verplaatsen. Na dit trekt de verplaatsende speler één kaart. _(Dit volgt de normale verplaatsingsregels.)_ De Veerboot kan niet worden bevochten of verwijderd.
+    - name: Berg Kaart
+      subchildren:
+      - name: Voorbereiding Aanpassingen.
+        text: Plaats de 6 gesloten pad markeringen om de 6 paden van donkerdere kleur met uitgegraven grond te bedekken. Plaats het Toren stuk in de centrale open plek die twee torens toont.
+      - name: Gesloten Paden.
+        text: Een pad bedekt met een gesloten pad markering is een **gesloten pad**. Open plekken verbonden door een gesloten pad zijn niet aangrenzend, en stukken _(zoals Snelweg Bandieten)_ kunnen niet op gesloten paden worden geplaatst. Gesloten paden omsluiten en verdelen bossen alsof het paden waren _(dus de Vagebond kan er overheen glippen)_.
+      - name: Gesloten Paden Verwijderen.
+        text: Eenmaal per beurt in hun Daglicht kan een speler een kaart uitgeven om een gesloten pad markering permanent uit het spel te verwijderen en één overwinningspunt te scoren. Om deze te verwijderen, moet die speler factiestukken hebben in een van beide open plekken die verbonden zijn door de gesloten pad markering.
+      - name: De Pas en Toren.
+        text: De open plek gemarkeerd met het Toren stuk is **de pas**. Aan het einde van de Avond van een speler, als die speler heerst over de Pas, scoort die speler één overwinningspunt.
+      - name: Bossen.
+        text: Alle gebieden op de bergkaart omsloten door paden en open plekken zijn bossen (`rule:2.4`), ongeacht de aanwezigheid of plaatsing van bomen daarin.
+  - name: Vagebonden
+    children:
+    - name: Dief
+      subchildren:
+      - name: Startvoorwerpen
+        text: Start met `item:boot`, `item:torch`, `item:tea`, `item:sword`.
+      - name: "Speciale Actie: Steel"
+        text: Put één `item:torch` uit om een willekeurige kaart te nemen van een willekeurige speler in je open plek.
+    - name: Knutselaar
+      subchildren:
+      - name: Startvoorwerpen
+        text: Start met `item:boot`, `item:torch`, `item:sack`, `item:hammer`.
+      - name: "Speciale Actie: Dagwerk"
+        text: Put één `item:torch` uit om een kaart te nemen uit de aflegstapel waarvan de soort overeenkomt met je open plek. _(Je kunt altijd een vogelkaart nemen.)_
+    - name: Boswachter
+      subchildren:
+      - name: Startvoorwerpen
+        text: Start met `item:boot`, `item:torch`, `item:crossbow`, `item:sword`.
+      - name: "Speciale Actie: Schuilplaats"
+        text: Put één `item:torch` uit om 3 voorwerpen te repareren. Beëindig dan onmiddellijk Daglicht en begin Avond.
+    - name: Zwerver
+      subchildren:
+      - name: Startvoorwerpen
+        text: Start met `item:coin`, `item:torch`, `item:boot`.
+      - name: "Speciale Actie: Ophitsen"
+        text: Put een `item:torch` uit om een gevecht te beginnen in je open plek. Jij kiest de aanvaller en verdediger, jij kiest de volgorde waarin ze elk hun eigen gebouwen en fiches verwijderen, en jij verwijdert stukken voor beiden. _(Scoor een overwinningspunt per gebouw of fiche van beide spelers verwijderd, en per Vijandig stuk van beide spelers verwijderd.)_
+    - name: Scheidsrechter
+      subchildren:
+      - name: Startvoorwerpen
+        text: Start met `item:boot`, `item:torch`, `item:sword`, `item:sword`.
+      - name: "Speciale Actie: Beschermer"
+        text: Voor het werpen van de dobbelstenen in een gevecht mag de verdediger de Scheidsrechter inzetten in de open plek van het gevecht. De Scheidsrechter scoort één overwinningspunt en voegt al zijn onbeschadigde `item:sword` toe aan het maximum aantal geworpen treffers van de verdediger. De Scheidsrechter kan zichzelf niet inzetten of worden ingezet tegen zichzelf.
+    - name: Schurk
+      subchildren:
+      - name: Startvoorwerpen
+        text: Start met `item:boot`, `item:boot`, `item:torch`, `item:crossbow`.
+      - name: "Speciale Actie: Verschroeide Aarde"
+        text: Put een `item:torch` uit en plaats het in je open plek. Verwijder alle vijandelijke stukken uit die open plek. Stukken kunnen niet worden geplaatst in of verplaatst naar de open plek met de `item:torch`. _(Jij blijft in deze open plek. Zodra je eruit verplaatst, kun je er niet meer terug in. De `item:torch` kan niet worden verwijderd met een "Gunst van de..." kaart omdat het geen vijandelijk stuk is.)_
+    - name: Avonturier
+      subchildren:
+      - name: Startvoorwerpen
+        text: Start met `item:boot`, `item:torch`, `item:hammer`.
+      - name: "Speciale Actie: Improviseer"
+        text: Eenmaal per beurt tijdens het nemen van de Queeste actie mag je één niet-uitgeput voorwerp behandelen als een willekeurig ander voorwerp. Wanneer je het uitput om de queeste te voltooien, beschadig je dat voorwerp ook.
+    - name: Ronin
+      subchildren:
+      - name: Startvoorwerpen
+        text: Start met `item:boot`, `item:boot`, `item:torch`, `item:sword`.
+      - name: "Speciale Actie: Snelle Slag"
+        text: Je mag een `item:sword` uitputten om een extra treffer toe te brengen in gevecht _(na het werpen)_.
+    - name: Kiekendief
+      subchildren:
+      - name: Startvoorwerpen
+        text: Start met `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
+      - name: "Speciale Actie: Glijd"
+        text: Put een `item:torch` uit om alleen je Vagebond pion _(niet andere stukken)_ naar een willekeurige open plek _(zelfs Vijandig)_ op de kaart te verplaatsen zonder `item:boot` uit te putten.
+  - name: Huurlingen
+    children:
+    - name: Huurlingen Verkrijgen en Verliezen
+      subchildren:
+      - name: Verkrijgen uit Voorraad.
+        text: Wanneer de scoremarker van een speler een ruimte met een huurling markering betreedt, nemen ze de huurling markering en plaatsen deze onder hun Avond _(als herinnering)_. Aan het einde van hun beurt nemen ze een willekeurige huurling kaart uit de voorraad, werpen voor controle (`rule:16.4.1.2`), en draaien de huurling markering om.
+      - name: Dobbelen voor Controle.
+        text: Wanneer een speler een huurling kaart krijgt, werpen ze de controle dobbelsteen en plaatsen controle markeringen op de huurling kaart gelijk aan het aantal van de worp. Ze tellen alleen de gouden dobbelsteenpunten als ze de meeste overwinningspunten hebben of gelijk staan voor de meeste; ze tellen alle dobbelsteenpunten anders _(inclusief als ze een dominantiekaart hebben geactiveerd)_.
+      - name: Verkrijgen van een Andere Speler.
+        text: Aan het einde van de beurt van een speler moeten ze één controle markering verwijderen van elke huurling kaart die ze in eerdere beurten hebben verkregen. Dan moeten ze elke huurling kaart die ze controleren die geen controle markeringen heeft, samen met een huurling markering, aan een willekeurige andere speler geven _(zelfs de speler met de hoogste score)_. Die speler legt de huurling markering onder hun Avond _(als herinnering)_ en werpt onmiddellijk voor controle (`rule:16.4.1.2`).
+    - name: Vaardigheden en Acties
+      text: Huurlingen hebben verschillende acties en vaardigheden, zoals aangegeven door unieke iconen. Acties en vaardigheden die beginnen met "**Controller**:" worden verkregen door de controller van de huurling.
+      subchildren:
+      - name: Bij-Inhuren Actie (`hireling:whenhired`).
+        text: Wanneer ze controle krijgen over de huurling, moet de controlerende speler deze actie nemen.
+      - name: Vaardigheid (`hireling:ability`).
+        text: Deze vaardigheid is altijd actief of specificeert wanneer deze gebeurt.
+      - name: Start-van-Vogelzang Actie (`hireling:birdsong`).
+        text: Aan het begin van hun Vogelzang moet of mag de controlerende speler deze actie nemen, zoals de actie beschrijft.
+      - name: Eén-Keer-Per-Daglicht Actie (`hireling:daylight`).
+        text: Eenmaal in hun Daglicht mag de controlerende speler deze actie nemen.
+    - name: Regels
+      subchildren:
+      - name: Heerschappij.
+        text: Een controller van een huurling behandelt huurling stukken als hun eigen alleen voor heerschappij. _(De controller kan heersen over een open plek zelfs met alleen huurlingen.)_ Niet-gecontroleerde huurlingen kunnen heersen over open plekken alsof ze spelers waren (`rule:2.5`).
+      - name: Vijand Status.
+        text: Een huurling is een vijand voor spelers anders dan zijn controller en spelers in coalitie met zijn controller.
+      - name: Aparte Stukken.
+        text: Huurling stukken zijn niet de factiestukken van de controller. _(Dus het Hertogdom kan ze niet meetellen als Hertogdom stukken om te beïnvloeden, de Bewaarders kunnen ze niet verwijderen om te kamperen, etc.)_.
+      - name: Aparte Acties.
+        text: De Verplaats of Vecht acties van een huurling kunnen alleen de stukken van de huurling verplaatsen of laten vechten en kunnen niet de stukken van de controller bevatten. Huurlingen kunnen geen acties nemen op andere manieren _(zoals van de Verplaats acties van hun controller, Valse Bevelen, of de Bondgenoot Relatie van de Vagebond)_.
+      - name: Aparte Effecten.
+        text: Huurlingen kunnen de vaardigheden, vervaardigde blijvende effecten, of hinderlaagkaarten van hun controller niet gebruiken. _(Dus een huurling zou geen Bootbouwers kunnen gebruiken tijdens verplaatsing, en de Snelweg Bandieten zouden niet op een rivier kunnen worden geplaatst. Een controller van een huurling zou geen hinderlaagkaart kunnen spelen tijdens het vechten met de huurling.)_
+      - name: Geen Scoring bij Verwijdering.
+        text: Een controller van een huurling scoort geen overwinningspunten als hun huurling een vijandelijk stuk verwijdert _(meestal in gevecht)_. _(Spelers kunnen nog steeds punten scoren door huurling gebouwen en fiches te verwijderen, zelfs bij het verdedigen in gevecht tegen de huurling. Spelers scoren nog steeds zoals normaal als de Warme Zon Profeten factiestukken van die speler dwingen om te vechten.)_
+      - name: Vreemde Dingen.
+        text: Als je een huurling verplaatst met de Veerboot, trek je wel een kaart. Als je huurling krijgers verplaatst naar een open plek met een Alliantie sympathiefiche of Alliantie sympathie verwijdert door een huurling te gebruiken, activeert dit wel Woede. _(Deze effecten verwijzen naar een "speler die verplaatst" of "speler die verwijdert.")_
+  - name: Oriëntatiepunten
+    children:
+    - name: Algemene Regels
+      subchildren:
+      - name: Veiligheid.
+        text: Oriëntatiepunten kunnen niet worden bevochten, verplaatst, of verwijderd, tenzij expliciet aangegeven door een oriëntatiepunt.
+      - name: Eigendom.
+        text: Oriëntatiepunten zijn niet in bezit van een factie en zijn geen vijandelijke stukken.
+  - name: Woordenlijst
+    children:
+    - name: Vaardigheid.
+      text: Een blijvend effect van een factie zoals vermeld bovenaan zijn factiebord en in zijn Factieregels en Vaardigheden sectie, of een blijvend effect van een huurling zoals vermeld op zijn huurling kaart (`rule:16.4.2`).
+    - name: Aangrenzend.
+      text: Een open plek is aangrenzend aan alle andere open plekken waarmee deze verbonden is door een pad. Een bos is aangrenzend aan alle open plekken die het raakt zonder een pad te kruisen, en het is aangrenzend aan alle bossen die gescheiden worden door slechts één pad, behalve op het meer (`rule:16.2.2`). `faction:duchy:12.2.2`
+    - name: Gebouw.
+      text: Een vierkant kartonnen stuk in bezit van zijn factie.
+    - name: Kan niet.
+      text: Zie `rule:1.1.2`.
+    - name: Afleggen.
+      text: Leg de gevraagde kaart in de gedeelde aflegstapel (`rule:2.1`). Als het een dominantiekaart is, leg deze in plaats daarvan naast de kaart (`rule:3.3.3`). `faction:cult:10.4.2`
+    - name: Trekken.
+      text: Neem de bovenste kaart van het gedeelde dek (`rule:2.1`).
+    - name: Effect.
+      text: Alles wat het spel verandert, inclusief blijvende effecten, factievaardigheden en acties.
+    - name: Vijand.
+      text: Elke andere speler waarmee je niet in een coalitie zit (`rule:9.2.8`), of een huurling die in de voorraad zit of wordt vastgehouden door een vijandelijke speler.
+    - name: Vijandig Stuk.
+      text: Een factiestuk van een vijandelijke speler of een huurling stuk van een vijandelijke huurling, behalve wanneer je het stuk als je eigen behandelt voor heerschappij _(Riviervolk huursoldaten, gecontroleerde huurlingen, etc.)_. _(Voorwerpen kunnen geen vijandelijke stukken zijn)_.
+    - name: Factiestuk.
+      text: Alle krijgers, pionnen, gebouwen en fiches vermeld op de achterkant van een factiebord. _(Voorwerpen zijn geen factiestukken.)_ Zie `rule:1.5.2`.
+    - name: Bos.
+      text: Een gebied op de kaart omsloten door paden en open plekken.
+    - name: Dwingen.
+      text: Zie `rule:1.5.5`.
+    - name: Voorwerp.
+      text: Een vierkant kartonnen stuk dat een voorwerp toont (`item:boot`, `item:sword`, `item:crossbow`, etc.) dat niet in bezit is van een factie.
+    - name: Kaart.
+      text: Zie `rule:2.2`.
+    - name: Kaartrand.
+      text: De enkele gesloten lus van open plekken en paden die de kaartgrens definieert, inclusief gesloten paden op de bergkaart.
+    - name: Pad.
+      text: Een witte verbinding tussen twee open plekken.
+    - name: Pion.
+      text: Een houten figuur in bezit van zijn factie.
+    - name: Stuk.
+      text: Elk onderdeel—gebouw, fiche, krijger, pion, voorwerp, markering, enzovoort.
+    - name: Plaatsen.
+      text: Neem het gevraagde stuk van de gevraagde bron en zet het op de gevraagde bestemming. Meestal wordt geen bron gespecificeerd—in dit geval, neem het uit zijn voorraad, of neem het meest linkse gevraagde stuk als het op een spoor staat. _Zetten_ is een andere term voor _Plaatsen_.
+    - name: Speelgebied.
+      text: Het gebied rond je factiebord. Kaarten erin kunnen alleen worden uitgegeven, afgelegd, of voor andere doeleinden worden gebruikt als daar expliciet om wordt gevraagd.
+    - name: Vervangen.
+      text: Verkorte term voor **verwijderen** en dan **plaatsen**. Verwijder het gevraagde stuk en plaats het andere gevraagde stuk op de locatie waarvan het eerste werd verwijderd. Je moet alle stappen van het **vervangen** in volgorde uitvoeren om het te kunnen doen.
+    - name: Verwijderen.
+      text: Neem het gevraagde stuk van de gevraagde bron en stuur het terug naar de gevraagde bestemming. Meestal wordt geen bestemming gespecificeerd— in dit geval, stuur het terug naar de voorraad van zijn eigenaar, stuur het terug naar de meest rechtse lege ruimte van zijn spoor als het er een heeft, of verwijder het anders permanent. _(Voorwerpen worden permanent verwijderd.)_
+    - name: Onthullen.
+      text: Plaats de gevraagde kaart met de beeldzijde naar boven in je speelgebied. Meestal wordt geen bron gespecificeerd—in dit geval, neem het uit je hand.
+    - name: Rivier.
+      text: Een blauwe verbinding tussen twee open plekken.
+    - name: Ruïne.
+      text: Stuk dat een "R"-vakje in een open plek bedekt (`rule:2.2.4`).
+    - name: Heerschappij.
+      text: Zie `rule:2.5`.
+    - name: Tonen.
+      text: Laat de gevraagde speler het gevraagde stuk zien.
+    - name: Vakje.
+      text: Wit vakje in een open plek (`rule:2.2.3`).
+    - name: Uitgeven.
+      text: Zie **Afleggen** (`rule:16.6.5`). _(Deze termen zijn gelijkwaardig, maar uitgeven wordt gebruikt in contexten met keuze.)_
+    - name: Voorraad.
+      text: De verzameling stukken die niet op een factiebord of de kaart ligt. De voorwerpenvoorraad is de verzameling voorwerpen op de kaart.
+    - name: Verwisselen.
+      text: Wissel de locaties van de twee gevraagde stukken. _(Dit negeert verplaats- en plaatsrestricties, zoals de valstrik van de Kraaien en de burcht van de Markiezin.)_
+    - name: Fiche.
+      text: Een rond kartonnen stuk in bezit van zijn factie.
+    - name: Behandelen.
+      text: Het gevraagde ding neemt de eigenschappen over van het tweede gevraagde ding. Terwijl je vijandelijke stukken als je eigen behandelt voor heerschappij, zijn ze geen vijandelijke stukken, maar ze zijn nog steeds factiestukken van die vijandelijke speler. _(Bijvoorbeeld, Riviervolk krijgers die je hebt ingehuurd als huursoldaten zijn geen vijandelijke stukken voor jou, maar ze zijn nog steeds Riviervolk factiestukken.)_
+    - name: Krijger.
+      text: Een houten figuur in bezit van zijn factie. _(De Vagebond pion is geen krijger en kan niet worden verwijderd.)_
