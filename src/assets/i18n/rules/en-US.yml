@@ -134,7 +134,7 @@
         - name: Immediate Effects.
           text: When you craft an immediate effect _(paper box)_, resolve its effect and then discard the card. If it shows an item, take the matching item from the item supply on the map and place it in the Crafted Items box on your faction board. If the card lists an item not in the item supply, the card cannot be crafted. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8` `faction:warlord:14.2.1`
         - name: Persistent Effects.
-          text: When you craft a persistent effect _(stone box)_, place it in your play area. You may use the effect as described on the card. _(The Eyrie Emigre card in the Exiles & Partisans deck is mandatory.)_
+          text: When you craft a persistent effect _(stone box)_, place it in your play area. You may use the effect as described on the card.
         - name: No Duplicates.
           text: You cannot craft a persistent effect if you have an identical one in your play area.
   
@@ -618,7 +618,7 @@
             - name: Convert.
               text: Spend two acolytes to replace an enemy warrior from an Outcast clearing with a Cult warrior. _(To replace a piece, you must be able to remove the old piece and place the new piece.)_
             - name: Sanctify.
-              text: Spend three acolytes to replace an enemy building from an Outcast clearing with a matching garden.
+              text: Spend three acolytes to replace an enemy building from an Outcast clearing with a garden of the Outcast suit.
 
     - name: Daylight
       pretext: You may reveal any number of cards and perform one ritual per card revealed, in any order and number, as follows. _(Reveal cards from your hand into your play area. They cannot be used for any other purposes during Daylight.)_
@@ -976,13 +976,16 @@
 
     - name: Faction Setup
       children:
-        - name: "Step 1: Garrison"
-          text:  Place your warlord, four warriors, and one stronghold in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing.
+        - name: "Step 1: Gather Pieces"
+          text: Form supplies of 20 warriors, 1 warlord, and 6 strongholds.
+          
+        - name: "Step 2: Garrison"
+          text:  Place your warlord, four warriors, and one stronghold in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing. 
 
-        - name: "Step 2: Place Items"
+        - name: "Step 3: Place Items"
           text: Place the four "R" items randomly under the ruins, unless this has already been done.
 
-        - name: "Step 3: Get Stubborn"
+        - name: "Step 4: Get Stubborn"
           text: Place your Stubborn mood card on your Mood Card slot.
           
     - name: Birdsong
@@ -995,10 +998,10 @@
           text: Place warriors equal in number to your Prowess into the clearing with your warlord. Then, place warriors in each clearing with any strongholds, one warrior per stronghold there.
 
         - name: Anoint.
-          text: If the warlord is not on the map, you must replace any Hundreds warrior with the warlord. If you cannot, you must place the warlord in any clearing.
+          text: If the warlord is not on the map, you must replace any Hundreds warrior on the map with the warlord. If you cannot, you must place the warlord in any clearing.
 
         - name: Choose Mood.
-          text:  You must replace the mood card in your Mood Card slot with a different mood card that does not show an item that is in your Hoard. If you are Lavish and cannot choose a new mood card, you remain Lavish.
+          text: You must replace the mood card in your Mood Card slot with a different mood card that does not show an item that is in your Hoard. If you are Lavish and cannot choose a new mood card, you remain Lavish.
 
     - name: Daylight
       pretext: Your Daylight has three steps in the following order.
@@ -1084,18 +1087,21 @@
     - name: Faction Setup
       children:
         - name: "Step 1: Place Starting Relics"
-          text: "Collect all twelve relic tokens and shuffle them face down _(without the value showing)_. Place one randomly in each forest. _(We recommend that you just slide the relics around face down, then place relics as fast as possible as a group. Otherwise, you can use this more random but fiddly method: the Keepers stack the randomized relics, then any other player cuts the stack, picks it up, and drops relics one by one from the bottom onto the forests.)_"
+          text: Collect all twelve relic tokens and shuffle them face down (without the value showing). Place one randomly in each forest. _(We recommend that you just slide the relics around face down, then place relics as fast as possible as a group. Otherwise, you can use this more random but fiddly method: the Keepers stack the randomized relics, then any other player cuts the stack, picks it up, and drops relics one by one from the bottom onto the forests.)_
+
+        - name: "Step 2: Gather Warriors"
+          text: Form a supply of 15 warriors.
           
-        - name: "Step 2: Place Warriors"
+        - name: "Step 3: Place Warriors"
           text: Place four warriors in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing. Then, place four warriors in a clearing on the map edge that is adjacent to the chosen clearing.
 
-        - name: "Step 3: Place Remaining Relics"
+        - name: "Step 4: Place Remaining Relics"
           text: Place all remaining relics randomly, as evenly as possible, among forests not adjacent to clearings with your warriors.
 
-        - name: "Step 4: Tuck Faithful Retainers"
+        - name: "Step 5: Tuck Faithful Retainers"
           text: Tuck one Faithful Retainer card into each Retinue slot of your faction board.
 
-        - name: "Step 5: Collect Waystations"
+        - name: "Step 6: Collect Waystations"
           text: Place your three waystation buildings on the matching Waystations spaces of your faction board.
 
     
@@ -1223,13 +1229,16 @@
                   text: Whenever a Vagabond faction setup card is dealt out, also deal out one random character card next to it face up. If a player chooses this Vagabond as their faction, they must use this character card.
 
             - name: "Step 2: Choose Factions."
-              text: Starting with the last player in turn order and going counterclockwise, each player chooses one faction setup card from the pool and sets up the faction immediately _(before another player chooses)_, as described on its faction setup card.
+              text: Starting with the last player in turn order and going counterclockwise, each player chooses one faction setup card from the pool and sets up the faction immediately as it describes _(before another player chooses)_.
               subchildren:
                 - name: Homelands.
                   text: When setting up, players might choose one or more homeland clearings. Players cannot choose homelands that enemies have chosen as their homelands or where they cannot place all the pieces listed in setup. 
 
-                - name: Homeland Adjacency.
-                  text: Some factions will prompt you to choose homelands that are not adjacent to enemy homelands, or that have two or more clearings between it and enemy homelands. If you cannot fulfill a "two or more clearings between" requirement, you may choose a homeland that is not adjacent to enemy homelands. If you cannot fulfill a "not adjacent" requirement, you may choose a homeland that is adjacent to an enemy homeland. _(Basically, think of this as "Try to set up as far away as possible.")_
+                - name: Enemy Homeland Adjacency.
+                  text: Some factions require you to choose a homeland that is not adjacent to enemy homelands; if you cannot do this, choose a homeland adjacent to an enemy homeland. If you must choose a homeland that has two or more clearings between it and enemy homelands but you cannot, choose a homeland that is not adjacent to enemy homelands. _(Basically, try to set up as far away as able.)_
+
+                - name: Multiple Homeland Adjacency.
+                  text: If your faction has multiple homelands and you cannot fulfill all of their enemy adjacency requirements (`rule:16.1.8.1.2`), choose and set them up one at a time, fulfilling each requirement as best you can.
 
 
         - name: "Step 9: Place Score Markers"
@@ -1261,7 +1270,7 @@
               text: Forests touching the lake are **coastal forests**. Each coastal forest is adjacent to its two neighboring coastal forests _(separated by one coastal clearing)_.
 
             - name: The Ferry.
-              text: Once per turn, pieces moving from the coastal clearing with the Ferry can move to another coastal clearing, treating it as adjacent and moving the Ferry along with them. After this, the moving player draws one card. _(This follows the normal move rules.)_ The Ferry cannot be battled or removed.
+              text: Once per turn, pieces moving from the coastal clearing with the Ferry can move on the lake to any other coastal clearing, ignoring adjacency, and moving the Ferry along with them. _(You still must rule the origin or destination clearing.)_ After this, the moving player draws one card. The Ferry cannot be battled or removed.
             
         - name: Mountain Map
           subchildren:
@@ -1352,7 +1361,7 @@
               text: Start with `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
 
             - name: "Special Action: Glide"
-              text: Exhaust a `item:torch` to move only your Vagabond pawn _(not other pieces)_ to any clearing _(even Hostile)_ on the map without exhausting any `item:boot`.
+              text: Exhaust a `item:torch` to move only your Vagabond pawn _(not other pieces)_ to any clearing _(even Hostile)_ on the map, ignoring adjacency and paths, without exhausting any `item:boot`.
     
     - name: Hirelings
       children:
