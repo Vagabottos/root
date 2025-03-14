@@ -1087,7 +1087,7 @@
     - name: Faction Setup
       children:
         - name: "Step 1: Place Starting Relics"
-          text: Collect all twelve relic tokens and shuffle them face down (without the value showing). Place one randomly in each forest. _(We recommend that you just slide the relics around face down, then place relics as fast as possible as a group. Otherwise, you can use this more random but fiddly method: the Keepers stack the randomized relics, then any other player cuts the stack, picks it up, and drops relics one by one from the bottom onto the forests.)_
+          text: "Collect all twelve relic tokens and shuffle them face down (without the value showing). Place one randomly in each forest. _(We recommend that you just slide the relics around face down, then place relics as fast as possible as a group. Otherwise, you can use this more random but fiddly method: the Keepers stack the randomized relics, then any other player cuts the stack, picks it up, and drops relics one by one from the bottom onto the forests.)_"
 
         - name: "Step 2: Gather Warriors"
           text: Form a supply of 15 warriors.
