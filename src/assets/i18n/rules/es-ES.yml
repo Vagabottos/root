@@ -1,39 +1,50 @@
 
 - name: Reglas de Oro
   color: "#000000"
+  pretext: Este capítulo muestra respuestas a preguntas técnicas y concretas. No es necesario que lo leas la primera cez que aprendes el juego.
   children:
     - name: Conflictos de Reglas
       children: 
         - name: Precedencia.
-          text: Si el texto de una carta entra en conflicto con el texto de las referencias de las reglas, la carta tiene precedencia. Si el texto de la guía "Aprende a jugar" entra en conflicto con el texto de la Ley de Root, el texto la Ley tiene preferencia. Si debes seguir las reglas generales y las de una facción, debes seguir ambas siempre si es posible; si no, las Reglas de Facción tienen preferencia. _(Algunas modifican específicamente las reglas generales)_
-        - name: Uso de **no se puede**.
-          plainName: Uso de No se puede.
-          text: Cualquier regla que diga **No se puede** es absoluta. No puede ser alterada a menos que se especifique explícitamente.
-        - name: Efectos Simultáneos.
-          text: Si dos efectos del juego ocurren simultáneamente, el jugador que está jugando el turno actual elige en qué orden ocurren, a menos que se especifique explícitamente.
-        - name: Uso de **tratar como**.
-          plainName: Uso de tratar Como.
-          text: Si un regla indica que **trates** cualquier cosa *como* si fuese otra, ese elemento asume las propiedades del otro. _(Por ejemplo, si causas Indignación como si fueses otro jugador, el otro jugador debería entregar la carta.)_
+          text: Si el texto de una carta entra en conflicto con la Ley, la carta tiene precedencia. Si el texto del Aprende a Jugar entra en conflicto con la Ley, la Ley tiene preferencia. Si puedes seguir a la vez una regla de facción o secuaces y una regla general, sigue ambas; si no, sigue la regla de facción o secuaces.
+        - name: Uso de **no puedes**.
+          plainName: Uso de No puedes.
+          text: Cualquier regla que diga **No puedes** o **No se puede** es absoluta. No puede ignorarse a menos que se especifique explícitamente.
+        - name: Resoluciones y elecciones poco claras
+          text: Siempre que no esté claro en qué orden se deben resolver dos efectos simultáneos, o qué jugador debe actuar primero, el jugador en turno decide.
 
     - name: Información Pública y Privada.
       children:
-        - name: Cartas en mano.
-          text: Las cartas en mano solo pueden ser reveladas si ello se indica específicamente, aunque la cantidad de cartas en mano es información pública. `faction:riverfolk:11.2.3`
+        - name: Manos.
+          text: Sólo puedes revelar las cartas de tu mano si se pude específicamente, pero el número de cartas en las manos es información pública. `faction:riverfolk:11.2.3`
         - name: Descarte.
           text: La pila de descarte puede mirarse en cualquier momento.
           
     - name: Negociación y Pactos
       children:
         - name: Acuerdos.
-          text: Los jugadores pueden negociar en la partida y hacer pactos y acuerdos, pero estos nunca son vinculantes. _(Los acuerdos son estratégicos. No se puede alterar el estado de los componentes.)_
-        - name: Dar cartas.
-          text: Solo es posible dar (o recibir) cartas a otros jugadores si una regla o efecto lo indica explícitamente.
-    
-    - name: Jugadores y Facciones
-      pretext: "A fin de facilitar la lectura, en la Ley se refiere habitualmente a los jugadores de la partida, no a las Facciones. Sin embargo, los efectos del juego _(como habilidades y efectos permanentes)_ son propiedades de las Facciones, no de los jugadores. En caso de controlar piezas de una facción que no controles, debes seguir las reglas de dicha facción salvo que se indique explícitamente otra regla."
-    
-    - name: Estructura de juego y turno
-      pretext: "El turno de cada jugador se divide en tres fases con un orden fijo: Alba, Día y Noche. Después de completar cada fase, la persona situada a la izquierda _(siguiendo el sentido horario)_ comienza su turno. El juego continúa hasta que un jugador haya ganado(`rule:3.1`)."
+          text: Los jugadores son libres de discutir acuerdos durante la partida, pero los acuerdos entre los jugadores no son vinculantes.
+        - name: Cartas.
+          text: Los jugadores sólo pueden dar cartas a otros si una regla se lo permite.
+    - name: Secuencia de Juego
+      children:
+        - name: Turno.
+          text: Cada turno de un jugador consta de tres fases: Alba, Día y Noche. Cualquier texto que diga "al principio de" una fase, sucede antes de cualquier otra cosa en esa fase, si el texto dice "al final de" sucede después de todo lo demás en esa fase y justo antes del inicio de la siguiente, si la hay. Después de que un jugador finalice su Noche, el siguiente jugador en sentido horario comienza su turno. El juego continúa hasta que un jugador gana la partida (`rule:3.1`).
+        - name: Interrumpir
+          text: No puedes interrumpir una acción _(incluso una múltiple como la Marcha del Marquesado)_, habilidad _(como la Exposición de los Córvidos)_ o efecto persistente _(como la carta Emigrante del Nido)_ con otro efecto a menos que se permita explícitamente. _(Por ejemplo, la carta Pertrechados dice que se usa "En batalla...")_
+    - name: Piezas
+      children:
+        - name: Límites.
+          text: Las piezas están limitadas a las contenidas en el juego. No uses piezas de reemplazo si se agota alguna de ellas.
+        - name: Facción Inicial.
+          text: Cada jugador controla a la facción que elija durante la preparación (5) y las piezas listadas en el dorso de su tablero de facción salvo los objetos. De forma genérica, estas se denominan **piezas de facción**. De forma específica, se denominan **piezas de [nombre de facción]**. _(Por ejemplo, "tus guerreros de facción" y "guerreros de tu facción" y "guuerreros del Marquesado", todos ellos se refieren a los guerreros de madera naranja con forma de gato)_.
+        - name: Pertenencia de las piezas.
+          text: El propietario de las piezas de una facción no puede cambiar. _(Por ejemplo, el Marquesado no puede usar sus hospitales de Campaña con los secuaces o los mercenarios de la Compañía, ya que no son guerreros del Marquesado)_.
+        - name: Manejo de las piezas.
+          text: Las piezas se colocan y retiran como se indica en el Glosario (`rule:16.6.5`, `rule:16.6.28`). Si se te indica que coloques, tomes o retires piezas pero no puedes hacerlo al completo, debes colocar, tomar o retirar las máximas posibles. _(Esto no te permite evitar costes o requisitos. No puedes hacer menos de lo máximo que puedes hacer)_.
+        - name: Uso de **Forzar**.
+          plainName: Uso de Forzar.
+          text: Algunos efectos te permiten **forzar** a un jugador o a sus piezas a actuar. Resuelve la situación del mismo modo en el que ese jugador lo haría _(siguiendo las reglas generales)_, teniendo en cuenta posibles efectos. _(Por ejemplo, si fuerzas al Nido a mover guerreros, se benefician de la regla Señores del Bosque)_.
 
 - name: Términos Clave y Conceptos de juego
   color: "#000000"
