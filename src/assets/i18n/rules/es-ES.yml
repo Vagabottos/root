@@ -1,4 +1,5 @@
-
+# https://blog.pixelfreestudio.com/how-to-use-forks-in-github-for-collaborative-development/
+# https://github.com/icorreafalconi/root
 - name: Reglas de Oro
   color: "#000000"
   pretext: Este capítulo muestra respuestas a preguntas técnicas y concretas. No es necesario que lo leas la primera cez que aprendes el juego.
@@ -213,7 +214,7 @@
         - name: "Paso 1: Juntar Guerreros y Madera."
           text: Forma la reserva de guerreros (25) y fichas de madera (8).
         - name: "Paso 2: Colocar La Fortaleza."
-          text: Coloca la ficha de la fortaleza en un claro de una esquina a tu elección. Este es tu claro inicial.
+          text: Coloca la ficha de la fortaleza en un claro de una esquina a tu elección. Éste es tu claro inicial.
         - name: "Paso 3: Guarnición."
           text: Coloca un guerrero en cada claro excepto en el claro que está en la esquina diagonalmente opuesta al claro de la ficha de fortaleza.
         - name: "Paso 4: Colocar los Edificios Iniciales."
@@ -253,91 +254,91 @@
   icon: eyrie
   children:
     - name: Resumen
-      pretext: El Nido de Águilas aspira a restaurar la antigua gloria de su estirpe en el Bosque retomando el control de los claros del Bosque. Durante su Noche, el Nido de Águilas puntuará en función de cuántos **nidos** tenga en el mapa. Cuanto mayor sea su presencia en el Bosque, mayores serán sus ganancias. No obstante, el Nido está sujeto a su bound by their **Decreto**, un conjunto de acciones obligatorias en constante aumento prometidas por su **Líder**. Cada turno, el Nido debe realizar todas las acciones de su Decreto, o entrará en **Caos**.
+      pretext: Las Dinastías del Nido de Águilas desean restaurar su antiguamente digna estirpe a su gloria pasada retomando control de los claros del Bosque. Durante la Noche, el Nido de Águilas obtiene puntos de victoria en función del número de **nidos** que tiene en el mapa. Cuanto más nidos haya colocado, mayores son sus ganancias. Sin embargo, el Nido está atado a su **Decreto**, un conjunto siempre creciente de acciones obligatorias que han sido prometidas por su **líder**. Cada turno debe llevar a cabo todas las acciones de su Decreto, o caerá en el **caos**.
 
     - name: Reglas y Habilidades de Facción
       children:
         - name: Fabricar.
-          text: El Nido de Águilas fabrica antes de resolver el Decreto durante el día mediante la activación de nidos.
+          text: El Nido fabrica antes de resolver el Decreto durante el Día, activando nidos.
         - name: Señores del Bosque.
-          text:  El Nido de Águilas gobierna en los claros en caso de empate por número de guerreros y edificios. No gobierna sobre claros vacíos. `faction:cult:10.2.4`
-        - name: Desdén por el comercio.
-          text: Cuando el Nido de Águilas fabrica un objeto, ignora los puntos de victoria que marca la carta, y solo obtiene un punto en su lugar.
+          text: El Nido gobierna en un claro cuando está empatado a mayor número de guerreros y edificios en él, y tiene al menos una pieza de facción del Nido en él. `faction:cult:10.2.4`
+        - name: Desdén por el Comercio.
+          text: Cuando el Nido fabrique un objeto, ignora los puntos de victoria indicados, solo obtiene 1 punto de victoria en su lugar. _(Sí pueden obtener puntos adicionales por efectos de fabricación como en Maestros Grabadores o la Forja Legendaria)_.
 
-    - name: Preparación Individual
+    - name: Preparación
       children:
-        - name: "Paso 1: Guerreros."
-          text: Forma una reserva con tus 20 guerreros.
-        - name: "Paso 2: Nido y Guerreros iniciales."
-          text: Coloca 1 nido y 6 guerreros en el claro de la esquina diametralmente opuesta al claro de la esquina en que esté situada la Fortaleza del Marquesado. Si el Marquesado no está en juego, coloca dichas piezas en un claro de la esquina que elijas.
-        - name: "Paso 3: Líder."
-          text: Elige 1 de las 4 cartas de Líder del Nido y colócala sobre el espacio indicado de tu tablero de facción. Deja el resto de Líderes junto al tablero.
-        - name: "Paso 4: Asignar Visires."
-          text: Coloca tus 2 cartas de Visir Leal, de forma que se vea su palo, en las columnas de tu Decreto que especifica tu Líder.
-        - name: "Paso 5: Contador de Nidos."
-          text: Coloca tus 6 nidos restantes sobre el contador de Nidos del tablero, colocando 1 por casilla de derecha a izquierda _(el primer espacio quedará descubierto)_.
+        - name: "Paso 1: Juntar Guerreros."
+          text: Forma la reserva de guerreros (20).
+        - name: "Paso 2: Colocar Nido y Guerreros Iniciales."
+          text: Coloca 1 nido y 6 guerreros en un claro de una esquina que no sea el claro inicial de otro jugador y, si es posible, que sea diagonalmente opuesto a un claro inicial. Éste es tu claro inicial. _(Esto se ha actualizado con respecto a ediciones anteriores por flexibilidad)_.
+        - name: "Paso 3: Escoger Líder."
+          text: Elige 1 de las 4 cartas de líder y colócala en tu espacio de carta de líder. Deja el resto de líderes bocarriba en tu área de juego.
+        - name: "Paso 4: Colocar Visires."
+          text: Coloca tus 2 cartas de Visir Leal, mostrando su palo, en las columnas de Decreto de tu tablero según marque tu líder.
+        - name: "Paso 5: Rellenar Contador."
+          text: Coloca tus 6 nidos restantes en tu contador de nidos, de derecha a izquierda.
 
     - name: Alba
-      pretext: Tu Alba tiene 3 pasos en el siguiente orden. 
+      pretext: Tu Alba tiene tres pasos en el siguiente orden. 
       children:
-        - name: Órdenes de emergencia.
+        - name: Órdenes de Emergencia.
           text: Si no tienes cartas en tu mano, roba una carta.
         - name: Ampliar el Decreto.
-          text: Debes añadir 1 o 2 cartas de tu mano al Decreto, pero solo una de ellas puede ser una carta de ave. Puedes colocar cada carta en la columna que desees, y no hay límite de cartas por columna.
-        - name: Un nuevo nido.
-          text: Si no tienes nidos sobre el mapa, coloca 1 nido y 3 guerreros en el claro donde haya menos guerreros y puedas colocar estas piezas.
+          text: Debes añadir una o dos cartas al Decreto, pero solo una dichas cartas puede ser una carta de ave. Puedes colocar cada carta en cualquier columna, y cada columna puede contener cualquier número de cartas.
+        - name: Un Nuevo Nido.
+          text: Si no tienes nidos sobre el mapa, coloca un nido y tres guerreros en el claro que tenga menos guerreros, y que pueda albergar dichas piezas.
 
     - name: Día
-      pretext: Tu Día tiene 2 pasos en el siguiente orden.
+      pretext: Tu Día tiene dos pasos en el siguiente orden.
       children:
         - name: Fabricar.
-          text: Puedes activar Nidos para fabricar cartas de tu mano.
+          text: Puedes activar nidos para fabricar cartas de tu mano.
         - name: Resolver el Decreto.
-          text: Debes resolver completamente tu Decreto, comenzando por la primera columna de la izquierda, resolverla, y después pasar a la siguiente. En cada columna debes resolver todas las cartas, pero puedes hacerlo en cualquier orden. Por cada carta que haya, debes realizar la acción indicada en su columna tal y como se indica a continuación; si no puedes realizar o resolver completamente dicha acción, entras en Caos (`rule:7.7`).
+          text: Debes resolver el Decreto, empezando por la columna de más a la izquierda y avanzando hacia la derecha. En cada columna debes resolver todas las cartas, en cualquier orden. Por cada carta, debes llevar a cabo la acción de esa columna, como sigue. Si no puedes llevar a cabo una de esas acciones, caes inmediatamente en el caos (`rule:7.7`).
           subchildren:
             - name: Reclutar.
-              text: Coloca un guerrero en un claro en que haya un nido cuyo palo coincida con el palo de la carta.
+              text: Coloca un guerrero en un claro que tenga nido y sea correspondiente a la carta.
             - name: Mover.
-              text: Mueve desde un claro cuyo palo coincida con el palo de la carta _(debes mover al menos un guerrero)_.
+              text: Mueve desde cualquier claro correspondiente a la carta. _(Debes mover al menos un guerrero)_.
             - name: Batallar.
-              text: Inicia una batalla en un claro cuyo palo coincida con el palo de la carta.
+              text: Inicia una batalla en un claro correspondiente a la carta.
             - name: Construir.
-              text: Coloca un nido sobre cualquier claro en que gobiernes cuyo palo coincida con el palo de la carta.
+              text: Coloca un nido en un claro que gobiernes, que no tenga nido y sea correspondiente a la carta.
 
     - name: Noche
-      pretext: Tu Noche tiene 2 pasos en el siguiente orden.
+      pretext: Tu Noche tiene dos pasos en el siguiente orden.
       children:
-        - name: Puntuar nidos.
-          text: Suma los puntos indicados sobre espacio vacío más a la derecha de tu contador de nidos.
-        - name: Robar y descartar.
-          text: Roba 1 carta, más 1 por cada icono de robar carta descubierto sobre tu tablero de facción. Después, si tienes más de 5 cartas en tu mano, descarta cartas a tu elección hasta quedarte con solo 5.
+        - name: Puntúa.
+          text: Obtén los puntos de victoria indicados en el espacio vacío más a la derecha de tu contador de nidos.
+        - name: Robar y Descartar.
+          text: Roba una carta, más una carta adicional por cada símbolo de robo adicional descubierto. Entonces, si tienes más de cinco cartas en tu mano, descarta cartas a tu elección hasta quedarte con cinco.
 
     - name: Caos
-      pretext: Si no puedes resolver completamente una acción de tu Decreto por cualquier motivo, entras en Caos, y debes seguir los pasos indicados.
+      pretext: Si no puedes llevar a cabo al completo una de las acciones del Decreto (`rule:7.5.2`) por cualquier motivo, caes en el caos. Debes proceder en el siguiente orden.
       children:
-        - name: "Paso 1: Humillación."
-          text: Pierdes 1 punto de victoria por carta de ave _(contando también los Visires Leales)_ en tu Decreto.
+        - name: "Paso 1: Humilla."
+          text: Pierdes un punto de victoria por cada carta de ave _(Visires Leales incluidos)_ en tu Decreto.
         - name: "Paso 2: Purga."
-          text: Descarta todas las cartas de tu Decreto excepto los Visires Leales.
-        - name: "Paso 3: Deponer Líder."
-          text: Descarta bocabajo tu carta de Líder actual y déjala apartada, sin mezclarla con el resto de líderes no depuestos. Elige un nuevo líder de entre los restantes y colócalo bocarriba en el espacio de tu tablero de facción. Coloca los Visires Leales en las columnas que indica tu nueva carta de Líder.
+          text: Descarta todas las cartas en el Decreto excepto tus Visires Leales.
+        - name: "Paso 3: Depón."
+          text: Dale la vuelta a tu carta de líder actual y déjala a un lado. Elige un nuevo líder de los que están bocarriba y colócalo en tu tablero de facción. Coloca tus Visires Leales en los espacios de Decreto según marque tu nuevo líder.
           subchildren:
             - name: Nueva Nidada.
-              text: En caso que debas elegir un nuevo líder y no quede ninguna carta disponible bocarriba (no depuesta) colócalas todas bocarriba nuevamente.
-        - name: "Paso 4: Descansar."
-          text: Acaba tu día y procede a la Noche.
+              text: Si debes elegir un líder nuevo pero no queda ninguno bocarriba, dale la vuelta a todos.
+        - name: "Paso 4: Descansa."
+          text: Termina tu Día. Pasa a la Noche.
 
-    - name: Referencia de Líderes
-      pretext: El Nido de Águilas tiene 4 cartas de Líder, detalladas a continuación.
+    - name: Guía de Líderes
+      pretext: El Nido tiene cuatro cartas de líder, como sigue.
       children:
         - name: Constructor.
-          text: Tus Visires Leales empiezan en Reclutar y Mover. Cuando fabriques, ignora tu rasgo de facción Desdén por el Comercio (`rule:7.2.3`).
+          text: Los Visires Leales empiezan en Reclutar y Mover. Cuando fabriques, ignora tu habilidad especial Desdén por el Comercio (`rule:7.2.3`).
         - name: Carismático.
-          text: Tus Visires Leales empiezan en Reclutar y Batallar. Cuando realices la acción de reclutar, debes colocar 2 guerreros en lugar de uno.
+          text: Los Visires Leales empiezan en Reclutar y Batallar. Cuando reclutes, debes colocar dos guerreros en vez de uno.
         - name: Comandante.
-          text: Tus Visires Leales empiezan en Mover y Batallar. Como atacante en batalla, inflinges un impacto adicional.
+          text: Los Visires Leales empiezan en Mover y Batallar. Como atacante en batalla, das un golpe adicional.
         - name: Déspota.
-          text: Tus Visires Leales empiezan en Mover y Construir. Cuando retiras al menos un edificio o ficha enemiga en batalla, obtienes un punto de victoria extra _(1 solo punto por batalla, independientemente de la cantidad de fichas que retires)_.
+          text: Los Visires Leales empiezan en Mover y Construir. Cuando retires al menos un edificio o ficha enemiga en batalla, obtienes un punto de victoria extra _(dos en total `rule:3.2.1`)_.
 
 - name: La Alianza
   color: "#68b653"
