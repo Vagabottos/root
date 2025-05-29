@@ -78,7 +78,7 @@
           text: Los espacios marcados con una "R" empiezan el juego ocupados con **ruinas**. Las ruinas no pueden retirarse a menos que se indique expresamente _(como por la acción de Explorar del Vagabundo, `rule:9.5.3`)_.
     
     - name: Ríos
-      pretext: Muchos claros están unidos por **ríos**. _(Los ríos no son caminos, pero pueden traterse como caminos si se indica expresamente. Los ríos no dividen claros ni a los bosques)_ `faction:riverfolk:11.2.2`
+      pretext: Muchos claros están unidos por **ríos**. _(Los ríos no son caminos, pero pueden tratarse como caminos si se indica expresamente. Los ríos no dividen claros ni a los bosques)_ `faction:riverfolk:11.2.2`
       
     - name: Bosques
       pretext: Las áreas del mapa delimitadas por caminos impresos y claros se llaman **bosques**.
@@ -124,44 +124,49 @@
   color: "#000000"
   children:
     - name: Fabricar
-      pretext: Puedes **fabricar** la mayoría de cartas de tu mano para obtener un efecto inmediato o persistente.
+      pretext: Puedes **fabricar** la mayor parte de cartas de tu mano para obtener un efecto inmediato o persistente.
       children:
         - name: Coste.
-          text: Para fabricar una carta, debes **activar** piezas de fabricación del palo indicado en el icono de la esquina inferior izquierda de la carta. El palo de una pieza de fabricación corresponde al claro donde esté situada _(algunas facciones pueden tener mecánicas específicas para sus piezas)_. Cada pieza de fabricación puede ser activada una sola vez por turno. Un icono de fabricación tricolor con un signo de interrogación indica que se puede utilizar una pieza de fabricación de cualquier palo. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1`
-        - name: Efectos inmediatos.
-          text: Al fabricar una carta con un efecto inmediato, resuelve su efecto y luego descarta la carta. Si el efecto indica un objeto, toma dicho objeto de la reserva general del tablero y colócalo en tu zona de objetos fabricados de tu tablero de facción. Si la carta indica un objeto que ya no está disponible en la reserva, la carta no puede ser fabricada. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8`
-        - name: Efectos persistentes.
-          text: Al fabricar una carta con un efecto persistente, colócala en tu área de juego. A partir de ahora, puedes hacer uso del efecto descrito en la carta.
-        - name: Sin duplicados.
-          text: No puedes fabricar un efecto persistente si ya tienes dicho efecto en tu área de juego. 
+          text: Para fabricar una carta, debes **activar** las piezas de fabricación de los palos que aparecen en la esquina inferior izquierda de la carta. Las piezas de fabricación de cada facción se indican en su sección de Fabricar. El palo de una pieza de fabricación se corresponde con su claro. Cada pieza de fabricación puede activarse una única vez por turno. Una interrogación tricolor denota una pieza de fabricación de cualquier palo. `faction:vagabond:9.2.1` `faction:riverfolk:11.2.1` `faction:cult:10.2.1`
+        - name: Efectos Inmediatos.
+          text: Cuando fabriques un efecto inmediato _(recuadro de pergamino)_, resuelve el efecto y después descarta la carta. Si muestra un objeto, toma el objeto correspondiente de la reserva común de objetos del mapa y colócalo en la zona de objetos fabricados de tu tablero de facción. Si la carta muestra un objeto que no está en la reserva, la carta no puede fabricarse. `faction:eyrie:7.8.1` `faction:vagabond:9.5.8` `faction:warlord:14.2.1`
+        - name: Efectos Persistentes.
+          text: Cuando fabriques un efecto persistente _(recuadro de piedra)_, colócalo en tu zona de juego. Puedes usar el efecto tal y como se describe en la carta. _(el Emigrante del Nido en el mazo de Exiliados y Partisanos es obligatorio)_.
+        - name: Sin Duplicados.
+          text: No puedes fabricar un efecto persistente si tienes uno idéntico en tu zona de juego. 
   
     - name: Mover
-      pretext: Al **mover** debes trasladar cualquier cantidad de guerreros _(siempre más que 0)_ o tu peón de un claro a otro claro adyacente.
+      pretext: Cuando **mueves**, puedes tomar cualquier número _(superior a cero)_ de tus guerreros o peones de un claro y moverlos a otro claro adyacente.
       children:
-        - name: Debes gobernar.
-          text: Para realizar un movimiento, debes gobernar el claro de origen, el claro de destino o ambos. `faction:vagabond:9.2.3` `faction:riverfolk:11.2.2` `faction:corvid:13.2.3`
-        - name: Movimiento no limitado.
-          text: Una misma pieza puede moverse varias veces en el mismo turno. Si se te indica que muevas varias veces, puedes mover el mismo guerrero o mismo grupo de guerreros varias veces si lo deseas _(incluso realizar el mismo movimiento a la inversa)_.
+        - name: Debes Gobernar.
+          text: Para poder mover, debes gobernar el claro de origen, el de destino, o ambos. `faction:vagabond:9.2.3` `faction:riverfolk:11.2.2` `faction:corvid:13.2.3`
+        - name: Sin Límites.
+          text: Una pieza cualquiera puede moverse cualquier número de veces por turno. Si se te pide que hagas varios movimientos, puedes mover el mismo o distintos grupos de guerreros.
 
     - name: Batallar
-      pretext: Al **batallar**, elige un claro en el que tengas guerreros o tu peón; este será el **claro de la batalla**. Tú serás el **atacante**. Elige a otra facción presente en dicho claro para que sea el **defensor**; la batalla será entre vosotros dos.
+      pretext: Cuando **batallas**, elige un claro donde tengas cualquier número de guerreros y peones como el **claro de batalla**. Tú eres el **atacante**. Elige a un enemigo en el claro de batalla que será el **defensor** _(hay al menos una de sus piezas ahí)_.
       children:
-        - name: "Paso 1: el Defensor puede emboscar."
-          text: El defensor puede jugar una sola carta de emboscada del palo correspondiente al del claro de la batalla. Si la emboscada no es truncada, el defensor inflige dos impactos de forma inmediata, y después descarta dicha carta de emboscada. En caso de que el atacante se quede sin guerreros o peones, la batalla termina inmediatamente.
+        - name: "Paso 1: El Defensor Puede Emboscar."
+          text: El defensor puede jugar una (y solo una) carta de emboscada correspondiente al claro de la batalla. De ser así resuelve `rule:4.3.1.1`–`rule:4.3.1.2` en order.
           subchildren:
-            - name: Truncar emboscada.
-              text: Después de que el defensor juegue una carta de emboscada, el atacante puede responder jugando también una carta de emboscada del palo correspondiente al del claro de la batalla para cancelar su emboscada. _(El defensor debe descartar igualmente su carta de emboscada)_
-        - name: "Paso 2: Lanzar dados y sumar impactos adicionales."
-          text: Lanza ambos dados. El atacante puede causar tantos impactos como marque el valor más alto, y el defensor puede causar tantos impactos como marque el valor más bajo. Si ambos dados marcan el mismo resultado, tanto atacante como defensor pueden infligir los mismos impactos `faction:woodland:8.2.2`. _(Decimos "pueden" porque los impactos no se aplican hasta el paso 3.)_ 
+            - name: Emboscada Truncada.
+              text: El atacante puede jugar también una carta de emboscada correspondiente al claro de batalla. De ser así, ambos jugadores descartan sus cartas de emboscada sin aplicar sus efectos y se omite el paso `rule:4.3.1.2`.
+            - name: Resuelve la Emboscada.
+              text: El defensor da inmediatamente dos golpes al atacante (`rule:4.3.4`). Después, el defensor descarta la carta de emboscada. Si no quedan guerreros o peones atacantes, la batalla finaliza inmediatamente.
+        - name: "Paso 2: Tirar Dados"
+          text: Tira ambos dados. El atacante golpeará tantas veces como la tirada más alta, y el defensor golpeará tantas veces como la tirada más baja. Si las tiradas son iguales, el atacante y el defensor golpearán el mismo número de veces _(el uso del futuro aquí refleja que los golpes no se aplican hasta el paso 4)_. `faction:woodland:8.2.2`
           subchildren:
-            - name: Impactos máximos por dado.
-              text: El número de impactos máximos por tirada de dados que un jugador infligir está limitado por el número de guerreros presentes en el claro de la batalla, tanto si eres el atacante como el defensor. `faction:vagabond:9.2.6`
-            - name: Impactos adicionales.
-              text: Después de obtener el resultado del dado, tanto atacante como defensor pueden añadir **impactos adicionales** por medio de habilidades especiales u otros efectos que tengan en su área de juego. _(Los impactos adicionales no están limitados por el número de guerreros en el claro de la batalla.)_
+            - name: Golpes Máximos por Tirada.
+              text: El número máximo de golpes que puedes causar debido a tu tirada es igual al número de tus guerreros en el claro de batalla, ya seas el atacante o el defensor. `faction:vagabond:9.2.6`
+        - name: "Paso 3: Usar Efectos"
+          text: El atacante y el defensor pueden usar efectos opcionales _(como la carta Tácticas Brutales)_ que afecten a la batalla. Si ambos quieren hacerlo, el atacante escoge quién los usa primero (`rule:1.1.3`).
+          subchildren:
+            - name: Golpes Adicionales.
+              text: Muchos efectos causarán **golpes adicionales**, estos golpes no están limitados por el número de guerreros en el claro de batalla.
             - name: Indefenso.
-              text: Si el defensor no tiene guerreros en el claro de la batalla, el atacante infligirá un impacto adicional. `faction:vagabond:9.2.4`
-        - name: "Paso 3: Infligir impactos."
-          text: "El atacante y el defensor se infligen impactos simultáneamente. Cada impacto causado obliga a retirar una pieza. El jugador que recibe impactos debe elegir qué piezas retira del claro de la batalla, pero está obligado a retirar siempre primero todos sus guerreros antes que retirar edificios o fichas; en dicho caso, el jugador elegirá en qué orden retira estas piezas. _(Recuerda: obtienes 1 punto de victoria por edificio o ficha enemiga que retires.)_"
+              text: Si el defensor no tiene guerreros en el claro de la batalla, el atacante da un golpe adicional. `faction:vagabond:9.2.4`
+        - name: "Paso 4: Recibir Golpes."
+          text: "Cada golpe que da un bando retira una pieza del otro bando en el claro de batalla _(obtienes un punto de victoria por cada edificio o ficha enemiga que retires)_. El bando que recibe un golpe decide en qué orden se retiran sus piezas, aunque todos sus guerreros han de ser retirados antes de que sus edificios o fichas puedan retirarse; también escogen el orden de cualquier efecto que provoque la retirada de sus piezas."
 
 - name: Preparación
   color: "#000000"
