@@ -168,25 +168,29 @@
         - name: "Paso 4: Recibir Golpes."
           text: "Cada golpe que da un bando retira una pieza del otro bando en el claro de batalla _(obtienes un punto de victoria por cada edificio o ficha enemiga que retires)_. El bando que recibe un golpe decide en qué orden se retiran sus piezas, aunque todos sus guerreros han de ser retirados antes de que sus edificios o fichas puedan retirarse; también escogen el orden de cualquier efecto que provoque la retirada de sus piezas."
 
-- name: Preparación
+- name: Preparación de la Partida
   color: "#000000"
+  pretext: Si algún jugador es novato, usa la Preparación Estándar (`rule:5.1`). Si todos habéis jugado y queréis más variedad, usad la Preparación Avanzada (`rule:16.1`). Si queréis jugar con cinco o más facciones que comienzan en claros de esquinas, tenéis que usar la Preparación Avanzada.
   children:
-    - name: Preparación estándar
+    - name: Preparación Estándar
       children:
-        - name: "Paso 1: Asignar facciones y jugador inicial"
-          text: Asigna una facción a cada jugador empleando el método que prefieras. Las combinaciones de facciones viables según el número de jugadores se describen en el el apartado "Combinaciones de facciones" (Apéndice A del Reglamento; en esta web puedes utilizar la herramienta de la calculadora). Determina el jugador inicial al azar y el orden de turno según cómo estéis sentados. Cada jugador coge el tablero y las piezas de su facción según indica el reverso del tablero de tu facción.
-        - name: "Paso 2: Colocar marcadores de puntuación."
-          text: Cada jugador coloca su contador de puntuación sobre el "0" del contador del tablero.
-        - name: "Paso 3: Mano inicial."
-          text: Si solo vais a jugar dos jugadores, retirad las 4 cartas de Dominancia del mazo. Baraja el mazo; después, cada jugador roba tres cartas _(alternativamente, robad 5 y elegid solo 3; esto es más recomendable si ya tenéis experiencia en el juego)_.
-        - name: "Paso 4: Ruinas."
-          text: Coloca las Ruinas sobre cada espacio del tablero marcado con una "R" _(cuatro en total)_.
-        - name: "Paso 5: Preparar la reserva de objetos."
-          text: "Coloca los siguientes objetos en las casillas correspondientes de la reserva de objetos de la parte superior del tablero: 2 `item:boot`, 2 `item:sack`, 1 `item:crossbow`, 1 `item:hammer`, 2 `item:sword`, 2 `item:tea`, 2 `item:coin`."
-        - name: "Paso 6: Preparar el resto de elementos."
-          text: Reparte las cartas de resumen de las facciones a petición, y coloca los 2 dados de batalla junto al mapa.
-        - name: "Paso 7: Preparación individual."
-          text: Por orden de preparación (A, B, C, etc.) cada jugador sigue los pasos de preparación de su tablero de facción, descritos tanto en las reglas como en el reverso de su tablero de facción. _(El orden se verá alterado si jugáis con reglas de preparación avanzada.)_
+        - name: "Paso 1: Asignar Facciones y Jugador Inicial"
+          text: Asigna una facción a cada jugador usando cualquier método. Determina al azar el orden de asiento y el jugador inicial, el orden de turno va hacia su izquierda. Cada jugador toma su tablero de facción y todas sus piezas, tal y como se describe en la parte trasera del mismo.
+        - name: "Paso 2: Colocar Marcadores de Puntuación."
+          text: Cada jugador coloca su contador de puntuación en la casilla "0" del contador.
+        - name: "Paso 3: Robar Mano Iniciales."
+          text: Si estáis jugando dos jugadores, quita las cuatro cartas de dominancia del mazo. Baraja el mazo. Cada jugador roba tres cartas.
+        - name: "Paso 4: Colocar Ruinas."
+          text: Coloca una ficha de ruina en cada espacio del mapa marcado con una "R" _(cuatro en total)_.
+        - name: "Paso 5: Formar la Reserva común de Objetos."
+          text: "Coloca estos objetos en los espacios correspondientes de la reserva de objetos en la parte superior del mapa: 2 `item:boot`, 2 `item:sack`, 1 `item:crossbow`, 1 `item:hammer`, 2 `item:sword`, 2 `item:tea`, 2 `item:coin`."
+        - name: "Paso 6: Otras Piezas."
+          text: Reparte las cartas de resumen de facción según se necesiten, después coloca los dos dados junto al mapa.
+        - name: "Paso 7: Preparar Facciones."
+          text: En orden de preparación (A, B, C, etc.) cada jugador sigue las instrucciones de preparación de la sección de reglas que está en la parte trasera de su tablero.
+
+    - name: Alcance
+      pretext: Para preparar un juego compensado, escoge facciones cuyos valores sumados de **alcance** sean al menos el valor total de alcance recomendado para el número de jugadores. _(Los jugadores más osados pueden usar cualquier combinación de facciones con un Alcance de 17+)_. Para ver el Alcance recomendado para tu cantidad de jugadores, haz clic en el ícono de Calculadora en la esquina superior derecha de la app.
 
 - name: El Marquesado
   color: "#e07a37"
