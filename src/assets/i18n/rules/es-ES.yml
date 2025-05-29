@@ -92,33 +92,33 @@
 - name: Victoria
   color: "#000000"
   children:
-    - name: Cómo ganar
-      pretext: La primera persona en alcanzar 30 puntos de victoria gana inmediatamente la partida. Si varias personas alcanzan 30 puntos de forma simultánea, quien esté jugando su turno actual será el ganador o ganadora.
+    - name: Condición de Victoria
+      pretext: El primer jugador en alcanzar 30 puntos de victoria gana inmediatamente el juego. Si más de un jugador llega a 30 o más puntos de victoria simultáneamente, el jugador cuyo turno se esté jugando gana.
 
-    - name: Obtener puntos de victoria
-      pretext: Cada facción tiene sus formas de obtener puntos de victoria, pero todas las facciones pueden obtener puntos de victoria de las formas siguientes.
+    - name: Obtener Puntos de Victoria
+      pretext: Cada facción tiene una forma única de obtener puntos de victoria, pero cualquier facción puede obtener puntos de victoria de las formas siguientes.
       children:
         - name: Retirar Edificios y Fichas.
-          text: Por cada Edificio o Ficha que retires, obtienes 1 punto de victoria.
+          text: Cuando retires un edificio o ficha enemiga, obtienes un punto de victoria.
         - name: Fabricar Objetos.
-          text: Al fabricar un objeto (`rule:4.1`), obtienes los puntos de victoria indicados en la carta. `faction:eyrie:7.2.3`
+          text: Cuando fabriques un objeto (`rule:4.1`), obtienes el número de puntos de victoria indicado en la carta. `faction:eyrie:7.2.3` `faction:warlord:14.2.3`
 
     - name: Cartas de Dominancia
-      pretext: El mazo contiene 4 cartas de Dominancia, que permiten obtener la victoria sin al alcanzar los 30 puntos de victoria si cumples su condición.
+      pretext: El mazo contiene cuatro cartas de dominancia, que te permiten obtener ganar la partida sin llegar a 30 puntos de victoria.
       children:
-        - name: Activación.
-          text: Durante tu Día, si tienes al menos 10 puntos de victoria, puedes **activar** una carta de Dominancia de tu mano, colocándola en tu área de juego. Si lo haces, retira tu marcador de puntos de victoria del tablero; ya no obtendrás puntos de victoria. `faction:vagabond:9.2.8`
+        - name: Activar.
+          text: Durante tu Día, si tienes al menos 10 puntos de victoria, puedes **activar** una carta de dominancia que esté en tu mano y colocarla en tu zona de juego. Quita tu marcador de puntuación del contador de puntuación. Ya no puedes obtener más puntos de victoria. `faction:vagabond:9.2.8`
           subchildren:
             - name: Dominancia de Ratón, Conejo o Zorro.
-              text: Ganas la partida inmediatamente si, al inicio de tu Alba, gobiernas los tres claros del palo correspondiente a la carta de Dominancia.
+              text: Ganas inmediatamente la partida si, al comienzo de tu Alba, gobiernas tres claros del palo correspondiente a la carta de dominancia activada.
             - name: Dominancia de Ave.
-              text: Ganas la partida inmediatamente si, al inicio de tu Alba, gobiernas dos claros de esquinas opuestas del tablero. _(Solo hay 4 esquinas; no valen todos los claros opuestos de los bordes)_.
-        - name: Cartas de Dominancia activadas.
-          text: Una carta de Dominancia activada no cuenta a efectos de tu límite de cartas en mano ni puede ser retirada de la partida. Tampoco se puede sustituir una la carta de Dominancia activada por otra diferente.
-        - name: Gastar por el palo.
-          text: Una carta de Dominancia no activada puede ser gastada por su palo, como cualquier otra carta normal. No obstante, al descartarse, esta no se coloca sobre la pila de descarte; en lugar de ello, debe colocarse junto al tablero para indicar que está **disponible** para ser reclamada. `faction:cult:10.4.2`        
-        - name: Reclamar una carta de Dominancia disponible.
-          text: Durante tu Día, puedes **reclamar** una carta de Dominancia a tu mano gastando para ello una carta del mismo palo.
+              text: Ganas inmediatamente la partida si, al comienzo de tu Alba, gobiernas dos claros en esquinas opuestas.
+        - name: Cartas activadas.
+          text: Una carta de dominancia activada no cuenta para tu límite de mano, y no puede retirarse del juego. No puedes sustituir una carta de dominancia activada por otra diferente.
+        - name: Usar Cartas de Dominancia.
+          text: Una carta de dominancia puede gastar se por su palo. Cuando una carta de dominancia fuese a ser colocada en la pila de descartes, en vez de ahí se sitúa junto al tablero para mostrar que está **disponible** para ser tomada. `faction:cult:10.4.2`
+        - name: Tomar Cartas Disponibles.
+          text: Durante tu Día, puedes tomar cualquier carta de dominancia disponible y ponerla en tu mando gastando una carta del palo correspondiente. Debes gastar una carta de ave para tomar la carta de dominancia de ave.
 
 - name: Acciones Clave
   color: "#000000"
