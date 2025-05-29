@@ -345,94 +345,94 @@
   icon: woodland
   children:
     - name: Resumen
-      pretext: La Alianza trabaja para ganarse la **simpatía** de las diversas comunidades del Bosque desencantadas con su situación actual. Cada vez que la Alianza coloca una ficha de simpatía, obtendrá puntos de victoria. Cuanta más simpatía haya extendido por el mapa, más puntuará. Obtener la simpatía de las masas requiere de **simpatizantes**. Estos simpatizantes también pueden utilizarse con fines violentos y revolucionarios, incitando a la rebelión por el bosque. Cuando se  produzca una **revuelta**, la Alianza establecerá una **base**. Las bases permiten a la Alianza entrenar oficiales, lo cual aumenta su flexibilidad militar.
+      pretext: La Alianza trabaja para obtener la **simpatía** de las variadas criaturas del bosque que están descontentas con la situación actual. Cada vez que la Alianza coloca una ficha de simpatía, puede obtener puntos de victoria. Cuanta más simpatía tenga en el mapa, más puntos de victoria obtiene. Ganas simpatía de las gentes requiere **simpatizantes**. Estos simpatizantes también se pueden utilizar con un fin violento, incitando a la rebelión por todo el Bosque. Cuando ocurra una revuelta, la Alianza establecerá una **base**. Las bases le permiten a la Alianza entrenar oficiales, incrementando su flexibilidad militar.
 
     - name: Reglas y Habilidades de Facción
       children:
         - name: Fabricar.
-          text: La Alianza fabrica durante Día activando fichas de simpatía.
-        - name: Guerrilla.
-          text: Como defensor en batalla, la Alianza toma siempre el resultado del dado más alto, y el atacante el del dado más bajo para determinar cuántos impactos causan.
-        - name: La pila de Simpatizantes.
-          text: Para realizar sus acciones, la Alianza gasta **simpatizantes**, que son las cartas de la pila de simpatizantes. Los Simpatizantes solo se pueden gastar por su palo y no cuentan como cartas en mano. Las cartas de la pila de simpatizantes se colocan bocabajo, ocultas al resto de jugadores, aunque la Alianza puede revisar la pila siempre que quiera.
+          text: La Alianza fabrica durante Día, activando fichas de simpatía.
+        - name: Guerra de Guerrillas.
+          text: Como defensor en batalla, la Alianza golpea con la tirada más alta, y el atacante con la tirada más baja.
+        - name: Simpatizantes.
+          text: Para llevar a bao acciones durante el Alba, la Alianza gasta **simpatizantes**, que son las cartas de su montón de simpatizantes. Los simpatizantes solo pueden gastarse por el palo y no cuentan para el límite de mano de la Alianza. Los simpatizantes están bocabajo, pero la Alianza puede examinarlos en cualquier momento.
           subchildren:
-            - name: Límite de capacidad.
-              text: Si la Alianza no tiene bases sobre el mapa, en la pila de simpatizantes solo puede haber un máximo de 5 cartas. En caso de que la Alianza obtenga un simpatizante pero no pudiese albergar más, deberá descartar dicha carta. Si la Alianza tiene al menos una base sobre el mapa, entonces la pila de Seguidores no tiene límite de capacidad.
+            - name: Capacidad.
+              text: Si la Alianza no tiene bases en el mapa, el montón de simpatizantes sólo puede tener hasta cinco cartas. Si la Alianza fuera a ganar un simpatizante pero no tiene espacio en el montón, esa carta se descarta. Si hay al menos una base en el mapa, el montón de simpatizantes no tiene límite de cartas.
         - name: Retirar Bases.
-          text: Cuando una de sus bases sea retirada, la Alianza debe descartar todos los seguidores del palo correspondiente a dicha base (las cartas de ave también), y retirar la mitad de sus oficiales, redondeando hacia arriba. Si la Alianza no tuviese ninguna base sobre el mapa y en la pila de seguidores hubiese más de cinco cartas, deberá descartar cartas hasta tener solo cinco.
+          text: Cuando se retire una base, la Alianza debe descartar todos sus simpatizantes del palo correspondiente al indicado por la base _(aves incluidas)_, y retirar la mitad de sus oficiales, redondeado hacia arriba. Si la alianza no tiene más bases en el mapa y tiene más de cinco simpatizantes, debe descartarse hasta quedarse con cinco.
         - name: Fichas de Simpatía.
           text: La Alianza tiene 10 fichas de simpatía.
           subchildren:
-            - name: Límite de colocación.
-              text: Cada claro solo puede contener 1 ficha de simpatía.
-            - name: Términos clave asociados.
-              text: Un **claro afín** es cualquier claro con una ficha de simpatía. Un claro **no afín** es cualquier claro sin ficha de simpatía.
+            - name: Límite de Colocación.
+              text: Cada claro solo puede tener una única ficha de simpatía.
+            - name: Términos.
+              text: Un **claro afín** es uno con ficha de simpatía. Un **claro no afín** es uno sin ficha de simpatía.
         - name: Indignación.
-          text: Cuando cualquier otro jugador retire una ficha de simpatía de un claro afín o mueve guerreros a un claro afín, debe añadir una carta del palo correspondiente a tu pila de Simpatizantes. Si dicho jugador no tuviese cartas de dicho palo _(ni tampoco de ave)_ debe mostrar su mano a la Alianza, y después la Alianza debe robar 1 carta del mazo y añadirla a su pila de Simpatizantes.
+          text: Cuando otro jugador retira una ficha de simpatía o mueve guerreros a un claro afín, debe añadir una carta correspondiente al claro afectado de su mano al montón de simpatizantes. Si no tiene ninguna carta correspondiente _(ni aves)_, debe enseñarle su mano a la Alianza, y entonces la Alianza roba una carta del mazo y la añade a su montón de simpatizantes.
 
-    - name: Preparación Individual
+    - name: Preparación
       children:
-        - name: "Paso 1: Guerreros."
-          text: Forma una reserva de 10 guerreros.
-        - name: "Paso 2: Preparar Bases."
-          text: Coloca tus 3 bases sobre sus respectivas casillas de tu zona de Bases.
-        - name: "Paso 3: Contador de Simpatía."
-          text: Coloca tus 10 fichas de simpatía sobre las respectivas casillas del contador de simpatía.
-        - name: "Paso 4: Simpatizantes iniciales."
-          text: Roba 3 cartas y colócalas bocabajo en tu pila de Simpatizantes.
+        - name: "Paso 1: Juntar Guerreros."
+          text: Forma la reserva de guerreros (10).
+        - name: "Paso 2: Colocar Bases."
+          text: Coloca 3 bases en los espacios correspondientes de tu zona de bases.
+        - name: "Paso 3: Rellenar el Contador de Simpatía."
+          text: Coloca allí 10 fichas de simpatía.
+        - name: "Paso 4: Obtener Simpatizantes."
+          text: Roba 3 cartas y colócalas bocabajo en tu montón de simpatizantes.
         
     - name: Alba
-      pretext: Tu Alba tiene 2 pasos en el siguiente orden.
+      pretext: Tu Alba tiene dos pasos en el siguiente orden.
       children:
         - name: Revuelta.
-          text: Retira todas las piezas enemigas de un claro y coloca una base y los guerreros que corresponda, como se indica a continuación. Puedes realizar tantas revueltas como quieras, siempre que cumplas las condiciones.
+          text: Puedes hacer la acción de Revuelta cualquier número de veces según se indica.
           subchildren:
-            - name: Elige claro.
-              text: Solo es posible realizar la Revuelta en un claro afín de un palo cuya base no esté ya construida _(no es posible realizar la revuelta en un claro de un palo si la base correspondiente ya está construida)_.
-            - name: Gastar Simpatizantes.
-              text: Gasta dos seguidores del palo correspondiente al palo del claro en que realizas la Revuelta.
-            - name: Resolver efecto.
-              text: Retira todas las piezas enemigas del claro elegido. Después, coloca la base correspondiente al palo de dicho claro y tantos guerreros como claros afines de ese palo tengas. Después, coloca un guerrero de tu reserva en el recuadro de Oficiales; este es ahora un **oficial**. _(Recuerda que obtienes 1 punto de victoria por cada ficha o edificio que retires en la revuelta, y a determinadas facciones se les aplican reglas específicas para las bajas por este efecto)_
+            - name: "Paso 1: Elegir Claro."
+              text: Elige un claro afín correspondiente a una base que esté en tu tablero de facción.
+            - name: "Paso 2: Gastar Simpatizantes."
+              text: Gasta dos simpatizantes correspondientes al claro elegido.
+            - name: "Paso 3: Resolución."
+              text: Retira todas las piezas enemigas del claro elegido _(obtén puntos de victoria por ficha o edificio retirado)_. Después coloca allí tu base correspondiente y tantos guerreros como claros afines en el mapa correspondientes al palo indicado por la base. Por último, coloca un guerrero en la zona de Oficiales. Este guerrero es ahora un **oficial**.
 
-        - name: Extender Simpatía.
-          text: Coloca una ficha de Simpatía, siguiendo las normas descritas a continuación. Puedes extender simpatía tantas veces como quieras.
+        - name: Extiende Simpatía.
+          text: Puedes Extender Simpatía cualquier número de veces de la forma siguiente.
           subchildren:
-            - name: Elige claro.
-              text: Elige cualquier claro no afín adyacente a un claro afín. En caso de no haber ningún claro afín, puedes elegir cualquier claro.
-            - name: Gastar Simpatizantes.
-              text: Gasta simpatizantes del palo correspondiente a dicho claro. La cantidad de simpatizantes que debes gastar aparece indicada encima de la ficha, en el contador.
+            - name: "Paso 1: Elegir Claro."
+              text: Elige un claro no afín adyacente a un claro afín. Si no hay claros afines, puedes elegir cualquier claro.
+            - name: "Paso 2: Gastar Simpatizantes."
+              text: Gasta simpatizantes correspondientes al claro elegido. El número de simpatizantes que debes gastar está indicado sobre la ficha de simpatía que colocas.
               subchildren:
                 - name: Ley Marcial.
-                  text: Debes gastar un simpatizante adicional si en el claro elegido hay algún jugador con 3 guerreros o más.
-            - name: Resolución.
-              text: Coloca la ficha de Simpatía sobre el claro elegido y suma los puntos de victoria indicados sobre el espacio que ocupaba la ficha en el contador.
+                  text: Debes gastar un simpatizante correspondiente adicional si el claro elegido tiene al menos 3 guerreros de otro jugador, incluyendo guerreros que se estén tratando como suyos para gobernar _(mercenarios, secuaces, etc.)_.
+            - name: "Paso 3 Colcoar y Puntuar."
+              text: Coloca una ficha de simpatía en el claro elegido. Obtén los puntos de victoria indicados en el espacio que acabas de revelar en tu tablero de facción.
 
     - name: Día
-      pretext: Puedes realizar las siguientes acciones en cualquier orden y combinación.
+      pretext: Puedes hacer las siguientes acciones en cualquier orden y número.
       children:
         - name: Fabricar.
           text: Puedes activar fichas de simpatía para fabricar cartas de tu mano.
         - name: Mobilizar.
-          text: Añade una carta de tu mano a la pila de Simpatizantes.
+          text: Añade una carta de tu mano al montón de simpatizantes.
         - name: Entrenar.
-          text: Gasta una carta del palo correspondiente a una base construida sobre el mapa para colocar un guerrero de la reserva en el recuadro de Oficiales. Este guerrero es ahora un **oficial**.
+          text: Gasta una carta correspondeinte al palo indicado por una base en el mapa para colocar un guerrero en la zona de oficiales. Este guerrero ahora es un **oficial**.
 
     - name: Noche
-      pretext: Tu Noche tiene 2 pasos en el siguiente orden.
+      pretext: Tu Noche tiene dos pasos en el siguiente orden.
       children:
-        - name: Operaciones militares.
-          text: Puedes realizar tantas acciones de estas como oficiales tengas, en cualquier orden y combinación.
+        - name: Operaciones Militares.
+          text: Puedes llevar a cabo acciones, de las siguientes, siendo el número máximo de acciones tu número de oficiales, en cualquier orden y número.
           subchildren:
             - name: Mover.
-              text: Realiza un movimiento.
+              text: Haz un movimiento.
             - name: Batallar.
               text: Inicia una batalla.
             - name: Reclutar.
-              text: Coloca un guerrero en cualquier claro en el que haya un base.
+              text: Coloca un guerrero en cualquier claro que tenga una base.
             - name: Organizar.
-              text: Retira 1 de tus guerreros de un claro no afín, coloca una ficha de simpatía en dicho claro, y puntúa los puntos de victoria indicados en casilla recién descubierta del contador de simpatía.
-        - name: Robar y descartar.
-          text: Roba 1 carta, más 1 por cada icono de robar carta descubierto sobre tu tablero de facción. Después, si tienes más de 5 cartas en tu mano, descarta cartas a tu elección hasta quedarte con solo 5.
+              text: Retira un guerrero de la alianza de un claro no afín, coloca una ficha de simpatía allí y obtén los puntos de victoria indicados en el espacio que acabas de descubrir en el contador de simpatía.
+        - name: Robar y Descartar.
+          text: Roba una carta, más una carta adicional por cada símbolo de robo adicional descubierto. Entonces, si tienes más de cinco cartas en tu mano, descarta cartas a tu elección hasta quedarte con cinco.
 
 - name: Vagabundo
   color: "#6d6e70"
