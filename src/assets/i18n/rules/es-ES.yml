@@ -10,7 +10,7 @@
         - name: Uso de **no puedes**.
           plainName: Uso de No puedes.
           text: Cualquier regla que diga **No puedes** o **No se puede** es absoluta. No puede ignorarse a menos que se especifique explícitamente.
-        - name: Resoluciones y elecciones poco claras
+        - name: Resoluciones y elecciones poco claras.
           text: Siempre que no esté claro en qué orden se deben resolver dos efectos simultáneos, o qué jugador debe actuar primero, el jugador en turno decide.
 
     - name: Información Pública y Privada.
@@ -30,7 +30,7 @@
       children:
         - name: Turno.
           text: Cada turno de un jugador consta de tres fases: Alba, Día y Noche. Cualquier texto que diga "al principio de" una fase, sucede antes de cualquier otra cosa en esa fase, si el texto dice "al final de" sucede después de todo lo demás en esa fase y justo antes del inicio de la siguiente, si la hay. Después de que un jugador finalice su Noche, el siguiente jugador en sentido horario comienza su turno. El juego continúa hasta que un jugador gana la partida (`rule:3.1`).
-        - name: Interrumpir
+        - name: Interrumpir.
           text: No puedes interrumpir una acción _(incluso una múltiple como la Marcha del Marquesado)_, habilidad _(como la Exposición de los Córvidos)_ o efecto persistente _(como la carta Emigrante del Nido)_ con otro efecto a menos que se permita explícitamente. _(Por ejemplo, la carta Pertrechados dice que se usa "En batalla...")_
     - name: Piezas
       children:
@@ -153,12 +153,12 @@
               text: El atacante puede jugar también una carta de emboscada correspondiente al claro de batalla. De ser así, ambos jugadores descartan sus cartas de emboscada sin aplicar sus efectos y se omite el paso `rule:4.3.1.2`.
             - name: Resuelve la Emboscada.
               text: El defensor da inmediatamente dos golpes al atacante (`rule:4.3.4`). Después, el defensor descarta la carta de emboscada. Si no quedan guerreros o peones atacantes, la batalla finaliza inmediatamente.
-        - name: "Paso 2: Tirar Dados"
+        - name: "Paso 2: Tirar Dados."
           text: Tira ambos dados. El atacante golpeará tantas veces como la tirada más alta, y el defensor golpeará tantas veces como la tirada más baja. Si las tiradas son iguales, el atacante y el defensor golpearán el mismo número de veces _(el uso del futuro aquí refleja que los golpes no se aplican hasta el paso 4)_. `faction:woodland:8.2.2`
           subchildren:
             - name: Golpes Máximos por Tirada.
               text: El número máximo de golpes que puedes causar debido a tu tirada es igual al número de tus guerreros en el claro de batalla, ya seas el atacante o el defensor. `faction:vagabond:9.2.6`
-        - name: "Paso 3: Usar Efectos"
+        - name: "Paso 3: Usar Efectos."
           text: El atacante y el defensor pueden usar efectos opcionales _(como la carta Tácticas Brutales)_ que afecten a la batalla. Si ambos quieren hacerlo, el atacante escoge quién los usa primero (`rule:1.1.3`).
           subchildren:
             - name: Golpes Adicionales.
@@ -174,7 +174,7 @@
   children:
     - name: Preparación Estándar
       children:
-        - name: "Paso 1: Asignar Facciones y Jugador Inicial"
+        - name: "Paso 1: Asignar Facciones y Jugador Inicial."
           text: Asigna una facción a cada jugador usando cualquier método. Determina al azar el orden de asiento y el jugador inicial, el orden de turno va hacia su izquierda. Cada jugador toma su tablero de facción y todas sus piezas, tal y como se describe en la parte trasera del mismo.
         - name: "Paso 2: Colocar Marcadores de Puntuación."
           text: Cada jugador coloca su contador de puntuación en la casilla "0" del contador.
@@ -197,56 +197,56 @@
   icon: marquise
   children:
     - name: Resumen
-      pretext: El Marquesado de Gato aspira a gobernar el bosque, que pretende transformar en una potencia militar e industrializada. Cada vez que el Marquesado construye uno de sus **edificios** -un taller, aserradero o reclutador- obtiene puntos de victoria. Cuantos más edificios de un tipo tenga sobre el mapa, más puntuará el siguiente. Sin embargo, para alimentar su ritmo de construcción, el Marquesado debe mantener y proteger su red de suministro de **madera**.
+      pretext: El Marquesado Gatuno gobierna el Bosque y quiere convertirlo en su reserva militar e industrial. Cada vez que el Marquesado construya uno de sus **edificios** _(un taller, un aserradero, o un reclutador)_ obtiene puntos de victoria. Cuantos más edificios del mismo tipo tenga en el mapa, más puntos obtiene. Sin embargo, para continuar alimentando ese ritmo de construcción, el Marquesado debe mantener y proteger una economía de **madera** fuerte e interconectada.
 
     - name: Reglas y Habilidades de Facción
       children:
         - name: Fabricar.
-          text: El Marquesado fabrica al inicio de su Día activando talleres.
+          text: El Marquesado fabrica durante el Día activando talleres.
         - name: La Fortaleza.
-          text: La Fortaleza. Solo el Marquesado puede colocar piezas sobre el claro que contenga la Fortaleza _(no obstante, sí es posible mover piezas a dicho claro)_. Si la Ficha de fortaleza es retirada en batalla, descártala de la partida de forma permanente.
-        - name: Hospitales de campaña.
-          text: Cada vez que cualquier cantidad de guerreros del Marquesado sean retirados de un claro en batalla, el Marquesado puede utilizar una carta del palo de dicho claro para colocar los guerreros retirados sobre el claro que contenga la Fortaleza.
+          text: El Marquesado puede colocar piezas en el claro donde está la ficha de la fortaleza, y los demás jugadores no pueden. _(Las piezas pueden acceder a ese claro moviendo. Si la ficha de la fortaleza es retirada se devuelve a la caja, no puede volver al mapa de nuevo)_.
+        - name: Hospitales de Campaña.
+          text: Cuando cualquier número de guerreros del Marquesado sean retirados de un claro, el Marquesado puede gastar una carta correspondiente a dicho claro para colocar a esos guerreros en el claro de la fortaleza en vez de retirarlos a su reserva personal.
 
-    - name: Preparación Individual
+    - name: Preparación
       children:
-        - name: "Paso 1: Guerreros y Madera."
-          text: Forma la reserva de guerreros (25 guerreros) y la de madera (8 fichas).
-        - name: "Paso 2: La Fortaleza."
-          text: Coloca la ficha de la Fortaleza en uno de los claros que hacen esquina en el mapa, a tu elección.
+        - name: "Paso 1: Juntar Guerreros y Madera."
+          text: Forma la reserva de guerreros (25) y fichas de madera (8).
+        - name: "Paso 2: Colocar La Fortaleza."
+          text: Coloca la ficha de la fortaleza en un claro de una esquina a tu elección. Este es tu claro inicial.
         - name: "Paso 3: Guarnición."
-          text: Coloca un guerrero en cada claro excepto en el claro que esté en la esquina opuesta al del claro donde has colocado tu Fortaleza.
-        - name: "Paso 4: Edicifios iniciales."
-          text: Coloca 1 aserradero, 1 taller y 1 reclutador. Puedes colocar estos edificios tanto en el claro de la Fortaleza como en cualquier claro adyacente a este, combinándolos como prefieras.
-        - name: "Paso 5: Rellenar los contadores de edificios."
-          text: Coloca tus 5 aserraderos, 5 talleres y 5 reclutadores restantes sobre las casillas correspondientes de sus respectivos contadores, de derecha a izquierda _(tapando  todas las casillas salvo la casilla más a la izquierda de cada fila)_.
+          text: Coloca un guerrero en cada claro excepto en el claro que está en la esquina diagonalmente opuesta al claro de la ficha de fortaleza.
+        - name: "Paso 4: Colocar los Edificios Iniciales."
+          text: Coloca 1 aserradero, 1 taller y 1 reclutador. Puedes colocarlos en el claro de la ficha de fortaleza o en claros adyacentes, en cualquier combinación.
+        - name: "Paso 5: Rellenar Contadores."
+          text: Coloca tus 5 aserraderos, 5 talleres y 5 reclutadores restantes en sus correspondientes contadores de edificios de derecha a izquierda. _(Deja vacío el espacio más a la izquierda de cada contador)_.
 
     - name: Alba
-      pretext: Coloca 1 ficha de madera por aserradero en los claros en que haya aserraderos construidos.
+      pretext: Coloca fichas de madera en cada claro que contenga al menos un aserradero, siendo el número de fichas de madera a colocar igual al número de aserraderos en ese claro.
 
     - name: Día
-      pretext: En primer lugar, puedes activar tus talleres para fabricar cartas de tu mano. Después, puedes realizar hasta tres acciones, más una acción por cada carta de ave que gastes específicamente para ello _(no como parte de una acción)_, en cualquier orden y número.
+      pretext: Primero, puedes activar talleres para fabricar cartas de tu mano. Después, puedes llevar a cabo hasta tres acciones en cualquier orden y número,y puedes llevar a cabo acciones extra gastando una carta de ave de tu mano por cada acción extra.
       children:
         - name: Batallar.
           text: Inicia una batalla.
         - name: Marchar.
-          text: Realiza hasta dos movimientos.
+          text: Haz hasta dos movimientos.
         - name: Reclutar.
-          text: Coloca 1 guerrero en cada reclutador. Solo puedes realizar esta acción una vez por turno.
+          text: Coloca un guerrero en cada reclutador. Solo puedes hacer esto una vez por turno.
         - name: Construir.
           text: Coloca un edificio.
           subchildren:
-            - name: Elige edificio
-              text: Elige el tipo de edificio que quieres construir (aserradero, taller o reclutador). Elige el edificio de ese tipo situado más a la izquierda de su contador. La columna correspondiente a ese edificio indica su coste de madera.
-            - name: Elige claro y paga madera.
-              text: Elige cualquier claro que gobiernes. Retira tantas fichas de madera como coste tenga el edificio del claro en que vas a construir, de los claros adyacentes a este en los que gobiernes o de cualquier claro gobernado por ti conectado al claro seleccionado a través de cualquier número de claros en los que gobiernes. _(Básicamente, debes gobernar toda la cadena de claros conectados al claro elegido para poder hacer uso de la Madera)_.
-            - name: Coloca el edificio y puntúa.
-              text: coloca el edificio elegido sobre el claro elegido, y puntúa los puntos de victoria que indica el espacio que ocupaba dicho edificio en tu tablero de facción.
+            - name: Escoger Claro y Edificio.
+              text: elige un claro que gobiernes. Elige si quieres colocar un aserradero, un taller o un reclutador. Colocarás el edificio de más a la izquierda de ese tipo de tu tablero de facción. Tienes que poder pagar su coste (`rule:6.5.4.2`) y colocarlo (`rule:6.5.4.3`).
+            - name: Pagar el Coste.
+              text: El coste del edificio escogido se muestra en la parte superior de su columna. Retira del mapa tantas fichas de madera como el coste, pudiendo estar dichas fichas en el claro elegido, en cualquier claro adyacente a él que gobiernes o en cualquier claro que gobiernes conectado al claro elegido únicamente a través de claros gobernados por ti.
+            - name: Colocar el Edificio y Puntuar.
+              text: Coloca el edificio elegido sobre el claro escogido y obtén los puntos de victoria indicados en el espacio que se ha descubierto en tu tablero de facción.
         - name: Forzar Producción.
-          text: Gasta una carta del palo correspondiente al claro donde haya construido un aserradero para producir 1 Madera allí.
+          text: Gasta una carta correspondiente al claro de un aserradero, para colocar una ficha de madera adicional ahí.
 
     - name: Noche
-      pretext: Roba 1 carta, más 1 por cada icono de robar carta descubierto sobre tu tablero de facción. Después, si tienes más de 5 cartas en tu mano, descarta cartas a tu elección hasta quedarte con solo 5.
+      pretext: Roba una carta, más una carta adicional por cada símbolo de robo adicional descubierto. Entonces, si tienes más de cinco cartas en tu mano, descarta cartas a tu elección hasta quedarte con cinco.
 
 - name: El Nido de Águilas
   color: "#416eb0"
