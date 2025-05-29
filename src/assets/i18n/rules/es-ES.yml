@@ -46,74 +46,48 @@
           plainName: Uso de Forzar.
           text: Algunos efectos te permiten **forzar** a un jugador o a sus piezas a actuar. Resuelve la situación del mismo modo en el que ese jugador lo haría _(siguiendo las reglas generales)_, teniendo en cuenta posibles efectos. _(Por ejemplo, si fuerzas al Nido a mover guerreros, se benefician de la regla Señores del Bosque)_.
 
-- name: Términos Clave y Conceptos de juego
+- name: Conceptos y Términos Clave
   color: "#000000"
+  pretext: Los términos se definen de forma rigurosa en el Glosario (`rule:16.6`).
   children:
-    - name: Cartas del mazo común.
-      pretext: "Cada carta del mazo común tiene un **palo**: ave, zorro, conejo o ratón. Muchos efectos de las Facciones exigen que gastes cartas según su palo. Además, la mayoría tiene un efecto que puedes obtener si **fabricas** dicha carta (`rule:4.1`)."
+    - name: Cartas
+      pretext: "Las cartas se roban de la parte superior del mazo común y se descartan a una pila de descartes común. Si en cualquier momento el mazo se queda sin cartas, baraja la pila de descartes inmediatamente para formar uno nuevo. Cada carta tiene un **palo**: Ave, zorro, conejo o ratón. La mayoría de cartas también tiene un efecto que puedes fabricar (`rule:4.1`)."
       children:
         - name: Las aves son comodín.
-          text: Puedes utilizar siempre una carta del palo de ave como si fuese una carta de otro palo _(zorro, conejo o ratón)_, incluso si debes gastar, tomar o dar múltiples cartas del mismo palo. `faction:cult:10.2.2`
+          text: Siempre puedes tratar una carta de ave como una carta de cualquier otro palo, incluso si debes gastar, tomar o dar múltiples cartas del mismo palo. `faction:cult:10.2.2`
           subchildren:
-            - name: Efectos obligatorios.
-              text: Si un efecto te exige que descartes una carta de zorro, conejo o ratón, debes tratar tus cartas como si fueran del palo que se pide.
-            - name: Imposibilidad de sustición inversa.
-              text: Si un efecto te exige que gastes, descartes, cojas o des una carta de ave específicamente, no es posible sustituir dicha carta por una de otro palo.
-
-        - name: Robar cartas.
-          text: Cuando se te indique que **robes** una carta, coge la carta superior del mazo común. Si no quedan cartas en el mazo, baraja la pila de descartes para formar un nuevo mazo.
-        - name: Gastar y descartar cartas.
-          text: Cuando se te indique que **descartes** o **gastes** una carta, colócala en la pila de descarte, excepto si es una carta de Dominancia (`rule:3.3`). `faction:cult:10.2.6`
-        - name: Revelar cartas.
-          text: Cuando se te indique que **reveles** una carta, colócala en tu **área de juego** (`rule:2.6`). _(Evita que esta se mezcle con otras vinculadas a efectos de tu facción.)_
+            - name: Efectos forzados.
+              text: Cuando se te pida descartar o dar cartas de zorro, conejo o ratón, debes tratar a tus cartas como si fueran del palo que se pide.
+            - name: Sustitución inversa.
+              text: Si se te pide que gastes, descartes, tomes o des una carta de ave, no puedes sustituir esta carta por una de otro palo.
         - name: Cartas de Emboscada.
-          text: "En el mazo hay 5 **cartas de emboscada**: 1 ratón, 1 conejo, 1 zorro y 2 de ave. Puedes gastar estas cartas por su palo, pero no pueden ser fabricadas. Puedes jugar 1 de estas cartas por batalla para infligir impactos (`rule:4.3.1`)."
+          text: Hay cinco **cartas de emboscada**: un ratón, un conejo, un zorro y dos aves. Puedes gastar una carta de emboscada por su palo, pero no puedes fabricarla. También puedes jugar una en batalla para dar golpes (`rule:4.3.1`)."
         - name: Cartas de Dominancia.
-          text: Hay 4 **cartas de dominancia**, una por cada uno de los cuatro palos. Puedes gastar estas cartas de Dominancia por su palo, pero no puedes fabricarlas. En la partida, puedes jugar una de estas cartas para cambiar de forma permanente tu condición de victoria (`rule:3.3`).
+          text: Hay cuatro **cartas de dominancia** que se corresponden con los cuatro palos. Puedes gastar una carta de dominancia por su palo, pero no puedes fabricarla. También puedes jugar una para cambiar de forma permanente tu condición de victoria (`rule:3.3`).
 
     - name: Claros y Caminos
-      pretext: El mapa del bosque está compuestos de una serie de **claros** que conectados por **caminos**.
+      pretext: El mapa del bosque está compuestos de una serie de **claros** conectados por **caminos**.
       children:
         - name: Adyacencia.
-          text: Un claro es adyacente a todos los claros conectados al mismo por 1 camino. `faction:duchy:12.2.2`
-        - name: Palo del claro.
-          text: Cada claro tiene un **palo** asociado _(ratón, conejo o zorro)_. _)Además del icono, el color de los árboles indica el palo del claro.)_
-        - name: Espacios de construcción.
-          text: Cada claro tiene un número de **espacios de construcción** _(casillas blancas)_. Cuando construyas un edificio, debes colocarlo sobre una casilla vacía. No puedes colocar un edificio _(y por tanto, no puedes construir)_ en un claro si no hay casillas vacías.
+          text: Un claro es adyacente a todos aquellos claros que están conectados a él por un camino. `faction:duchy:12.2.2`
+        - name: Palo.
+          text: Cada claro tiene un **palo** _(ratón, conejo o zorro)_.
+        - name: Espacios.
+          text: Cada claro tiene un número de **espacios de construcción** _(recuadros blancos)_. Cuando coloques un edificio, este debe ocupar un espacio vacío. No puedes colocar un edificio en un claro si no hay espacios vacíos.
         - name: Ruinas.
-          text: Las casillas marcadas con una "R" comienzan el juego cubiertas por **ruinas**. Las ruinas solo pueden ser retiradas mediante la acción de Explorar del Vagabundo (`rule:9.5.3`).
+          text: Los espacios marcados con una "R" empiezan el juego ocupados con **ruinas**. Las ruinas no pueden retirarse a menos que se indique expresamente _(como por la acción de Explorar del Vagabundo, `rule:9.5.3`)_.
     
     - name: Ríos
-      pretext: Muchos claros están conectados por **ríos**. Los ríos no son caminos, pero pueden ser tratados como caminos si una norma lo indica explícitamente `faction:riverfolk:11.2.2`. Los ríos no dividen claros ni bosques.
+      pretext: Muchos claros están unidos por **ríos**. _(Los ríos no son caminos, pero pueden traterse como caminos si se indica expresamente. Los ríos no dividen claros ni a los bosques)_ `faction:riverfolk:11.2.2`
       
     - name: Bosques
-      pretext: Las áreas del mapa contenidas entre los caminos y los claros se denominan **bosques**.
+      pretext: Las áreas del mapa delimitadas por caminos impresos y claros se llaman **bosques**.
       children:
         - name: Adyacencia.
-          text: Un bosque es adyacente a todos los claros que toca sin ser atravesado por un camino, y es adyacente a los otros bosques de los que está separado por un solo camino.
-      
-    - name: Piezas
-      pretext: Cada facción posee un conjunto específico de **piezas**, que aparecen detalladas en el reverso de su tablero de facción. Las piezas están limitadas a los componentes que incluye el juego; si se te indica que coloques, tomes o retires una pieza pero no es posible por no haber suficientes, entonces debes colocar, tomar o retirar la máxima cantidad posible.
-      children:
-        - name: Guerreros.
-          text: Si se te indica que coloques un guerrero, cógelo de tu reserva. Si uno de tus guerreros es retirado, devuélvelo a tu reserva. `faction:marquise:6.2.3` `faction:cult:10.2.3` _(El peón del Vagabundo no es un guerrero, y no puede ser retirado.)_
-        - name: Edificios.
-          text: Si se te indica que coloques un edificio, toma el edificio situado más a la izquierda de su correspondiente contador en tu tablero de facción. Si uno de tus edificios es retirado, devuélvelo a la casilla vacía más a la derecha posible de su respectivo contador.
-        - name: Fichas.
-          text: Si se te indica que coloques una ficha, toma la ficha situada más a la izquierda de su correspondiente contador en tu tablero, si lo hay, o cógela de tu reserva. Si una de tus fichas es retirada, devuélvelo a la casilla vacía más a la derecha posible de su respectivo contador, si lo hay, o devuélvela a tu reserva en caso contrario. `faction:marquise:6.2.2` `faction:riverfolk:11.2.5.1`
-        - name: Objetos.
-          text: Si se te indica que tomes un objeto, cógelo de la reserva general del tablero y colócalo en la zona de objetos fabricados de tu tablero de facción. Si se te indica que retires un objeto, descártalo del juego de forma permanente. `faction:vagabond:9.6.4`
-        - name: Otros.
-          text: Si se te indica que utilices cualquier otra pieza específica _(peón, marcador, etc.)_, sigue las instrucciones que se indiquen.
-        
-    - name: Área de juego
-      pretext: Tu **área de juego** es el espacio que hay alrededor de tu tablero de facción, donde debes colocar tu reserva, además de las cartas y/o piezas que indiquen las mecánicas de tu facción. Las cartas de tu área de juego solo pueden ser gastadas, descartadas o utilizadas de acuerdo con lo que estas indiquen o las reglas de tu facción.
-
-    - name: Enemigo
-      pretext: Un **enemigo** es cualquier jugador con el que no formes coalición (`rule:9.2.8`).
+          text: Un bosque es adyacente a todos los claros que lo tocan sin cruzar un camino impreso, y es adyacente a todos los bosques de los que está separado por un único camino impreso.
 
     - name: Gobernador
-      pretext: El **gobernador** de un claro es la persona con la suma total más alta de guerreros y edificios en dicho claro _(las fichas y peones no computan a efectos de gobernar)_. En caso de empate entre varias personas, nadie es considerado gobernador. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`   (_Gobernar es imporante ya que afecta directamente a la capacidad de mover y construir de varias facciones_)
+      pretext: Un jugador **gobierna** un claro si es el jugador con el mayor número total de edificios y guerreros en ese claro _(las fichas y peones no contribuyen para el gobierno)_. Si hay un empate entre varios jugadores en un claro, nadie lo gobierna. `faction:eyrie:7.2.2` `faction:vagabond:9.2.2` `faction:cult:10.2.4`
 
 - name: Victoria
   color: "#000000"
