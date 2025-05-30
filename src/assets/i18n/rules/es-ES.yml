@@ -1006,6 +1006,88 @@
         - name: Iracundo (`item:sword`).
           text: Como atacante en una batalla en el claro de tu señor de la guerra das un golpe adicional.
 
+- name: Los Guardianes de Hierro
+  color: "#8b8d90"
+  icon: keepers
+  children:
+    - name: Resumen
+      pretext: Los Guardianes de Hierro son una orden de devotos caballeros, que tiempo atrás fueron exiliados del Bosque, pero han regresado para recuperar las **reliquias** perdidas en conflictos del pasado. No obstante, que estas reliquias pertenezcan a los Guardianes o al Bosque, ya es otra cuestión. Para cumplir su misión, necesitarán desenterrar las reliquias de los bosques, llevarlas a un **puesto provisional** del mismo tipo, y, finalmente, recuperarlas. Cuando recuperen una reliquia, obtienen tantos puntos de victoria como el valor de la misma, de uno a tres, y además también obtienen dos puntos cada vez que completan un conjunto de tres tipos de reliquias _(figuras, tablas y joyas)_. Con el paso del tiempo, los Guardianes reunirán un **Séquito** de criaturas del Bosque, permitiéndoles realizar más acciones. Sin embargo, cada vez que desentierren o recuperen una reliquia, podrían perder la carta del Séquito que usaron para ello, por lo que necesitarán planear por adelantado y adoptar una gestión prudente del riesgo para tener éxito.
+
+    - name: Reglas y Habilidades de Facción
+      children:
+        - name: Reliquias.
+          text: "Buscan un total de doce fichas de reliquias de tres tipos: figuras, tablas y joyas. CAda tipo de reliquia consta de cuatro fichas. El anverso de la reliquia muestra su tipo, el reverso muestra un valor de 1, 2, 3 o 3."
+        - name: Puestos provisionales.
+          text: Tienen tres puestos provisionales. Cada puesto provisional muestra un tipo de reliquia en su anverso y otro tipo en su reverso.
+        - name: Fabricar.
+          text: Los Guardianes fabrican durante el Día activando puestos provisionales _(de cualquier tipo)_.
+        - name: Caballeros Devotos.
+          text: En batalla, si en el claro de batalla hay al menos una reliquia y un guerrero de los Guardianes, los Guardianes ignorar el primer golpe recibido _(ante una emboscada, ignoran un golpe de la emboscada, pero no los siguientes golpes)_. Al mover, los Guardianes pueden mover una reliquia con cada guerrero Guardián que se mueva.
+        - name: Trofeos Valiosos.
+          text: Cada vez que un enemigo retira una reliquia, la coloca bocarriba _(mostrando su valor)_ en cualquier bosque a su elección y obtiene un punto de victoria adicional _(dos en total)_.
+
+    - name: Preparación
+      children:
+        - name: "Paso 1: Colocar las Reliquias Iniciales"
+          text: Junta las doce fichas de reliquias y mézclalas bocabajo _(sin mostrar su valor)_. Coloca una aleatoriamente en cada bosque _(una forma de proceder podría ser que el jugador Guardián, tras mezclar las reliquias, las apile y que luego cualquier otro jugador corte esa pila y vaya dejando las reliquias del fondo de una en una en cada bosque)_.
+        - name: "Paso 2: Juntar Guerreros"
+          text: Forma la reserva de guerreros (15).
+        - name: "Paso 3: Colocar Guerreros"
+          text: Coloca cuatro guerreros en un claro de una esquina que no sea el claro inicial de otro jugador y, si es posible, que sea diagonalmente opuesto a un claro inicial. Después, coloca cuatro guerreros en un claro del borde del tablero que sea adyacente al claro anterior.
+        - name: "Paso 4: Colocar las demás Reliquias"
+          text: Coloca las restantes reliquias aleatoriamente, repartidas tan equitativamente como sea posible entre los bosques que no sean adyacentes a los claros con tus guerreros.
+        - name: "Paso 5: Colocar Seguidores Fieles"
+          text: Coloca una carta de Seguidor Fiel en cada espacio del Séquito de tu tablero de facción.
+        - name: "Paso 6: Reunir Puestos Provisionales"
+          text: Coloca tus tres edificios de puestos provisionales en sus correspondientes espacios sobre tu tablero de facción.
+
+    - name: Alba
+      pretext: Tu alba tiene tres pasos en el orden siguiente.
+      children:
+        - name: Acampar.
+          text: Una vez por claro, puedes reemplazar un guerrero Guardián por un puesto provisional. Si no tienes guerreros ni puestos provisionales en el mapa, en lugar de lo anterior, coloca un puesto provisional y un guerrero en cualquier claro del borde del tablero. En cualquier caso, al colocar el puesto provisional puedes hacerlo bocarriba o bocabajo, a tu elección.
+        - name: Levantar Campamento.
+          text: Una vez por claro, puedes reemplazar un puesto provisional por un guerrero Guardián.
+        - name: Reclutar.
+          text: Cualquier número de veces, puedes gastar una carta para colocar dos guerreros en un puesto provisional correspondiente.
+
+    - name: Día
+      pretext: Tu Día tiene dos pasos en el orden siguiente.
+      children:
+        - name: Fabricar.
+          text: Puedes fabricar cartas de tu mano activando puestos provisionales _(de cualquier tipo)_.
+        - name: Actuar con el Séquito.
+          text: Comenzando por la columna más a la izquierda del Séquito y yendo hacia la derecha, puedes realizar la  acción descrita en cada columna para cada carta en ella, en cualquier orden _(incluso ignorar alguna)_, del modo siguiente.
+          subchildren:
+            - name: Mover.
+              text: Haz un movimiento desde un claro correspondiente a la carta.
+            - name: Batallar y Desenterrar.
+              text: Escoge un claro correspondiente a la carta. Debes iniciar una batalla en él si hay alguna pieza enemiga allí. Después, si gobiernas ese claro y tienes al menos un guerrero Guardián en él, puedes desenterrar como sigue _(incluso si no hubo enemigo para batallar)_.
+              subchildren:
+                - name: "Paso 1: Mover y Voltear la Reliquia"
+                  text: Mueve cualquier reliquia de un bosque adyacente a ese claro. Voltea la reliquia de modo que su valor se muestre, si no lo está ya.
+                - name: "Paso 2: Comprobar Descarte"
+                  text: Cuenta el número de claros que gobiernas adyacentes al bosque en el que desenterraste la reliquia. Si ese número es menor que el valor de la reliquia, debes descartar la carta del Séquito usada para esta acción.
+            - name: Mover o Recuperar.
+              text: Escoge un claro correspondiente a la carta. Realiza un movimiento desde él o recupera una reliquia en él, según se indica a continuación.
+              subchildren:
+                - name: "Paso 1: Tomar Reliquia"
+                  text: Toma una reliquia en ese claro que sea del mismo tipo que el de un puesto provisional que esté en él. Colócala en el espacio de Reliquias vacío de ese tipo más a la izquierda en tu tablero de facción.
+                - name: "Paso 2: Obtener Puntos de Victoria"
+                  text: Obtén tantos puntos de victoria como el valor de la reliquia y, si completas una columna de reliquias, obtén dos puntos de victoria más.
+                - name: "Paso 3: Comprobar Descarte"
+                  text: "Cuenta el número de claros que gobiernas cuyo palo se corresponda con el del claro del cual estás recuperando la reliquia _(incluyendo a ese claro de ser el caso)_. Si ese número es menor que el valor de la reliquia recuperada, debes finalizar esta acción de Recuperar y descartar la carta del Séquito usada para realizarla. De no ser así, puedes volver al paso 1: Tomar Reliquia _(de ese mismo claro)_ o finalizar la acción de Recuperar."
+
+    - name: Noche
+      pretext: Tu Noche tiene tres pasos en el siguiente orden.
+      children:
+        - name: Vivir de la tierra
+          text: Debes retirar un guerrero Guardián de cada claro que tenga cuatro o más guerreros Guardianes.
+        - name: Reunir al Séquito.
+          text: "Escoge una opción: Puedes añadir cualquier número de cartas de tu mano a los espacios del Séquito, o bien, puedes cambiar a un espacio diferente una carta que ya esté en tu Séquito. Tu Séquito no puede contener más de diez cartas."
+        - name: Robar y Descartar .
+          text: Roba una carta, más una carta adicional por cada símbolo de robo adicional descubierto _(tantas como puestos provisionales sobre el mapa)_.
+
 - name: Variantes y Vagabundos extra
   color: "#000000"
   children:
