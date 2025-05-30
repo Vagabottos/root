@@ -799,7 +799,7 @@
             - name: Excavar.
               text: Gasta una carta para colocar una ficha de túnel en un claro correspondiente que no tenga una ficha de túnel. Entonces mueve hasta cuatro guerreros desde la madriguera a ese claro. _(Si los tres túneles están sobre el tablero, puedes retirar uno antes)_.
         - name: Parlamento.
-          text: Puedes llevar a cabo la acción de cada uno de los minsitros convencidos, una vez cada una en cualquier orden.
+          text: Puedes llevar a cabo la acción de cada uno de los ministros convencidos, una vez cada una en cualquier orden.
           subchildren:
             - name: Capatopo.
               text: Revela cualquier carta para colocar una ciudadela o mercado en cualquier claro _(correspondiente o no)_ que gobiernes.
@@ -814,7 +814,7 @@
             - name: Alcalde.
               text: Lleva a cabo la acción de cualquier noble o escudero convencidos.
             - name: Duquesa del Lodo.
-              text: Obtén dos puntos de victoria si los trestúneles están sobre el mapa.
+              text: Obtén dos puntos de victoria si los tres túneles están sobre el mapa.
             - name: Barón de la Tierra.
               text: Obtén un punto de victoria por cada mercado que haya sobre el mapa.
             - name: Conde de la Piedra.
@@ -833,7 +833,7 @@
       pretext: Tu Noche tiene tres pasos en el siguiente orden.
       children:
         - name: Descartar y Devolver Cartas Reveladas.
-          text: Descarta cualquier cantidad de cartas de ave que hayas revelado este turno, despuṕes devuelve todas las demás cartas reveladas a tu mano.
+          text: Descarta cualquier cantidad de cartas de ave que hayas revelado este turno, después devuelve todas las demás cartas reveladas a tu mano.
         - name: Fabricar.
           text: Puedes fabricar cartas de tu mano activando ciudadelas y mercados _(son idénticos a efectos de fabricación)_.
         - name: Robar y Descartar.
@@ -854,7 +854,7 @@
           text: Los Córvidos tienen ocho fichas de plan, dos de cada tipo.
           subchildren:
             - name: Sentido de la Ficha.
-              text: Mientras que estén en la reserva de los Córvidos, las fichas de plan están bocabajo _(pluma)_. Mientras está en el mapa, una ficha puede estar bocarriba _(ícono único)_ o bocabajo. Los córvidos pueden inspeccionar una ficha de plan que esté bocabajo en cualquier momento.
+              text: Mientras que estén en la reserva de los Córvidos, las fichas de plan están bocabajo _(pluma)_. Mientras está en el mapa, una ficha puede estar bocarriba _(ícono único)_ o bocabajo. Los Córvidos pueden inspeccionar una ficha de plan que esté bocabajo en cualquier momento.
             - name: Límites de Colocación.
               text: Cada claro sólo puede tener una única ficha de plan.
         - name: Grácil.
@@ -864,7 +864,7 @@
         - name: Agentes Infiltrados.
           text: Como defensor en la batalla, si los Córvidos tienen una ficha de plan bocabajo _(incluso si están indefensos)_ en el claro de batalla, dan un golpe adicional.
 
-    - name: Preparación Individual
+    - name: Preparación
       children:
         - name: "Paso 1: Juntar Guerreros y Planes."
           text: Forma la reserva de guerreros (15) y las fichas de planes bocabajo (8).
@@ -887,7 +887,7 @@
         - name: Mover.
           text: Haz un movimiento.
         - name: Planear.
-          text: retira un guerrero Córvido, más otro guerrero Córvido por cada plan que ya hayas colocado este turno, de un claro que no tenga ficha de plan para colocar una ficha de plan bocabajo en él.
+          text: Retira un guerrero Córvido, más otro guerrero Córvido por cada plan que ya hayas colocado este turno, de un claro que no tenga ficha de plan para colocar una ficha de plan bocabajo en él.
         - name: Batallar.
           text: Inicia una batalla.
         - name: Trucar.
