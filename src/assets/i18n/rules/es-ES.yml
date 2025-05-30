@@ -912,6 +912,100 @@
         - name: Asalto.
           text: Cuando se retire una ficha de asalto _(ya sea bocarriba o bocabajo)_, coloca un guerrero en cada claro adyacente al claro del que se retiró el asalto _(ignora este efecto si el asalto se retira por Exposición)_.
 
+- name: El Señor de los Cientos
+  color: "#e11b3f"
+  icon: warlord
+  children:
+    - name: Resumen
+      pretext: El Señor de los Cientos no soporta necedades y no permite discrepancias. Durante su Noe, obtiene puntos en función del grado de **opresión** al que somete a sus enemigos. Cuando más claros gobierne con piezas de los Cientos y sin piezas enemigas _(ni guerreros, ni edificios, ¡nada!) más puntos obtiene. Para aumentar su poder y captar guerreros, los Cientos deben ganar objetos y añadirlos a su creciente **Botín**. Liderando a los Cientos está el **Señor de la Guerra**, un guerrero demagogo cuyo inestable **estado de ánimo** le da una habilidad durante el turno. El señor de la guerra está obsesionado con el botín, así que a medida que los Cientos consiguen más objetos, él tendrá menos estados de ánimo entre los que escoger. Declarándose a ellos mismos como la verdadera voz del Bosque, los Cientos pueden instigar **turbas**, que destruirán fichas y edificios enemigos, y saquearán los objetos de las ruinas.
+
+    - name: Reglas y Habilidades de Facción
+      children:
+        - name: Fabricar.
+          text: Los Cientos fabrican durante el Día activando bastiones.
+        - name: El Señor de la Guerra.
+          text: Los Cientos tienen una pieza llamada señor de la guerra. El señor de la guerra es un guerrero que no puede ser retirado sin ser en batalla, movido si no es en el turno de los Cientos o colocado de otra forma que no sea mediante la preparación (`rule:14.3.2`) o con la acción Ungir (`rule:14.4.3`). _(Es inmune a efectos de Retirada Total, a la ballesta del Vagabundo y a acciones forzadas)_.
+        - name: Indiferencia por el Comercio.
+          text: Cuando los Cientos fabrican un objecto, pueden tomar el objeto pero no obtienen ninguno de los puntos indicados, o pueden retirar ese objeto de la partida y obtener los puntos indicados. _(Sí pueden obtener puntos adicionales por efectos de fabricación como en Maestros Grabadores o la Forja Legendaria)_.
+        - name: El Botín.
+          text: En vez de una zona para objetos fabricados, los Cientos tienen el Botín. Consta de dos contadores, Mando y Arrojo. El contador de Mando puede contener `item:boot`, `item:sack` y `item:coin`. El de Arrojo `item:hammer`, `item:tea`, `item:sword` y `item:crossbow`.
+          subchildren:
+            - name: Conseguir Objetos.
+              text: Cuando los Cientos consiguen un objeto, lo colocan en el espacio vacío más a la izquierda del contador de Mando o Arrojo según el tipo de objeto; si no hay un espacio vacío, deben retirar de la partida el objeto obtenido o cualquier objeto del contador _(reemplazándolo por el obtenido)_, y obtienen un punto de victoria.
+            - name: Mando y Arrojo.
+              text: El número de objetos en los contadores de Mando y Arrojo determinan el valor de Mando y Arrojo, que afecta a varios aspectos de sus reglas. Sin objetos, tienen 1 de Mando y Arrojo; con uno o dos objetos, tienen 2; con tres objetos, tienen 3; con cuatro objetos, tienen 4.
+        - name: Saqueadores.
+          text: Al comienzo de una batalla como atacantes, los Cientos pueden declarar que quieren saquear al defensor, siempre que el defensor tenga un objeto en su zona de objetos fabricados. _(No pueden saquear al Vagabundo)_. Si declaran que quieren saquear, los Cientos no infligirán golpes con la tirada de dados _(el defensor sí da golpes con su tirada, y los Cientos sí pueden causar golpes adicionales, como con su estado de ánimo Iracundo)_. Si al final de la batalla los Cientos gobiernan el claro de batalla, toman un objeto de la zona de objetos fabricados del defensor.
+
+    - name: Preparación
+      children:
+        - name: "Paso 1: Juntar Guerreros y Bastiones"
+          text: Forma la reserva de guerreros (20), el señor de la guerra y bastiones (6).
+        - name: "Paso 2: Guarnición"
+          text: Coloca tu señor de la guerra, cuatro guerreros y un bastión en un claro de una esquina que no sea el claro inicial de otro jugador y, si es posible, que sea diagonalmente opuesto a un claro inicial.
+        - name: "Paso 3: Colocar Objetos"
+          text: Coloca los cuatro objetos "R" aleatoriamente bajo las ruinas, a menos que ya se haya hecho.
+        - name: "Paso 4: Volverse Obstinado"
+          text: Coloca tu carta de estado de ánimo Obstinado en el espacio de Carta de Estado de Ánimo.
+          
+    - name: Alba
+      pretext: Tu Alba tiene cuatro pasos en el siguiente orden.
+      children:
+        - name: Arrasar.
+          text: En cada claro con una ficha de turba, retira todas las fichas y edificios enemigos _(obtén un punto de victoria por cada una. Sin efecto sobre guerreros, peones, etc.)_, toma un objeto de la ruina del claro, si la hay, y retira la ruina si era su último objeto. Tras resolver todas las turbas debes lanzar el dado de turba una vez y colocar una ficha de turba en un claro correspondiente que no tenga una ficha de turba pero que sea adyacente a un claro con ficha de turba. _(Si no hay un claro que cumpla esto, no coloques la ficha de turba)_.
+        - name: Reclutar.
+          text: Coloca tantos guerreros como valor de Arrojo en el claro de tu señor de la guerra. Luego, coloca guerreros en cada claro con bastiones, un guerrero por cada bastión en él.
+        - name: Ungir.
+          text: Si tu señor de la guerra no está en el mapa, debes reemplazar un guerrero cualquiera de los Cientos por el señor de la guerra. Si no puedes, debes poner a tu señor de la guerra en un claro cualquiera.
+        - name: Escoger Estado de Ánimo.
+          text: Debes reemplazar la carta de estado de ánimo en el espacio de tu tablero de facción por una carta diferente de estado de ánimo que no muestre un objeto que esté en tu botín. Si eres Fastuoso y no puedes escoger una nueva carta, permaneces Fastuoso.
+
+    - name: Día
+      pretext: Tu Día tiene tres pasos en el siguiente orden.
+      children:
+        - name: Fabricar.
+          text: Puedes activar bastiones para fabricar cartas.
+        - name: Comandar a los Cientos.
+          text: Puedes realizar las siguientes acciones, en cualquier orden y hasta un número de veces igual a tu valor de Mando.
+          subchildren:
+            - name: Mover.
+              text: Haz un movimiento.
+            - name: Batallar.
+              text: Inicia una batalla.
+            - name: Construir.
+              text: Gasta una carta para colocar un bastión en un claro correspondiente que gobiernes.
+        - name: Avance del señor de la guerra.
+          text: Puedes realizar esta acción hasta un número de veces igual a tu valor de Arrojo. Puedes mover a tu señor de la guerra con cualquier cantidad de guerreros de los Cientos y, después, hayas movido o no, puedes iniciar una batalla en el claro de tu señor de la guerra.
+
+    - name: Noche
+      pretext: Tu Noche tiene tres pasos en el siguiente orden.
+      children:
+        - name: Instigar.
+          text: Cualquier número de veces, puedes gastar una carta para colocar una ficha de turba en un claro correspondiente que no tenga ya una ficha de turba pero en el que haya al menos un guerrero de los Cientos _(lo que incluye a tu señor de la guerra)_.
+        - name: Oprimir.
+          text: Obtienes puntos de victoria según el número de claros que gobiernes que tengan al menos una pieza de los Cientos y ninguna pieza enemiga. Por uno o dos claros, obtén un punto; por tres o cuatro claros, obtén dos puntos; por cinco claros, obtén tres puntos; por seis o más claros, obtén cuatro puntos.
+        - name: Robar y Descartar.
+          text: Roba una carta. Si tienes más de cinco cartas en tu mano, descarta cartas a tu elección hasta quedarte con cinco.
+
+    - name: Estados de Ánimo
+      children:
+        - name: Encarnizado (`item:hammer`).
+          text: En batalla en el claro de tu señor de la guerra, antes de lanzar los dados puedes retirar cualquier cantidad de fichas de turba del claro de tu señor de la guerra y de cualquier claro adyacente a él. Coloca tantos guerreros en el claro de tu señor de la guerra como fichas de turba hayas retirado.
+        - name: Grandilocuente (`item:tea`).
+          text: Este turno, realiza el paso de Avance del señor de la guerra (`rule:14.5.3`) y el paso de Comandar a los Cientos (`rule:14.5.2`) en orden inverso. _(Primero Avanzas al señor de la guerra, después Comandas a los Cientos.)_
+        - name: Exultante (`item:boot`).
+          text: Cuando realices la acción de Instigar en el claro de tu señor de la guerra, tras colocar la ficha de turba de la acción, puedes _(hasta cuatro veces)_ lanzar el dado de turba y colocar una ficha de turba en un claro correspondiente que no tenga una ficha de turba pero que sea adyacente a un claro con ficha de turba.
+        - name: Fastuoso (Sin Objeto).
+          text: Al final de tu Alba, puedes retirar de la partida cualquier número de objetos en tu Botín. Por cada objeto que retires, coloca dos guerreros en el claro de tu señor de la guerra. Al terminar, reubica los objetos en tu Botín de modo que sus contadores se cubran de izquierda a derecha.
+        - name: Implacable (`item:sack`).
+          text: Cada vez que realices una acción de Avance del señor de la guerra en la que muevas e inicies batalla, después, como parte de esa misma acción, puedes mover de nuevo a tu señor de la guerra con cualquier número de guerreros de los Cientos o batallar de nuevo en el claro de tu señor de la guerra.
+        - name: Pendenciero (`item:coin`).
+          text: En tu Noche, roba una carta más (`rule:14.6.3`). Si el claro de tu señor de la guerra tiene tres o más piezas enemigas _(incluso combinando piezas de distintos enemigos)_, roba dos cartas más en vez de una.
+        - name: Obstinado (`item:crossbow`).
+          text: En una batalla en el claro de tu señor de la guerra ignoras el primer golpe que recibes. _(Esto no se acumula con otras habilidades que te permiten ignorar el primer golpe que recibes)_.
+        - name: Iracundo (`item:sword`).
+          text: Como atacante en una batalla en el claro de tu señor de la guerra das un golpe adicional.
+
 - name: Variantes y Vagabundos extra
   color: "#000000"
   children:
