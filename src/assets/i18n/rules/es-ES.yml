@@ -751,120 +751,93 @@
   icon: duchy
   children:
     - name: Resumen
-      pretext: El Ducado Subterráneo pretende demostrar a las criaturas forasteras del Bosque que pueden ser sus gobernantes. Mientras establecen sus puestos fronterizos para mostrar su poder sobre el Bosque, el Ducado nombrará **ministros** para dirigir su causa, obteniendo puntos de victoria y desviando recursos para los propósitos del Ducado. Pero tened cuidad de que un giro de fortuna conduzca a la humillación pública, pues esto causará que los ministros abadonen su causa.
+      pretext: El Ducado Subterráneo quiere demostrarle a las extrañas criaturas del Bosque que estarían mejor como súbditos suyos. A medida que coloca puestos fronterizos para mostrar su poder en el Bosque, el Ducado puede convencer **ministros** para que sigan su causa, obteniendo puntos de victoria y desviando más y más recursos del Ducado. Pero tened cuidado, un revés de la fortuna podría suponer una humillación pública y llevar a los ministros a abandonar su tarea.
 
     - name: Reglas y Habilidades de Facción
       children:
         - name: Fabricar.
-          text: El Ducado Subterráneo fabrica durante la Noche activando Ciudadelas y Mercados.
-
+          text: El Ducado Subterráneo fabrica durante la Noche activando ciudadelas y mercados.
         - name: La Madriguera.
-          text: "**La Madriguera** es un claro no presente sobre el mapa, que se considera adyacente a cualquier claro en que haya una ficha de túnel. Este claro subterráneo es solo accesible al Ducado, así que solo el Ducado puede colocar piezas y mover guerreros a la Madriguera. El Ducado siempre gobierna la Madriguera, incluso si no tiene piezas en ella."
-
-        - name: El precio del fracaso.
-          text: Cuando cualquier cantidad de edificios del Ducado sean retirados, el Ducado debe descartar una carta al azar,  devolver su carta de ministro coronado de rango más alto _(lord > noble > hidalgo)_ a la pila de ministros no coronados y retirar la corona colocada sobre esta del juego permanentemente, devolviéndola a la caja. En caso de tener varios ministros del mismo rango, el Ducado elige cuál retirar.
-
+          text: La **madriguera** es un claro sin palo adyacente a cada claro que tiene una ficha de túnel. Ninguna pieza que no sea del Ducado se puede colocar o mover en la madriguera. El Ducado siempre gobierna la madriguera _(incluso si no tiene piezas allí)_.
+        - name: El Precio del Fracaso.
+          text: Siempre que se retiren cualquier número de edificios del Ducado, el Ducado descarta una carta al azar, devuelve su carta de ministro convencido de mayor rango _(primero lord, después noble, después escudero)_ a la pila de ministros sin convencer, y guarda su corona en la caja. Si tiene varios ministros convencidos del rango más alto, el Ducado elige cuál retira.
         - name: Túneles.
-          text: El Ducado tiene tres fichas de Túnel. Si el Ducado debiese colocar un túnel pero sus tres túneles ya están sobre el mapa, debes retirar primero cualquier ficha de túnel del mapa.
+          text: El Ducado tiene tres fichas de túnel. Si se le indica al Ducado que coloque un túnel y ya están los tres túneles sobre el mapa, el ducado puede retirar primero un túnel cualquiera del mapa.
 
-    - name: Preparación Individual
+    - name: Preparación
       children:
-        - name: "Paso 1: Guerreros any Túneles."
-          text: Pon en tu reserva tus 20 guerreros y 3 fichas de Túnel.
-
-        - name: "Paso 2: Madriguera."
-          text: Coloca el tablero de la Madriguera junto al mapa. 
-
-        - name: "Paso 3: Preparación inicial en superficie."
-          text: Coloca 2 guerreros y 1 túnel en un claro de una esquina el mapa que no contenga la fortaleza del Marquesado, el nido inicial del Nido de Águilas ni el jardín inicial del Culto Reptiliano, y que esté situado en la esquina opuesta a uno de dichos claros iniciales si es posible. Después, coloca 2 guerreros en cada claro adyacente a tu claro inicial pero no en la Madriguera.
-
-        - name: "Paso 4: Contadores de edificios."
-          text: Coloca 3 ciudadelas y 3 mercados sobre sus correspondientes casillas de los contadores de edificios tu tablero.
-
-        - name: "Paso 5: Ministros."
-          text: Coloca las 9 cartas de Ministro bocarriba junto al tu tablero, formando la pila de ministros no coronados.
-
-        - name: "Paso 6: Contadores de coronas."
-          text: Coloca 9 coronas sobre las casillas de los contadores que indican puntos de victoria de tu tablero de facción.
+        - name: "Paso 1: Juntar Guerreros y Túneles."
+          text: Forma la reserva de guerreros (20) y las fichas de túneles (3).
+        - name: "Paso 2: Preparar la Madriguera."
+          text: Coloca el tablero de la madriguera cerca del mapa. 
+        - name: "Paso 3: Salir a la Superficie."
+          text: Coloca 2 guerreros y 1 túnel en un claro en una esquina que no sea el claro inicial de otro jugador y, si es posible, que sea diagonalmente opuesto a un claro inicial. Éste es tu claro inicial. Después coloca 2 guerreros en cada claro adyacente al claro elegido, pero no en la madriguera. _(Esto se ha actualizado con respecto a ediciones anteriores por flexibilidad)_.
+        - name: "Paso 4: Rellenar los Marcadores de Edificios."
+          text: Coloca 3 ciudadelas y 3 mercados en los correspondientes espacios de edificios de tu tablero.
+        - name: "Paso 5: Recoger Ministros."
+          text: Coloca las 9 cartas de Ministro bocarriba en tu pila de ministros sin convencer.
+        - name: "Paso 6: Rellenar los Espacios de Coronas."
+          text: Coloca las 9 coronas en los espacios con puntos de victoria de tu tablero.
 
     - name: Alba
-      pretext: Coloca 1 guerrero, más otro guerrero por icono revelado, en la Madriguera.
+      pretext: Coloca un guerrero, más otro guerrero por icono de guerrero revelado en tu tablero, en la Madriguera.
       
     - name: Día
-      pretext: Tu Día tiene 3 pasos en el siguiente orden.
+      pretext: Tu Día tiene tres pasos en el siguiente orden.
       children:
         - name: Asamblea.
-          text: Puedes realizar hasta dos acciones, en cualquier orden y combinación, según se indica.
+          text: Puedes llevar a cabo hasta dos acciones en cualquier orden y número, de la forma siguiente.
           subchildren:
             - name: Construir.
-              text: Revela 1 carta para colocar una ciudadela o un mercado en un claro del palo correspondiente en que gobiernes.
-
+              text: Revela una carta para colocar una ciudadela o un mercado en un claro correspondiente que gobiernes.
             - name: Reclutar.
-              text: Coloca 1 guerrero en la Madriguera.
-
+              text: Coloca un guerrero en la madriguera.
             - name: Mover.
-              text: Realiza un movimiento.
-
+              text: Haz un movimiento.
             - name: Batallar.
               text: Inicia una batalla.
-
             - name: Excavar.
-              text: Gasta una carta para colocar una ficha de túnel sobre un claro del palo correspondiente en que no haya ya un túnel. Después, puedes mover hasta 4 guerreros de la madriguera a dicho claro. _(Si los tres túneles están sobre el mapa ya, deberás primero retirar un túnel para colocarlo en el nuevo claro)_
-
+              text: Gasta una carta para colocar una ficha de túnel en un claro correspondiente que no tenga una ficha de túnel. Entonces mueve hasta cuatro guerreros desde la madriguera a ese claro. _(Si los tres túneles están sobre el tablero, puedes retirar uno antes)_.
         - name: Parlamento.
-          text: Puedes realizar la acción de cada ministro coronado una vez, realizando estas acciones en el orden que desees.
+          text: Puedes llevar a cabo la acción de cada uno de los minsitros convencidos, una vez cada una en cualquier orden.
           subchildren:
-            - name: Capataz.
-              text: Revela cualquier carta para colocar una ciudadela o mercado en cualquier claro _(independientemente del palo)_ que gobiernes.
-
+            - name: Capatopo.
+              text: Revela cualquier carta para colocar una ciudadela o mercado en cualquier claro _(correspondiente o no)_ que gobiernes.
             - name: Capitán.
               text: Inicia una batalla.
-
-            - name: Mariscal.
-              text: Realiza un movimiento.
-
-            - name: General de Brigada.
-              text: Mueve o inicia batalla hasta dos veces.
-
+            - name: Alguacil.
+              text: HAz un movimiento.
+            - name: Brigada.
+              text: Haz hasta dos movimientos o inicia hasta dos batallas.
             - name: Banquero.
-              text: Gasta tantas cartas como desees _(puede ser solo una)_ de un mismo palo para puntuar tantos puntos como cartas gastes.
-
-            - name: Gobernador.
-              text: Realiza la acción de cualquier hidalgo o noble coronado.
-
+              text: Gasta cualquier número de cartas _(con un mínimo de una)_ del mismo palo para obtener ese mismo número de puntos de victoria.
+            - name: Alcalde.
+              text: Lleva a cabo la acción de cualquier noble o escudero convencidos.
             - name: Duquesa del Lodo.
-              text: Puntúa 2 puntos de victoria si los tres túneles están sobre el mapa.
-
-            - name: Barón del Fango.
-              text: Puntúa 1 punto de victoria por cada mercado que tengas en el mapa.
-
-            - name: Conde de las Rocas.
-              text: Puntúa 1 punto de victoria por cada ciudadela que tengas en el mapa..
-
-        - name: Coronar Ministros.
-          text: Puedes coronar un ministro, siguiendo las instrucciones siguientes.
+              text: Obtén dos puntos de victoria si los trestúneles están sobre el mapa.
+            - name: Barón de la Tierra.
+              text: Obtén un punto de victoria por cada mercado que haya sobre el mapa.
+            - name: Conde de la Piedra.
+              text: Obtén un punto de victoria por cada ciudadela que haya sobre el mapa.
+        - name: Convencer.
+          text: Puedes convencer a un ministro, de lña siguiente forma.
           subchildren:
-            - name: Elige ministro.
-              text: Elige una carta de ministro de la pila de Ministros no coronados. Debes tener en tu tablero de facción una corona del rango correspondiente a dicho ministro _(hidalgo, noble o lord)_ disponible sobre su correspondiente contador.
-
-
-            - name: Revela cartas.
-              text: Revela tantas cartas como indique la carta de ministro elegida. Por cada carta que desees revelar, debes tener al menos una pieza en un claro del palo de dicha carta. Cada claro en el que tengas al menos una pieza te permite revelar pues 1 carta de dicho palo.
-
-            - name: Coronar ministro y puntuar.
-              text: Toma la carta de ministro elegida y colócala en tu tablero de facción. Toma la corona correspondiente al rango del dicho ministro de tu tablero _(siempre la primera disponible de su correspondiente contador)_ y colócala sobre la carta de ministro. Suma los puntos de victoria que indica la casilla recién descubierta de tu tablero de facción.
+            - name: Elegir Ministro.
+              text: Elige una carta de ministro de tu pila de ministros no convencidos. Debes tener una corona en tu tablero de facción del rango correspondiente _(escudero, noble o lord)_ a dicho ministro.
+            - name: Revelar Cartas.
+              text: Revela el número de cartas que aparece en el ministro elegido. Por cada carta que desees revelar, debes tener al menos una pieza del Ducado en un claro correspondiente al palo de esa carta. Cada claro con alguna pieza del Ducado sólo te permite revelar una carta correspondiente.
+            - name: Convencer al Ministro y Puntuar.
+              text: Toma la carta del ministro elegido y colócala sobre tu tablero de facción. Toma una corona 0del rango de ese ministro de tu tablero y colócala sobre la carta del ministro. Obtén el número de punts de victoria que aparecen en el espacio que acabas de descubrir en tu tablero.
 
     - name: Noche
-      pretext: Tu Noche tiene 3 pasos en el siguiente orden.
+      pretext: Tu Noche tiene tres pasos en el siguiente orden.
       children:
-        - name: Descartar y recuperar las cartas reveladas.
-          text: Discard any bird cards you revealed this turn, then return all other cards you revealed this turn to your hand.
-
+        - name: Descartar y Devolver Cartas Reveladas.
+          text: Descarta cualquier cantidad de cartas de ave que hayas revelado este turno, despuṕes devuelve todas las demás cartas reveladas a tu mano.
         - name: Fabricar.
-          text: Puedes fabricar activando ciudadelas y mercados. _(A efectos de fabricar, estas piezas son idénticas)_
-
-        - name: Robar y descartar.
-          text: Roba 1 carta, más 1 carta por cada icono de robar revelado en tu tablero. Después, si tienes más de 5 cartas en tu mano, descarta cartas a tu elección hasta tener solo 5.
+          text: Puedes fabricar cartas de tu mano activando ciudadelas y mercados _(son idénticos a efectos de fabricación)_.
+        - name: Robar y Descartar.
+          text: Roba una carta, más una carta adicional por cada símbolo de robo adicional descubierto. Entonces, si tienes más de cinco cartas en tu mano, descarta a tu elección hasta quedarte con cinco.
 
 - name: La Conspiración de los Córvidos
   color: "#925da5"
