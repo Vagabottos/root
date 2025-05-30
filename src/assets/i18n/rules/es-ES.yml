@@ -30,7 +30,8 @@
     - name: Secuencia de Juego
       children:
         - name: Turno.
-          text: Cada turno de un jugador consta de tres fases: Alba, Día y Noche. Cualquier texto que diga "al principio de" una fase, sucede antes de cualquier otra cosa en esa fase, si el texto dice "al final de" sucede después de todo lo demás en esa fase y justo antes del inicio de la siguiente, si la hay. Después de que un jugador finalice su Noche, el siguiente jugador en sentido horario comienza su turno. El juego continúa hasta que un jugador gana la partida (`rule:3.1`).
+          text: > 
+            Cada turno de un jugador consta de tres fases: Alba, Día y Noche. Cualquier texto que diga "al principio de" una fase, sucede antes de cualquier otra cosa en esa fase, si el texto dice "al final de" sucede después de todo lo demás en esa fase y justo antes del inicio de la siguiente, si la hay. Después de que un jugador finalice su Noche, el siguiente jugador en sentido horario comienza su turno. El juego continúa hasta que un jugador gana la partida (`rule:3.1`).
         - name: Interrumpir.
           text: No puedes interrumpir una acción _(incluso una múltiple como la Marcha del Marquesado)_, habilidad _(como la Exposición de los Córvidos)_ o efecto persistente _(como la carta Emigrante del Nido)_ con otro efecto a menos que se permita explícitamente. _(Por ejemplo, la carta Pertrechados dice que se usa "En batalla...")_
     - name: Piezas
@@ -38,7 +39,7 @@
         - name: Límites.
           text: Las piezas están limitadas a las contenidas en el juego. No uses piezas de reemplazo si se agota alguna de ellas.
         - name: Facción Inicial.
-          text: Cada jugador controla a la facción que elija durante la preparación (5) y las piezas listadas en el dorso de su tablero de facción salvo los objetos. De forma genérica, estas se denominan **piezas de facción**. De forma específica, se denominan **piezas de [nombre de facción]**. _(Por ejemplo, "tus guerreros de facción" y "guerreros de tu facción" y "guuerreros del Marquesado", todos ellos se refieren a los guerreros de madera naranja con forma de gato)_.
+          text: Cada jugador controla a la facción que elija durante la preparación (5) y las piezas listadas en el dorso de su tablero de facción salvo los objetos. De forma genérica, estas se denominan **piezas de facción**. De forma específica, se denominan **piezas de [nombre de facción]**. _(Por ejemplo, "tus guerreros de facción" y "guerreros de tu facción" y "guerreros del Marquesado", todos ellos se refieren a los guerreros de madera naranja con forma de gato)_.
         - name: Pertenencia de las piezas.
           text: El propietario de las piezas de una facción no puede cambiar. _(Por ejemplo, el Marquesado no puede usar sus hospitales de Campaña con los secuaces o los mercenarios de la Compañía, ya que no son guerreros del Marquesado)_.
         - name: Manejo de las piezas.
@@ -62,7 +63,7 @@
             - name: Sustitución inversa.
               text: Si se te pide que gastes, descartes, tomes o des una carta de ave, no puedes sustituir esta carta por una de otro palo.
         - name: Cartas de Emboscada.
-          text: Hay cinco **cartas de emboscada**: un ratón, un conejo, un zorro y dos aves. Puedes gastar una carta de emboscada por su palo, pero no puedes fabricarla. También puedes jugar una en batalla para dar golpes (`rule:4.3.1`)."
+          text: "Hay cinco **cartas de emboscada**: un ratón, un conejo, un zorro y dos aves. Puedes gastar una carta de emboscada por su palo, pero no puedes fabricarla. También puedes jugar una en batalla para dar golpes (`rule:4.3.1`)."
         - name: Cartas de Dominancia.
           text: Hay cuatro **cartas de dominancia** que se corresponden con los cuatro palos. Puedes gastar una carta de dominancia por su palo, pero no puedes fabricarla. También puedes jugar una para cambiar de forma permanente tu condición de victoria (`rule:3.3`).
 
@@ -404,7 +405,7 @@
               subchildren:
                 - name: Ley Marcial.
                   text: Debes gastar un simpatizante correspondiente adicional si el claro elegido tiene al menos 3 guerreros de otro jugador, incluyendo guerreros que se estén tratando como suyos para gobernar _(mercenarios, secuaces, etc.)_.
-            - name: "Paso 3 Colcoar y Puntuar."
+            - name: "Paso 3: Colocar y Puntuar."
               text: Coloca una ficha de simpatía en el claro elegido. Obtén los puntos de victoria indicados en el espacio que acabas de revelar en tu tablero de facción.
 
     - name: Día
@@ -415,7 +416,7 @@
         - name: Mobilizar.
           text: Añade una carta de tu mano al montón de simpatizantes.
         - name: Entrenar.
-          text: Gasta una carta correspondeinte al palo indicado por una base en el mapa para colocar un guerrero en la zona de oficiales. Este guerrero ahora es un **oficial**.
+          text: Gasta una carta correspondiente al palo indicado por una base en el mapa para colocar un guerrero en la zona de oficiales. Este guerrero ahora es un **oficial**.
 
     - name: Noche
       pretext: Tu Noche tiene dos pasos en el siguiente orden.
@@ -434,141 +435,141 @@
         - name: Robar y Descartar.
           text: Roba una carta, más una carta adicional por cada símbolo de robo adicional descubierto. Entonces, si tienes más de cinco cartas en tu mano, descarta cartas a tu elección hasta quedarte con cinco.
 
-- name: Vagabundo
+- name: El Vagabundo
   color: "#6d6e70"
   icon: vagabond
   children:
     - name: Resumen
-      pretext: El Vagabundo juega con todos los bandos de este conflicto, mientras lleva a cabo sus propias misiones para aumentar su reputación. Cada vez que el Vagabundo mejora su  **relación** con otra facción o retira un guerrero de una facción Hostil, obtiene puntos de victoria. También puede obtener puntos de victoria completando sus **misiones**. Para moverse y realizar acciones, el Vagabundo deberá gestionar adecuadamente sus  **objetos**, procurando expandir su equipamiento mediante la exploración de las ruinas del bosque y ayudando a otras facciones.
+      pretext: El Vagabundo puede apoyar a todos los bandos de este conflicto, al tiempo que lleva a cabo misiones para incrementar su reputación. Cada vez que mejoras tu **relación** con otra facción, o bien quitas un guerrero que pertence a una facción hostil, obtienes puntos de victoria. También puedes completar **misiones** para obtener puntos de victoria. Para mover y actuar de forma efectiva con el Vagabundo debes gestionar tu hatillo de **objetos**, expandiendo tu colección al explorar las ruinas en los claros y ayudar a otras facciones.
     
     - name: Reglas y Habilidades de Facción
       children:
         - name: Fabricar.
-          text: Para fabricar objetos, el Vagabundo debe agotar `item:hammer`. Todos sus `item:hammer` siempre corresponden al palo en que esté situado el Vagabundo. Si fabrica un objeto, el Vagabundo toma el objeto de la reserva y lo coloca en su tablero bocarriba de forma inmediata.
-        - name: Errante solitario.
-          text: El Peón del Vagabundo no es un guerrero _(por lo que no cuenta a efectos de gobernar claros)._ El Peón del Vagabundo no puede ser retirado del mapa.
+          text: El Vagabundo agota `item:hammer` para fabricar. Todos sus `item:hammer` son correspondientes a su claro actual. Si el Vagabundo fabrica un objeto, puede tomarlo inmediatamente, bocarriba.
+        - name: Errante y Solitario.
+          text: El peón del Vagabundo no es un guerrero, así que no puede gobernar un claro o impedir que otro jugador gobierne uno. El peón del Vagabundo no puede retirarse del mapa.
           subchildren:
-            - name: Efectos de retirada total.
-              text: Cuando un jugador enemigo juegue un efecto que indique que se deben retirar todas las piezas enemigas de un claro _(como las revueltas de la Alianza, las cartas de Favor o las bombas de la Conspiración de los Córvidos)_ en el claro donde esté el Vagabundo, el Vagabundo debe dañar tres objetos.
+            - name: Retirada Total.
+              text: Cuando un jugador enemigo utilice un efecto que indique que se retiran todas las piezas enemigas de un claro _(como una revuelta de la Alianza, una carta del Favor de los Ratones o una bomba de los Córvidos)_ en el que está el Vagabundo, el Vagabundo daña tres de sus objetos a su elección.
 
         - name: Grácil.
-          text: El Vagabundo puede mover independientemente de quién gobierne el claro de origen o de destino.(`rule:4.2.1`).
+          text: El Vagabundo puede moverse independientemente de quién gobierne su claro de origen o de destino.(`rule:4.2.1`).
         - name: Indefenso.
-          text: En batalla, el Vagabundo está indefenso (`rule:4.3.2.3`) si no tiene ninguna `item:sword` no dañada.
+          text: En batalla, el Vagabundo está indefenso (`rule:4.3.2.3`) si no tiene `item:sword` no dañadas.
         - name: Objetos.
-          text: El potencial de acción del Vagabundo depende de los objetos que obtenga. Los objetos del Vagabundo pueden estar bocarriba o bocabajo su el tablero. Para realizar acciones Vagabundo **agota** sus objetos no dañados y no agotados, volteándolos bocabajo _(a su reverso de color oscuro)_.
+          text: Las capacidades del Vagabundo dependen de los objetos que tenga. En lugar de una zona para Objetos Fabricados tiene un Hatillo y varios contadores. Los objetos en el tablero de facción del Vagabundo pueden estar bocarriba o bocabajo. El Vagabundo **agota** objetos no dañados, volteándolos bocabajo, para hacer muchas de sus acciones.
           subchildren:
-            - name: Contadores de objetos.
-              text: Al obtener `item:tea`, `item:coin`, and `item:sack`, estos se colocan sobre las casillas de sus respectivos contadores. Cada contador puede contener un máximo de tres objetos de ese tipo.
-            - name: Hatillo.
-              text: Al obtenerlos, las `item:boot`, `item:sword`, `item:crossbow`, `item:torch`, y los `item:hammer` deben colocarse bocarriba en el Hatillo del Vagabundo.
-            - name: Mover objetos.
-              text: El Vagabundo puede intercambiar libremente sus  `item:tea`, `item:coin`, y `item:sack` no dañados bocarriba de sus contadores a su Hatillo.
-        - name: Impactos máximos por dados en batalla.
-          text: En batalla, el Vagabundo solo puede infligir tantos impactos por dados (`rule:4.3.2.1`) como `item:sword` no dañadas tenga en su Hatillo, tanto  tanto bocarriba como bocabajo _(los impactos adicionales que puedan causar otros efectos se suman después)_.
-        - name: Recibir impactos.
-          text: Cuando el Vagabundo recibe un impacto (`rule:4.3.3`), debe dañar un objeto no dañado, trasladándolo a su casilla de objetos dañados. En caso de que no queden objetos por dañar, el Vagabundo ignora los impactos restantes.
-        - name: Cartas de Dominancia y coaliciones.
-          text: En partidas de 4 o más jugadores, el Vagabundo puede activar una carta de Dominancia para formar una coalición con el jugador con menos puntos de victoria (sin contarse a sí mismo), indicándolo colocando para ello su contador de puntos de victoria en el tablero de la facción coaliada. En caso de que hubiera un empate entre facciones, entonces el Vagabundo decide con quién coaliarse. Si dicho jugador coaliado gana la partida, el Vagabundo también ganará. _(Al hacer esto, el Vagabundo ya no sumará puntos de victoria. No es posible formar una coalición con un jugador que haya jugado una carta de dominancia, puesto que este tampoco aspira a ganar por puntos)_
+            - name: Contadores.
+              text: Al obtenerlos o al voltearlos bocarriba, coloca `item:tea`, `item:coin`, y `item:sack` bocarriba en sus contadores. Cada contador puede tner hasta 3 objetos del mismo tipo.
+            - name: El Hatillo.
+              text: Al obtenerlos, coloca `item:boot`, `item:sword`, `item:crossbow`, `item:torch`, y `item:hammer` bocarriba en el hatillo.
+            - name: Mover Objetos.
+              text: El Vagabundo puede mover libremente `item:tea`, `item:coin`, y `item:sack` entre sus contadores y el hatillo, siempre y cuando estén bocarriba y no dañados.
+        - name: Golpes Máximos por Tirada.
+          text: En batalla, sus golpes máximos por tirada (`rule:4.3.2.1`) son iguales a sus `item:sword` no dañadas, bocarriba o bocabajo, en su hatillo.
+        - name: Recibir Golpes.
+          text: Cuando el Vagabundo recibe un golpe (`rule:4.3.3`), debe dañar uno de sus objetos no dañados, moviéndolo a su zona de dañados. Si no le quedan objetos no dañados, el Vagabundo ignora cualquier golpe restante.
+        - name: Cartas de Dominancia y Coaliciones.
+          text: El Vagabundo no puede activar la condición de victoria de una carta de dominancia (`rule:3.3.1`). En vez de eso, en partidas de cuatro jugadores o más, el Vagabundo puede activar una carta de dominancia para formar una coalición con otro jugador, colocando su marcador de puntuación en el tablero de dicho jugador _(el Vagabundo ya no obtiene más puntos de victoria)_. Dicho jugador debe ser el que menos puntos de victoria tenga, salvo por el Vagabundo que forma coalición con él, y no puede estar ya en una coalición. Si hay un empate en la posición de menos puntos, elige a uno de los jugadores empatados. Si el jugador elegido gana la partida, el Vagabundo también gana.
         - name: Relaciones.
-          text: El tablero de facción del Vagabundo muestra una tabla de Relaciones, que muestra un contador de Aliado con cuatro espacios y una casilla con la denominación de Hostil. En esta tabla se coloca un marcador de relación para cada facción en juego que no sea un Vagabundo.
+          text: Tu tablero de facción muestra una tabla de relaciones que tiene cuatro espacios en la sección de aliados y una zona de hostiles. Contiene un marcador de relación por cada facción que no es el Vagabundo.
           subchildren:
-            - name: Mejorar relaciones.
-              text: Puedes mejorar tu relación con el jugador de una facción no Hostil realizando la acción de Ayudar.
+            - name: Mejorar Relaciones.
+              text: Puedes mejorar las relaciones con una facción no hostil llevando a cabo la acción ayudar.
               subchildren:
                 - name: Coste.
-                  text: Ayuda a una facción no Hostil tantas veces como indique el icono de la tabla de relaciones para avanzar a la siguiente casilla durante el mismo turno. _(Una acción de Ayudar solo cuenta una vez a efectos de mejorar relaciones)_
+                  text: Ayuda a una facción no hostil en un mismo turno el número de veces que aparece entre el espacio que contiene su marcador de relación y el siguiente espacio. _(Una acción de ayuda sólo cuenta para una mejora de relaciones)_.
                 - name: Efecto.
-                  text: Avanza el marcador de relación de dicha facción una casilla a la derecha sobre la tabla. Suma los puntos de victoria indicados en la nueva casilla.
+                  text: Avanza el marcador de relación de esa facción un espacio hacia la derecha en el contador. Obtén los puntos de victoria anotados en el nuevo espacio.
             - name: Estatus de Aliado.
-              text: Si el marcador de relación de una facción alcanza la última casilla de la tabla de Relaciones, a partir de ese momento tú y el jugador que controla dicha facción sois **Aliados**, como indica el marcador de relación. _(¡Ahora sus guerreros confían en ti y puedes luchar con ellos!)_
+              text: Si el marcador de relación de una facción llega al espacio final del contador estás **aliado** con esa facción. _(¡Sus guerreros confían en ti!)_.
               subchildren:
                 - name: Ayudar a un Aliado.
-                  text: Cada vez que ayudas a un jugador Aliado, obtienes 2 puntos de victoria _(en lugar de 1)_.
+                  text: Cada vez que ayudes a una facción aliada, obtienes dos puntos de victoria.
                 - name: Mover con un Aliado.
-                  text: Al mover de un claro a otro, también puedes mover guerreros de un jugador Aliado desde el claro de origen al claro de destino.
+                  text: Cuando te muevas a un claro adyacente, también puedes forzar a guerreros de una facción aliada a moverse desde tu claro de origen a tu claro de destino acompañando a tu peón de Vagabundo.
                 - name: Atacar con un Aliado.
-                  text: Cuando inicies una batalla, puedes tratar los guerreros de un jugador Aliado de dicha claro como si fuesen tuyos. El máximo de impactos que podrás causar (teniendo en cuenta el límite del valor del dado) estará entonces limitado por el número de guerreros aliados más tus `item:sword` no dañadas totales. No obstante, no puedes tratar los guerreros aliados como si fuesen tuyos en batalla si tú eres el defensor.
-                - name: Recibir impactos junto a un Aliado.
-                  text: En una batalla en la que trates a guerreros Aliados como si fuesen tuyos, puedes recibir impactos sobre ellos, retirando dichos guerreros Aliados. No obstante, debes repartir los impactos; si al recibir impactos en batalla retiras más guerreros Aliados que objetos tuyos dañas, tu Aliado se volverá Hostil. Esta regla prevalece la condición para volverse Hostil del apartado 9.2.9.III.
-            - name: Condición de Hostil.
-              text: Si alguna vez retiras un guerrero de una facción no Hostil, mueve inmediatamente el marcador de relación correspondiente a dicha facción a la casilla de "Hostil". Dicha facción es ahora **Hostil**.
+                  text: Cuando inicies una batalla, puedes tratar a los guerreros de una facción aliada en el claro de batalla como si fueran tuyos. Tus golpes máximos por tirada son iguales a la suma de dichos guerreros más el total de `item:sword` no dañadas. No puedes tratar a dichos guerreros como tuyos si atacas a esa misma facción aliada.
+                - name: Recibir Golpes con un Aliado.
+                  text: En una batalla donde tratas guerreros aliados como tuyos, puedes recibir golpes retirando a esos guerreros. Sin embargo, si recibes más golpes retirando guerreros aliados que dañando objetos durante la misma batalla, esa facción aliada se vuelve hostil (`rule:9.2.9.3`) al final de la batalla. Esta regla suprime la condición para hacerse hostil en `rule:9.2.9.3`.
+            - name: Estatus Hostil.
+              text: Si retiras un guerrero de una facción no hostil, mueve su marcador de relación inmediatamente a la zona de hostil. Esta facción es ahora **hostil**. Después, si esto sucede en una batalla durante tu turno, comprueba la puntuación por Infamia (`rule:9.2.9.3.1`).
               subchildren:
                 - name: Infamia.
-                  text: Cada vez que retires una pieza de una facción Hostil en batalla durante tu turno, obtienes un punto de victoria. _(Ello se suma a los puntos obtenidos por retirar fichas y edificios enemigos. No obtienes un punto por retirar el guerrero que causa que dicha facción se vuelva Hostil)_
-                - name: Mover a un claro Hostil.
-                  text: Debes agotar una `item:boot` extra para mover a un claro que contenga guerreros de cualquier facción Hostil _(excepto si lo haces al **infiltrarte** durante tu Alba)_.
-                - name: Ayudar a una facción Hostil.
-                  text: No puedes mejorar tu relación con una facción Hostil mediante la acción de Ayuda, pero sí es posible ayudar a una facción Hostil para coger sus objetos fabricados.
-                - name: Coalición con una facción Hostil.
-                  text: Puedes formar una coalición (`rule:9.2.8`) con una facción Hostil. Si lo haces, coloca el marcador de relación correspondiente sobre la casilla de "Indiferente".
+                  text: Obtienes un punto de victoria adicional por cada pieza de una facción hostil que retires en batalla durante tu turno, salvo por el guerrero que convirtió a esa facción en hostil. _(Suma estos puntos a los obtenidos por retirar edificios y fichas enemigas)_.
+                - name: Mover a Claros Hostiles.
+                  text: Debes agotar una `item:boot` adicional para moverte a un claro con cualquier número de guerreros de cualquier número de facciones hostiles.
+                - name: Ayudar a Facciones Hostiles.
+                  text: No puedes mover un marcador de relación fuera de la zona de hostiles utilizando la acción ayudar, pero aún puedes ayudar a una facción hostil para obtener objetos fabricados.
+                - name: Coalición con Facciones Hostiles.
+                  text: Puedes formar una coalición (`rule:9.2.8`) con una facción hostil. Si lo haces, mueve su marcador de relación al espacio de indiferente.
 
-    - name: Preparación Individual
+    - name: Preparación
       children:
-        - name: "Paso 1: Personaje."
-          text: Elige una carta de personaje y colócala sobre el hueco correspondiente de tu tablero.
-        - name: "Paso 2: Peón de Vagabundo."
-          text: Coloca tu peón de Vagabundo sobre cualquier bosque del mapa.
-        - name: "Paso 3: Misiones iniciales."
-          text: Baraja tu mazo de misiones, roba 3 cartas de misión y colócalas bocarriba en tu área de juego.
-        - name: "Paso 4: Preparar Ruinas."
-          text: Coge las 4 piezas de las Ruinas del mapa, y los 4 objetos marcados con una "R" (`item:sack`, `item:boot`, `item:hammer`, y `item:sword`). Coloca 1 de estos objetos bajo cada Ruina al azar, y después mezcla los cuatro montones formados. Después, coloca, al azar, cada Ruina con su ficha de objeto debajo sobre las correspondientes casillas del mapa.
-        - name: "Paso 5: Objetos iniciales (\"S\")."
-          text: Coge los objetos que indica tu carta personaje de la reserva de objetos marcados con una "S" _(este conjunto de objetos solo se utiliza durante la preparación)_. Coloca cualquier `item:tea`, `item:coin`, y`item:sack` indicado bocarriba sobre su correspondiente contador de tu tablero. Coloca el resto de objetos bocarriba en tu Bolsa. Finalmente, devuelve el resto de objetos marcados con una "S" a la caja.
-        - name: "Paso 6: Relaciones."
-          text: Coge los marcadores de relación correspondientes a cada facción que no sea el Vagabundo y y colócalos sobre la casilla "Indiferente" de la tabla de Relaciones.
+        - name: "Paso 1: Elegir un Personaje."
+          text: Elige una carta de personaje y colócala en tu espacio de carta de personaje.
+        - name: "Paso 2: Colocar el Peón."
+          text: Coloca tu peón de Vagabundo en un bosquer a tu elección.
+        - name: "Paso 3: Conseguir Misiones."
+          text: Baraja tu mazo de misiones, roba 3 cartas de misión y colócalas bocarriba junto a ti.
+        - name: "Paso 4: Llenar las Ruinas."
+          text: Toma las 4 piezas de las ruinas del mapa, y toma los objetos `item:sack`, `item:boot`, `item:hammer`, y `item:sword` marcados con una "R". Coloca uno bajo cada ruina y entonces repártelas al azar entre los espacios vacíos de ruina del mapa.
+        - name: "Paso 5: Obtener los Objetos Iniciales"
+          text: Toma los objetos marcados con una "S" que aparecen en tu carta de personaje. Coloca los objetos `item:tea`, `item:coin`, y`item:sack` indicados bocarriba en los contadores correspondientes de tu tablero. Coloca bocarriba los demás objetos indicados en tu hatillo. Devuelve cualquier objeto "S" restante a la caja.
+        - name: "Paso 6: Configurar Relaciones."
+          text: Toma el marcador de relación de cada facción que no sea Vagabundo y colócalo en el espacio de indiferente de tu contador de relaciones.
 
     - name: Alba
-      pretext: Tu Alba tiene 2 pasos en el siguiente orden.
+      pretext: Tu Alba tiene dos pasos en el siguiente orden.
       children:
-        - name: Reactivar objetos.
-          text: Voltea 2 objetos agotados bocarriba por cada `item:tea` bocarriba que tengas al inicio de tu Alba. Después, reactiva hasta 3 objetos agotados más.
+        - name: Refrescar.
+          text: Al inicio de tu Alba da la vuelta a dos objetos agotados  `item:tea` que esté bocarriba en su contador. Luego, pon bocarriba tres objetos agotados más.
         - name: Infiltrarse.
-          text: Puedes mover a un claro o bosque adyacente sin agotar ninguna `item:boot`, incluso si mueves hacia un claro Hostil (`rule:9.2.9.3.2`). Este movimiento ignora todos los efectos que prohíben moverse desde un claro _(como la trampa de los Córvidos)_.
+          text: Puedes moverte a un bosque o claro adyacente sin agotar `item:boot`, incluso para moverte a un claro hostil (`rule:9.2.9.3.2`). Este movimiento ignora todos los efectos que previenen el movimiento de salida de un claro _(como el cepo de los Córvidos)_.
 
     - name: Día
-      pretext: Puedes agotar objetos para realizar las acciones siguientes, en cualquier orden y combinación. En caso de agotar `item:coin`, `item:tea`, o `item:sack` de un contador, deberás mover dicho objeto al Hatillo.
+      pretext: Puedes agotar objetos para realizar las acciones siguientes, en cualquier orden y número. Si agotas un `item:coin`, `item:tea`, o `item:sack` de un contador, muévelo a tu hatillo.
       children:
         - name: Mover.
-          text: Agota una `item:boot` para realizar un movimiento, más una adicional si el claro de destino tiene guerreros de alguna facción Hostil. No es posible mover a un bosque _(esto solo es posible durante el movimiento de infiltración de tu Alba)_. Si estás en un bosque, solo puedes mover a un claro adyacente.
+          text: Agota una `item:boot` para moverte y una `item:boot` adicional si tu claro de destino contiene guerreros hostiles. No puedes moverte a un bosque. Si estás en un bosque, solo puedes moverte a un claro adyacente.
         - name: Batallar.
-          text: Agota una `item:sword` para iniciar una batalla. _(Comprueba tu luego relación con el defensor, ya que se volverá Hostil si no lo era ya)_
+          text: Agota una `item:sword` para iniciar una batalla. _(Comprueba tu relación con el defensor)_.
         - name: Explorar.
-          text: Agota una `item:torch` para extraer un objeto de una ruina del claro actual, revelándolo y colocándolo en tu Bolsa o sobre su contador, según corresponda. Después, suma 1 punto de victoria. Si al hacer esto retiras el último objeto de una ruina, retira la ruina del claro.
+          text: Agota una `item:torch` para tomar un objeto de debajo de una ruina en tu claro actual, revélalo y colócalo bocarriba en tu hatillo o en su contador correspondiente. Si tomas un objeto, obtienes un punto de victoria. Si retiras el último objeto de una ruina, retira la ruina del mapa.
         - name: Ayudar.
-          text: Agota cualquier objeto, y dale una carta del palo correspondiente al claro a cualquier jugador que tenga al menos una pieza en dicho claro _(incluso si es Hostil)_. Después, puedes coger un objeto de la zona de objetos fabricados del tablero de dicho jugador, si tiene; si lo haces, colócalo sobre tu Hatillo o sobre su respectivo contador, según corresponda. _(Luego, comprueba si se modifica tu relación con dicha facción)_
+          text: Agota cualquier objeto, y entrega una de tus cartas correspondientes a tu claro a cualquier jugador con piezas de facción allí _(incluso si es hostil)_. Luego, puedes tomar un objeto de la zona de objetos fabricados de ese jugador, si tiene, y colocarlo bocarriba en tu hatillo o en su contador correspondiente _(comprueba tu relación con la facción de ese jugador)_.
         - name: Misión.
-          text: Elige una misión del palo correspondiente al claro en el que estés, y agota los dos objetos indicados en la carta para completarla. Coloca dicha misión completada en tu área de juego y luego revela una nueva carta de misión, colocándola junto al mapa. Suma 1 punto de victoria por cada misión de dicho palo que hayas completado, contando con la que acabas de completar, o bien roba dos cartas del mazo.
-        - name: Disparar.
-          text: Agota una `item:crossbow` para retirar un guerrero situado en tu claro actual. Si un jugador no tiene guerreros en este claro, puedes retirar en su lugar una ficha o edificio de dicho jugador. _(Luego, comprueba si se modifica tu relación con dicha facción. Ten en cuenta que esta acción no cuenta como batalla, por lo que no se obtienen puntos por Infamia al retirar piezas de un jugador Hostil.)_
-        - name: Repair.
-          text: Agota un `item:hammer` para trasladar un objeto dañado a tu Hatillo o a su correspondiente contador _(en caso de tratarse de `item:coin`, `item:tea`, `item:sack` bocarriba, no agotados)_, manteniendo el objeto en su estado de uso actual.
+          text: Elige una misión correspondiente a tu claro y agota los dos objetos indicados en dicha misión para completarla. Coloca la misión en tu zona de juego y luego revela una nueva misión. Puedes obtener un punto de victoria por cada misión correspondiente que hayas realizado, incluida esta última, o bien robar dos cartas del mazo.
+        - name: Golpear.
+          text: Agota una `item:crossbow` para retirar a un guerrero enemigo de tu claro. Si ese enemigo no tiene guerreros en ese claro puedes retirar una de sus otras piezas de facción allí en su lugar _(comprueba tu relación con la facción de ese jugador)_.
+        - name: Reparar.
+          text: Agota un `item:hammer` para mover un objeto dañado a tu hatillo _(si es `item:boot`, `item:hammer`, `item:sword`, `item:crossbow` o `item:torch`)_ o a su contador desde tu hatillo _(si es `item:coin`, `item:tea`, `item:sack` si está bocarriba)_. En cualquier caso, no le des la vuelta al objeto.
         - name: Fabricar.
-          text: Juega una carta de tu mano, agotando `item:hammer` para fabricarla. Todos tus `item:hammer` siempre corresponden al palo de tu claro actual. Si una carta requiere varias piezas de fabricación, debes agotar tantos `item:hammer` como indique la carta para fabricarla. Si fabricas un objeto, colócalo bocarriba directamente en tu Hatillo o sobre su correspondiente contador, según corresponda.
-        - name: Acción especial.
-          text: Agota una `item:torch` para realizar la acción especial descrita en tu carta de personaje.
+          text: Juega una carta de tu mano y agota el correspondiente `item:hammer` para fabricarla. Todos tus `item:hammer` se corresponden con tu claro. Si una carta requiere más de una activación de un mismo palo para poder ser fabricada, debes agotar el número requerido de `item:hammer`. Si fabricas un objeto, puedes colocarlo bocarriba en tu hatillo o en su contador.
+        - name: Acción Especial.
+          text: Agota una `item:torch` para realizar la acción indicada en tu carta de personaje.
 
     - name: Noche
-      pretext: Tu Noche tiene 4 Pasos en el siguiente orden.
+      pretext: Tu Noche tiene cuatro pasos en el siguiente orden.
       children:
-        - name: Descanso nocturno forestal.
-          text: Si estás en un bosque, repara y refresca todos tus objetos, colocándolos bocarribaen tu Bolsa o sobre su correspondiente contador _(ello implica que te has quedado en el bosque durante tu Alba, por lo que salvo excepciones no habrás realizado acciones en tu Día)_.
-        - name: Robar cartas.
-          text: Roba una carta, más una carta adicional por cada `item:coin` bocarriba en su correspondiente contador.
-        - name: Descartar cartas.
-          text: Si tienes más de 5 cartas en la mano, descarta cartas a tu elección hasta tener solo 5.
-        - name: Comprobar límite de objetos.
-          text: Si entre tu zona de objetos dañados y tu Hatillo tienes más objetos de los permitidos —el límite son 6 más 2 por cada `item:sack` bocarriba en su correspondiente contador— descarta objetos de tu bolsa o de tu zona de objetos dañados hasta tener la cantidad máxima permitida y retíralos permanentemente del juego.
+        - name: Descansar.
+          text: Si estás en un bosque mueve todos tus objetos de tu zona de dañados a tu hatillo o a su contador, y gíralos bocarriba.
+        - name: Robar Cartas.
+          text: Roba una carta, más una carta adicional por cada `item:coin` bocarriba en su contador.
+        - name: Descartar Cartas.
+          text: Si tienes más de cinco cartas en tu mano, descarta cartas a tu elección hasta quedarte con cinco.
+        - name: Comprobar Capacidad.
+          text: Si tienes mṕas objetos en total en tu hatillo y tu zona de dañados que tu límite de objetos _(seis más dos por cada `item:sack` bocarriba en su contador)_ retira objetos de tu hatillo o zona de dañados hasta quedarte con un número de objetos igual a tu límite y devuélvelos a la caja.
 
-    - name: Jugar con dos Vagabundos
-      subtext: Si tienes la expansión de _Los Ribereños_, puedes jugar partidas con dos Vagabundos aplicando las reglas siguientes.
+    - name: Jugar con Dos Vagabundos
+      subtext: Si tienes la expansión _Los Ribereños_, puedes jugar una partida con dos Vagabundos siguiendo estas reglas.
       children:
-        - name: Añade un objeto extra a las Ruinas.
-          text: Durante la preparación, utiliza los dos conjuntos de objetos "R", y coloca dos objetos de "R" debajo de cada Ruina. Cuando un vagabundo explore una Ruina en la que haya dos objetos, puede mirar ambos objetos y elegir el que prefiera. No es posible coger un objeto "R" que coincida con otro objeto "R" que ya tenga sobre su tablero de facción _(así pues si realizas dos acciones de Explorar, es posible coger los dos objetos de dicha Ruina, siempre que sean diferentes)_. En caso de explorar pero no coger el objeto, no obtienes un punto de victoria, pero la antorcha queda agotada igualmente.
-        - name: Orden de preparación.
-          text: Determina al azar qué Vagabundo realizará su preparación primero.
-        - name: Misiones compartidas.
-          text: Cualquiera de los dos Vagabundos puede completar cualquiera de las tres misiones reveladas. No se añaden cartas extra durante la preparación.
+        - name: Preparación.
+          text: Usa los dos grupos de objetos "R" y coloca dos objetos al azar "R" bajo cada ficha de ruinas. Si usas la Preparación Estándar (`rule:5.1`), determina al azar qué Vagabundo hace su preparación antes.
+        - name: Misiones Compartidas.
+          text: Cualquiera de los Vagabundos puede completar cualquiera de las tres misiones bocarriba. No añadas cartas de misión adicionales durante la preparación.
+        - name: Tomando Objetos de las Ruinas
+          text: Cuando un Vagabundo explora una ruina con dos objetos, o Los Cientos arrasan una ruina (`rule:14.4.1`) con dos objetos, ese jugador puede ver esos objetos y escoger uno. _(Realizando dos acciones de Explorar, el Vagabundo podría tomar ambos objetos de una ruina)_. Un jugador no puede tomar un objeto "R" si ya tiene el mismo tipo de objeto "R" en su tablero de facción. _(Si el Vagabundo explora pero no toma el objeto, no obtiene un punto de victoria, pero la `item:torch` se agota igualmente)_.
 
 - name: El Culto Reptiliano
   color: "#fcf065"
