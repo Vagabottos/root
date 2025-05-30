@@ -839,85 +839,78 @@
         - name: Robar y Descartar.
           text: Roba una carta, más una carta adicional por cada símbolo de robo adicional descubierto. Entonces, si tienes más de cinco cartas en tu mano, descarta a tu elección hasta quedarte con cinco.
 
-- name: La Conspiración de los Córvidos
+- name: La Conspiración Córvida
   color: "#925da5"
   icon: corvid
   children:
     - name: Resumen
-      pretext: La Conspiración Córvida pretende someter a la comunidad del Bosque por medio de **conspiraciones** criminales, obteniendo puntos de victoria cada vez que revele una ficha. Cuantas más conspiraciones reveladas haya sobre el mapa, más puntuará. El engaño es absolutamente necesario; si sus planes son demasiado obvios, los Córvidos se arriesgan a ser expuestos. Para evitarlo, deberán reclutar con cautela aprovechar cualquier oportunidad para el subterfugio y la extorsión. 
+      pretext: La Conspiración Córvida busca forzar al Bosque a la sumisión llevando a cabo **planes** criminales y obteniendo puntos de victoria cada vez que voltean uno. Cuantos más planes haya revelados sobre el mapa, más puntos obtienen. Desviar la atención es crítico, ya que si sus intenciones son demasiado obvias, los Córvidos se arriesgan a ser expuestos. Para evitarlo deben reclutar con mucha cautela y buscar todas las oportunidades posibles para el subterfugio y la extorsión.
 
     - name: Reglas y Habilidades de Facción
       children:
         - name: Fabricar.
-          text: Los Córvidos fabrican durante el Alba activando fichas de conspiración _(bocarriba o bocabajo)_.
-
-        - name: Fichas de conspiración.
-          text: Los Córvidos tienen 8 fichas de conspiración, 2 de cada tipo.
+          text: Los Córvidos fabrican durante el Alba activando fichas de plan _(ya estén bocarriba o bocabajo)_.
+        - name: Fichas de Plan.
+          text: Los Córvidos tienen ocho fichas de plan, dos de cada tipo.
           subchildren:
-            - name: Estado de las fichas de conspiración.
-              text: Mientras estén en la reserva de los Córvidos, las fichas de conspiración se mantienen bocabajo _(mostrando el icono de la pluma)_. En el mapa, estas fichas pueden estar bocarriba _(mostrando su icono distintivo)_ o bocabajo. Los Córvidos pueden consultar sus fichas bocabajo en cualquier momento para comprobar de qué tipo son.
-            - name: Límite de colocación.
-              text: Cada claro solamente puede contener 1 ficha de conspiración.
-
-        - name: Gracilidad.
-          text: La Conspiración de los Córvidos puede mover independientemente de quién gobierne el claro de origen y el de destino.
-
+            - name: Sentido de la Ficha.
+              text: Mientras que estén en la reserva de los Córvidos, las fichas de plan están bocabajo _(pluma)_. Mientras está en el mapa, una ficha puede estar bocarriba _(ícono único)_ o bocabajo. Los córvidos pueden inspeccionar una ficha de plan que esté bocabajo en cualquier momento.
+            - name: Límites de Colocación.
+              text: Cada claro sólo puede tener una única ficha de plan.
+        - name: Grácil.
+          text: Los Córvidos pueden moverse independientemente de quién gobierne su claro de origen o de destino.
         - name: Exposición.
-          text: En cualquier momento durante su turno, pero siempre antes de robar cartas en su Noche, un jugador enemigo con al menos una pieza en un claro en el que haya una ficha de conspiración puede revelar a los Córvidos una carta del palo de dicho claro para intentar adivinar el tipo de ficha de conspiración de dicho claro. Si el intento de adivinar es incorrecto, los Córvidos simplemente deben decir "no" y el jugador enemigo debe dar dicha carta a los Córvidos. Si acierta, el jugador enemigo retira la ficha de conspiración _(y en consecuencia, suma 1 punto), ignorando el efecto de dicha ficha.
-
-        - name: Agentes encubiertos.
-          text: Como defensor en batalla, si los Córvidos tienen una ficha de conspiración en el claro de la batalla, causan 1 impacto adicional _(incluso aunque estén indefensos)_.
+          text: En cualquier momento de su turno, pero antes de robar cartas durante su Noche, un jugador enemiga con al menos una pieza de facción en un claro que contenga una ficha de plan bocabajo puede mostrarle una carta correspondiente a los Córvidos para intentar adivinar el tipo de ficha de plan de ese claro. Si no es correcto, los Córvidos dicen "no" y el jugador enemigo les da esa carta a los Córvidos. Si es correcto, el jugador enemigo retira la ficha de plan _(obteniendo un punto de victoria)_ y se ignora su efecto.
+        - name: Agentes Infiltrados.
+          text: Como defensor en la batalla, si los Córvidos tienen una ficha de plan bocabajo _(incluso si están indefensos)_ en el claro de batalla, dan un golpe adicional.
 
     - name: Preparación Individual
       children:
-        - name: "Paso 1: Guerreros y Conspiraciones."
-          text: Forma tus reservas con tus 15 guerreros y tus 8 fichas de conspiración colocadas bocabajo.
-
-        - name: "Paso 2: Dispersar guerreros."
-          text: Coloca 1 guerrero en un claro de cada palo, a tu elección _(en total, 3 guerreros en 3 claros)_.
+        - name: "Paso 1: Juntar Guerreros y Planes."
+          text: Forma la reserva de guerreros (15) y las fichas de planes bocabajo (8).
+        - name: "Paso 2: Dispersarse."
+          text: Coloca 1 guerrero en un claro cualquiera de cada palo _(3 en total)_.
 
     - name: Alba
-      pretext: Tu Alba tiene 3 pasos en el siguiente orden.
+      pretext: Tu Alba tiene tres pasos en el siguiente orden.
       children:
         - name: Fabricar.
-          text: Puedes activar fichas de conspiración _(no importa si están bocarriba o bocabajo)_ para fabricar cartas de tu mano _(siguiendo las reglas estándares, cada ficha puede ser utilizada una sola vez y cuenta por el palo del claro donde esté situada).
-        
-        - name: Revelar conspiraciones.
-          text: Puedes revelar conspiraciones tantas veces como desees, volteando bocarriba una ficha que esté bocabajo sobre el mapa en claros donde tengas al menos un guerrero _(no puedes revelar una conspiración si no tienes guerreros en dicho claro)_. Al revelar una conspiración, puntúa 1 punto de victoria por cada ficha de conspiración bocarriba sobre el mapa _(contando también la ficha recién revelada)_, y después resuelve el efecto de la conspiración si esta es una Bomba o una Extorsión.
-
+          text: Puedes activar fichas de plan _(estén bocarriba o bocabajo)_ para fabricar cartas de tu mano.
+        - name: Voltear Planes.
+          text: Tantas veces como quieras, voltea un plan para ponerlo bocarriba en un claro que tenga cualquier número de guerreros Córvidos y obtén un punto de victoria por cada ficha de plan sobre el mapa que esté bocarriba _(incluyendo la que acabas de voltear)_. Entonces resuelve el efecto de volteo si es una bomba o una extorsión.
         - name: Reclutar.
-          text: Una vez por turno, puedes gastar una carta para colocar 1 guerrero en cada claro del palo correspondiente. _(Si gastas una carta de ave, tú eliges el palo)_
+          text: Una vez por turno puedes gastar una carta cualquiera para colocar un guerrero en cada claro correspondiente. _(Si gastas un ave, elige un palo en el que colocar los guerreros)_.
 
     - name: Día
-      pretext: Puedes realizar hasta 3 acciones de las indicadas a continuación, en el orden y cantidad que desees.
+      pretext: Puedes realizar hasta tres acciones como sigue, en cualquier orden y número.
       children:
         - name: Mover.
-          text: Realiza un movimiento.
-        - name: Conspirar.
-          text: Retira, de un claro en que no haya ya una ficha de conspiración, 1 guerrero córvido, más otro guerrero por cada ficha de conspiración que hayas colocado este turno, para colocar una ficha de conspiración en dicho claro.
+          text: Haz un movimiento.
+        - name: Planear.
+          text: retira un guerrero Córvido, más otro guerrero Córvido por cada plan que ya hayas colocado este turno, de un claro que no tenga ficha de plan para colocar una ficha de plan bocabajo en él.
         - name: Batallar.
           text: Inicia una batalla.
-        - name: Truco.
-          text: Intercambia dos fichas de conspiración que estén sobre el mapa _(es posible realizar un intercambio "falso" y dejar las fichas como estaban)_. Ambas fichas deben estar o bocarriba o bocabajo.
+        - name: Trucar.
+          text: Intercambia dos fichas de plan sobre el mapa. Ambas fichas de plan deben estar bocarriba o bocabajo.
 
     - name: Noche
-      pretext: Tu Noche tiene 2 pasos en el siguiente orden.
+      pretext: Tu Noche tiene dos pasos en el siguiente orden.
       children:
-        - name: Esfuerzo.
-          text: Puedes optar por no robar cartas durante tu Noche para realizar una de las acciones de tu Día.
-        - name: Robar y descartar.
-          text: Roba 1 carta, más 1 carta por cada ficha de Extorsión bocarriba sobre el mapa. Después, si tienes más de 5 cartas en la mano, descarta cartas a tu elección hasta tener solo 5.
+        - name: Agotarse.
+          text: Puedes llevar a cabo una acción de las indicadas en tu Día si decides no robar cartas durante la Noche.
+        - name: Robar.
+          text: Roba una carta más una carta adicional por cada ficha de extorsión bocarriba que haya sobre el mapa. Después, si tienes más de cinco cartas en tu mano, descarta a tu elección hasta quedarte con cinco.
 
-    - name: Referencia de fichas de Conspiración
+    - name: Guía de las Fichas de Plan
       children:
         - name: Bomba.
-          text: Al voltear y revelar una ficha de Bomba, retira todas las piezas enemigas del claro, y después retira la ficha de Bomba.
-        - name: Trampa.
-          text: Mientras una ficha de Trampa esté bocarriba, los enemigos no pueden colocar piezas en este claro, ni mover piezas desde este claro.
+          text: Cuando se voltee una ficha de bomba, retira todas las piezas enemigas de este claro, después retira la ficha de bomba _(obtén un punto de victoria por ficha o edificio retirado)_.
+        - name: Cepo.
+          text: Mientras haya una ficha de cepo bocarriba, las piezas enemigas no pueden colocarse en ese claro o moverse de él.
         - name: Extorsión.
-          text: Al voltear una ficha de Extorsión, quita una carta al azar de la mano de cada jugador que tenga al menos una pieza en dicho claro. Por cada ficha de Extorsión que haya bocarriba, robarás una carta extra en tu Noche.
+          text: Cuando se voltee una ficha de extorsión, toma una carta al azar de cada jugador enemigo que tenga al menos una pieza de facción en ese claro. Mientras una ficha de extorsión esté bocarriba, robas una carta adicional en tu Noche.
         - name: Asalto.
-          text: Cuando una ficha de Asalto sea retirada _(independientemente de si estaba bocarriba o bocabajo)_, coloca un guerrero en cada claro adyacente al claro en que estaba situada la ficha de Asalto _(ignora este efecto si a ficha fue retirada por Exposición)_
+          text: Cuando se retire una ficha de asalto _(ya sea bocarriba o bocabajo)_, coloca un guerrero en cada claro adyacente al claro del que se retiró el asalto _(ignora este efecto si el asalto se retira por Exposición)_.
 
 - name: Variantes y Vagabundos extra
   color: "#000000"
