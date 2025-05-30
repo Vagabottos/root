@@ -576,72 +576,72 @@
   icon: cult
   children:
     - name: Resumen
-      pretext: Atendiendo a las criaturas descartadas por otras facciones del Bosque, el Culto Reptiliano trata de abrumar a sus enemigos a través de su obstinada determinación. Si el Culto gobierna claros, puede construir **jardines**, difundiendo su evangelio por el boca pico entre los animales que viven allí. Cuanto más seguidores consiga, más puntos podrá puntuar completand los **rituales** pertinentes. Mientras otras facciones gastan cartas para cumplir sus objetivos, el culto principalmente las revela y gradualmente las va seleccionando para conformar su grupo ideal de fieles. A no ser que se usen para puntuar, las cartas reveladas vuelven a la mano de del Culto en su Noche. Sin enmbargo, este enfoque más amable hace que mover y batallar se más complicado, así que solo pueden ser llevadas a cabo por los miembros más radicalizados del Culto, los **acólitos**, obtenidos al perder guerreros en batalla.
+      pretext: El Culto Reptiliano trata de abrumar a sus enemigos a través de fuerza de volutand bruta, y para ello utiliza a las criaturas descartadas del Bosque. En los claros que bogierna el Culto puede construir **jardines**, con los que aumenta el boca a pico para difundir su evangelio. Cuanto mayor sea su control sobre el corazón de sus fieles, el Culto obtendrá más puntos de victoria al completar ciertos **rituales**. Mientras que las otras facciones gastan cartas para lograr sus objetivos, el Culto principalmente revela cartas y gradualmente las va seleccionando para conseguir el conjunto ideal de seguidores. A no ser que se usen para puntuar, esas cartas no se gastan y vuelve a la mano del Culto durante la Noche. Sin embargo, este enfoque más amable hace que el movimiento y las operaciones de combate sean más difíciles, así que esas acciones sólo pueden ser llevadas a cabo por sus **acólitos** más radicalizados, obtenidos a medida que los guerreros del Culto son masacrados al defender en batallas.
 
     - name: Reglas y Habilidades de Facción
       children:
         - name: Fabricar.
-          text: El Culto fabrica durante la Noche activando talleres del palo **Paria** (`rule:10.4.1`).
-        - name: Odio a las aves.
-          text: Las cartas de Ave no se consideran comodín para los rituales del Culto.
+          text: El Culto fabrica durante la Noche activando los jardines cuyos palos son correspondientes al palo paria (`rule:10.4.1`). _(En general se corresponden con el claro, salvo por el Lugar Mítico la Ciudad Perdida)_.
+        - name: Odio a las Aves.
+          text: Las cartas de ave no son comodines para los rituales del Culto.
         - name: Venganza.
-          text: Cuando un guerrero del Culto es retirado al defender en batallas, este se coloca en la zona de Acólitos de su tablero en lugar de en la reserva.
+          text: Cuando un guerrero del Culto es retirado mientras defiende en batalla, se coloca en la zona de acólitos en lugar de la reserva del Culto.
         - name: Peregrinos.
-          text: El Culto gobierna cualquier claro en que tenga al menos un jardín. Esta regla domina sobre la regla "Señores del Bosque" del Nido de Águilas. (`rule:7.2.2`).
+          text: El Culto gobierna cualquier claro donde tenga un jardín. Esto invalida la regla Señores del Bosque (`rule:7.2.2`).
         - name: Miedo a los Fieles.
-          text: Cuando un jardín es retirado, el culto debe descartar una carta al azar.
-        - name: La pila de Almas Perdidas.
-          text: Cuando una carta sea descartada o gastada _(incluso una carta de Dominancia)_, esta se coloca en la pila de Almas Perdidas en lugar de en la pila de descarte. La Pila de Almas perdidas y las cartas que hay en ella son información pública.
+          text: Cuando un jardín es retirado del tablero, el Culto debe descartar una carta al azar.
+        - name: El Montón de Almas Perdidas.
+          text: Cuando una carta sea gastada o descartada _(incluso una carta de dominancia)_, colócala en el montón de lamas perdida en lugar de la pila de descarte. Las almas perdidas pueden ser inspeccionadas en cualquier momento por cualquier jugador.
 
-    - name: Preparación Individual
+    - name: Preparación
       children:
-        - name: "Paso 1: Guerreros."
-          text: Forma una reserva con tus 25 guerreros.
-        - name: "Paso 2: Guerreros y Jardín inicial"
-          text: En el claro de la esquina opuesta a la fortaleza del Marquesado o el nido inicial del Nido de Águilas, coloca 4 guerreros  y 1 jardín del palo del claro; si el Marquesado y el Nido de Águilas están en partida, elige el claro de 1 de las esquinas restantes. Después, coloca 1 guerrero en cada claro adyacente.
+        - name: "Paso 1: Juntar Guerreros."
+          text: Forma la reserva de guerreros (25).
+        - name: "Paso 2: Colocar Guerreros"
+          text: En un claro de una esquina que no sea el claro inicial de otro jugador y, si es posible, que sea diagonalmente opuesto a un claro inicial, coloca 4 guerreros y 1 jardín correspondiente al palo indicado por ese claro. Éste es tu claro inicial. Luego coloca 1 guerrero en cada claro adyacente a ese claro. _(Esto se ha actualizado con respecto a ediciones anteriores por flexibilidad)_.
         - name: "Paso 3: Elegir al Paria"
-          text: Coloca el marcador del paria sobre la casilla de cualquier palo del recuadro indicador del Paria. Dicho palo es ahora el **Paria**.
-        - name: "Paso 4: Contadores de Jardines."
-          text: Coloca tus 14 jardines restantes sobre los espacios correspondientes de tu contador de jardines, colocándolos de derecha a izquierda.
+          text: Coloca el marcador de paria sobre cualquier casilla de la zona paria. El palo que se encuentre en esa casilla pasa a ser el **paria**.
+        - name: "Paso 4: Rellenar los Contadores de Jardines."
+          text: Coloca tus 14 jardines restantes en los espacios correspondientes de tus contadores de jardines, de derecha a izquierda.
   
     - name: Alba
-      pretext: Tu Alba tiene 3 pasos en el siguiente orden.
+      pretext: Tu Alba tiene tres pasos en el siguiente orden.
       children:
         - name: Ajustar el Paria.
-          text: Mira las cartas de tu pila de Almas Perdidas, ignorando las cartas de ave. El palo con más cartas es el nuevo Paria. Desplaza el marcador para indicar cuál es el nuevo Paria. Si dicho palo ya era el Paria, entonces gira el marcador a su cara de **Odiado**. Si ningún palo tiene más cartas, el marcador permanece en su espacio actual y, si no está **Odiado** voltea el marcador a dicha cara.
+          text: Mira las cartas del montón de almas perdidas, ignorando las aves. El palo con más cartas en la pila se convierte en el nuevo paria _(mueve el marcador de paria, mostrando su cara de paria, a ese palo)_. Si ese palo ya era el paria, voltea el marcador a su cara de odiado. Si ningún palo tiene más cartas, el marcador se queda donde estaba y si no está en su cara de odiado, lo volteas para que ahora lo esté.
         - name: Descartar Almas Perdidas.
-          text: Descarta todas las cartas de la pila de Almas Perdidas a la pila de descarte. _(Las cartas de Dominancia están disponibles a partir de este momento)_
+          text: Descarta todas las cartas del montón de almas perdidas a la pila de descarte _(las cartas de dominancia pasan a estar disponibles)_.
         - name: Realizar Conspiraciones.
-          text: Puedes gastar acólitos, devolviéndolos a tu reserva personal, para realizar conspiraciones en claros del palo Paria, en cualquier orden y combinación, como se indica a continuación. Si el Paria es Odiado, las conspiraciones cuestan un acólito menos. Para realizar las acciones de Convertir o Santificar debes poder completar acción.
+          text: Puedes gastar acólitos, devolviéndolos a tu reserva, para conspirar en claros correspondientes al paria, en cualquier orden y número, de la manera siguiente. Si el paria es odiado, cada conspiración te cuesta un acólito menos.
           subchildren:
             - name: Cruzada.
-              text: Gasta 2 acólitos para iniciar batalla en un claro del palo Paria **o bien** para mover _(al menos un guerrero)_ desde un claro Paria y, después, si quieres, iniciar batalla en el claro de destino.
+              text: Gasta dos acólitos para iniciar una batalla en un claro de paria o bien para mover al menos un guerrero desde un claro paria y luego, si lo deseas, iniciar una batalla en el claro de destino.
             - name: Convertir.
-              text: Gasta 2 acólitos para retirar un guerrero enemigo de un claro Paria y después colocar un guerrero tuyo en dicho claro.
+              text: Gasta dos acólitos para reemplazar un guerrero enemigo de un claro de paria por un guerrero del Culto. _(Para reemplazar una pieza, debes poder retirar la previa y colocar una nueva)_.
             - name: Santificar.
-              text: Gasta 3 acólitos para retirar un edificio enemigo de un claro Paria y colocar un jardín del palo del claro en su lugar.
+              text: Gasta tres acólitos para reemplazar un edificio enemigo de un claro de paria por un jardín correspondiente.
 
     - name: Día
-      pretext: Puedes revelar tantas cartas de tu mano como desees _(colócalas temporalmente sobre tu área de juego)_, y realizar un ritual per carta revelada, del tipo que desees y en el orden que quieras, como se indica a continuación. _(Las cartas reveladas no pueden ser utilizadas para ningún otro fin durante la fase del Día)_
+      pretext: Puedes revelar cualquier número de cartas de tu mano y llevar a cabo un ritual por cada carta revelada, en cualquier orden y número, de la manera siguiente. _(Las cartas reveladas de tu mano se sitúan bocarriba en tu zona de juego y no se pueden suar para ningún otro propósito durante el Día)_.
       children:
         - name: Construir.
-          text: Coloca un jardín del palo correspondiente a la carta revelada sobre un claro de dicho palo en el que gobiernes.
+          text: Coloca un jardín correspondiente a la carta revelada en un claro que gobiernes, también correspondiente a la carta revelada.
         - name: Reclutar.
-          text: Coloca un guerrero sobre un claro del palo de la carta revelada.
+          text: Coloca un guerrero sobre un claro correspondiente a la carta revelada.
         - name: Puntuar.
-          text: Gasta la misma carta que has revelado _(colocándola en la pila de Almas Perdidas)_ para puntuar tantos puntos de victoria como indique la casilla vacía más avanzada del contador de jardines de dicho palo. Solo puedes realizar esta acción una vez por palo en tu turno.
+          text: Gasta la carta que reveles _(colócala en almas perdidas)_ para obtener los puntos de victoria indicados sobre la casilla vacía que esté más a la derecha del contador de jardines correspondiente a la carta descartada. Sólo puedes realizar esta acción una vez por turno por cada palo.
         - name: Sacrificio.
-          text: Coloca un guerrero de tu reserva en el espacio de Acólitos. Para realizar este ritual debes revelar una carta de ave. _(Este es el único ritual que puedes realizar con una carta de ave)_
+          text: Coloca un guerrero en la zona de acólitos. Para realizar este ritual, debes revelar una carta de ave.
 
     - name: Noche.
-      pretext: Tu Noche tiene 3 pasos en el siguiente orden.
+      pretext: Tu Noche tiene tres pasos en el siguiente orden.
       children:
-        - name: Recuperar cartas reveladas.
-          text: Recupera todas las cartas que hayas revelado durante tu Día, devolviéndolas a tu mano.
+        - name: Recuperar Cartas.
+          text: Recupera todas las cartas reveladas en este turno y devuélvelas a tu mano.
         - name: Fabricar.
-          text: Puedes fabricar activando jardines del palo Paria.
-        - name: Robar y descartar.
-          text: Roba 1 carta, más 1 por cada icono de robar carta descubierto sobre tu tablero de facción. Después, si tienes más de 5 cartas en tu mano, descarta cartas a tu elección hasta quedarte con solo 5.
+          text: Puedes fabricar cartas de tu mano activando jardines cuyo palo corresponda con el palo paria.
+        - name: Robar y Descartar.
+          text: Roba una carta, más una carta adicional por cada símbolo de robo adicional descubierto. Entonces, si tienes más de cinco cartas en tu mano, descarta a tu elección hasta quedarte con cinco.
 
 - name: La Compañía del Río
   color: "#5bc3bd"
