@@ -413,7 +413,7 @@
       children:
         - name: Fabricar.
           text: Puedes activar fichas de simpatía para fabricar cartas de tu mano.
-        - name: Mobilizar.
+        - name: Movilizar.
           text: Añade una carta de tu mano al montón de simpatizantes.
         - name: Entrenar.
           text: Gasta una carta correspondiente al palo indicado por una base en el mapa para colocar un guerrero en la zona de oficiales. Este guerrero ahora es un **oficial**.
@@ -440,7 +440,7 @@
   icon: vagabond
   children:
     - name: Resumen
-      pretext: El Vagabundo puede apoyar a todos los bandos de este conflicto, al tiempo que lleva a cabo misiones para incrementar su reputación. Cada vez que mejoras tu **relación** con otra facción, o bien quitas un guerrero que pertence a una facción hostil, obtienes puntos de victoria. También puedes completar **misiones** para obtener puntos de victoria. Para mover y actuar de forma efectiva con el Vagabundo debes gestionar tu hatillo de **objetos**, expandiendo tu colección al explorar las ruinas en los claros y ayudar a otras facciones.
+      pretext: El Vagabundo puede apoyar a todos los bandos de este conflicto, al tiempo que lleva a cabo misiones para incrementar su reputación. Cada vez que mejoras tu **relación** con otra facción, o bien quitas un guerrero que pertenece a una facción hostil, obtienes puntos de victoria. También puedes completar **misiones** para obtener puntos de victoria. Para mover y actuar de forma efectiva con el Vagabundo debes gestionar tu hatillo de **objetos**, expandiendo tu colección al explorar las ruinas en los claros y ayudar a otras facciones.
     
     - name: Reglas y Habilidades de Facción
       children:
@@ -460,7 +460,7 @@
           text: Las capacidades del Vagabundo dependen de los objetos que tenga. En lugar de una zona para Objetos Fabricados tiene un Hatillo y varios contadores. Los objetos en el tablero de facción del Vagabundo pueden estar bocarriba o bocabajo. El Vagabundo **agota** objetos no dañados, volteándolos bocabajo, para hacer muchas de sus acciones.
           subchildren:
             - name: Contadores.
-              text: Al obtenerlos o al voltearlos bocarriba, coloca `item:tea`, `item:coin`, y `item:sack` bocarriba en sus contadores. Cada contador puede tner hasta 3 objetos del mismo tipo.
+              text: Al obtenerlos o al voltearlos bocarriba, coloca `item:tea`, `item:coin`, y `item:sack` bocarriba en sus contadores. Cada contador puede tener hasta 3 objetos del mismo tipo.
             - name: El Hatillo.
               text: Al obtenerlos, coloca `item:boot`, `item:sword`, `item:crossbow`, `item:torch`, y `item:hammer` bocarriba en el hatillo.
             - name: Mover Objetos.
@@ -509,7 +509,7 @@
         - name: "Paso 1: Elegir un Personaje."
           text: Elige una carta de personaje y colócala en tu espacio de carta de personaje.
         - name: "Paso 2: Colocar el Peón."
-          text: Coloca tu peón de Vagabundo en un bosquer a tu elección.
+          text: Coloca tu peón de Vagabundo en un bosque a tu elección.
         - name: "Paso 3: Conseguir Misiones."
           text: Baraja tu mazo de misiones, roba 3 cartas de misión y colócalas bocarriba junto a ti.
         - name: "Paso 4: Llenar las Ruinas."
@@ -559,7 +559,7 @@
         - name: Descartar Cartas.
           text: Si tienes más de cinco cartas en tu mano, descarta cartas a tu elección hasta quedarte con cinco.
         - name: Comprobar Capacidad.
-          text: Si tienes mṕas objetos en total en tu hatillo y tu zona de dañados que tu límite de objetos _(seis más dos por cada `item:sack` bocarriba en su contador)_ retira objetos de tu hatillo o zona de dañados hasta quedarte con un número de objetos igual a tu límite y devuélvelos a la caja.
+          text: Si tienes más objetos en total en tu hatillo y tu zona de dañados que tu límite de objetos _(seis más dos por cada `item:sack` bocarriba en su contador)_ retira objetos de tu hatillo o zona de dañados hasta quedarte con un número de objetos igual a tu límite y devuélvelos a la caja.
 
     - name: Jugar con Dos Vagabundos
       subtext: Si tienes la expansión _Los Ribereños_, puedes jugar una partida con dos Vagabundos siguiendo estas reglas.
@@ -576,7 +576,7 @@
   icon: cult
   children:
     - name: Resumen
-      pretext: El Culto Reptiliano trata de abrumar a sus enemigos a través de fuerza de volutand bruta, y para ello utiliza a las criaturas descartadas del Bosque. En los claros que bogierna el Culto puede construir **jardines**, con los que aumenta el boca a pico para difundir su evangelio. Cuanto mayor sea su control sobre el corazón de sus fieles, el Culto obtendrá más puntos de victoria al completar ciertos **rituales**. Mientras que las otras facciones gastan cartas para lograr sus objetivos, el Culto principalmente revela cartas y gradualmente las va seleccionando para conseguir el conjunto ideal de seguidores. A no ser que se usen para puntuar, esas cartas no se gastan y vuelve a la mano del Culto durante la Noche. Sin embargo, este enfoque más amable hace que el movimiento y las operaciones de combate sean más difíciles, así que esas acciones sólo pueden ser llevadas a cabo por sus **acólitos** más radicalizados, obtenidos a medida que los guerreros del Culto son masacrados al defender en batallas.
+      pretext: El Culto Reptiliano trata de abrumar a sus enemigos a través de fuerza de voluntad bruta, y para ello utiliza a las criaturas descartadas del Bosque. En los claros que gobierna el Culto puede construir **jardines**, con los que aumenta el boca a pico para difundir su evangelio. Cuanto mayor sea su control sobre el corazón de sus fieles, el Culto obtendrá más puntos de victoria al completar ciertos **rituales**. Mientras que las otras facciones gastan cartas para lograr sus objetivos, el Culto principalmente revela cartas y gradualmente las va seleccionando para conseguir el conjunto ideal de seguidores. A no ser que se usen para puntuar, esas cartas no se gastan y vuelve a la mano del Culto durante la Noche. Sin embargo, este enfoque más amable hace que el movimiento y las operaciones de combate sean más difíciles, así que esas acciones sólo pueden ser llevadas a cabo por sus **acólitos** más radicalizados, obtenidos a medida que los guerreros del Culto son masacrados al defender en batallas.
 
     - name: Reglas y Habilidades de Facción
       children:
@@ -622,7 +622,7 @@
               text: Gasta tres acólitos para reemplazar un edificio enemigo de un claro de paria por un jardín correspondiente.
 
     - name: Día
-      pretext: Puedes revelar cualquier número de cartas de tu mano y llevar a cabo un ritual por cada carta revelada, en cualquier orden y número, de la manera siguiente. _(Las cartas reveladas de tu mano se sitúan bocarriba en tu zona de juego y no se pueden suar para ningún otro propósito durante el Día)_.
+      pretext: Puedes revelar cualquier número de cartas de tu mano y llevar a cabo un ritual por cada carta revelada, en cualquier orden y número, de la manera siguiente. _(Las cartas reveladas de tu mano se sitúan bocarriba en tu zona de juego y no se pueden usar para ningún otro propósito durante el Día)_.
       children:
         - name: Construir.
           text: Coloca un jardín correspondiente a la carta revelada en un claro que gobiernes, también correspondiente a la carta revelada.
@@ -648,103 +648,103 @@
   icon: riverfolk
   children:
     - name: Resumen
-      pretext: Cuando a la comunidad del Bosque llegó la noticia que las orillas del gran lago se estaban convirtiendo en el escenario de una guerra total, la Compañía del Río no tardó en mandar a sus oficiales a hacer negocios. Mientras otras facciones compran sus servicios, la Compañía del Río podrá reforzar sus intereses comerciales estableciendo **puestos comerciales** por el bosque, y sumar así puntos de victoria. Construir estos puestos comerciales es una manera de conseguir puntos, aunque también podrá obtenerlos acumulando **fondos**. No obstante, una gran fortuna también es un gran blanco, así que la Compañía del Río deberá ser cautelosa y mantener un equilibrio entre proteger su creciente fortuna y expandir sus operaciones a lo largo del peligroso bosque.
+      pretext: Cuando llegaron noticias de que se estaba desatando una guerra total en el Bosque, la Compañía del Río envió rápidamente a sus oficiales para ponerse manos a la obra. Mientras las otras facciones compran sus servicios, la Compañía podrá reforzar sus intereses comerciales construyendo **puestos comerciales** a lo largo del río, obteniendo puntos de victoria. También puede obtenerlos mediante la acumulación de **fondos**. Sin embargo, una tesorería boyante también se convierte en un objetivo fácil, así que la Compañía debe ser cuidadosa al expandir sus operaciones por el peligroso bosque.
 
     - name: Reglas y Habilidades de Facción
       children:
         - name: Fabricar.
-          text: La Compañía del Río fabrica durante el Día consignando fondos a los espacios vacíos de los contadores de Puestos Comerciales. _(La Compañía no tiene piezas de fabricación)_
+          text: La Compañía fabrica durante el Día consignando fondos a los espacios vacíos de los contadores de puestos comerciales _(no tiene piezas de fabricación)_.
         - name: Nadadores.
-          text: La Compañía del Río trata los ríos como caminos y puede moverse a través de ellos independientemente de quién gobierne el claro de origen o de destino. _(También puede moverse de forma normal a través de los caminos.)_
-        - name: Mano pública.
-          text:  La Compañía del Río coloca su mano de cartas a la vista de todos sobre su tablero de facción _(utiliza el sujetacartas incluido para este propósito)_. Si algún jugador tuviese que coger una carta al azar de la mano del jugador que controla la Compañía, dichas cartas deben ponerse bocabajo y barajarse para que dicho jugador elija una aleatoriamente. Después, recoloca las cartas mano a la vista de todos nuevamente.
+          text: La Compañía trata a los ríos como caminos y se puede mover por los ríos sin importar quien gobierne los claros de origen y destino _(también puede usa los caminos para moverse)_.
+        - name: En Venta.
+          text: La Compañía coloca su mano bocarriba sobre su tablero. Si otro jugador tuviera que robar una carta al azar de la mano de la Compañía, las cartas se ponen bocabajo, se mezclan y se roba la cantidad re querida. Luego, se vuelven a poner bocarriba.
         - name: Fondos.
-          text:  "Para realizar acciones, la Compañía del Río debe consignar y gastar **fondos**: guerreros en su casilla para Fondos."
+          text: "Para realizar sus acciones, la Compañía consigna y gasta **fondos**: Guerreros en su zona para fondos."
         - name: Puestos Comerciales.
-          text: La Compañía del Río suma puntos de victoria al colocar puestos comerciales en el mapa.
+          text: La Compañía obtiene puntos de victoria cuando construye puestos comerciales.
           subchildren:
-            - name: Interrupción al comercio.
-              text: Cuando un puesto comercial es retirado, la Compañía debe retirar la mitad de sus fondos (redondeando hacia arriba) y retirar dicho puesto comercial del juego de forma permanente, devolviéndolo a la caja.
-        - name: Compra de Servicios.
-          text: Al inicio de su Alba, cualquier otro jugador que no seas tú puede comprar los servicios de la Compañía del Río.
+            - name: Interrupción del Comercio.
+              text: Cuando un puesto comercial es retirado, la Compañía retira la mitad de sus fondos, redondeando hacia arriba, y devuelve ese puesto comercial a la caja.
+        - name: Comprar Servicios.
+          text: Al inicio de sus respectivas Albas, los otros jugadores pueden comprar los servicios de la Compañía.
           subchildren:
             - name: Coste.
-              text: El comprador debe colocar guerreros de su reserva personal en la zona de Pagos, tantos como corresponda al coste de dicho servicio según indique el contador de Servicios correspondiente de la Compañía.
-            - name: Cantidad de Servicios.
-              text: En cada turno, un jugador solo puede adquirir un servicio, más uno extra por cada claro en el que haya un puesto comercial y dicho jugador tenga al menos una pieza.
+              text: El comprador debe colocar tantos de sus guerreros en la zona de pagos de la Compañía como el coste del servicio, indicado en el contador correspondiente de la zona de servicios.
+            - name: Número.
+              text: Cada turno, un jugador puede comprar un servicio más uno adicional por cada claro con un puesto comercial en el que tenga al menos una pieza de su facción.
             - name: Fondos del Vagabundo.
-              text: El Vagabundo paga por los servicios agotando objetos. Por cada objeto que el vagabundo agote, la Compañía del Río coloca uno de sus propios guerreros de su reserva en la zona de Pagos.
-        - name: Servicios de la Compañía del Río.
-          text: La Compañía del Río ofrece tres servicios, detallados a continuación.
+              text: "El Vagabundo paga por los servicios agotando objetos: Por cada objeto que agote con ese fin, la Compañía coloca un guerrero de la Compañía en la zona de pagos."
+        - name: Servicios.
+          text: La Compañía ofrece tres tipos de servicios.
           subchildren:
-            - name: Carta de mano.
-              text: El comprador adquiere una carta de la mano de la Compañía del Río y la añade a su mano. _(Un jugador puede comprar este servicio más de una vez, siempre que tenga acceso a suficientes puestos comerciales)_
-            - name: Barcazas.
-              text: El comprador trata los ríos como caminos hasta el final de su turno.
+            - name: Carta de la Mano.
+              text: El comprador toma cualquier carta de la mano de la Compañía y la añade a la suya _(este servicio se puede comprar varias veces siempre que se tenga acceso a suficientes puestos comerciales)_.
+            - name: Barcas.
+              text: El comprador puede tratar los ríos como si fueran caminos hasta el final de su turno.
             - name: Mercenarios.
-              text:  Durante el Día y la Noche de su turno, el comprador trata a los guerreros de la Compañía del Río como si fuesen suyos a efectos de gobernar y para batallar contra otras facciones que no sean la Compañía. (El comprador de este servicio no puede mover los guerreros, computarlos a efectos de Dominancia ni retirarlos, salvo en el caso de que reciban impactos en batalla)_
+              text:  Durante el Día y la Noche de este turno, el comprador trata a los guerreros de la Compañía como si fueran suyos para de gobernar y para batallar contra cualquier facción que no sea la Compañía. _(El comprador no puede moverlos, usarlos para cumplir cartas de dominancia o retirarlos, a no ser que sea mediante golpes en batalla. Todavía son piezas de la Compañía, por lo que no se ven afectados por habilidades como Hospitales de Campaña del MArquesado ni pueden usarse para Convencer a Ministros del Ducado)_.
               subchildren:
-                - name: Recibir impactos.
-                  text: El comprador debe repartir los impactos recibidos en batalla de forma equitativa entre sus propias piezas y los guerreros de la Compañía, si los tiene, o entre sus propios edificios y/o fichas solo en caso de no tener guerreros _(contando con los mercenarios de la Compañía)_ en el claro de la batalla.
-                - name: Mercenarios y el Vagabundo.
-                  text: El Vagabundo no puede comprar el servicio de Mercenarios de la Compañía del Río.
+                - name: Golpes Recibidos.
+                  text: El comprador debe repartir los impactos, sufriendo los golpes impares retirando guerreros de su propiedad _(no de la Compañía)_, si quedan, o edificios de su propiedad o fichas sólo si no tiene guerreros _(incluyendo de la Compañía)_ en el claro de batalla.
+                - name: El Vagabundo y los Mercenarios.
+                  text: El Vagabundo no puede comprar mercenarios de la Compañía _(Si el comprador ataca al Vagabundo y se retira un mercenario de la Compañía, la facción del comprador se convierte en Hostil, no La Compañía)_.
 
-    - name: Preparación Individual
+    - name: Preparación
       children:
-        - name: "Paso 1: Guerreros."
-          text: Forma una reserva de 15 guerreros.
-        - name: "Paso 2: Colocar Guerreros."
-          text: Coloca 4 Guerreros en cualquiera de los claros en contacto con el río, repartiéndolos como desees.
-        - name: "Paso 3: Contadores de Puestos Comerciales."
-          text: Coloca los 9 puestos comerciales sobre sus respectivas casillas en los contadores correspondientes de tu tablero.
-        - name: "Paso 4: Fondos iniciales."
-          text: Coloca 3 guerreros en zona de Pagos.
-        - name: "Paso 5: Precios iniciales."
-          text: Coloca 1 marcador de servicios sobre cualquier casilla de su respectivo contador.
+        - name: "Paso 1: Juntar Guerreros."
+          text: Forma la reserva de guerreros (15).
+        - name: "Paso 2: Desembarcar."
+          text: Coloca 4 guerreros en cualquier claro o claros conectado(s) al río.
+        - name: "Paso 3: Rellenar los Contadores de Puesto Comercial."
+          text: Coloca 9 puestos comerciales en los espacios correspondientes de tus contadores de puestos comerciales.
+        - name: "Paso 4: Obtener Fondos Iniciales."
+          text: Coloca 3 guerreros en zona de pagos.
+        - name: "Paso 5: Precios inicialesI"
+          text: Coloca 1 marcador de servicio en cualquier espacio de cada uno de tus contadores de servicios.
 
     - name: Alba
-      pretext: Tu Alba tiene 3 pasos en el siguiente orden.
+      pretext: Tu Alba tiene tres pasos en el siguiente orden.
       children:
         - name: Proteccionismo.
-          text: Si tu zona de Pagos está vacía, coloca 2 guerreros en ella.
-        - name: Puntuar dividendos.
-          text: Si hay algún puesto comercial sobre el mapa, puntúa 1 punto de victoria por cada 2 fondos. _(No puntúes por los guerreros en tu zona de Pagos o Consignados)_
-        - name: Recoger Fondos.
-          text: Coloca todos los guerreros de tu tablero de facción sobre la zona de Fondos.
+          text: Si la zona de pagos está vacía, coloca 2 guerreros en ella.
+        - name: Dividendos.
+          text: Si hay al menos un puesto comercial en el mapa, obtén un punto de victoria por cada 2 fondos. No obtienes puntos por los guerreros en la zona de pagos ni la zona de consignados.
+        - name: Fondos.
+          text: Mueve todos los guerreros en tu tablero a la zona de fondos.
 
     - name: Día
-      pretext: Puedes consignar y gastar fondos para realizar acciones, como se detalla a continuación, en la cantidad y orden que desees. Al consignar un fondo, mueve el guerrero a la zona de Consignados. Al gastar un fondo, devuelve el guerrero a la reserva de su propietario.
+      pretext: Puedes consignar y gastar fondos para realizar acciones como sigue, en cualquier orden y número. Cuando consignas un fondo, mueve el guerrero a la zona de consignados. Cuando gastas un fondo, devuelve el guerrero a la reserva de su propietario.
       children:
         - name: Mover.
-          text: Consigna un fondo para realizar un movimiento.
+          text: Consigna un fondo para hacer un movimiento.
         - name: Batallar.
           text: Consigna un fondo para iniciar una batalla.
         - name: Fabricar.
-          text: Consigna fondos para fabricar una carta de tu mano. En lugar de colocar estos guerreros sobre las casillas vacías del contador o los contadores de los Puestos Comerciales correspondientes a los palos que marca el coste de fabricación _(en la práctica, cada guerrero colocado cubre un icono de fabricación de dicho palo, funcionando de forma similar a otras piezas de fabricación)_
+          text: Consigna fondos para fabricar una carta de tu mano. En vez de mover a estos guerreros a la zona de consignados, debes colocarlos en espacios vacíos de los contadores de puestos comerciales correspondientes a los palos indicados en el coste de fabricación.
           subchildren:
             - name: Exportar.
-              text: Puedes ignorar el efecto de fabricación de una carta para, en su lugar, descartarla y colocar uno de tus guerreros de tu reserva en la zona de Pagos.
+              text: Puedes ignorar el beneficio asociado a la fabricación de una carta, descartarla y colocar un guerrero de La Compañía en la zona de pagos.
         - name: Robar.
           text: Consigna un fondo para robar una carta.
         - name: Reclutar.
-          text: Gasta un fondo para colocar un guerrero en cualquier claro en que haya un río.
-        - name: Establecer puesto comercial con guarnición.
+          text: Gasta un fondo para colocar un guerrero en un claro con un río.
+        - name: Puesto Comercial con Guarnición.
           text: Gasta dos fondos para colocar un puesto comercial y un guerrero.
           subchildren:
-            - name: Elige claro.
-              text: Elige cualquier claro en que no haya ya un puesto comercial, independientemente de quién gobierne.
-            - name: Gasta Fondos.
-              text: Gasta 2 fondos del jugador que gobierna el claro elegido.
-            - name: Coloca y puntúa.
-              text: Coloca el puesto comercial correspondiente al claro y un guerrero sobre el claro elegido. Puntúa los puntos de victoria indicados en la casilla recién descubierta del contador del puesto comercial de tu tablero de facción.
+            - name: Elegir Claro.
+              text: Escoge un claro que no tenga un puesto comercial gobernado por cualquier jugador.
+            - name: Gastar Fondos.
+              text: Gasta dos fondos del jugador que gobierna el claro elegido.
+            - name: Colocar y Puntuar.
+              text: Coloca el puesto comercial correspondiente y un guerrero en el claro elegido. Obtén los puntos de victoria indicados en el espacio descubierto de tu tablero.
 
     - name: Noche
-      pretext: Tu Noche tiene 2 pasos en el siguiente orden.
+      pretext: Tu Noche tiene dos pasos en el siguiente orden.
       children:
-        - name: Descartar cartas.
-          text: Si tienes más de 5 cartas en tu mano, descarta las cartas que elijas hasta tener solo 5.
-        - name: Ajustar costes.
-          text: Puedes mover el marcador de servicios de cada servicio y colocarlo sobre cualquier casilla de su correspondiente contador, estableciendo así un nuevo precio para cada servicio.
+        - name: Descartar.
+          text: Si tienes más de cinco cartas en tu mano, descarta cartas a tu elección hasta quedarte con cinco.
+        - name: Establecer Costes.
+          text: Puedes mover cada marcador de servicio a cualquier espacio de su contador, estableciendo un nuevo coste para ese servicio.
 
 - name: El Ducado Subterráneo
   color: "#eec4ab"
