@@ -1181,77 +1181,59 @@
             - name: Bosques.
               text: Todas las áreas del mapa de montaña delimitadas por caminos y claros son bosques (`rule:2.2`), independientemente de que haya árboles impresos o no.
 
-    - name: Vagabundos
+    - name: Guía del Vagabundo
       children:
         - name: Ladrón
           subchildren:
-            - name: Objetos iniciales ("S")
-              text: Comienza la partida con `item:boot`, `item:torch`, `item:tea`, `item:sword`.
-
-            - name: "Acción especial: Robar"
-              text: Agota una `item:torch` para robarle una carta de la mano al azar a cualquier otro jugador presente en tu claro.
-
+            - name: Objetos Iniciales.
+              text: Empieza con `item:boot`, `item:torch`, `item:tea`, `item:sword`.
+            - name: "Acción Especial: Robar"
+              text: Agota una `item:torch` para robar una carta al azar de un jugador cualquiera en tu claro.
         - name: Chatarrero
           subchildren:
-            - name: Objetos iniciales ("S")
-              text: Comienza la partida con `item:boot`, `item:torch`, `item:sack`, `item:hammer`.
-
-            - name: "Acción especial: Tareas diurnas"
-              text: Agota una `item:torch` para coger una carta del palo correspondiente a tu claro de la pila de descarte. _(You can always take a bird card.)_
-
+            - name: Objetos Iniciales
+              text: Empieza con `item:boot`, `item:torch`, `item:sack`, `item:hammer`.
+            - name: "Acción Especial: Trabajo Diurno"
+              text: Agota una `item:torch` para tomar una carta de la pila de descartes del palo correspondiente a tu claro. _(Siempre puedes tomar una carta de ave)_.
         - name: Montaraz
           subchildren:
-            - name: Objetos iniciales ("S")
-              text: Comienza la partida con `item:boot`, `item:torch`, `item:crossbow`, `item:sword`.
-
-            - name: "Acción especial: Esconderse"
-              text: Agota un `item:torch` para reparar 3 objetos. Después, termina tu Día inmediatamente y comienza tu Noche.
-
+            - name: Objetos Iniciales
+              text: Empieza con `item:boot`, `item:torch`, `item:crossbow`, `item:sword`.
+            - name: "Acción Especial: Escondite"
+              text: Agota un `item:torch` para reparar tres objetos. Entonces termina tu Día inmediatamente y empieza tu Noche.
         - name: Agitador
           subchildren:
-            - name: Objetos iniciales ("S")
-              text: Comienza la partida con `item:coin`, `item:torch`, `item:boot`.
-
-            - name: "Acción especial: Instigar"
-              text: Agota una `item:torch` para provocar una batalla en tu claro. Tú eliges tanto al atacante como al defensor, el orden de retirada de fichas y edificios, y retiras piezas por ambos. _(Obtienes 1 punto de victoria por ficha o edificio retirado, independientemente del propietario, y también por cada pieza Hostil que retires)_
-
+            - name: Objetos Iniciales
+              text: Empieza con `item:coin`, `item:torch`, `item:boot`.
+            - name: "Acción Especial: Instigar"
+              text: Agota una `item:torch` para iniciar una batalla en tu claro. Tú escoges tanto al atacante como al defensor y el orden en que se retiran edificios y fichas, y retiras las piezas para ambos. _(Obtén un punto de victoria por cada edificio o ficha de cualquiera de los jugadores que sea retirada, yu por cada pieza hostil que se retire de cualquier jugador)_.
         - name: Árbitro
           subchildren:
-            - name: Objetos iniciales ("S")
-              text: Comienza la partida con `item:boot`, `item:torch`, `item:sword`, `item:sword`.
-
-            - name: "Habilidad especial: Proteger"
-              text: Antes de tirar los dados en batalla, el defensor puede pedir ayuda al Árbitro si está en el claro de la batalla. Si lo hace, el Árbitro obtiene 1 punto de victoria y añade sus `item:sword` no dañadas a los impactos máximos por dado del defensor.  Esta habilidad no se aplica a ti mismo.
-
+            - name: Objetos Iniciales
+              text: Empieza con `item:boot`, `item:torch`, `item:sword`, `item:sword`.
+            - name: "Acción Especial: Proteger"
+              text: Inmediatamente antes de que se tiren los dados en una batalla, el defensor puede pedir ayuda al Árbitro si está en el claro de batalla. El Árbitro obtiene un punto de victoria y añade todas sus `item:sword` no dañadas a los golpes máximos que obtenga el defensor en la tirada de dados. El Árbitro no puede apuntarse por voluntad propia o en contra de su voluntad.
         - name: Bribón
           subchildren:
-            - name: Objetos iniciales ("S")
-              text: Comienza la partida con `item:boot`, `item:boot`, `item:torch`, `item:crossbow`.
-
-            - name: "Acción especial: Tierra quemada"
-              text: Agota una `item:torch` y colócala en tu claro. Retira todas las piezas enemigas de dicho claro. Durante el resto de la partida, nadie podrá colocar piezas o mover a este claro. _(Tú permaneces en el claro, pero una vez salgas de él, no podrás volver a entrar)_
-
+            - name: Objetos Iniciales
+              text: Empieza con `item:boot`, `item:boot`, `item:torch`, `item:crossbow`.
+            - name: "Acción Especial: Tierra Quemada"
+              text: Agota una `item:torch` y colócala en tu claro. Retira todas las piezas enemigas de ese claro. Durante el resto de la partida, las piezas no pueden colocarse o moverse a este claro. _(Tú permaneces en el claro. Una vez que salgas, no puedes volver a entrar. La `item:torch` no puede retirarse con una carta de "Favor de los..." porque no es una pieza enemiga)_.
         - name: Aventurero
           subchildren:
-            - name: Objetos iniciales ("S")
-              text: Comienza la partida con `item:boot`, `item:torch`, `item:hammer`.
-
-            - name: "Acción especial: Improvisar"
-              text: Una vez por turno, al realizar la acción de Misión, puedes tratar uno de tus objetos no agotados como si fuese cualquier otro objeto para completar la misión. Si lo haces, daña dicho objeto. 
-
+            - name: Objetos Iniciales
+              text: empieza con con `item:boot`, `item:torch`, `item:hammer`.
+            - name: "Acción Especial: Improvisar"
+              text: Una vez por turno durante una acción de Misión, puedes tratar un objeto no agotado como cualquier otro objeto. Cuando lo agotes para completar la misión, dáñalo también.
         - name: Ronin
           subchildren:
-            - name: Objetos iniciales ("S")
-              text: Comienza la partida con `item:boot`, `item:boot`, `item:torch`, `item:sword`.
-
-            - name: "Acción especial: Golpe de gracia"
-              text: Puedes agotar una `item:sword` para infligir 1 impacto adicional en batalla _(después de lanzar dados)_.
-
+            - name: Objetos Iniciales
+              text: Empieza con `item:boot`, `item:boot`, `item:torch`, `item:sword`.
+            - name: "Acción Especial: Golpe Rápido"
+              text: Puedes agotar una `item:sword` para dar un golpe adicional _(después de lanzar dados en batalla)_.
         - name: Hostigador
           subchildren:
-            - name: Objetos iniciales ("S")
-              text: Comienza la partida con `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
-
-            - name: "Acción especial: Infiltración en claro"
-              text: Agota una `item:torch` para mover a cualquier claro del mapa _(incluso un claro Hostil)_  sin agotar ninguna `item:boot`.
-    
+            - name: Objetos Iniciales
+              text: Empieza con `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
+            - name: "Acción Especial: Vuelo sin motor"
+              text: Agota una `item:torch` para mover únicamente a tu peón de Vagabundo _(no otras piezas)_ a cualquier claro _(incluso Hostil)_ del mapa sin agotar ninguna `item:boot`.
