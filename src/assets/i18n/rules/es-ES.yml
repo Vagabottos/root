@@ -1149,46 +1149,37 @@
         - name: "Paso 10: Seleccionar las Manos Iniciales"
           text: Cada jugador escoge tres cartas para mantener en su mano y coloca las otras dos bocabajo en el mazo común. Cuando todos lo hayan hecho, barajad el mazo.
 
-    - name: Mapas
+    - name: Variantes de Mapas
       children:
         - name: Mapa de Invierno
           subchildren:
-            - name: Río Bravo.
-              text: El río divide bosques como si cada tramo del río que conecta dos claros fuese un camino.
-
+            - name: Río Revuelto.
+              text: El río divide los bosques _(como lo hacen los caminos impresos)_.
         - name: Mapa del Lago
           subchildren:
-            - name: Cambios en la preparación.
-              text: Coloca la pieza de la Barcaza en el claro de la esquina que es un claro costero, situado sobre la parte final del contador de puntos _(el claro inferior derecho si miras al tablero con el contador de puntos frente a ti)_.
-
+            - name: Modificaciones a la Preparación.
+              text: Coloca el Transbordador en el claro de la esquina que también es un claro costero.
             - name: El Lago.
-              text: "**El lago** está situado en el centro del mapa. El lago se trata como si hubiese ríos que conectan todos los claros costeros entre sí."
-
-            - name: Claros costeros.
-              text: Los claros que tocan el lago _(no separados de él por un bosque)_ son **claros costeros**.
-
-            - name: Bosques costeros.
-              text: Los bosques que tocan el lago son **bosques costeros**. Cada bosque costero es adyacente a sus dos bosques costeros próximos _(separados por un claro costero)_.
-
-            - name: La Barcaza.
-              text: Una vez por turno, un jugador que esté realizando un movimiento desde el claro costero donde esté situada la Barcaza puede mover a otro claro costero, moviendo la barcaza consigo. _(Se aplican las reglas de movimiento normales)_. Después de realizar este movimiento, dicho jugador roba una carta. La Barcaza no puede ser batallada ni retirada.
+              text: El **lago** está en el centro del mapa. El lago se trata como ríos que unen un claro costero con todos los demás claros costeros _(lo que permite Nadadores y Barcas)_. El lago divide a los bosques.
+            - name: Claros Costeros.
+              text: Los claros que tocan el lago (que no están separados por un bosque) son **claros costeros**.
+            - name: Bosques Costeros.
+              text: Los bosques que tocan el lago son **bosques costeros**. Cada bosque costero es adyacente a sus dos bosques costeros vecinos _(separados por un claro costero)_.
+            - name: El Transbordador.
+              text: "Una vez por turno, las piezas en un claro costero donde esté el Transbordador pueden mover a otro a otro claro costero, tratándolo como adyacente y moviendo al Transbordador con ellas _(se siguen las reglas de movimiento normal: Gobernar claros, Indignación, etc.)_. Tras mover, el jugador roba una carta. El transbordador no puede ser retirado ni puede batallarse contra él."
             
         - name: Mapa de la Montaña.
           subchildren:
-            - name: Cambios en la preparación.
-              text: Coloca las 6 losetas de camino bloqueado sobre los 6 caminos de color más oscuro con tierra excavada dibujada. Coloca la Torre en el claro central con dos torres dibujadas.
-
-            - name: Caminos bloqueados.
-              text: Los caminos cubiertos por losetas son **caminos bloqueados**. Los claros conectados por caminos bloqueados no son adyacentes. Los caminos bloqueados delimitan y dividen los bosques como si fueran caminos válidos _(por lo que el Vagabundo puede moverse a través de ellos)_.
-
-            - name: Despejar caminos bloqueados.
-              text: Una vez por turno durante el Día, un jugador puede gastar una carta para retirar una loseta de camino bloqueado del juego permanentemente y obtener un punto de victoria por ello. Para retirar la loseta, el jugador debe tener al menos una pieza en cualquiera de los dos claros que conecta dicho camino bloqueado.
-
-            - name: El Paso.
-              text: El claro de la Torre es **El Paso**. Al final de su Noche, si el jugador gobierna El Paso, dicho jugador obtiene 1 punto de victoria.
-
+            - name: Modificaciones a la Preparación.
+              text: Coloca los 6 marcadores de camino cerrado para cubrir los 6 caminos de un color más oscuro con terreno excavado. Coloca la Torre en el claro central que muestra dos torres.
+            - name: Caminos Cerrados.
+              text: Un camino cubierto con un marcador de camino cerrado es un **camino cerrado**. Los claros unidos por un camino cerrado no son adyacentes, y las piezas _(como los Salteadores de Caminos)_ no pueden colocarse en caminos cerrados. Los caminos cerrados delimitan y dividen los bosques como si fueran caminos _(por lo que el Vagabundo puede infiltrarse a través de ellos)_.
+            - name: Retirar Caminos Cerrados.
+              text: Una vez por turno en su Día, un jugador puede gastar una carta para retirar un marcador de camino cerrado de la partida y obtener un punto de victoria. Para retirarlo, el jugador debe tener al menos una pieza de facción en cualquiera de los claros que están conectados por ese marcador de camino cerrado.
+            - name: El Paso y la Torre.
+              text: El claro marcado con la pieza de la Torre es **el Paso**. Al final de la Noche de un jugador, si ese jugador gobierna el Paso, obtiene un punto de victoria.
             - name: Bosques.
-              text: Todas las zonas del mapa de montaña rodeadas por caminos y claros son bosques (`rule:2.2`), independientemente de la presencia o posición de los árboles en ellas.
+              text: Todas las áreas del mapa de montaña delimitadas por caminos y claros son bosques (`rule:2.2`), independientemente de que haya árboles impresos o no.
 
     - name: Vagabundos
       children:
