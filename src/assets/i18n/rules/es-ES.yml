@@ -1235,3 +1235,41 @@
               text: Empieza con `item:coin`, `item:torch`, `item:sword`, `item:crossbow`.
             - name: "Acción Especial: Vuelo sin motor"
               text: Agota una `item:torch` para mover únicamente a tu peón de Vagabundo _(no otras piezas)_ a cualquier claro _(incluso Hostil)_ del mapa sin agotar ninguna `item:boot`.
+
+    - name: Secuaces
+      children:
+        - name: Conseguir y Perder Secuaces
+          subchildren:
+            - name: Conseguirlos de la Reserva.
+              text: Cuando el marcador de puntos de victoria de un jugador entre en la casilla con un marcador de secuaz, ese jugador toma el marcador de secuaz y lo coloca bajo la Noche en su tablero de facción _(como recordatorio)_. Al final de su turno, toma una carta cualquiera de secuaz de la reserva, hace una tirada de control (`rule:16.4.1.2`) y da la vuelta al marcador de secuaz.
+            - name: Tirada de Control.
+              text: Cuando un jugador consigue una carta de secuaz, lanza el dado de control y coloca tantos marcadores de control sobre la carta de secuaz como resultado haya obtenido a esa tirada. Si ese jugador es quien más puntos de victoria tiene, o está empatado con quien más tiene, cuenta solamente los símbolos dorados del dado; en cualquier otro caso cuenta todos los símbolos _(incluso si tiene activa una carta de dominancia)_.
+            - name: Conseguirlos de Otro Jugador.
+              text: Al final del turno de un jugador, el jugador debe retirar un marcador de control de cada uno de sus secuaces. Luego, debe entregar cada carta de secuaz que control que se haya quedado sin marcadores de control, junto con un marcador de secuaz, a cualquier otro jugador _(incluso al jugador con más puntos de victoria)_. Ese jugador coloca el marcador de secuaz bajo la Noche en su tablero de facción _(como recordatorio)_ y realiza una tirada de control inmediatamente (`rule:16.4.1.2`).
+        - name: Habilidades y Acciones
+          text: Los Secuaces tienen ciertas acciones y habilidades, indicadas por sus propios iconos. Las acciones y habilidades que comienzan con "**Controlador**:" las obtiene el controlador del secuaz.
+          subchildren:
+            - name: Acción Al Conseguir (`hireling:whenhired`).
+              text: Al tomar el control de un secuaz, el jugador que pasa a ser el controlador debe realizar esta acción.
+            - name: Habilidad (`hireling:ability`).
+              text: Esta habilidad está siempre activa o especifica cuándo sucede.
+            - name: Acción Al comienzo del Alba (`hireling:birdsong`).
+              text: Al comienzo de su Alba, el jugador que control aal secuaz debe o puede realizar esta acción, tal y como ella indique.
+            - name: Acción Una vez por Día (`hireling:daylight`).
+              text: Una vez en su Día, el jugador que controla al secuaz puede realizar esta acción.
+        - name: Reglas
+          subchildren:
+            - name: Gobernar.
+              text: El controlador de un secuaz trata las piezas de su secuaz como suyas sólo para gobernar _(El controlador podría gobernar un claro con únicamente piezas de secuaz)_. Los secuaces sin controlador pueden gobernar un claro como si fuesen jugadores (`rule:2.5`).
+            - name: Condición de Enemigo.
+              text: Un secuaz es un enemigo para todos los jugadores salvo para su controlador y para los jugadores en una coalición con su controlador.
+            - name: Piezas Independientes.
+              text: Las piezas de secuaces no son piezas de facción de su controlador. _(Por lo que el Ducado no puede contarlas como piezas para convencer, los Guardianes no pueden retirarlas para acampar, etc.)_.
+            - name: Acciones Independientes.
+              text: Las acciones de Mover o Batallar de un secuaz solamente permiten mover o batallar con piezas de ese secuaz y no pueden incluir las piezas de su controlador. Los secuaces no pueden realizar acciones de otras maneras _(como con las acciones de Mover de su controlador, con Órdenes Falsas o mediante la relación de Aliado con el Vagabundo)._
+            - name: Efectos Independientes.
+              text: Los secuaces no pueden usar las habilidades de su controlador, ni sus efectos persistentes fabricados ni sus cartas de emboscada. _(Por lo tanto, un secuaz no podrá usar Carpinteros de Ribera al mover, y los Salteadores de Caminos no podrían colocarse en un río. El controlador de un secuaz no puede jugar una carta de emboscada al batallar con un secuaz)_.
+            - name: Sin puntos al Retirar.
+              text: El controlador de un secuaz no obtiene puntos de victoria si sus secuaces retiran una pieza enemiga _(normalmente en batalla)_. _(Sin embargo, los jugadores sí pueden obtener puntos al retirar edificios y fichas pertenecientes a secuaces, incluso al ser el defensor contra un secuaz. Un jugador obtiene puntos de forma habitual si los Profetas del Cálido Sol fuerzan a las piezas de su facción a batallar)_.
+            - name: Cosas Raras.
+              text: Si mueves a un secuaz con el Transbordador, robas una carta. Si mueves a un guerrero secuaz a un claro con una ficha de simpatía de la Alianza o retiras una ficha de simpatía usando a un secuaz, se activa Indignación. _(Estos efectos se refieren al "jugador que mueve" o "al jugador que retira")_.
