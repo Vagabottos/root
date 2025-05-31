@@ -43,7 +43,7 @@
         - name: Pertenencia de las piezas.
           text: El propietario de las piezas de una facción no puede cambiar. _(Por ejemplo, el Marquesado no puede usar sus hospitales de Campaña con los secuaces o los mercenarios de la Compañía, ya que no son guerreros del Marquesado)_.
         - name: Manejo de las piezas.
-          text: Las piezas se colocan y retiran como se indica en el Glosario (`rule:16.6.5`, `rule:16.6.28`). Si se te indica que coloques, tomes o retires piezas pero no puedes hacerlo al completo, debes colocar, tomar o retirar las máximas posibles. _(Esto no te permite evitar costes o requisitos. No puedes hacer menos de lo máximo que puedes hacer)_.
+          text: Las piezas se colocan y retiran como se indica en el Glosario (`rule:16.6.5`, `rule:16.6.28`). Si se te indica que coloques, tomes o retires piezas pero no puedes hacerlo al completo, debes colocar, tomar o retirar las máximas posibles. _(Esto no te permite evitar costes o requisitos. No puedes hacer menos de lo máximo que puedes hacer)_. Si se remueven múltiples piezas de manera simultánea y eso provoca efectos, retira todas las piezas antes de provocar los efectos.
         - name: Uso de **Forzar**.
           plainName: Uso de Forzar.
           text: Algunos efectos te permiten **forzar** a un jugador o a sus piezas a actuar. Resuelve la situación del mismo modo en el que ese jugador lo haría _(siguiendo las reglas generales)_, teniendo en cuenta posibles efectos. _(Por ejemplo, si fuerzas al Nido a mover guerreros, se benefician de la regla Señores del Bosque)_.
@@ -460,11 +460,9 @@
           text: Las capacidades del Vagabundo dependen de los objetos que tenga. En lugar de una zona para Objetos Fabricados tiene un Hatillo y varios contadores. Los objetos en el tablero de facción del Vagabundo pueden estar bocarriba o bocabajo. El Vagabundo **agota** objetos no dañados, volteándolos bocabajo, para hacer muchas de sus acciones.
           subchildren:
             - name: Contadores.
-              text: Al obtenerlos o al voltearlos bocarriba, coloca `item:tea`, `item:coin`, y `item:sack` bocarriba en sus contadores. Cada contador puede tener hasta 3 objetos del mismo tipo.
+              text: Al obtenerlos o al voltearlos bocarriba en el hatillo, coloca `item:tea`, `item:coin`, y `item:sack` bocarriba en sus contadores. Cuando voltees bocabajo `item:tea`, `item:coin`, o `item:sack` en su contador, colócalo bocabajo en tu hatillo. Cada contador puede tener hasta 3 objetos del mismo tipo.
             - name: El Hatillo.
               text: Al obtenerlos, coloca `item:boot`, `item:sword`, `item:crossbow`, `item:torch`, y `item:hammer` bocarriba en el hatillo.
-            - name: Mover Objetos.
-              text: El Vagabundo puede mover libremente `item:tea`, `item:coin`, y `item:sack` entre sus contadores y el hatillo, siempre y cuando estén bocarriba y no dañados.
         - name: Golpes Máximos por Tirada.
           text: En batalla, sus golpes máximos por tirada (`rule:4.3.2.1`) son iguales a sus `item:sword` no dañadas, bocarriba o bocabajo, en su hatillo.
         - name: Recibir Golpes.
@@ -543,7 +541,7 @@
         - name: Golpear.
           text: Agota una `item:crossbow` para retirar a un guerrero enemigo de tu claro. Si ese enemigo no tiene guerreros en ese claro puedes retirar una de sus otras piezas de facción allí en su lugar _(comprueba tu relación con la facción de ese jugador)_.
         - name: Reparar.
-          text: Agota un `item:hammer` para mover un objeto dañado a tu hatillo _(si es `item:boot`, `item:hammer`, `item:sword`, `item:crossbow` o `item:torch`)_ o a su contador desde tu hatillo _(si es `item:coin`, `item:tea`, `item:sack` si está bocarriba)_. En cualquier caso, no le des la vuelta al objeto.
+          text: Agota un `item:hammer` para mover un objeto dañado a tu hatillo _(si es `item:boot`, `item:hammer`, `item:sword`, `item:crossbow` o `item:torch`)_ o inmediatamente a su contador desde tu hatillo _(si es `item:coin`, `item:tea`, `item:sack` si está bocarriba)_. En cualquier caso, no le des la vuelta al objeto.
         - name: Fabricar.
           text: Juega una carta de tu mano y agota el correspondiente `item:hammer` para fabricarla. Todos tus `item:hammer` se corresponden con tu claro. Si una carta requiere más de una activación de un mismo palo para poder ser fabricada, debes agotar el número requerido de `item:hammer`. Si fabricas un objeto, puedes colocarlo bocarriba en tu hatillo o en su contador.
         - name: Acción Especial.
@@ -760,7 +758,7 @@
         - name: La Madriguera.
           text: La **madriguera** es un claro sin palo adyacente a cada claro que tiene una ficha de túnel. Ninguna pieza que no sea del Ducado se puede colocar o mover en la madriguera. El Ducado siempre gobierna la madriguera _(incluso si no tiene piezas allí)_.
         - name: El Precio del Fracaso.
-          text: Siempre que se retiren cualquier número de edificios del Ducado, el Ducado descarta una carta al azar, devuelve su carta de ministro convencido de mayor rango _(primero lord, después noble, después escudero)_ a la pila de ministros sin convencer, y guarda su corona en la caja. Si tiene varios ministros convencidos del rango más alto, el Ducado elige cuál retira.
+          text: Siempre que se retiren cualquier número de edificios del Ducado, el Ducado devuelve su carta de ministro convencido de mayor rango _(primero lord, después noble, después escudero)_ a la pila de ministros sin convencer, guarda su corona en la caja, y luego descarta una carta al azar. Si tiene varios ministros convencidos del rango más alto, el Ducado elige cuál retira.
         - name: Túneles.
           text: El Ducado tiene tres fichas de túnel. Si se le indica al Ducado que coloque un túnel y ya están los tres túneles sobre el mapa, el ducado puede retirar primero un túnel cualquiera del mapa.
 
