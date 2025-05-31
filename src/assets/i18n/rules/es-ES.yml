@@ -1273,3 +1273,12 @@
               text: El controlador de un secuaz no obtiene puntos de victoria si sus secuaces retiran una pieza enemiga _(normalmente en batalla)_. _(Sin embargo, los jugadores sí pueden obtener puntos al retirar edificios y fichas pertenecientes a secuaces, incluso al ser el defensor contra un secuaz. Un jugador obtiene puntos de forma habitual si los Profetas del Cálido Sol fuerzan a las piezas de su facción a batallar)_.
             - name: Cosas Raras.
               text: Si mueves a un secuaz con el Transbordador, robas una carta. Si mueves a un guerrero secuaz a un claro con una ficha de simpatía de la Alianza o retiras una ficha de simpatía usando a un secuaz, se activa Indignación. _(Estos efectos se refieren al "jugador que mueve" o "al jugador que retira")_.
+
+    - name: Lugares Míticos
+      children:
+        - name: Reglas Generales
+          subchildren:
+            - name: Seguridad.
+              text: Los lugares míticos no pueden ser movidos o retirados, ni se puede batallar contra ellos, a menos que se indique expresamente en el lugar mítico.
+            - name: Pertenencia.
+              text: Los lugares míticos no son propiedad de ninguna facción y no son piezas enemigas.
