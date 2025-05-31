@@ -1091,6 +1091,64 @@
 - name: Variantes y Vagabundos extra
   color: "#000000"
   children:
+    - name: Advanced Setup
+      children:
+        - name: "Paso 1: Escoger y Preparar un Mapa"
+          text: Como grupo, escoged un mapa. Si escogéis un mapa alternativo (`rule:16.2`), seguid su sección de modificaciones a la preparación, después reunid los 12 marcadores de palo, giradlos bocabajo, mezcladlos, y colocar uno en cada claro de modo que cubran el símbolo de palo impreso, si lo hay. Preparad las ruinas (`rule:5.1.4`), la reserva de objetos (`rule:5.1.5`), y los dados (`rule:5.1.6`) de forma habitual.
+        - name: "Paso 2: Escoger un Mazo"
+          text: Como grupo, podéis escoger reemplazar todo el mazo estándar por el mazo de Exiliados y Partisanos.
+        - name: "Paso 3: Preparar Bots"
+          text: Como grupo, podéis escoger jugar con bots, tal y como se describe en la Ley de la Rootbótica.
+        - name: "Paso 4: Sentar a los Jugadores"
+          text: Determinad aleatoriamente el orden de asiento y el primer jugador, el orden de turno va hacia su izquierda.
+        - name: "Paso 5: Preparar los Lugares Míticos"
+          text: Como grupo, podéis escoger usar lugares míticos (`rule:16.5`). Si lo hacéis, podéis ignorar la colocación de las piezas de la Torre o el TRansbordador indicadas en los Mapas Alternativos (`rule:16.2`).
+          subchildren:
+            - name: "Paso 1: Elegir."
+              text: Como grupo, elegid si usáis uno o dos lugares míticos, y devolved  a la caja cualesquiera cartas de lugres míticos que no queráis usar en la partida.
+            - name: "Paso 2: Repartir y Reunir."
+              text: Barajad las cartas de lugares míticos seleccionadas, robas el número elegido _(uno o dos)_ y reunid las piezas de los lugares míticos mostradas en cada carta robada.
+            - name: "Paso 3: Preparar."
+              text: El último jugador según el orden de turno prepara un lugar mítico tal y como se indica en su carta. Si elegisteis jugar con dos lugares míticos, el penúltimo jugador en orden de turno prepara el otro lugar mítico como indica su carta.
+        - name: "Paso 6: Preparar Secuaces"
+          text: Como grupo, podéis escoger jugar con exactamente tres secuaces (`rule:16.4`), como se indica a continuación.
+          subchildren:
+            - name: "Paso 1: Reunir las piezas."
+              text: Barajad las cartas de secuaces. Robad tres cartas de secuaces y devolved el resto a la caja. Reunid las piezas de los secuaces robados formando una reserva.
+            - name: "Paso 2: Degradar."
+              text: Su es una partida a tres jugadores, voltead a uno de los secuaces al azar a su cara de Degradado _(marcada con una "D")_. Si es una partida a cuatro jugadores, voltead a dos secuaces al azar a sus caras de Degradado. Si la partida es a cinco o más jugadores, voltead a los tres secuaces a su cara de Degradado. 
+            - name: "Paso 3: Preparar los Secuaces,"
+              text: Empezando por el último jugador en orden de turno y yendo en sentido inverso al orden de turno, cada jugador prepara a uno de los secuaces seleccionados siguiendo las instrucciones en su carta de secuaz _(algunos no tienen instrucciones)_.
+            - name: "Paso 4: Colocar Marcadores de Secuaces."
+              text: Colocad los tres marcadores de secuaces con el lado mostrando un "4", "8", y "12" bocarriba tapando las casillas "4", "8", y "12" del contador de puntuación en el mapa.
+            - name: "Paso 5: Devolver a la caja las Facciones coincidentes."
+              text: Una facción no puede seleccionarse para la partida si su respectivo secuaz está en juego _(indicado por el icono y el color en su lateral)_. Devuelve los tableros, piezas y cartas de preparación de dichas facciones a la caja.
+        - name: "Paso 7: Robar Cinco Cartas"
+          text: Si es una partida a dos jugadores, retirad del mazo las cuatro cartas de dominancia y devolvedlas a la caja. Barajad el mazo. Cada jugador roba cinco cartas. _(¡No tres como en la preparación estándar! Seleccionarás y te quedarás con tres cartas en el paso 10)_.
+        - name: "Paso 8: Preparar las Facciones"
+          text: Como grupo, podéis escoger y preparar las facciones como se describe en la Preparación Estándar (`rule:5.1`) o podéis usar las cartas de preparación de facción incluidas en la expansión de Los Merodeadores, como se describe abajo.
+          subchildren:
+            - name: "Paso 1: Repartir Cartas de Preparación"
+              text: Barajad las cartas de preparación de las facciones belicosas _(nombre en rojo con una espada)_ y robad una al centro de la mesa. Barajad el resto de cartas de preparación de facciones belicosas con todas las cartas de preparación de las facciones insurgentes _(nombre en gris sin espada)_ y robad una carta por jugador al centro de la mesa. _(Habrá una carta de preparación de facción más que el número de jugadores)_.
+              subchildren:
+                - name: Dos Jugadores.
+                  text: Si es una partida a dos jugadores, retirad todas las cartas de preparación de facciones insurgentes antes de robar ninguna carta _(Podéis dejarlas si jugáis con Secuaces y os va la aventura)_.
+                - name: Bloquear al último insurgente.
+                  text: Si la última carta de preparación de facción robada es insurgente, giradla horizontalmente para mostrar que está bloqueada. No puede escogerse a menos que, como mínimo, una facción belicosa haya sido escogida.
+                - name: Vagabundo.
+                  text: Cuando se robe una carta de preparación de facción de Vagabundo, robad también una carta de personaje de Vagabundo al azar y situadla a su lado bocarriba. Si un jugador escoge a ese Vagabundo como su facción, debe usar esa carta de personaje.
+            - name: "Paso 2: Escoger Facciones."
+              text: Empezando por el último jugador en orden de turno y yendo en sentido inverso al orden de turno, cada jugador escoge una de las cartas de preparación de facción del centro de la mesa y prepara su facción en ese instante _(antes de que el siguiente jugador escoja)_, tal y como se describe en su carta de preparación de facción.
+              subchildren:
+                - name: Patria.
+                  text: Al preparar su facción, los jugadores podrían tener que elegir uno o más claro com claros patria. Los jugadores no pueden escoger como claros patria claros que sus enemigos ya hayan escogido como sus claros patria o claros donde no puedan colocar las piezas indicadas en su preparación.
+                - name: Patrias Adyacentes.
+                  text: Algunas facciones te indican que escojas claros patria que no sean adyacentes a claros patria enemigos, o que haya dos o más claros entre ellos y claros patria enemigos. Si no puedes cumplir un requisito de "dos o más claros entre ellos", puedes escoger un claro patria que no sea adyacente a un claro patria enemigo. Si no puedes cumplir un requisito de "no adyacente", puedes escoger un claro patria que sea adyacente a un claro patria enemigo. _(Sencillamente, piensa en esto como en "Intenta empezar lo más alejado posible")_.
+        - name: "Paso 9: Colocar Marcadores de Puntuación"
+          text: Cada jugador coloca el marcador de puntuación de su facción en la casilla "0" del contador de puntuación.
+        - name: "Paso 10: Seleccionar las Manos Iniciales"
+          text: Cada jugador escoge tres cartas para mantener en su mano y coloca las otras dos bocabajo en el mazo común. Cuando todos lo hayan hecho, barajad el mazo.
+
     - name: Mapas
       children:
         - name: Mapa de Invierno
@@ -1113,7 +1171,7 @@
               text: Los bosques que tocan el lago son **bosques costeros**. Cada bosque costero es adyacente a sus dos bosques costeros próximos _(separados por un claro costero)_.
 
             - name: La Barcaza.
-              text: Una vez por turno, un jugador que esté realizando un movimiento desde el claro costero donde esté situada la Barcaza puede mover a otro claro costero, moviendo la barcaza consigo. _(Se apican las reglas de movimiento normales)_. Después de realizar este movimiento, dicho jugador roba una carta. La Barcaza no puede ser batallada ni retirada.
+              text: Una vez por turno, un jugador que esté realizando un movimiento desde el claro costero donde esté situada la Barcaza puede mover a otro claro costero, moviendo la barcaza consigo. _(Se aplican las reglas de movimiento normales)_. Después de realizar este movimiento, dicho jugador roba una carta. La Barcaza no puede ser batallada ni retirada.
             
         - name: Mapa de la Montaña.
           subchildren:
