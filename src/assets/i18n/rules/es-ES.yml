@@ -1085,10 +1085,10 @@
         - name: Robar y Descartar.
           text: Roba una carta, más una carta adicional por cada símbolo de robo adicional descubierto _(tantas como puestos provisionales sobre el mapa)_.
 
-- name: Variantes y Vagabundos extra
+- name: Variantes, Vagabundos y Secuaces
   color: "#000000"
   children:
-    - name: Advanced Setup
+    - name: Preparación Avanzada
       children:
         - name: "Paso 1: Escoger y Preparar un Mapa"
           text: Como grupo, escoged un mapa. Si escogéis un mapa alternativo (`rule:16.2`), seguid su sección de modificaciones a la preparación, después reunid los 12 marcadores de palo, giradlos bocabajo, mezcladlos, y colocar uno en cada claro de modo que cubran el símbolo de palo impreso, si lo hay. Preparad las ruinas (`rule:5.1.4`), la reserva de objetos (`rule:5.1.5`), y los dados (`rule:5.1.6`) de forma habitual.
