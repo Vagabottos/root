@@ -685,7 +685,7 @@
                 - name: Golpes Recibidos.
                   text: El comprador debe repartir los impactos, sufriendo los golpes impares retirando guerreros de su propiedad _(no de la Compañía)_, si quedan, o edificios de su propiedad o fichas sólo si no tiene guerreros _(incluyendo de la Compañía)_ en el claro de batalla.
                 - name: El Vagabundo y los Mercenarios.
-                  text: El Vagabundo no puede comprar mercenarios de la Compañía _(Si el comprador ataca al Vagabundo y se retira un mercenario de la Compañía, la facción del comprador se convierte en Hostil, no La Compañía)_.
+                  text: El Vagabundo no puede comprar mercenarios de la Compañía _(Si el comprador ataca al Vagabundo y se retira un mercenario de la Compañía, la facción del comprador se convierte en Hostil, no la Compañía)_.
 
     - name: Preparación
       children:
@@ -721,7 +721,7 @@
           text: Consigna fondos para fabricar una carta de tu mano. En vez de mover a estos guerreros a la zona de consignados, debes colocarlos en espacios vacíos de los contadores de puestos comerciales correspondientes a los palos indicados en el coste de fabricación.
           subchildren:
             - name: Exportar.
-              text: Puedes ignorar el beneficio asociado a la fabricación de una carta, descartarla y colocar un guerrero de La Compañía en la zona de pagos.
+              text: Puedes ignorar el beneficio asociado a la fabricación de una carta, descartarla y colocar un guerrero de la Compañía en la zona de pagos.
         - name: Robar.
           text: Consigna un fondo para robar una carta.
         - name: Reclutar.
