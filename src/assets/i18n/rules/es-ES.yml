@@ -1282,3 +1282,74 @@
               text: Los lugares míticos no pueden ser movidos o retirados, ni se puede batallar contra ellos, a menos que se indique expresamente en el lugar mítico.
             - name: Pertenencia.
               text: Los lugares míticos no son propiedad de ninguna facción y no son piezas enemigas.
+
+    - name: Glossary
+      children:
+        - name: Adyacente.
+          text: Un claro es adyacente a otro claro si está unido a él por un camino. Un bosque es adyacente a todos los claros que lo tocan sin atravesar un camino, y es adyacente a todos los bosques que están separados únicamente por un camino, salvo en el lago (`rule:16.2.2`). `faction:duchy:12.2.2`
+        - name: Borde del tablero o mapa.
+          text: Línea única cerrada de claros y caminos que define los límites del mapa, incluyendo los caminos cerrados en el mapa de la montaña.
+        - name: Bosque.
+          text: Un área del mapa delimitada por caminos y claros.
+        - name: Camino.
+          text: Una unión blanca entre dos claros.
+        - name: Colocar o poner.
+          text: Tomar la pieza indicada de la fuente indicada y situarla en el destino indicado. Normalmente, si no se especifica fuente, se toma de la reserva, o del espacio más a la izquierda del contador que contenga una pieza indicada.
+        - name: Descartar.
+          text: Coloca la carta indicada en la pila de descartes común (`rule:2.1`). Si es una carta de dominancia, se coloca cerca del tablero (`rule:3.3.3`). `faction:cult:10.4.2`
+        - name: Edificio.
+          text: Una pieza de cartón cuadrada propiedad de su facción _(cuenta para gobernar)_.
+        - name: Efecto.
+          text: Cualquier cosa que altere la partida, incluyendo efectos persistentes, habilidades de facción y acciones.
+        - name: Enemigo.
+          text: Cualquier otro jugador con el que no se esté en una coalición (`rule:9.2.8`), o un secuaz que esté en la reserva o controlado por un jugador enemigo.
+        - name: Espacio, del mapa.
+          text: Recuadro blanco en un claro (`rule:2.2.3`).
+        - name: Ficha.
+          text: Una pieza de cartón redonda propiedad de su facción _(no cuenta para gobernar)_.
+        - name: Forzar.
+          text: Ver `rule:1.5.5`.
+        - name: Gastar.
+          text: Ver **Descartar** (`rule:16.6.6`). _(Son términos equivalentes, pero_ **gastar** _se usa en contextos con elección.)_.
+        - name: Gobernar.
+          text: Ver `rule:2.5`.
+        - name: Guerrero.
+          text: Una figura de madera propiedad de su facción _(cuenta para gobernar. El peón del Vagabundo no es un guerrero y no puede ser retirado)_.
+        - name: Habilidad.
+          text: Un efecto persistente de una facción indicado en la parte superior de su tablero de facción y en su sección de Reglas y Habilidades de Facción, o un efecto persistente de un secuaz indicado en su carta de secuaz (`rule:16.4.2`).
+        - name: Intercambiar.
+          text: Cambia la localización de las dos piezas indicadas. _(Esto ignora las restricciones a_ **mover** _y_ **colocar**_, como el cepo de los Córvidos o la fortaleza del Marquesado)_.
+        - name: Mapa o tablero.
+          text: Ver `rule:2.2`.
+        - name: Mostrar.
+          text: Dejar al jugador indicado ver la pieza indicada.
+        - name: No puedes, no se puede.
+          text: Ver `rule:1.1.2`.
+        - name: Objeto.
+          text: Una pieza de cartón cuadrada que muestra un objeto (`item:boot`, `item:sword`, `item:crossbow`, etc.) que no es propiedad de ninguna facción.
+        - name: Peón.
+          text: Una figura de madera propiedad de su facción.
+        - name: Pieza.
+          text: "Cualquier componente: edificio, ficha, guerrero, peón, objeto, marcador, etc."
+        - name: Pieza de Facción.
+          text: Todos los guerreros, peones, edificios y fichas listados en la parte trasera de un tablero de facción. _(Los objetos no son piezas de facción.)_ Ver `rule:1.5.2`.
+        - name: Pieza enemiga.
+          text: La pieza de facción de un jugador enemigo o la pieza de secuaz de un secuaz enemigo, salvo que se estén tratando a esas piezas como propias para gobernar _(mercenarios de la Compañía, secuaces controlados, etc.)_. _(Los objetos no pueden ser piezas enemigas.)_
+        - name: Reemplazar.
+          text: Forma breve para **retirar** y luego **colocar**. Retira la pieza indicada y coloca la otra pieza indicada en la localización que ocupaba la que fue previamente retirada. Debes completar todos los pasos del **reemplazo** para poder realizarlo.
+        - name: Reserva.
+          text: El conjunto de piezas que no están en el tablero de una facción o en el mapa. La reserva de objetos es el expositor de objetos en el tablero.
+        - name: Retirar.
+          text: Tomar la pieza indicada de la fuente indicada y devolverla al destino indicado. Normalmente, si no se especifica destino, se devuelve a la reserva de su dueño, al espacio más a la derecha vacío de su contador o se retira permanentemente. _(Los objetos se retiran permanentemente, se devuelven a la caja)_.
+        - name: Revelar.
+          text: Coloca la carta indicada bocarriba en tu zona de juego. Normalmente, si no se especifica fuente, desde tu mano.
+        - name: Río.
+          text: Una unión azul entre dos claros.
+          name: Robar.
+          text: Toma la carta superior del mazo común (`rule:2.1`).
+        - name: Ruina.
+          text: Pieza que cubre un espacio "R" en un claro (`rule:2.2.4`).
+        - name: Tratar.
+          text: La cosa indicada adquiere las propiedades de la segunda cosa indicada. Mientras tratas piezas enemigas como propias para gobernar, no son piezas enemigas, pero siguen siendo piezas de la facción de ese jugador enemigo. _(Por ejemplo, los guerreros de la Compañía controlados como mercenarios no son piezas enemigas, pero todavía son piezas de la facción de la Compañía)_.
+        - name: Zona de juego.
+          text: La zona alrededor de tu tablero de facción. Las cartas en ella solamente se pueden gastar, descartar o usar para otros propósitos si se indica expresamente.
