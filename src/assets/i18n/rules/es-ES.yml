@@ -454,7 +454,7 @@
         - name: Grácil.
           text: El Vagabundo puede moverse independientemente de quién gobierne su claro de origen o de destino.(`rule:4.2.1`).
         - name: Indefenso.
-          text: En batalla, el Vagabundo está indefenso (`rule:4.3.2.3`) si no tiene `item:sword` no dañadas.
+          text: En batalla, el Vagabundo está indefenso (`rule:4.3.3.2`) si no tiene `item:sword` no dañadas.
         - name: Objetos.
           text: Las capacidades del Vagabundo dependen de los objetos que tenga. En lugar de una zona para Objetos Fabricados tiene un Hatillo y varios contadores. Los objetos en el tablero de facción del Vagabundo pueden estar bocarriba o bocabajo. El Vagabundo **agota** objetos no dañados, volteándolos bocabajo, para hacer muchas de sus acciones.
           subchildren:
