@@ -679,7 +679,7 @@
             - name: Barcas.
               text: El comprador puede tratar los ríos como si fueran caminos hasta el final de su turno.
             - name: Mercenarios.
-              text:  Durante el Día y la Noche de este turno, el comprador trata a los guerreros de la Compañía como si fueran suyos para de gobernar y para batallar contra cualquier facción que no sea la Compañía. _(El comprador no puede moverlos, usarlos para cumplir cartas de dominancia o retirarlos, a no ser que sea mediante golpes en batalla. Todavía son piezas de la Compañía, por lo que no se ven afectados por habilidades como Hospitales de Campaña del MArquesado ni pueden usarse para Convencer a Ministros del Ducado)_.
+              text:  Durante el Día y la Noche de este turno, el comprador trata a los guerreros de la Compañía como si fueran suyos para de gobernar y para batallar contra cualquier facción que no sea la Compañía. _(El comprador no puede moverlos, usarlos para cumplir cartas de dominancia o retirarlos, a no ser que sea mediante golpes en batalla. Todavía son piezas de la Compañía, por lo que no se ven afectados por habilidades como Hospitales de Campaña del Marquesado ni pueden usarse para Convencer a Ministros del Ducado)_.
               subchildren:
                 - name: Golpes Recibidos.
                   text: El comprador debe repartir los impactos, sufriendo los golpes impares retirando guerreros de su propiedad _(no de la Compañía)_, si quedan, o edificios de su propiedad o fichas sólo si no tiene guerreros _(incluyendo de la Compañía)_ en el claro de batalla.
@@ -803,7 +803,7 @@
             - name: Capitán.
               text: Inicia una batalla.
             - name: Alguacil.
-              text: HAz un movimiento.
+              text: Haz un movimiento.
             - name: Brigada.
               text: Haz hasta dos movimientos o inicia hasta dos batallas.
             - name: Banquero.
@@ -1013,7 +1013,7 @@
     - name: Reglas y Habilidades de Facción
       children:
         - name: Reliquias.
-          text: "Buscan un total de doce fichas de reliquias de tres tipos: figuras, tablas y joyas. CAda tipo de reliquia consta de cuatro fichas. El anverso de la reliquia muestra su tipo, el reverso muestra un valor de 1, 2, 3 o 3."
+          text: "Buscan un total de doce fichas de reliquias de tres tipos: figuras, tablas y joyas. Cada tipo de reliquia consta de cuatro fichas. El anverso de la reliquia muestra su tipo, el reverso muestra un valor de 1, 2, 3 o 3."
         - name: Puestos provisionales.
           text: Tienen tres puestos provisionales. Cada puesto provisional muestra un tipo de reliquia en su anverso y otro tipo en su reverso.
         - name: Fabricar.
