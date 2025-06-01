@@ -824,7 +824,7 @@
             - name: Revelar Cartas.
               text: Revela el número de cartas que aparece en el ministro elegido. Por cada carta que desees revelar, debes tener al menos una pieza del Ducado en un claro correspondiente al palo de esa carta. Cada claro con alguna pieza del Ducado sólo te permite revelar una carta correspondiente.
             - name: Convencer al Ministro y Puntuar.
-              text: Toma la carta del ministro elegido y colócala sobre tu tablero de facción. Toma una corona 0del rango de ese ministro de tu tablero y colócala sobre la carta del ministro. Obtén el número de punts de victoria que aparecen en el espacio que acabas de descubrir en tu tablero.
+              text: Toma la carta del ministro elegido y colócala sobre tu tablero de facción. Toma una corona 0del rango de ese ministro de tu tablero y colócala sobre la carta del ministro. Obtén el número de puntos de victoria que aparecen en el espacio que acabas de descubrir en tu tablero.
 
     - name: Noche
       pretext: Tu Noche tiene tres pasos en el siguiente orden.
@@ -1099,7 +1099,7 @@
         - name: "Paso 4: Sentar a los Jugadores"
           text: Determinad aleatoriamente el orden de asiento y el primer jugador, el orden de turno va hacia su izquierda.
         - name: "Paso 5: Preparar los Lugares Míticos"
-          text: Como grupo, podéis escoger usar lugares míticos (`rule:16.5`). Si lo hacéis, podéis ignorar la colocación de las piezas de la Torre o el TRansbordador indicadas en los Mapas Alternativos (`rule:16.2`).
+          text: Como grupo, podéis escoger usar lugares míticos (`rule:16.5`). Si lo hacéis, podéis ignorar la colocación de las piezas de la Torre o el Transbordador indicadas en los Mapas Alternativos (`rule:16.2`).
           subchildren:
             - name: "Paso 1: Elegir."
               text: Como grupo, elegid si usáis uno o dos lugares míticos, y devolved  a la caja cualesquiera cartas de lugres míticos que no queráis usar en la partida.
@@ -1282,7 +1282,7 @@
             - name: Pertenencia.
               text: Los lugares míticos no son propiedad de ninguna facción y no son piezas enemigas.
 
-    - name: Glossary
+    - name: Glosario
       children:
         - name: Adyacente.
           text: Un claro es adyacente a otro claro si está unido a él por un camino. Un bosque es adyacente a todos los claros que lo tocan sin atravesar un camino, y es adyacente a todos los bosques que están separados únicamente por un camino, salvo en el lago (`rule:16.2.2`). `faction:duchy:12.2.2`
