@@ -1082,7 +1082,7 @@
           text: Debes retirar un guerrero Guardián de cada claro que tenga cuatro o más guerreros Guardianes.
         - name: Reunir al Séquito.
           text: "Escoge una opción: Puedes añadir cualquier número de cartas de tu mano a los espacios del Séquito, o bien, puedes cambiar a un espacio diferente una carta que ya esté en tu Séquito. Tu Séquito no puede contener más de diez cartas."
-        - name: Robar y Descartar .
+        - name: Robar y Descartar.
           text: Roba una carta, más una carta adicional por cada símbolo de robo adicional descubierto _(tantas como puestos provisionales sobre el mapa)_.
 
 - name: Variantes y Vagabundos extra
@@ -1344,7 +1344,7 @@
           text: Coloca la carta indicada bocarriba en tu zona de juego. Normalmente, si no se especifica fuente, desde tu mano.
         - name: Río.
           text: Una unión azul entre dos claros.
-          name: Robar.
+        - name: Robar.
           text: Toma la carta superior del mazo común (`rule:2.1`).
         - name: Ruina.
           text: Pieza que cubre un espacio "R" en un claro (`rule:2.2.4`).
