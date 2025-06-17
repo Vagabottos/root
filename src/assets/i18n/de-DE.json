@@ -32,8 +32,8 @@
       "Error": "Parteien können nicht ausgewählt werden; bitte passe deine Auswahl an und versuche es erneut.",
       "Factions": {
         "Marquise de Cat": "Marquise de Katz",
-        "Lord of the Hundreds": "Lord of the Hundreds",
-        "Keepers in Iron": "Keepers in Iron",
+        "Lord of the Hundreds": "Herr der Scharen",
+        "Keepers in Iron": "Eisenwächter",
         "Underground Duchy": "Untergrund-Herzogtum",
         "Eyrie Dynasties": "Horst-Dynastien",
         "Vagabond (#1)": "Vagabund (#1)",
@@ -45,8 +45,8 @@
       },
       "FactionsShort": {
         "Marquise": "Marquise",
-        "Hundreds": "Hundreds",
-        "Keepers": "Keepers",
+        "Hundreds": "Scharen",
+        "Keepers": "Wächter",
         "Duchy": "Herzogtum",
         "Eyrie": "Dynastien",
         "Vagabond #1": "Vagabund #1",
