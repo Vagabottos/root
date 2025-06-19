@@ -978,13 +978,13 @@
 
     - name: Fraktion Vorbereiten
       children:
-        - name: "Schritt 1: Garnison"
+        - name: "Schritt 1: Garnison."
           text: Platziert euren Kriegsherren, 4 Krieger und 1 Bollwerk in einer Ecklichtung, die nicht bereits von einer anderen Person als Start-Ecklichtung gewählt wurde und die möglichst diagonal gegenüber einer anderen Startlichtung ist. Dies ist eure Startlichtung.
 
-        - name: "Schritt 2: Platziert Gegenstände"
+        - name: "Schritt 2: Platziert Gegenstände."
           text: Platziert die 4 mit einem „R“ gekennzeichneten Gegenstände zufällig unter die Ruinen, es sei denn, dies wurde bereits getan.
 
-        - name: "Schritt 3: Hartnäckig"
+        - name: "Schritt 3: Hartnäckig."
           text: Platziert die Launenkarte Hartnäckig im Feld der Launenkarten.
 
     - name: Morgenröte
@@ -996,7 +996,7 @@
         - name: Rekrutieren.
           text: "Platziert so viele Krieger auf der Lichtung eures Kriegsherren, wie es eurem Wagemut-Wert entspricht. Platziert dann Krieger auf jeder Lichtung mit Bollwerken: Einen Krieger pro Bollwerk."
 
-        - name: Salbung..
+        - name: Salbung.
           text: Falls euer Kriegsherr nicht auf dem Spielplan ist, ersetzt ihr einen beliebigen eurer Scharen-Krieger durch euren Kriegsherren. Falls nicht möglich, setzt ihr euren Kriegsherren auf eine beliebige Lichtung.
 
         - name: Wählt eure Laune.
@@ -1005,17 +1005,17 @@
     - name: Tageslicht
       pretext: "Führt während des Tageslichts folgende 3 Schritte in dieser Reihenfolge durch:"
       children:
-        - name: Herstellen..
+        - name: Herstellen.
           text: Ihr könnt Bollwerke aktivieren, um Karten herzustellen.
 
         - name: Befehligt die Scharen.
           text: "Führt so viele dieser Aktionen in beliebiger Reihenfolge aus, wie es eurem Befehlsgewalt-Wert entspricht:"
           subchildren:
-            - name: Bewegen
+            - name: Bewegen.
               text: Führt eine Bewegung durch.
-            - name: Kämpfen..
+            - name: Kämpfen.
               text: Beginnt einen Kampf.
-            - name: Bauen..
+            - name: Bauen.
               text: Gebt eine Karte aus, um ein Bollwerk auf einer entsprechenden Lichtung zu platzieren, die ihr beherrscht.
 
         - name: Mit dem Kriegsherren vorrücken.
@@ -1085,19 +1085,19 @@
 
     - name: Fraktion vorbereiten
       children:
-        - name: "Schritt 1: Platziert Reliktplättchen"
+        - name: "Schritt 1: Platziert Reliktplättchen."
           text: "Mischt alle 12 Reliktplättchen verdeckt _(die Werte sind verdeckt)_. Legt ein zufälliges verdeckt in jeden Wald. _(Flüsse durchtrennen Wälder gewöhnlich nicht.)_ _(Wir empfehlen die Relikte verdeckt auf dem Spielplan zu mischen und sie dann in der Gruppe einfach möglichst schnell auf die Wälder zu verschieben. Andernfalls könnt ihr die Relikte auch gründlicher mischen und folgendermaßen platzieren: Als Eisenwächter bildet ihr einen verdeckten Stapel mit den gemischten Relikten und eine andere Person hebt den Stapel ab, nimmt ihn und lässt dann von unten vom Stapel jeweils ein Plättchen auf jedem Wald fallen.)_"
 
-        - name: "Schritt 2: Platziert Krieger"
+        - name: "Schritt 2: Platziert Krieger."
           text: Platziert 4 Krieger auf einer Ecklichtung, die noch nicht von einer anderen Person als Start-Ecklichtung gewählt wurde und die möglichst diagonal gegenüber einer anderen Start-Ecklichtung ist. Platziert dann 4 weitere Krieger auf einer Lichtung am Spielplanrand, die an die gewählte Start-Ecklichtung angrenzt.
 
-        - name: "Schritt 3: Platziert übrige Relikte"
+        - name: "Schritt 3: Platziert übrige Relikte."
           text: Legt dann die übrigen Relikte, zufällig und so gleichmäßig wie möglich, verdeckt in Wälder, die nicht an Lichtungen mit Wächter-Kriegern angrenzen.
 
-        - name: "Schritt 4: Treue Vasallen"
+        - name: "Schritt 4: Treue Vasallen."
           text: Steckt eine Treuer-Vasall-Karte in jede eurer Gefolgespalten eures Tableaus.
 
-        - name: "Schritt 5: Lagerplätze"
+        - name: "Schritt 5: Lagerplätze."
           text: Platziert die 3 Lagerplätze auf den Lagerplatzfeldern eures Tableaus.
 
     - name: Morgenröte
@@ -1127,10 +1127,10 @@
             - name: Kämpfen, dann Ausgraben.
               text: "Wählt eine Lichtung, die der Karte entspricht. Beginnt einen Kampf, falls sich dort gegnerische Marker befinden. Wenn ihr dann die Lichtung beherrscht und sich mindestens ein Wächter-Krieger dort befindet, dürft ihr wie folgt ausgraben _(auch wenn kein Kampf stattgefunden hat)_:"
               subchildren:
-                - name: "Schritt 1: Relikt auf die Lichtung"
+                - name: "Schritt 1: Relikt auf die Lichtung."
                   text: Nehmt ein Relikt aus einem an die Lichtung angrenzenden Wald und platziert es mit dem Wert offen auf der Lichtung.
 
-                - name: "Schritt 2: Prüfen, ob Karte entfernen"
+                - name: "Schritt 2: Prüfen, ob Karte entfernen."
                   text: Zählt die Anzahl an Lichtungen, die ihr beherrscht und die an den Wald, von dem ihr das Relikt genommen habt, angrenzen. Falls die Anzahl solcher Lichtungen niedriger ist als der Wert des Relikts, müsst ihr die Karte, mit der ihr diese Aktion ausgeführt habt, aus der Gefolgespalte entfernen.
 
             - name: Bewegen oder Sichern.
