@@ -946,218 +946,216 @@
         - name: Überfall.
           text: Wenn ein Überfall-Plättchen _(egal ob aufgedeckt oder verdeckt)_ entfernt wird, platziere einen Krieger auf jeder Lichtung, die benachbart zu der ist, von welcher der Überfall entfernt wurde. _(Ignoriere diesen Effekt, falls der Überfall durch Enthüllung entfernt wird.)_
 
-- name: Lord of the Hundreds
+- name: Herr der Scharen
   color: "#e11b3f"
   icon: warlord
   children:
-    - name: Overview
-      pretext: The Lord of the Hundreds suffers no fools and allows no dissent. During their Evening, they score points based on how well they **oppress** their foes. The more clearings they rule that have a Hundreds piece and no enemy pieces—no warriors, no buildings, nothing—the more points they score. To grow in power and attract warriors, the Hundreds must gain items and add them to their towering **Hoard**. Leading the Hundreds is the **warlord**, a warrior-demagogue whose fickle **mood** gives them an ability for the turn. Their warlord is obsessed with hoarding, so as the Hundreds gain more items, they will have fewer moods to choose from. Declaring themselves as the true voice of the Woodland, the Hundreds can incite **mobs**, which destroy enemy buildings and tokens, and raid ruins for items.
+    - name: Überblick
+      pretext: "Als Herr der Scharen erhebt ihr den Anspruch, der alleinige Herrscher des Waldlands zu sein. Ihr duldet keine Abweichler. Am Abend erhaltet ihr Siegpunkte — je nachdem, wie gut ihr eure Gegner unterdrückt: Entscheidend dabei ist die Anzahl von Lichtungen ohne gegnerische Marker, die ihr mit Scharen-Markern beherrscht. Um stärker zu werden und weitere Krieger anzulocken, sammelt ihr Gegenstände in eurem Hort. Die Scharen werden von einem Kriegsherren in die Schlacht geführt, dessen Launen euch jede Runde andere Fähigkeiten geben. Der Kriegsherr ist davon besessen, immer mehr Gegenstände zu sammeln, obwohl ihr dadurch stetig weniger Launen zur Auswahl habt. Als wahre Stimme des Waldes könnt ihr Meuten aufstacheln, um gegnerische Gebäude und Plättchen zu zerstören und die Ruinen zu plündern."
 
-    - name: Faction Rules and Abilities
+    - name: Partei-Regeln und -Fähigkeiten
       children:
-        - name: Crafting.
-          text: The Hundreds craft during Daylight by activating strongholds.
+        - name: Herstellen.
+          text: Ihr stellt Karten während des Tageslichts her, indem ihr Bollwerke aktiviert.
 
-        - name: The Warlord.
-          text: The Hundreds have a piece called the warlord. The warlord is a warrior that cannot be removed outside of battle, moved outside of the Hundreds' turn, or placed in any way except with the Anoint action (`rule:14.4.3`).
+        - name: Der Kriegsherr.
+          text: Ihr verfügt über einen besonderen Marker, den Kriegsherren. Der Kriegsherr ist ein Krieger, der nur im Kampf entfernt, nur in eurem Zug bewegt und nur im Aufbau (`rule:14.3.1`) oder mit der Aktion Salbung auf den Spielplan gesetzt werden kann (`rule:14.4.3`).
 
-        - name: Contempt for Trade.
-          text: Whenever the Hundreds craft an item, they may take the item but score none of the listed victory points, or may remove the item permanently to score the listed victory points. _(They can still score extra crafting points from effects such as Master Engravers and the Legendary Forge.)_
+        - name: Geringschätzung für Handel.
+          text: Wenn ihr einen Gegenstand herstellt, könnt ihr ihn entweder behalten, ohne die Siegpunkte auf der Karte zu erhalten, oder aus dem Spiel entfernen, um die Siegpunkte auf der Karte zu bekommen. _(Ihr könnt weiterhin zusätzliche Siegpunkte von anderen Effekten erhalten, wie vom Meistergraveur oder der legendären Schmiede.)_
 
-        - name: The Hoard.
-          text: Instead of a Crafted Items box, the Hundreds have the Hoard box. This has two tracks, Command and Prowess. The Command track can hold `item:boot`, `item:sack`, and `item:coin`. The Prowess track can hold `item:hammer`, `item:tea`, `item:sword`, and `item:crossbow`.
+        - name: Der Hort.
+          text: "Statt einem Feld für hergestellte Gegenstände habt ihr einen Hort. Dieser hat zwei Leisten mit Plätzen für Gegenstände: Befehlsgewalt und Wagemut. Auf die Befehlsgewaltleiste legt ihr `item:boot`, `item:sack`, und `item:coin`. Auf die Wagemutleiste legt ihr `item:hammer`, `item:tea`, `item:sword`, und `item:crossbow`."
           subchildren:
-            - name: Gaining Items.
-              text: When the Hundreds gain an item, they put it in the leftmost empty Command or Prowess space based on the item type; if there is no such empty space, they must permanently remove the gained item or any item on that track, and they score one victory point.
+            - name: Gegenstände erhalten.
+              text: Wenn ihr einen Gegenstand erhaltet, legt ihr ihn immer auf den am weitesten links liegenden leeren Platz dieser Art. Falls es keinen leeren Platz dieser Art gibt, müsst ihr entweder diesen Gegenstand entfernen oder einen anderen von der entsprechenden Leiste, und ihr erhaltet 1 Siegpunkt.
 
-            - name: Command and Prowess.
-              text: The number of items on the Command and Prowess tracks determine their Command and Prowess, which affect various parts of their rules. With no items, they have 1 Command or Prowess; with one or two items, they have 2; with three items, they have 3; with four items, they have 4.
+            - name: Befehlsgewalt und Wagemut.
+              text: Die Anzahl an Gegenständen auf der Befehlsgewaltleiste und der Wagemutleiste bestimmt den Befehlsgewalt-Wert bzw. den Wagemut-Wert. Diese beeinflussen verschiedenen Regeln des Herrn der Scharen. Ohne Gegenstände ist euer Befehlsgewalt- oder Wagemut-Wert 1; mit einem oder zwei Gegenständen ist er 2; mit drei ist er 3; mit vier ist er 4.
 
-        - name: Looters.
-          text: At the start of battle as the attacker, the Hundreds may declare that they want to loot the defender, so long as the defender has an item in their Crafted Items box. _(They cannot loot the Vagabond.)_ If they declare that they want to loot, the Hundreds deal no rolled hits. _(The defender deals rolled hits, and the Hundreds can still deal extra hits, such as from their Wrathful mood.)_ Then, at the end of that battle, if the Hundreds rule the clearing of battle, they take one item from the defender's Crafted Items box.
+        - name: Plünderer.
+          text: Zu Beginn eines Kampfs könnt ihr euch als Angreifer dazu entscheiden, beim Verteidiger zu plündern, wenn dieser mindestens einen Gegenstand in seinem Feld für hergestellte Gegenstände hat. _(Beim Vagabunden könnt ihr nicht plündern.)_ Wenn ihr Plündern ankündigt, fügt ihr keine erwürfelten Treffer zu. _(Der Verteidiger fügt weiterhin erwürfelte Treffer zu und ihr könnt weiterhin zusätzliche Treffer zufügen, wie mit der Laune Zornig.)_ Falls ihr am Ende des Kampfes die Lichtung beherrscht, könnt ihr einen Gegenstand vom Feld der hergestellten Gegenstände vom Verteidiger nehmen.
 
-    - name: Faction Setup
+    - name: Fraktion Vorbereiten
       children:
-        - name: "Step 1: Garrison"
-          text: Place your warlord, four warriors, and one stronghold in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing.
+        - name: "Schritt 1: Garnison."
+          text: Platziert euren Kriegsherren, 4 Krieger und 1 Bollwerk in einer Ecklichtung, die nicht bereits von einer anderen Person als Start-Ecklichtung gewählt wurde und die möglichst diagonal gegenüber einer anderen Startlichtung ist. Dies ist eure Startlichtung.
 
-        - name: "Step 2: Place Items"
-          text: Place the four "R" items randomly under the ruins, unless this has already been done.
+        - name: "Schritt 2: Platziert Gegenstände."
+          text: Platziert die 4 mit einem „R“ gekennzeichneten Gegenstände zufällig unter die Ruinen, es sei denn, dies wurde bereits getan.
 
-        - name: "Step 3: Get Stubborn"
-          text: Place your Stubborn mood card on your Mood Card slot.
+        - name: "Schritt 3: Hartnäckig."
+          text: Platziert die Launenkarte Hartnäckig im Feld der Launenkarten.
 
-    - name: Birdsong
-      pretext: Your Birdsong has four steps in the following order.
+    - name: Morgenröte
+      pretext: "Führt während der Morgenröte folgende 4 Schritte in dieser Reihenfolge durch:"
       children:
-        - name: Raze.
-          text: In each clearing with a mob token, remove all enemy buildings and tokens, take one item from the ruin in the clearing, if any, and remove the ruin if you took its last item. After resolving all mobs, you must roll the mob die once and place a mob token in a matching clearing that has no mob token but is adjacent to a clearing with a mob token. _(If there are no such clearings, do not place a mob.)_
+        - name: In Schutt und Asche legen.
+          text: Entfernt in jeder Lichtung mit Meuteplättchen alle feindlichen Gebäude und Plättchen. Falls sich dort eine Ruine befindet, nehmt euch einen ihrer Gegenstände. Entfernt die Ruine, falls sie nun keine Gegenstände mehr aufweist. Nachdem ihr eure Meuten abgehandelt habt, würfelt ihr den Meutewürfel 1x. Platziert ein Meuteplättchen auf einer entsprechenden Lichtung ohne Meuteplättchen, die an eine Lichtung angrenzt, auf der bereits ein Meuteplättchen ist. _(Falls es keine solche Lichtung gibt, platziert ihr kein Meuteplättchen.)_
 
-        - name: Recruit.
-          text: Place warriors equal in number to your Prowess into the clearing with your warlord. Then, place warriors in each clearing with any strongholds, one warrior per stronghold there.
+        - name: Rekrutieren.
+          text: "Platziert so viele Krieger auf der Lichtung eures Kriegsherren, wie es eurem Wagemut-Wert entspricht. Platziert dann Krieger auf jeder Lichtung mit Bollwerken: Einen Krieger pro Bollwerk."
 
-        - name: Anoint.
-          text: If the warlord is not on the map, you must replace any Hundreds warrior with the warlord. If you cannot, you must place the warlord in any clearing.
+        - name: Salbung.
+          text: Falls euer Kriegsherr nicht auf dem Spielplan ist, ersetzt ihr einen beliebigen eurer Scharen-Krieger durch euren Kriegsherren. Falls nicht möglich, setzt ihr euren Kriegsherren auf eine beliebige Lichtung.
 
-        - name: Choose Mood.
-          text: You must replace the mood card in your Mood Card slot with a different mood card that does not show an item that is in your Hoard. If you are Lavish and cannot choose a new mood card, you remain Lavish.
+        - name: Wählt eure Laune.
+          text: Ihr müsst eure aktuelle Launenkarte durch eine andere ersetzen. Ihr dürft keine Launenkarte wählen, deren oben links abgebildeter Gegenstand sich bereits in eurem Hort befindet. Falls ihr Verschwenderisch seid und keine andere Launenkarte wählen dürft, bleibt ihr Verschwenderisch.
 
-    - name: Daylight
-      pretext: Your Daylight has three steps in the following order.
+    - name: Tageslicht
+      pretext: "Führt während des Tageslichts folgende 3 Schritte in dieser Reihenfolge durch:"
       children:
-        - name: Craft.
-          text: You may activate strongholds to craft cards.
+        - name: Herstellen.
+          text: Ihr könnt Bollwerke aktivieren, um Karten herzustellen.
 
-        - name: Command the Hundreds.
-          text: You may take the following actions, in any order, a number of times up to your Command.
+        - name: Befehligt die Scharen.
+          text: "Führt so viele dieser Aktionen in beliebiger Reihenfolge aus, wie es eurem Befehlsgewalt-Wert entspricht:"
           subchildren:
-            - name: Move
-              text: Take a move.
-            - name: Battle.
-              text: Initiate a battle.
-            - name: Build.
-              text: Spend a card to place a stronghold in a matching clearing that you rule.
+            - name: Bewegen.
+              text: Führt eine Bewegung durch.
+            - name: Kämpfen.
+              text: Beginnt einen Kampf.
+            - name: Bauen.
+              text: Gebt eine Karte aus, um ein Bollwerk auf einer entsprechenden Lichtung zu platzieren, die ihr beherrscht.
 
-        - name: Advance the Warlord.
-          text: You may take this action a number of times up to your Prowess. You may move the warlord with any Hundreds warriors, and then you may battle in the warlord's clearing.
+        - name: Mit dem Kriegsherren vorrücken.
+          text: "Ihr könnt mit eurem Kriegsherren so häufig vorrücken, wie es eurem Wagemut-Wert entspricht: Jedes Mal dürft ihr den Kriegsherren mit beliebig vielen Kriegern bewegen, anschließend dürft ihr auf der Lichtung des Kriegsherren kämpfen."
 
-    - name: Evening
-      pretext: Your Evening has three steps in the following order.
+    - name: Abend
+      pretext: "Führt während des Abends folgende 3 Schritte in dieser Reihenfolge durch:"
       children:
-        - name: Incite.
-          text: Any number of times, you may spend a card to place a mob token in a matching clearing that has no mob token but does have a Hundreds warrior _(including your warlord)_.
+        - name: Aufstacheln.
+          text: Ihr dürft beliebig oft eine Karte ausgeben, um anschließend eine Meute auf einer Lichtung ohne Meute der passenden Gemeinschaft zu platzieren, in der sich bereits einer eurer Scharen-Krieger oder euer Kriegsherr befindet.
 
-        - name: Oppress.
-          text: You score victory points based on the number of clearings you rule that have a Hundreds piece and no enemy pieces. For one or two clearings, score one point; for three or four clearings, score two points; for five clearings, score three points; for six or more clearings, score four points.
+        - name: Unterdrücken.
+          text: "Zählt die von euch beherrschten Lichtungen, auf denen mindestens ein Scharen-Marker, aber keine gegnerischen Marker sind. Je nach Anzahl erhaltet ihr Siegpunkte: Für eine oder zwei solcher Lichtungen 1 Punkt; für drei oder vier 2 Punkte; für fünf 3 Punkte und für sechs oder mehr 4 Punkte."
 
-        - name: Draw and Discard.
-          text: Draw one card. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
+        - name: Nachziehen und abwerfen.
+          text: Zieht eine Karte. Falls ihr nun mehr als fünf Karten habt, legt Karten bis auf fünf ab.
 
-    - name: Moods
+    - name: Launen
       children:
-        - name: Bitter (`item:hammer`).
-          text: In battle in your warlord's clearing, before the roll you may remove any number of mob tokens from your warlord's clearing and any clearings adjacent to it. Place warriors in your warlord's clearing equal to the number of mob tokens you removed.
+        - name: Verbittert (`item:hammer`).
+          text: Bevor gewürfelt wird, dürft ihr im Kampf auf der Lichtung eures Kriegsherren eine beliebige Anzahl an Meuteplättchen aus der Kampflichtung oder daran angrenzenden Lichtungen entfernen. Platziert einen Krieger auf der Kampflichtung pro Meuteplättchen, das ihr so entfernt habt.
 
-        - name: Grandiose (`item:tea`).
-          text: This turn, perform your Advance the Warlord step (`rule:14.5.3`) and your Command the Hundreds step (`rule:14.5.2`) in reverse order. _(Advance the Warlord first, then Command the Hundreds.)_
+        - name: Großspurig (`item:tea`).
+          text: Führt in diesem Zug zuerst den Schritt „Mit dem Kriegsherren vorrücken“ (`rule:14.5.3`) aus und danach „Die Scharen befehligen“ (`rule:14.5.2`).
 
-        - name: Jubilant (`item:boot`).
-          text: Whenever you take the Incite action in your warlord's clearing, after placing the mob token for the action, you may—up to four times—roll the mob die and place a mob token in a matching clearing that has no mob token but is adjacent to any clearing with a mob token.
+        - name: Triumphierend (`item:boot`).
+          text: "Wenn ihr die Lichtung eures Kriegsherren aufstachelt, dürft ihr, nachdem ihr das Meuteplättchen platziert habt, bis zu viermal den Meutewürfel würfeln: Platziert nach jedem Wurf ein Meuteplättchen auf einer entsprechenden Lichtung ohne Meuteplättchen, die angrenzend zu einer Lichtung mit Meuteplättchen ist."
 
-        - name: Lavish (No Item).
-          text: At the end of your Birdsong, you may remove any number of items from your Hoard permanently. For each item you remove, place two warriors into your warlord's clearing. When you are done, shift items in your Hoard to fill its tracks from left to right.
+        - name: Verschwenderisch (Kein Gegenstand).
+          text: Am Ende der Morgenröte könnt ihr eine beliebige Anzahl an Gegenständen aus eurem Hort entfernen. Für jeden entfernten Gegenstand platziert ihr 2 Scharen-Krieger auf der Lichtung eures Kriegsherren. Verschiebt dann die in eurem Hort verbliebenen Gegenstände, sodass die Leisten von links nach recht gefüllt sind.
 
-        - name: Relentless (`item:sack`).
-          text: Whenever you take the Advance the Warlord action and both move and battle, you may then either move your warlord with any Hundreds warriors or battle in your warlord's clearing.
+        - name: Unermüdlich (`item:sack`).
+          text: Wenn ihr euren Kriegsherren vorrückt und dabei bewegt und kämpft, dürft ihr euch entweder noch einmal mit ihm und Scharen-Kriegern bewegen oder auf seiner Lichtung kämpfen.
 
-        - name: Rowdy (`item:coin`).
-          text: In Evening, draw one more card. If your warlord's clearing has three or more enemy pieces (even a combination of pieces from different enemies), draw two more cards instead.
+        - name: Rauflustig (`item:coin`).
+          text: Zieht 1 zusätzliche Karte während des Abends (`rule:14.6.3`). Falls auf der Lichtung eures Kriegsherren 3 oder mehr gegnerische Marker sind (auch von unterschiedlichen Gegnern), zieht ihr stattdessen 2 zusätzliche Karten.
 
-        - name: Stubborn (`item:crossbow`).
-          text: In battle in your warlord's clearing, you ignore the first hit you take. _(This does not combine with other abilities that let you ignore the first hit you take.)_
+        - name: Hartnäckig (`item:crossbow`).
+          text: Im Kampf in der Lichtung des Kriegsherren, ignoriert ihr den ersten erlittenen Treffer. _(Dies könnt ihr nicht mit anderen Fähigkeiten kombinieren, die euch den ersten Treffer ignorieren lassen.)_
 
-        - name: Wrathful (`item:sword`).
-          text: As attacker in battle in your warlord's clearing, you deal an extra hit.
+        - name: Zornig (`item:sword`).
+          text: Als Angreifer in einem Kampf auf der Lichtung eures Kriegsherren erzielt ihr einen zusätzlichen Treffer.
 
-- name: Keepers in Iron
+- name: Eisenwächter
   color: "#8b8d90"
   icon: keepers
   children:
-    - name: Overview
-      pretext: The Keepers in Iron are an order of devout knights, once exiled from the Woodland, who have returned to recover **relics** lost in past conflicts. Whether these relics belong to the Keepers or the Woodland, though, is another question. To accomplish their mission, they will need to delve relics out of the forests, move them to a **waystation** of the same type, and then recover them. When they recover a relic, they score points equal to the relic's value of one to three, and they also score two points each time they complete a set of the three relic types—figures, tablets, and jewelry. Over time, the Keepers will gather a **Retinue** of Woodland creatures, letting them take more actions. However, each time they delve a relic or recover one, they might lose the Retinue card they used to act, so they will need to plan ahead and take prudent risks in order to succeed.
+    - name: Übersicht
+      pretext: Als Eisenwächter seid ihr ein alter Orden frommer Ritter, die aus dem Waldland verbannt wurden. Ihr seid zurückgekehrt, um die Relikte, die ihr in längst vergangenen Konflikten verloren habt, wiederzuerlangen. Um diese Mission zu erfüllen, müsst ihr die Relikte zunächst im Wald ausgraben und sie dann zu euren Lagerplätzen bringen, um sie von dort aus sichern zu können. Für gesicherte Relikte bekommt ihr Siegpunkte nach deren Wert. Für jedes komplette Set aus Relikten der drei Arten (Figuren, Tafeln und Juwelen) erhaltet ihr zusätzlich zwei Punkte. Nach und nach vergrößert ihr euer Gefolge und ihr dürft dadurch immer mehr Aktionen ausführen. Das Sichern der Relikte birgt jedoch auch Gefahren, daher könnt ihr unter Umständen wieder Gefolgsleute verlieren. Plant also gut voraus.
 
-    - name: Faction Rules and Abilities
+    - name: Fraktionsregeln und -fähigkeiten
       children:
-        - name: Relics.
-          text: You seek out twelve relic tokens of three types—figures, tablets, and jewelry. Each relic type has four tokens in total. The relic front shows only its type, and the relic back shows a value of 1, 2, 3, or 3.
+        - name: Relikte.
+          text: "Ihr seid auf der Suche nach zwölf Relikten, die in drei Arten aufgeteilt sind: Figuren, Tafeln und Juwelen. Von jeder Art gibt es vier Relikte. Die Vorderseite eines Relikts zeigt nur die Art, während die Rückseite einen Wert anzeigt: Von jeder Art gibt es die Werte 1, 2 und 2x die 3."
 
-        - name: Waystations.
-          text: You have three waystations. Each waystation shows one relic type on its front and another relic type on its back.
+        - name: Lagerplätze.
+          text: Ihr verfügt über drei Lagerplätze. Jeder Lagerplatz zeigt auf der Vorderseite eine andere Reliktart als auf der Rückseite.
 
-        - name: Crafting.
-          text: The Keepers craft during Daylight by activating waystations _(of any type)_.
+        - name: Herstellen.
+          text: Ihr stellt Karten während des Tageslichts her, indem ihr Lagerplätze aktiviert _(unabhängig von ihrer Art)_.
 
-        - name: Devout Knights.
-          text: In battle, if the clearing of battle has at least one relic and at least one Keeper warrior, the Keepers ignore the first hit they take. _(If ambushed, ignore one hit from the ambush, but do not ignore further hits.)_ When moving, the Keepers may move one relic with each Keeper warrior that they move.
+        - name: Fromme Ritter.
+          text: Im Kampf auf einer Lichtung, auf der sich mindestens ein Relikt und mindestens ein Wächter-Krieger befindet, dürft ihr den ersten erlittenen Treffer ignorieren. _(Bei einem Hinterhalt ignoriert ihr den ersten Treffer des Hinterhalts, aber keine weiteren.)_ Bei der Bewegung können Wächter-Krieger ein Relikt pro Krieger mitnehmen.
 
-        - name: Prized Trophies.
-          text: Whenever an enemy removes a relic, they place it in any forest face up and score an extra victory point _(for a total of two)_.
+        - name: Wertvolle Trophäen.
+          text: Immer wenn ein Gegner ein Relikt entfernt, platziert er dieses offen auf einem beliebigen Wald und bekommt einen zusätzlichen Siegpunkt für das Entfernen _(insgesamt also 2 Siegpunkte)_.
 
-    - name: Faction Setup
+    - name: Fraktion vorbereiten
       children:
-        - name: "Step 1: Place Starting Relics"
-          text: "Collect all twelve relic tokens and shuffle them face down _(without the value showing)_. Place one randomly in each forest. _(We recommend that you just slide the relics around face down, then place relics as fast as possible as a group. Otherwise, you can use this more random but fiddly method: the Keepers stack the randomized relics, then any other player cuts the stack, picks it up, and drops relics one by one from the bottom onto the forests.)_"
+        - name: "Schritt 1: Platziert Reliktplättchen."
+          text: "Mischt alle 12 Reliktplättchen verdeckt _(die Werte sind verdeckt)_. Legt ein zufälliges verdeckt in jeden Wald. _(Flüsse durchtrennen Wälder gewöhnlich nicht.)_ _(Wir empfehlen die Relikte verdeckt auf dem Spielplan zu mischen und sie dann in der Gruppe einfach möglichst schnell auf die Wälder zu verschieben. Andernfalls könnt ihr die Relikte auch gründlicher mischen und folgendermaßen platzieren: Als Eisenwächter bildet ihr einen verdeckten Stapel mit den gemischten Relikten und eine andere Person hebt den Stapel ab, nimmt ihn und lässt dann von unten vom Stapel jeweils ein Plättchen auf jedem Wald fallen.)_"
 
-        - name: "Step 2: Place Warriors"
-          text: Place four warriors in a corner clearing that is not the starting corner clearing of another player and, if possible, is diagonally opposite from a starting corner clearing. Then, place four warriors in a clearing on the map edge that is adjacent to the chosen clearing.
+        - name: "Schritt 2: Platziert Krieger."
+          text: Platziert 4 Krieger auf einer Ecklichtung, die noch nicht von einer anderen Person als Start-Ecklichtung gewählt wurde und die möglichst diagonal gegenüber einer anderen Start-Ecklichtung ist. Platziert dann 4 weitere Krieger auf einer Lichtung am Spielplanrand, die an die gewählte Start-Ecklichtung angrenzt.
 
-        - name: "Step 3: Place Remaining Relics"
-          text: Place all remaining relics randomly, as evenly as possible, among forests not adjacent to clearings with your warriors.
+        - name: "Schritt 3: Platziert übrige Relikte."
+          text: Legt dann die übrigen Relikte, zufällig und so gleichmäßig wie möglich, verdeckt in Wälder, die nicht an Lichtungen mit Wächter-Kriegern angrenzen.
 
-        - name: "Step 4: Tuck Faithful Retainers"
-          text: Tuck one Faithful Retainer card into each Retinue slot of your faction board.
+        - name: "Schritt 4: Treue Vasallen."
+          text: Steckt eine Treuer-Vasall-Karte in jede eurer Gefolgespalten eures Tableaus.
 
-        - name: "Step 5: Collect Waystations"
-          text: Place your three waystation buildings on the matching Waystations spaces of your faction board.
+        - name: "Schritt 5: Lagerplätze."
+          text: Platziert die 3 Lagerplätze auf den Lagerplatzfeldern eures Tableaus.
 
-
-    - name: Birdsong
-      text: Your Birdsong has three steps in the following order.
+    - name: Morgenröte
+      text: "Führt während der Morgenröte folgende 3 Schritte in dieser Reihenfolge durch:"
       children:
-        - name: Encamp.
-          text: Once per clearing, you may replace a Keeper warrior with a waystation. If you have no warriors or waystations on the map, instead place one waystation and one warrior in any clearing on the map edge. In either case, you may place the waystation face up or face down.
+        - name: Lager aufschlagen.
+          text: Einmal pro Lichtung dürft ihr einen Wächter-Krieger durch einen Lagerplatz ersetzen. Falls ihr weder einen Krieger noch einen Lagerplatz auf dem Spielplan habt, dürft ihr einen Krieger und einen Lagerplatz auf einer Randlichtung platzieren. In beiden Fällen dürft ihr den Lagerplatz mit einer beliebigen Seite nach oben legen.
 
-        - name: Decamp.
-          text: Once per clearing, you may replace a waystation with a Keeper warrior.
+        - name: Lager abbrechen.
+          text: Einmal pro Lichtung dürft ihr einen Lagerplatz durch einen Wächter-Krieger ersetzen.
 
-        - name: Recruit.
-          text: Any number of times, you may spend a card to place two warriors at a matching waystation.
+        - name: Rekrutieren.
+          text: Ihr dürft beliebig oft eine Karte ausgeben, um 2 Wächter-Krieger auf einer entsprechenden Lichtung mit einem Lagerplatz zu platzieren.
 
-    - name: Daylight
-      text: Your Daylight has two steps in the following order.
+    - name: Tageslicht
+      text: "Führt während des Tageslichts folgende 2 Schritte in dieser Reihenfolge durch:"
       children:
-        - name: Craft.
-          text: You may activate waystations _(of any type)_ to craft cards.
+        - name: Herstellen.
+          text: Ihr könnt Lagerplätze (unabhängig von ihrer Art) aktivieren, um Karten herzustellen.
 
-        - name: Act with Retinue.
-          text: Starting with the leftmost column of your Retinue and moving to the right, you may take the column's action, as follows, for each card in the column in any order.
+        - name: Euer Gefolge agiert.
+          text: "Ihr könnt eine Aktion pro Karte in euren Gefolgespalten ausführen. Geht dabei die Gefolgespalten von links nach rechts durch; innerhalb einer Spalte dürft ihr eine beliebig Reihenfolge wählen. Führt jeweils die in der Gefolgespalte angegebene Aktion in einer Lichtung mit der Gemeinschaft aus:"
           subchildren:
-            - name: Move.
-              text: Take a move from a clearing whose suit matches the card suit.
+            - name: Bewegen.
+              text: Führt eine Bewegung von einer der Karte entsprechenden Lichtung aus durch.
 
-            - name: Battle then Delve.
-              text: Choose a clearing whose suit matches the card suit. You must initiate a battle there if any enemy pieces are there. Then, if you rule the clearing and it has at least one Keeper warrior, you may delve there as follows _(even if there was no enemy to battle)_.
+            - name: Kämpfen, dann Ausgraben.
+              text: "Wählt eine Lichtung, die der Karte entspricht. Beginnt einen Kampf, falls sich dort gegnerische Marker befinden. Wenn ihr dann die Lichtung beherrscht und sich mindestens ein Wächter-Krieger dort befindet, dürft ihr wie folgt ausgraben _(auch wenn kein Kampf stattgefunden hat)_:"
               subchildren:
-                - name: "Step 1: Move and Flip Relic."
-                  text: Move any relic from an adjacent forest into that clearing. Flip that relic so its value is showing if it is not.
+                - name: "Schritt 1: Relikt auf die Lichtung."
+                  text: Nehmt ein Relikt aus einem an die Lichtung angrenzenden Wald und platziert es mit dem Wert offen auf der Lichtung.
 
-                - name: "Step 2: Check for Discard."
-                  text: Count the number of clearings you rule adjacent to the forest from which you delved the relic. If you rule fewer of these clearings than the relic's value, then you must discard the Retinue card used to take this action.
+                - name: "Schritt 2: Prüfen, ob Karte entfernen."
+                  text: Zählt die Anzahl an Lichtungen, die ihr beherrscht und die an den Wald, von dem ihr das Relikt genommen habt, angrenzen. Falls die Anzahl solcher Lichtungen niedriger ist als der Wert des Relikts, müsst ihr die Karte, mit der ihr diese Aktion ausgeführt habt, aus der Gefolgespalte entfernen.
 
-            - name: Move or Recover.
-              text: Choose a clearing whose suit matches the card suit. Take a move from it, or recover relics from it as follows.
+            - name: Bewegen oder Sichern.
+              text: "Wählt eine Lichtung, die der Karte entspricht. Führt eine Bewegung von dort aus durch oder sichert ein Relikt von dort, wie folgt:"
               subchildren:
-                - name: "Step 1: Take Relic."
-                  text: Take a relic there of the same type as a waystation there. Place it in your leftmost empty Relics space of that relic type.
+                - name: "Schritt 1: Relikt aufs Tableau."
+                  text: Nehmt von dieser Lichtung ein Relikt, das der Art eines Lagerplatzes dort entspricht. Platziert es auf dem am weitesten links liegenden, leeren Platz für Relikte dieser Art auf eurem Tableau.
 
-                - name: "Step 2: Score Points."
-                  text: Score victory points equal to the relic's value, and score two victory points if you filled a Relics column.
+                - name: "Schritt 2: Werten."
+                  text: Ihr bekommt so den Wert des Relikts als Siegpunkte. Ihr erhaltet 2 zusätzliche Punkte, wenn durch dieses Relikt eine Spalte auf eurem Tableau mit den drei unterschiedlichen Reliktarten komplett gefüllt wurde.
 
-                - name: "Step 3: Check for Discard."
-                  text: Count the number of clearings you rule whose suit matches the clearing from which you are recovering the relic. If you rule fewer of these clearings than the relic's value, then you must end this Recover action and discard the Retinue card used to take this action. Otherwise, you may return to the Take Relic step or end this Recover action.
+                - name: "Schritt 3: Prüfen, ob Karte entfernen."
+                  text: Zählt die Anzahl an Lichtungen, die ihr beherrscht und die der Gemeinschaft der Lichtung, von der ihr das Relikt sichert, entsprechen. Falls die Anzahl solcher Lichtungen niedriger ist als der Wert des Relikts, müsst ihr die Karte, mit der ihr diese Aktion ausgeführt habt, aus der Gefolgespalte entfernen und diese Aktion beenden. Andernfalls dürft ihr wieder mit Schritt 1 „Relikt aufs Tableau“ beginnen oder diese Aktion beenden.
 
-    - name: Evening
-      text: Your Evening has three steps in the following order.
+    - name: Abend
+      text: "Führt während des Abends folgende 3 Schritte in dieser Reihenfolge durch:"
       children:
-        - name: Live Off the Land.
-          text: You must remove one Keeper warrior from each clearing that has four or more Keeper warriors.
+        - name: Vom Land leben.
+          text: Entfernt einen Wächter-Krieger von jeder Lichtung mit vier oder mehr Wächter-Kriegern.
 
-        - name: Gather Retinue.
-          text: You may add any number of cards from your hand to any Retinue slots, or you may shift one card in your Retinue to a different slot. Your Retinue cannot hold more than ten cards.
+        - name: Gefolge sammeln.
+          text: Ihr könnt entweder eine beliebige Anzahl an Karten von eurer Hand in die Gefolgespalten legen oder eine Karte in eine andere Spalte versetzen. Es können allerdings insgesamt nie mehr als zehn Karten in eurem Gefolge liegen.
 
-        - name: Draw and Discard.
-          text: Draw one card, plus one card per uncovered draw bonus _(equal to waystations on the map)_. Then, if you have more than five cards in your hand, discard cards of your choice until you have five.
-
+        - name: Nachziehen und abwerfen.
+          text: Zieht eine Karte, plus eine zusätzliche Karte pro aufgedecktem Nachzieh-Bonus _(entspricht der Anzahl an Lagerplätzen auf dem Spielplan)_. Falls ihr nun mehr als fünf Handkarten habt, legt Karten bis auf fünf ab.
 
 - name: Varianten, Vagabunden und Hirelings
   color: "#000000"
